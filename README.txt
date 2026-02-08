@@ -1,4 +1,4 @@
-skin.xonfluence:
+skin.xonfluence.modern:
 
 See:
 https://forum.kodi.tv/showthread.php?tid=315391
