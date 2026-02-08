@@ -1,0 +1,5 @@
+# Exclude media folder
+media
+
+# Exclude file created by addon
+script-skinshortcuts-includes.xml
