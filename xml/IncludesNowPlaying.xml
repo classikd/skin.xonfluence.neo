@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+
     <include name="NowPlayingMusic">
 	    <control type="group">
             <depth>DepthMenu</depth>
             <left>0</left>
-            <top>90</top>
+            <top>70</top>
+            <control type="image">
+                <left>0</left>
+                <right>0</right>
+                <top>390</top>
+                <height>140</height>
+                <texture border="5">nowplaying-bg.png</texture>
+                <include>SubMenuAnimation</include>
+            </control>
             <visible>Player.HasAudio + !Skin.HasSetting(HideNowPlayingInfo)</visible>
             <include>VisibleFadeEffect</include>
             <include>Window_OpenClose_Animation</include>
@@ -215,7 +224,16 @@
 	    <control type="group">
             <depth>DepthMenu</depth>
             <left>0</left>
-            <top>75</top>
+            <top>70</top>
+            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+            <control type="image">
+                <left>0</left>
+                <right>0</right>
+                <top>390</top>
+                <height>140</height>
+                <texture border="5">nowplaying-bg.png</texture>
+                <include>SubMenuAnimation</include>
+            </control>
             <visible>Player.HasVideo + !Skin.HasSetting(HideNowPlayingInfo)</visible>
             <include>VisibleFadeEffect</include>
             <include>Window_OpenClose_Animation</include>
@@ -444,6 +462,15 @@
 	
 	<include name="NowPlayingMediaControls">
 	    <control type="group">
+            <control type="image">
+                <left>0</left>
+                <right>0</right>
+                <top>0</top>
+                <height>45</height>
+                <texture border="5">current-playing-bg.png</texture>
+                <include>SubMenuAnimation</include>
+            </control>
+            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
             <depth>DepthMenu-</depth>
             <description>Controls for currently playing media</description>
             <left>818r</left>
@@ -462,24 +489,13 @@
                 <effect type="fade" start="100" end="0" time="225" />
             </animation>
             <visible>String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
-            <control type="image">
-                <description>Background End image</description>
-                <left>1</left>
-                <top>0</top>
-                <width>52</width>
-                <height>52</height>
-                <colordiffuse>CCFFFFFF</colordiffuse>
-                <texture flipy="true" border="0,5,0,0" flipx="true">HomeSubEnd.png</texture>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
-                <animation effect="slide" start="0,0" end="172,0" time="0" condition="Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(FloorGlobalSearch)">Conditional</animation>
-            </control>
             <control type="radiobutton" id="610">
                 <colordiffuse>CCFFFFFF</colordiffuse>
                 <description>Global Search</description>
-                <left>53</left>
+                <left>0</left>
                 <top>0</top>
                 <height>52</height>
-                <width>172</width>
+                <width>226</width>
                 <textwidth>225</textwidth>
                 <textoffsetx>15</textoffsetx>
                 <align>left</align>
@@ -488,15 +504,15 @@
                 <textcolor>grey2</textcolor>
                 <focusedcolor>white</focusedcolor>
                 <texturefocus flipy="true" border="5" colordiffuse="$VAR[MainColorOne]">HomeSubFO.png</texturefocus>
-                <texturenofocus flipy="true" border="5">HomeSubNF.png</texturenofocus>
+                <texturenofocus flipy="true" border="5"></texturenofocus>
                 <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                 <pulseonselect>false</pulseonselect>
                 <label>137</label>
                 <onclick>RunScript(script.globalsearch)</onclick>
-                <textureradioonfocus>icon_search.png</textureradioonfocus>
-                <textureradioonnofocus>icon_search.png</textureradioonnofocus>
-                <textureradioofffocus>icon_search.png</textureradioofffocus>
-                <textureradiooffnofocus>icon_search.png</textureradiooffnofocus>
+                <textureradioonfocus>nowplaying-search.png</textureradioonfocus>
+                <textureradioonnofocus>nowplaying-search.png</textureradioonnofocus>
+                <textureradioofffocus>nowplaying-search.png</textureradioofffocus>
+                <textureradiooffnofocus>nowplaying-search.png</textureradiooffnofocus>
                 <onleft>609</onleft>
                 <onright>601</onright>
                 <onup condition="!Skin.HasSetting(LowerMainMenuBar)">9003</onup>
@@ -517,7 +533,7 @@
                     <top>0</top>
                     <width>382</width>
                     <height>52</height>
-                    <texture flipy="true" border="0,5,0,0">HomeSubNF.png</texture>
+                    <texture flipy="true" border="0,5,0,0">nowplaying-bg-btns.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                     <colordiffuse>CCFFFFFF</colordiffuse>
                     <animation effect="zoom" start="0,0,308,53" end="0,0,750,53" delay="0" time="300" condition="!Player.HasMedia + Skin.HasSetting(EnableHomeStats)">conditional</animation>
