@@ -3265,6 +3265,7 @@
     <variable name="TextureBorderValue">
         <value condition="Skin.String(TextureBorder,Medium)">$LOCALIZE[31993]</value>
         <value condition="Skin.String(TextureBorder,Large)">$LOCALIZE[31994]</value>
+        <value condition="Skin.String(TextureBorder,None)">$LOCALIZE[31254]</value>
         <value>$LOCALIZE[31992]</value>
     </variable>
     <variable name="SideBladeLabelValue">

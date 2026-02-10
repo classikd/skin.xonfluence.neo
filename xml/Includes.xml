@@ -2343,19 +2343,25 @@
         <animation effect="fade" start="100" end="90" time="0" condition="String.Contains(Skin.String(HomeTrans),10)">Conditional</animation>
     </include>
     <include name="TextureBorderAddons">
+        <include condition="Skin.String(TextureBorder,None)">Border0</include>
         <include condition="Skin.String(TextureBorder,Medium)">Border5</include>
         <include condition="Skin.String(TextureBorder,Large)">Border7</include>
         <include condition="String.IsEmpty(Skin.String(TextureBorder))">Border3</include>
     </include>
     <include name="TextureBorderWidgets">
+        <include condition="Skin.String(TextureBorder,None)">Border0</include>
         <include condition="Skin.String(TextureBorder,Medium)">Border7</include>
         <include condition="Skin.String(TextureBorder,Large)">Border9</include>
         <include condition="String.IsEmpty(Skin.String(TextureBorder))">Border5</include>
     </include>
     <include name="TextureBorderViews">
+        <include condition="Skin.String(TextureBorder,None)">Border0</include>
         <include condition="Skin.String(TextureBorder,Medium)">Border7</include>
         <include condition="Skin.String(TextureBorder,Large)">Border9</include>
         <include condition="String.IsEmpty(Skin.String(TextureBorder))">Border5</include>
+    </include>
+    <include name="Border0">
+        <bordersize>0</bordersize>
     </include>
     <include name="Border3">
         <bordersize>3</bordersize>

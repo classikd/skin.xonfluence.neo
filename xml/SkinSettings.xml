@@ -726,7 +726,8 @@
                                 <include>MenuButton</include>
                                 <onclick condition="String.IsEmpty(Skin.String(TextureBorder))">Skin.SetString(TextureBorder,Medium)</onclick>
                                 <onclick condition="Skin.String(TextureBorder,Medium)">Skin.SetString(TextureBorder,Large)</onclick>
-                                <onclick condition="Skin.String(TextureBorder,Large)">Skin.Reset(TextureBorder)</onclick>
+                                <onclick condition="Skin.String(TextureBorder,Large)">Skin.SetString(TextureBorder,None)</onclick>
+                                <onclick condition="Skin.String(TextureBorder,None)">Skin.Reset(TextureBorder)</onclick>
                             </control>
                             <control type="button" id="129">
                                 <width>1125</width>
