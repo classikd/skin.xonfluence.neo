@@ -2911,8 +2911,7 @@
                     <top>12</top>
                     <width>50</width>
                     <height>33</height>
-                    <include condition="String.IsEmpty(Skin.String(LayoutLAF))">DownControlClassic</include>
-                    <include condition="!String.IsEmpty(Skin.String(LayoutLAF))">DownControlModern</include>
+                    <include>DownControlModern</include>
                     <onclick>Control.Move($PARAM[Control],1)</onclick>
                     <onleft>$PARAM[Left]</onleft>
                     <onright>8002</onright>
@@ -2925,8 +2924,7 @@
                     <top>12</top>
                     <width>50</width>
                     <height>33</height>
-                    <include condition="String.IsEmpty(Skin.String(LayoutLAF))">UpControlClassic</include>
-                    <include condition="!String.IsEmpty(Skin.String(LayoutLAF))">UpControlModern</include>
+                    <include>UpControlModern</include>
                     <onclick>Control.Move($PARAM[Control],-1)</onclick>
                     <onleft>8001</onleft>
                     <onright>$PARAM[Right]</onright>

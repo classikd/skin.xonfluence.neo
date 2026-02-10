@@ -3288,10 +3288,6 @@
         <value condition="Skin.String(ButtonLAF,Max)">$LOCALIZE[31986]</value>
         <value>$LOCALIZE[31984]</value>
     </variable>
-    <variable name="LayoutLAFValue">
-        <value condition="Skin.String(LayoutLAF,Modern)">$LOCALIZE[31985]</value>
-        <value>$LOCALIZE[31984]</value>
-    </variable>
     <variable name="MenuLAFValue">
         <value condition="Skin.String(MenuLAF,Graph)">$LOCALIZE[31988]</value>
         <value condition="Skin.String(MenuLAF,GraphFocused)">$LOCALIZE[31989]</value>

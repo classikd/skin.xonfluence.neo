@@ -69,8 +69,7 @@
         <width>50</width>
         <height>33</height>
         <font>font13</font>
-        <include condition="String.IsEmpty(Skin.String(LayoutLAF))">SpinControlClassic</include>
-        <include condition="!String.IsEmpty(Skin.String(LayoutLAF))">SpinControlModern</include>
+        <include>SpinControlModern</include>
         <reverse>yes</reverse>
         <textcolor>white</textcolor>
         <disabledcolor>grey3</disabledcolor>
@@ -88,8 +87,7 @@
         <spinheight>33</spinheight>
         <include>NormalButton</include>
         <texturenofocus></texturenofocus>
-        <include condition="String.IsEmpty(Skin.String(LayoutLAF))">SpinControlClassic</include>
-        <include condition="!String.IsEmpty(Skin.String(LayoutLAF))">SpinControlModern</include>
+        <include>SpinControlModern</include>
         <font>font13</font>
         <textcolor>white</textcolor>
         <disabledcolor>grey3</disabledcolor>
@@ -103,8 +101,7 @@
         <top>300</top>
         <width>450</width>
         <height>63</height>
-        <include condition="String.IsEmpty(Skin.String(LayoutLAF))">RadioButtonClassic</include>
-        <include condition="!String.IsEmpty(Skin.String(LayoutLAF))">RadioButtonModern</include>
+        <include>RadioButtonModern</include>
         <include>NormalButton</include>
         <label></label>
         <font>font13</font>

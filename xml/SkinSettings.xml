@@ -780,18 +780,6 @@
                                 <onclick condition="Skin.String(ButtonLAF,Modern)">Skin.SetString(ButtonLAF,Max)</onclick>
                                 <onclick condition="Skin.String(ButtonLAF,Max)">Skin.Reset(ButtonLAF)</onclick>
                             </control>
-                            <control type="button" id="133">
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <label>$LOCALIZE[31948]</label>
-                                <label2>[COLOR=selected]$VAR[LayoutLAFValue][/COLOR]</label2>
-                                <textcolor>grey2</textcolor>
-                                <focusedcolor>white</focusedcolor>
-                                <include>MenuButton</include>
-                                <onclick condition="String.IsEmpty(Skin.String(LayoutLAF))">Skin.SetString(LayoutLAF,Modern)</onclick>
-                                <onclick condition="!String.IsEmpty(Skin.String(LayoutLAF))">Skin.Reset(LayoutLAF)</onclick>
-                            </control>
                             <control type="button" id="134">
                                 <width>1125</width>
                                 <height>60</height>
