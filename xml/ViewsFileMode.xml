@@ -360,7 +360,7 @@
                         <height>240</height>
                         <bordertexture border="5">button-nofocus.png</bordertexture>
                         <include>TextureBorderViews</include>
-                        <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
+                        <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
                     </control>
@@ -447,7 +447,7 @@
                         <height>240</height>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
-                        <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
+                        <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
                     </control>
