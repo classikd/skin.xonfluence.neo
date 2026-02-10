@@ -29,7 +29,7 @@
                 <top>24</top>
                 <width>1395</width>
                 <height>60</height>
-                <texture>$VAR[DialogPath]dialogheader.png</texture>
+                <texture>dialogheader.png</texture>
             </control>
             <control type="button">
                 <description>Close Window button</description>

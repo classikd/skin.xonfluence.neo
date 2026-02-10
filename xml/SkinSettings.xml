@@ -41,7 +41,7 @@
                 <top>8</top>
                 <width>1635</width>
                 <height>945</height>
-                <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                <texture border="15">ContentPanel.png</texture>
                 <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
             </control>
             <control type="image">
@@ -49,7 +49,7 @@
                 <top>938</top>
                 <width>1635</width>
                 <height>96</height>
-                <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                <texture border="15">ContentPanelMirror.png</texture>
             </control>
             <control type="image">
                 <description>LOGO</description>
@@ -193,7 +193,7 @@
                 <top>15</top>
                 <width>1181</width>
                 <height>78</height>
-                <texture>$VAR[DialogPath]dialogheader.png</texture>
+                <texture>dialogheader.png</texture>
             </control>
             <control type="label">
                 <description>header label</description>
@@ -743,18 +743,6 @@
                                 <onclick condition="Skin.String(SideBladeLabel,Top)">Skin.SetString(SideBladeLabel,Bottom)</onclick>
                                 <onclick condition="Skin.String(SideBladeLabel,Bottom)">Skin.Reset(SideBladeLabel)</onclick>
                             </control>
-                            <control type="button" id="130">
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <label>$LOCALIZE[31983]</label>
-                                <label2>[COLOR=selected]$VAR[DialogLAFValue][/COLOR]</label2>
-                                <textcolor>grey2</textcolor>
-                                <focusedcolor>white</focusedcolor>
-                                <include>MenuButton</include>
-                                <onclick condition="String.IsEmpty(Skin.String(DialogLAF))">Skin.SetString(DialogLAF,Modern)</onclick>
-                                <onclick condition="!String.IsEmpty(Skin.String(DialogLAF))">Skin.Reset(DialogLAF)</onclick>
-                            </control>
                             <control type="button" id="131">
                                 <width>1125</width>
                                 <height>60</height>
@@ -767,19 +755,6 @@
                                 <onclick condition="String.IsEmpty(Skin.String(OSDLAF))">Skin.SetString(OSDLAF,Modern)</onclick>
                                 <onclick condition="Skin.String(OSDLAF,Modern)">Skin.SetString(OSDLAF,Max)</onclick>
                                 <onclick condition="Skin.String(OSDLAF,Max)">Skin.Reset(OSDLAF)</onclick>
-                            </control>
-                            <control type="button" id="132">
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <label>$LOCALIZE[31947]</label>
-                                <label2>[COLOR=selected]$VAR[ButtonLAFValue][/COLOR]</label2>
-                                <textcolor>grey2</textcolor>
-                                <focusedcolor>white</focusedcolor>
-                                <include>MenuButton</include>
-                                <onclick condition="String.IsEmpty(Skin.String(ButtonLAF))">Skin.SetString(ButtonLAF,Modern)</onclick>
-                                <onclick condition="Skin.String(ButtonLAF,Modern)">Skin.SetString(ButtonLAF,Max)</onclick>
-                                <onclick condition="Skin.String(ButtonLAF,Max)">Skin.Reset(ButtonLAF)</onclick>
                             </control>
                             <control type="button" id="134">
                                 <width>1125</width>

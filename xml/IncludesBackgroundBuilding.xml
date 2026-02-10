@@ -543,7 +543,7 @@
                     <top>90</top>
                     <width>1125</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
@@ -551,7 +551,7 @@
                     <top>978</top>
                     <width>1125</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -562,7 +562,7 @@
                     <top>90</top>
                     <width>960</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
@@ -570,14 +570,14 @@
                     <top>978</top>
                     <width>960</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
                 <control type="image">
                     <left>1050</left>
                     <top>90</top>
                     <width>795</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
@@ -585,7 +585,7 @@
                     <top>978</top>
                     <width>795</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -596,7 +596,7 @@
                     <top>90</top>
                     <width>1260</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
@@ -604,14 +604,14 @@
                     <top>978</top>
                     <width>1260</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
                 <control type="image">
                     <left>1350</left>
                     <top>90</top>
                     <width>495</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
@@ -619,7 +619,7 @@
                     <top>978</top>
                     <width>495</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -630,7 +630,7 @@
                     <top>75</top>
                     <width>1770</width>
                     <height>915</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
@@ -638,7 +638,7 @@
                     <top>978</top>
                     <width>1770</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -649,7 +649,7 @@
                     <top>345</top>
                     <width>960</width>
                     <height>645</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
@@ -657,14 +657,14 @@
                     <top>978</top>
                     <width>960</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
                 <control type="image">
                     <left>1050</left>
                     <top>345</top>
                     <width>825</width>
                     <height>645</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
@@ -672,7 +672,7 @@
                     <top>978</top>
                     <width>825</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -683,7 +683,7 @@
                     <top>90</top>
                     <width>1695</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
@@ -691,7 +691,7 @@
                     <top>978</top>
                     <width>1695</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -702,7 +702,7 @@
                     <top>90</top>
                     <width>735</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
@@ -710,14 +710,14 @@
                     <top>978</top>
                     <width>735</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
                 <control type="image">
                     <left>825</left>
                     <top>90</top>
                     <width>1020</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
@@ -725,7 +725,7 @@
                     <top>978</top>
                     <width>1020</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -736,7 +736,7 @@
                     <top>90</top>
                     <width>600</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
@@ -744,14 +744,14 @@
                     <top>978</top>
                     <width>600</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
                 <control type="image">
                     <left>690</left>
                     <top>90</top>
                     <width>1155</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
@@ -759,7 +759,7 @@
                     <top>978</top>
                     <width>1155</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -770,7 +770,7 @@
                     <top>630</top>
                     <width>1875</width>
                     <height>360</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
@@ -778,7 +778,7 @@
                     <top>978</top>
                     <width>1875</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
             </control>
         </control>

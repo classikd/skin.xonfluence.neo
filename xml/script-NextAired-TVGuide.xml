@@ -159,14 +159,14 @@
                     <top>0</top>
                     <width>450</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                 </control>
                 <control type="image">
                     <left>0</left>
                     <top>888</top>
                     <width>450</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
                 <control type="label">
                     <left>30</left>
@@ -202,14 +202,14 @@
                     <top>0</top>
                     <width>450</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                 </control>
                 <control type="image">
                     <left>0</left>
                     <top>888</top>
                     <width>450</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
                 <control type="label">
                     <left>30</left>
@@ -245,14 +245,14 @@
                     <top>0</top>
                     <width>450</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                 </control>
                 <control type="image">
                     <left>0</left>
                     <top>888</top>
                     <width>450</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
                 <control type="label">
                     <left>30</left>
@@ -288,14 +288,14 @@
                     <top>0</top>
                     <width>450</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                 </control>
                 <control type="image">
                     <left>0</left>
                     <top>888</top>
                     <width>450</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
                 <control type="label">
                     <left>30</left>
@@ -331,14 +331,14 @@
                     <top>0</top>
                     <width>450</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                 </control>
                 <control type="image">
                     <left>0</left>
                     <top>888</top>
                     <width>450</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
                 <control type="label">
                     <left>30</left>
@@ -374,14 +374,14 @@
                     <top>0</top>
                     <width>450</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                 </control>
                 <control type="image">
                     <left>0</left>
                     <top>888</top>
                     <width>450</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
                 <control type="label">
                     <left>30</left>
@@ -417,14 +417,14 @@
                     <top>0</top>
                     <width>450</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                 </control>
                 <control type="image">
                     <left>0</left>
                     <top>888</top>
                     <width>450</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
                 <control type="label">
                     <left>30</left>

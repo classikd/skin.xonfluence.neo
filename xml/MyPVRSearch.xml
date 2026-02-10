@@ -27,14 +27,14 @@
                     <top>90</top>
                     <width>1755</width>
                     <height>900</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="15">ContentPanel.png</texture>
                 </control>
                 <control type="image">
                     <left>82</left>
                     <top>978</top>
                     <width>1755</width>
                     <height>96</height>
-                    <texture border="15">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
             </control>
         </control>

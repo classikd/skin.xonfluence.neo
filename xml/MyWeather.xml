@@ -52,7 +52,7 @@
                     <top>0</top>
                     <width>750</width>
                     <height>930</height>
-                    <texture border="20">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="20">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
@@ -60,14 +60,14 @@
                     <top>918</top>
                     <width>750</width>
                     <height>96</height>
-                    <texture border="10">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="10">ContentPanelMirror.png</texture>
                 </control>
                 <control type="image">
                     <left>12</left>
                     <top>8</top>
                     <width>726</width>
                     <height>68</height>
-                    <texture>$VAR[DialogPath]dialogheader.png</texture>
+                    <texture>dialogheader.png</texture>
                 </control>
                 <control type="label">
                     <description>header label</description>
@@ -416,7 +416,7 @@
                     <top>0</top>
                     <width>975</width>
                     <height>930</height>
-                    <texture border="20">$VAR[DialogPath]ContentPanel.png</texture>
+                    <texture border="20">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
@@ -424,14 +424,14 @@
                     <top>918</top>
                     <width>975</width>
                     <height>96</height>
-                    <texture border="10">$VAR[DialogPath]ContentPanelMirror.png</texture>
+                    <texture border="10">ContentPanelMirror.png</texture>
                 </control>
                 <control type="image">
                     <left>12</left>
                     <top>8</top>
                     <width>951</width>
                     <height>68</height>
-                    <texture>$VAR[DialogPath]dialogheader.png</texture>
+                    <texture>dialogheader.png</texture>
                 </control>
                 <control type="group" id="50">
                     <include>WeatherDaily</include>

@@ -506,8 +506,8 @@
         <onload condition="System.HasAddon(script.tvtunes)">RunScript(script.tvtunes,backend=True)</onload>
     </include>
     <variable name="SelectBack">
-        <value condition="![Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]">$VAR[DialogPath]DialogBack.png</value>
-        <value>$VAR[DialogPath]DialogBack2.png</value>
+        <value condition="![Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]">DialogBack.png</value>
+        <value>DialogBack2.png</value>
     </variable>
     <variable name="typehackflagging">
         <value condition="[String.Contains(ListItem.FilenameAndPath,bluray) | String.Contains(ListItem.FilenameAndPath,bdrip) | String.Contains(ListItem.FilenameAndPath,brrip) | String.Contains(ListItem.FilenameAndPath,bd25) | String.Contains(ListItem.FilenameAndPath,bd50)]">bluray</value>
@@ -680,7 +680,7 @@
             <top>24</top>
             <width>$PARAM[DialogHeaderWidth]</width>
             <height>60</height>
-            <texture>$VAR[DialogPath]dialogheader.png</texture>
+            <texture>dialogheader.png</texture>
         </control>
         <control type="button">
             <description>Close Window button</description>
@@ -3067,119 +3067,64 @@
         <onunload condition="Skin.HasSetting(ScriptDisableWatchItLater) | [!Skin.HasSetting(ScriptDisableWatchItLater) + !System.HasAddon(script.simpleplaylists)]">Skin.Setbool(DisableWatchItLater)</onunload>
         <onunload condition="!Skin.HasSetting(ScriptDisableWatchItLater) + System.HasAddon(script.simpleplaylists)">Skin.Reset(DisableWatchItLater)</onunload>
     </include>
-    <include name="MenuButtonClassic">
-        <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">lf_classic/button/MenuItemFO.png</texturefocus>
-    </include>
     <include name="MenuButtonModern">
-        <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">lf_modern/button/button-focus.png</texturefocus>
-    </include>
-    <include name="MenuButtonMax">
-        <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">lf_max/button/button-focus.png</texturefocus>
+        <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">button/button-focus.png</texturefocus>
     </include>
     <include name="MenuButton">
-        <include condition="String.IsEmpty(Skin.String(ButtonLAF))">MenuButtonClassic</include>
-        <include condition="Skin.String(ButtonLAF,Modern)">MenuButtonModern</include>
-        <include condition="Skin.String(ButtonLAF,Max)">MenuButtonMax</include>
+        <include>MenuButtonModern</include>
         <texturenofocus border="5">MenuItemNF.png</texturenofocus>
-    </include>
-    <include name="ButtonClassic">
-        <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">lf_classic/button/button-focus2.png</texturefocus>
     </include>
     <include name="ButtonModern">
-        <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">lf_modern/button/button-focus.png</texturefocus>
-    </include>
-    <include name="ButtonMax">
-        <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">lf_max/button/button-focus.png</texturefocus>
+        <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">button/button-focus.png</texturefocus>
     </include>
     <include name="NormalButton">
-        <include condition="String.IsEmpty(Skin.String(ButtonLAF))">ButtonClassic</include>
-        <include condition="Skin.String(ButtonLAF,Modern)">ButtonModern</include>
-        <include condition="Skin.String(ButtonLAF,Max)">ButtonMax</include>
+        <include>ButtonModern</include>
         <texturenofocus border="5">MenuItemNF.png</texturenofocus>
     </include>
-    <include name="AltButtonClassic">
-        <alttexturefocus border="5" colordiffuse="$VAR[MainColorOne]">lf_classic/button/button-focus2.png</alttexturefocus>
-    </include>
     <include name="AltButtonModern">
-        <alttexturefocus border="5" colordiffuse="$VAR[MainColorOne]">lf_modern/button/button-focus.png</alttexturefocus>
-    </include>
-    <include name="AltButtonMax">
-        <alttexturefocus border="5" colordiffuse="$VAR[MainColorOne]">lf_max/button/button-focus.png</alttexturefocus>
+        <alttexturefocus border="5" colordiffuse="$VAR[MainColorOne]">button/button-focus.png</alttexturefocus>
     </include>
     <include name="AltButton">
-        <include condition="String.IsEmpty(Skin.String(ButtonLAF))">AltButtonClassic</include>
-        <include condition="Skin.String(ButtonLAF,Modern)">AltButtonModern</include>
-        <include condition="Skin.String(ButtonLAF,Max)">AltButtonMax</include>
+        <include>AltButtonModern</include>
         <alttexturenofocus border="5">MenuItemNF.png</alttexturenofocus>
-    </include>
-    <include name="RadioButtonClassic">
-        <radiowidth>36</radiowidth>
-        <radioheight>36</radioheight>
-        <textureradioonfocus colordiffuse="$VAR[MainColorOne]">lf_classic/radio/radiobutton-focus.png</textureradioonfocus>
-        <textureradioonnofocus colordiffuse="$VAR[MainColorOne]">lf_classic/radio/radiobutton-focus.png</textureradioonnofocus>
-        <textureradioofffocus>lf_classic/radio/radiobutton-nofocus.png</textureradioofffocus>
-        <textureradiooffnofocus>lf_classic/radio/radiobutton-nofocus.png</textureradiooffnofocus>
-        <textureradioondisabled colordiffuse="40FFFFFF">lf_classic/radio/radiobutton-focus.png</textureradioondisabled>
-        <textureradiooffdisabled colordiffuse="40FFFFFF">lf_classic/radio/radiobutton-nofocus.png</textureradiooffdisabled>
     </include>
     <include name="RadioButtonModern">
         <radiowidth>90</radiowidth>
         <radioheight>56</radioheight>
-        <textureradioonfocus>lf_modern/radio/radiobutton-on.png</textureradioonfocus>
-        <textureradioonnofocus>lf_modern/radio/radiobutton-on.png</textureradioonnofocus>
-        <textureradioofffocus>lf_modern/radio/radiobutton-off.png</textureradioofffocus>
-        <textureradiooffnofocus>lf_modern/radio/radiobutton-off.png</textureradiooffnofocus>
-        <textureradioondisabled colordiffuse="40FFFFFF">lf_modern/radio/radiobutton-on.png</textureradioondisabled>
-        <textureradiooffdisabled colordiffuse="40FFFFFF">lf_modern/radio/radiobutton-off.png</textureradiooffdisabled>
-    </include>
-    <include name="SpinControlClassic">
-        <textureup>lf_classic/spin/scroll-up.png</textureup>
-        <texturedown>lf_classic/spin/scroll-down.png</texturedown>
-        <textureupdisabled colordiffuse="40FFFFFF">lf_classic/spin/scroll-up.png</textureupdisabled>
-        <texturedowndisabled colordiffuse="40FFFFFF">lf_classic/spin/scroll-down.png</texturedowndisabled>
-        <textureupfocus>lf_classic/spin/scroll-up-focus.png</textureupfocus>
-        <texturedownfocus>lf_classic/spin/scroll-down-focus.png</texturedownfocus>
+        <textureradioonfocus>radio/radiobutton-on.png</textureradioonfocus>
+        <textureradioonnofocus>radio/radiobutton-on.png</textureradioonnofocus>
+        <textureradioofffocus>radio/radiobutton-off.png</textureradioofffocus>
+        <textureradiooffnofocus>radio/radiobutton-off.png</textureradiooffnofocus>
+        <textureradioondisabled colordiffuse="40FFFFFF">radio/radiobutton-on.png</textureradioondisabled>
+        <textureradiooffdisabled colordiffuse="40FFFFFF">radio/radiobutton-off.png</textureradiooffdisabled>
     </include>
     <include name="SpinControlModern">
-        <textureup>lf_modern/spin/scroll-up.png</textureup>
-        <texturedown>lf_modern/spin/scroll-down.png</texturedown>
-        <textureupdisabled colordiffuse="40FFFFFF">lf_modern/spin/scroll-up.png</textureupdisabled>
-        <texturedowndisabled colordiffuse="40FFFFFF">lf_modern/spin/scroll-down.png</texturedowndisabled>
-        <textureupfocus>lf_modern/spin/scroll-up-focus.png</textureupfocus>
-        <texturedownfocus>lf_modern/spin/scroll-down-focus.png</texturedownfocus>
+        <textureup>spin/scroll-up.png</textureup>
+        <texturedown>spin/scroll-down.png</texturedown>
+        <textureupdisabled colordiffuse="40FFFFFF">spin/scroll-up.png</textureupdisabled>
+        <texturedowndisabled colordiffuse="40FFFFFF">spin/scroll-down.png</texturedowndisabled>
+        <textureupfocus>spin/scroll-up-focus.png</textureupfocus>
+        <texturedownfocus>spin/scroll-down-focus.png</texturedownfocus>
     </include>
-    <include name="DownControlClassic">
-        <texturenofocus>lf_classic/spin/scroll-down.png</texturenofocus>
-        <texturefocus>lf_classic/spin/scroll-down-focus.png</texturefocus>
-    </include>
-    <include name="UpControlClassic">
-        <texturenofocus>lf_classic/spin/scroll-up.png</texturenofocus>
-        <texturefocus>lf_classic/spin/scroll-up-focus.png</texturefocus>
-    </include>
-        <include name="DownControlModern">
-        <texturenofocus>lf_modern/spin/scroll-down.png</texturenofocus>
-        <texturefocus>lf_modern/spin/scroll-down-focus.png</texturefocus>
+    <include name="DownControlModern">
+        <texturenofocus>spin/scroll-down.png</texturenofocus>
+        <texturefocus>spin/scroll-down-focus.png</texturefocus>
     </include>
     <include name="UpControlModern">
-        <texturenofocus>lf_modern/spin/scroll-up.png</texturenofocus>
-        <texturefocus>lf_modern/spin/scroll-up-focus.png</texturefocus>
+        <texturenofocus>spin/scroll-up.png</texturenofocus>
+        <texturefocus>spin/scroll-up-focus.png</texturefocus>
     </include>
     <include name="DialogCloseButton">
         <width>96</width>
         <height>48</height>
         <label></label>
         <font></font>
-        <include condition="String.IsEmpty(Skin.String(DialogLAF))">DialogCloseButtonClassic</include>
-        <include condition="!String.IsEmpty(Skin.String(DialogLAF))">DialogCloseButtonModern</include>
+        <include>DialogCloseButtonModern</include>
         <visible>system.getbool(input.enablemouse)</visible>
     </include>
-    <include name="DialogCloseButtonClassic">
-        <texturefocus colordiffuse="$VAR[MainColorOne]">lf_classic/DialogCloseButton-focus.png</texturefocus>
-        <texturenofocus>lf_classic/DialogCloseButton.png</texturenofocus>
-    </include>
     <include name="DialogCloseButtonModern">
-        <texturefocus colordiffuse="$VAR[MainColorOne]">lf_modern/DialogCloseButton-focus.png</texturefocus>
-        <texturenofocus>lf_modern/DialogCloseButton.png</texturenofocus>
+        <texturefocus colordiffuse="$VAR[MainColorOne]">DialogCloseButton-focus.png</texturefocus>
+        <texturenofocus>DialogCloseButton.png</texturenofocus>
     </include>
     <include name="FavListDialog">
         <control type="list" id="450">
@@ -3363,7 +3308,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>45</height>
-                    <texture border="20,19,20,0">$VAR[DialogPath]DialogContextTop.png</texture>
+                    <texture border="20,19,20,0">DialogContextTop.png</texture>
                 </control>
                 <control type="button" id="100">
                     <description>Close Window button</description>
@@ -3387,7 +3332,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">$VAR[DialogPath]DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
                 </control>
                 <control type="button" id="200">
                     <description>Exit button</description>
@@ -3420,7 +3365,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">$VAR[DialogPath]DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
                 </control>
                 <control type="button" id="300">
                     <description>Shutdown button</description>
@@ -3454,7 +3399,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">$VAR[DialogPath]DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
                 </control>
                 <control type="button" id="400">
                     <description>Custom Shutdown Timer</description>
@@ -3487,7 +3432,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">$VAR[DialogPath]DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
                 </control>
                 <control type="button" id="500">
                     <description>Cancel Shutdown Timer</description>
@@ -3519,7 +3464,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">$VAR[DialogPath]DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
                 </control>
                 <control type="button" id="600">
                     <description>Suspend button</description>
@@ -3552,7 +3497,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">$VAR[DialogPath]DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
                 </control>
                 <control type="button" id="700">
                     <description>Hibernate button</description>
@@ -3585,7 +3530,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">$VAR[DialogPath]DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
                 </control>
                 <control type="button" id="800">
                     <description>Reboot button</description>
@@ -3618,7 +3563,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">$VAR[DialogPath]DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
                 </control>
                 <control type="button" id="800">
                     <description>Reboot button</description>
@@ -3652,7 +3597,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">$VAR[DialogPath]DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
                 </control>
                 <control type="button" id="900">
                     <description>Logoff button</description>
@@ -3685,7 +3630,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">$VAR[DialogPath]DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
                 </control>
                 <control type="togglebutton" id="1000">
                     <description>Master mode button</description>
@@ -3721,7 +3666,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>105</height>
-                    <texture border="25,5,25,5">$VAR[DialogPath]DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
                 </control>
                 <control type="textbox">
                     <left>38</left>
@@ -3745,7 +3690,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">$VAR[DialogPath]DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
                 </control>
                 <control type="button" id="1200">
                     <description>Inhibit idle shutdown</description>
@@ -3777,7 +3722,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">$VAR[DialogPath]DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
                 </control>
                 <control type="button" id="1300">
                     <description>Allow idle shutdown</description>
@@ -3808,7 +3753,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">$VAR[DialogPath]DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
                 </control>
                 <control type="button" id="1400">
                     <description>Skin Settings button</description>
@@ -3836,7 +3781,7 @@
                 <left>0</left>
                 <width>510</width>
                 <height>38</height>
-                <texture border="20,0,19,20">$VAR[DialogPath]DialogContextBottom.png</texture>
+                <texture border="20,0,19,20">DialogContextBottom.png</texture>
             </control>
         </control>
 	</include>

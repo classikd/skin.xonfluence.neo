@@ -15,7 +15,7 @@
                 <width>1020</width>
                 <height>705</height>
                 <colordiffuse>BBFFFFFF</colordiffuse>
-                <texture border="40">$VAR[DialogPath]DialogBack2.png</texture>
+                <texture border="40">DialogBack2.png</texture>
             </control>
             <control type="image">
                 <description>Dialog Header image</description>
@@ -23,7 +23,7 @@
                 <top>24</top>
                 <width>900</width>
                 <height>60</height>
-                <texture>$VAR[DialogPath]dialogheader.png</texture>
+                <texture>dialogheader.png</texture>
             </control>
             <control type="button">
                 <description>Close Window button</description>

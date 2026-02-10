@@ -3274,19 +3274,9 @@
         <value condition="Skin.String(SideBladeLabel,Small)">$LOCALIZE[31977]</value>
         <value>$LOCALIZE[571]</value>
     </variable>
-    <variable name="DialogLAFValue">
-        <value condition="Skin.String(DialogLAF,Modern)">$LOCALIZE[31985]</value>
-        <value condition="Skin.String(DialogLAF,Max)">$LOCALIZE[31986]</value>
-        <value>$LOCALIZE[31984]</value>
-    </variable>
     <variable name="OSDLAFValue">
         <value condition="Skin.String(OSDLAF,Modern)">$LOCALIZE[31985]</value>
         <value condition="Skin.String(OSDLAF,Max)">$LOCALIZE[31986]</value>
-        <value>$LOCALIZE[31984]</value>
-    </variable>
-    <variable name="ButtonLAFValue">
-        <value condition="Skin.String(ButtonLAF,Modern)">$LOCALIZE[31985]</value>
-        <value condition="Skin.String(ButtonLAF,Max)">$LOCALIZE[31986]</value>
         <value>$LOCALIZE[31984]</value>
     </variable>
     <variable name="MenuLAFValue">
@@ -3636,19 +3626,13 @@
         <value>[COLOR=selected]$INFO[Skin.String(MultiImageTimer)][/COLOR] s</value>
     </variable>
     <variable name="SelectMenuItem">
-        <value condition="Skin.String(ButtonLAF,Modern)">lf_modern/button/button-focus.png</value>
-        <value condition="Skin.String(ButtonLAF,Max)">lf_max/button/button-focus.png</value>
-        <value>lf_classic/button/MenuItemFO.png</value>
+        <value>button/MenuItemFO.png</value>
     </variable>
     <variable name="SelectButton1">
-        <value condition="Skin.String(ButtonLAF,Modern)">lf_modern/button/button-focus.png</value>
-        <value condition="Skin.String(ButtonLAF,Max)">lf_max/button/button-focus.png</value>
-        <value>lf_classic/button/button-focus.png</value>
+        <value>button/button-focus.png</value>
     </variable>
     <variable name="SelectButton2">
-        <value condition="Skin.String(ButtonLAF,Modern)">lf_modern/button/button-focus.png</value>
-        <value condition="Skin.String(ButtonLAF,Max)">lf_max/button/button-focus.png</value>
-        <value>lf_classic/button/button-focus2.png</value>
+        <value>button/button-focus2.png</value>
     </variable>
     <variable name="GenreLabelFanart">
         <value condition="String.IsEmpty(Skin.String(MovieGenreFanart.path))"></value>
@@ -3747,11 +3731,7 @@
         <value condition="!String.IsEmpty(Skin.String(SkinFanart.path))">$INFO[Skin.String(SkinFanart.path)]</value>
         <value></value>
     </variable>
-    <variable name="DialogPath">
-        <value condition="!String.IsEmpty(Skin.String(DialogLAF))">lf_modern/</value>
-        <value>lf_classic/</value>
-    </variable>
-	
+
 	<variable name="SeasonEpisodeLabel">
         <value condition="String.IsEmpty(ListItem.Season)">$INFO[ListItem.Title] - $INFO[ListItem.Episode]</value>
         <value condition="Integer.IsLess(ListItem.Episode,10) + Integer.IsLess(ListItem.Season,10)">$INFO[ListItem.Title] - $INFO[ListItem.Season,s0,]$INFO[ListItem.Episode,e0,]</value>

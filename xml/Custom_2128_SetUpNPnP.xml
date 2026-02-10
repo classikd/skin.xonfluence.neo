@@ -12,7 +12,7 @@
             <posy>0</posy>
             <width>915</width>
             <height>360</height>
-            <texture border="40">$VAR[DialogPath]DialogBack.png</texture>
+            <texture border="40">DialogBack.png</texture>
         </control>
         <control type="image">
             <description>Dialog Header image</description>
@@ -20,7 +20,7 @@
             <posy>24</posy>
             <width>795</width>
             <height>60</height>
-            <texture>$VAR[DialogPath]dialogheader.png</texture>
+            <texture>dialogheader.png</texture>
         </control>
         <control type="label">
             <description>header label</description>

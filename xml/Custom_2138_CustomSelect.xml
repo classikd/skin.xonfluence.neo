@@ -38,7 +38,7 @@
                 <top>24</top>
                 <width>1155</width>
                 <height>60</height>
-                <texture>$VAR[DialogPath]dialogheader.png</texture>
+                <texture>dialogheader.png</texture>
             </control>
             <control type="label" id="1">
                 <description>header label</description>
