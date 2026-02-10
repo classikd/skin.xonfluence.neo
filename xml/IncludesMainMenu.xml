@@ -44,14 +44,6 @@
             <texture border="0,6,0,6">HomeBack.png</texture>
             <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
         </control>
-        <control type="image">
-            <left>0</left>
-            <top>8</top>
-            <width>1920</width>
-            <height>9</height>
-            <texture>HomeOverlay1.png</texture>
-            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
-        </control>
     </include>
 	
     <include name="HomeImagePre2">
@@ -61,14 +53,6 @@
             <width>2220</width>
             <height>158</height>
             <texture border="0,6,0,6">HomeBack.png</texture>
-            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
-        </control>
-        <control type="image">
-            <left>0</left>
-            <top>8</top>
-            <width>1920</width>
-            <height>9</height>
-            <texture>HomeOverlay1.png</texture>
             <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
         </control>
     </include>
