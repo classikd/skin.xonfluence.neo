@@ -490,6 +490,14 @@
         	</control>
         	<include>MusicArtOverVisualisation</include>
     	</control>
+        <control type="image">
+            <left>0</left>
+            <right>0</right>
+            <top>0</top>
+            <bottom>0</bottom>
+            <texture>black.png</texture>
+            <visible>Player.HasVideo</visible>
+        </control>
         <control type="videowindow">
             <depth>DepthBackground</depth>
             <include>Dimensions_Fullscreen</include>
