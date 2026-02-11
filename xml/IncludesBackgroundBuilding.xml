@@ -490,6 +490,23 @@
         	</control>
         	<include>MusicArtOverVisualisation</include>
     	</control>
+        
+        <!-- Floor -->
+		<control type="image">
+            <depth>DepthFloor</depth>
+            <left>-30</left>
+            <top></top>
+            <bottom>0</bottom>
+            <width>1980</width>
+            <height>367</height>
+            <texture>floor.png</texture>
+            <animation effect="slide" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
+            <animation effect="slide" time="200" condition="Window.Next(Home)">WindowClose</animation>
+            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+            <animation effect="fade" start="100" end="90" time="0" condition="String.IsEmpty(Skin.String(HomeTrans)) + Skin.String(HomeFloor,Transparent)">Conditional</animation>
+            <visible>!String.IsEmpty(Skin.String(HomeFloor)) + Window.IsActive(home)</visible>
+        </control>
+
         <control type="image">
             <left>0</left>
             <right>0</right>
@@ -526,21 +543,6 @@
         </control>
     </include>
     <include name="ContentPanelBackgrounds">
-        <control type="image">
-            <depth>DepthFloor</depth>
-            <left>-30</left>
-            <top></top>
-            <bottom>0</bottom>
-            <width>1980</width>
-            <height>150</height>
-            <texture>floor.png</texture>
-            <animation effect="rotatex" end="45" time="0" center="930,0" condition="true">Conditional</animation>
-            <animation effect="slide" start="0,15" end="0,0" time="150" condition="Window.Previous(Home)">WindowOpen</animation>
-            <animation effect="slide" start="0,0" end="0,15" time="150" condition="Window.Next(Home)">WindowClose</animation>
-            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
-            <animation effect="fade" start="100" end="65" time="0" condition="String.IsEmpty(Skin.String(HomeTrans)) + Skin.String(HomeFloor,Transparent)">Conditional</animation>
-            <visible>!String.IsEmpty(Skin.String(HomeFloor))</visible>
-        </control>
         <control type="group">
             <include>Window_OpenClose_Animation</include>
             <control type="group">

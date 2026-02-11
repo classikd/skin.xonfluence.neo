@@ -9,17 +9,6 @@
 	<onload>SetProperty(custom-grouping,$VAR[SkinShortcutsGrouping])</onload>
 	<controls>
 		<include>CommonBackground</include>
-        <control type="image">
-            <left>0</left>
-            <top>150r</top>
-            <width>1920</width>
-            <height>150</height>
-            <texture>floor.png</texture>
-            <include>VisibleFadeEffect</include>
-            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
-            <animation effect="fade" start="100" end="65" time="0" condition="String.IsEmpty(Skin.String(HomeTrans)) + Skin.String(HomeFloor,Transparent)">Conditional</animation>
-            <visible>!String.IsEmpty(Skin.String(HomeFloor))</visible>
-        </control>
         <include content="CommonWindowHeader">
             <param name="Icon" value="icon_system" />
             <param name="Label" value="$LOCALIZE[31517]" />
