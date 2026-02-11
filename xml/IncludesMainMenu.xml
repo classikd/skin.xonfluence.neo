@@ -1985,9 +1985,9 @@
             <itemgap>15</itemgap>
             <control type="radiobutton" id="23">
                 <description>Power push button</description>
-                <textureradioonfocus>icon_power.png</textureradioonfocus>
+                <textureradioonfocus colordiffuse="FF000000">icon_power.png</textureradioonfocus>
                 <textureradioonnofocus>icon_power.png</textureradioonnofocus>
-                <textureradioofffocus>icon_power.png</textureradioofffocus>
+                <textureradioofffocus colordiffuse="FF000000">icon_power.png</textureradioofffocus>
                 <textureradiooffnofocus>icon_power.png</textureradiooffnofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texturefocus>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
@@ -2005,9 +2005,9 @@
             </control>
 			<control type="radiobutton" id="22">
                 <description>Favourites push button</description>
-                <textureradioonfocus>icon_favourites.png</textureradioonfocus>
+                <textureradioonfocus colordiffuse="FF000000">icon_favourites.png</textureradioonfocus>
                 <textureradioonnofocus>icon_favourites.png</textureradioonnofocus>
-                <textureradioofffocus>icon_favourites.png</textureradioofffocus>
+                <textureradioofffocus colordiffuse="FF000000">icon_favourites.png</textureradioofffocus>
                 <textureradiooffnofocus>icon_favourites.png</textureradiooffnofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texturefocus>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
@@ -2025,9 +2025,9 @@
             </control>
             <control type="radiobutton" id="25">
                 <description>GlobSearch push button</description>
-                <textureradioonfocus>icon_search.png</textureradioonfocus>
+                <textureradioonfocus colordiffuse="FF000000">icon_search.png</textureradioonfocus>
                 <textureradioonnofocus>icon_search.png</textureradioonnofocus>
-                <textureradioofffocus>icon_search.png</textureradioofffocus>
+                <textureradioofffocus colordiffuse="FF000000">icon_search.png</textureradioofffocus>
                 <textureradiooffnofocus>icon_search.png</textureradiooffnofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texturefocus>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
