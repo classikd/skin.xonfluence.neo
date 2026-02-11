@@ -399,14 +399,7 @@
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
                     </control>
-                    <control type="image">
-                        <left>255</left>
-                        <top>195</top>
-                        <width>45</width>
-                        <height>45</height>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>ListItem.IsResumable</visible>
-                    </control>
+
                     <control type="image">
                         <left>255</left>
                         <top>195</top>
@@ -416,6 +409,18 @@
                         <texture>$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
                     </control>
+
+                    <control type="progress">
+                        <left>5</left>
+                        <top>232</top>
+                        <width>310</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                    </control> 
+
                 </itemlayout>
                 <focusedlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(TVShows) + !Container.Content(Sets)" height="279" width="324">
                     <control type="image">
@@ -486,14 +491,7 @@
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
                     </control>
-                    <control type="image">
-                        <left>255</left>
-                        <top>195</top>
-                        <width>45</width>
-                        <height>45</height>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>ListItem.IsResumable</visible>
-                    </control>
+
                     <control type="image">
                         <left>255</left>
                         <top>195</top>
@@ -503,6 +501,19 @@
                         <texture>$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
                     </control>
+
+                    <control type="progress">
+                        <left>5</left>
+                        <top>232</top>
+                        <width>310</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="FFFF0000">white.png</midtexture>
+                    </control> 
+
+
                 </focusedlayout>
                 <itemlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="419" width="324">
                     <control type="image">
