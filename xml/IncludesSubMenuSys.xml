@@ -17,7 +17,7 @@
                 <right>0</right>
                 <top>0</top>
                 <height>52</height>
-                <texture border="5">home-submenu-bg.png</texture>
+                <texture border="5" colordiffuse="$VAR[MainColorOne]">home-submenu-bg.png</texture>
                 <visible>
                     String.IsEqual(Container(9000).ListItem.Property(SubMenu),Videos) + Integer.IsGreater(Container(9010).NumItems,0) |
                     String.IsEqual(Container(9000).ListItem.Property(SubMenu),Movies) + Integer.IsGreater(Container(9016).NumItems,0) |
@@ -330,18 +330,26 @@
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
-                    <width>290</width>
+                    <width>1</width>
                     <height>52</height>
-                    <texture border="5">HomeSubNF.png</texture>
-                    <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                    <texture border="1">black.png</texture>
+                    <colordiffuse>20FFFFFF</colordiffuse>
+                </control>
+                <control type="image">
+                    <left>290</left>
+                    <top>0</top>
+                    <width>1</width>
+                    <height>52</height>
+                    <texture border="1">black.png</texture>
+                    <colordiffuse>20FFFFFF</colordiffuse>
                 </control>
                 <control type="label">
                     <left>8</left>
                     <top>0</top>
                     <height>52</height>
                     <width>274</width>
-                    <font>font12</font>
-                    <textcolor>grey2</textcolor>
+                    <font>font11_title</font>
+                    <textcolor>black</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
                     <label>$INFO[ListItem.label]</label>
@@ -353,40 +361,36 @@
                     <top>0</top>
                     <width>290</width>
                     <height>52</height>
-                    <texture border="5">HomeSubNF.png</texture>
+                    <texture border="5" colordiffuse="$VAR[MainColorOne]">homesub-hover.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                    <visible>$PARAM[visibility]</visible>
+                </control>
+                <control type="label">
+                    <left>8</left>
+                    <top>0</top>
+                    <height>52</height>
+                    <width>274</width>
+                    <font>font11_title</font>
+                    <textcolor>black</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.label]</label>
                 </control>
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
-                    <width>290</width>
+                    <width>1</width>
                     <height>52</height>
-                    <texture border="5" colordiffuse="$VAR[MainColorOne]">HomeSubFO.png</texture>
-                    <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
-                    <visible>$PARAM[visibility]</visible>
+                    <texture border="1">black.png</texture>
+                    <colordiffuse>20FFFFFF</colordiffuse>
                 </control>
-                <control type="label">
-                    <left>8</left>
+                <control type="image">
+                    <left>290</left>
                     <top>0</top>
+                    <width>1</width>
                     <height>52</height>
-                    <width>274</width>
-                    <font>font12</font>
-                    <textcolor>grey2</textcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$INFO[ListItem.label]</label>
-                </control>
-                <control type="label">
-                    <left>8</left>
-                    <top>0</top>
-                    <height>52</height>
-                    <width>274</width>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$INFO[ListItem.label]</label>
-                    <visible>$PARAM[visibility]</visible>
+                    <texture border="1">black.png</texture>
+                    <colordiffuse>20FFFFFF</colordiffuse>
                 </control>
             </focusedlayout>
 		</definition>	

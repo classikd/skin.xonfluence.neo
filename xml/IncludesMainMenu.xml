@@ -113,7 +113,7 @@
             <control type="image">
                 <left>0</left>
                 <top>6</top>
-                <width>1</width>
+                <width>50</width>
                 <height>78</height>
                 <texture>HomeSeperator.png</texture>
             </control>
@@ -229,9 +229,9 @@
 	    <param name="menuitemicon">$INFO[ListItem.Property(Icon)]</param>
 		<definition>
             <left>-164</left>
-            <top>8</top>
+            <top>0</top>
             <width>2247</width>
-            <height>135</height>
+            <height>158</height>
             <onleft condition="!Skin.HasSetting(FixedEndingMenu)">9000</onleft>
             <onright condition="!Skin.HasSetting(FixedEndingMenu)">9000</onright>
             <onup condition="!Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(FloorGlobalSearch)">610</onup>
@@ -241,28 +241,28 @@
             <focusposition>3</focusposition>
             <movement>1</movement>
             <orientation>Horizontal</orientation>
-            <itemlayout height="135" width="321">
+            <itemlayout height="158" width="321">
                 <control type="image">
                     <left>0</left>
-                    <top>6</top>
+                    <top>0</top>
                     <width>1</width>
-                    <height>123</height>
+                    <height>158</height>
                     <texture>HomeSeperator.png</texture>
                 </control>
                 <control type="image">
                     <left>320</left>
-                    <top>6</top>
+                    <top>0</top>
                     <width>1</width>
-                    <height>123</height>
+                    <height>158</height>
                     <texture>HomeSeperator.png</texture>
                 </control>
                 <control type="label">
                     <left>8</left>
-                    <top>82</top>
+                    <top>90</top>
                     <width>306</width>
                     <height>45</height>
-                    <font>font30_title</font>
-                    <textcolor>grey3</textcolor>
+                    <font>font28_title</font>
+                    <textcolor>white</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
                     <scroll>true</scroll>
@@ -271,11 +271,11 @@
                 </control>
                 <control type="image">
                     <left>8</left>
-                    <top>0</top>
+                    <top>10</top>
                     <width>306</width>
                     <height>90</height>
                     <aspectratio>keep</aspectratio>
-                    <colordiffuse>33FFFFFF</colordiffuse>
+                    <colordiffuse>white</colordiffuse>
                     <texture>$PARAM[menuitemicon]</texture>
                     <animation effect="slide" start="0,0" end="0,30" time="0" condition="!String.IsEqual(Skin.String(MenuLAF),GraphText)">Conditional</animation>
                     <animation effect="zoom" end="160" center="auto" time="0" delay="0" condition="!String.IsEqual(Skin.String(MenuLAF),GraphText)">Conditional</animation>
@@ -284,25 +284,18 @@
             <focusedlayout height="90" width="321">
                 <control type="image">
                     <left>0</left>
-                    <top>6</top>
-                    <width>1</width>
-                    <height>123</height>
-                    <texture>HomeSeperator.png</texture>
-                </control>
-                <control type="image">
-                    <left>320</left>
-                    <top>6</top>
-                    <width>1</width>
-                    <height>123</height>
-                    <texture>HomeSeperator.png</texture>
+                    <top>0</top>
+                    <width>321</width>
+                    <height>158</height>
+                    <texture colordiffuse="$VAR[MainColorOne]">white.png</texture>
                 </control>
                 <control type="label">
                     <left>8</left>
-                    <top>82</top>
+                    <top>90</top>
                     <width>306</width>
                     <height>45</height>
                     <font>font30_title</font>
-                    <textcolor>grey3</textcolor>
+                    <textcolor>black</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
                     <label>$INFO[ListItem.Label]</label>
@@ -312,11 +305,11 @@
                 </control>
                 <control type="label">
                     <left>8</left>
-                    <top>82</top>
+                    <top>90</top>
                     <width>306</width>
                     <height>45</height>
                     <font>font30_title</font>
-                    <textcolor>$VAR[MainColorOne]</textcolor>
+                    <textcolor>black</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
                     <scroll>true</scroll>
@@ -326,11 +319,11 @@
                 </control>
                 <control type="image">
                     <left>8</left>
-                    <top>0</top>
+                    <top>10</top>
                     <width>306</width>
                     <height>90</height>
                     <aspectratio>keep</aspectratio>
-                    <colordiffuse>$VAR[MainColorOne]</colordiffuse>
+                    <colordiffuse>black</colordiffuse>
                     <texture>$PARAM[menuitemicon]</texture>
                     <animation effect="slide" start="0,0" end="0,30" time="0" condition="String.IsEqual(Skin.String(MenuLAF),Graph)">Conditional</animation>
                     <animation effect="slide" start="0,30" end="0,0" time="100" condition="String.IsEqual(Skin.String(MenuLAF),GraphFocused)">Focus</animation>
@@ -339,11 +332,11 @@
                 </control>
                 <control type="image">
                     <left>8</left>
-                    <top>0</top>
+                    <top>10</top>
                     <width>306</width>
                     <height>90</height>
                     <aspectratio>keep</aspectratio>
-                    <colordiffuse>33FFFFFF</colordiffuse>
+                    <colordiffuse>black</colordiffuse>
                     <texture>$PARAM[menuitemicon]</texture>
                     <animation effect="slide" start="0,0" end="0,30" time="0" condition="String.IsEqual(Skin.String(MenuLAF),Graph)">Conditional</animation>
                     <animation effect="zoom" end="160" center="auto" time="0" delay="0" condition="String.IsEqual(Skin.String(MenuLAF),Graph)">Conditional</animation>
