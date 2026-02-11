@@ -902,26 +902,6 @@
                 <visible>![Control.IsVisible(500) | Control.IsVisible(732)]</visible>
                 <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
             </control>
-            <control type="radiobutton" id="802">
-                <description>Volume Up Button</description>
-                <width>68</width>
-                <height>68</height>
-                <onclick>$VAR[VolumeStepUp]</onclick>
-                <onclick>VolumeUp</onclick>
-                <textureradioonfocus>FloorButtons/FloorVolPlus.png</textureradioonfocus>
-                <textureradioonnofocus>FloorButtons/FloorVolPlus.png</textureradioonnofocus>
-                <textureradioofffocus>FloorButtons/FloorVolPlus.png</textureradioofffocus>
-                <textureradiooffnofocus>FloorButtons/FloorVolPlus.png</textureradiooffnofocus>
-                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texturefocus>
-                <texturenofocus border="5">floor_button.png</texturenofocus>
-                <radiowidth>68</radiowidth>
-                <radioheight>68</radioheight>
-                <radioposx>1</radioposx>
-                <radioposy>1</radioposy>
-                <font></font>
-                <visible>Skin.HasSetting(EnableVolumeButtons)</visible>
-                <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
-            </control>
             <control type="radiobutton" id="803">
                 <description>Volume Down Button</description>
                 <width>68</width>
@@ -932,6 +912,26 @@
                 <textureradioonnofocus>FloorButtons/FloorVolMinus.png</textureradioonnofocus>
                 <textureradioofffocus>FloorButtons/FloorVolMinus.png</textureradioofffocus>
                 <textureradiooffnofocus>FloorButtons/FloorVolMinus.png</textureradiooffnofocus>
+                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texturefocus>
+                <texturenofocus border="5">floor_button.png</texturenofocus>
+                <radiowidth>68</radiowidth>
+                <radioheight>68</radioheight>
+                <radioposx>1</radioposx>
+                <radioposy>1</radioposy>
+                <font></font>
+                <visible>Skin.HasSetting(EnableVolumeButtons)</visible>
+                <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
+            </control>
+            <control type="radiobutton" id="802">
+                <description>Volume Up Button</description>
+                <width>68</width>
+                <height>68</height>
+                <onclick>$VAR[VolumeStepUp]</onclick>
+                <onclick>VolumeUp</onclick>
+                <textureradioonfocus>FloorButtons/FloorVolPlus.png</textureradioonfocus>
+                <textureradioonnofocus>FloorButtons/FloorVolPlus.png</textureradioonnofocus>
+                <textureradioofffocus>FloorButtons/FloorVolPlus.png</textureradioofffocus>
+                <textureradiooffnofocus>FloorButtons/FloorVolPlus.png</textureradiooffnofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texturefocus>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
                 <radiowidth>68</radiowidth>
