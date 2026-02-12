@@ -2000,7 +2000,7 @@
                 <top>0</top>
                 <width>68</width>
                 <height>68</height>
-                <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texture>
+                <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texture>
                 <visible>Control.HasFocus(23) + !Skin.HasSetting(HideHomePowerBtn)</visible>
             </control>
             <control type="radiobutton" id="23">
@@ -2045,7 +2045,7 @@
                 <top>0</top>
                 <width>68</width>
                 <height>68</height>
-                <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texture>
+                <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texture>
                 <visible>Control.HasFocus(22) + !Skin.HasSetting(HideFavorites)</visible>
             </control>
             <control type="radiobutton" id="22">
@@ -2090,7 +2090,7 @@
                 <top>0</top>
                 <width>68</width>
                 <height>68</height>
-                <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texture>
+                <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texture>
                 <visible>Control.HasFocus(25) + Skin.HasSetting(FloorGlobalSearch)</visible>
             </control>
             <control type="radiobutton" id="25">

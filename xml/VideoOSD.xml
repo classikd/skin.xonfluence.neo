@@ -46,7 +46,7 @@
             <action>seek</action>
             <texturesliderbar>seekslider2.png</texturesliderbar>
             <textureslidernib colordiffuse="$VAR[MainColorTwo]">OSD_slider_nibNF.png</textureslidernib>
-            <textureslidernibfocus colordiffuse="$VAR[MainColorTwo]">OSD_slider_nib.png</textureslidernibfocus>
+            <textureslidernibfocus colordiffuse="$VAR[MainColorTwo]">osd_slider_nib.png</textureslidernibfocus>
             <animation effect="fade" time="150">VisibleChange</animation>
             <animation effect="slide" end="-218,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HideArtWorkOSD)" reversible="true">Conditional</animation>
             <visible>!String.IsEqual(Player.Filenameandpath,Skin.String(KodiIntroVideo))</visible>

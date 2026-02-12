@@ -49,7 +49,7 @@
             <texturenofocus></texturenofocus>
             <texturesliderbar>OSD_slider_bg_2.png</texturesliderbar>
             <textureslidernib colordiffuse="$VAR[MainColorOne]">OSD_slider_nibNF.png</textureslidernib>
-            <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">OSD_slider_nib.png</textureslidernibfocus>
+            <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">osd_slider_nib.png</textureslidernibfocus>
             <onup>11</onup>
             <ondown>11</ondown>
             <onleft>11</onleft>

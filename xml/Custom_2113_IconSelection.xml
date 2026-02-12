@@ -290,9 +290,9 @@
                     <item>
                         <description>Skin Settings</description>
                         <label>$LOCALIZE[20077]</label>
-                        <icon>Xonfluence_logo.png</icon>
+                        <icon>Xonfluence_Logo.png</icon>
                         <onclick>Dialog.Close(2113)</onclick>
-                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Xonfluence_logo.png)</onclick>
+                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Xonfluence_Logo.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
                     </item>
                     <item>

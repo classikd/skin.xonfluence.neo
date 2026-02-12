@@ -880,7 +880,7 @@
                 <textureradioonnofocus>FloorButtons/FloorTrailer.png</textureradioonnofocus>
                 <textureradioofffocus colordiffuse="FF000000">FloorButtons/FloorTrailer.png</textureradioofffocus>
                 <textureradiooffnofocus>FloorButtons/FloorTrailer.png</textureradiooffnofocus>
-                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texturefocus>
+                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
                 <radiowidth>68</radiowidth>
                 <radioheight>68</radioheight>
@@ -903,7 +903,7 @@
                 <textureradioonnofocus>FloorButtons/FloorVolMinus.png</textureradioonnofocus>
                 <textureradioofffocus colordiffuse="FF000000">FloorButtons/FloorVolMinus.png</textureradioofffocus>
                 <textureradiooffnofocus>FloorButtons/FloorVolMinus.png</textureradiooffnofocus>
-                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texturefocus>
+                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
                 <radiowidth>68</radiowidth>
                 <radioheight>68</radioheight>
@@ -923,7 +923,7 @@
                 <textureradioonnofocus>FloorButtons/FloorVolPlus.png</textureradioonnofocus>
                 <textureradioofffocus colordiffuse="FF000000">FloorButtons/FloorVolPlus.png</textureradioofffocus>
                 <textureradiooffnofocus>FloorButtons/FloorVolPlus.png</textureradiooffnofocus>
-                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texturefocus>
+                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
                 <radiowidth>68</radiowidth>
                 <radioheight>68</radioheight>
@@ -942,7 +942,7 @@
                 <textureradioonnofocus>FloorButtons/FloorBack.png</textureradioonnofocus>
                 <textureradioofffocus colordiffuse="FF000000">FloorButtons/FloorBack.png</textureradioofffocus>
                 <textureradiooffnofocus>FloorButtons/FloorBack.png</textureradiooffnofocus>
-                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texturefocus>
+                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
                 <radiowidth>68</radiowidth>
                 <radioheight>68</radioheight>
@@ -961,7 +961,7 @@
                 <textureradioonnofocus>FloorButtons/FloorHome.png</textureradioonnofocus>
                 <textureradioofffocus colordiffuse="FF000000">FloorButtons/FloorHome.png</textureradioofffocus>
                 <textureradiooffnofocus>FloorButtons/FloorHome.png</textureradiooffnofocus>
-                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texturefocus>
+                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
                 <radiowidth>68</radiowidth>
                 <radioheight>68</radioheight>
@@ -987,7 +987,7 @@
                 <label>31003</label>
                 <font />
                 <onclick>ActivateWindow(PlayerControls)</onclick>
-                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texturefocus>
+                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
                 <onleft>50</onleft>
                 <onright>50</onright>
