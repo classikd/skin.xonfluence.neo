@@ -463,6 +463,18 @@
 	<include name="NowPlayingMediaControls">
 	    <control type="group">
             <top>548</top>
+
+            <control type="image">
+                <left>225</left>
+                <right>0</right>
+                <top>0</top>
+                <height>53</height>
+                <width>1500</width>
+                <texture border="5">current-playing-bg.png</texture>
+                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <visible>Skin.HasSetting(FloorGlobalSearch)</visible>
+            </control>
+
             <control type="image">
                 <left>0</left>
                 <right>0</right>
@@ -470,9 +482,10 @@
                 <height>53</height>
                 <width>1500</width>
                 <texture border="5">current-playing-bg.png</texture>
-                <include>SubMenuAnimation</include>
+                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <visible>!Skin.HasSetting(FloorGlobalSearch)</visible>
             </control>
-            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+
             <depth>DepthMenu-</depth>
             <description>Controls for currently playing media</description>
             <left>818r</left>
@@ -503,11 +516,10 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <font>font12</font>
-                <textcolor>grey2</textcolor>
+                <textcolor>white</textcolor>
                 <focusedcolor>black</focusedcolor>
                 <texturefocus flipy="true" border="5" colordiffuse="$VAR[MainColorOne]">HomeSubFO.png</texturefocus>
                 <texturenofocus flipy="true" border="5"></texturenofocus>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                 <pulseonselect>false</pulseonselect>
                 <label>137</label>
                 <onclick>RunScript(script.globalsearch)</onclick>

@@ -4,11 +4,10 @@
         <control type="group" id="9001">
             <depth>DepthMenu-</depth>
             <left>0</left>
-            <top>112</top>
+            <top>113</top>
             <onup>9000</onup>
             <ondown condition="!Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
             <ondown condition="Skin.HasSetting(LowerMainMenuBar)">21</ondown>
-            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
             <animation effect="slide" start="0,0" end="0,45" time="0" condition="!String.IsEmpty(Skin.String(MenuLAF))">Conditional</animation>
             
             <!-- Submenu bg -->
@@ -362,7 +361,6 @@
                     <width>290</width>
                     <height>52</height>
                     <texture border="5" colordiffuse="$VAR[MainColorOne]">homesub-hover.png</texture>
-                    <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                     <visible>$PARAM[visibility]</visible>
                 </control>
                 <control type="label">
