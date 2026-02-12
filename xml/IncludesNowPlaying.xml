@@ -9,8 +9,8 @@
             <control type="image">
                 <left>0</left>
                 <right>0</right>
-                <top>390</top>
-                <height>140</height>
+                <top>405</top>
+                <height>125</height>
                 <texture border="5">nowplaying-bg.png</texture>
                 <include>SubMenuAnimation</include>
             </control>
@@ -225,14 +225,14 @@
             <depth>DepthMenu</depth>
             <left>0</left>
             <top>70</top>
-            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
             <control type="image">
                 <left>0</left>
                 <right>0</right>
-                <top>390</top>
-                <height>140</height>
+                <top>405</top>
+                <height>125</height>
                 <texture border="5">nowplaying-bg.png</texture>
                 <include>SubMenuAnimation</include>
+                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
             </control>
             <visible>Player.HasVideo + !Skin.HasSetting(HideNowPlayingInfo)</visible>
             <include>VisibleFadeEffect</include>
@@ -245,9 +245,9 @@
                 <control type="image">
                     <description>Cover image</description>
                     <left>30</left>
-                    <top>68</top>
-                    <width>225</width>
-                    <height>450</height>
+                    <top>275</top>
+                    <width>200</width>
+                    <height>250</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture fallback="DefaultVideoCover.png">$VAR[StreamingVideoIcon]</texture>
                     <bordertexture border="8">ThumbBorder.png</bordertexture>
@@ -301,18 +301,18 @@
                 <control type="image">
                     <description>Cover image</description>
                     <left>60</left>
-                    <top>403</top>
-                    <width>214</width>
-                    <height>120</height>
+                    <top>415</top>
+                    <width>106</width>
+                    <height>106</height>
                     <aspectratio>scale</aspectratio>
 					<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
-                    <bordertexture border="8">ThumbBorder.png</bordertexture>
+                    <bordertexture border="10">ThumbBorder.png</bordertexture>
                     <bordersize>5</bordersize>
                 </control>
                 <control type="label">
                     <description>Channel label</description>
-                    <left>285</left>
-                    <top>398</top>
+                    <left>200</left>
+                    <top>415</top>
                     <height>38</height>
                     <width>990</width>
                     <label>$INFO[VideoPlayer.ChannelName]</label>
@@ -324,8 +324,8 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <left>285</left>
-                    <top>428</top>
+                    <left>200</left>
+                    <top>445</top>
                     <height>45</height>
                     <width>1500</width>
                     <label>$INFO[Player.Title]</label>
@@ -337,8 +337,8 @@
                 </control>
                 <control type="label">
                     <description>Time Label</description>
-                    <left>285</left>
-                    <top>465</top>
+                    <left>200</left>
+                    <top>475</top>
                     <height>45</height>
                     <width>450</width>
                     <label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=grey3] / [/COLOR]]</label>
@@ -468,7 +468,7 @@
                 <left>225</left>
                 <right>0</right>
                 <top>0</top>
-                <height>53</height>
+                <height>52</height>
                 <width>1500</width>
                 <texture border="5">current-playing-bg.png</texture>
                 <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
@@ -479,7 +479,7 @@
                 <left>0</left>
                 <right>0</right>
                 <top>0</top>
-                <height>53</height>
+                <height>52</height>
                 <width>1500</width>
                 <texture border="5">current-playing-bg.png</texture>
                 <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
@@ -830,11 +830,10 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <font>font12</font>
-                <textcolor>grey2</textcolor>
+                <textcolor>white</textcolor>
                 <focusedcolor>black</focusedcolor>
                 <texturefocus flipy="true" border="5" colordiffuse="$VAR[MainColorOne]">HomeSubFO.png</texturefocus>
                 <texturenofocus flipy="true" border="5">HomeSubNF.png</texturenofocus>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                 <pulseonselect>false</pulseonselect>
                 <label>31008</label>
                 <onclick>fullscreen</onclick>
@@ -860,7 +859,6 @@
                 <aligny>center</aligny>
                 <font>font11_title</font>
                 <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
                 <visible>!Player.HasMedia + Skin.HasSetting(EnableHomeStats)</visible>
             </control>
         </control>
