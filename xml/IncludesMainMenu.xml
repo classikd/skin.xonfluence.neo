@@ -1972,78 +1972,149 @@
 	</include>
 	
 	<include name="HomeBottomButtons">
-	    <control type="grouplist" id="21">
+        <control type="group" id="21">
             <depth>DepthFooter</depth>
             <include>Window_OpenClose_Animation</include>
             <left>30</left>
             <top>82r</top>
-            <onup condition="!Skin.HasSetting(LowerMainMenuBar) + Control.IsVisible(9002)">9002</onup>
-            <onup condition="Skin.HasSetting(LowerMainMenuBar) | !Control.IsVisible(9002)">9001</onup>
-            <ondown>9003</ondown>
-            <align>left</align>
-            <orientation>horizontal</orientation>
-            <itemgap>15</itemgap>
+
+            <!-- POWER -->
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>68</width>
+                <height>68</height>
+                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <texture border="5">floor_button.png</texture>
+                <visible>!Control.HasFocus(23) + !Skin.HasSetting(HideHomePowerBtn)</visible>
+            </control>
+            <control type="image"> <!-- hover -->
+                <left>0</left>
+                <top>0</top>
+                <width>68</width>
+                <height>68</height>
+                <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texture>
+                <visible>Control.HasFocus(23) + !Skin.HasSetting(HideHomePowerBtn)</visible>
+            </control>
             <control type="radiobutton" id="23">
-                <description>Power push button</description>
+                <left>0</left>
+                <top>0</top>
+                <width>68</width>
+                <height>68</height>
+                <onright>22</onright>
+                <onleft>25</onleft>
+                <onup condition="!Skin.HasSetting(LowerMainMenuBar) + Control.IsVisible(9002)">9002</onup>
+                <onup condition="Skin.HasSetting(LowerMainMenuBar) | !Control.IsVisible(9002)">9001</onup>
+                <ondown>9003</ondown>
                 <textureradioonfocus colordiffuse="FF000000">icon_power.png</textureradioonfocus>
                 <textureradioonnofocus>icon_power.png</textureradioonnofocus>
                 <textureradioofffocus colordiffuse="FF000000">icon_power.png</textureradioofffocus>
                 <textureradiooffnofocus>icon_power.png</textureradiooffnofocus>
-                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texturefocus>
-                <texturenofocus border="5">floor_button.png</texturenofocus>
-                <width>68</width>
-                <height>68</height>
+
+                <texturefocus border="5">blank.png</texturefocus>
+                <texturenofocus border="5">blank.png</texturenofocus>
+
                 <radiowidth>52</radiowidth>
                 <radioheight>52</radioheight>
                 <radioposx>8</radioposx>
                 <radioposy>8</radioposy>
-                <label>31003</label>
-                <font></font>
+
                 <onclick>$VAR[HomePowerBtnCommand]</onclick>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                 <visible>!Skin.HasSetting(HideHomePowerBtn)</visible>
             </control>
-			<control type="radiobutton" id="22">
-                <description>Favourites push button</description>
+
+            <!-- FAVORITES -->
+            <control type="image">
+                <left>83</left>
+                <top>0</top>
+                <width>68</width>
+                <height>68</height>
+                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <texture border="5">floor_button.png</texture>
+                <visible>!Control.HasFocus(22) + !Skin.HasSetting(HideHomePowerBtn)</visible>
+            </control>
+            <control type="image"> <!-- hover -->
+                <left>83</left>
+                <top>0</top>
+                <width>68</width>
+                <height>68</height>
+                <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texture>
+                <visible>Control.HasFocus(22) + !Skin.HasSetting(HideHomePowerBtn)</visible>
+            </control>
+            <control type="radiobutton" id="22">
+                <left>83</left>
+                <top>0</top>
+                <width>68</width>
+                <height>68</height>
+                <onright>25</onright>
+                <onleft>23</onleft>
+                <onup condition="!Skin.HasSetting(LowerMainMenuBar) + Control.IsVisible(9002)">9002</onup>
+                <onup condition="Skin.HasSetting(LowerMainMenuBar) | !Control.IsVisible(9002)">9001</onup>
+                <ondown>9003</ondown>
                 <textureradioonfocus colordiffuse="FF000000">icon_favourites.png</textureradioonfocus>
                 <textureradioonnofocus>icon_favourites.png</textureradioonnofocus>
                 <textureradioofffocus colordiffuse="FF000000">icon_favourites.png</textureradioofffocus>
                 <textureradiooffnofocus>icon_favourites.png</textureradiooffnofocus>
-                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texturefocus>
-                <texturenofocus border="5">floor_button.png</texturenofocus>
-                <width>68</width>
-                <height>68</height>
+
+                <texturefocus border="5">blank.png</texturefocus>
+                <texturenofocus border="5">blank.png</texturenofocus>
+
                 <radiowidth>52</radiowidth>
                 <radioheight>52</radioheight>
                 <radioposx>8</radioposx>
                 <radioposy>8</radioposy>
-                <label>1036</label>
-                <font></font>
+
                 <onclick>ActivateWindow(Favouritesbrowser)</onclick>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                 <visible>!Skin.HasSetting(HideFavorites)</visible>
             </control>
+
+            <!-- SEARCH -->
+            <control type="image">
+                <left>166</left>
+                <top>0</top>
+                <width>68</width>
+                <height>68</height>
+                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <texture border="5">floor_button.png</texture>
+                <visible>!Control.HasFocus(25) + !Skin.HasSetting(HideHomePowerBtn)</visible>
+            </control>
+            <control type="image"> <!-- hover -->
+                <left>166</left>
+                <top>0</top>
+                <width>68</width>
+                <height>68</height>
+                <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texture>
+                <visible>Control.HasFocus(25) + !Skin.HasSetting(HideHomePowerBtn)</visible>
+            </control>
             <control type="radiobutton" id="25">
-                <description>GlobSearch push button</description>
+                <left>166</left>
+                <top>0</top>
+                <width>68</width>
+                <height>68</height>
+                <onright>23</onright>
+                <onleft>22</onleft>
+                <onup condition="!Skin.HasSetting(LowerMainMenuBar) + Control.IsVisible(9002)">9002</onup>
+                <onup condition="Skin.HasSetting(LowerMainMenuBar) | !Control.IsVisible(9002)">9001</onup>
+                <ondown>9003</ondown>
                 <textureradioonfocus colordiffuse="FF000000">icon_search.png</textureradioonfocus>
                 <textureradioonnofocus>icon_search.png</textureradioonnofocus>
                 <textureradioofffocus colordiffuse="FF000000">icon_search.png</textureradioofffocus>
                 <textureradiooffnofocus>icon_search.png</textureradiooffnofocus>
-                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonFO.png</texturefocus>
-                <texturenofocus border="5">floor_button.png</texturenofocus>
-                <width>68</width>
-                <height>68</height>
+
+                <texturefocus border="5">blank.png</texturefocus>
+                <texturenofocus border="5">blank.png</texturenofocus>
+
                 <radiowidth>52</radiowidth>
                 <radioheight>52</radioheight>
                 <radioposx>8</radioposx>
                 <radioposy>8</radioposy>
-                <label></label>
-                <font></font>
+
                 <onclick>RunScript(script.globalsearch)</onclick>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                 <visible>!Skin.HasSetting(DisableGlobalSearch) + Skin.HasSetting(FloorGlobalSearch)</visible>
             </control>
+
         </control>
+
 	</include>
 	
 </includes>
