@@ -40,7 +40,7 @@
             <left>-150</left>
             <top>0</top>
             <width>2220</width>
-            <height>112</height>
+            <height>113</height>
             <texture border="0,6,0,6">HomeBack.png</texture>
             <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
         </control>
@@ -60,17 +60,17 @@
     <include name="HomeImagePost1">
         <control type="image">
             <left>-15</left>
-            <top>9</top>
+            <top>0</top>
             <width>207</width>
-            <height>94</height>
+            <height>113</height>
             <texture>SideFade.png</texture>
             <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
         </control>
         <control type="image">
             <left>192r</left>
-            <top>9</top>
+            <top>0</top>
             <width>207</width>
-            <height>94</height>
+            <height>113</height>
             <texture flipx="true">SideFade.png</texture>
             <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
         </control>
@@ -79,17 +79,17 @@
     <include name="HomeImagePost2">
         <control type="image">
             <left>-15</left>
-            <top>9</top>
+            <top>0</top>
             <width>207</width>
-            <height>140</height>
+            <height>158</height>
             <texture>SideFade.png</texture>
             <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
         </control>
         <control type="image">
             <left>192r</left>
-            <top>9</top>
+            <top>0</top>
             <width>207</width>
-            <height>140</height>
+            <height>158</height>
             <texture flipx="true">SideFade.png</texture>
             <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
         </control>
@@ -97,9 +97,9 @@
 	
     <include name="HomeMainMenuSys">
         <left>-165</left>
-        <top>8</top>
+        <top>0</top>
         <width>2250</width>
-        <height>90</height>
+        <height>113</height>
         <onleft condition="!Skin.HasSetting(FixedEndingMenu)">9000</onleft>
         <onright condition="!Skin.HasSetting(FixedEndingMenu)">9000</onright>
         <onup condition="!Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(FloorGlobalSearch)">610</onup>
@@ -113,24 +113,24 @@
             <control type="image">
                 <left>0</left>
                 <top>6</top>
-                <width>50</width>
-                <height>78</height>
+                <width>1</width>
+                <height>85</height>
                 <texture>HomeSeperator.png</texture>
             </control>
             <control type="image">
-                <left>448</left>
+                <left>450</left>
                 <top>6</top>
                 <width>1</width>
-                <height>78</height>
+                <height>85</height>
                 <texture>HomeSeperator.png</texture>
             </control>
             <control type="label">
                 <left>8</left>
-                <top>0</top>
+                <top>15</top>
                 <width>435</width>
                 <height>90</height>
                 <font>font_MainMenu</font>
-                <textcolor>grey3</textcolor>
+                <textcolor>white</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <scroll>true</scroll>
@@ -139,11 +139,11 @@
             </control>
 			<control type="label">
                 <left>8</left>
-                <top>7</top>
+                <top>15</top>
                 <width>435</width>
                 <height>90</height>
                 <font>font_MainMenuUpper</font>
-                <textcolor>grey3</textcolor>
+                <textcolor>white</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <scroll>true</scroll>
@@ -154,17 +154,24 @@
         <focusedlayout height="90" width="450">
             <control type="image">
                 <left>0</left>
-                <top>6</top>
+                <top>0</top>
                 <width>1</width>
-                <height>78</height>
+                <height>85</height>
                 <texture>HomeSeperator.png</texture>
             </control>
             <control type="image">
-                <left>448</left>
+                <left>450</left>
                 <top>6</top>
                 <width>1</width>
-                <height>78</height>
+                <height>85</height>
                 <texture>HomeSeperator.png</texture>
+            </control>
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>450</width>
+                <height>113</height>
+                <texture colordiffuse="$VAR[MainColorOne]">white.png</texture>
             </control>
             <control type="label">
                 <left>8</left>
@@ -172,7 +179,7 @@
                 <width>435</width>
                 <height>90</height>
                 <font>font_MainMenu</font>
-                <textcolor>grey3</textcolor>
+                <textcolor>white</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <scroll>true</scroll>
@@ -186,7 +193,7 @@
                 <width>435</width>
                 <height>90</height>
                 <font>font_MainMenu</font>
-                <textcolor>$VAR[MainColorOne]</textcolor>
+                <textcolor>white</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <scroll>true</scroll>
@@ -196,11 +203,11 @@
             </control>
 			<control type="label">
                 <left>8</left>
-                <top>7</top>
+                <top>15</top>
                 <width>435</width>
                 <height>90</height>
                 <font>font_MainMenuUpper</font>
-                <textcolor>grey3</textcolor>
+                <textcolor>white</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <scroll>true</scroll>
@@ -210,11 +217,11 @@
             </control>
             <control type="label">
                 <left>8</left>
-                <top>7</top>
+                <top>15</top>
                 <width>435</width>
                 <height>90</height>
                 <font>font_MainMenuUpper</font>
-                <textcolor>$VAR[MainColorOne]</textcolor>
+                <textcolor>white</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <scroll>true</scroll>
