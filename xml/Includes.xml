@@ -1687,7 +1687,6 @@
             <animation effect="slide" start="0,0" end="-120,0" time="0" condition="![Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]+system.getbool(input.enablemouse)+Window.IsVisible(VideoOSD)">conditional</animation>
             <animation effect="slide" start="0,0" end="-120,0" time="0" condition="system.getbool(input.enablemouse)+Window.IsVisible(1198)">conditional</animation>
             <animation effect="slide" start="0,0" end="0,-82" time="150" condition="Window.IsVisible(busydialog)">conditional</animation>
-            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
             <visible>!Skin.HasSetting(HideSystemTime)</visible>
         </control>
     </include>
@@ -1716,7 +1715,6 @@
                 <animation effect="slide" start="0,0" end="-120,0" time="0" condition="![Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]+system.getbool(input.enablemouse)+Window.IsVisible(VideoOSD)">conditional</animation>
                 <animation effect="slide" start="0,0" end="-120,0" time="0" condition="system.getbool(input.enablemouse) + Window.IsVisible(1198)">conditional</animation>
                 <animation effect="slide" start="0,0" end="0,-82" time="150" condition="Window.IsVisible(busydialog)">conditional</animation>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                 <visible>!Skin.HasSetting(HideSystemTime) + Skin.HasSetting(HideCPUTemp)</visible>
             </control>
 		    <control type="label" id="1">
@@ -1737,7 +1735,6 @@
                 <animation effect="slide" start="0,0" end="-120,0" time="0" condition="![Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]+system.getbool(input.enablemouse)+Window.IsVisible(VideoOSD)">conditional</animation>
                 <animation effect="slide" start="0,0" end="-120,0" time="0" condition="system.getbool(input.enablemouse) + Window.IsVisible(1198)">conditional</animation>
                 <animation effect="slide" start="0,0" end="0,-82" time="150" condition="Window.IsVisible(busydialog)">conditional</animation>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                 <visible>!Skin.HasSetting(HideSystemTime) + Skin.HasSetting(HideCPUTemp)</visible>
             </control>			
 		    <control type="label" id="1">
@@ -1758,7 +1755,6 @@
                 <animation effect="slide" start="0,0" end="-120,0" time="0" condition="![Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]+system.getbool(input.enablemouse)+Window.IsVisible(VideoOSD)">conditional</animation>
                 <animation effect="slide" start="0,0" end="-120,0" time="0" condition="system.getbool(input.enablemouse) + Window.IsVisible(1198)">conditional</animation>
                 <animation effect="slide" start="0,0" end="0,-82" time="150" condition="Window.IsVisible(busydialog)">conditional</animation>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                 <visible>!Skin.HasSetting(HideSystemTime) + !Skin.HasSetting(HideCPUTemp) + !String.IsEqual(System.CPUTemperature,Not Available)</visible>
             </control>
 		    <control type="label" id="1">
@@ -1779,7 +1775,6 @@
                 <animation effect="slide" start="0,0" end="-120,0" time="0" condition="![Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]+system.getbool(input.enablemouse)+Window.IsVisible(VideoOSD)">conditional</animation>
                 <animation effect="slide" start="0,0" end="-120,0" time="0" condition="system.getbool(input.enablemouse) + Window.IsVisible(1198)">conditional</animation>
                 <animation effect="slide" start="0,0" end="0,-82" time="150" condition="Window.IsVisible(busydialog)">conditional</animation>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                 <visible>!Skin.HasSetting(HideSystemTime) + !Skin.HasSetting(HideCPUTemp) + String.IsEqual(System.CPUTemperature,Not Available)</visible>
             </control>
 		</control>	
