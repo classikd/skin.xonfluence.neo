@@ -2793,3 +2793,7 @@ msgstr ""
 msgctxt "#50003"
 msgid "Bookmark"
 msgstr ""
+
+msgctxt "#50004"
+msgid "Enable Floor Settings Button"
+msgstr ""

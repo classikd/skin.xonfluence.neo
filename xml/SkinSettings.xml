@@ -1645,6 +1645,18 @@
                                 <selected>Skin.HasSetting(EnableFloorReturnButtons)</selected>
                                 <include>MenuButton</include>
                             </control>
+                            <control type="radiobutton" id="188">
+                                <description>enable floor settings button</description>
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>grey2</textcolor>
+                                <focusedcolor>white</focusedcolor>
+                                <label>$LOCALIZE[50004]</label>
+                                <onclick>Skin.ToggleSetting(EnableFloorSettingsButtons)</onclick>
+                                <selected>Skin.HasSetting(EnableFloorSettingsButtons)</selected>
+                                <include>MenuButton</include>
+                            </control>
                             <control type="radiobutton" id="189">
                                 <description>Global search in floor</description>
                                 <width>1125</width>

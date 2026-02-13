@@ -938,6 +938,27 @@
                 <visible>Skin.HasSetting(EnableVolumeButtons)</visible>
                 <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
             </control>
+
+            <control type="radiobutton" id="804">
+                <description>Settings button</description>
+                <width>68</width>
+                <height>68</height>
+                <onclick>ActivateWindow(settings)</onclick>
+                <textureradioonfocus colordiffuse="FF000000">icon_system.png</textureradioonfocus>
+                <textureradioonnofocus>icon_system.png</textureradioonnofocus>
+                <textureradioofffocus colordiffuse="FF000000">icon_system.png</textureradioofffocus>
+                <textureradiooffnofocus>icon_system.png</textureradiooffnofocus>
+                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
+                <texturenofocus border="5">floor_button.png</texturenofocus>
+                <radiowidth>68</radiowidth>
+                <radioheight>68</radioheight>
+                <radioposx>1</radioposx>
+                <radioposy>1</radioposy>
+                <font></font>
+                <visible>Skin.HasSetting(EnableFloorSettingsButtons)</visible>
+                <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
+            </control>
+
             <control type="radiobutton" id="804">
                 <description>Back push button</description>
                 <width>68</width>
