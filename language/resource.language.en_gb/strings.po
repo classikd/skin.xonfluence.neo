@@ -2797,3 +2797,35 @@ msgstr ""
 msgctxt "#50004"
 msgid "Enable Floor Settings Button"
 msgstr ""
+
+msgctxt "#50005"
+msgid "Power Button Icon"
+msgstr ""
+
+msgctxt "#50006"
+msgid "Restart"
+msgstr ""
+
+msgctxt "#50007"
+msgid "Logout"
+msgstr ""
+
+msgctxt "#50008"
+msgid "Settings"
+msgstr ""
+
+msgctxt "#50009"
+msgid "Poweroff"
+msgstr ""
+
+msgctxt "#50010"
+msgid "Menu1"
+msgstr ""
+
+msgctxt "#50011"
+msgid "Menu2"
+msgstr ""
+
+msgctxt "#50012"
+msgid "Menu3"
+msgstr ""

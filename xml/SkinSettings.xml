@@ -1715,6 +1715,25 @@
                                 <include>MenuButton</include>
                                 <enable>!Skin.HasSetting(HideHomePowerBtn)</enable>
                             </control>
+                            <control type="button" id="19222">
+                                <description>Power Button Icon</description>
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>grey2</textcolor>
+                                <focusedcolor>white</focusedcolor>
+                                <label>$LOCALIZE[50005]</label>
+                                <label2>[COLOR=selected]$VAR[PowerIconValue][/COLOR]</label2>
+                                <onclick condition="String.IsEmpty(Skin.String(PowerIcon))">Skin.SetString(PowerIcon,Restart)</onclick>
+                                <onclick condition="Skin.String(PowerIcon,Restart)">Skin.SetString(PowerIcon,Settings)</onclick>
+                                <onclick condition="Skin.String(PowerIcon,Settings)">Skin.SetString(PowerIcon,Logout)</onclick>
+                                <onclick condition="Skin.String(PowerIcon,Logout)">Skin.SetString(PowerIcon,Menu1)</onclick>
+                                <onclick condition="Skin.String(PowerIcon,Menu1)">Skin.SetString(PowerIcon,Menu2)</onclick>
+                                <onclick condition="Skin.String(PowerIcon,Menu2)">Skin.SetString(PowerIcon,Menu3)</onclick>
+                                <onclick condition="Skin.String(PowerIcon,Menu3)">Skin.Reset(PowerIcon)</onclick>
+                                <include>MenuButton</include>
+                                <enable>!Skin.HasSetting(HideHomePowerBtn)</enable>
+                            </control>
                             <control type="button" id="193">
                                 <width>1125</width>
                                 <height>60</height>

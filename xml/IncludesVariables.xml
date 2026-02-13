@@ -3290,10 +3290,14 @@
         <value condition="Skin.String(FavoritesIcon, Bookmark)">$LOCALIZE[50003]</value>
         <value>$LOCALIZE[50001]</value>
     </variable>
-    <variable name="HomeFloorValue">
-        <value condition="Skin.String(HomeFloor,Enabled)">$LOCALIZE[31362]</value>
-        <value condition="Skin.String(HomeFloor,Transparent)">50$LOCALIZE[31248]</value>
-        <value>$LOCALIZE[1223]</value>
+    <variable name="PowerIconValue">
+        <value condition="Skin.String(PowerIcon,Restart)">$LOCALIZE[50006]</value>
+        <value condition="Skin.String(PowerIcon,Logout)">$LOCALIZE[50007]</value>
+        <value condition="Skin.String(PowerIcon,Settings)">$LOCALIZE[50008]</value>
+        <value condition="Skin.String(PowerIcon,Menu1)">$LOCALIZE[50010]</value>
+        <value condition="Skin.String(PowerIcon,Menu2)">$LOCALIZE[50011]</value>
+        <value condition="Skin.String(PowerIcon,Menu3)">$LOCALIZE[50012]</value>
+        <value>$LOCALIZE[50009]</value>
     </variable>
     <variable name="HomeFloorValue">
         <value condition="Skin.String(HomeFloor,Enabled)">$LOCALIZE[31362]</value>

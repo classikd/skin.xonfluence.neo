@@ -493,6 +493,15 @@
         <value condition="Skin.String(FavoritesIcon,Bookmark)">icon_favourites_bookmark.png</value>
         <value>icon_favourites.png</value>
     </variable>
+    <variable name="PowerIconTexture">
+        <value condition="Skin.String(PowerIcon,Logout)">icon_logout.png</value>
+        <value condition="Skin.String(PowerIcon,Restart)">icon_restart.png</value>
+        <value condition="Skin.String(PowerIcon,Settings)">icon_system.png</value>
+        <value condition="Skin.String(PowerIcon,Menu1)">icon_menu1.png</value>
+        <value condition="Skin.String(PowerIcon,Menu2)">icon_menu2.png</value>
+        <value condition="Skin.String(PowerIcon,Menu3)">icon_menu3.png</value>
+        <value>icon_power.png</value>
+    </variable>
     <variable name="NowPlayingThumb">
         <value condition="!String.IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
         <value condition="!String.IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.poster)]</value>

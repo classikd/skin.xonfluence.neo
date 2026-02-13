@@ -2003,6 +2003,30 @@
                 <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texture>
                 <visible>Control.HasFocus(23) + !Skin.HasSetting(HideHomePowerBtn)</visible>
             </control>
+
+
+            <!-- Icon -->
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>68</width>
+                <height>68</height>
+                <texture>$VAR[PowerIconTexture]</texture>
+                <colordiffuse>FF000000</colordiffuse>
+                <aspectratio>keep</aspectratio>
+                <visible>Control.IsVisible(23) + Control.HasFocus(23)</visible>
+            </control>
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>68</width>
+                <height>68</height>
+                <texture>$VAR[PowerIconTexture]</texture>
+                <colordiffuse>FFFFFFFF</colordiffuse>
+                <aspectratio>keep</aspectratio>
+                <visible>Control.IsVisible(23) + !Control.HasFocus(23)</visible>
+            </control>
+
             <control type="radiobutton" id="23">
                 <left>0</left>
                 <top>0</top>
@@ -2013,10 +2037,10 @@
                 <onup condition="!Skin.HasSetting(LowerMainMenuBar) + Control.IsVisible(9002)">9002</onup>
                 <onup condition="Skin.HasSetting(LowerMainMenuBar) | !Control.IsVisible(9002)">9001</onup>
                 <ondown>9003</ondown>
-                <textureradioonfocus colordiffuse="FF000000">icon_power.png</textureradioonfocus>
-                <textureradioonnofocus>icon_power.png</textureradioonnofocus>
-                <textureradioofffocus colordiffuse="FF000000">icon_power.png</textureradioofffocus>
-                <textureradiooffnofocus>icon_power.png</textureradiooffnofocus>
+                <textureradioonfocus>blank.png</textureradioonfocus>
+                <textureradioonnofocus>blank.png</textureradioonnofocus>
+                <textureradioofffocus>blank.png</textureradioofffocus>
+                <textureradiooffnofocus>blank.png</textureradiooffnofocus>
 
                 <texturefocus border="5">blank.png</texturefocus>
                 <texturenofocus border="5">blank.png</texturenofocus>
@@ -2083,9 +2107,9 @@
                 <onup condition="!Skin.HasSetting(LowerMainMenuBar) + Control.IsVisible(9002)">9002</onup>
                 <onup condition="Skin.HasSetting(LowerMainMenuBar) | !Control.IsVisible(9002)">9001</onup>
                 <ondown>9003</ondown>
-                <textureradioonfocus colordiffuse="FF000000">blank.png</textureradioonfocus>
+                <textureradioonfocus>blank.png</textureradioonfocus>
                 <textureradioonnofocus>blank.png</textureradioonnofocus>
-                <textureradioofffocus colordiffuse="FF000000">blank.png</textureradioofffocus>
+                <textureradioofffocus>blank.png</textureradioofffocus>
                 <textureradiooffnofocus>blank.png</textureradiooffnofocus>
 
                 <texturefocus border="5">blank.png</texturefocus>
