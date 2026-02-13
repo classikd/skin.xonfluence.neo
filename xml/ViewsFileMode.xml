@@ -353,16 +353,28 @@
                         <aspectratio>keep</aspectratio>
                         <visible>Container.Content(studios)</visible>
                     </control>
+
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
                         <width>321</width>
                         <height>240</height>
-                        <bordertexture border="5">button-nofocus.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
                         <aspectratio>keep</aspectratio>
-                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!String.Contains(ListItem.Icon,image://video) + !Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                    </control>
+                    
+                    <!-- center mode for videos -->
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>321</width>
+                        <height>240</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
+                        <aspectratio>center</aspectratio>
+                        <visible>String.Contains(ListItem.Icon,image://video) + !Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
                     </control>
                     <control type="image">
                         <left>1</left>
@@ -445,17 +457,29 @@
                         <aspectratio>keep</aspectratio>
                         <visible>Container.Content(studios)</visible>
                     </control>
+
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
                         <width>321</width>
                         <height>240</height>
-                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
                         <aspectratio>keep</aspectratio>
-                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!String.Contains(ListItem.Icon,image://video) + !Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
                     </control>
+                    
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>321</width>
+                        <height>240</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
+                        <aspectratio>center</aspectratio>
+                        <visible>String.Contains(ListItem.Icon,image://video) + !Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                    </control>
+
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
