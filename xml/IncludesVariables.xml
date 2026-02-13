@@ -3285,6 +3285,16 @@
         <value condition="Skin.String(MenuLAF,GraphText)">$LOCALIZE[31990]</value>
         <value>$LOCALIZE[31984]</value>
     </variable>
+    <variable name="FavoritesIconValue">
+        <value condition="Skin.String(FavoritesIcon, Star)">$LOCALIZE[50002]</value>
+        <value condition="Skin.String(FavoritesIcon, Bookmark)">$LOCALIZE[50003]</value>
+        <value>$LOCALIZE[50001]</value>
+    </variable>
+    <variable name="HomeFloorValue">
+        <value condition="Skin.String(HomeFloor,Enabled)">$LOCALIZE[31362]</value>
+        <value condition="Skin.String(HomeFloor,Transparent)">50$LOCALIZE[31248]</value>
+        <value>$LOCALIZE[1223]</value>
+    </variable>
     <variable name="HomeFloorValue">
         <value condition="Skin.String(HomeFloor,Enabled)">$LOCALIZE[31362]</value>
         <value condition="Skin.String(HomeFloor,Transparent)">50$LOCALIZE[31248]</value>

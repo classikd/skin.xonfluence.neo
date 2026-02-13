@@ -759,6 +759,19 @@
                                 <onclick condition="Skin.String(MenuLAF,GraphFocused)">Skin.SetString(MenuLAF,GraphText)</onclick>
                                 <onclick condition="Skin.String(MenuLAF,GraphText)">Skin.Reset(MenuLAF)</onclick>
                             </control>
+                            <control type="button" id="200">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label>$LOCALIZE[50000]</label>
+                                <label2>[COLOR=selected]$VAR[FavoritesIconValue][/COLOR]</label2>
+                                <textcolor>grey2</textcolor>
+                                <focusedcolor>white</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEmpty(Skin.String(FavoritesIcon))">Skin.SetString(FavoritesIcon,Star)</onclick>
+                                <onclick condition="Skin.String(FavoritesIcon,Star)">Skin.SetString(FavoritesIcon,Bookmark)</onclick>
+                                <onclick condition="Skin.String(FavoritesIcon,Bookmark)">Skin.Reset(FavoritesIcon)</onclick>
+                            </control>
 							<control type="radiobutton" id="135">
                                 <width>1125</width>
                                 <height>60</height>

@@ -488,6 +488,11 @@
         ">$VAR[MainColorOne]</value>
         <value>FFFFFFFF</value>
     </variable>
+    <variable name="FavoritesIconTexture">
+        <value condition="Skin.String(FavoritesIcon,Star)">icon_favourites_star.png</value>
+        <value condition="Skin.String(FavoritesIcon,Bookmark)">icon_favourites_bookmark.png</value>
+        <value>icon_favourites.png</value>
+    </variable>
     <variable name="NowPlayingThumb">
         <value condition="!String.IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
         <value condition="!String.IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.poster)]</value>

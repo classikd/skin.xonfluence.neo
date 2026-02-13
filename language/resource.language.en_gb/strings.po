@@ -2777,3 +2777,19 @@ msgstr ""
 msgctxt "#32051"
 msgid "Enable choosing default menu item"
 msgstr ""
+
+msgctxt "#50000"
+msgid "Favorites Icon"
+msgstr ""
+
+msgctxt "#50001"
+msgid "Heart"
+msgstr ""
+
+msgctxt "#50002"
+msgid "Star"
+msgstr ""
+
+msgctxt "#50003"
+msgid "Bookmark"
+msgstr ""

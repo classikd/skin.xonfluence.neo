@@ -2031,6 +2031,7 @@
             </control>
 
             <!-- FAVORITES -->
+            <!-- Bg -->
             <control type="image">
                 <left>83</left>
                 <top>0</top>
@@ -2048,6 +2049,30 @@
                 <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texture>
                 <visible>Control.HasFocus(22) + !Skin.HasSetting(HideFavorites)</visible>
             </control>
+
+            <!-- Icon -->
+            <control type="image">
+                <left>83</left>
+                <top>0</top>
+                <width>68</width>
+                <height>68</height>
+                <texture>$VAR[FavoritesIconTexture]</texture>
+                <colordiffuse>FF000000</colordiffuse>
+                <aspectratio>keep</aspectratio>
+                <visible>Control.IsVisible(22) + Control.HasFocus(22)</visible>
+            </control>
+            <control type="image">
+                <left>83</left>
+                <top>0</top>
+                <width>68</width>
+                <height>68</height>
+                <texture>$VAR[FavoritesIconTexture]</texture>
+                <colordiffuse>FFFFFFFF</colordiffuse>
+                <aspectratio>keep</aspectratio>
+                <visible>Control.IsVisible(22) + !Control.HasFocus(22)</visible>
+            </control>
+
+
             <control type="radiobutton" id="22">
                 <left>83</left>
                 <top>0</top>
@@ -2058,10 +2083,10 @@
                 <onup condition="!Skin.HasSetting(LowerMainMenuBar) + Control.IsVisible(9002)">9002</onup>
                 <onup condition="Skin.HasSetting(LowerMainMenuBar) | !Control.IsVisible(9002)">9001</onup>
                 <ondown>9003</ondown>
-                <textureradioonfocus colordiffuse="FF000000">icon_favourites.png</textureradioonfocus>
-                <textureradioonnofocus>icon_favourites.png</textureradioonnofocus>
-                <textureradioofffocus colordiffuse="FF000000">icon_favourites.png</textureradioofffocus>
-                <textureradiooffnofocus>icon_favourites.png</textureradiooffnofocus>
+                <textureradioonfocus colordiffuse="FF000000">blank.png</textureradioonfocus>
+                <textureradioonnofocus>blank.png</textureradioonnofocus>
+                <textureradioofffocus colordiffuse="FF000000">blank.png</textureradioofffocus>
+                <textureradiooffnofocus>blank.png</textureradiooffnofocus>
 
                 <texturefocus border="5">blank.png</texturefocus>
                 <texturenofocus border="5">blank.png</texturenofocus>
