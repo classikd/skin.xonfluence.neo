@@ -2125,21 +2125,21 @@
                         <left>0</left>
                         <top>0</top>
                         <width>290</width>
-                        <height>330</height>
+                        <height>355</height>
                         <texture border="15">RecentAddedBack.png</texture>
                         <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                     </control>
                     <control type="image">
                         <left>15</left>
-                        <top>10</top>
+                        <top>15</top>
                         <width>260</width>
-                        <height>232</height>
-                        <aspectratio>keep</aspectratio>
+                        <height>260</height>
+                        <aspectratio>scale</aspectratio>
                         <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
                     </control>
                     <control type="label">
                         <left>15</left>
-                        <top>250</top>
+                        <top>280</top>
                         <width>260</width>
                         <height>30</height>
                         <font>font10</font>
@@ -2151,7 +2151,7 @@
                     </control>
                     <control type="label">
                         <left>15</left>
-                        <top>280</top>
+                        <top>310</top>
                         <width>260</width>
                         <height>30</height>
                         <font>font12</font>
@@ -2168,7 +2168,7 @@
                         <left>0</left>
                         <top>0</top>
                         <width>290</width>
-                        <height>330</height>
+                        <height>355</height>
                         <texture border="15">RecentAddedBack.png</texture>
                         <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
@@ -2177,33 +2177,33 @@
                         <left>0</left>
                         <top>0</top>
                         <width>290</width>
-                        <height>330</height>
+                        <height>355</height>
                         <texture border="15" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control>
 
                     <control type="image">
                         <left>15</left>
-                        <top>10</top>
+                        <top>15</top>
                         <width>260</width>
-                        <height>232</height>
-                        <aspectratio>keep</aspectratio>
+                        <height>260</height>
+                        <aspectratio>scale</aspectratio>
                         <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control>
                     <control type="image">
                         <left>15</left>
-                        <top>10</top>
+                        <top>15</top>
                         <width>260</width>
-                        <height>232</height>
-                        <aspectratio>keep</aspectratio>
+                        <height>260</height>
+                        <aspectratio>scale</aspectratio>
                         <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
 
                     <control type="label">
                         <left>15</left>
-                        <top>250</top>
+                        <top>280</top>
                         <width>260</width>
                         <height>30</height>
                         <font>font10</font>
@@ -2216,7 +2216,7 @@
                     </control>
                     <control type="label">
                         <left>15</left>
-                        <top>250</top>
+                        <top>280</top>
                         <width>260</width>
                         <height>30</height>
                         <font>font10</font>
@@ -2231,7 +2231,7 @@
 
                     <control type="label">
                         <left>15</left>
-                        <top>280</top>
+                        <top>310</top>
                         <width>260</width>
                         <height>30</height>
                         <font>font12</font>
@@ -2243,7 +2243,7 @@
                     </control>
                     <control type="label">
                         <left>15</left>
-                        <top>280</top>
+                        <top>310</top>
                         <width>260</width>
                         <height>30</height>
                         <font>font12</font>
@@ -2277,9 +2277,9 @@
                 <animation effect="slide" start="0,0" end="540,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,2)">Conditional</animation>
                 <animation effect="slide" start="0,0" end="360,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,3)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="180,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,4)">Conditional</animation>
-                <left>90</left>
+                <left>140</left>
                 <top>5</top>
-                <width>1760</width>
+                <width>1625</width>
                 <height>428</height>
                 <onleft>$PARAM[Control]</onleft>
                 <onright>$PARAM[Control]</onright>
@@ -2290,10 +2290,10 @@
                 <viewtype label="535">list</viewtype>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>Horizontal</orientation>
-                <itemlayout height="428" width="350">
+                <itemlayout height="428" width="324">
                     <control type="image">
-                        <left>11</left>
-                        <top>15</top>
+                        <left>10</left>
+                        <top>10</top>
                         <width>320</width>
                         <height>320</height>
                         <aspectratio>scale</aspectratio>
@@ -2302,9 +2302,9 @@
                         <bordersize>5</bordersize>
                     </control>
                     <control type="label">
-                        <left>11</left>
+                        <left>15</left>
                         <top>337</top>
-                        <width>320</width>
+                        <width>310</width>
                         <height>30</height>
                         <font>font10</font>
                         <textcolor>grey</textcolor>
@@ -2314,9 +2314,9 @@
                         <label>$INFO[ListItem.Artist]</label>
                     </control>
                     <control type="label">
-                        <left>11</left>
+                        <left>15</left>
                         <top>365</top>
-                        <width>320</width>
+                        <width>310</width>
                         <height>30</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
@@ -2326,10 +2326,10 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout height="428" width="350">
+                <focusedlayout height="428" width="324">
                     <control type="image">
-                        <left>11</left>
-                        <top>15</top>
+                        <left>10</left>
+                        <top>10</top>
                         <width>320</width>
                         <height>320</height>
                         <aspectratio>scale</aspectratio>
@@ -2339,8 +2339,8 @@
                         <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control>
                     <control type="image">
-                        <left>11</left>
-                        <top>15</top>
+                        <left>10</left>
+                        <top>10</top>
                         <width>320</width>
                         <height>320</height>
                         <aspectratio>scale</aspectratio>
@@ -2350,9 +2350,9 @@
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
                     <control type="label">
-                        <left>11</left>
+                        <left>15</left>
                         <top>337</top>
-                        <width>320</width>
+                        <width>310</width>
                         <height>30</height>
                         <font>font10</font>
                         <textcolor>grey</textcolor>
@@ -2362,9 +2362,9 @@
                         <label>$INFO[ListItem.Artist]</label>
                     </control>
                     <control type="label">
-                        <left>11</left>
+                        <left>15</left>
                         <top>365</top>
-                        <width>320</width>
+                        <width>310</width>
                         <height>30</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
@@ -2375,9 +2375,9 @@
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
                     <control type="label">
-                        <left>11</left>
+                        <left>15</left>
                         <top>365</top>
-                        <width>320</width>
+                        <width>310</width>
                         <height>30</height>
                         <font>font12</font>
                         <textcolor>$VAR[MainColorOne]</textcolor>
@@ -4187,7 +4187,7 @@
             <control type="group">
 				<visible>$PARAM[visibility]</visible>
 			    <control type="button">
-                    <left>30</left>
+                    <left>50</left>
                     <top>150</top>
                     <width>45</width>
                     <height>60</height>
@@ -4199,7 +4199,7 @@
                     <include>VisibleFadeEffect</include>
                 </control>
                 <control type="button">
-                    <left>1845</left>
+                    <left>1825</left>
                     <top>150</top>
                     <width>45</width>
                     <height>60</height>
