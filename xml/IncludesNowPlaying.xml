@@ -224,7 +224,7 @@
 	    <control type="group">
             <depth>DepthMenu</depth>
             <left>0</left>
-            <top>70</top>
+            <top>90</top>
             <control type="image">
                 <left>0</left>
                 <right>0</right>
@@ -462,7 +462,7 @@
 	
 	<include name="NowPlayingMediaControls">
 	    <control type="group">
-            <top>548</top>
+            <top>568</top>
 
             <control type="image">
                 <left>225</left>

@@ -83,7 +83,7 @@
 		<!-- Menu and Submenu -->
 		<control type="group">
             <depth>DepthMenu</depth>
-            <top>600</top>
+            <top>620</top>
             <animation effect="slide" start="0,0" end="0,-45" time="0" condition="!String.IsEmpty(Skin.String(MenuLAF))">Conditional</animation>
             <animation effect="slide" start="0,0" end="0,240" time="0" condition="Skin.HasSetting(LowerMainMenuBar)">Conditional</animation>
             <animation type="WindowOpen" reversible="false">

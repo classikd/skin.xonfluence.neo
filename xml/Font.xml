@@ -3,9 +3,19 @@
     <fontset id="Default" idloc="31390">
         <!-- Normal Fonts -->
         <font>
+            <name>font9</name>
+            <filename>Roboto-Regular.ttf</filename>
+            <size>18</size>
+        </font>
+        <font>
             <name>font10</name>
             <filename>Roboto-Regular.ttf</filename>
-            <size>21</size>
+            <size>20</size>
+        </font>
+        <font>
+            <name>font11</name>
+            <filename>Roboto-Regular.ttf</filename>
+            <size>22</size>
         </font>
         <font>
             <name>font12</name>
@@ -39,14 +49,19 @@
         </font>
         <!-- Title Fonts -->
         <font>
-            <name>font10_title</name>
+            <name>font9_title</name>
             <filename>Roboto-Bold.ttf</filename>
             <size>18</size>
         </font>
         <font>
+            <name>font10_title</name>
+            <filename>Roboto-Bold.ttf</filename>
+            <size>20</size>
+        </font>
+        <font>
             <name>font11_title</name>
             <filename>Roboto-Bold.ttf</filename>
-            <size>23</size>
+            <size>22</size>
         </font>
         <font>
             <name>font12_title</name>

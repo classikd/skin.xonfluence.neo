@@ -1597,7 +1597,7 @@
                 <animation effect="slide" start="0,0" end="540,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,2)">Conditional</animation>
                 <animation effect="slide" start="0,0" end="720,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,1)">Conditional</animation>
                 <left>40</left>
-                <top>30</top>
+                <top>18</top>
                 <width>1800</width>
                 <height>360</height>
                 <onleft>$PARAM[Control]</onleft>
@@ -2132,9 +2132,9 @@
                 <animation effect="slide" start="0,0" end="450,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,3)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="300,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,4)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="150,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,5)">Conditional</animation>
-                <left>67</left>
-                <top>0</top>
-                <width>1800</width>
+                <left>120</left>
+                <top>18</top>
+                <width>1680</width>
                 <height>360</height>
                 <onleft>$PARAM[Control]</onleft>
                 <onright>$PARAM[Control]</onright>
@@ -2145,29 +2145,29 @@
                 <viewtype label="535">list</viewtype>
                 <scrolltime>200</scrolltime>
                 <orientation>Horizontal</orientation>
-                <itemlayout height="330" width="300">
+                <itemlayout height="330" width="240">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>290</width>
-                        <height>355</height>
+                        <width>230</width>
+                        <height>330</height>
                         <texture border="15">RecentAddedBack.png</texture>
                         <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                     </control>
                     <control type="image">
-                        <left>15</left>
-                        <top>15</top>
-                        <width>260</width>
-                        <height>260</height>
+                        <left>10</left>
+                        <top>10</top>
+                        <width>210</width>
+                        <height>240</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
                     </control>
                     <control type="label">
-                        <left>15</left>
-                        <top>280</top>
-                        <width>260</width>
+                        <left>10</left>
+                        <top>259</top>
+                        <width>210</width>
                         <height>30</height>
-                        <font>font10</font>
+                        <font>font9</font>
                         <textcolor>grey</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2175,11 +2175,11 @@
                         <label>$INFO[ListItem.Artist]</label>
                     </control>
                     <control type="label">
-                        <left>15</left>
-                        <top>310</top>
-                        <width>260</width>
+                        <left>10</left>
+                        <top>283</top>
+                        <width>210</width>
                         <height>30</height>
-                        <font>font12</font>
+                        <font>font10_title</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2187,13 +2187,13 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout height="330" width="300">
+                <focusedlayout height="330" width="240">
 
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>290</width>
-                        <height>355</height>
+                        <width>230</width>
+                        <height>330</height>
                         <texture border="15">RecentAddedBack.png</texture>
                         <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
@@ -2201,37 +2201,37 @@
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>290</width>
-                        <height>355</height>
+                        <width>230</width>
+                        <height>330</height>
                         <texture border="15" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control>
 
                     <control type="image">
-                        <left>15</left>
-                        <top>15</top>
-                        <width>260</width>
-                        <height>260</height>
+                        <left>10</left>
+                        <top>10</top>
+                        <width>210</width>
+                        <height>240</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control>
                     <control type="image">
-                        <left>15</left>
-                        <top>15</top>
-                        <width>260</width>
-                        <height>260</height>
+                        <left>10</left>
+                        <top>10</top>
+                        <width>210</width>
+                        <height>240</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
 
                     <control type="label">
-                        <left>15</left>
-                        <top>280</top>
-                        <width>260</width>
+                        <left>10</left>
+                        <top>259</top>
+                        <width>210</width>
                         <height>30</height>
-                        <font>font10</font>
+                        <font>font9</font>
                         <textcolor>grey</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2240,11 +2240,11 @@
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
                     <control type="label">
-                        <left>15</left>
-                        <top>280</top>
-                        <width>260</width>
+                        <left>10</left>
+                        <top>259</top>
+                        <width>210</width>
                         <height>30</height>
-                        <font>font10</font>
+                        <font>font9</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2253,13 +2253,12 @@
                         <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control>
 
-
                     <control type="label">
-                        <left>15</left>
-                        <top>310</top>
-                        <width>260</width>
+                        <left>10</left>
+                        <top>283</top>
+                        <width>210</width>
                         <height>30</height>
-                        <font>font12</font>
+                        <font>font10_title</font>
                         <textcolor>white</textcolor>
                         <align>center</align>
                         <aligny>center</aligny>
@@ -2267,11 +2266,11 @@
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
                     <control type="label">
-                        <left>15</left>
-                        <top>310</top>
-                        <width>260</width>
+                        <left>10</left>
+                        <top>283</top>
+                        <width>210</width>
                         <height>30</height>
-                        <font>font12</font>
+                        <font>font10_title</font>
                         <textcolor>black</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2317,10 +2316,10 @@
                 <orientation>Horizontal</orientation>
                 <itemlayout height="428" width="324">
                     <control type="image">
-                        <left>10</left>
+                        <left>12</left>
                         <top>10</top>
-                        <width>320</width>
-                        <height>320</height>
+                        <width>316</width>
+                        <height>335</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
                         <bordertexture border="5">blank.png</bordertexture>
@@ -2328,10 +2327,10 @@
                     </control>
                     <control type="label">
                         <left>15</left>
-                        <top>337</top>
+                        <top>347</top>
                         <width>310</width>
                         <height>30</height>
-                        <font>font10</font>
+                        <font>font9</font>
                         <textcolor>grey</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2340,10 +2339,10 @@
                     </control>
                     <control type="label">
                         <left>15</left>
-                        <top>365</top>
+                        <top>370</top>
                         <width>310</width>
                         <height>30</height>
-                        <font>font12</font>
+                        <font>font11_title</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2353,10 +2352,10 @@
                 </itemlayout>
                 <focusedlayout height="428" width="324">
                     <control type="image">
-                        <left>10</left>
+                        <left>12</left>
                         <top>10</top>
-                        <width>320</width>
-                        <height>320</height>
+                        <width>316</width>
+                        <height>335</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
@@ -2364,10 +2363,10 @@
                         <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control>
                     <control type="image">
-                        <left>10</left>
+                        <left>12</left>
                         <top>10</top>
-                        <width>320</width>
-                        <height>320</height>
+                        <width>316</width>
+                        <height>335</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
                         <bordertexture border="5">blank.png</bordertexture>
@@ -2376,10 +2375,10 @@
                     </control>
                     <control type="label">
                         <left>15</left>
-                        <top>337</top>
+                        <top>347</top>
                         <width>310</width>
                         <height>30</height>
-                        <font>font10</font>
+                        <font>font9</font>
                         <textcolor>grey</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2388,10 +2387,10 @@
                     </control>
                     <control type="label">
                         <left>15</left>
-                        <top>365</top>
+                        <top>370</top>
                         <width>310</width>
                         <height>30</height>
-                        <font>font12</font>
+                        <font>font11_title</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2401,10 +2400,10 @@
                     </control>
                     <control type="label">
                         <left>15</left>
-                        <top>365</top>
+                        <top>370</top>
                         <width>310</width>
                         <height>30</height>
-                        <font>font12</font>
+                        <font>font11_title</font>
                         <textcolor>$VAR[MainColorOne]</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2482,7 +2481,7 @@
 				<animation effect="slide" start="0,0" end="270,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,5)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="135,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,6)">Conditional</animation>
                 <left>95</left>
-                <top>0</top>
+                <top>18</top>
                 <width>1680</width>
                 <height>410</height>
                 <onleft>$PARAM[Control]</onleft>
@@ -2500,7 +2499,7 @@
                         <left>10</left>
                         <top>0</top>
                         <width>200</width>
-                        <height>350</height>
+                        <height>330</height>
                         <texture border="15">RecentAddedBack.png</texture>
                         <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                     </control>
@@ -2508,7 +2507,7 @@
                         <left>15</left>
                         <top>10</top>
                         <width>190</width>
-                        <height>300</height>
+                        <height>280</height>
                         <texture background="true">$VAR[VideoThumbImage]</texture>
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="5">blank.png</bordertexture>
@@ -2516,10 +2515,10 @@
                     </control>
                     <control type="label">
                         <left>20</left>
-                        <top>310</top>
+                        <top>292</top>
                         <width>180</width>
                         <height>30</height>
-                        <font>font10</font>
+                        <font>font9_title</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2549,7 +2548,7 @@
                         <left>10</left>
                         <top>0</top>
                         <width>200</width>
-                        <height>350</height>
+                        <height>330</height>
                         <texture border="15">RecentAddedBack.png</texture>
                         <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
@@ -2558,7 +2557,7 @@
                         <left>10</left>
                         <top>0</top>
                         <width>200</width>
-                        <height>350</height>
+                        <height>330</height>
                         <texture border="15" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control>
@@ -2567,7 +2566,7 @@
                         <left>15</left>
                         <top>10</top>
                         <width>190</width>
-                        <height>300</height>
+                        <height>280</height>
                         <texture background="true">$VAR[VideoThumbImage]</texture>
                         <aspectratio>scale</aspectratio>
                         <include>TextureBorderWidgets</include>
@@ -2577,7 +2576,7 @@
                         <left>15</left>
                         <top>10</top>
                         <width>190</width>
-                        <height>300</height>
+                        <height>280</height>
                         <texture>$VAR[VideoThumbImage]</texture>
                         <aspectratio>scale</aspectratio>
                         <include>TextureBorderWidgets</include>
@@ -2585,10 +2584,10 @@
                     </control>
                     <control type="label">
                         <left>20</left>
-                        <top>310</top>
+                        <top>292</top>
                         <width>180</width>
                         <height>30</height>
-                        <font>font10</font>
+                        <font>font9_title</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2598,10 +2597,10 @@
                     </control>
                     <control type="label">
                         <left>20</left>
-                        <top>310</top>
+                        <top>292</top>
                         <width>180</width>
                         <height>30</height>
-                        <font>font10</font>
+                        <font>font9_title</font>
                         <textcolor>black</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2633,7 +2632,7 @@
                         <left>10</left>
                         <top>0</top>
                         <width>200</width>
-                        <height>410</height>
+                        <height>390</height>
                         <texture border="15">RecentAddedBack.png</texture>
                         <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                     </control>
@@ -2641,17 +2640,17 @@
                         <left>15</left>
                         <top>10</top>
                         <width>190</width>
-                        <height>300</height>
+                        <height>280</height>
                         <texture background="true">$VAR[VideoThumbImage]</texture>
                         <aspectratio>scale</aspectratio>
                         <include>TextureBorderWidgets</include>
                     </control>
 					<control type="label">
                         <left>20</left>
-                        <top>310</top>
+                        <top>292</top>
                         <width>180</width>
                         <height>30</height>
-                        <font>font10</font>
+                        <font>font9_title</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2660,7 +2659,7 @@
                     </control>
 					<control type="label">
                         <left>20</left>
-                        <top>340</top>
+                        <top>320</top>
                         <width>180</width>
                         <height>30</height>
                         <font>font10</font>
@@ -2672,7 +2671,7 @@
                     </control>
 					<control type="label">
                         <left>20</left>
-                        <top>370</top>
+                        <top>350</top>
                         <width>180</width>
                         <height>30</height>
                         <font>font12</font>
@@ -2689,7 +2688,7 @@
                         <left>10</left>
                         <top>0</top>
                         <width>200</width>
-                        <height>410</height>
+                        <height>390</height>
                         <texture border="15">RecentAddedBack.png</texture>
                         <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
@@ -2698,7 +2697,7 @@
                         <left>10</left>
                         <top>0</top>
                         <width>200</width>
-                        <height>410</height>
+                        <height>390</height>
                         <texture border="15" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control>
@@ -2707,7 +2706,7 @@
                         <left>15</left>
                         <top>10</top>
                         <width>190</width>
-                        <height>300</height>
+                        <height>280</height>
                         <texture background="true">$VAR[VideoThumbImage]</texture>
                         <aspectratio>scale</aspectratio>
                         <include>TextureBorderWidgets</include>
@@ -2717,7 +2716,7 @@
                         <left>15</left>
                         <top>10</top>
                         <width>190</width>
-                        <height>300</height>
+                        <height>280</height>
                         <texture>$VAR[VideoThumbImage]</texture>
                         <aspectratio>scale</aspectratio>
                         <include>TextureBorderWidgets</include>
@@ -2725,10 +2724,10 @@
                     </control>
 					<control type="label">
                         <left>20</left>
-                        <top>310</top>
+                        <top>292</top>
                         <width>180</width>
                         <height>30</height>
-                        <font>font10</font>
+                        <font>font9_title</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2738,10 +2737,10 @@
                     </control>
 					<control type="label">
                         <left>20</left>
-                        <top>310</top>
+                        <top>292</top>
                         <width>180</width>
                         <height>30</height>
-                        <font>font10</font>
+                        <font>font9_title</font>
                         <textcolor>black</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2751,10 +2750,10 @@
                     </control>
 					<control type="label">
                         <left>20</left>
-                        <top>340</top>
+                        <top>320</top>
                         <width>180</width>
                         <height>30</height>
-                        <font>font10</font>
+                        <font>font9_title</font>
                         <textcolor>grey</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2763,10 +2762,10 @@
                     </control>
 					<control type="label">
                         <left>20</left>
-                        <top>370</top>
+                        <top>350</top>
                         <width>180</width>
                         <height>30</height>
-                        <font>font12</font>
+                        <font>font11</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -2776,10 +2775,10 @@
                     </control>
 					<control type="label">
                         <left>20</left>
-                        <top>370</top>
+                        <top>350</top>
                         <width>180</width>
                         <height>30</height>
-                        <font>font12</font>
+                        <font>font11</font>
                         <textcolor>black</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -3099,6 +3098,7 @@
     </include>
 	
     <include name="ThumbSmallWidgetLayout">
+
         <param name="Control" default="8000" />
         <param name="Content" default="" />
 		<param name="embuaryinfonextaired">false</param>
@@ -3109,7 +3109,7 @@
                 <animation effect="slide" start="0,0" end="360,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,3)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="180,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,4)">Conditional</animation>
                 <left>45</left>
-                <top>0</top>
+                <top>18</top>
                 <width>1800</width>
                 <height>390</height>
                 <onleft>PARAM[Control]</onleft>
@@ -3132,10 +3132,10 @@
                         <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                     </control>
                     <control type="image">
-                        <left>20</left>
-                        <top>15</top>
-                        <width>330</width>
-                        <height>232</height>
+                        <left>15</left>
+                        <top>5</top>
+                        <width>340</width>
+                        <height>265</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$VAR[EpisodeThumbImage]</texture>
                         <bordertexture border="5">blank.png</bordertexture>
@@ -3143,10 +3143,10 @@
 						<visible>!String.IsEqual(ListItem.DBType,tvshow)</visible>
                     </control>
 					<control type="image">
-                        <left>20</left>
-                        <top>15</top>
-                        <width>330</width>
-                        <height>232</height>
+                        <left>15</left>
+                        <top>5</top>
+                        <width>340</width>
+                        <height>265</height>
                         <aspectratio>keep</aspectratio>
                         <texture background="true">$VAR[EpisodeThumbImage]</texture>
                         <bordertexture border="5">blank.png</bordertexture>
@@ -3177,10 +3177,10 @@
                     </control>
                     <control type="label">
                         <left>20</left>
-                        <top>265</top>
+                        <top>280</top>
                         <width>320</width>
                         <height>30</height>
-                        <font>font12</font>
+                        <font>font11_title</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -3243,20 +3243,20 @@
                     <control type="group">
 					    <visible>!String.IsEqual(ListItem.DBType,tvshow)</visible>
 				        <control type="image">
-                            <left>20</left>
-                            <top>15</top>
-                            <width>330</width>
-                            <height>232</height>
+                            <left>15</left>
+                            <top>5</top>
+                            <width>340</width>
+                            <height>265</height>
                             <aspectratio>scale</aspectratio>
                             <texture background="true">$VAR[EpisodeThumbImage]</texture>
                             <include>TextureBorderWidgets</include>
                             <visible>Control.HasFocus($PARAM[Control])</visible>
                         </control>
                         <control type="image">
-                            <left>20</left>
-                            <top>15</top>
-                            <width>330</width>
-                            <height>232</height>
+                            <left>15</left>
+                            <top>5</top>
+                            <width>340</width>
+                            <height>265</height>
                             <aspectratio>scale</aspectratio>
                             <texture background="true">$VAR[EpisodeThumbImage]</texture>
                             <include>TextureBorderWidgets</include>
@@ -3266,20 +3266,20 @@
                     <control type="group">
 					    <visible>String.IsEqual(ListItem.DBType,tvshow)</visible>
 				        <control type="image">
-                            <left>20</left>
-                            <top>15</top>
-                            <width>330</width>
-                            <height>232</height>
+                            <left>15</left>
+                            <top>5</top>
+                            <width>340</width>
+                            <height>265</height>
                             <aspectratio>keep</aspectratio>
                             <texture background="true">$VAR[EpisodeThumbImage]</texture>
                             <include>TextureBorderWidgets</include>
                             <visible>Control.HasFocus($PARAM[Control])</visible>
                         </control>
                         <control type="image">
-                            <left>20</left>
-                            <top>15</top>
-                            <width>330</width>
-                            <height>232</height>
+                            <left>15</left>
+                            <top>5</top>
+                            <width>340</width>
+                            <height>265</height>
                             <aspectratio>keep</aspectratio>
                             <texture background="true">$VAR[EpisodeThumbImage]</texture>
                             <include>TextureBorderWidgets</include>
@@ -3288,10 +3288,10 @@
 					</control>					
                     <control type="image">
                         <aspectratio align="center" aligny="bottom">keep</aspectratio>
-                        <left>20</left>
-                        <top>15</top>
-                        <width>330</width>
-                        <height>232</height>
+                        <left>15</left>
+                        <top>5</top>
+                        <width>340</width>
+                        <height>265</height>
                         <texture>$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
                         <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
                     </control>
@@ -3312,10 +3312,10 @@
 					    <visible>!String.IsEqual(ListItem.DBType,episode)</visible>
                         <control type="label">
                             <left>20</left>
-                            <top>265</top>
+                            <top>280</top>
                             <width>320</width>
                             <height>30</height>
-                            <font>font12</font>
+                            <font>font11_title</font>
                             <textcolor>white</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -3325,10 +3325,10 @@
                         </control>
                         <control type="label">
                             <left>20</left>
-                            <top>265</top>
+                            <top>280</top>
                             <width>320</width>
                             <height>30</height>
-                            <font>font12</font>
+                            <font>font11_title</font>
                             <textcolor>black</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -3384,21 +3384,21 @@
                         <visible>!ListItem.IsResumable</visible>
                     </control>
                 </focusedlayout>
-				
+
 				<itemlayout height="360" width="360" condition="$PARAM[embuaryinfonextaired]">
                     <control type="image">
                         <left>10</left>
                         <top>0</top>
                         <width>350</width>
-                        <height>360</height>
+                        <height>330</height>
                         <texture border="15">RecentAddedBack.png</texture>
                         <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                     </control>
                     <control type="image">
-                        <left>20</left>
-                        <top>15</top>
-                        <width>330</width>
-                        <height>232</height>
+                        <left>15</left>
+                        <top>5</top>
+                        <width>340</width>
+                        <height>220</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$VAR[EpisodeThumbImage]</texture>
                         <bordertexture border="5">blank.png</bordertexture>
@@ -3406,10 +3406,10 @@
                     </control>
                     <control type="label">
                         <left>20</left>
-                        <top>252</top>
-                        <width>310</width>
+                        <top>235</top>
+                        <width>340</width>
                         <height>30</height>
-                        <font>font12</font>
+                        <font>font11</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -3418,8 +3418,8 @@
                     </control>
 					<control type="label">
                         <left>20</left>
-                        <top>282</top>
-                        <width>310</width>
+                        <top>260</top>
+                        <width>340</width>
                         <height>30</height>
                         <font>font10</font>
                         <textcolor>grey</textcolor>
@@ -3430,10 +3430,10 @@
                     </control>
 					<control type="label">
                         <left>20</left>
-                        <top>312</top>
-                        <width>310</width>
+                        <top>285</top>
+                        <width>340</width>
                         <height>30</height>
-                        <font>font12</font>
+                        <font>font11_title</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -3444,38 +3444,38 @@
                 <focusedlayout height="360" width="360" condition="$PARAM[embuaryinfonextaired]">
                     
                     <control type="image">
-                        <left>0</left>
+                        <left>10</left>
                         <top>0</top>
-                        <width>360</width>
-                        <height>360</height>
+                        <width>350</width>
+                        <height>330</height>
                         <texture border="15">RecentAddedBack.png</texture>
                         <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
                     
                     <control type="image">
-                        <left>0</left>
+                        <left>10</left>
                         <top>0</top>
-                        <width>360</width>
-                        <height>360</height>
+                        <width>350</width>
+                        <height>330</height>
                         <texture border="15" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control>
 
                     <control type="group">
-					    <left>20</left>
-                        <top>15</top>
+                        <left>15</left>
+                        <top>5</top>
 				        <control type="image">
-                            <width>330</width>
-                            <height>232</height>
+                            <width>340</width>
+                            <height>220</height>
                             <aspectratio>scale</aspectratio>
                             <texture background="true">$VAR[EpisodeThumbImage]</texture>
                             <include>TextureBorderWidgets</include>
                             <visible>Control.HasFocus($PARAM[Control])</visible>
                         </control>
                         <control type="image">
-                            <width>330</width>
-                            <height>232</height>
+                            <width>340</width>
+                            <height>220</height>
                             <aspectratio>scale</aspectratio>
                             <texture background="true">$VAR[EpisodeThumbImage]</texture>
                             <include>TextureBorderWidgets</include>
@@ -3483,12 +3483,12 @@
                         </control>
 					</control>
                     <control type="group">
-                        <left>30</left>
-                        <top>252</top>
+                        <left>20</left>
+                        <top>235</top>
 						<control type="label">
-                            <width>310</width>
+                            <width>340</width>
                             <height>30</height>
-                            <font>font12</font>
+                            <font>font11</font>
                             <textcolor>white</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -3497,9 +3497,9 @@
                             <visible>!Control.HasFocus($PARAM[Control])</visible>
                         </control>
                         <control type="label">
-                            <width>310</width>
+                            <width>340</width>
                             <height>30</height>
-                            <font>font12</font>
+                            <font>font11</font>
                             <textcolor>black</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -3509,9 +3509,9 @@
                         </control>
 					</control>
 					<control type="label">
-                        <left>30</left>
-                        <top>282</top>
-                        <width>310</width>
+                        <left>20</left>
+                        <top>260</top>
+                        <width>340</width>
                         <height>30</height>
                         <font>font10</font>
                         <textcolor>white</textcolor>
@@ -3523,12 +3523,12 @@
 						<visible>String.IsEqual(ListItem.DBType,episode)</visible>
                     </control>
                     <control type="group">
-					    <left>30</left>
-						<top>312</top>
+                        <left>20</left>
+                        <top>285</top>
                         <control type="label">
-                            <width>310</width>
+                            <width>340</width>
                             <height>30</height>
-                            <font>font12</font>
+                            <font>font11_title</font>
                             <textcolor>white</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -3537,9 +3537,9 @@
                             <visible>!Control.HasFocus($PARAM[Control])</visible>
                         </control>
                         <control type="label">
-                            <width>310</width>
+                            <width>340</width>
                             <height>30</height>
-                            <font>font12</font>
+                            <font>font11_title</font>
                             <textcolor>black</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -3644,7 +3644,7 @@
                         <top>360</top>
                         <width>420</width>
                         <height>30</height>
-                        <font>font12</font>
+                        <font>font11</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -3657,7 +3657,7 @@
                         <top>375</top>
                         <width>420</width>
                         <height>30</height>
-                        <font>font12</font>
+                        <font>font11</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -3765,7 +3765,7 @@
                             <top>360</top>
                             <width>420</width>
                             <height>30</height>
-                            <font>font12</font>
+                            <font>font11</font>
                             <textcolor>white</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -3778,7 +3778,7 @@
                             <top>360</top>
                             <width>420</width>
                             <height>30</height>
-                            <font>font12</font>
+                            <font>font11</font>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -3794,7 +3794,7 @@
                             <top>375</top>
                             <width>420</width>
                             <height>30</height>
-                            <font>font12</font>
+                            <font>font11</font>
                             <textcolor>white</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -3807,7 +3807,7 @@
                             <top>375</top>
                             <width>420</width>
                             <height>30</height>
-                            <font>font12</font>
+                            <font>font11</font>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -3851,7 +3851,7 @@
                         <top>300</top>
                         <width>420</width>
                         <height>30</height>
-                        <font>font12</font>
+                        <font>font11</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -3875,7 +3875,7 @@
                         <top>360</top>
                         <width>420</width>
                         <height>30</height>
-                        <font>font12</font>
+                        <font>font11</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -3912,7 +3912,7 @@
                         <control type="label">
                             <width>420</width>
                             <height>30</height>
-                            <font>font12</font>
+                            <font>font11</font>
                             <textcolor>white</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -3923,7 +3923,7 @@
                         <control type="label">
                             <width>420</width>
                             <height>30</height>
-                            <font>font12</font>
+                            <font>font11</font>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -3951,7 +3951,7 @@
                         <control type="label">
                             <width>420</width>
                             <height>30</height>
-                            <font>font12</font>
+                            <font>font11</font>
                             <textcolor>white</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -3962,7 +3962,7 @@
                         <control type="label">
                             <width>420</width>
                             <height>30</height>
-                            <font>font12</font>
+                            <font>font11</font>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -4187,7 +4187,7 @@
             <control type="group">
 				<visible>$PARAM[visibility]</visible>
 			    <control type="button">
-                    <left>15</left>
+                    <left>45</left>
                     <top>135</top>
                     <width>45</width>
                     <height>60</height>
@@ -4199,7 +4199,7 @@
                     <include>VisibleFadeEffect</include>
                 </control>
                 <control type="button">
-                    <left>1865</left>
+                    <left>1835</left>
                     <top>135</top>
                     <width>45</width>
                     <height>60</height>
