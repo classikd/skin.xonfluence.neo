@@ -651,28 +651,28 @@
             <effect type="fade" start="100" end="0" time="150" />
         </animation>
 		<hitrect x="0" y="795" w="1920" h="180" />
-		<left>98</left>
+		<left>420</left>
 		<top>285r</top>
 		<width>1911</width>
 		<height>300</height>
 		<pagecontrol></pagecontrol>
 		<scrolltime>300</scrolltime>
 		<orientation>Horizontal</orientation>
-		<itemlayout height="270" width="246">
+		<itemlayout height="270" width="160">
 		    <control type="image">
 			    <left>0</left>
 				<top>0</top>
-				<width>243</width>
+				<width>140</width>
 				<height>162</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
-				<bordertexture border="5">button-nofocus.png</bordertexture>
+				<bordertexture border="5">blank.png</bordertexture>
 				<include>TextureBorderAddons</include>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 			</control>
 			<control type="image">
-			    <left>8</left>
+			    <left>0</left>
 				<top>162</top>
-				<width>228</width>
+				<width>140</width>
 				<height>150</height>
 				<aspectratio aligny="top">keep</aspectratio>
 				<texture diffuse="diffuse_mirror2.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
@@ -680,24 +680,25 @@
 			<control type="label">
 			    <left>1</left>
 				<top>165</top>
-				<width>243</width>
+				<width>140</width>
 				<height>30</height>
-				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<font>font10_title</font>
+				<textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>!Skin.HasSetting(HideHomeAddonName)</visible>
 			</control>
 		</itemlayout>
-		<focusedlayout height="270" width="246">
+		<focusedlayout height="270" width="160">
 		    <control type="image">
 			    <left>0</left>
 			    <top>0</top>
-			    <width>243</width>
+			    <width>140</width>
 			    <height>162</height>
 			    <aspectratio aligny="bottom">keep</aspectratio>
-			    <bordertexture border="5">button-nofocus.png</bordertexture>
+			    <bordertexture border="5">blank.png</bordertexture>
 			    <include>TextureBorderAddons</include>
 			    <texture background="true">$INFO[ListItem.Icon]</texture>
 			    <visible>!ControlGroup(9002).HasFocus</visible>
@@ -705,7 +706,7 @@
 			<control type="image">
 			    <left>0</left>
 				<top>0</top>
-				<width>243</width>
+				<width>140</width>
 				<height>162</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
@@ -714,9 +715,9 @@
 				<visible>ControlGroup(9002).HasFocus</visible>
 			</control>
 			<control type="image">
-			    <left>8</left>
+			    <left>0</left>
 				<top>162</top>
-				<width>228</width>
+				<width>140</width>
 				<height>150</height>
 				<aspectratio aligny="top">keep</aspectratio>
 				<texture diffuse="diffuse_mirror2.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
@@ -724,10 +725,11 @@
 			<control type="label">
 			    <left>1</left>
 				<top>165</top>
-				<width>243</width>
+				<width>140</width>
 				<height>30</height>
-				<font>font12</font>
+				<font>font10_title</font>
 				<textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
@@ -737,10 +739,11 @@
 			<control type="label">
 			    <left>1</left>
 				<top>165</top>
-				<width>243</width>
+				<width>140</width>
 				<height>30</height>
-				<font>font12</font>
-				<textcolor>grey2</textcolor>
+				<font>font10_title</font>
+				<textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
@@ -752,7 +755,7 @@
 	
     <include name="AddonsMediaPlayingLayout">
         <include>Window_OpenClose_Animation</include>
-        <animation effect="slide" start="0,0" end="0,-255" time="0" condition="Skin.HasSetting(LowerMainMenuBar)">Conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-340" time="0" condition="Skin.HasSetting(LowerMainMenuBar)">Conditional</animation>
         <animation type="Visible">
             <effect type="slide" start="0,45" end="0,0" delay="200" easing="out" tween="quadratic" time="200" />
             <effect type="fade" start="0" end="100" delay="200" time="150" />
@@ -761,28 +764,28 @@
             <effect type="fade" start="100" end="0" time="150" />
         </animation>
         <hitrect x="0" y="795" w="1920" h="180" />
-        <left>344</left>
+        <left>410</left>
         <top>285r</top>
         <width>1230</width>
         <height>300</height>
         <pagecontrol></pagecontrol>
         <scrolltime>300</scrolltime>
         <orientation>Horizontal</orientation>
-        <itemlayout height="270" width="246">
+        <itemlayout height="270" width="160">
             <control type="image">
                 <left>0</left>
                 <top>0</top>
-                <width>243</width>
+                <width>140</width>
                 <height>162</height>
                 <aspectratio aligny="bottom">keep</aspectratio>
-                <bordertexture border="5">button-nofocus.png</bordertexture>
+                <bordertexture border="5">blank.png</bordertexture>
                 <include>TextureBorderAddons</include>
                 <texture background="true">$INFO[ListItem.Icon]</texture>
             </control>
             <control type="image">
-                <left>8</left>
+                <left>0</left>
                 <top>162</top>
-                <width>228</width>
+                <width>140</width>
                 <height>150</height>
                 <aspectratio aligny="top">keep</aspectratio>
                 <texture diffuse="diffuse_mirror2.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
@@ -790,24 +793,25 @@
             <control type="label">
                 <left>1</left>
                 <top>165</top>
-                <width>243</width>
+                <width>140</width>
                 <height>30</height>
-                <font>font12</font>
-                <textcolor>grey2</textcolor>
+                <font>font10_title</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <label>$INFO[ListItem.Label]</label>
                 <visible>!Skin.HasSetting(HideHomeAddonName)</visible>
             </control>
         </itemlayout>
-        <focusedlayout height="270" width="246">
+        <focusedlayout height="270" width="160">
             <control type="image">
                 <left>0</left>
                 <top>0</top>
-                <width>243</width>
+                <width>140</width>
                 <height>162</height>
                 <aspectratio aligny="bottom">keep</aspectratio>
-                <bordertexture border="5">button-nofocus.png</bordertexture>
+                <bordertexture border="5">blank.png</bordertexture>
                 <include>TextureBorderAddons</include>
                 <texture background="true">$INFO[ListItem.Icon]</texture>
                 <visible>!ControlGroup(9002).HasFocus</visible>
@@ -815,7 +819,7 @@
             <control type="image">
                 <left>0</left>
                 <top>0</top>
-                <width>243</width>
+                <width>140</width>
                 <height>162</height>
                 <aspectratio aligny="bottom">keep</aspectratio>
                 <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
@@ -824,9 +828,9 @@
                 <visible>ControlGroup(9002).HasFocus</visible>
             </control>
             <control type="image">
-                <left>8</left>
+                <left>0</left>
                 <top>162</top>
-                <width>228</width>
+                <width>140</width>
                 <height>150</height>
                 <aspectratio aligny="top">keep</aspectratio>
                 <texture diffuse="diffuse_mirror2.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
@@ -834,10 +838,11 @@
             <control type="label">
                 <left>1</left>
                 <top>165</top>
-                <width>243</width>
+                <width>140</width>
                 <height>30</height>
-                <font>font12</font>
+                <font>font10_title</font>
                 <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <label>$INFO[ListItem.Label]</label>
@@ -847,10 +852,11 @@
             <control type="label">
                 <left>1</left>
                 <top>165</top>
-                <width>243</width>
+                <width>140</width>
                 <height>30</height>
-                <font>font12</font>
-                <textcolor>grey2</textcolor>
+                <font>font10_title</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <label>$INFO[ListItem.Label]</label>
