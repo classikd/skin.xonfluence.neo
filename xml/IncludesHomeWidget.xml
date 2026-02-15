@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     
-	<expression name="showSmallWidget">Player.HasMedia + !Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(HideNowPlayingInfo)</expression>
+	<expression name="showSmallWidget">Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</expression>
 	
 	<variable name="UsrDefItemOneWidgetLayout">
         <value condition="String.IsEqual(Skin.String(HomeItem.1.WidgetLayout),Small)">$LOCALIZE[32025]</value>
