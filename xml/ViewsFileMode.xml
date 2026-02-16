@@ -401,10 +401,10 @@
                     </control>
                     <control type="label">
                         <left>12</left>
-                        <top>240</top>
+                        <top>238</top>
                         <width>300</width>
                         <height>38</height>
-                        <font>font12</font>
+                        <font>font11</font>
                         <textcolor>grey2</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -413,8 +413,8 @@
                     </control>
 
                     <control type="image">
-                        <left>255</left>
-                        <top>195</top>
+                        <left>265</left>
+                        <top>185</top>
                         <width>45</width>
                         <height>45</height>
                         <aspectratio>keep</aspectratio>
@@ -505,10 +505,10 @@
                     </control>
                     <control type="label">
                         <left>12</left>
-                        <top>240</top>
+                        <top>238</top>
                         <width>300</width>
                         <height>38</height>
-                        <font>font12</font>
+                        <font>font11</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -517,8 +517,8 @@
                     </control>
 
                     <control type="image">
-                        <left>255</left>
-                        <top>195</top>
+                        <left>265</left>
+                        <top>185</top>
                         <width>45</width>
                         <height>45</height>
                         <aspectratio>keep</aspectratio>
@@ -539,87 +539,96 @@
 
 
                 </focusedlayout>
-                <itemlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="419" width="324">
+                <itemlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="419" width="230">
                     <control type="image">
-                        <left>1</left>
+                        <left>10</left>
                         <top>0</top>
-                        <width>321</width>
+                        <width>220</width>
                         <height>360</height>
                         <bordertexture border="5">button-nofocus.png</bordertexture>
-                        <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
-                        <aspectratio>keep</aspectratio>
+                        <aspectratio>scale</aspectratio>
                     </control>
                     <control type="label">
                         <left>12</left>
                         <top>360</top>
-                        <width>300</width>
+                        <width>230</width>
                         <height>38</height>
-                        <font>font12</font>
+                        <font>font11</font>
                         <textcolor>grey2</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
                     </control>
+
                     <control type="image">
-                        <left>255</left>
-                        <top>315</top>
-                        <width>45</width>
-                        <height>45</height>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>ListItem.IsResumable</visible>
-                    </control>
-                    <control type="image">
-                        <left>255</left>
-                        <top>315</top>
+                        <left>180</left>
+                        <top>310</top>
                         <width>45</width>
                         <height>45</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
                     </control>
+
+
+                    <control type="progress">
+                        <left>10</left>
+                        <top>357</top>
+                        <width>220</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                    </control> 
+
                 </itemlayout>
-                <focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="419" width="324">
+                <focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="419" width="230">
                     <control type="image">
-                        <left>1</left>
+                        <left>10</left>
                         <top>0</top>
-                        <width>321</width>
+                        <width>220</width>
                         <height>360</height>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
-                        <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
-                        <aspectratio>keep</aspectratio>
+                        <aspectratio>scale</aspectratio>
                     </control>
                     <control type="label">
                         <left>12</left>
                         <top>360</top>
-                        <width>300</width>
+                        <width>230</width>
                         <height>38</height>
-                        <font>font12</font>
+                        <font>font11</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
                     </control>
+
                     <control type="image">
-                        <left>255</left>
-                        <top>315</top>
-                        <width>45</width>
-                        <height>45</height>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>ListItem.IsResumable</visible>
-                    </control>
-                    <control type="image">
-                        <left>255</left>
-                        <top>315</top>
+                        <left>180</left>
+                        <top>310</top>
                         <width>45</width>
                         <height>45</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
                     </control>
+
+                    <control type="progress">
+                        <left>10</left>
+                        <top>357</top>
+                        <width>220</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="FFFF0000">white.png</midtexture>
+                    </control> 
+
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="60">
