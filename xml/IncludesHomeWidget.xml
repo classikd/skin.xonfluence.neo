@@ -1599,7 +1599,7 @@
                 <left>40</left>
                 <top>18</top>
                 <width>1800</width>
-                <height>360</height>
+                <height>330</height>
                 <onleft>$PARAM[Control]</onleft>
                 <onright>$PARAM[Control]</onright>
                 <onup>21</onup>
@@ -2135,7 +2135,7 @@
                 <left>120</left>
                 <top>18</top>
                 <width>1680</width>
-                <height>360</height>
+                <height>330</height>
                 <onleft>$PARAM[Control]</onleft>
                 <onright>$PARAM[Control]</onright>
                 <onup>21</onup>
@@ -2483,7 +2483,7 @@
                 <left>95</left>
                 <top>18</top>
                 <width>1680</width>
-                <height>410</height>
+                <height>330</height>
                 <onleft>$PARAM[Control]</onleft>
                 <onright>$PARAM[Control]</onright>
                 <onup>21</onup>
@@ -2797,20 +2797,10 @@
 		<param name="embuaryinfonextaired">false</param>
         <definition>
             <control type="image">
-                <visible>!$PARAM[embuaryinfonextaired]</visible>
 				<left>-30</left>
                 <top>0</top>
                 <width>1980</width>
                 <height>420</height>
-                <texture border="5">RecentAddedBack.png</texture>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
-            </control>
-			<control type="image">
-                <visible>$PARAM[embuaryinfonextaired]</visible>
-				<left>-30</left>
-                <top>-8</top>
-                <width>1980</width>
-                <height>502</height>
                 <texture border="5">RecentAddedBack.png</texture>
                 <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
             </control>
@@ -2823,7 +2813,7 @@
                 <left>84</left>
                 <top>0</top>
                 <width>1762</width>
-                <height>540</height>
+                <height>428</height>
                 <onleft>$PARAM[Control]</onleft>
                 <onright>$PARAM[Control]</onright>
                 <onup>21</onup>
@@ -3111,7 +3101,7 @@
                 <left>45</left>
                 <top>18</top>
                 <width>1800</width>
-                <height>390</height>
+                <height>330</height>
                 <onleft>PARAM[Control]</onleft>
                 <onright>PARAM[Control]</onright>
                 <onup>21</onup>
@@ -3583,7 +3573,7 @@
                 <left>80</left>
                 <top>0</top>
                 <width>1730</width>
-                <height>540</height>
+                <height>428</height>
                 <onleft>$PARAM[Control]</onleft>
                 <onright>$PARAM[Control]</onright>
                 <onup>21</onup>
