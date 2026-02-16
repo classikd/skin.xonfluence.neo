@@ -3234,7 +3234,7 @@
                         <left>20</left>
                         <top>15</top>
                         <width>420</width>
-                        <height>322</height>
+                        <height>340</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$VAR[EpisodeThumbImage]</texture>
                         <bordertexture border="5">blank.png</bordertexture>
@@ -3276,10 +3276,10 @@
                     </control>
                     <control type="label">
                         <left>20</left>
-                        <top>360</top>
+                        <top>367</top>
                         <width>420</width>
                         <height>30</height>
-                        <font>font11</font>
+                        <font>font12_title</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
@@ -3324,7 +3324,7 @@
                         <left>20</left>
                         <top>15</top>
                         <width>420</width>
-                        <height>322</height>
+                        <height>340</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$VAR[EpisodeThumbImage]</texture>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
@@ -3336,7 +3336,7 @@
                         <left>20</left>
                         <top>15</top>
                         <width>420</width>
-                        <height>322</height>
+                        <height>340</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$VAR[EpisodeThumbImage]</texture>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
@@ -3349,7 +3349,7 @@
                         <left>20</left>
                         <top>15</top>
                         <width>420</width>
-                        <height>322</height>
+                        <height>340</height>
                         <aspectratio>scale</aspectratio>
                         <texture>$VAR[EpisodeThumbImage]</texture>
                         <bordertexture border="5">blank.png</bordertexture>
@@ -3361,7 +3361,7 @@
                         <left>20</left>
                         <top>15</top>
                         <width>420</width>
-                        <height>322</height>
+                        <height>340</height>
                         <aspectratio>scale</aspectratio>
                         <texture>$VAR[EpisodeThumbImage]</texture>
                         <bordertexture border="5">blank.png</bordertexture>
@@ -3374,7 +3374,7 @@
                         <left>20</left>
                         <top>15</top>
                         <width>420</width>
-                        <height>322</height>
+                        <height>340</height>
                         <aspectratio>scale</aspectratio>
                         <texture>$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
                         <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
@@ -3397,10 +3397,10 @@
 					    <visible>!String.IsEqual(ListItem.DBType,episode)</visible>
                         <control type="label">
                             <left>20</left>
-                            <top>360</top>
+                            <top>367</top>
                             <width>420</width>
                             <height>30</height>
-                            <font>font11</font>
+                            <font>font12_title</font>
                             <textcolor>white</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -3410,10 +3410,10 @@
                         </control>
                         <control type="label">
                             <left>20</left>
-                            <top>360</top>
+                            <top>367</top>
                             <width>420</width>
                             <height>30</height>
-                            <font>font11</font>
+                            <font>font12_title</font>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -3664,7 +3664,7 @@
         <definition>
 		    <control type="group">
 			    <visible>$PARAM[embuaryinfonextaired] + $PARAM[visibility]</visible>
-                <top>130</top>
+                <top>150</top>
 				<control type="button">
                     <left>25</left>
                     <width>45</width>
@@ -3689,7 +3689,7 @@
 			</control>
             <control type="group">
 			    <visible>!$PARAM[embuaryinfonextaired] + $PARAM[visibility]</visible>
-				<top>130</top>
+				<top>150</top>
                 <control type="button">
                     <left>25</left>
                     <width>45</width>
