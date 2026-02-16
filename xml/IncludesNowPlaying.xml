@@ -851,7 +851,7 @@
             </control>
             <control type="label">
                 <left>265</left>
-                <top>10</top>
+                <top>12</top>
                 <height>30</height>
                 <width>675</width>
                 <label>$VAR[InfoBarStats]</label>

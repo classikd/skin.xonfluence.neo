@@ -4144,7 +4144,7 @@
 				<visible>$PARAM[visibility]</visible>
                 <control type="button">
                     <left>30</left>
-                    <top>150</top>
+                    <top>170</top>
                     <width>45</width>
                     <height>60</height>
                     <texturefocus>arrow-big-left.png</texturefocus>
@@ -4156,7 +4156,7 @@
                 </control>
                 <control type="button">
                     <left>1845</left>
-                    <top>150</top>
+                    <top>170</top>
                     <width>45</width>
                     <height>60</height>
                     <texturefocus>arrow-big-right.png</texturefocus>
