@@ -1569,7 +1569,7 @@
                         <aligny>center</aligny>
 				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
                         <label>$INFO[ListItem.DateAdded(dd/mm/yy),, ]$INFO[ListItem.Duration(hh:mm),,]</label>
-                                <!-- <label2>$INFO[ListItem.FilenameAndPath]</label2> <!--  TBD rafi --> -->
+                                <!-- <label2>$INFO[ListItem.FilenameAndPath]</label2>   TBD rafi -->
 				                <!-- END runtime addition -->
                         <visible>Window.IsVisible(Videos)</visible>
 						<!-- BEGIN runtime addition by:rafi  -->
@@ -3071,6 +3071,7 @@
             </control>
         </control>
     </include>
+
     <include name="FullWallView">
         <control type="group">
             <visible>Control.IsVisible(732)</visible>
@@ -3080,7 +3081,7 @@
             </control>
             <control type="panel" id="732">
                 <hitrect x="0" y="-82" w="1920" h="1080" />
-                <left>44</left>
+                <left>22</left>
                 <top>82</top>
                 <width>1876</width>
                 <height>909</height>
@@ -3095,28 +3096,15 @@
                 <visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Sets) | Container.Content(MusicVideos)</visible>
                 <itemlayout height="303" width="208">
                     <control type="image">
-                        <left>0</left>
+                        <left>10</left>
                         <top>0</top>
-                        <width>208</width>
+                        <width>198</width>
                         <height>303</height>
-                        <include>TextureBorderViews</include>
-                        <bordertexture border="5">button-nofocus.png</bordertexture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <include>VisibleFadeEffect</include>
                         <texture background="true">$VAR[PosterThumb]</texture>
                     </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>208</width>
-                        <height>303</height>
-                        <include>TextureBorderViews</include>
-                        <bordertexture border="5">button-nofocus.png</bordertexture>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>black-back.png</texture>
-                        <colordiffuse>AAFFFFFF</colordiffuse>
-                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
-                    </control>
+
                     <control type="image">
                         <left>81</left>
                         <top>8</top>
@@ -3127,21 +3115,31 @@
                         <visible>Skin.HasSetting(EnableStatusBanner) + !String.IsEmpty(ListItem.Overlay)</visible>
                     </control>
                     <control type="image">
-                        <left>158</left>
-                        <top>255</top>
-                        <width>45</width>
-                        <height>45</height>
+                        <left>9</left>
+                        <top>0</top>
+                        <width>35</width>
+                        <height>35</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!Skin.HasSetting(EnableStatusBanner) + !String.IsEmpty(ListItem.Overlay) + !ListItem.IsResumable</visible>
                     </control>
+
+                    <control type="progress">
+                        <left>10</left>
+                        <top>300</top>
+                        <width>197</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                    </control> 
+
                     <control type="image">
-                        <left>0</left>
+                        <left>10</left>
                         <top>0</top>
-                        <width>208</width>
+                        <width>198</width>
                         <height>303</height>
-                        <include>TextureBorderViews</include>
-                        <bordertexture border="5">button-nofocus.png</bordertexture>
                         <aspectratio>stretch</aspectratio>
                         <texture>black-back.png</texture>
                         <colordiffuse>AAFFFFFF</colordiffuse>
@@ -3166,9 +3164,7 @@
                             <height>308</height>
                             <aspectratio scalediffuse="false">scale</aspectratio>
                             <include>VisibleFadeEffect</include>
-                            <bordersize>8</bordersize>
                             <texture background="true">$VAR[PosterThumb]</texture>
-                            <bordertexture border="8">ThumbBorder.png</bordertexture>
                         </control>
                         <control type="image">
                             <left>81</left>
@@ -3180,14 +3176,24 @@
                             <visible>Skin.HasSetting(EnableStatusBanner) + !String.IsEmpty(ListItem.Overlay)</visible>
                         </control>
                         <control type="image">
-                            <left>158</left>
-                            <top>255</top>
-                            <width>45</width>
-                            <height>45</height>
+                            <left>-2</left>
+                            <top>0</top>
+                            <width>35</width>
+                            <height>35</height>
                             <aspectratio>keep</aspectratio>
-                            <texture>$INFO[ListItem.Overlay]</texture>
+                            <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                             <visible>!Skin.HasSetting(EnableStatusBanner) + !String.IsEmpty(ListItem.Overlay) + !ListItem.IsResumable</visible>
                         </control>
+                        <control type="progress">
+                            <left>0</left>
+                            <top>305</top>
+                            <width>212</width>
+                            <height>3</height>
+                            <info>ListItem.PercentPlayed</info>
+                            <visible>ListItem.IsResumable</visible>
+                            <texturebg border="0">white.png</texturebg>
+                            <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                        </control> 
                     </control>
                 </focusedlayout>
             </control>
