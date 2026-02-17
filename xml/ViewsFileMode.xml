@@ -5,8 +5,8 @@
             <visible>Control.IsVisible(50)</visible>
             <include>VisibleFadeEffect</include>
             <control type="list" id="50">
-                <left>105</left>
-                <top>117</top>
+                <left>95</left>
+                <top>126</top>
                 <width>1035</width>
                 <height>842</height>
                 <onleft>2</onleft>
@@ -21,7 +21,7 @@
                         <left>0</left>
                         <top>0</top>
                         <width>1035</width>
-                        <height>62</height>
+                        <height>61</height>
                         <texture border="0,2,0,2">MenuItemNF.png</texture>
                     </control>
                     <control type="label">
@@ -106,20 +106,29 @@
                     </control>
                 </itemlayout>
                 <focusedlayout height="60" width="870">
+
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
                         <width>1035</width>
                         <height>62</height>
                         <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>Control.HasFocus(50)</visible>
                     </control>
-                    <control type="image">
-                        <left>0</left>
+
+                    <control type="label">
+                        <left>15</left>
                         <top>0</top>
-                        <width>1035</width>
-                        <height>62</height>
-                        <texture border="0,2,0,2">MenuItemNF.png</texture>
-                        <include>VisibleFadeEffect</include>
+                        <width>870</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label] - $INFO[ListItem.PictureDatetime]</label>
+                        <visible>Window.IsVisible(pictures) + !String.IsEmpty(listItem.PictureDatetime)</visible>
+                        <visible>!Control.HasFocus(50)</visible>
                     </control>
                     <control type="label">
                         <left>15</left>
@@ -133,6 +142,22 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label] - $INFO[ListItem.PictureDatetime]</label>
                         <visible>Window.IsVisible(pictures) + !String.IsEmpty(listItem.PictureDatetime)</visible>
+                        <visible>Control.HasFocus(50)</visible>
+                    </control>
+
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>870</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>!Window.IsVisible(pictures) | String.IsEmpty(listItem.PictureDatetime)</visible>
+                        <visible>!Control.HasFocus(50)</visible>
                     </control>
                     <control type="label">
                         <left>15</left>
@@ -146,6 +171,22 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                         <visible>!Window.IsVisible(pictures) | String.IsEmpty(listItem.PictureDatetime)</visible>
+                        <visible>Control.HasFocus(50)</visible>
+                    </control>
+
+                    <control type="label">
+                        <left>405</left>
+                        <top>0</top>
+                        <width>600</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label2]</label>
+                        <visible>!Window.IsVisible(Videos)</visible>
+                        <visible>!Control.HasFocus(51)</visible>
                     </control>
                     <control type="label">
                         <left>405</left>
@@ -159,6 +200,24 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
                         <visible>!Window.IsVisible(Videos)</visible>
+                        <visible>Control.HasFocus(51)</visible>
+                    </control>
+
+                    <control type="label">
+                        <left>315</left>
+                        <top>0</top>
+                        <width>600</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label2]</label>
+                        <visible>Window.IsVisible(Videos)</visible>
+						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
+                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
+                        <visible>!Control.HasFocus(51)</visible>
                     </control>
                     <control type="label">
                         <left>315</left>
@@ -174,7 +233,9 @@
                         <visible>Window.IsVisible(Videos)</visible>
 						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
                         <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
+                        <visible>Control.HasFocus(51)</visible>
                     </control>
+
                     <control type="image">
                         <left>922</left>
                         <top>12</top>
@@ -900,8 +961,8 @@
             <visible>Control.IsVisible(51)</visible>
             <include>VisibleFadeEffect</include>
             <control type="list" id="51">
-                <left>142</left>
-                <top>117</top>
+                <left>132</left>
+                <top>126</top>
                 <width>1620</width>
                 <height>842</height>
                 <onleft>2</onleft>
@@ -916,8 +977,8 @@
                         <left>0</left>
                         <top>0</top>
                         <width>1620</width>
-                        <height>62</height>
-                        <texture border="0,2,0,2">MenuItemNF.png</texture>
+                        <height>61</height>
+                        <texture border="0,1,0,1">MenuItemNF.png</texture>
                     </control>
                     <control type="image">
                         <left>15</left>
@@ -962,8 +1023,8 @@
                         <width>1425</width>
                         <height>60</height>
                         <font>font13</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label] - $INFO[listItem.PictureDatetime]</label>
@@ -975,8 +1036,8 @@
                         <width>1425</width>
                         <height>60</height>
                         <font>font13</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -988,8 +1049,8 @@
                         <width>1500</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
@@ -1001,8 +1062,8 @@
                         <width>1410</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
@@ -1021,18 +1082,18 @@
                     </control>
                     <control type="image">
                         <left>1575</left>
-                        <top>21</top>
-                        <width>30</width>
-                        <height>24</height>
-                        <texture>OverlayWatching.png</texture>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>Window.IsVisible(Videos) + ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
                         <left>1575</left>
-                        <top>21</top>
-                        <width>30</width>
-                        <height>24</height>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
                     </control>
@@ -1043,19 +1104,10 @@
                         <top>0</top>
                         <width>1620</width>
                         <height>62</height>
-                        <texture border="0,2,0,2">MenuItemNF.png</texture>
-                        <visible>!Control.HasFocus(51)</visible>
-                        <include>VisibleFadeEffect</include>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>1620</width>
-                        <height>62</height>
-                        <texture border="5" colordiffuse="$VAR[MainColorOne]">$VAR[SelectMenuItem]</texture>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                         <visible>Control.HasFocus(51)</visible>
-                        <include>VisibleFadeEffect</include>
                     </control>
+
                     <control type="image">
                         <left>15</left>
                         <top>6</top>
@@ -1093,6 +1145,7 @@
                         <aspectratio>keep</aspectratio>
                         <visible>Container.Content(Episodes) + Skin.HasSetting(HideEpisodeThumb) + !String.IsEqual(ListItem.Label,..)</visible>
                     </control>
+
                     <control type="label">
                         <left>90</left>
                         <top>0</top>
@@ -1100,11 +1153,12 @@
                         <height>60</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label] - $INFO[listItem.PictureDatetime]</label>
                         <visible>Window.IsVisible(pictures) + !String.IsEmpty(listItem.PictureDatetime)</visible>
+                        <visible>!Control.HasFocus(51)</visible>
                     </control>
                     <control type="label">
                         <left>90</left>
@@ -1112,12 +1166,57 @@
                         <width>1425</width>
                         <height>60</height>
                         <font>font13</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label] - $INFO[listItem.PictureDatetime]</label>
+                        <visible>Window.IsVisible(pictures) + !String.IsEmpty(listItem.PictureDatetime)</visible>
+                        <visible>Control.HasFocus(51)</visible>
+                    </control>
+
+                    <control type="label">
+                        <left>90</left>
+                        <top>0</top>
+                        <width>1425</width>
+                        <height>60</height>
+                        <font>font13</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                         <visible>!Window.IsVisible(pictures) | String.IsEmpty(listItem.PictureDatetime)</visible>
+                        <visible>!Control.HasFocus(51)</visible>
+                    </control>
+                    <control type="label">
+                        <left>90</left>
+                        <top>0</top>
+                        <width>1425</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>!Window.IsVisible(pictures) | String.IsEmpty(listItem.PictureDatetime)</visible>
+                        <visible>Control.HasFocus(51)</visible>
+                    </control>
+
+                    <control type="label">
+                        <left>90</left>
+                        <top>0</top>
+                        <width>1500</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label2]</label>
+                        <visible>!Window.IsVisible(Videos)</visible>
+                        <visible>!Control.HasFocus(51)</visible>
                     </control>
                     <control type="label">
                         <left>90</left>
@@ -1125,12 +1224,30 @@
                         <width>1500</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
                         <visible>!Window.IsVisible(Videos)</visible>
+                        <visible>Control.HasFocus(51)</visible>
+                    </control>
+
+                    <control type="label">
+                        <left>98</left>
+                        <top>0</top>
+                        <width>1410</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label2]</label>
+                        <visible>Window.IsVisible(Videos)</visible>
+						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
+                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
+                        <visible>!Control.HasFocus(51)</visible>
                     </control>
                     <control type="label">
                         <left>98</left>
@@ -1138,15 +1255,17 @@
                         <width>1410</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
                         <visible>Window.IsVisible(Videos)</visible>
 						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
                         <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
+                        <visible>Control.HasFocus(51)</visible>
                     </control>
+
                     <control type="image">
                         <left>1515</left>
                         <top>12</top>
@@ -1158,18 +1277,18 @@
                     </control>
                     <control type="image">
                         <left>1575</left>
-                        <top>21</top>
-                        <width>30</width>
-                        <height>24</height>
-                        <texture>OverlayWatching.png</texture>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>Window.IsVisible(Videos) + ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
                         <left>1575</left>
-                        <top>21</top>
-                        <width>30</width>
-                        <height>24</height>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
                     </control>
