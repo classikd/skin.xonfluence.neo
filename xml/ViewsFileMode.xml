@@ -30,8 +30,8 @@
                         <width>870</width>
                         <height>60</height>
                         <font>font13</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label] - $INFO[listItem.PictureDatetime]</label>
@@ -43,8 +43,8 @@
                         <width>870</width>
                         <height>60</height>
                         <font>font13</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -56,8 +56,8 @@
                         <width>600</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
@@ -69,8 +69,8 @@
                         <width>600</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
@@ -89,18 +89,18 @@
                     </control>
                     <control type="image">
                         <left>982</left>
-                        <top>21</top>
-                        <width>24</width>
-                        <height>24</height>
-                        <texture>OverlayWatching.png</texture>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>Window.IsVisible(Videos) + ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
                         <left>982</left>
-                        <top>21</top>
-                        <width>30</width>
-                        <height>24</height>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
                     </control>
@@ -111,17 +111,14 @@
                         <top>0</top>
                         <width>1035</width>
                         <height>62</height>
-                        <texture border="0,2,0,2">MenuItemNF.png</texture>
-                        <visible>!Control.HasFocus(50)</visible>
-                        <include>VisibleFadeEffect</include>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                     </control>
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
                         <width>1035</width>
                         <height>62</height>
-                        <texture border="5" colordiffuse="$VAR[MainColorOne]">$VAR[SelectMenuItem]</texture>
-                        <visible>Control.HasFocus(50)</visible>
+                        <texture border="0,2,0,2">MenuItemNF.png</texture>
                         <include>VisibleFadeEffect</include>
                     </control>
                     <control type="label">
@@ -130,8 +127,8 @@
                         <width>870</width>
                         <height>60</height>
                         <font>font13</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label] - $INFO[ListItem.PictureDatetime]</label>
@@ -143,8 +140,8 @@
                         <width>870</width>
                         <height>60</height>
                         <font>font13</font>
-                        <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -156,8 +153,8 @@
                         <width>600</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
@@ -169,8 +166,8 @@
                         <width>600</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
@@ -189,18 +186,18 @@
                     </control>
                     <control type="image">
                         <left>982</left>
-                        <top>21</top>
-                        <width>24</width>
-                        <height>24</height>
-                        <texture>OverlayWatching.png</texture>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>Window.IsVisible(Videos) + ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
                         <left>982</left>
-                        <top>21</top>
-                        <width>30</width>
-                        <height>24</height>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
                     </control>
@@ -224,15 +221,15 @@
             </control>
             <control type="group">
                 <depth>DepthContent-</depth>
-                <left>1275</left>
+                <left>1250</left>
                 <top>150</top>
                 <visible>Control.IsVisible(50)</visible>
                 <control type="image">
                     <left>0</left>
-                    <top>0</top>
-                    <width>540</width>
-                    <height>810</height>
-                    <aspectratio aligny="bottom">keep</aspectratio>
+                    <top>-45px</top>
+                    <width>570</width>
+                    <height>885</height>
+                    <aspectratio aligny="bottom">scale</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
                     <bordertexture border="8">ThumbShadow.png</bordertexture>
@@ -242,10 +239,10 @@
                 </control>
                 <control type="image">
                     <left>0</left>
-                    <top>0</top>
-                    <width>540</width>
-                    <height>810</height>
-                    <aspectratio aligny="bottom">keep</aspectratio>
+                    <top>-45px</top>
+                    <width>570</width>
+                    <height>885</height>
+                    <aspectratio aligny="bottom">scale</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
                     <bordertexture border="8">ThumbShadow.png</bordertexture>
@@ -254,10 +251,10 @@
                 </control>
                 <control type="image">
                     <left>0</left>
-                    <top>0</top>
-                    <width>540</width>
-                    <height>810</height>
-                    <aspectratio aligny="bottom">keep</aspectratio>
+                    <top>-45px</top>
+                    <width>570</width>
+                    <height>885</height>
+                    <aspectratio aligny="bottom">scale</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(fanart)]</texture>
                     <bordertexture border="8">ThumbShadow.png</bordertexture>
@@ -266,10 +263,10 @@
                 </control>
                 <control type="image">
                     <left>0</left>
-                    <top>0</top>
-                    <width>540</width>
-                    <height>810</height>
-                    <aspectratio aligny="bottom">keep</aspectratio>
+                    <top>-45px</top>
+                    <width>570</width>
+                    <height>885</height>
+                    <aspectratio aligny="bottom">scale</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="DefaultGenre.png">$VAR[MovieGenreIcon]</texture>
                     <bordertexture border="8">ThumbShadow.png</bordertexture>
@@ -278,10 +275,10 @@
                 </control>
                 <control type="image">
                     <left>0</left>
-                    <top>0</top>
-                    <width>540</width>
-                    <height>810</height>
-                    <aspectratio aligny="bottom">keep</aspectratio>
+                    <top>-45px</top>
+                    <width>570</width>
+                    <height>885</height>
+                    <aspectratio aligny="bottom">scale</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="DefaultStudios.png">$VAR[StudioIcon]</texture>
                     <bordertexture border="8">ThumbShadow.png</bordertexture>
@@ -290,24 +287,15 @@
                 </control>
                 <control type="image">
                     <left>0</left>
-                    <top>0</top>
-                    <width>540</width>
-                    <height>810</height>
-                    <aspectratio aligny="bottom">keep</aspectratio>
+                    <top>-45px</top>
+                    <width>570</width>
+                    <height>885</height>
+                    <aspectratio aligny="bottom">scale</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="DefaultCountry.png">$VAR[FlagIcon]</texture>
                     <bordertexture border="8">ThumbShadow.png</bordertexture>
                     <bordersize>8</bordersize>
                     <visible>Container.Content(countries)</visible>
-                </control>
-                <control type="image">
-                    <left>12</left>
-                    <top>798</top>
-                    <width>516</width>
-                    <height>786</height>
-                    <aspectratio aligny="top">keep</aspectratio>
-                    <fadetime>IconCrossfadeTime</fadetime>
-                    <texture diffuse="diffuse_mirror3.png" flipy="true" background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
                 </control>
             </control>
         </control>
