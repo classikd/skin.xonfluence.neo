@@ -948,7 +948,7 @@
                 <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
             </control>
 
-            <control type="radiobutton" id="804">
+            <control type="radiobutton" id="805">
                 <description>Settings button</description>
                 <width>68</width>
                 <height>68</height>
