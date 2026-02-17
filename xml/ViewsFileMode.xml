@@ -336,7 +336,7 @@
                         <top>0</top>
                         <width>321</width>
                         <height>240</height>
-                        <bordertexture border="5">button-nofocus.png</bordertexture>
+                        <bordertexture border="5">transparent.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultGenre.png">$VAR[MovieGenreIcon]</texture>
                         <aspectratio>keep</aspectratio>
@@ -347,7 +347,7 @@
                         <top>0</top>
                         <width>321</width>
                         <height>240</height>
-                        <bordertexture border="5">button-nofocus.png</bordertexture>
+                        <bordertexture border="5">transparent.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultStudios.png">$VAR[StudioIcon]</texture>
                         <aspectratio>keep</aspectratio>
@@ -372,6 +372,7 @@
                         <width>321</width>
                         <height>240</height>
                         <include>TextureBorderViews</include>
+                        <bordertexture border="5">transparent.png</bordertexture>
                         <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
                         <aspectratio>center</aspectratio>
                         <visible>String.Contains(ListItem.Icon,image://video) + !Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
@@ -405,22 +406,42 @@
                         <width>300</width>
                         <height>38</height>
                         <font>font11</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
                     </control>
 
                     <control type="image">
-                        <left>265</left>
-                        <top>185</top>
-                        <width>45</width>
-                        <height>45</height>
+                        <left>5</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
                     </control>
+
+                    <control type="image">
+                        <left>5</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>5</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                    </control>
+
 
                     <control type="progress">
                         <left>5</left>
@@ -464,6 +485,7 @@
                         <width>321</width>
                         <height>240</height>
                         <include>TextureBorderViews</include>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>!String.Contains(ListItem.Icon,image://video) + !Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
@@ -474,6 +496,7 @@
                         <top>0</top>
                         <width>321</width>
                         <height>240</height>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
                         <aspectratio>center</aspectratio>
@@ -510,20 +533,39 @@
                         <height>38</height>
                         <font>font11</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
                     </control>
 
                     <control type="image">
-                        <left>265</left>
-                        <top>185</top>
-                        <width>45</width>
-                        <height>45</height>
+                        <left>5</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
+                    </control>
+
+                    <control type="image">
+                        <left>5</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>5</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
                     </control>
 
                     <control type="progress">
