@@ -3106,8 +3106,8 @@
                     </control>
 
                     <control type="image">
-                        <left>81</left>
-                        <top>8</top>
+                        <left>88</left>
+                        <top>0</top>
                         <width>120</width>
                         <height>120</height>
                         <fadetime>IconCrossfadeTime</fadetime>
@@ -3161,14 +3161,14 @@
                             <left>0</left>
                             <top>0</top>
                             <width>213</width>
-                            <height>308</height>
+                            <height>335</height>
                             <aspectratio scalediffuse="false">scale</aspectratio>
                             <include>VisibleFadeEffect</include>
                             <texture background="true">$VAR[PosterThumb]</texture>
                         </control>
                         <control type="image">
-                            <left>81</left>
-                            <top>12</top>
+                            <left>93</left>
+                            <top>0</top>
                             <width>120</width>
                             <height>120</height>
                             <fadetime>IconCrossfadeTime</fadetime>
@@ -3186,7 +3186,7 @@
                         </control>
                         <control type="progress">
                             <left>0</left>
-                            <top>305</top>
+                            <top>332</top>
                             <width>212</width>
                             <height>3</height>
                             <info>ListItem.PercentPlayed</info>
