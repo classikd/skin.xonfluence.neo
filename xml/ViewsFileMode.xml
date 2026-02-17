@@ -401,9 +401,9 @@
                         <visible>Container.Content(Episodes) + Skin.HasSetting(HideEpisodeThumb) + !String.IsEqual(ListItem.Label,..)</visible>
                     </control>
                     <control type="label">
-                        <left>12</left>
+                        <left>10</left>
                         <top>238</top>
-                        <width>300</width>
+                        <width>310</width>
                         <height>38</height>
                         <font>font11</font>
                         <textcolor>white</textcolor>
@@ -527,9 +527,9 @@
                         <visible>Container.Content(Episodes) + Skin.HasSetting(HideEpisodeThumb) + !String.IsEqual(ListItem.Label,..)</visible>
                     </control>
                     <control type="label">
-                        <left>12</left>
+                        <left>10</left>
                         <top>238</top>
-                        <width>300</width>
+                        <width>310</width>
                         <height>38</height>
                         <font>font11</font>
                         <textcolor>white</textcolor>
@@ -607,8 +607,8 @@
                     <control type="image">
                         <left>14</left>
                         <top>5</top>
-                        <width>30</width>
-                        <height>30</height>
+                        <width>35</width>
+                        <height>35</height>
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
@@ -617,8 +617,8 @@
                     <control type="image">
                         <left>15</left>
                         <top>5</top>
-                        <width>30</width>
-                        <height>30</height>
+                        <width>35</width>
+                        <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
                         <visible>ListItem.IsPlaying</visible>
                         <visible>Player.Playing</visible>
@@ -626,8 +626,8 @@
                     <control type="image">
                         <left>15</left>
                         <top>5</top>
-                        <width>30</width>
-                        <height>30</height>
+                        <width>35</width>
+                        <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
                         <visible>ListItem.IsPlaying</visible>
                         <visible>!Player.Playing</visible>
@@ -672,8 +672,8 @@
                     <control type="image">
                         <left>14</left>
                         <top>5</top>
-                        <width>30</width>
-                        <height>30</height>
+                        <width>35</width>
+                        <height>35</height>
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
@@ -682,8 +682,8 @@
                     <control type="image">
                         <left>15</left>
                         <top>5</top>
-                        <width>30</width>
-                        <height>30</height>
+                        <width>35</width>
+                        <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
                         <visible>ListItem.IsPlaying</visible>
                         <visible>Player.Playing</visible>
@@ -691,8 +691,8 @@
                     <control type="image">
                         <left>15</left>
                         <top>5</top>
-                        <width>30</width>
-                        <height>30</height>
+                        <width>35</width>
+                        <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
                         <visible>ListItem.IsPlaying</visible>
                         <visible>!Player.Playing</visible>
