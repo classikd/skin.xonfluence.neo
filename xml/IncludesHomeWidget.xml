@@ -2513,23 +2513,49 @@
                         <bordertexture border="5">blank.png</bordertexture>
                         <include>TextureBorderWidgets</include>
                     </control>
-					<control type="image">
-                        <left>208</left>
-                        <top>238</top>
-                        <width>35</width>
-                        <height>35</height>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>ListItem.IsResumable</visible>
-                    </control>
+
                     <control type="image">
-                        <left>205</left>
-                        <top>235</top>
-                        <width>35</width>
-                        <height>35</height>
+                        <left>19</left>
+                        <top>15</top>
+                        <width>30</width>
+                        <height>30</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
                     </control>
+
+
+                    <control type="image">
+                        <left>20</left>
+                        <top>15</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>20</left>
+                        <top>15</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                    </control>
+
+                    
+                    <control type="progress">
+                        <left>20</left>
+                        <top>312</top>
+                        <width>180</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                    </control> 
+
                 </itemlayout>
                 <focusedlayout height="330" width="210">
                     <control type="image">
@@ -2571,23 +2597,58 @@
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
 
-					<control type="image">
-                        <left>208</left>
-                        <top>238</top>
-                        <width>35</width>
-                        <height>35</height>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>ListItem.IsResumable</visible>
-                    </control>
                     <control type="image">
-                        <left>205</left>
-                        <top>235</top>
-                        <width>35</width>
-                        <height>35</height>
+                        <left>19</left>
+                        <top>15</top>
+                        <width>30</width>
+                        <height>30</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
                     </control>
+
+                    <control type="image">
+                        <left>20</left>
+                        <top>15</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>20</left>
+                        <top>15</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                    </control>
+        
+                    <control type="progress">
+                        <left>20</left>
+                        <top>312</top>
+                        <width>180</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="FFFF0000">white.png</midtexture>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                    </control> 
+                    <control type="progress">
+                        <left>20</left>
+                        <top>312</top>
+                        <width>180</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                        <visible>!Control.HasFocus($PARAM[Control])</visible>
+                    </control> 
+
                 </focusedlayout>
 				
 
@@ -2640,23 +2701,47 @@
                         <include>TextureBorderWidgets</include>
                     </control>
 
-					<control type="image">
-                        <left>257</left>
-                        <top>347</top>
-                        <width>35</width>
-                        <height>35</height>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>ListItem.IsResumable</visible>
-                    </control>
                     <control type="image">
-                        <left>250</left>
-                        <top>345</top>
-                        <width>35</width>
-                        <height>35</height>
+                        <left>4</left>
+                        <top>20</top>
+                        <width>30</width>
+                        <height>30</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
                     </control>
+
+                    <control type="image">
+                        <left>5</left>
+                        <top>20</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>5</left>
+                        <top>20</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                    </control>
+
+                    
+                    <control type="progress">
+                        <left>5</left>
+                        <top>398</top>
+                        <width>235</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                    </control> 
+
                 </itemlayout>
                 <focusedlayout height="428" width="251">
                     <control type="image">
@@ -2680,51 +2765,59 @@
                         <include>TextureBorderWidgets</include>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
-                    <!--
-                    <control type="label">
-                        <left>25</left>
-                        <top>370</top>
-                        <width>254</width>
-                        <height>30</height>
-                        <font>font10</font>
-                        <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label]</label>
-                        <visible>!Control.HasFocus($PARAM[Control])</visible>
-                    </control>
-                    <control type="label">
-                        <left>25</left>
-                        <top>370</top>
-                        <width>254</width>
-                        <height>30</height>
-                        <font>font10</font>
-                        <textcolor>$VAR[MainColorOne]</textcolor>
-                        <selectedcolor>selected</selectedcolor>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label]</label>
-                        <visible>Control.HasFocus($PARAM[Control])</visible>
-                    </control>
-                    -->
-					<control type="image">
-                        <left>257</left>
-                        <top>347</top>
-                        <width>35</width>
-                        <height>35</height>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>ListItem.IsResumable</visible>
-                    </control>
+
                     <control type="image">
-                        <left>250</left>
-                        <top>345</top>
-                        <width>35</width>
-                        <height>35</height>
+                        <left>4</left>
+                        <top>20</top>
+                        <width>30</width>
+                        <height>30</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
                     </control>
+
+                    <control type="image">
+                        <left>5</left>
+                        <top>20</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>5</left>
+                        <top>20</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                    </control>
+
+                    <control type="progress">
+                        <left>5</left>
+                        <top>398</top>
+                        <width>235</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="FFFF0000">white.png</midtexture>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                    </control> 
+                    <control type="progress">
+                        <left>5</left>
+                        <top>398</top>
+                        <width>235</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                        <visible>!Control.HasFocus($PARAM[Control])</visible>
+                    </control> 
+
                 </focusedlayout>
 				
                 <include>$PARAM[Content]</include>
@@ -2804,7 +2897,7 @@
                         <height>30</height>
                         <font>font10</font>
                         <textcolor>grey</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>grey</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.TVShowTitle] - $INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]</label>
@@ -2817,7 +2910,7 @@
                         <height>30</height>
                         <font>font11_title</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -2830,29 +2923,54 @@
                         <height>30</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Title]</label>
 						<visible>String.IsEqual(ListItem.DBType,episode)</visible>
                     </control>
-					<control type="image">
-                        <left>318</left>
-                        <top>214</top>
-                        <width>35</width>
-                        <height>35</height>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>ListItem.IsResumable</visible>
-                    </control>
+
                     <control type="image">
-                        <left>315</left>
-                        <top>212</top>
-                        <width>35</width>
-                        <height>35</height>
+                        <left>19</left>
+                        <top>10</top>
+                        <width>30</width>
+                        <height>30</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
                     </control>
+
+                    <control type="image">
+                        <left>20</left>
+                        <top>10</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>20</left>
+                        <top>10</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                    </control>
+
+                    
+                    <control type="progress">
+                        <left>20</left>
+                        <top>262</top>
+                        <width>330</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                    </control> 
+
                 </itemlayout>
                 <focusedlayout height="330" width="360" condition="!$PARAM[embuaryinfonextaired]">
                     
@@ -2937,7 +3055,7 @@
                         <height>30</height>
                         <font>font10</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.TVShowTitle] - $INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]</label>
@@ -2952,7 +3070,7 @@
                             <height>30</height>
                             <font>font11_title</font>
                             <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>white</selectedcolor>
                             <align>center</align>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
@@ -2965,7 +3083,7 @@
                             <height>30</height>
                             <font>font11_title</font>
                             <textcolor>black</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>black</selectedcolor>
                             <align>center</align>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
@@ -2981,7 +3099,7 @@
                             <height>30</height>
                             <font>font12</font>
                             <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>white</selectedcolor>
                             <align>center</align>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Title]</label>
@@ -2994,30 +3112,66 @@
                             <height>30</height>
                             <font>font12</font>
                             <textcolor>black</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>black</selectedcolor>
                             <align>center</align>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Title]</label>
                             <visible>Control.HasFocus($PARAM[Control])</visible>
                         </control>
 					</control>					
-					<control type="image">
-                        <left>318</left>
-                        <top>214</top>
-                        <width>35</width>
-                        <height>35</height>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>ListItem.IsResumable</visible>
-                    </control>
+
                     <control type="image">
-                        <left>315</left>
-                        <top>212</top>
-                        <width>35</width>
-                        <height>35</height>
+                        <left>19</left>
+                        <top>10</top>
+                        <width>30</width>
+                        <height>30</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
                     </control>
+
+                    <control type="image">
+                        <left>20</left>
+                        <top>10</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>20</left>
+                        <top>10</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                    </control>
+
+                    <control type="progress">
+                        <left>20</left>
+                        <top>262</top>
+                        <width>330</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="FFFF0000">white.png</midtexture>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                    </control> 
+                    <control type="progress">
+                        <left>20</left>
+                        <top>262</top>
+                        <width>330</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                        <visible>!Control.HasFocus($PARAM[Control])</visible>
+                    </control> 
+
                 </focusedlayout>
 
 				<itemlayout height="360" width="360" condition="$PARAM[embuaryinfonextaired]">
@@ -3287,6 +3441,7 @@
                         <label>$INFO[ListItem.Label]</label>
 						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
                     </control>
+  
 					<control type="label">
                         <left>20</left>
                         <top>375</top>
@@ -3300,23 +3455,28 @@
                         <label>$INFO[ListItem.Title]</label>
 						<visible>String.IsEqual(ListItem.DBType,episode)</visible>
                     </control>
-					<control type="image">
-                        <left>424</left>
-                        <top>307</top>
-                        <width>35</width>
-                        <height>35</height>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>ListItem.IsResumable</visible>
-                    </control>
+
                     <control type="image">
-                        <left>420</left>
-                        <top>302</top>
-                        <width>35</width>
-                        <height>35</height>
+                        <left>24</left>
+                        <top>20</top>
+                        <width>30</width>
+                        <height>30</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
                     </control>
+                                        
+                    <control type="progress">
+                        <left>25</left>
+                        <top>347</top>
+                        <width>410</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                    </control> 
+
                 </itemlayout>
                 <focusedlayout height="428" width="430" condition="!$PARAM[embuaryinfonextaired]">
                     
@@ -3451,23 +3611,40 @@
                             <visible>Control.HasFocus($PARAM[Control])</visible>
                         </control>
 					</control>					
-					<control type="image">
-                        <left>424</left>
-                        <top>307</top>
-                        <width>35</width>
-                        <height>35</height>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>ListItem.IsResumable</visible>
-                    </control>
+
                     <control type="image">
-                        <left>420</left>
-                        <top>302</top>
-                        <width>35</width>
-                        <height>35</height>
+                        <left>24</left>
+                        <top>20</top>
+                        <width>30</width>
+                        <height>30</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
                     </control>
+
+                    <control type="progress">
+                        <left>25</left>
+                        <top>347</top>
+                        <width>410</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="FFFF0000">white.png</midtexture>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                    </control> 
+                    <control type="progress">
+                        <left>25</left>
+                        <top>347</top>
+                        <width>410</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                        <visible>!Control.HasFocus($PARAM[Control])</visible>
+                    </control> 
+
                 </focusedlayout>
 
 				<itemlayout height="428" width="430" condition="$PARAM[embuaryinfonextaired]">

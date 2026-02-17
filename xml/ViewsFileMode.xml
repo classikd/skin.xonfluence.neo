@@ -545,38 +545,57 @@
                         <top>0</top>
                         <width>220</width>
                         <height>360</height>
-                        <bordertexture border="5">button-nofocus.png</bordertexture>
+                        <bordertexture border="5">blank.png</bordertexture>
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
                         <aspectratio>scale</aspectratio>
+                        <include>TextureBorderWidgets</include>
                     </control>
                     <control type="label">
                         <left>12</left>
                         <top>360</top>
-                        <width>230</width>
+                        <width>215</width>
                         <height>38</height>
                         <font>font11</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
                     </control>
 
                     <control type="image">
-                        <left>180</left>
-                        <top>310</top>
-                        <width>45</width>
-                        <height>45</height>
+                        <left>14</left>
+                        <top>5</top>
+                        <width>30</width>
+                        <height>30</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
+                    </control>
+
+                    <control type="image">
+                        <left>15</left>
+                        <top>5</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>15</left>
+                        <top>5</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
                     </control>
 
 
                     <control type="progress">
-                        <left>10</left>
-                        <top>357</top>
-                        <width>220</width>
+                        <left>15</left>
+                        <top>352</top>
+                        <width>210</width>
                         <height>3</height>
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
@@ -594,34 +613,54 @@
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
                         <aspectratio>scale</aspectratio>
+                        <include>TextureBorderWidgets</include>
                     </control>
                     <control type="label">
                         <left>12</left>
                         <top>360</top>
-                        <width>230</width>
+                        <width>215</width>
                         <height>38</height>
                         <font>font11</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
                     </control>
 
                     <control type="image">
-                        <left>180</left>
-                        <top>310</top>
-                        <width>45</width>
-                        <height>45</height>
+                        <left>14</left>
+                        <top>5</top>
+                        <width>30</width>
+                        <height>30</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
                     </control>
 
+                    <control type="image">
+                        <left>15</left>
+                        <top>5</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>15</left>
+                        <top>5</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                    </control>
+
+
                     <control type="progress">
-                        <left>10</left>
-                        <top>357</top>
-                        <width>220</width>
+                        <left>15</left>
+                        <top>352</top>
+                        <width>210</width>
                         <height>3</height>
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
@@ -684,7 +723,7 @@
                         <width>807</width>
                         <height>38</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
+                        <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
