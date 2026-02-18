@@ -57,6 +57,32 @@
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                     </control>
+                    <control type="image">
+                        <left>660</left>
+                        <top>15</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
+                        <visible>ListItem.IsResumable</visible>
+                    </control>
+                    <control type="image">
+                        <left>660</left>
+                        <top>15</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>660</left>
+                        <top>15</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                    </control>
                 </itemlayout>
                 <focusedlayout height="60" width="720">
                     <control type="image">
@@ -139,6 +165,35 @@
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                     </control>
+
+                    <control type="image">
+                        <left>660</left>
+                        <top>15</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
+                        <visible>ListItem.IsResumable</visible>
+                    </control>
+
+                    <control type="image">
+                        <left>660</left>
+                        <top>15</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>660</left>
+                        <top>15</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                    </control>
+
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="60">

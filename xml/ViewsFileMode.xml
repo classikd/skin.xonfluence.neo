@@ -103,6 +103,25 @@
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
+                        <visible>!ListItem.IsResumable</visible>
+                    </control>
+                    <control type="image">
+                        <left>982</left>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>982</left>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
                     </control>
                 </itemlayout>
                 <focusedlayout height="60" width="870">
@@ -261,6 +280,24 @@
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
+                    </control>
+                    <control type="image">
+                        <left>982</left>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>982</left>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
                     </control>
                 </focusedlayout>
             </control>
@@ -1097,6 +1134,24 @@
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
                     </control>
+                    <control type="image">
+                        <left>1575</left>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>1575</left>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                    </control>
                 </itemlayout>
                 <focusedlayout height="60" width="1620">
                     <control type="image">
@@ -1291,6 +1346,25 @@
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
+                    </control>
+
+                    <control type="image">
+                        <left>1575</left>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>1575</left>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
                     </control>
                 </focusedlayout>
             </control>
