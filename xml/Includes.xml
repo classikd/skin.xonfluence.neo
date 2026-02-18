@@ -876,7 +876,7 @@
     </include>
     <include name="FloorReturnButtons">
         <control type="grouplist" id="810">
-            <left>420r</left>
+            <left>450r</left>
             <top>82r</top>
             <onup>50</onup>
             <ondown>50</ondown>
