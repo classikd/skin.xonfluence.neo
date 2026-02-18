@@ -2868,7 +2868,7 @@
                 <control type="multiimage">
                     <left>-15</left>
                     <top>5</top>
-                    <width>1140</width>
+                    <width>1155</width>
                     <height>590</height>
                     <aspectratio scalediffuse="false">scale</aspectratio>
                     <fadetime>FanartCrossfadeTime</fadetime>
@@ -2881,7 +2881,7 @@
                 <control type="image">
                     <left>-15</left>
                     <top>5</top>
-                    <width>1140</width>
+                    <width>1155</width>
                     <height>590</height>
                     <aspectratio scalediffuse="false">scale</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
