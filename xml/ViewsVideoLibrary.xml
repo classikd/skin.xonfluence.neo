@@ -1100,7 +1100,7 @@
                         <left>0</left>
                         <top>0</top>
                         <width>870</width>
-                        <height>62</height>
+                        <height>61</height>
                         <texture border="0,2,0,2">MenuItemNF.png</texture>
                     </control>
                     <control type="label">
@@ -1109,8 +1109,8 @@
                         <width>780</width>
                         <height>60</height>
                         <font>font13</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
 				                <!-- BEGIN runtime addition by:rafi    <label>$INFO[ListItem.Label]</label> -->
@@ -1123,8 +1123,8 @@
                         <width>750</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
 				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
@@ -1143,8 +1143,8 @@
                         <width>750</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
 				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
@@ -1175,11 +1175,11 @@
                         <visible>ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
-                        <left>832</left>
-                        <top>21</top>
-                        <width>24</width>
-                        <height>24</height>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <left>830</left>
+                        <top>12</top>
+                        <width>38</width>
+                        <height>39</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <aspectratio align="left">keep</aspectratio>
                     </control>
                 </itemlayout>
@@ -1189,10 +1189,10 @@
                         <top>0</top>
                         <width>870</width>
                         <height>62</height>
-                        <texture border="0,2,0,2">MenuItemNF.png</texture>
-                        <visible>!Control.HasFocus(503)</visible>
-                        <include>VisibleFadeEffect</include>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>Control.HasFocus(503)</visible>
                     </control>
+
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
@@ -1202,6 +1202,7 @@
                         <visible>Control.HasFocus(503)</visible>
                         <include>VisibleFadeEffect</include>
                     </control>
+
                     <control type="label">
                         <left>15</left>
                         <top>0</top>
@@ -1209,21 +1210,38 @@
                         <height>60</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <!-- BEGIN runtime addition by:rafi    -->
                         <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                         <!-- END runtime addition    -->
+                        <visible>!Control.HasFocus(503)</visible>
                     </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>780</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <!-- BEGIN runtime addition by:rafi    -->
+                        <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
+                        <!-- END runtime addition    -->
+                        <visible>Control.HasFocus(503)</visible>
+                    </control>
+
                     <control type="label">
                         <right>330</right>
                         <top>0</top>
-                        <width>750</width>
+                        <width>750</width>0
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
 				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
@@ -1235,15 +1253,38 @@
                         <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
 						<!-- END runtime addition by:rafi  -->
                         <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
+                        <visible>!Control.HasFocus(503)</visible>
                     </control>
+                    <control type="label">
+                        <right>330</right>
+                        <top>0</top>
+                        <width>750</width>0
+                        <height>60</height>
+                        <font>font12</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
+                        <label>$INFO[ListItem.Votes,(,)][COLOR yellow]$INFO[ListItem.Rating, , ][/COLOR]</label>
+				                <!-- END runtime addition -->
+                        <visible>Window.IsVisible(Videos)</visible>
+						<!-- BEGIN runtime addition by:rafi  -->
+                        <visible>![Skin.HasSetting(HideRatingsViews) | !String.Contains(ListItem.Rating,.)]</visible>			
+                        <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
+						<!-- END runtime addition by:rafi  -->
+                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
+                        <visible>Control.HasFocus(503)</visible>
+                    </control>
+
                     <control type="label">
                         <left>15</left>
                         <top>0</top>
                         <width>750</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
 				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
@@ -1255,7 +1296,30 @@
                         <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
 						<!-- END runtime addition by:rafi  -->
                         <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
+                        <visible>!Control.HasFocus(503)</visible>
                     </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>750</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
+                        <label>$INFO[ListItem.DateAdded(dd/mm/yy),, ]$INFO[ListItem.Duration(hh:mm),,]</label>
+				                <!-- END runtime addition -->
+                        <visible>Window.IsVisible(Videos)</visible>
+						<!-- BEGIN runtime addition by:rafi  -->
+                        <visible>![Skin.HasSetting(HideRatingsViews)]</visible>			
+                        <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
+						<!-- END runtime addition by:rafi  -->
+                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
+                        <visible>Control.HasFocus(503)</visible>
+                    </control>
+
                     <control type="image">
                         <left>772</left>
                         <top>12</top>
@@ -1274,11 +1338,11 @@
                         <visible>ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
-                        <left>832</left>
-                        <top>21</top>
-                        <width>24</width>
-                        <height>24</height>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <left>830</left>
+                        <top>12</top>
+                        <width>38</width>
+                        <height>39</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <aspectratio align="left">keep</aspectratio>
                     </control>
                 </focusedlayout>
@@ -1454,8 +1518,6 @@
                         <aspectratio>keep</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
                         <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-                        <bordertexture border="8">ThumbShadow.png</bordertexture>
-                        <bordersize>8</bordersize>
                         <visible>Skin.HasSetting(HideEpisodeThumb) + !String.IsEqual(ListItem.Label,..)</visible>
                     </control>
 				</control>
@@ -1469,8 +1531,6 @@
                         <aspectratio>keep</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
-                        <bordertexture border="8">ThumbShadow.png</bordertexture>
-                        <bordersize>8</bordersize>
                         <visible>String.IsEqual(ListItem.Label,..) | !Skin.HasSetting(HideEpisodeThumb)</visible>
                     </control>
                     <control type="image">
@@ -1481,8 +1541,6 @@
                         <aspectratio>keep</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
                         <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-                        <bordertexture border="8">ThumbShadow.png</bordertexture>
-                        <bordersize>8</bordersize>
                         <visible>Skin.HasSetting(HideEpisodeThumb) + !String.IsEqual(ListItem.Label,..)</visible>
                     </control>
 				</control>				
@@ -1588,8 +1646,6 @@
                     <aspectratio>keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true">$VAR[PosterThumb]</texture>
-                    <bordertexture border="8">ThumbShadow.png</bordertexture>
-                    <bordersize>8</bordersize>
                 </control>
                 <control type="group">
 				    <visible>!ListItem.IsParentFolder</visible>
@@ -1633,8 +1689,6 @@
                     <aspectratio>keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true">$VAR[PosterThumb]</texture>
-                    <bordertexture border="8">ThumbShadow.png</bordertexture>
-                    <bordersize>8</bordersize>
                 </control>
 				<control type="group">
 				    <visible>!ListItem.IsParentFolder</visible>
