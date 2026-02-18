@@ -43,6 +43,25 @@
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!ListItem.IsResumable</visible>
+                    </control>
+                    <control type="image">
+                        <left>3</left>
+                        <top>60</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>3</left>
+                        <top>60</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
                     </control>
                     <control type="progress">
                         <left>3</left>
@@ -67,12 +86,24 @@
                         <animation reversible="false" effect="zoom" start="3,60,321,500" end="-42,0,380,585" time="150">focus</animation>
                         <animation reversible="false" effect="zoom" end="3,60,321,500" start="-42,0,380,585" time="150">unfocus</animation>
                     </control>
+                    
+                    <control type="image">
+                        <depth>DepthContentPopout</depth>
+                        <left>3</left>
+                        <top>60</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!Control.HasFocus(501)</visible>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>!Window.IsActive(contextmenu)</visible>
+                    </control>         
                     <control type="image">
                         <depth>DepthContentPopout</depth>
                         <left>-102</left>
                         <top>0</top>
-                        <width>35</width>
-                        <height>35</height>
+                        <width>45</width>
+                        <height>45</height>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <animation type="focus">
                             <effect type="fade" start="0" end="100" time="150" />
@@ -82,6 +113,74 @@
                             <effect type="fade" start="100" end="0" time="150" />
                             <effect type="slide" end="0,0" start="60,0" time="150" />
                         </animation>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>Control.HasFocus(501)</visible>
+                    </control>
+
+                    <!-- play -->
+                    <control type="image">
+                        <depth>DepthContentPopout</depth>
+                        <left>3</left>
+                        <top>60</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                        <visible>!Control.HasFocus(501)</visible>
+                        <visible>!Window.IsActive(contextmenu)</visible>
+                    </control>
+                    <control type="image">
+                        <depth>DepthContentPopout</depth>
+                        <left>-102</left>
+                        <top>0</top>
+                        <width>45</width>
+                        <height>45</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                        <animation type="focus">
+                            <effect type="fade" start="0" end="100" time="150" />
+                            <effect type="slide" start="0,0" end="60,0" time="150" />
+                        </animation>
+                        <animation type="unfocus">
+                            <effect type="fade" start="100" end="0" time="150" />
+                            <effect type="slide" end="0,0" start="60,0" time="150" />
+                        </animation>
+                        <visible>Control.HasFocus(501)</visible>
+                    </control>
+
+                    <!-- pause -->
+                    <control type="image">
+                        <depth>DepthContentPopout</depth>
+                        <left>3</left>
+                        <top>60</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                        <visible>!Control.HasFocus(501)</visible>
+                        <visible>!Window.IsActive(contextmenu)</visible>
+                    </control>
+                    <control type="image">
+                        <depth>DepthContentPopout</depth>
+                        <left>-102</left>
+                        <top>0</top>
+                        <width>45</width>
+                        <height>45</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                        <animation type="focus">
+                            <effect type="fade" start="0" end="100" time="150" />
+                            <effect type="slide" start="0,0" end="60,0" time="150" />
+                        </animation>
+                        <animation type="unfocus">
+                            <effect type="fade" start="100" end="0" time="150" />
+                            <effect type="slide" end="0,0" start="60,0" time="150" />
+                        </animation>
+                        <visible>Control.HasFocus(501)</visible>
                     </control>
 
                     <control type="progress">
@@ -453,8 +552,8 @@
     </include>
     <include name="PosterWrapFanartInfo">
         <control type="group">
-            <left>270</left>
-            <top>60</top>
+            <left>100</left>
+            <top>110</top>
             <visible>Control.IsVisible(508) + ![ListItem.IsFolder + Container.Content(Movies)] + !Container.Content(Sets)</visible>
             <include>MediaInfoPopup</include>
             <visible>!Skin.String(MediaPopupControl,Hidden) + !String.IsEmpty(ListItem.Title) + !Container.OnNext + !Container.OnPrevious</visible>
@@ -462,34 +561,34 @@
             <control type="image">
                 <left>0</left>
                 <top>0</top>
-                <width>1380</width>
-                <height>615</height>
+                <width>1720</width>
+                <height>550</height>
                 <texture border="20">ContentPanel.png</texture>
                 <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
             </control>
             <control type="label">
                 <left>60</left>
-                <top>30</top>
-                <width>1260</width>
+                <top>50</top>
+                <width>1600</width>
                 <height>30</height>
-                <font>font24_title</font>
+                <font>font30_title</font>
                 <textcolor>$VAR[MainColorOne]</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <scroll>true</scroll>
-                <align>center</align>
+                <align>left</align>
                 <aligny>center</aligny>
                 <label>$INFO[ListItem.label]</label>
             </control>
             <control type="group">
                 <left>60</left>
-                <top>75</top>
+                <top>95</top>
                 <visible>Container.Content(Movies)</visible>
                 <control type="label">
                     <left>0</left>
-                    <top>0</top>
+                    <top>10</top>
                     <width>600</width>
                     <height>45</height>
-                    <font>font13_title</font>
+                    <font>font12_title</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <scroll>true</scroll>
@@ -502,7 +601,7 @@
                     <top>45</top>
                     <width>600</width>
                     <height>45</height>
-                    <font>font13</font>
+                    <font>font12</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <scroll>true</scroll>
@@ -517,7 +616,7 @@
                     <top>82</top>
                     <width>600</width>
                     <height>45</height>
-                    <font>font13</font>
+                    <font>font12</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <scroll>true</scroll>
@@ -532,7 +631,7 @@
                     <top>120</top>
                     <width>600</width>
                     <height>45</height>
-                    <font>font13</font>
+                    <font>font12</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <scroll>true</scroll>
@@ -547,7 +646,7 @@
                     <top>158</top>
                     <width>600</width>
                     <height>45</height>
-                    <font>font13</font>
+                    <font>font12</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <scroll>true</scroll>
@@ -559,15 +658,15 @@
                 </control>
             </control>
             <control type="group">
-                <left>720</left>
-                <top>75</top>
+                <left>870</left>
+                <top>85</top>
                 <visible>Container.Content(Movies)</visible>
                 <control type="label">
                     <left>0</left>
-                    <top>0</top>
+                    <top>10</top>
                     <width>600</width>
                     <height>45</height>
-                    <font>font13_title</font>
+                    <font>font12_title</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <scroll>true</scroll>
@@ -580,7 +679,7 @@
                     <top>45</top>
                     <width>600</width>
                     <height>45</height>
-                    <font>font13</font>
+                    <font>font12</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <scroll>true</scroll>
@@ -590,10 +689,10 @@
                 </control>
                 <control type="label">
                     <left>0</left>
-                    <top>112</top>
+                    <top>122</top>
                     <width>600</width>
                     <height>45</height>
-                    <font>font13_title</font>
+                    <font>font12_title</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <scroll>true</scroll>
@@ -606,7 +705,7 @@
                     <top>158</top>
                     <width>600</width>
                     <height>45</height>
-                    <font>font13</font>
+                    <font>font12</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <scroll>true</scroll>
@@ -617,11 +716,11 @@
             </control>
             <control type="group">
                 <left>60</left>
-                <top>75</top>
+                <top>85</top>
                 <visible>Container.Content(TVShows)</visible>
                 <control type="label">
                     <left>0</left>
-                    <top>0</top>
+                    <top>10</top>
                     <width>600</width>
                     <height>45</height>
                     <font>font13_title</font>
@@ -680,11 +779,11 @@
             </control>
             <control type="group">
                 <left>720</left>
-                <top>75</top>
+                <top>85</top>
                 <visible>Container.Content(TVShows)</visible>
                 <control type="label">
                     <left>0</left>
-                    <top>0</top>
+                    <top>10</top>
                     <width>600</width>
                     <height>45</height>
                     <font>font13_title</font>
@@ -740,10 +839,10 @@
                 <top>300</top>
                 <control type="label">
                     <left>0</left>
-                    <top>0</top>
+                    <top>10</top>
                     <width>600</width>
                     <height>45</height>
-                    <font>font13_title</font>
+                    <font>font12_title</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <scroll>true</scroll>
@@ -755,9 +854,9 @@
                     <description>Description Value The Movie</description>
                     <left>0</left>
                     <top>48</top>
-                    <width>1275</width>
-                    <height>142</height>
-                    <font>font13</font>
+                    <width>1600</width>
+                    <height>100</height>
+                    <font>font12</font>
                     <align>justify</align>
                     <textcolor>white</textcolor>
                     <label>$VAR[VideoDescription]</label>
@@ -768,7 +867,7 @@
             <control type="grouplist">
                 <description>Media Codec Flagging Images</description>
                 <left>45</left>
-                <top>540</top>
+                <top>470</top>
                 <width>1200</width>
                 <align>left</align>
                 <itemgap>3</itemgap>
@@ -795,86 +894,186 @@
     <include name="PosterWrapFanartContent">
         <itemlayout height="300" width="180">
             <control type="image">
-                <left>3</left>
-                <top>30</top>
-                <width>180</width>
-                <height>240</height>
-                <aspectratio>stretch</aspectratio>
-                <bordertexture border="5">button-nofocus.png</bordertexture>
-                <bordersize>4</bordersize>
+                <left>5</left>
+                <top>20</top>
+                <width>160</width>
+                <height>260</height>
+                <aspectratio>scale</aspectratio>
                 <fadetime>200</fadetime>
                 <texture background="true">$VAR[PosterThumb]</texture>
             </control>
             <control type="image">
-                <left>9</left>
-                <top>36</top>
-                <width>168</width>
-                <height>228</height>
+                <left>5</left>
+                <top>20</top>
+                <width>160</width>
+                <height>260</height>
                 <aspectratio>stretch</aspectratio>
                 <texture>black-back.png</texture>
                 <colordiffuse>AAFFFFFF</colordiffuse>
             </control>
             <control type="image">
                 <left>3</left>
-                <top>270</top>
-                <width>180</width>
-                <height>240</height>
-                <aspectratio>stretch</aspectratio>
-                <bordertexture border="5" diffuse="diffuse_mirror2.png">button-nofocus.png</bordertexture>
-                <bordersize>4</bordersize>
-                <fadetime>200</fadetime>
-                <texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$VAR[PosterThumb]</texture>
-            </control>
-            <control type="image">
-                <left>135</left>
-                <top>218</top>
-                <width>38</width>
-                <height>38</height>
+                <top>20</top>
+                <width>35</width>
+                <height>35</height>
                 <aspectratio>keep</aspectratio>
-                <texture>$INFO[ListItem.Overlay]</texture>
-            </control>
-        </itemlayout>
-        <focusedlayout height="465" width="180">
-            <control type="image">
-                <left>-3</left>
-                <top>24</top>
-                <width>192</width>
-                <height>252</height>
-                <aspectratio>stretch</aspectratio>
-                <bordertexture border="8">ThumbBorder.png</bordertexture>
-                <bordersize>8</bordersize>
-                <fadetime>200</fadetime>
-                <texture background="true">$VAR[PosterThumb]</texture>
-                <animation reversible="false" effect="zoom" start="-3,24,192,252" end="-18,-15,222,297" time="200">focus</animation>
-                <animation reversible="false" effect="zoom" end="-3,24,192,252" start="-18,-15,222,297" time="200">unfocus</animation>
+                <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                <visible>!ListItem.IsResumable</visible>
             </control>
             <control type="image">
                 <left>3</left>
-                <top>270</top>
-                <width>180</width>
-                <height>240</height>
-                <aspectratio>stretch</aspectratio>
-                <bordertexture border="5" diffuse="diffuse_mirror2.png">button-nofocus.png</bordertexture>
-                <bordersize>4</bordersize>
-                <fadetime>200</fadetime>
-                <texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$VAR[PosterThumb]</texture>
+                <top>20</top>
+                <width>35</width>
+                <height>35</height>
+                <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                <visible>ListItem.IsPlaying</visible>
+                <visible>Player.Playing</visible>
             </control>
             <control type="image">
-                <left>135</left>
-                <top>225</top>
-                <width>52</width>
-                <height>52</height>
+                <left>3</left>
+                <top>20</top>
+                <width>35</width>
+                <height>35</height>
+                <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                <visible>ListItem.IsPlaying</visible>
+                <visible>!Player.Playing</visible>
+            </control>
+            <control type="progress">
+                <left>5</left>
+                <top>277</top>
+                <width>160</width>
+                <height>3</height>
+                <info>ListItem.PercentPlayed</info>
+                <visible>ListItem.IsResumable</visible>
+                <texturebg border="0">white.png</texturebg>
+                <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+            </control> 
+        </itemlayout>
+        <focusedlayout height="465" width="180">
+            <control type="image">
+                <left>5</left>
+                <top>20</top>
+                <width>160</width>
+                <height>260</height>
+                <aspectratio>scale</aspectratio>
+                <fadetime>200</fadetime>
+                <texture background="true">$VAR[PosterThumb]</texture>
+                <animation reversible="false" effect="zoom" start="5,20,160,260" end="-15,-15,200,300" time="200">focus</animation>
+                <animation reversible="false" effect="zoom" end="5,20,160,260" start="-15,-15,200,300" time="200">unfocus</animation>
+            </control>
+
+            <!-- overlay  -->
+            <control type="image">
+                <left>3</left>
+                <top>20</top>
+                <width>35</width>
+                <height>35</height>
                 <aspectratio>keep</aspectratio>
-                <texture>$INFO[ListItem.Overlay]</texture>
+                <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                <visible>!ListItem.IsResumable</visible>
+                <visible>!Control.HasFocus(508)</visible>
+                <visible>!Window.IsActive(contextmenu)</visible>
+            </control>
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>45</width>
+                <height>45</height>
+                <aspectratio>keep</aspectratio>
+                <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                <visible>!ListItem.IsResumable</visible>
                 <animation type="focus">
                     <effect type="fade" start="0" end="100" time="200" />
-                    <effect type="slide" start="0,0" end="15,8" time="200" />
+                    <effect type="slide" start="0,0" end="-17,-15" time="200" />
                 </animation>
                 <animation type="unfocus">
                     <effect type="fade" start="100" end="0" time="200" />
-                    <effect type="slide" end="0,0" start="15,8" time="200" />
+                    <effect type="slide" end="0,0" start="-17,-15" time="200" />
                 </animation>
+                <visible>Control.HasFocus(508)</visible>
             </control>
+
+            <!-- play -->
+            <control type="image">
+                <left>3</left>
+                <top>20</top>
+                <width>35</width>
+                <height>35</height>
+                <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                <visible>ListItem.IsPlaying</visible>
+                <visible>Player.Playing</visible>
+                <visible>!Control.HasFocus(508)</visible>
+                <visible>!Window.IsActive(contextmenu)</visible>
+            </control>
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>45</width>
+                <height>45</height>
+                <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                <visible>ListItem.IsPlaying</visible>
+                <visible>Player.Playing</visible>
+                <animation type="focus">
+                    <effect type="fade" start="0" end="100" time="200" />
+                    <effect type="slide" start="0,0" end="-17,-15" time="200" />
+                </animation>
+                <animation type="unfocus">
+                    <effect type="fade" start="100" end="0" time="200" />
+                    <effect type="slide" end="0,0" start="-17,-15" time="200" />
+                </animation>
+                <visible>Control.HasFocus(508)</visible>
+            </control>
+
+            <!-- pause -->
+            <control type="image">
+                <left>3</left>
+                <top>20</top>
+                <width>35</width>
+                <height>35</height>
+                <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                <visible>ListItem.IsPlaying</visible>
+                <visible>!Player.Playing</visible>
+                <visible>!Control.HasFocus(508)</visible>     
+                <visible>!Window.IsActive(contextmenu)</visible>
+            </control>
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>45</width>
+                <height>45</height>
+                <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                <visible>ListItem.IsPlaying</visible>
+                <visible>!Player.Playing</visible>
+                <animation type="focus">
+                    <effect type="fade" start="0" end="100" time="200" />
+                    <effect type="slide" start="0,0" end="-17,-15" time="200" />
+                </animation>
+                <animation type="unfocus">
+                    <effect type="fade" start="100" end="0" time="200" />
+                    <effect type="slide" end="0,0" start="-17,-15" time="200" />
+                </animation>
+                <visible>Control.HasFocus(508)</visible>
+            </control>
+    
+            <control type="progress">
+                <left>5</left>
+                <top>277</top>
+                <width>160</width>
+                <height>3</height>
+                <info>ListItem.PercentPlayed</info>
+                <visible>ListItem.IsResumable</visible>
+                <texturebg border="0">white.png</texturebg>
+                <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white.png</midtexture>
+                <animation type="focus">
+                    <effect type="slide" start="0,0" end="-20,5" time="150" />
+                    <effect type="zoom" start="100,100" end="125,100" time="150" />
+                </animation>
+                <animation type="unfocus">
+                    <effect type="slide" end="0,0" start="-20,5" time="150" />
+                    <effect type="zoom" end="100,100" start="125,100"  time="150" />
+                </animation>
+            </control> 
+
         </focusedlayout>
     </include>
 	
