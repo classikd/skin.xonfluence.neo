@@ -3100,7 +3100,7 @@
     </include>
     <include name="NormalButton">
         <include>ButtonModern</include>
-        <texturenofocus border="5">MenuItemNF.png</texturenofocus>
+        <texturenofocus border="5">MenuItemNF-bottom.png</texturenofocus>
     </include>
     <include name="AltButtonModern">
         <alttexturefocus border="5" colordiffuse="$VAR[MainColorOne]">button/button-focus.png</alttexturefocus>
