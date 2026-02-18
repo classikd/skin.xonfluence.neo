@@ -3334,7 +3334,7 @@
                 </control>
                 <control type="button" id="100">
                     <description>Close Window button</description>
-                    <left>390</left>
+                    <left>413</left>
                     <top>8</top>
                     <onclick>PreviousMenu</onclick>
                     <include>DialogCloseButton</include>
@@ -3366,8 +3366,8 @@
                     <onright>1</onright>
                     <onup>1</onup>
                     <ondown>3</ondown>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <textwidth>435</textwidth>
                     <onclick condition="!Skin.HasSetting(MinimizeOnExit)">Quit()</onclick>
@@ -3399,8 +3399,8 @@
                     <onright>2</onright>
                     <onup>2</onup>
                     <ondown>4</ondown>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <textwidth>435</textwidth>
                     <onclick condition="!Skin.HasSetting(Enable_CustomShutDown)">Powerdown()</onclick>
@@ -3433,8 +3433,8 @@
                     <onright>3</onright>
                     <onup>3</onup>
                     <ondown>5</ondown>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <textwidth>435</textwidth>
                     <onclick condition="!Skin.HasSetting(Enable_CustomTimer)">AlarmClock(shutdowntimer,Shutdown())</onclick>
@@ -3466,8 +3466,8 @@
                     <onright>4</onright>
                     <onup>4</onup>
                     <ondown>6</ondown>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <textwidth>435</textwidth>
                     <onclick>CancelAlarm(shutdowntimer)</onclick>
@@ -3498,8 +3498,8 @@
                     <onright>5</onright>
                     <onup>5</onup>
                     <ondown>7</ondown>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <textwidth>435</textwidth>
                     <onclick condition="!Skin.HasSetting(Enable_CustomSuspend)">Suspend()</onclick>
@@ -3531,8 +3531,8 @@
                     <onright>6</onright>
                     <onup>6</onup>
                     <ondown>8</ondown>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <textwidth>435</textwidth>
                     <onclick condition="!Skin.HasSetting(Enable_CustomHibernate)">Hibernate()</onclick>
@@ -3564,8 +3564,8 @@
                     <onright>7</onright>
                     <onup>7</onup>
                     <ondown>9</ondown>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <textwidth>435</textwidth>
                     <onclick condition="!Skin.HasSetting(RestartNotReboot)">Reset()</onclick>
@@ -3597,8 +3597,8 @@
                     <onright>7</onright>
                     <onup>7</onup>
                     <ondown>9</ondown>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <textwidth>435</textwidth>
                     <onclick>System.ExecWait("/usr/sbin/rebootfromnand")</onclick>
@@ -3631,8 +3631,8 @@
                     <onright>8</onright>
                     <onup>8</onup>
                     <ondown>10</ondown>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <textwidth>435</textwidth>
                     <onclick>dialog.close(all,true)</onclick>
@@ -3664,8 +3664,8 @@
                     <onright>9</onright>
                     <onup>9</onup>
                     <ondown>12</ondown>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <textwidth>435</textwidth>
                     <usealttexture>!System.IsMaster</usealttexture>
@@ -3724,8 +3724,8 @@
                     <onright>10</onright>
                     <onup>10</onup>
                     <ondown>13</ondown>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <textwidth>435</textwidth>
                     <onclick>InhibitIdleShutdown(true)</onclick>
@@ -3756,8 +3756,8 @@
                     <onright>12</onright>
                     <onup>12</onup>
                     <ondown>14</ondown>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <textwidth>435</textwidth>
                     <onclick>InhibitIdleShutdown(false)</onclick>
@@ -3787,8 +3787,8 @@
                     <onright>13</onright>
                     <onup>13</onup>
                     <ondown>1</ondown>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <textwidth>435</textwidth>
                     <onclick>dialog.close(shutdownmenu)</onclick>
