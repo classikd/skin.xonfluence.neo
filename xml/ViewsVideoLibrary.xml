@@ -33,63 +33,76 @@
                         <left>3</left>
                         <top>60</top>
                         <width>321</width>
-                        <height>465</height>
-                        <aspectratio>stretch</aspectratio>
-                        <bordertexture border="5">button-nofocus.png</bordertexture>
-                        <bordersize>4</bordersize>
+                        <height>500</height>
+                        <aspectratio>scale</aspectratio>
                         <texture background="true">$VAR[PosterThumb]</texture>
                     </control>
                     <control type="image">
-                        <left>278</left>
-                        <top>472</top>
-                        <width>38</width>
-                        <height>38</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <left>3</left>
+                        <top>60</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                     </control>
+                    <control type="progress">
+                        <left>3</left>
+                        <top>557</top>
+                        <width>320</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                    </control> 
                 </itemlayout>
                 <focusedlayout height="465" width="327">
                     <control type="image">
                         <depth>DepthContentPopout</depth>
-                        <left>-3</left>
-                        <top>54</top>
-                        <width>333</width>
-                        <height>477</height>
-                        <aspectratio>stretch</aspectratio>
-                        <bordertexture border="8">ThumbBorder.png</bordertexture>
-                        <bordersize>8</bordersize>
+                        <left>3</left>
+                        <top>60</top>
+                        <width>321</width>
+                        <height>500</height>
+                        <aspectratio>scale</aspectratio>
                         <texture background="true">$VAR[PosterThumb]</texture>
-                        <animation reversible="false" effect="zoom" start="-3,54,333,477" end="-42,0,426,585" time="150">focus</animation>
-                        <animation reversible="false" effect="zoom" end="-3,54,333,477" start="-42,0,426,585" time="150">unfocus</animation>
+                        <animation reversible="false" effect="zoom" start="3,60,321,500" end="-42,0,380,585" time="150">focus</animation>
+                        <animation reversible="false" effect="zoom" end="3,60,321,500" start="-42,0,380,585" time="150">unfocus</animation>
                     </control>
                     <control type="image">
                         <depth>DepthContentPopout</depth>
-                        <left>9</left>
-                        <top>66</top>
-                        <width>255</width>
-                        <height>270</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>GlassOverlay.png</texture>
-                        <animation reversible="false" effect="zoom" start="9,66,255,270" end="-36,6,360,375" time="150">focus</animation>
-                        <animation reversible="false" effect="zoom" end="9,66,255,270" start="-36,6,360,375" time="150">unfocus</animation>
-                    </control>
-                    <control type="image">
-                        <depth>DepthContentPopout</depth>
-                        <left>278</left>
-                        <top>465</top>
-                        <width>52</width>
-                        <height>52</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <left>-102</left>
+                        <top>0</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <animation type="focus">
                             <effect type="fade" start="0" end="100" time="150" />
-                            <effect type="slide" start="0,0" end="60,60" time="150" />
+                            <effect type="slide" start="0,0" end="60,0" time="150" />
                         </animation>
                         <animation type="unfocus">
                             <effect type="fade" start="100" end="0" time="150" />
-                            <effect type="slide" end="0,0" start="60,60" time="150" />
+                            <effect type="slide" end="0,0" start="60,0" time="150" />
                         </animation>
                     </control>
+
+                    <control type="progress">
+                        <left>3</left>
+                        <top>557</top>
+                        <width>320</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white.png</midtexture>
+                        <animation type="focus">
+                            <effect type="slide" start="0,0" end="-45,25" time="150" />
+                            <effect type="zoom" start="100,100" end="118,100" time="150" />
+                        </animation>
+                        <animation type="unfocus">
+                            <effect type="slide" end="0,0" start="-45,25" time="150" />
+                            <effect type="zoom" end="100,100" start="118,100"  time="150" />
+                        </animation>
+                    </control> 
+
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="60">
@@ -115,14 +128,14 @@
                 <left>84</left>
                 <top>180</top>
                 <width>192</width>
-                <height>465</height>
+                <height>500</height>
                 <texture>SideFade.png</texture>
             </control>
             <control type="image">
                 <left>1641</left>
                 <top>180</top>
                 <width>192</width>
-                <height>465</height>
+                <height>500</height>
                 <texture flipx="true">SideFade.png</texture>
             </control>
         </control>
