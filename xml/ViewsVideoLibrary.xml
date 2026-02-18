@@ -1822,7 +1822,7 @@
                         <left>0</left>
                         <top>0</top>
                         <width>870</width>
-                        <height>62</height>
+                        <height>61</height>
                         <texture border="0,2,0,2">MenuItemNF.png</texture>
                     </control>
                     <control type="label">
@@ -1831,8 +1831,8 @@
                         <width>780</width>
                         <height>60</height>
                         <font>font13</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
 				                <!-- BEGIN runtime addition by:rafi                      <label>$INFO[ListItem.Label]</label> -->
@@ -1845,8 +1845,8 @@
                         <width>735</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
 				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
@@ -1865,8 +1865,8 @@
                         <width>735</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
 				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
@@ -1891,19 +1891,37 @@
                     </control>
                     <control type="image">
                         <left>818</left>
-                        <top>21</top>
-                        <width>24</width>
-                        <height>24</height>
-                        <texture>OverlayWatching.png</texture>
+                        <top>12</top>
+                        <width>39</width>
+                        <height>39</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <aspectratio align="left">keep</aspectratio>
+                    </control>
+                    <control type="image">
+                        <left>818</left>
+                        <top>12</top>
+                        <width>39</width>
+                        <height>39</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
                         <left>818</left>
-                        <top>21</top>
-                        <width>24</width>
-                        <height>24</height>
-                        <texture>$INFO[ListItem.Overlay]</texture>
-                        <aspectratio align="left">keep</aspectratio>
+                        <top>12</top>
+                        <width>39</width>
+                        <height>39</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>818</left>
+                        <top>12</top>
+                        <width>39</width>
+                        <height>39</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
                     </control>
                 </itemlayout>
                 <focusedlayout height="60" width="870">
@@ -1912,9 +1930,8 @@
                         <top>0</top>
                         <width>870</width>
                         <height>62</height>
-                        <texture border="0,2,0,2">MenuItemNF.png</texture>
-                        <visible>!Control.HasFocus(504)</visible>
-                        <include>VisibleFadeEffect</include>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>Control.HasFocus(504)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -1925,6 +1942,7 @@
                         <visible>Control.HasFocus(504)</visible>
                         <include>VisibleFadeEffect</include>
                     </control>
+
                     <control type="label">
                         <left>15</left>
                         <top>0</top>
@@ -1932,21 +1950,38 @@
                         <height>60</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
-	                <!-- BEGIN runtime addition by:rafi  -->
-			<label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
-	                <!-- END runtime addition  -->
+                        <!-- BEGIN runtime addition by:rafi  -->
+                        <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
+                        <!-- END runtime addition  -->
+                        <visible>!Control.HasFocus(504)</visible>
                     </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>780</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <!-- BEGIN runtime addition by:rafi  -->
+                        <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
+                        <!-- END runtime addition  -->
+                        <visible>Control.HasFocus(504)</visible>
+                    </control>
+
                     <control type="label">
                         <right>345</right>
                         <top>0</top>
                         <width>735</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
 				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
@@ -1958,15 +1993,38 @@
                         <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
 						<!-- END runtime addition by:rafi  -->
                         <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,episode)]">conditional</animation>
+                        <visible>!Control.HasFocus(504)</visible>
                     </control>
+                    <control type="label">
+                        <right>345</right>
+                        <top>0</top>
+                        <width>735</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
+                        <label>$INFO[ListItem.Votes,(,)][COLOR yellow]$INFO[ListItem.Rating, , ][/COLOR]</label>
+				                <!-- END runtime addition -->
+                        <visible>Window.IsVisible(Videos)</visible>
+						<!-- BEGIN runtime addition by:rafi  -->
+                        <visible>![Skin.HasSetting(HideRatingsViews) | !String.Contains(ListItem.Rating,.)]</visible>			
+                        <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
+						<!-- END runtime addition by:rafi  -->
+                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,episode)]">conditional</animation>
+                        <visible>Control.HasFocus(504)</visible>
+                    </control>
+
                     <control type="label">
                         <left>15</left>
                         <top>0</top>
                         <width>735</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
 				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
@@ -1974,11 +2032,34 @@
 				                <!-- END runtime addition -->
                         <visible>Window.IsVisible(Videos)</visible>
 						<!-- BEGIN runtime addition by:rafi  -->
-			<visible>![Skin.HasSetting(HideRatingsViews)]</visible>			
+			            <visible>![Skin.HasSetting(HideRatingsViews)]</visible>			
                         <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
 						<!-- END runtime addition by:rafi  -->
                         <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,episode)]">conditional</animation>
+                        <visible>!Control.HasFocus(504)</visible>
                     </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>735</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
+                        <label>$INFO[ListItem.DateAdded(dd/mm/yy),, ]$INFO[ListItem.Duration(hh:mm),,]</label>
+				                <!-- END runtime addition -->
+                        <visible>Window.IsVisible(Videos)</visible>
+						<!-- BEGIN runtime addition by:rafi  -->
+			            <visible>![Skin.HasSetting(HideRatingsViews)]</visible>			
+                        <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
+						<!-- END runtime addition by:rafi  -->
+                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,episode)]">conditional</animation>
+                        <visible>Control.HasFocus(504)</visible>
+                    </control>
+
                     <control type="image">
                         <left>758</left>
                         <top>12</top>
@@ -1990,19 +2071,37 @@
                     </control>
                     <control type="image">
                         <left>818</left>
-                        <top>21</top>
-                        <width>24</width>
-                        <height>24</height>
-                        <texture>OverlayWatching.png</texture>
+                        <top>12</top>
+                        <width>39</width>
+                        <height>39</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <aspectratio align="left">keep</aspectratio>
+                    </control>
+                    <control type="image">
+                        <left>818</left>
+                        <top>12</top>
+                        <width>39</width>
+                        <height>39</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
                         <left>818</left>
-                        <top>21</top>
-                        <width>24</width>
-                        <height>24</height>
-                        <texture>$INFO[ListItem.Overlay]</texture>
-                        <aspectratio align="left">keep</aspectratio>
+                        <top>12</top>
+                        <width>39</width>
+                        <height>39</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>818</left>
+                        <top>12</top>
+                        <width>39</width>
+                        <height>39</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
                     </control>
                 </focusedlayout>
             </control>
@@ -2041,40 +2140,34 @@
                 </control>
                 <control type="image">
                     <left>0</left>
-                    <top>0</top>
+                    <top>20</top>
                     <width>765</width>
-                    <height>429</height>
+                    <height>409</height>
                     <aspectratio>scale</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="Fanart_Fallback_Small.jpg">$INFO[ListItem.Art(fanart)]</texture>
                     <visible>String.IsEmpty(Control.GetLabel(5045)) | Skin.HasSetting(Disable504FanArt)</visible>
                     <visible>String.IsEqual(ListItem.DBType,movie)</visible>
-                    <bordertexture background="true" border="8">ThumbShadow.png</bordertexture>
-                    <bordersize>8</bordersize>
                 </control>
 				<control type="image">
                     <left>0</left>
-                    <top>0</top>
+                    <top>20</top>
                     <width>765</width>
-                    <height>429</height>
+                    <height>409</height>
                     <aspectratio>keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="Fanart_Fallback_Small.jpg">$INFO[ListItem.Icon]</texture>
                     <visible>String.IsEqual(ListItem.DBType,video) | String.IsEqual(ListItem.DBType,album) | String.IsEqual(ListItem.DBType,musicvideo) | String.IsEmpty(ListItem.DBType)</visible>
-                    <bordertexture background="true" border="8">ThumbShadow.png</bordertexture>
-                    <bordersize>8</bordersize>
                 </control>
                 <control type="image">
                     <left>0</left>
-                    <top>0</top>
+                    <top>20</top>
                     <width>765</width>
-                    <height>488</height>
+                    <height>408</height>
                     <aspectratio>scale</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="Fanart_Fallback_Small.jpg">$INFO[ListItem.Art(fanart)]</texture>
                     <visible>String.IsEqual(ListItem.DBType,tvshow)</visible>
-                    <bordertexture background="true" border="8">ThumbShadow.png</bordertexture>
-                    <bordersize>8</bordersize>
                 </control>
                 <control type="grouplist">
 				    <visible>!ListItem.IsParentFolder</visible>
@@ -2093,13 +2186,7 @@
                     <include>SpecialFeaturesFlaggingConditions</include>
                     <include>VideoTypeHackFlaggingConditions</include>
                 </control>
-                <control type="image">
-                    <left>0</left>
-                    <top>495</top>
-                    <width>765</width>
-                    <height>6</height>
-                    <texture>separator.png</texture>
-                </control>
+  
 				<control type="group">
 				    <visible>!String.IsEqual(ListItem.DBType,album) + !String.IsEmpty(ListItem.DBType)</visible>
 					<visible>!ListItem.IsParentFolder</visible>
@@ -2177,13 +2264,7 @@
                         <scrollout>false</scrollout>
                         <pauseatend>1000</pauseatend>
                     </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>585</top>
-                        <width>765</width>
-                        <height>6</height>
-                        <texture>separator.png</texture>
-                    </control>
+
                     <control type="textbox">
                         <description>Description Value for Video</description>
                         <left>15</left>
