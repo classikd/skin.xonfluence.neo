@@ -755,6 +755,7 @@
         <aligny>center</aligny>
         <font>font13</font>
         <texturenofocus/>
+        <focusedcolor>black</focusedcolor>
         <pulseonselect>false</pulseonselect>
     </include>
     <include name="ButtonMediaSubCommonValues">
@@ -3112,9 +3113,9 @@
     <include name="RadioButtonModern">
         <radiowidth>90</radiowidth>
         <radioheight>56</radioheight>
-        <textureradioonfocus>radio/radiobutton-on.png</textureradioonfocus>
+        <textureradioonfocus>radio/radiobutton-on-black.png</textureradioonfocus>
         <textureradioonnofocus>radio/radiobutton-on.png</textureradioonnofocus>
-        <textureradioofffocus>radio/radiobutton-off.png</textureradioofffocus>
+        <textureradioofffocus>radio/radiobutton-off-black.png</textureradioofffocus>
         <textureradiooffnofocus>radio/radiobutton-off.png</textureradiooffnofocus>
         <textureradioondisabled colordiffuse="40FFFFFF">radio/radiobutton-on.png</textureradioondisabled>
         <textureradiooffdisabled colordiffuse="40FFFFFF">radio/radiobutton-off.png</textureradiooffdisabled>
