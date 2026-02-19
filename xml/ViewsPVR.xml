@@ -48,7 +48,6 @@
                 <top>0</top>
                 <width>1035</width>
                 <height>600</height>
-                <texture border="5">button-nofocus.png</texture>
             </control>
             <control type="multiimage">
                 <left>8</left>
@@ -71,9 +70,9 @@
                 <animation effect="slide" start="0,0" end="-3000,0" time="0">WindowClose</animation>
             </control>
             <control type="image">
-                <left>1</left>
-                <top>1</top>
-                <width>1032</width>
+                <left>40</left>
+                <top>8</top>
+                <width>957</width>
                 <height>52</height>
                 <texture>black-back.png</texture>
                 <colordiffuse>DDFFFFFF</colordiffuse>
@@ -82,7 +81,7 @@
             <control type="label">
                 <description>Current Video label</description>
                 <left>45</left>
-                <top>1</top>
+                <top>8</top>
                 <width>975</width>
                 <height>52</height>
                 <font>font12</font>
@@ -150,9 +149,9 @@
                 </control>
                 <control type="textbox">
                     <description>Plot Value for TVShow</description>
-                    <left>0</left>
+                    <left>40</left>
                     <top>78</top>
-                    <width>1035</width>
+                    <width>955</width>
                     <height>108</height>
                     <font>font13</font>
                     <align>justify</align>
@@ -279,7 +278,7 @@
                         <left>0</left>
                         <top>0</top>
                         <width>585</width>
-                        <height>92</height>
+                        <height>91</height>
                         <texture border="2">MenuItemNF.png</texture>
                         <include>VisibleFadeEffect</include>
                     </control>
@@ -297,12 +296,12 @@
                     </control>
                     <control type="label">
                         <left>75</left>
-                        <top>0</top>
+                        <top>5</top>
                         <width>405</width>
                         <height>38</height>
-                        <font>font13</font>
+                        <font>font13_title</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -366,10 +365,10 @@
                         <top>0</top>
                         <width>585</width>
                         <height>92</height>
-                        <texture border="2">MenuItemNF.png</texture>
-                        <visible>!Control.HasFocus(50)</visible>
-                        <include>VisibleFadeEffect</include>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>Control.HasFocus(50)</visible>
                     </control>
+
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
@@ -379,6 +378,7 @@
                         <visible>Control.HasFocus(50)</visible>
                         <include>VisibleFadeEffect</include>
                     </control>
+
                     <control type="label">
                         <left>8</left>
                         <top>-6</top>
@@ -390,19 +390,49 @@
                         <textcolor>grey</textcolor>
                         <selectedcolor>grey</selectedcolor>
                         <info>ListItem.ChannelNumberLabel</info>
+                        <visible>!Control.HasFocus(50)</visible>
                     </control>
                     <control type="label">
+                        <left>8</left>
+                        <top>-6</top>
+                        <width>60</width>
+                        <height>52</height>
+                        <font>font12</font>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <info>ListItem.ChannelNumberLabel</info>
+                        <visible>Control.HasFocus(50)</visible>
+                    </control>
+
+                    <control type="label">
                         <left>75</left>
-                        <top>0</top>
+                        <top>5</top>
                         <width>405</width>
                         <height>38</height>
-                        <font>font13</font>
+                        <font>font13_title</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
+                        <visible>!Control.HasFocus(50)</visible>
                     </control>
+                    <control type="label">
+                        <left>75</left>
+                        <top>5</top>
+                        <width>405</width>
+                        <height>38</height>
+                        <font>font13_title</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>Control.HasFocus(50)</visible>
+                    </control>
+
                     <control type="label">
                         <left>75</left>
                         <top>38</top>
@@ -415,7 +445,23 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Title]</label>
                         <visible>String.IsEmpty(Listitem.Icon)</visible>
+                        <visible>!Control.HasFocus(50)</visible>
                     </control>
+                    <control type="label">
+                        <left>75</left>
+                        <top>38</top>
+                        <width>495</width>
+                        <height>30</height>
+                        <font>font12</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Title]</label>
+                        <visible>String.IsEmpty(Listitem.Icon)</visible>
+                        <visible>Control.HasFocus(50)</visible>
+                    </control>
+
                     <control type="label">
                         <left>75</left>
                         <top>38</top>
@@ -428,7 +474,23 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Title]</label>
                         <visible>!String.IsEmpty(Listitem.Icon)</visible>
+                        <visible>!Control.HasFocus(50)</visible>
                     </control>
+                    <control type="label">
+                        <left>75</left>
+                        <top>38</top>
+                        <width>420</width>
+                        <height>30</height>
+                        <font>font12</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Title]</label>
+                        <visible>!String.IsEmpty(Listitem.Icon)</visible>
+                        <visible>Control.HasFocus(50)</visible>
+                    </control>
+
                     <control type="progress">
                         <description>Progressbar</description>
                         <left>75</left>
@@ -535,13 +597,6 @@
             <include>VisibleFadeEffect</include>
             <include>Window_OpenClose_Animation</include>
             <control type="image">
-                <left>330</left>
-                <top>0</top>
-                <width>480</width>
-                <height>276</height>
-                <texture border="5">button-nofocus.png</texture>
-            </control>
-            <control type="image">
                 <left>22</left>
                 <top>30</top>
                 <width>260</width>
@@ -581,7 +636,7 @@
                 <top>510</top>
                 <control type="label">
                     <left>0</left>
-                    <top>-90</top>
+                    <top>-60</top>
                     <width>795</width>
                     <height>30</height>
                     <font>font13</font>
@@ -628,7 +683,7 @@
                 <control type="textbox">
                     <description>Plot Value for TVShow</description>
                     <left>0</left>
-                    <top>-52</top>
+                    <top>-22</top>
                     <width>795</width>
                     <height>480</height>
                     <font>font13</font>
@@ -680,14 +735,7 @@
                 <pagecontrol>70</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <itemlayout height="57" width="885">
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>838</width>
-                        <height>57</height>
-                        <texture border="2">MenuItemNF.png</texture>
-                        <include>VisibleFadeEffect</include>
-                    </control>
+
                     <control type="label">
                         <left>4</left>
                         <top>1</top>
@@ -769,21 +817,12 @@
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>832</width>
+                        <width>820</width>
                         <height>57</height>
-                        <texture border="2">MenuItemNF.png</texture>
-                        <visible>!Control.HasFocus(5010)</visible>
-                        <include>VisibleFadeEffect</include>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>832</width>
-                        <height>52</height>
-                        <texture border="2" colordiffuse="$VAR[MainColorOne]">$VAR[SelectMenuItem]</texture>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                         <visible>Control.HasFocus(5010)</visible>
-                        <include>VisibleFadeEffect</include>
                     </control>
+                    
                     <control type="label">
                         <left>4</left>
                         <top>1</top>
@@ -795,7 +834,22 @@
                         <textcolor>grey</textcolor>
                         <selectedcolor>grey</selectedcolor>
                         <info>ListItem.ChannelNumberLabel</info>
+                        <visible>!Control.HasFocus(5010)</visible>
                     </control>
+                    <control type="label">
+                        <left>4</left>
+                        <top>1</top>
+                        <width>60</width>
+                        <height>52</height>
+                        <font>font13</font>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <info>ListItem.ChannelNumberLabel</info>
+                        <visible>Control.HasFocus(5010)</visible>
+                    </control>
+
                     <control type="image">
                         <left>75</left>
                         <top>3</top>
@@ -804,6 +858,7 @@
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
+
                     <control type="label">
                         <left>150</left>
                         <top>1</top>
@@ -811,11 +866,26 @@
                         <height>46</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
+                        <visible>!Control.HasFocus(5010)</visible>
                     </control>
+                    <control type="label">
+                        <left>150</left>
+                        <top>1</top>
+                        <width>240</width>
+                        <height>46</height>
+                        <font>font13</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>Control.HasFocus(5010)</visible>
+                    </control>
+
                     <control type="label">
                         <left>405</left>
                         <top>1</top>
@@ -828,7 +898,23 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Title]</label>
                         <visible>String.IsEmpty(Listitem.Icon)</visible>
+                        <visible>!Control.HasFocus(5010)</visible>
                     </control>
+                    <control type="label">
+                        <left>405</left>
+                        <top>1</top>
+                        <width>330</width>
+                        <height>46</height>
+                        <font>fontContextMenu</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Title]</label>
+                        <visible>String.IsEmpty(Listitem.Icon)</visible>
+                        <visible>Control.HasFocus(5010)</visible>
+                    </control>
+
                     <control type="label">
                         <left>405</left>
                         <top>1</top>
@@ -841,7 +927,23 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Title]</label>
                         <visible>!String.IsEmpty(Listitem.Icon)</visible>
+                        <visible>!Control.HasFocus(5010)</visible>
                     </control>
+                    <control type="label">
+                        <left>405</left>
+                        <top>1</top>
+                        <width>330</width>
+                        <height>46</height>
+                        <font>fontContextMenu</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Title]</label>
+                        <visible>!String.IsEmpty(Listitem.Icon)</visible>
+                        <visible>Control.HasFocus(5010)</visible>
+                    </control>
+
                     <control type="progress">
                         <description>Progressbar</description>
                         <left>150</left>
@@ -901,21 +1003,14 @@
             <include>VisibleFadeEffect</include>
             <control type="image">
                 <posx>660r</posx>
-                <posy>60</posy>
+                <posy>90</posy>
                 <width>660</width>
-                <height>920</height>
+                <height>890</height>
                 <texture border="15">ContentPanel.png</texture>
             </control>
-            <control type="image">
-                <posx>660r</posx>
-                <posy>968</posy>
-                <width>660</width>
-                <height>96</height>
-                <texture border="15">ContentPanelMirror.png</texture>
-            </control>
             <control type="list" id="5060">
-                <posx>630r</posx>
-                <posy>82</posy>
+                <posx>640r</posx>
+                <posy>100</posy>
                 <height>878</height>
                 <width>630</width>
                 <onleft>100</onleft>
@@ -928,12 +1023,12 @@
                 <scrolltime>300</scrolltime>
                 <focusposition>2</focusposition>
                 <preloaditems>2</preloaditems>
-                <itemlayout condition="Control.IsVisible(5060)" width="585" height="90">
+                <itemlayout condition="Control.IsVisible(5060)" width="585" height="99">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
                         <width>585</width>
-                        <height>92</height>
+                        <height>100</height>
                         <texture border="2">MenuItemNF.png</texture>
                         <include>VisibleFadeEffect</include>
                     </control>
@@ -951,7 +1046,7 @@
                     </control>
                     <control type="label">
                         <left>75</left>
-                        <top>0</top>
+                        <top>5</top>
                         <width>405</width>
                         <height>38</height>
                         <font>font13</font>
@@ -1014,25 +1109,16 @@
                         <visible>ListItem.IsRecording</visible>
                     </control>
                 </itemlayout>
-                <focusedlayout condition="Control.IsVisible(5060)" width="585" height="90">
+                <focusedlayout condition="Control.IsVisible(5060)" width="585" height="99">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
                         <width>585</width>
-                        <height>92</height>
-                        <texture border="2">MenuItemNF.png</texture>
-                        <visible>!Control.HasFocus(5060)</visible>
-                        <include>VisibleFadeEffect</include>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>585</width>
-                        <height>92</height>
-                        <texture border="2" colordiffuse="$VAR[MainColorOne]">$VAR[SelectMenuItem]</texture>
+                        <height>100</height>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                         <visible>Control.HasFocus(5060)</visible>
-                        <include>VisibleFadeEffect</include>
                     </control>
+
                     <control type="label">
                         <left>8</left>
                         <top>-6</top>
@@ -1044,19 +1130,49 @@
                         <textcolor>grey</textcolor>
                         <selectedcolor>grey</selectedcolor>
                         <info>ListItem.ChannelNumberLabel</info>
+                        <visible>!Control.HasFocus(5060)</visible>
                     </control>
                     <control type="label">
+                        <left>8</left>
+                        <top>-6</top>
+                        <width>60</width>
+                        <height>52</height>
+                        <font>font12</font>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <info>ListItem.ChannelNumberLabel</info>
+                        <visible>Control.HasFocus(5060)</visible>
+                    </control>
+
+                    <control type="label">
                         <left>75</left>
-                        <top>0</top>
+                        <top>5</top>
                         <width>405</width>
                         <height>38</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
+                        <visible>!Control.HasFocus(5060)</visible>
                     </control>
+                    <control type="label">
+                        <left>75</left>
+                        <top>5</top>
+                        <width>405</width>
+                        <height>38</height>
+                        <font>font13</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>Control.HasFocus(5060)</visible>
+                    </control>
+
                     <control type="label">
                         <left>75</left>
                         <top>38</top>
@@ -1069,7 +1185,23 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Title]</label>
                         <visible>String.IsEmpty(Listitem.Icon)</visible>
+                        <visible>!Control.HasFocus(5060)</visible>
                     </control>
+                    <control type="label">
+                        <left>75</left>
+                        <top>38</top>
+                        <width>495</width>
+                        <height>30</height>
+                        <font>font12</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Title]</label>
+                        <visible>String.IsEmpty(Listitem.Icon)</visible>
+                        <visible>Control.HasFocus(5060)</visible>
+                    </control>
+
                     <control type="label">
                         <left>75</left>
                         <top>38</top>
@@ -1082,7 +1214,23 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Title]</label>
                         <visible>!String.IsEmpty(Listitem.Icon)</visible>
+                        <visible>!Control.HasFocus(5060)</visible>
                     </control>
+                    <control type="label">
+                        <left>75</left>
+                        <top>38</top>
+                        <width>420</width>
+                        <height>30</height>
+                        <font>font12</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Title]</label>
+                        <visible>!String.IsEmpty(Listitem.Icon)</visible>
+                        <visible>Control.HasFocus(5060)</visible>
+                    </control>
+
                     <control type="progress">
                         <description>Progressbar</description>
                         <left>75</left>
@@ -1148,19 +1296,19 @@
             <control type="group">
                 <visible>Control.IsVisible(5060)</visible>
                 <posx>68</posx>
-                <posy>60</posy>
+                <posy>90</posy>
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>1185</width>
-                    <height>660</height>
+                    <height>622</height>
                     <texture>ContentPanel.png</texture>
                 </control>
                 <control type="multiimage">
                     <posx>8</posx>
                     <posy>8</posy>
                     <width>1170</width>
-                    <height>645</height>
+                    <height>605</height>
                     <aspectratio>scale</aspectratio>
                     <imagepath background="true">$VAR[CommonMenuItemBackground]</imagepath>
                     <include>BackgroundTimePerImage</include>
@@ -1172,7 +1320,7 @@
                     <posx>8</posx>
                     <posy>8</posy>
                     <width>1170</width>
-                    <height>645</height>
+                    <height>605</height>
                     <aspectratio>scale</aspectratio>
                     <visible>Player.HasVideo</visible>
                     <animation effect="slide" start="0,0" end="-3000,0" time="0">WindowClose</animation>
@@ -1180,21 +1328,14 @@
                 <control type="group">
                     <description>Description Value for Video</description>
                     <posx>0</posx>
-                    <posy>652</posy>
+                    <posy>628</posy>
                     <width>1185</width>
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>1185</width>
-                        <height>264</height>
+                        <height>262</height>
                         <texture border="4">ContentPanel.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>252</posy>
-                        <width>1185</width>
-                        <height>96</height>
-                        <texture border="15">ContentPanelMirror.png</texture>
                     </control>
                     <control type="label">
                         <posx>0</posx>
@@ -1330,7 +1471,7 @@
             <include>ContentPanelBackgrounds</include>
             <control type="list" id="5040">
                 <left>105</left>
-                <top>117</top>
+                <top>125</top>
                 <width>870</width>
                 <height>842</height>
                 <onleft>2</onleft>
@@ -1345,7 +1486,7 @@
                         <left>0</left>
                         <top>0</top>
                         <width>870</width>
-                        <height>62</height>
+                        <height>61</height>
                         <texture border="0,2,0,2">MenuItemNF.png</texture>
                     </control>
                     <control type="label">
@@ -1366,8 +1507,8 @@
                         <width>705</width>
                         <height>60</height>
                         <font>font13</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -1378,8 +1519,8 @@
                         <width>660</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>grey</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Title]</label>
@@ -1408,27 +1549,10 @@
                         <top>0</top>
                         <width>870</width>
                         <height>62</height>
-                        <texture border="0,2,0,2">MenuItemNF.png</texture>
-                        <visible>!Control.HasFocus(5040)</visible>
-                        <include>VisibleFadeEffect</include>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>870</width>
-                        <height>62</height>
-                        <texture border="5" colordiffuse="$VAR[MainColorOne]">$VAR[SelectMenuItem]</texture>
-                        <visible>Control.HasFocus(5040)</visible>
-                        <include>VisibleFadeEffect</include>
-                    </control>
-                    <control type="image">
-                        <left>555</left>
-                        <top>8</top>
-                        <width>300</width>
-                        <height>46</height>
-                        <texture border="0,0,14,0" colordiffuse="$VAR[MainColorOne]">MediaItemDetailBG.png</texture>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                         <visible>Control.HasFocus(5040)</visible>
                     </control>
+
                     <control type="label">
                         <left>15</left>
                         <top>0</top>
@@ -1440,7 +1564,22 @@
                         <textcolor>grey</textcolor>
                         <selectedcolor>grey</selectedcolor>
                         <info>ListItem.ChannelNumberLabel</info>
+                        <visible>!Control.HasFocus(5040)</visible>
                     </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>60</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <info>ListItem.ChannelNumberLabel</info>
+                        <visible>Control.HasFocus(5040)</visible>
+                    </control>
+
                     <control type="label">
                         <left>90</left>
                         <top>0</top>
@@ -1448,10 +1587,38 @@
                         <height>60</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
+                        <visible>!Control.HasFocus(5040)</visible>
+                    </control>
+                    <control type="label">
+                        <left>90</left>
+                        <top>0</top>
+                        <width>705</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>Control.HasFocus(5040)</visible>
+                    </control>
+
+                    <control type="label">
+                        <left>90</left>
+                        <top>0</top>
+                        <width>660</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <textcolor>grey</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Title]</label>
+                        <visible>!Control.HasFocus(5040)</visible>
                     </control>
                     <control type="label">
                         <left>90</left>
@@ -1459,12 +1626,14 @@
                         <width>660</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Title]</label>
+                        <visible>Control.HasFocus(5040)</visible>
                     </control>
+
                     <control type="image">
                         <left>758</left>
                         <top>12</top>
@@ -1505,7 +1674,7 @@
                 <top>105</top>
                 <control type="image">
                     <left>0</left>
-                    <top>0</top>
+                    <top>10</top>
                     <width>765</width>
                     <height>429</height>
                     <aspectratio>keep</aspectratio>
@@ -1517,7 +1686,7 @@
                 </control>
                 <control type="videowindow">
                     <left>0</left>
-                    <top>0</top>
+                    <top>10</top>
                     <width>765</width>
                     <height>488</height>
                     <aspectratio>scale</aspectratio>
@@ -1525,13 +1694,6 @@
                     <bordertexture background="true" border="8">ThumbShadow.png</bordertexture>
                     <bordersize>8</bordersize>
                     <visible>Player.HasVideo</visible>
-                </control>
-                <control type="image">
-                    <left>0</left>
-                    <top>495</top>
-                    <width>765</width>
-                    <height>6</height>
-                    <texture>separator.png</texture>
                 </control>
                 <control type="label">
                     <description>Title</description>
@@ -1617,13 +1779,6 @@
                     <visible>Container(5040).ListItem.HasEpg</visible>
                     <animation effect="fade" start="100" end="0" time="2000" condition="Player.HasVideo + System.IdleTime(10) + !Skin.HasSetting(HideNowPlayingInfo)">Conditional</animation>
                     <label>$INFO[Container(5040).ListItem.EndTime]</label>
-                </control>
-                <control type="image">
-                    <left>0</left>
-                    <top>615</top>
-                    <width>765</width>
-                    <height>6</height>
-                    <texture>separator.png</texture>
                 </control>
                 <control type="textbox">
                     <description>Description Value for Video</description>
