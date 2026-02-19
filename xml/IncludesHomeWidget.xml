@@ -2154,6 +2154,20 @@
                         <texture border="15">RecentAddedBack.png</texture>
                         <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                     </control>
+
+                    
+                    <control type="image">
+                        <left>10</left>
+                        <top>10</top>
+                        <width>210</width>
+                        <height>240</height>
+                        <texture background="true">more_items.png</texture>
+                        <aspectratio>keep</aspectratio>
+                        <bordertexture border="5">blank.png</bordertexture>
+                        <include>TextureBorderWidgets</include>
+                        <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                    </control>
+
                     <control type="image">
                         <left>10</left>
                         <top>10</top>
@@ -2161,7 +2175,9 @@
                         <height>240</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
+
                     <control type="label">
                         <left>10</left>
                         <top>259</top>
@@ -2186,6 +2202,17 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
+                    <control type="label">
+                        <left>50</left>
+                        <top>300</top>
+                        <width>800</width>
+                        <height>40</height>
+                        <font>font10</font>
+                        <textcolor>FFFFFFFF</textcolor>
+                        <label>test</label>
+                        <visible>String.IsEmpty($INFO[ListItem.Icon])</visible>
+
+                    </control>
                 </itemlayout>
                 <focusedlayout height="330" width="240">
 
@@ -2207,6 +2234,32 @@
                         <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control>
 
+                    <!-- more -->
+                    <control type="image">
+                        <left>10</left>
+                        <top>10</top>
+                        <width>210</width>
+                        <height>240</height>
+                        <texture background="true" colordiffuse="FF000000">more_items.png</texture>
+                        <aspectratio>keep</aspectratio>
+                        <bordertexture border="5">blank.png</bordertexture>
+                        <include>TextureBorderWidgets</include>
+                        <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                    </control>
+                    <control type="image">
+                        <left>10</left>
+                        <top>10</top>
+                        <width>210</width>
+                        <height>240</height>
+                        <texture background="true">more_items.png</texture>
+                        <aspectratio>keep</aspectratio>
+                        <bordertexture border="5">blank.png</bordertexture>
+                        <include>TextureBorderWidgets</include>
+                        <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>!Control.HasFocus($PARAM[Control])</visible>
+                    </control>
+
                     <control type="image">
                         <left>10</left>
                         <top>10</top>
@@ -2215,6 +2268,7 @@
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
                     <control type="image">
                         <left>10</left>
@@ -2224,6 +2278,7 @@
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
 
                     <control type="label">
@@ -2245,7 +2300,7 @@
                         <width>210</width>
                         <height>30</height>
                         <font>font9</font>
-                        <textcolor>white</textcolor>
+                        <textcolor>black</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
@@ -2320,10 +2375,22 @@
                         <top>10</top>
                         <width>316</width>
                         <height>335</height>
+                        <texture background="true">more_items.png</texture>
+                        <aspectratio>keep</aspectratio>
+                        <bordertexture border="5">blank.png</bordertexture>
+                        <include>TextureBorderWidgets</include>
+                        <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                    </control>
+                    <control type="image">
+                        <left>12</left>
+                        <top>10</top>
+                        <width>316</width>
+                        <height>335</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
                         <bordertexture border="5">blank.png</bordertexture>
                         <bordersize>5</bordersize>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
                     <control type="label">
                         <left>15</left>
@@ -2351,6 +2418,34 @@
                     </control>
                 </itemlayout>
                 <focusedlayout height="428" width="324">
+
+                    <!-- more -->
+                    <control type="image">
+                        <left>12</left>
+                        <top>10</top>
+                        <width>316</width>
+                        <height>335</height>
+                        <texture background="true" colordiffuse="$VAR[MainColorOne]">more_items.png</texture>
+                        <aspectratio>keep</aspectratio>
+                        <bordertexture border="5">blank.png</bordertexture>
+                        <include>TextureBorderWidgets</include>
+                        <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                    </control>
+                    <control type="image">
+                        <left>12</left>
+                        <top>10</top>
+                        <width>316</width>
+                        <height>335</height>
+                        <texture background="true">more_items.png</texture>
+                        <aspectratio>keep</aspectratio>
+                        <bordertexture border="5">blank.png</bordertexture>
+                        <include>TextureBorderWidgets</include>
+                        <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>!Control.HasFocus($PARAM[Control])</visible>
+                    </control>
+
+
                     <control type="image">
                         <left>12</left>
                         <top>10</top>
@@ -2361,6 +2456,7 @@
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <bordersize>5</bordersize>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
                     <control type="image">
                         <left>12</left>
@@ -2372,7 +2468,9 @@
                         <bordertexture border="5">blank.png</bordertexture>
                         <bordersize>5</bordersize>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
+
                     <control type="label">
                         <left>15</left>
                         <top>347</top>
