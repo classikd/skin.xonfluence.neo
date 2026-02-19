@@ -440,6 +440,31 @@
                         <visible>Container.Content(studios)</visible>
                     </control>
 
+                    <!-- music-->
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>321</width>
+                        <height>240</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true">DefaultAlbumCover.png</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsActive(music)</visible>
+                        <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>321</width>
+                        <height>240</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsActive(music)</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                    </control>
+
+                    <!-- -->
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
@@ -448,7 +473,9 @@
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
                         <aspectratio>keep</aspectratio>
-                        <visible>!String.Contains(ListItem.Icon,image://video) + !Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
                     </control>
                     
                     <!-- center mode for videos -->
@@ -461,7 +488,9 @@
                         <bordertexture border="5">transparent.png</bordertexture>
                         <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
                         <aspectratio>center</aspectratio>
-                        <visible>String.Contains(ListItem.Icon,image://video) + !Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
                     </control>
                     <control type="image">
                         <left>1</left>
@@ -565,6 +594,33 @@
                         <visible>Container.Content(studios)</visible>
                     </control>
 
+                    <!-- music-->
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>321</width>
+                        <height>240</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true">DefaultAlbumCover.png</texture>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsActive(music)</visible>
+                        <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>321</width>
+                        <height>240</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsActive(music)</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                    </control>
+
+                    <!-- -->
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
@@ -574,7 +630,9 @@
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
                         <aspectratio>keep</aspectratio>
-                        <visible>!String.Contains(ListItem.Icon,image://video) + !Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
                     </control>
                     
                     <control type="image">
@@ -586,7 +644,9 @@
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
                         <aspectratio>center</aspectratio>
-                        <visible>String.Contains(ListItem.Icon,image://video) + !Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
                     </control>
 
                     <control type="image">
