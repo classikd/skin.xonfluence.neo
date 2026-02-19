@@ -447,10 +447,11 @@
                         <width>321</width>
                         <height>240</height>
                         <include>TextureBorderViews</include>
-                        <texture background="true">DefaultAlbumCover.png</texture>
+                        <texture background="true">DefaultFolderBack.png</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsActive(music)</visible>
-                        <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>ListItem.IsParentFolder</visible>
                     </control>
                     <control type="image">
                         <left>1</left>
@@ -458,10 +459,23 @@
                         <width>321</width>
                         <height>240</height>
                         <include>TextureBorderViews</include>
-                        <texture background="true" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
+                        <texture background="true">DefaultAlbumCover.png</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsActive(music)</visible>
+                        <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>!ListItem.IsParentFolder</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>321</width>
+                        <height>240</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true">$VAR[PosterThumb]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsActive(music)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>!ListItem.IsParentFolder</visible>
                     </control>
 
                     <!-- -->
@@ -601,11 +615,25 @@
                         <width>321</width>
                         <height>240</height>
                         <include>TextureBorderViews</include>
+                        <texture background="true">DefaultFolderBack.png</texture>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsActive(music)</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>ListItem.IsParentFolder</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>321</width>
+                        <height>240</height>
+                        <include>TextureBorderViews</include>
                         <texture background="true">DefaultAlbumCover.png</texture>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsActive(music)</visible>
                         <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>!ListItem.IsParentFolder</visible>
                     </control>
                     <control type="image">
                         <left>1</left>
@@ -618,6 +646,7 @@
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsActive(music)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>!ListItem.IsParentFolder</visible>
                     </control>
 
                     <!-- -->
