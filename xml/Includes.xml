@@ -484,6 +484,7 @@
     <variable name="DiffuseIfNoPoster">
         <value condition="
             String.Contains(ListItem.Icon,DefaultFolder.png) |
+            String.Contains(ListItem.Icon,DefaultVideo.png) |
             String.Contains(ListItem.Icon,DefaultFavourites.png)
         ">$VAR[MainColorOne]</value>
         <value>FFFFFFFF</value>

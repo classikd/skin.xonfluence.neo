@@ -478,7 +478,22 @@
                         <visible>!ListItem.IsParentFolder</visible>
                     </control>
 
-                    <!-- -->
+                    <!-- No image://video but extension in label (=> regular video) -->
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>321</width>
+                        <height>240</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultVideo.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
+                        <visible>String.Contains(ListItem.Label,.mkv) | String.Contains(ListItem.Label,.mp4) | String.Contains(ListItem.Label,.avi)</visible>
+                    </control>
+
+                   <!-- No image://video and no extension in label (=> folder) -->
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
@@ -490,9 +505,10 @@
                         <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
                         <visible>!String.Contains(ListItem.Icon,image://video)</visible>
                         <visible>!Window.IsActive(music)</visible>
+                        <visible>!String.Contains(ListItem.Label,.mkv) + !String.Contains(ListItem.Label,.mp4) + !String.Contains(ListItem.Label,.avi)</visible>
                     </control>
                     
-                    <!-- center mode for videos -->
+                    <!-- Contains image://video = center mode -->
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
@@ -550,6 +566,7 @@
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
                     </control>
 
                     <control type="image">
@@ -560,6 +577,7 @@
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
                         <visible>ListItem.IsPlaying</visible>
                         <visible>Player.Playing</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
                     </control>
                     <control type="image">
                         <left>5</left>
@@ -569,6 +587,7 @@
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
                         <visible>ListItem.IsPlaying</visible>
                         <visible>!Player.Playing</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
                     </control>
 
 
@@ -581,6 +600,7 @@
                         <visible>ListItem.IsResumable</visible>
                         <texturebg border="0">white.png</texturebg>
                         <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>     
                     </control> 
 
                 </itemlayout>
@@ -649,7 +669,23 @@
                         <visible>!ListItem.IsParentFolder</visible>
                     </control>
 
-                    <!-- -->
+                    <!-- No image://video but extension in label (=> regular video) -->
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>321</width>
+                        <height>240</height>
+                        <include>TextureBorderViews</include>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <texture background="true" fallback="DefaultVideo.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
+                        <visible>String.Contains(ListItem.Label,.mkv) | String.Contains(ListItem.Label,.mp4) | String.Contains(ListItem.Label,.avi)</visible>
+                    </control>
+
+                    <!-- No image://video and no extension in label (=> folder) -->
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
@@ -662,8 +698,10 @@
                         <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
                         <visible>!String.Contains(ListItem.Icon,image://video)</visible>
                         <visible>!Window.IsActive(music)</visible>
+                        <visible>!String.Contains(ListItem.Label,.mkv) + !String.Contains(ListItem.Label,.mp4) + !String.Contains(ListItem.Label,.avi)</visible>
                     </control>
                     
+                    <!-- Contains image://video = center mode -->
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
@@ -722,6 +760,7 @@
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
                     </control>
 
                     <control type="image">
@@ -732,6 +771,7 @@
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
                         <visible>ListItem.IsPlaying</visible>
                         <visible>Player.Playing</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
                     </control>
                     <control type="image">
                         <left>5</left>
@@ -741,6 +781,7 @@
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
                         <visible>ListItem.IsPlaying</visible>
                         <visible>!Player.Playing</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
                     </control>
 
                     <control type="progress">
@@ -752,6 +793,7 @@
                         <visible>ListItem.IsResumable</visible>
                         <texturebg border="0">white.png</texturebg>
                         <midtexture border="0" colordiffuse="FFFF0000">white.png</midtexture>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
                     </control> 
 
 
