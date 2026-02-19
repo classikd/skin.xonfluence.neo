@@ -404,7 +404,7 @@
             <include>VisibleFadeEffect</include>
             <control type="panel" id="500">
                 <left>135</left>
-                <top>120</top>
+                <top>140</top>
                 <width>1620</width>
                 <height>838</height>
                 <onleft>2</onleft>
