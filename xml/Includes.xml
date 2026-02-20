@@ -483,9 +483,93 @@
     </variable>
     <variable name="DiffuseIfNoPoster">
         <value condition="
+            String.Contains(ListItem.Icon,DefaultAddonVideo.png) |
+            String.Contains(ListItem.Icon,DefaultAddonAlbumInfo.png) |
+            String.Contains(ListItem.Icon,DefaultAddonArtistInfo.png) |
+            String.Contains(ListItem.Icon,DefaultAddonAudioDecoder.png) |
+            String.Contains(ListItem.Icon,DefaultAddonAudioDsp.png) |
+            String.Contains(ListItem.Icon,DefaultAddonAudioEncoder.png) |
+            String.Contains(ListItem.Icon,DefaultAddonContextItem.png) |
+            String.Contains(ListItem.Icon,DefaultAddonFont.png) |
+            String.Contains(ListItem.Icon,DefaultAddonGame.png) |
+            String.Contains(ListItem.Icon,DefaultAddonHelper.png) |
+            String.Contains(ListItem.Icon,DefaultAddonImageDecoder.png) |
+            String.Contains(ListItem.Icon,DefaultAddonImages.png) |
+            String.Contains(ListItem.Icon,DefaultAddonInfoProvider.png) |
+            String.Contains(ListItem.Icon,DefaultAddonInputStream.png) |
+            String.Contains(ListItem.Icon,DefaultAddonLanguage.png) |
+            String.Contains(ListItem.Icon,DefaultAddonLibrary.png) |
+            String.Contains(ListItem.Icon,DefaultAddonLookAndFeel.png) |
+            String.Contains(ListItem.Icon,DefaultAddonLyrics.png) |
+            String.Contains(ListItem.Icon,DefaultAddonMusic.png) |
+            String.Contains(ListItem.Icon,DefaultAddonMusicVideoInfo.png) |
+            String.Contains(ListItem.Icon,DefaultAddonNone.png) |
+            String.Contains(ListItem.Icon,DefaultAddonPeripheral.png) |
+            String.Contains(ListItem.Icon,DefaultAddonPicture.png) |
+            String.Contains(ListItem.Icon,DefaultAddonProgram.png) |
+            String.Contains(ListItem.Icon,DefaultAddonPvrClient.png) |
+            String.Contains(ListItem.Icon,DefaultAddonRepository.png) |
+            String.Contains(ListItem.Icon,DefaultAddonScreensaver.png) |
+            String.Contains(ListItem.Icon,DefaultAddonService.png) |
+            String.Contains(ListItem.Icon,DefaultAddonsInstalled.png) |
+            String.Contains(ListItem.Icon,DefaultAddonSkin.png) |
+            String.Contains(ListItem.Icon,DefaultAddonsRecentlyUpdated.png) |
+            String.Contains(ListItem.Icon,DefaultAddonsRepo.png) |
+            String.Contains(ListItem.Icon,DefaultAddonsSearch.png) |
+            String.Contains(ListItem.Icon,DefaultAddonSubtitles.png) |
+            String.Contains(ListItem.Icon,DefaultAddonsUpdates.png) |
+            String.Contains(ListItem.Icon,DefaultAddonsZip.png) |
+            String.Contains(ListItem.Icon,DefaultAddonTvInfo.png) |
+            String.Contains(ListItem.Icon,DefaultAddonUiSounds.png) |
+            String.Contains(ListItem.Icon,DefaultAddonVfs.png) |
+            String.Contains(ListItem.Icon,DefaultAddonVideo.png) |
+            String.Contains(ListItem.Icon,DefaultAddonVisualization.png) |
+            String.Contains(ListItem.Icon,DefaultAddonWeather.png) |
+            String.Contains(ListItem.Icon,DefaultAddonWebSkin.png) |
+            String.Contains(ListItem.Icon,DefaultAddSource.png) |
+            String.Contains(ListItem.Icon,DefaultAlbumCover.png) |
+            String.Contains(ListItem.Icon,DefaultAudio.png) |
+            String.Contains(ListItem.Icon,DefaultAudioDsp.png) |
+            String.Contains(ListItem.Icon,DefaultCountry.png) |
+            String.Contains(ListItem.Icon,DefaultDirector.png) |
+            String.Contains(ListItem.Icon,DefaultFavourites.png) |
+            String.Contains(ListItem.Icon,DefaultFile.png) |
             String.Contains(ListItem.Icon,DefaultFolder.png) |
+            String.Contains(ListItem.Icon,DefaultGameAddons.png) |
+            String.Contains(ListItem.Icon,DefaultGenre.png) |
+            String.Contains(ListItem.Icon,DefaultInprogressShows.png) |
+            String.Contains(ListItem.Icon,DefaultMovies.png) |
+            String.Contains(ListItem.Icon,DefaultMovieTitle.png) |
+            String.Contains(ListItem.Icon,DefaultMusicAlbums.png) |
+            String.Contains(ListItem.Icon,DefaultMusicArtists.png) |
+            String.Contains(ListItem.Icon,DefaultMusicCompilations.png) |
+            String.Contains(ListItem.Icon,DefaultMusicGenres.png) |
+            String.Contains(ListItem.Icon,DefaultMusicPlaylists.png) |
+            String.Contains(ListItem.Icon,DefaultMusicPlugins.png) |
+            String.Contains(ListItem.Icon,DefaultMusicRecentlyAdded.png) |
+            String.Contains(ListItem.Icon,DefaultMusicRecentlyPlayed.png) |
+            String.Contains(ListItem.Icon,DefaultMusicRoles.png) |
+            String.Contains(ListItem.Icon,DefaultMusicSongs.png) |
+            String.Contains(ListItem.Icon,DefaultMusicTop100.png) |
+            String.Contains(ListItem.Icon,DefaultMusicVideos.png) |
+            String.Contains(ListItem.Icon,DefaultMusicVideoTitle.png) |
+            String.Contains(ListItem.Icon,DefaultMusicYears.png) |
+            String.Contains(ListItem.Icon,DefaultPicture.png) |
+            String.Contains(ListItem.Icon,DefaultPlaylist.png) |
+            String.Contains(ListItem.Icon,DefaultRecentlyAddedEpisodes.png) |
+            String.Contains(ListItem.Icon,DefaultRecentlyAddedMovies.png) |
+            String.Contains(ListItem.Icon,DefaultRecentlyAddedMusicVideos.png) |
+            String.Contains(ListItem.Icon,DefaultSets.png) |
+            String.Contains(ListItem.Icon,DefaultStudios.png) |
+            String.Contains(ListItem.Icon,DefaultTags.png) |
+            String.Contains(ListItem.Icon,DefaultTvShows.png) |
+            String.Contains(ListItem.Icon,DefaultTvShowTitle.png) |
+            String.Contains(ListItem.Icon,DefaultUser.png) |
             String.Contains(ListItem.Icon,DefaultVideo.png) |
-            String.Contains(ListItem.Icon,DefaultFavourites.png)
+            String.Contains(ListItem.Icon,DefaultVideoCover.png) |
+            String.Contains(ListItem.Icon,DefaultVideoPlaylists.png) |
+            String.Contains(ListItem.Icon,DefaultVideoPlugins.png) |
+            String.Contains(ListItem.Icon,DefaultYear.png)
         ">$VAR[MainColorOne]</value>
         <value>FFFFFFFF</value>
     </variable>

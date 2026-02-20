@@ -459,7 +459,7 @@
                         <width>321</width>
                         <height>240</height>
                         <include>TextureBorderViews</include>
-                        <texture background="true">DefaultAlbumCover.png</texture>
+                        <texture background="true" colordiffuse="$VAR[MainColorOne]">DefaultAlbumCover.png</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsActive(music)</visible>
                         <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
@@ -471,7 +471,7 @@
                         <width>321</width>
                         <height>240</height>
                         <include>TextureBorderViews</include>
-                        <texture background="true">$VAR[PosterThumb]</texture>
+                        <texture background="true" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsActive(music)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
@@ -648,7 +648,7 @@
                         <width>321</width>
                         <height>240</height>
                         <include>TextureBorderViews</include>
-                        <texture background="true">DefaultAlbumCover.png</texture>
+                        <texture background="true" colordiffuse="$VAR[MainColorOne]">DefaultAlbumCover.png</texture>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsActive(music)</visible>
