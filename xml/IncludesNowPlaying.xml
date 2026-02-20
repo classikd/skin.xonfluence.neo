@@ -465,7 +465,7 @@
             <top>568</top>
 
             <control type="image">
-                <left>225</left>
+                <left>244</left>
                 <right>0</right>
                 <top>0</top>
                 <height>52</height>
@@ -476,7 +476,7 @@
             </control>
 
             <control type="image">
-                <left>0</left>
+                <left>18</left>
                 <right>0</right>
                 <top>0</top>
                 <height>52</height>
@@ -507,10 +507,10 @@
             <control type="radiobutton" id="610">
                 <colordiffuse>CCFFFFFF</colordiffuse>
                 <description>Global Search</description>
-                <left>0</left>
+                <left>18</left>
                 <top>0</top>
                 <height>52</height>
-                <width>226</width>
+                <width>225</width>
                 <textwidth>225</textwidth>
                 <textoffsetx>15</textoffsetx>
                 <align>left</align>
@@ -518,7 +518,7 @@
                 <font>font12</font>
                 <textcolor>white</textcolor>
                 <focusedcolor>black</focusedcolor>
-                <texturefocus flipy="true" border="5" colordiffuse="$VAR[MainColorOne]">HomeSubFO.png</texturefocus>
+                <texturefocus flipy="true" border="5" colordiffuse="$VAR[MainColorOne]">bg-search-hover.png</texturefocus>
                 <texturenofocus flipy="true" border="5"></texturenofocus>
                 <pulseonselect>false</pulseonselect>
                 <label>137</label>
@@ -535,24 +535,12 @@
                 <visible>!Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(FloorGlobalSearch)</visible>
             </control>
             <control type="group" id="600">
-                <left>225</left>
+                <left>231</left>
                 <onup condition="!Skin.HasSetting(LowerMainMenuBar)">9003</onup>
                 <onup condition="Skin.HasSetting(LowerMainMenuBar)">9002</onup>
                 <ondown>9000</ondown>
                 <defaultcontrol></defaultcontrol>
                 <enable>Player.HasMedia</enable>
-                <control type="image">
-                    <description>Background image</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>382</width>
-                    <height>52</height>
-                    <texture flipy="true" border="0,5,0,0">nowplaying-bg-btns.png</texture>
-                    <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
-                    <colordiffuse>CCFFFFFF</colordiffuse>
-                    <animation effect="zoom" start="0,0,308,53" end="0,0,750,53" delay="0" time="300" condition="!Player.HasMedia + Skin.HasSetting(EnableHomeStats)">conditional</animation>
-                    <visible>Player.HasMedia | Skin.HasSetting(EnableHomeStats)</visible>
-                </control>
                 <control type="group">
                     <visible>!VideoPlayer.Content(LiveTV)+Player.HasMedia</visible>
                     <control type="radiobutton" id="601">
