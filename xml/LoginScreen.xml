@@ -151,15 +151,6 @@
                     </control>
                 </focusedlayout>
             </control>
-            <control type="image">
-                <description>LOGO</description>
-                <left>435</left>
-                <top>885</top>
-                <width>225</width>
-                <height>82</height>
-                <aspectratio>keep</aspectratio>
-                <texture>Xonfluence_Logo.png</texture>
-            </control>
             <control type="group">
                 <left>1410</left>
                 <top>900</top>
