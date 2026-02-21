@@ -48,9 +48,9 @@
                 <texture>Xonfluence_Logo.png</texture>
             </control>
             <control type="list" id="9000">
-                <left>15</left>
+                <left>8</left>
                 <top>123</top>
-                <width>390</width>
+                <width>397</width>
                 <height>812</height>
                 <onleft>9000</onleft>
                 <onright>800</onright>
@@ -58,39 +58,44 @@
                 <ondown>9000</ondown>
                 <pagecontrol></pagecontrol>
                 <scrolltime>300</scrolltime>
-                <itemlayout height="81" width="390">
+                <itemlayout height="81" width="395">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>390</width>
+                        <width>395</width>
                         <height>82</height>
                         <texture border="5">MenuItemNF.png</texture>
                     </control>
                     <control type="label">
-                        <left>15</left>
+                        <left>105</left>
                         <top>0</top>
-                        <width>360</width>
+                        <width>280</width>
                         <height>82</height>
                         <font>font24_title</font>
-                        <textcolor>grey3</textcolor>
-                        <align>right</align>
+                        <textcolor>white</textcolor>
+                        <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
-                        <visible>String.IsEmpty(Skin.String(MenuLAF)) | String.IsEqual(Skin.String(MenuLAF),GraphText)</visible>
                     </control>
                     <control type="image">
-                        <left>15</left>
+                        <left>5</left>
                         <top>0</top>
-                        <width>129</width>
+                        <width>90</width>
                         <height>82</height>
                         <aspectratio>keep</aspectratio>
-                        <colordiffuse>33FFFFFF</colordiffuse>
-                        <texture>$INFO[ListItem.Icon]</texture>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Icon]</texture>
                         <animation effect="slide" start="0,0" end="240,0" time="0" condition="String.IsEqual(Skin.String(MenuLAF),Graph)|String.IsEqual(Skin.String(MenuLAF),GraphFocused)">Conditional</animation>
-                        <visible>!String.IsEmpty(Skin.String(MenuLAF))</visible>
                     </control>
                 </itemlayout>
-                <focusedlayout height="81" width="390">
+                <focusedlayout height="81" width="395">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>395</width>
+                        <height>82</height>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>Control.HasFocus(9000)</visible>
+                    </control>
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
@@ -98,41 +103,55 @@
                         <height>82</height>
                         <texture border="5" colordiffuse="$VAR[MainColorOne]">$VAR[SelectMenuItem]</texture>
                     </control>
+
                     <control type="label">
-                        <left>15</left>
+                        <left>105</left>
                         <top>0</top>
-                        <width>360</width>
+                        <width>280</width>
                         <height>82</height>
                         <font>font24_title</font>
                         <textcolor>white</textcolor>
-                        <align>right</align>
+                        <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
-                        <visible>String.IsEmpty(Skin.String(MenuLAF)) | String.IsEqual(Skin.String(MenuLAF),GraphFocused) | String.IsEqual(Skin.String(MenuLAF),GraphText)</visible>
+                        <visible>!Control.HasFocus(9000)</visible>
                     </control>
-                    <control type="image">
-                        <left>15</left>
+                    <control type="label">
+                        <left>105</left>
                         <top>0</top>
-                        <width>129</width>
+                        <width>280</width>
+                        <height>82</height>
+                        <font>font24_title</font>
+                        <textcolor>black</textcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>Control.HasFocus(9000)</visible>
+                    </control>
+
+                    <control type="image">
+                        <left>5</left>
+                        <top>0</top>
+                        <width>90</width>
                         <height>82</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Icon]</texture>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Icon]</texture>
                         <animation effect="slide" start="240,0" end="0,0" time="100" condition="String.IsEqual(Skin.String(MenuLAF),GraphFocused)">Focus</animation>
                         <animation effect="slide" start="0,0" end="240,0" time="100" condition="String.IsEqual(Skin.String(MenuLAF),GraphFocused)">Unfocus</animation>
                         <animation effect="slide" start="0,0" end="240,0" time="0" condition="String.IsEqual(Skin.String(MenuLAF),Graph)">Conditional</animation>
-                        <visible>!String.IsEmpty(Skin.String(MenuLAF))</visible>
-                        <visible>Control.HasFocus(9000)</visible>
+                        <visible>!Control.HasFocus(9000)</visible>
                     </control>
                     <control type="image">
-                        <left>15</left>
+                        <left>5</left>
                         <top>0</top>
-                        <width>129</width>
+                        <width>90</width>
                         <height>82</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Icon]</texture>
+                        <texture colordiffuse="black">$INFO[ListItem.Icon]</texture>
+                        <animation effect="slide" start="240,0" end="0,0" time="100" condition="String.IsEqual(Skin.String(MenuLAF),GraphFocused)">Focus</animation>
+                        <animation effect="slide" start="0,0" end="240,0" time="100" condition="String.IsEqual(Skin.String(MenuLAF),GraphFocused)">Unfocus</animation>
                         <animation effect="slide" start="0,0" end="240,0" time="0" condition="String.IsEqual(Skin.String(MenuLAF),Graph)">Conditional</animation>
-                        <visible>!String.IsEmpty(Skin.String(MenuLAF))</visible>
-                        <visible>!Control.HasFocus(9000)</visible>
+                        <visible>Control.HasFocus(9000)</visible>
                     </control>
                 </focusedlayout>
                 <content>
