@@ -2627,7 +2627,7 @@
                     </control>
 
                     <control type="image">
-                        <left>19</left>
+                        <left>18</left>
                         <top>15</top>
                         <width>35</width>
                         <height>35</height>
@@ -2727,7 +2727,7 @@
                     </control>
 
                     <control type="image">
-                        <left>19</left>
+                        <left>18</left>
                         <top>15</top>
                         <width>35</width>
                         <height>35</height>
@@ -2847,7 +2847,7 @@
                     </control>
 
                     <control type="image">
-                        <left>4</left>
+                        <left>3</left>
                         <top>20</top>
                         <width>35</width>
                         <height>35</height>
@@ -2943,7 +2943,7 @@
                     </control>
 
                     <control type="image">
-                        <left>4</left>
+                        <left>3</left>
                         <top>20</top>
                         <width>35</width>
                         <height>35</height>
@@ -3124,7 +3124,7 @@
                     </control>
 
                     <control type="image">
-                        <left>19</left>
+                        <left>18</left>
                         <top>10</top>
                         <width>35</width>
                         <height>35</height>
@@ -3344,7 +3344,7 @@
 					</control>					
 
                     <control type="image">
-                        <left>19</left>
+                        <left>18</left>
                         <top>10</top>
                         <width>35</width>
                         <height>35</height>
