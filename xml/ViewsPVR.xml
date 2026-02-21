@@ -112,15 +112,23 @@
                     <visible>Container(50).ListItem.HasEpg</visible>
                     <label>$INFO[Container(50).ListItem.StartTime]</label>
                 </control>
+
                 <control type="progress">
                     <description>Progressbar</description>
                     <left>128</left>
                     <top>45</top>
                     <width>765</width>
-                    <height>12</height>
+                    <height>4</height>
                     <visible>Container(50).ListItem.HasEpg</visible>
                     <info>Container(50).ListItem.Progress</info>
+                    <texturebg border="6,0,6,0" colordiffuse="FFFFFFFF">white.png</texturebg>
+                    <lefttexture></lefttexture>
+                    <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                    <righttexture></righttexture>
+                    <overlaytexture></overlaytexture>
                 </control>
+
+                
                 <control type="label">
                     <left>900</left>
                     <top>33</top>
@@ -310,16 +318,23 @@
                         <label>$INFO[ListItem.Title]</label>
                         <visible>!String.IsEmpty(Listitem.Icon)</visible>
                     </control>
+
                     <control type="progress">
                         <description>Progressbar</description>
                         <left>75</left>
                         <top>72</top>
                         <width>420</width>
-                        <height>9</height>
-                        <colordiffuse>88FFFFFF</colordiffuse>
+                        <height>3</height>
                         <visible>ListItem.HasEpg</visible>
                         <info>ListItem.Progress</info>
+                        <texturebg border="6,0,6,0" colordiffuse="FFFFFFFF">white.png</texturebg>
+                        <lefttexture></lefttexture>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                        <righttexture></righttexture>
+                        <overlaytexture></overlaytexture>
                     </control>
+
+                    
                     <control type="image">
                         <left>510</left>
                         <top>6</top>
@@ -391,7 +406,7 @@
                         <height>38</height>
                         <font>font13_title</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -469,16 +484,22 @@
                         <visible>Control.HasFocus(50)</visible>
                     </control>
 
+
                     <control type="progress">
                         <description>Progressbar</description>
                         <left>75</left>
                         <top>72</top>
                         <width>420</width>
-                        <height>9</height>
-                        <colordiffuse>88FFFFFF</colordiffuse>
+                        <height>3</height>
                         <visible>ListItem.HasEpg</visible>
                         <info>ListItem.Progress</info>
+                        <texturebg border="6,0,6,0" colordiffuse="FFFFFFFF">white.png</texturebg>
+                        <lefttexture></lefttexture>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                        <righttexture></righttexture>
+                        <overlaytexture></overlaytexture>
                     </control>
+
                     <control type="image">
                         <left>510</left>
                         <top>6</top>
@@ -637,15 +658,22 @@
                     <visible>Container(5010).ListItem.HasEpg</visible>
                     <label>$INFO[Container(5010).ListItem.StartTime]</label>
                 </control>
+
                 <control type="progress">
                     <description>Progressbar</description>
-                    <left>6</left>
+                   <left>6</left>
                     <top>-142</top>
                     <width>292</width>
-                    <height>18</height>
+                    <height>6</height>
                     <visible>Container(5010).ListItem.HasEpg</visible>
                     <info>Container(5010).ListItem.Progress</info>
+                    <texturebg border="6,0,6,0" colordiffuse="FFFFFFFF">white.png</texturebg>
+                    <lefttexture></lefttexture>
+                    <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                    <righttexture></righttexture>
+                    <overlaytexture></overlaytexture>
                 </control>
+
                 <control type="label">
                     <left>184</left>
                     <top>-120</top>
@@ -772,16 +800,22 @@
                         <label>$INFO[ListItem.Title]</label>
                         <visible>!String.IsEmpty(Listitem.Icon)</visible>
                     </control>
+
                     <control type="progress">
                         <description>Progressbar</description>
                         <left>150</left>
-                        <top>42</top>
+                        <top>43</top>
                         <width>632</width>
-                        <height>10</height>
-                        <colordiffuse>88FFFFFF</colordiffuse>
+                        <height>3</height>
                         <visible>ListItem.HasEpg</visible>
                         <info>ListItem.Progress</info>
+                        <texturebg border="6,0,6,0" colordiffuse="FFFFFFFF">white.png</texturebg>
+                        <lefttexture></lefttexture>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                        <righttexture></righttexture>
+                        <overlaytexture></overlaytexture>
                     </control>
+
                     <control type="image">
                         <left>754</left>
                         <top>8</top>
@@ -925,13 +959,18 @@
                     <control type="progress">
                         <description>Progressbar</description>
                         <left>150</left>
-                        <top>42</top>
+                        <top>43</top>
                         <width>632</width>
-                        <height>10</height>
-                        <colordiffuse>88FFFFFF</colordiffuse>
+                        <height>3</height>
                         <visible>ListItem.HasEpg</visible>
                         <info>ListItem.Progress</info>
+                        <texturebg border="6,0,6,0" colordiffuse="FFFFFFFF">white.png</texturebg>
+                        <lefttexture></lefttexture>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                        <righttexture></righttexture>
+                        <overlaytexture></overlaytexture>
                     </control>
+
                     <control type="image">
                         <left>754</left>
                         <top>8</top>
@@ -1021,7 +1060,7 @@
                         <height>38</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -1052,16 +1091,22 @@
                         <label>$INFO[ListItem.Title]</label>
                         <visible>!String.IsEmpty(Listitem.Icon)</visible>
                     </control>
+                    
                     <control type="progress">
                         <description>Progressbar</description>
                         <left>55</left>
                         <top>72</top>
                         <width>420</width>
-                        <height>9</height>
-                        <colordiffuse>88FFFFFF</colordiffuse>
+                        <height>4</height>
                         <visible>ListItem.HasEpg</visible>
                         <info>ListItem.Progress</info>
+                        <texturebg border="6,0,6,0" colordiffuse="FFFFFFFF">white.png</texturebg>
+                        <lefttexture></lefttexture>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                        <righttexture></righttexture>
+                        <overlaytexture></overlaytexture>
                     </control>
+
                     <control type="image">
                         <left>510</left>
                         <top>6</top>
@@ -1206,11 +1251,16 @@
                         <left>55</left>
                         <top>72</top>
                         <width>420</width>
-                        <height>9</height>
-                        <colordiffuse>88FFFFFF</colordiffuse>
+                        <height>4</height>
                         <visible>ListItem.HasEpg</visible>
                         <info>ListItem.Progress</info>
+                        <texturebg border="6,0,6,0" colordiffuse="FFFFFFFF">white.png</texturebg>
+                        <lefttexture></lefttexture>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                        <righttexture></righttexture>
+                        <overlaytexture></overlaytexture>
                     </control>
+
                     <control type="image">
                         <left>510</left>
                         <top>6</top>
@@ -1334,16 +1384,22 @@
                         <animation effect="fade" start="100" end="0" time="2000" condition="Player.HasVideo + System.IdleTime(10) + !Skin.HasSetting(HideNowPlayingInfo)">Conditional</animation>
                         <label>$INFO[Container(5060).ListItem.StartTime]</label>
                     </control>
+
                     <control type="progress">
                         <description>Progressbar</description>
-                        <posx>128</posx>
-                        <posy>45</posy>
+                        <left>128</left>
+                        <top>45</top>
                         <width>660</width>
-                        <height>12</height>
+                        <height>8</height>
                         <visible>Container(5060).ListItem.HasEpg</visible>
-                        <animation effect="fade" start="100" end="0" time="2000" condition="Player.HasVideo + System.IdleTime(10) + !Skin.HasSetting(HideNowPlayingInfo)">Conditional</animation>
                         <info>Container(5060).ListItem.Progress</info>
+                        <texturebg border="6,0,6,0" colordiffuse="FFFFFFFF">white.png</texturebg>
+                        <lefttexture></lefttexture>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                        <righttexture></righttexture>
+                        <overlaytexture></overlaytexture>
                     </control>
+
                     <control type="label">
                         <posx>795</posx>
                         <posy>33</posy>
@@ -1723,16 +1779,22 @@
                     <animation effect="fade" start="100" end="0" time="2000" condition="Player.HasVideo + System.IdleTime(10) + !Skin.HasSetting(HideNowPlayingInfo)">Conditional</animation>
                     <label>$INFO[Container(5040).ListItem.StartTime]</label>
                 </control>
+
                 <control type="progress">
                     <description>Progressbar</description>
                     <left>135</left>
                     <top>586</top>
                     <width>525</width>
-                    <height>12</height>
+                    <height>8</height>
                     <visible>Container(5040).ListItem.HasEpg</visible>
-                    <animation effect="fade" start="100" end="0" time="2000" condition="Player.HasVideo + System.IdleTime(10) + !Skin.HasSetting(HideNowPlayingInfo)">Conditional</animation>
                     <info>Container(5040).ListItem.Progress</info>
+                    <texturebg border="6,0,6,0" colordiffuse="FFFFFFFF">white.png</texturebg>
+                    <lefttexture></lefttexture>
+                    <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                    <righttexture></righttexture>
+                    <overlaytexture></overlaytexture>
                 </control>
+
                 <control type="label">
                     <left>675</left>
                     <top>578</top>
