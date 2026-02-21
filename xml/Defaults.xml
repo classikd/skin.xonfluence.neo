@@ -160,8 +160,8 @@
         <sliderwidth>150</sliderwidth>
         <sliderheight>20</sliderheight>
         <texturesliderbar>OSD_slider_bg.png</texturesliderbar>
-        <textureslidernib colordiffuse="$VAR[MainColorTwo]">OSD_slider_nibNF.png</textureslidernib>
-        <textureslidernibfocus colordiffuse="$VAR[MainColorTwo]">osd_slider_nib.png</textureslidernibfocus>
+        <textureslidernib colordiffuse="$VAR[MainColorOne]">OSD_slider_nibNF.png</textureslidernib>
+        <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">osd_slider_nib.png</textureslidernibfocus>
         <font>font12</font>
         <textcolor>white</textcolor>
         <disabledcolor>grey3</disabledcolor>

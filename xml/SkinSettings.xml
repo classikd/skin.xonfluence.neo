@@ -427,19 +427,6 @@
                                 <onclick>ActivateWindow(2130)</onclick>
                                 <include>MenuButton</include>
                             </control>
-                            <control type="button" id="105">
-                                <description>Main Colour Two</description>
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <textcolor>grey2</textcolor>
-                                <focusedcolor>white</focusedcolor>
-                                <label>$LOCALIZE[31369]</label>
-                                <label2>[COLOR=$VAR[MainColorTwo]]$VAR[ColorTwoName][/COLOR]</label2>
-                                <onclick>SetProperty(OSDColor,True,2130)</onclick>
-                                <onclick>ActivateWindow(2130)</onclick>
-                                <include>MenuButton</include>
-                            </control>
                             <control type="radiobutton" id="106">
                                 <width>1125</width>
                                 <height>60</height>

@@ -179,7 +179,7 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <label>$VAR[VideoNowPlaying]</label>
-                <textcolor>$VAR[MainColorTwo]</textcolor>
+                <textcolor>$VAR[MainColorOne]</textcolor>
                 <scroll>true</scroll>
             </control>
             <control type="image" id="1">
@@ -517,9 +517,9 @@
         </definition>
     </include>
     <include name="OSDButtonClassic">
-        <textureradioonfocus colordiffuse="$VAR[MainColorTwo]">osd_classic/$PARAM[AltTexture]FO.png</textureradioonfocus>
+        <textureradioonfocus colordiffuse="$VAR[MainColorOne]">osd_classic/$PARAM[AltTexture]FO.png</textureradioonfocus>
         <textureradioonnofocus>osd_classic/$PARAM[AltTexture]NF.png</textureradioonnofocus>
-        <textureradioofffocus colordiffuse="$VAR[MainColorTwo]">osd_classic/$PARAM[Texture]FO.png</textureradioofffocus>
+        <textureradioofffocus colordiffuse="$VAR[MainColorOne]">osd_classic/$PARAM[Texture]FO.png</textureradioofffocus>
         <textureradiooffnofocus>osd_classic/$PARAM[Texture]NF.png</textureradiooffnofocus>
         <textureradioondisabled colordiffuse="grey3">osd_classic/$PARAM[AltTexture]FO.png</textureradioondisabled>
         <textureradiooffdisabled colordiffuse="grey3">osd_classic/$PARAM[Texture]NF.png</textureradiooffdisabled>
@@ -531,9 +531,9 @@
         <radioposy>1</radioposy>
     </include>
     <include name="OSDButtonClassicNoAlt">
-        <textureradioonfocus colordiffuse="$VAR[MainColorTwo]" flipx="$PARAM[flipx]">osd_classic/$PARAM[Texture]FO.png</textureradioonfocus>
+        <textureradioonfocus colordiffuse="$VAR[MainColorOne]" flipx="$PARAM[flipx]">osd_classic/$PARAM[Texture]FO.png</textureradioonfocus>
         <textureradioonnofocus flipx="$PARAM[flipx]">osd_classic/$PARAM[Texture]NF.png</textureradioonnofocus>
-        <textureradioofffocus colordiffuse="$VAR[MainColorTwo]" flipx="$PARAM[flipx]">osd_classic/$PARAM[Texture]FO.png</textureradioofffocus>
+        <textureradioofffocus colordiffuse="$VAR[MainColorOne]" flipx="$PARAM[flipx]">osd_classic/$PARAM[Texture]FO.png</textureradioofffocus>
         <textureradiooffnofocus flipx="$PARAM[flipx]">osd_classic/$PARAM[Texture]NF.png</textureradiooffnofocus>
         <textureradioondisabled colordiffuse="grey3" flipx="$PARAM[flipx]">osd_classic/$PARAM[Texture]FO.png</textureradioondisabled>
         <textureradiooffdisabled colordiffuse="grey3" flipx="$PARAM[flipx]">osd_classic/$PARAM[Texture]NF.png</textureradiooffdisabled>
@@ -551,7 +551,7 @@
         <textureradiooffnofocus>osd_modern/$PARAM[Texture].png</textureradiooffnofocus>
         <textureradioondisabled colordiffuse="grey3">osd_modern/$PARAM[AltTexture].png</textureradioondisabled>
         <textureradiooffdisabled colordiffuse="grey3">osd_modern/$PARAM[Texture].png</textureradiooffdisabled>
-        <texturefocus border="5" colordiffuse="$VAR[MainColorTwo]">round_buttonFO.png</texturefocus>
+        <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">round_buttonFO.png</texturefocus>
         <texturenofocus border="5">round_button.png</texturenofocus>
         <radiowidth>$PARAM[Size]</radiowidth>
         <radioheight>$PARAM[Size]</radioheight>
@@ -565,7 +565,7 @@
         <textureradiooffnofocus>osd_modern/$PARAM[Texture].png</textureradiooffnofocus>
         <textureradioondisabled colordiffuse="grey3">osd_modern/$PARAM[Texture].png</textureradioondisabled>
         <textureradiooffdisabled colordiffuse="grey3">osd_modern/$PARAM[Texture].png</textureradiooffdisabled>
-        <texturefocus border="5" colordiffuse="$VAR[MainColorTwo]">round_buttonFO.png</texturefocus>
+        <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">round_buttonFO.png</texturefocus>
         <texturenofocus border="5">round_button.png</texturenofocus>
         <radiowidth>$PARAM[Size]</radiowidth>
         <radioheight>$PARAM[Size]</radioheight>
@@ -579,7 +579,7 @@
         <textureradiooffnofocus>osd_modern/$PARAM[Texture].png</textureradiooffnofocus>
         <textureradioondisabled colordiffuse="grey3">osd_modern/$PARAM[AltTexture].png</textureradioondisabled>
         <textureradiooffdisabled colordiffuse="grey3">osd_modern/$PARAM[Texture].png</textureradiooffdisabled>
-        <texturefocus border="5" colordiffuse="$VAR[MainColorTwo]">osd_buttonFO.png</texturefocus>
+        <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">osd_buttonFO.png</texturefocus>
         <texturenofocus border="5">osd_button.png</texturenofocus>
         <radiowidth>$PARAM[Size]</radiowidth>
         <radioheight>$PARAM[Size]</radioheight>
@@ -593,7 +593,7 @@
         <textureradiooffnofocus>osd_modern/$PARAM[Texture].png</textureradiooffnofocus>
         <textureradioondisabled colordiffuse="grey3">osd_modern/$PARAM[Texture].png</textureradioondisabled>
         <textureradiooffdisabled colordiffuse="grey3">osd_modern/$PARAM[Texture].png</textureradiooffdisabled>
-        <texturefocus border="5" colordiffuse="$VAR[MainColorTwo]">osd_buttonFO.png</texturefocus>
+        <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">osd_buttonFO.png</texturefocus>
         <texturenofocus border="5">osd_button.png</texturenofocus>
         <radiowidth>$PARAM[Size]</radiowidth>
         <radioheight>$PARAM[Size]</radioheight>
@@ -748,7 +748,7 @@
                         <top>22</top>
                         <width>1080</width>
                         <height>16</height>
-                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
                         <info>PVR.TimeshiftProgressBufferEnd</info>
                         <visible>PVR.IsTimeShift</visible>
                     </control>
@@ -758,7 +758,7 @@
                         <top>22</top>
                         <width>1080</width>
                         <height>16</height>
-                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
                         <info>PVR.EpgEventProgress</info>
                     </control>
                 </control>
@@ -770,7 +770,7 @@
                         <top>22</top>
                         <width>1080</width>
                         <height>16</height>
-                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
                         <info>Player.ProgressCache</info>
                         <visible>!Player.ChannelPreviewActive</visible>
                     </control>
@@ -780,7 +780,7 @@
                         <top>22</top>
                         <width>1080</width>
                         <height>16</height>
-                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
                         <info>Player.Progress</info>
                     </control>
                 </control>
@@ -1178,7 +1178,7 @@
                         <top>22</top>
                         <width>1080</width>
                         <height>16</height>
-                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
                         <info>PVR.TimeshiftProgressBufferEnd</info>
                         <visible>PVR.IsTimeShift</visible>
                     </control>
@@ -1188,7 +1188,7 @@
                         <top>22</top>
                         <width>1080</width>
                         <height>16</height>
-                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
                         <info>PVR.EpgEventProgress</info>
                     </control>
                 </control>
@@ -1200,7 +1200,7 @@
                         <top>22</top>
                         <width>1080</width>
                         <height>16</height>
-                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
                         <info>Player.ProgressCache</info>
                         <visible>!Player.ChannelPreviewActive</visible>
                     </control>
@@ -1210,7 +1210,7 @@
                         <top>22</top>
                         <width>1080</width>
                         <height>16</height>
-                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
                         <info>Player.Progress</info>
                     </control>
                 </control>

@@ -33,8 +33,8 @@
             <ondown>100</ondown>
             <action>seek</action>
             <texturesliderbar>seekslider2.png</texturesliderbar>
-            <textureslidernib colordiffuse="$VAR[MainColorTwo]">OSD_slider_nibNF.png</textureslidernib>
-            <textureslidernibfocus colordiffuse="$VAR[MainColorTwo]">osd_slider_nib.png</textureslidernibfocus>
+            <textureslidernib colordiffuse="$VAR[MainColorOne]">OSD_slider_nibNF.png</textureslidernib>
+            <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">osd_slider_nib.png</textureslidernibfocus>
             <animation effect="fade" time="150">VisibleChange</animation>
             <visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVRChannelGuide) | Window.IsVisible(PVRRadioRDSInfo) | Window.IsVisible(Addon) | Window.IsVisible(1105)]</visible>
             <animation effect="slide" end="-218,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HideMusicArtWorkOSD) | [Skin.String(MusicOSDInfo,never) +  !Skin.HasSetting(HidePopUpSeekBar)]" reversible="true">Conditional</animation>
