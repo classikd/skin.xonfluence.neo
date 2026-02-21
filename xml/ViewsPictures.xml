@@ -9,7 +9,7 @@
             <control type="wraplist" id="510">
                 <depth>DepthContent+</depth>
                 <left>-38</left>
-                <top>8</top>
+                <top>0</top>
                 <width>1995</width>
                 <height>375</height>
                 <onleft>510</onleft>
@@ -29,10 +29,8 @@
                         <width>240</width>
                         <height>240</height>
                         <aspectratio>stretch</aspectratio>
-                        <bordertexture border="10">ThumbShadow.png</bordertexture>
-                        <bordersize>8</bordersize>
                         <fadetime>200</fadetime>
-                        <texture border="2">ThumbBG.png</texture>
+                        <texture border="2">black.png</texture>
                     </control>
                     <control type="image">
                         <left>38</left>
@@ -51,10 +49,8 @@
                         <width>240</width>
                         <height>240</height>
                         <aspectratio>stretch</aspectratio>
-                        <bordertexture border="10">ThumbShadow.png</bordertexture>
-                        <bordersize>8</bordersize>
                         <fadetime>200</fadetime>
-                        <texture border="2">ThumbBG.png</texture>
+                        <texture border="2">black.png</texture>
                         <animation reversible="false" effect="zoom" start="22,60,240,240" end="-15,-8,315,315" time="150">focus</animation>
                         <animation reversible="false" effect="zoom" end="22,60,240,240" start="-15,-8,315,315" time="150">unfocus</animation>
                     </control>
@@ -112,7 +108,7 @@
                         <width>216</width>
                         <height>216</height>
                         <aspectratio>stretch</aspectratio>
-                        <bordertexture border="10">ThumbShadow.png</bordertexture>
+                        <bordertexture border="10">blank.png</bordertexture>
                         <bordersize>8</bordersize>
                         <fadetime>200</fadetime>
                         <texture border="2">ThumbBG.png</texture>
@@ -182,20 +178,18 @@
                 </control>
                 <control type="image">
                     <left>0</left>
-                    <top>45</top>
+                    <top>50</top>
                     <width>960</width>
                     <height>705</height>
                     <!--<texture background="true">$INFO[ListItem.FilenameAndPath]</texture>-->
                     <texture background="true">$VAR[PosterThumb]</texture>
                     <fadetime>600</fadetime>
                     <aspectratio>keep</aspectratio>
-                    <bordertexture border="8">ThumbShadow.png</bordertexture>
-                    <bordersize>9</bordersize>
                 </control>
                 <control type="label">
                     <description>Date time txt</description>
                     <left>0</left>
-                    <top>765</top>
+                    <top>780</top>
                     <width>960</width>
                     <height>22</height>
                     <label>[COLOR=$VAR[MainColorOne]]$LOCALIZE[31326][/COLOR] - $INFO[ListItem.PictureDateTime]</label>
@@ -209,7 +203,7 @@
                 <control type="label">
                     <description>Resolution txt</description>
                     <left>0</left>
-                    <top>802</top>
+                    <top>817</top>
                     <width>960</width>
                     <height>22</height>
                     <label>[COLOR=$VAR[MainColorOne]]$LOCALIZE[31999][/COLOR] - $INFO[ListItem.PictureResolution]</label>
@@ -251,7 +245,7 @@
                         <width>208</width>
                         <height>303</height>
                         <include>TextureBorderViews</include>
-                        <bordertexture border="5">button-nofocus.png</bordertexture>
+                        <bordertexture border="5">blank.png</bordertexture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <include>VisibleFadeEffect</include>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
@@ -262,7 +256,7 @@
                         <width>208</width>
                         <height>303</height>
                         <include>TextureBorderViews</include>
-                        <bordertexture border="5">button-nofocus.png</bordertexture>
+                        <bordertexture border="5">blank.png</bordertexture>
                         <aspectratio>stretch</aspectratio>
                         <texture>black-back.png</texture>
                         <colordiffuse>AAFFFFFF</colordiffuse>
@@ -273,10 +267,10 @@
                         <top>0</top>
                         <width>208</width>
                         <height>303</height>
-                        <include>TextureBorderViews</include>
-                        <bordertexture border="5">button-nofocus.png</bordertexture>
                         <aspectratio>stretch</aspectratio>
                         <texture>black-back.png</texture>
+                        <include>TextureBorderViews</include>
+                        <bordertexture border="5">blank.png</bordertexture>
                         <colordiffuse>AAFFFFFF</colordiffuse>
                         <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                         <visible>!String.IsEqual(ListItem.Label,..)</visible>
@@ -301,7 +295,7 @@
                             <include>VisibleFadeEffect</include>
                             <bordersize>8</bordersize>
                             <texture background="true">$INFO[ListItem.Icon]</texture>
-                            <bordertexture border="8">ThumbBorder.png</bordertexture>
+                            <bordertexture border="8">black.png</bordertexture>
                         </control>
                     </control>
                 </focusedlayout>

@@ -29,7 +29,7 @@
                     <control type="label">
                         <left>15</left>
                         <top>0</top>
-                        <width>690</width>
+                        <width>630</width>
                         <height>60</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
@@ -107,7 +107,7 @@
                     <control type="label">
                         <left>15</left>
                         <top>0</top>
-                        <width>690</width>
+                        <width>630</width>
                         <height>60</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
@@ -120,7 +120,7 @@
                     <control type="label">
                         <left>15</left>
                         <top>0</top>
-                        <width>690</width>
+                        <width>630</width>
                         <height>60</height>
                         <font>font13</font>
                         <textcolor>black</textcolor>

@@ -6,7 +6,7 @@
             <include>VisibleFadeEffect</include>
             <control type="list" id="50">
                 <left>95</left>
-                <top>126</top>
+                <top>120</top>
                 <width>1035</width>
                 <height>842</height>
                 <onleft>2</onleft>
@@ -324,9 +324,9 @@
                 <visible>Control.IsVisible(50)</visible>
                 <control type="image">
                     <left>0</left>
-                    <top>-40px</top>
-                    <width>570</width>
-                    <height>875</height>
+                    <top>-60px</top>
+                    <width>600</width>
+                    <height>895</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
@@ -335,9 +335,9 @@
                 </control>
                 <control type="image">
                     <left>0</left>
-                    <top>-40px</top>
-                    <width>570</width>
-                    <height>875</height>
+                    <top>-60px</top>
+                    <width>600</width>
+                    <height>895</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
@@ -345,9 +345,9 @@
                 </control>
                 <control type="image">
                     <left>0</left>
-                    <top>-40px</top>
-                    <width>570</width>
-                    <height>875</height>
+                    <top>-60px</top>
+                    <width>600</width>
+                    <height>895</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(fanart)]</texture>
@@ -355,9 +355,9 @@
                 </control>
                 <control type="image">
                     <left>0</left>
-                    <top>-40px</top>
-                    <width>570</width>
-                    <height>875</height>
+                    <top>-60px</top>
+                    <width>600</width>
+                    <height>895</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="DefaultGenre.png">$VAR[MovieGenreIcon]</texture>
@@ -365,9 +365,9 @@
                 </control>
                 <control type="image">
                     <left>0</left>
-                    <top>-40px</top>
-                    <width>570</width>
-                    <height>875</height>
+                    <top>-60px</top>
+                    <width>600</width>
+                    <height>895</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="DefaultStudios.png">$VAR[StudioIcon]</texture>
@@ -375,9 +375,9 @@
                 </control>
                 <control type="image">
                     <left>0</left>
-                    <top>-40px</top>
-                    <width>570</width>
-                    <height>875</height>
+                    <top>-60px</top>
+                    <width>600</width>
+                    <height>895</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="DefaultCountry.png">$VAR[FlagIcon]</texture>
@@ -392,7 +392,7 @@
             <include>VisibleFadeEffect</include>
             <control type="panel" id="500">
                 <left>135</left>
-                <top>140</top>
+                <top>130</top>
                 <width>1620</width>
                 <height>838</height>
                 <onleft>2</onleft>
@@ -1118,7 +1118,7 @@
             <include>VisibleFadeEffect</include>
             <control type="list" id="51">
                 <left>132</left>
-                <top>126</top>
+                <top>120</top>
                 <width>1620</width>
                 <height>842</height>
                 <onleft>2</onleft>

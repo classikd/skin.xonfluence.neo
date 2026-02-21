@@ -469,7 +469,7 @@
             <include>VisibleFadeEffect</include>
             <control type="list" id="511">
                 <left>105</left>
-                <top>112</top>
+                <top>120</top>
                 <width>1140</width>
                 <height>842</height>
                 <onleft>2</onleft>
@@ -485,60 +485,8 @@
                         <left>0</left>
                         <top>0</top>
                         <width>1140</width>
-                        <height>62</height>
+                        <height>61</height>
                         <texture border="0,2,0,2">MenuItemNF.png</texture>
-                    </control>
-                    <control type="label">
-                        <left>15</left>
-                        <top>0</top>
-                        <width>1080</width>
-                        <height>60</height>
-                        <font>font13</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                    <control type="label">
-                        <left>45</left>
-                        <top>0</top>
-                        <width>1050</width>
-                        <height>60</height>
-                        <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label2]</label>
-                    </control>
-                    <control type="image">
-                        <left>1102</left>
-                        <top>21</top>
-                        <width>30</width>
-                        <height>24</height>
-                        <texture>$INFO[ListItem.Overlay]</texture>
-                        <aspectratio>keep</aspectratio>
-                    </control>
-                </itemlayout>
-                <focusedlayout height="60" width="1140">
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>1140</width>
-                        <height>62</height>
-                        <texture border="0,2,0,2">MenuItemNF.png</texture>
-                        <visible>!Control.HasFocus(511)</visible>
-                        <include>VisibleFadeEffect</include>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>1140</width>
-                        <height>62</height>
-                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">$VAR[SelectMenuItem]</texture>
-                        <visible>Control.HasFocus(511)</visible>
-                        <include>VisibleFadeEffect</include>
                     </control>
                     <control type="label">
                         <left>15</left>
@@ -547,7 +495,7 @@
                         <height>60</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -558,19 +506,147 @@
                         <width>1050</width>
                         <height>60</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
+
                     <control type="image">
                         <left>1102</left>
-                        <top>21</top>
-                        <width>30</width>
-                        <height>24</height>
-                        <texture>$INFO[ListItem.Overlay]</texture>
-                        <aspectratio>keep</aspectratio>
+                        <top>14</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                    </control>
+                    
+                    <control type="image">
+                        <left>1102</left>
+                        <top>14</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
+                        <visible>ListItem.IsResumable</visible>
+                    </control>
+                    <control type="image">
+                        <left>1102</left>
+                        <top>14</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>1102</left>
+                        <top>14</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                    </control>
+
+                </itemlayout>
+                <focusedlayout height="60" width="1140">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>1140</width>
+                        <height>62</height>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>Control.HasFocus(511)</visible>
+                    </control>
+
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>1080</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>!Control.HasFocus(511)</visible>
+                    </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>1080</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>Control.HasFocus(511)</visible>
+                    </control>
+
+                    <control type="label">
+                        <left>45</left>
+                        <top>0</top>
+                        <width>1050</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label2]</label>
+                        <visible>!Control.HasFocus(511)</visible>
+                    </control>
+                    <control type="label">
+                        <left>45</left>
+                        <top>0</top>
+                        <width>1050</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label2]</label>
+                        <visible>Control.HasFocus(511)</visible>
+                    </control>
+                    
+                    <control type="image">
+                        <left>1102</left>
+                        <top>14</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                    </control>
+                    
+                    <control type="image">
+                        <left>1102</left>
+                        <top>14</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
+                        <visible>ListItem.IsResumable</visible>
+                    </control>
+
+                    <control type="image">
+                        <left>1102</left>
+                        <top>14</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>1102</left>
+                        <top>14</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
                     </control>
                 </focusedlayout>
             </control>
@@ -597,12 +673,10 @@
                     <left>15</left>
                     <top>0</top>
                     <width>435</width>
-                    <height>345</height>
-                    <aspectratio>keep</aspectratio>
+                    <height>325</height>
+                    <aspectratio>center</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true">$INFO[ListItem.Icon]</texture>
-                    <bordertexture border="8">ThumbShadow.png</bordertexture>
-                    <bordersize>8</bordersize>
                 </control>
                 <control type="grouplist">
                     <description>Media Codec Flagging Images</description>

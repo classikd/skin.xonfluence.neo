@@ -550,52 +550,51 @@
                 <visible>Control.IsVisible(50)</visible>
                 <control type="image">
                     <left>75</left>
-                    <top>110</top>
+                    <top>90</top>
                     <width>1125</width>
-                    <height>875</height>
+                    <height>900</height>
                     <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
-                </control>
-                <control type="image">
-                    <left>75</left>
-                    <top>978</top>
-                    <width>1125</width>
-                    <height>96</height>
-                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
             </control>
             <control type="group">
                 <include>VisibleFadeEffect</include>
-                <visible>Control.IsVisible(5040) |Control.IsVisible(504) | Control.IsVisible(550) | Control.IsVisible(512)</visible>
+                <visible>Control.IsVisible(5040)</visible>
                 <control type="image">
                     <left>75</left>
-                    <top>110</top>
+                    <top>90</top>
                     <width>960</width>
-                    <height>875</height>
-                    <texture border="15">ContentPanel.png</texture>
-                    <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
-                </control>
-                <control type="image">
-                    <left>75</left>
-                    <top>978</top>
-                    <width>960</width>
-                    <height>96</height>
-                    <texture border="15">ContentPanelMirror.png</texture>
-                </control>
-                <control type="image">
-                    <left>1050</left>
-                    <top>110</top>
-                    <width>795</width>
-                    <height>875</height>
+                    <height>900</height>
                     <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
                     <left>1050</left>
-                    <top>978</top>
+                    <top>90</top>
                     <width>795</width>
-                    <height>96</height>
-                    <texture border="15">ContentPanelMirror.png</texture>
+                    <height>900</height>
+                    <texture border="15">ContentPanel.png</texture>
+                    <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
+                </control>
+            </control>
+            <control type="group">
+                <include>VisibleFadeEffect</include>
+                <visible>Control.IsVisible(504) | Control.IsVisible(550) | Control.IsVisible(512)</visible>
+                <control type="image">
+                    <left>75</left>
+                    <top>90</top>
+                    <width>960</width>
+                    <height>900</height>
+                    <texture border="15">ContentPanel.png</texture>
+                    <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
+                </control>
+                <control type="image">
+                    <left>1050</left>
+                    <top>90</top>
+                    <width>795</width>
+                    <height>900</height>
+                    <texture border="15">ContentPanel.png</texture>
+                    <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
             </control>
             <control type="group">
@@ -603,33 +602,19 @@
                 <visible>Control.IsVisible(551) | Control.IsVisible(560) | Control.IsVisible(511) | Control.IsVisible(506) | Control.IsVisible(507) | Control.IsVisible(513)</visible>
                 <control type="image">
                     <left>75</left>
-                    <top>110</top>
+                    <top>90</top>
                     <width>1260</width>
-                    <height>875</height>
-                    <texture border="15">ContentPanel.png</texture>
-                    <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
-                </control>
-                <control type="image">
-                    <left>75</left>
-                    <top>978</top>
-                    <width>1260</width>
-                    <height>96</height>
-                    <texture border="15">ContentPanelMirror.png</texture>
-                </control>
-                <control type="image">
-                    <left>1350</left>
-                    <top>110</top>
-                    <width>495</width>
-                    <height>875</height>
+                    <height>900</height>
                     <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
                     <left>1350</left>
-                    <top>978</top>
+                    <top>90</top>
                     <width>495</width>
-                    <height>96</height>
-                    <texture border="15">ContentPanelMirror.png</texture>
+                    <height>900</height>
+                    <texture border="15">ContentPanel.png</texture>
+                    <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
             </control>
             <control type="group">
@@ -637,18 +622,11 @@
                 <visible>Control.IsVisible(501)</visible>
                 <control type="image">
                     <left>75</left>
-                    <top>75</top>
+                    <top>95</top>
                     <width>1770</width>
-                    <height>915</height>
+                    <height>895</height>
                     <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
-                </control>
-                <control type="image">
-                    <left>75</left>
-                    <top>978</top>
-                    <width>1770</width>
-                    <height>96</height>
-                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -690,18 +668,11 @@
                 <visible>Control.IsVisible(51) | Control.IsVisible(500) | Control.IsVisible(505)</visible>
                 <control type="image">
                     <left>112</left>
-                    <top>110</top>
+                    <top>90</top>
                     <width>1695</width>
-                    <height>875</height>
+                    <height>900</height>
                     <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
-                </control>
-                <control type="image">
-                    <left>112</left>
-                    <top>978</top>
-                    <width>1695</width>
-                    <height>96</height>
-                    <texture border="15">ContentPanelMirror.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -709,33 +680,19 @@
                 <visible>Control.IsVisible(514)</visible>
                 <control type="image">
                     <left>75</left>
-                    <top>110</top>
+                    <top>90</top>
                     <width>735</width>
-                    <height>875</height>
-                    <texture border="15">ContentPanel.png</texture>
-                    <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
-                </control>
-                <control type="image">
-                    <left>75</left>
-                    <top>978</top>
-                    <width>735</width>
-                    <height>96</height>
-                    <texture border="15">ContentPanelMirror.png</texture>
-                </control>
-                <control type="image">
-                    <left>825</left>
-                    <top>110</top>
-                    <width>1020</width>
-                    <height>875</height>
+                    <height>900</height>
                     <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
                     <left>825</left>
-                    <top>978</top>
+                    <top>90</top>
                     <width>1020</width>
-                    <height>96</height>
-                    <texture border="15">ContentPanelMirror.png</texture>
+                    <height>900</height>
+                    <texture border="15">ContentPanel.png</texture>
+                    <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
             </control>
             <control type="group">
@@ -743,33 +700,19 @@
                 <visible>Control.IsVisible(515)</visible>
                 <control type="image">
                     <left>75</left>
-                    <top>110</top>
+                    <top>90</top>
                     <width>600</width>
-                    <height>875</height>
-                    <texture border="15">ContentPanel.png</texture>
-                    <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
-                </control>
-                <control type="image">
-                    <left>75</left>
-                    <top>978</top>
-                    <width>600</width>
-                    <height>96</height>
-                    <texture border="15">ContentPanelMirror.png</texture>
-                </control>
-                <control type="image">
-                    <left>690</left>
-                    <top>110</top>
-                    <width>1155</width>
-                    <height>875</height>
+                    <height>900</height>
                     <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
                 <control type="image">
                     <left>690</left>
-                    <top>978</top>
+                    <top>90</top>
                     <width>1155</width>
-                    <height>96</height>
-                    <texture border="15">ContentPanelMirror.png</texture>
+                    <height>900</height>
+                    <texture border="15">ContentPanel.png</texture>
+                    <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>
             </control>
             <control type="group">

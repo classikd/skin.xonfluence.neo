@@ -508,7 +508,7 @@
             <visible>Control.IsVisible(508)</visible>
             <include>VisibleFadeEffect</include>
             <left>0</left>
-            <top>690</top>
+            <top>670</top>
             <control type="fixedlist" id="508">
                 <depth>DepthContent-</depth>
                 <visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Sets)</visible>
@@ -553,7 +553,7 @@
     <include name="PosterWrapFanartInfo">
         <control type="group">
             <left>100</left>
-            <top>110</top>
+            <top>90</top>
             <visible>Control.IsVisible(508) + ![ListItem.IsFolder + Container.Content(Movies)] + !Container.Content(Sets)</visible>
             <include>MediaInfoPopup</include>
             <visible>!Skin.String(MediaPopupControl,Hidden) + !String.IsEmpty(ListItem.Title) + !Container.OnNext + !Container.OnPrevious</visible>
@@ -1806,7 +1806,7 @@
             <include>VisibleFadeEffect</include>
             <control type="list" id="504">
                 <left>105</left>
-                <top>125</top>
+                <top>120</top>
                 <width>870</width>
                 <height>842</height>
                 <onleft>2</onleft>
@@ -2123,7 +2123,7 @@
             </control>
             <control type="group">
                 <left>1065</left>
-                <top>105</top>
+                <top>85</top>
                 <visible>Control.IsVisible(504) + [Container.Content(Movies) | Container.Content(TVShows) | Container.Content(albums)]</visible>
                 <control type="multiimage">
                     <left>0</left>
@@ -2521,7 +2521,7 @@
             <include>VisibleFadeEffect</include>
             <control type="list" id="515">
                 <left>105</left>
-                <top>125</top>
+                <top>120</top>
                 <width>510</width>
                 <height>842</height>
                 <onleft>2</onleft>
@@ -2863,7 +2863,7 @@
             </control>
             <control type="group">
                 <left>705</left>
-                <top>105</top>
+                <top>85</top>
                 <visible>Control.IsVisible(515) + Container.Content(Movies)</visible>
                 <control type="multiimage">
                     <left>-15</left>
