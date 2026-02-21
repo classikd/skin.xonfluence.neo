@@ -52,7 +52,7 @@
             </control>
         </control>
         <control type="group">
-<!--            <animation effect="slide" start="0,0" end="292,998" time="0" condition="Skin.HasSetting(HidePopUpSeekBar)">Conditional</animation>
+            <!-- <animation effect="slide" start="0,0" end="292,998" time="0" condition="Skin.HasSetting(HidePopUpSeekBar)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-150,0" time="0" condition="!Skin.HasSetting(HidePopUpSeekBar) + system.getbool(input.enablemouse)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-60,0" time="75" condition="!Skin.HasSetting(HidePopUpSeekBar) + Player.Muted">conditional</animation> -->
             <left>940r</left>
@@ -307,9 +307,8 @@
                         <left>30</left>
                         <top>68</top>
                         <width>360</width>
-                        <height>22</height>
+                        <height>14</height>
                         <info>PVR.TimeshiftProgressBufferEnd </info>
-                        <midtexture border="6,0,6,0">OSDProgressMidLight.png</midtexture>
                         <visible>PVR.IsTimeShift</visible>
                     </control>
                     <control type="progress" id="23">
@@ -317,7 +316,7 @@
                         <left>30</left>
                         <top>68</top>
                         <width>360</width>
-                        <height>22</height>
+                        <height>14</height>
                         <info>PVR.EpgEventProgress</info>
                         <visible>true</visible>
                     </control>
@@ -366,9 +365,8 @@
                         <left>30</left>
                         <top>68</top>
                         <width>360</width>
-                        <height>22</height>
+                        <height>14</height>
                         <info>Player.ProgressCache</info>
-                        <midtexture border="6,0,6,0">OSDProgressMidLight.png</midtexture>
                         <visible>true</visible>
                     </control>
                     <control type="progress" id="23">
@@ -376,7 +374,7 @@
                         <left>30</left>
                         <top>68</top>
                         <width>360</width>
-                        <height>22</height>
+                        <height>14</height>
                         <info>Player.Progress</info>
                         <visible>true</visible>
                     </control>

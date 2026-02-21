@@ -179,7 +179,7 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <label>$VAR[VideoNowPlaying]</label>
-                <textcolor>orange</textcolor>
+                <textcolor>$VAR[MainColorTwo]</textcolor>
                 <scroll>true</scroll>
             </control>
             <control type="image" id="1">
@@ -404,7 +404,7 @@
                 <texture background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow.Image)]</texture>
                 <visible>!Skin.HasSetting(DisableSlideShowArt) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))</visible>
             </control>
-<!--            <control type="multiimage">
+            <!-- <control type="multiimage">
                 <include>Dimensions_Fullscreen</include>
                 <include>BackgroundTimePerImage</include>
                 <randomize>true</randomize>
@@ -664,7 +664,7 @@
                 <include>OSDMediaHeading</include>
                 <include>OSDMediaFlagging</include>
                 <control type="label" id="1">
-<!--                    <left>0</left>
+                    <!-- <left>0</left>
                     <top>180</top>
                     <width>1365</width> -->
 					<left>1140</left>
@@ -747,9 +747,9 @@
                         <left>150</left>
                         <top>22</top>
                         <width>1080</width>
-                        <height>24</height>
+                        <height>16</height>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
                         <info>PVR.TimeshiftProgressBufferEnd</info>
-                        <midtexture border="6,0,6,0">OSDProgressMidLight.png</midtexture>
                         <visible>PVR.IsTimeShift</visible>
                     </control>
                     <control type="progress" id="1">
@@ -757,7 +757,8 @@
                         <left>150</left>
                         <top>22</top>
                         <width>1080</width>
-                        <height>24</height>
+                        <height>16</height>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
                         <info>PVR.EpgEventProgress</info>
                     </control>
                 </control>
@@ -768,9 +769,9 @@
                         <left>150</left>
                         <top>22</top>
                         <width>1080</width>
-                        <height>24</height>
+                        <height>16</height>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
                         <info>Player.ProgressCache</info>
-                        <midtexture border="6,0,6,0">OSDProgressMidLight.png</midtexture>
                         <visible>!Player.ChannelPreviewActive</visible>
                     </control>
                     <control type="progress" id="1">
@@ -778,7 +779,8 @@
                         <left>150</left>
                         <top>22</top>
                         <width>1080</width>
-                        <height>24</height>
+                        <height>16</height>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
                         <info>Player.Progress</info>
                     </control>
                 </control>
@@ -1175,9 +1177,9 @@
                         <left>150</left>
                         <top>22</top>
                         <width>1080</width>
-                        <height>24</height>
+                        <height>16</height>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
                         <info>PVR.TimeshiftProgressBufferEnd</info>
-                        <midtexture border="6,0,6,0">OSDProgressMidLight.png</midtexture>
                         <visible>PVR.IsTimeShift</visible>
                     </control>
                     <control type="progress" id="1">
@@ -1185,7 +1187,8 @@
                         <left>150</left>
                         <top>22</top>
                         <width>1080</width>
-                        <height>24</height>
+                        <height>16</height>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
                         <info>PVR.EpgEventProgress</info>
                     </control>
                 </control>
@@ -1196,9 +1199,9 @@
                         <left>150</left>
                         <top>22</top>
                         <width>1080</width>
-                        <height>24</height>
+                        <height>16</height>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
                         <info>Player.ProgressCache</info>
-                        <midtexture border="6,0,6,0">OSDProgressMidLight.png</midtexture>
                         <visible>!Player.ChannelPreviewActive</visible>
                     </control>
                     <control type="progress" id="1">
@@ -1206,7 +1209,8 @@
                         <left>150</left>
                         <top>22</top>
                         <width>1080</width>
-                        <height>24</height>
+                        <height>16</height>
+                        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
                         <info>Player.Progress</info>
                     </control>
                 </control>
@@ -1972,7 +1976,6 @@
                         <width>360</width>
                         <height>22</height>
                         <info>PVR.TimeshiftProgressBufferEnd </info>
-                        <midtexture border="6,0,6,0">OSDProgressMidLight.png</midtexture>
                         <visible>PVR.IsTimeShift</visible>
                     </control>
                     <control type="progress" id="2">
@@ -2032,7 +2035,6 @@
                         <width>360</width>
                         <height>22</height>
                         <info>Player.ProgressCache</info>
-                        <midtexture border="6,0,6,0">OSDProgressMidLight.png</midtexture>
                         <visible>true</visible>
                     </control>
                     <control type="progress" id="3">

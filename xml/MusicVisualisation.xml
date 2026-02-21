@@ -155,7 +155,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[Player.Title]</label>
-                        <textcolor>orange</textcolor>
+                        <textcolor>$VAR[MainColorTwo]</textcolor>
                         <scroll>true</scroll>
                     </control>
                     <control type="image">
@@ -243,8 +243,9 @@
                     <left>150</left>
                     <top>22</top>
                     <width>1080</width>
-                    <height>24</height>
+                    <height>16</height>
                     <info>Player.Progress</info>
+                    <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">white-darker.png</midtexture>
                 </control>
                 <control type="label">
                     <left>1230</left>

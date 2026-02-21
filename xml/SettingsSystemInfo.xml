@@ -315,7 +315,7 @@
                     <left>0</left>
                     <top>562</top>
                     <width>1125</width>
-                    <height>24</height>
+                    <height>16</height>
                     <info>System.CPUUsage</info>
                 </control>
                 <control type="label">
@@ -336,7 +336,7 @@
                     <left>0</left>
                     <top>630</top>
                     <width>1125</width>
-                    <height>24</height>
+                    <height>16</height>
                     <info>system.memory(used)</info>
                 </control>
                 <control type="grouplist">

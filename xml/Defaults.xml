@@ -56,9 +56,9 @@
     <default type="progress">
         <left>150</left>
         <top>488</top>
-        <texturebg border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">OSDProgressBack.png</texturebg>
+        <texturebg border="6,0,6,0" colordiffuse="FFFFFFFF">white.png</texturebg>
         <lefttexture></lefttexture>
-        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorTwo]">OSDProgressMid.png</midtexture>
+        <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
         <righttexture></righttexture>
         <overlaytexture></overlaytexture>
     </default>

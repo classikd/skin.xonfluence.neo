@@ -32,7 +32,7 @@
             <left>45</left>
             <top>252</top>
             <width>885</width>
-            <height>24</height>
+            <height>16</height>
             <info>System.Progressbar</info>
         </control>
         <control type="grouplist" id="9000">
