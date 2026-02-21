@@ -29,15 +29,18 @@
                 <height>96</height>
                 <texture border="15">ContentPanelMirror.png</texture>
             </control>
-            <control type="image">
-                <description>LOGO</description>
+
+            <control type="button">
                 <left>98</left>
-                <top>36</top>
+                <top>47</top>
                 <width>225</width>
-                <height>82</height>
+                <height>62</height>
                 <aspectratio>keep</aspectratio>
-                <texture>Xonfluence_Logo.png</texture>
+                <texturefocus>Xonfluence_Logo.png</texturefocus>
+                <texturenofocus>Xonfluence_Logo.png</texturenofocus>
+                <onclick>ActivateWindow(Home)</onclick>
             </control>
+            
             <control type="grouplist" id="9000">
                 <left>15</left>
                 <top>135</top>
