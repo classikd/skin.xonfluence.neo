@@ -2840,7 +2840,7 @@
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
                         <texturebg border="0">white.png</texturebg>
-                        <midtexture border="0" colordiffuse="FFFF0000">white.png</midtexture>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white.png</midtexture>
                     </control> 
                     
                 </focusedlayout>
