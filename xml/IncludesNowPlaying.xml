@@ -462,13 +462,13 @@
 	
 	<include name="NowPlayingMediaControls">
 	    <control type="group">
-            <top>568</top>
+            <top>575</top>
 
             <control type="image">
                 <left>244</left>
                 <right>0</right>
                 <top>0</top>
-                <height>52</height>
+                <height>45</height>
                 <width>1500</width>
                 <texture border="5">current-playing-bg.png</texture>
                 <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
@@ -479,7 +479,7 @@
                 <left>18</left>
                 <right>0</right>
                 <top>0</top>
-                <height>52</height>
+                <height>45</height>
                 <width>1500</width>
                 <texture border="5">current-playing-bg.png</texture>
                 <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
@@ -509,8 +509,8 @@
                 <description>Global Search</description>
                 <left>18</left>
                 <top>0</top>
-                <height>52</height>
-                <width>225</width>
+                <height>45</height>
+                <width>228</width>
                 <textwidth>225</textwidth>
                 <textoffsetx>15</textoffsetx>
                 <align>left</align>
@@ -545,7 +545,7 @@
                     <visible>!VideoPlayer.Content(LiveTV)+Player.HasMedia</visible>
                     <control type="radiobutton" id="601">
                         <left>15</left>
-                        <top>3</top>
+                        <top>0</top>
                         <label></label>
                         <include content="OSDButton">
                             <param name="Size" value="45" />
@@ -560,7 +560,7 @@
                     </control>
                     <control type="radiobutton" id="602">
                         <left>60</left>
-                        <top>3</top>
+                        <top>0</top>
                         <label></label>
                         <include content="OSDButton">
                             <param name="Size" value="45" />
@@ -575,7 +575,7 @@
                     </control>
                     <control type="radiobutton" id="603">
                         <left>105</left>
-                        <top>3</top>
+                        <top>0</top>
                         <label></label>
                         <include content="OSDButtonAlt">
                             <param name="Size" value="45" />
@@ -592,7 +592,7 @@
                     </control>
                     <control type="radiobutton" id="604">
                         <left>150</left>
-                        <top>3</top>
+                        <top>0</top>
                         <label></label>
                         <include content="OSDButton">
                             <param name="Size" value="45" />
@@ -608,7 +608,7 @@
                     </control>
                     <control type="radiobutton" id="605">
                         <left>195</left>
-                        <top>3</top>
+                        <top>0</top>
                         <label></label>
                         <include content="OSDButton">
                             <param name="Size" value="45" />
@@ -623,7 +623,7 @@
                     </control>
                     <control type="radiobutton" id="606">
                         <left>240</left>
-                        <top>3</top>
+                        <top>0</top>
                         <label></label>
                         <include content="OSDButton">
                             <param name="Size" value="45" />
@@ -638,7 +638,7 @@
                     </control>
                     <control type="radiobutton" id="607">
                         <posx>285</posx>
-                        <posy>3</posy>
+                        <posy>0</posy>
                         <label></label>
                         <include content="OSDButton">
                             <param name="Size" value="45" />
@@ -655,7 +655,7 @@
                     </control>
                     <control type="radiobutton" id="608">
                         <posx>330</posx>
-                        <posy>3</posy>
+                        <posy>0</posy>
                         <label></label>
                         <include content="OSDButton">
                             <param name="Size" value="45" />
@@ -675,7 +675,7 @@
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                     <control type="radiobutton" id="601">
                         <left>15</left>
-                        <top>3</top>
+                        <top>0</top>
                         <label></label>
                         <include content="OSDButton">
                             <param name="Size" value="45" />
@@ -690,7 +690,7 @@
                     </control>
                     <control type="radiobutton" id="602">
                         <left>60</left>
-                        <top>3</top>
+                        <top>0</top>
                         <label></label>
                         <include content="OSDButton">
                             <param name="Size" value="45" />
@@ -705,7 +705,7 @@
                     </control>
                     <control type="radiobutton" id="603">
                         <left>105</left>
-                        <top>3</top>
+                        <top>0</top>
                         <label></label>
                         <include content="OSDButton">
                             <param name="Size" value="45" />
@@ -721,7 +721,7 @@
                     </control>
                     <control type="radiobutton" id="604">
                         <left>150</left>
-                        <top>3</top>
+                        <top>0</top>
                         <label></label>
                         <include content="OSDButtonAlt">
                             <param name="Size" value="45" />
@@ -740,7 +740,7 @@
                     </control>
                     <control type="radiobutton" id="605">
                         <left>195</left>
-                        <top>3</top>
+                        <top>0</top>
                         <label></label>
                         <include content="OSDButton">
                             <param name="Size" value="45" />
@@ -756,7 +756,7 @@
                     </control>
                     <control type="radiobutton" id="606">
                         <left>240</left>
-                        <top>3</top>
+                        <top>0</top>
                         <label></label>
                         <include content="OSDButton">
                             <param name="Size" value="45" />
@@ -771,7 +771,7 @@
                     </control>
                     <control type="radiobutton" id="607">
                         <posx>285</posx>
-                        <posy>3</posy>
+                        <posy>0</posy>
                         <label></label>
                         <include content="OSDButton">
                             <param name="Size" value="45" />
@@ -788,7 +788,7 @@
                     </control>
                     <control type="radiobutton" id="608">
                         <posx>330</posx>
-                        <posy>3</posy>
+                        <posy>0</posy>
                         <label></label>
                         <include content="OSDButton">
                             <param name="Size" value="45" />
@@ -806,12 +806,12 @@
                 </control>
             </control>
             <control type="radiobutton" id="609">
-                <animation effect="slide" end="0,52" time="300" condition="!Player.HasMedia">conditional</animation>
+                <animation effect="slide" end="0,45" time="300" condition="!Player.HasMedia">conditional</animation>
                 <colordiffuse>CCFFFFFF</colordiffuse>
                 <description>Go to fullscreen Playback</description>
                 <left>608</left>
                 <top>0</top>
-                <height>52</height>
+                <height>45</height>
                 <width>210</width>
                 <textwidth>225</textwidth>
                 <textoffsetx>15</textoffsetx>
@@ -821,7 +821,7 @@
                 <textcolor>white</textcolor>
                 <focusedcolor>black</focusedcolor>
                 <texturefocus flipy="true" border="5" colordiffuse="$VAR[MainColorOne]">HomeSubFO.png</texturefocus>
-                <texturenofocus flipy="true" border="5">HomeSubNF.png</texturenofocus>
+                <texturenofocus flipy="true" border="5">blank.png</texturenofocus>
                 <pulseonselect>false</pulseonselect>
                 <label>31008</label>
                 <onclick>fullscreen</onclick>
@@ -839,7 +839,7 @@
             </control>
             <control type="label">
                 <left>265</left>
-                <top>12</top>
+                <top>9</top>
                 <height>30</height>
                 <width>675</width>
                 <label>$VAR[InfoBarStats]</label>
