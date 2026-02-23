@@ -42,17 +42,55 @@
                 <left>-15</left>
                 <top>0</top>
                 <width>207</width>
-                <height>113</height>
+                <height>52</height>
                 <texture>SideFade.png</texture>
                 <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <visible>
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),Videos) + Integer.IsGreater(Container(9010).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),Movies) + Integer.IsGreater(Container(9016).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),TVShows) + Integer.IsGreater(Container(9017).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),Concerts) + Integer.IsGreater(Container(9019).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),Music) + Integer.IsGreater(Container(9011).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),Programs) + Integer.IsGreater(Container(9026).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),Pictures) + Integer.IsGreater(Container(9015).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),UserOne) + Integer.IsGreater(Container(9021).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),UserTwo) + Integer.IsGreater(Container(9022).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),UserThree) + Integer.IsGreater(Container(9023).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),UserFour) + Integer.IsGreater(Container(9024).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),UserFive) + Integer.IsGreater(Container(9025).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),Radio) + Integer.IsGreater(Container(9027).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),LiveTV) + Integer.IsGreater(Container(9014).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),Settings) + Integer.IsGreater(Container(9012).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),PlayDisc) + Integer.IsGreater(Container(9013).NumItems,0)
+                </visible>
+                <include>SubMenuAnimation</include>
             </control>
             <control type="image">
                 <left>192r</left>
                 <top>0</top>
                 <width>207</width>
-                <height>113</height>
+                <height>52</height>
                 <texture flipx="true">SideFade.png</texture>
                 <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <visible>
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),Videos) + Integer.IsGreater(Container(9010).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),Movies) + Integer.IsGreater(Container(9016).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),TVShows) + Integer.IsGreater(Container(9017).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),Concerts) + Integer.IsGreater(Container(9019).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),Music) + Integer.IsGreater(Container(9011).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),Programs) + Integer.IsGreater(Container(9026).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),Pictures) + Integer.IsGreater(Container(9015).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),UserOne) + Integer.IsGreater(Container(9021).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),UserTwo) + Integer.IsGreater(Container(9022).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),UserThree) + Integer.IsGreater(Container(9023).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),UserFour) + Integer.IsGreater(Container(9024).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),UserFive) + Integer.IsGreater(Container(9025).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),Radio) + Integer.IsGreater(Container(9027).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),LiveTV) + Integer.IsGreater(Container(9014).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),Settings) + Integer.IsGreater(Container(9012).NumItems,0) |
+                    String.IsEqual(Container(9000).ListItem.Property(SubMenu),PlayDisc) + Integer.IsGreater(Container(9013).NumItems,0)
+                </visible>
+                <include>SubMenuAnimation</include>
             </control>
             
             <control type="group">
