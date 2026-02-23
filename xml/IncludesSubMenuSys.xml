@@ -37,6 +37,23 @@
                 </visible>
                 <include>SubMenuAnimation</include>
             </control>
+
+            <control type="image">
+                <left>-15</left>
+                <top>0</top>
+                <width>207</width>
+                <height>113</height>
+                <texture>SideFade.png</texture>
+                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+            </control>
+            <control type="image">
+                <left>192r</left>
+                <top>0</top>
+                <width>207</width>
+                <height>113</height>
+                <texture flipx="true">SideFade.png</texture>
+                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+            </control>
             
             <control type="group">
                 <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),Videos) + Integer.IsGreater(Container(9010).NumItems,0)</visible>
@@ -347,7 +364,7 @@
                     <top>0</top>
                     <height>52</height>
                     <width>274</width>
-                    <font>font11_title</font>
+                    <font>font11</font>
                     <textcolor>black</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -368,7 +385,7 @@
                     <top>0</top>
                     <height>52</height>
                     <width>274</width>
-                    <font>font11_title</font>
+                    <font>font11</font>
                     <textcolor>black</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
