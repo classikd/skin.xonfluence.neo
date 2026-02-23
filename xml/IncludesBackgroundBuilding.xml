@@ -126,6 +126,7 @@
                 <fadetime>FanartCrossfadeTime</fadetime>
             </control>
         </control>
+        
        <control type="group">
             <depth>DepthBackground</depth>
             <visible>Skin.HasSetting(SingleGlobalBackground) + !Skin.HasSetting(HolidayEffects)</visible>

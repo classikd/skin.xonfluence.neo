@@ -1301,7 +1301,7 @@ msgid "Holiday theme"
 msgstr "Vakantiethema"
 
 msgctxt "#31365"
-msgid "Select main font colour"
+msgid "Select main colour"
 msgstr "Selecteer hoofd lettertype kleur"
 
 msgctxt "#31366"

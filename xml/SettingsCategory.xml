@@ -16,18 +16,11 @@
                 <effect type="fade" start="100" end="0" time="225" />
             </animation>
             <control type="image">
-                <left>8</left>
-                <top>8</top>
-                <width>1635</width>
+                <left>15</left>
+                <top>15</top>
+                <width>1620</width>
                 <height>945</height>
                 <texture border="15">ContentPanel.png</texture>
-            </control>
-            <control type="image">
-                <left>8</left>
-                <top>938</top>
-                <width>1635</width>
-                <height>96</height>
-                <texture border="15">ContentPanelMirror.png</texture>
             </control>
             <control type="button">
                 <left>98</left>
@@ -63,8 +56,8 @@
                 <align>right</align>
                 <aligny>top</aligny>
                 <font>font13</font>
-                <textcolor>selected</textcolor>
-                <focusedcolor>selected</focusedcolor>
+                <textcolor>$VAR[MainColorOne]</textcolor>
+                <focusedcolor>black</focusedcolor>
                 <include>MenuButton</include>
                 <pulseonselect>false</pulseonselect>
                 <onleft>5</onleft>
@@ -85,16 +78,16 @@
                 <aligny>center</aligny>
             </control>
             <control type="image">
-                <left>402</left>
+                <left>405</left>
                 <top>15</top>
-                <width>1185</width>
-                <height>927</height>
+                <width>1230</width>
+                <height>945</height>
                 <texture border="5">black-back2.png</texture>
             </control>
             <control type="image">
-                <left>402</left>
+                <left>405</left>
                 <top>15</top>
-                <width>1185</width>
+                <width>1230</width>
                 <height>78</height>
                 <texture>dialogheader.png</texture>
             </control>
@@ -104,7 +97,7 @@
                 <top>30</top>
                 <width>1089</width>
                 <height>45</height>
-                <font>font16</font>
+                <font>font14</font>
                 <label>$INFO[Control.GetLabel(2)] - $LOCALIZE[5]</label>
                 <align>center</align>
                 <aligny>center</aligny>
@@ -113,7 +106,7 @@
             </control>
             <control type="button">
                 <description>Close Window button</description>
-                <left>1470</left>
+                <left>1545</left>
                 <top>15</top>
                 <onclick>PreviousMenu</onclick>
                 <include>DialogCloseButton</include>
@@ -153,12 +146,12 @@
             </control>
             <control type="image">
                 <description>separator image</description>
-                <left>435</left>
+                <left>405</left>
                 <top>788</top>
-                <width>1125</width>
-                <height>3</height>
-                <texture>separator2.png</texture>
-                <colordiffuse>40FFFFFF</colordiffuse>
+                <width>1230</width>
+                <height>170</height>
+                <texture>white.png</texture>
+                <colordiffuse>70000000</colordiffuse>
             </control>
             <control type="textbox" id="6">
                 <description>description area</description>
@@ -168,7 +161,7 @@
                 <height>124</height>
                 <font>font12</font>
                 <align>justify</align>
-                <textcolor>white</textcolor>
+                <textcolor>grey</textcolor>
                 <include condition="Skin.HasSetting(AutoScroll) + !Skin.HasSetting(AutoScroll.Slow)">StandardAutoScroll</include>
 				<include condition="Skin.HasSetting(AutoScroll) + Skin.HasSetting(AutoScroll.Slow)">SlowerAutoScroll</include>
             </control>
@@ -178,12 +171,12 @@
             <description>Default Category Button</description>
             <height>90</height>
             <width>390</width>
-            <textoffsetx>30</textoffsetx>
-            <align>right</align>
+            <textoffsetx>40</textoffsetx>
+            <align>left</align>
             <aligny>center</aligny>
             <font>font13_title</font>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <textcolor>white</textcolor>
+            <focusedcolor>black</focusedcolor>
             <include>MenuButton</include>
             <pulseonselect>false</pulseonselect>
         </control>
@@ -193,10 +186,9 @@
             <top>0</top>
             <height>60</height>
             <font>font13</font>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <textcolor>white</textcolor>
+            <focusedcolor>black</focusedcolor>
             <invalidcolor>invalid</invalidcolor>
-            <include>MenuButton</include>
         </control>
         <control type="radiobutton" id="8">
             <description>Default RadioButton</description>
@@ -204,8 +196,8 @@
             <top>0</top>
             <height>60</height>
             <font>font13</font>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <textcolor>white</textcolor>
+            <focusedcolor>black</focusedcolor>
             <include>MenuButton</include>
         </control>
         <control type="spincontrolex" id="9">
@@ -214,8 +206,8 @@
             <top>0</top>
             <height>60</height>
             <font>font13</font>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <textcolor>white</textcolor>
+            <focusedcolor>black</focusedcolor>
             <include>MenuButton</include>
             <aligny>center</aligny>
             <reverse>yes</reverse>
@@ -226,15 +218,15 @@
             <top>0</top>
             <height>60</height>
             <font>font13</font>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <textcolor>white</textcolor>
+            <focusedcolor>black</focusedcolor>
             <include>MenuButton</include>
             <aligny>center</aligny>
         </control>
         <control type="image" id="11">
             <description>separator image</description>
-            <height>3</height>
-            <texture>separator2.png</texture>
+            <height>65</height>
+            <texture>blank.png</texture>
         </control>
         <control type="label" id="14">
             <description>Default Label</description>
@@ -245,7 +237,7 @@
             <align>center</align>
             <aligny>bottom</aligny>
             <font>font13_title</font>
-            <textcolor>grey</textcolor>
+            <textcolor>$VAR[MainColorOne]</textcolor>
             <shadowcolor>black</shadowcolor>
         </control>
         <control type="colorbutton" id="15">
@@ -255,8 +247,8 @@
 			<height>48</height>
 			<aligny>center</aligny>
 			<font>Regular21</font>
-			<textcolor>grey2</textcolor>
-			<focusedcolor>white</focusedcolor>
+			<textcolor>white</textcolor>
+			<focusedcolor>black</focusedcolor>
 			<invalidcolor>invalid</invalidcolor>
 			<texturefocus border="4">MenuItemFO.png</texturefocus>
 			<texturenofocus border="2"></texturenofocus>

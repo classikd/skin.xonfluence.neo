@@ -3179,7 +3179,6 @@
     </include>
     <include name="MenuButton">
         <include>MenuButtonModern</include>
-        <texturenofocus border="5">MenuItemNF.png</texturenofocus>
     </include>
     <include name="ButtonModern">
         <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">button/button-focus.png</texturefocus>

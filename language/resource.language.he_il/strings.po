@@ -1301,7 +1301,7 @@ msgid "Holiday theme"
 msgstr "ערכת נושא חג"
 
 msgctxt "#31365"
-msgid "Select main font colour"
+msgid "Select main colour"
 msgstr "בחר צבע הגופן הראשי"
 
 msgctxt "#31366"
