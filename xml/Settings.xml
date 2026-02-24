@@ -214,7 +214,7 @@
                 <left>405</left>
                 <top>8</top>
                 <width>1238</width>
-                <height>78</height>
+                <height>70</height>
                 <texture>dialogheader.png</texture>
             </control>
             <control type="label">
@@ -232,7 +232,7 @@
             </control>
             <control type="button">
                 <description>Close Window button</description>
-                <left>1553</left>
+                <left>1573</left>
                 <top>8</top>
                 <onclick>PreviousMenu</onclick>
                 <include>DialogCloseButton</include>
@@ -244,9 +244,9 @@
 
             <control type="image">
                 <left>403</left>
-                <top>86</top>
+                <top>78</top>
                 <width>1240</width>
-                <height>680</height>
+                <height>688</height>
                 <aspectratio>stretch</aspectratio>
                 <fadetime>600</fadetime>
                 <texture background="true" colordiffuse="$VAR[MainColorOne]">settings-alt.jpg</texture>

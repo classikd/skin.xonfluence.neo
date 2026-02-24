@@ -107,49 +107,7 @@
                         <height>60</height>
                         <font>font13</font>
                         <aligny>center</aligny>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>grey2</textcolor>
-                        <align>left</align>
-                        <info>ListItem.Label</info>
-                    </control>
-                    <control type="label">
-                        <left>480</left>
-                        <top>0</top>
-                        <width>300</width>
-                        <height>60</height>
-                        <font>font12</font>
-                        <aligny>center</aligny>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>grey</textcolor>
-                        <align>right</align>
-                        <info>ListItem.Label2</info>
-                    </control>
-                </itemlayout>
-                <focusedlayout height="60" width="810">
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>810</width>
-                        <height>62</height>
-                        <visible>!Control.HasFocus(20)</visible>
-                        <texture border="0,2,0,2">MenuItemNF.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>810</width>
-                        <height>62</height>
-                        <visible>Control.HasFocus(20)</visible>
-                        <texture border="5" colordiffuse="$VAR[MainColorOne]">$VAR[SelectMenuItem]</texture>
-                    </control>
-                    <control type="label">
-                        <left>15</left>
-                        <top>0</top>
-                        <width>750</width>
-                        <height>60</height>
-                        <font>font13</font>
-                        <aligny>center</aligny>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <textcolor>white</textcolor>
                         <align>left</align>
                         <info>ListItem.Label</info>
@@ -161,11 +119,84 @@
                         <height>60</height>
                         <font>font12</font>
                         <aligny>center</aligny>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <textcolor>grey</textcolor>
                         <align>right</align>
                         <info>ListItem.Label2</info>
                     </control>
+                </itemlayout>
+                <focusedlayout height="60" width="810">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>810</width>
+                        <height>62</height>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>Control.HasFocus(20)</visible>
+                    </control>
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>810</width>
+                        <height>62</height>
+                        <visible>Control.HasFocus(20)</visible>
+                        <texture border="5" colordiffuse="$VAR[MainColorOne]">$VAR[SelectMenuItem]</texture>
+                    </control>
+
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>750</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <align>left</align>
+                        <info>ListItem.Label</info>
+                        <visible>!Control.HasFocus(20)</visible>
+                    </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>750</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>black</selectedcolor>
+                        <textcolor>black</textcolor>
+                        <align>left</align>
+                        <info>ListItem.Label</info>
+                        <visible>Control.HasFocus(20)</visible>
+                    </control>
+
+                    <control type="label">
+                        <left>480</left>
+                        <top>0</top>
+                        <width>300</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
+                        <textcolor>grey</textcolor>
+                        <align>right</align>
+                        <info>ListItem.Label2</info>
+                        <visible>!Control.HasFocus(20)</visible>
+                    </control>
+                    <control type="label">
+                        <left>480</left>
+                        <top>0</top>
+                        <width>300</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>black</selectedcolor>
+                        <textcolor>black</textcolor>
+                        <align>right</align>
+                        <info>ListItem.Label2</info>
+                        <visible>Control.HasFocus(20)</visible>
+                    </control>
+
                 </focusedlayout>
             </control>
         </control>
@@ -273,49 +304,7 @@
                         <height>60</height>
                         <font>font13</font>
                         <aligny>center</aligny>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>grey2</textcolor>
-                        <align>left</align>
-                        <info>ListItem.Label</info>
-                    </control>
-                    <control type="label">
-                        <left>480</left>
-                        <top>0</top>
-                        <width>300</width>
-                        <height>60</height>
-                        <font>font12</font>
-                        <aligny>center</aligny>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>grey</textcolor>
-                        <align>right</align>
-                        <info>ListItem.Label2</info>
-                    </control>
-                </itemlayout>
-                <focusedlayout height="60">
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>810</width>
-                        <height>62</height>
-                        <visible>!Control.HasFocus(21)</visible>
-                        <texture border="0,2,0,2">MenuItemNF.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>810</width>
-                        <height>62</height>
-                        <visible>Control.HasFocus(21)</visible>
-                        <texture border="4" colordiffuse="$VAR[MainColorOne]">$VAR[SelectMenuItem]</texture>
-                    </control>
-                    <control type="label">
-                        <left>15</left>
-                        <top>0</top>
-                        <width>750</width>
-                        <height>60</height>
-                        <font>font13</font>
-                        <aligny>center</aligny>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <textcolor>white</textcolor>
                         <align>left</align>
                         <info>ListItem.Label</info>
@@ -327,11 +316,84 @@
                         <height>60</height>
                         <font>font12</font>
                         <aligny>center</aligny>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <textcolor>grey</textcolor>
                         <align>right</align>
                         <info>ListItem.Label2</info>
                     </control>
+                </itemlayout>
+                <focusedlayout height="60">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>810</width>
+                        <height>62</height>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>Control.HasFocus(21)</visible>
+                    </control>
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>810</width>
+                        <height>62</height>
+                        <visible>Control.HasFocus(21)</visible>
+                        <texture border="4" colordiffuse="$VAR[MainColorOne]">$VAR[SelectMenuItem]</texture>
+                    </control>
+
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>750</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <align>left</align>
+                        <info>ListItem.Label</info>
+                        <visible>!Control.HasFocus(21)</visible>
+                    </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>750</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>black</selectedcolor>
+                        <textcolor>black</textcolor>
+                        <align>left</align>
+                        <info>ListItem.Label</info>
+                        <visible>Control.HasFocus(21)</visible>
+                    </control>
+
+                    <control type="label">
+                        <left>480</left>
+                        <top>0</top>
+                        <width>300</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
+                        <textcolor>grey</textcolor>
+                        <align>right</align>
+                        <info>ListItem.Label2</info>
+                        <visible>!Control.HasFocus(21)</visible>
+                    </control>
+                    <control type="label">
+                        <left>480</left>
+                        <top>0</top>
+                        <width>300</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>black</selectedcolor>
+                        <textcolor>black</textcolor>
+                        <align>right</align>
+                        <info>ListItem.Label2</info>
+                        <visible>Control.HasFocus(21)</visible>
+                    </control>
+
                 </focusedlayout>
             </control>
         </control>

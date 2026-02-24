@@ -17,29 +17,29 @@
         </control>
         <control type="image">
             <description>Dialog Header image</description>
-            <posx>60</posx>
-            <posy>24</posy>
-            <width>1080</width>
-            <height>60</height>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1200</width>
+            <height>70</height>
             <texture>dialogheader.png</texture>
         </control>
         <control type="label">
             <description>header label</description>
             <posx>60</posx>
-            <posy>30</posy>
+            <posy>15</posy>
             <width>1080</width>
             <height>45</height>
             <font>font13_title</font>
             <label>$ADDON[pvr.nextpvr 30100]</label>
             <align>center</align>
             <aligny>center</aligny>
-            <textcolor>selected</textcolor>
+            <textcolor>white</textcolor>
             <shadowcolor>black</shadowcolor>
         </control>
         <control type="button" id="22">
             <description>Close Window button</description>
-            <posx>1025</posx>
-            <posy>24</posy>
+            <posx>1130</posx>
+            <posy>0</posy>
             <include>DialogCloseButton</include>
             <onleft>10</onleft>
             <onright>10</onright>

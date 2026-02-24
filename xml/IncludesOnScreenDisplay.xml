@@ -551,8 +551,8 @@
         <textureradiooffnofocus>osd_modern/$PARAM[Texture].png</textureradiooffnofocus>
         <textureradioondisabled colordiffuse="grey3">osd_modern/$PARAM[AltTexture].png</textureradioondisabled>
         <textureradiooffdisabled colordiffuse="grey3">osd_modern/$PARAM[Texture].png</textureradiooffdisabled>
-        <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">round_buttonFO.png</texturefocus>
-        <texturenofocus border="5">round_button.png</texturenofocus>
+        <texturefocus border="0" colordiffuse="$VAR[MainColorOne]">square_buttonFO.png</texturefocus>
+        <texturenofocus border="0">square_button.png</texturenofocus>
         <radiowidth>$PARAM[Size]</radiowidth>
         <radioheight>$PARAM[Size]</radioheight>
         <radioposx>1</radioposx>
@@ -565,8 +565,8 @@
         <textureradiooffnofocus>osd_modern/$PARAM[Texture].png</textureradiooffnofocus>
         <textureradioondisabled colordiffuse="grey3">osd_modern/$PARAM[Texture].png</textureradioondisabled>
         <textureradiooffdisabled colordiffuse="grey3">osd_modern/$PARAM[Texture].png</textureradiooffdisabled>
-        <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">round_buttonFO.png</texturefocus>
-        <texturenofocus border="5">round_button.png</texturenofocus>
+        <texturefocus border="0" colordiffuse="$VAR[MainColorOne]">square_buttonFO.png</texturefocus>
+        <texturenofocus border="0">square_button.png</texturenofocus>
         <radiowidth>$PARAM[Size]</radiowidth>
         <radioheight>$PARAM[Size]</radioheight>
         <radioposx>1</radioposx>
@@ -579,8 +579,8 @@
         <textureradiooffnofocus>osd_modern/$PARAM[Texture].png</textureradiooffnofocus>
         <textureradioondisabled colordiffuse="grey3">osd_modern/$PARAM[AltTexture].png</textureradioondisabled>
         <textureradiooffdisabled colordiffuse="grey3">osd_modern/$PARAM[Texture].png</textureradiooffdisabled>
-        <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">osd_buttonFO.png</texturefocus>
-        <texturenofocus border="5">osd_button.png</texturenofocus>
+        <texturefocus border="0" colordiffuse="$VAR[MainColorOne]">osd_buttonFO.png</texturefocus>
+        <texturenofocus border="0">osd_button.png</texturenofocus>
         <radiowidth>$PARAM[Size]</radiowidth>
         <radioheight>$PARAM[Size]</radioheight>
         <radioposx>1</radioposx>
@@ -593,8 +593,8 @@
         <textureradiooffnofocus>osd_modern/$PARAM[Texture].png</textureradiooffnofocus>
         <textureradioondisabled colordiffuse="grey3">osd_modern/$PARAM[Texture].png</textureradioondisabled>
         <textureradiooffdisabled colordiffuse="grey3">osd_modern/$PARAM[Texture].png</textureradiooffdisabled>
-        <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">osd_buttonFO.png</texturefocus>
-        <texturenofocus border="5">osd_button.png</texturenofocus>
+        <texturefocus border="0" colordiffuse="$VAR[MainColorOne]">osd_buttonFO.png</texturefocus>
+        <texturenofocus border="0">osd_button.png</texturenofocus>
         <radiowidth>$PARAM[Size]</radiowidth>
         <radioheight>$PARAM[Size]</radioheight>
         <radioposx>1</radioposx>

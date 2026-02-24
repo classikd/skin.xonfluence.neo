@@ -79,8 +79,8 @@
                         <width>870</width>
                         <height>60</height>
                         <font>font24_title</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>grey</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -91,14 +91,22 @@
                         <width>870</width>
                         <height>38</height>
                         <font>font13</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>grey</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </itemlayout>
                 <focusedlayout height="150" width="870">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>1035</width>
+                        <height>142</height>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>Control.HasFocus(52)</visible>
+                    </control>
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
@@ -125,6 +133,7 @@
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
+
                     <control type="label">
                         <left>165</left>
                         <top>15</top>
@@ -132,10 +141,38 @@
                         <height>60</height>
                         <font>font24_title</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
+                        <visible>!Control.HasFocus(52)</visible>
+                    </control>
+                    <control type="label">
+                        <left>165</left>
+                        <top>15</top>
+                        <width>870</width>
+                        <height>60</height>
+                        <font>font24_title</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>Control.HasFocus(52)</visible>
+                    </control>
+
+                    <control type="label">
+                        <left>165</left>
+                        <top>75</top>
+                        <width>870</width>
+                        <height>38</height>
+                        <font>font13</font>
+                        <textcolor>grey</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label2]</label>
+                        <visible>!Control.HasFocus(52)</visible>
                     </control>
                     <control type="label">
                         <left>165</left>
@@ -143,11 +180,12 @@
                         <width>870</width>
                         <height>38</height>
                         <font>font13</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
+                        <visible>Control.HasFocus(52)</visible>
                     </control>
                 </focusedlayout>
             </control>

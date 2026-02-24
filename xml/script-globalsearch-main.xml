@@ -289,8 +289,8 @@
                 <control type="image">
                     <left>402</left>
                     <top>15</top>
-                    <width>1206</width>
-                    <height>78</height>
+                    <width>1185</width>
+                    <height>70</height>
                     <texture>dialogheader.png</texture>
                 </control>
                 <control type="label">
@@ -323,8 +323,8 @@
                 </control>
                 <control type="button">
                     <description>Close Window button</description>
-                    <left>1470</left>
-                    <top>16</top>
+                    <left>1490</left>
+                    <top>0</top>
                     <onclick>PreviousMenu</onclick>
                     <include>DialogCloseButton</include>
                     <onleft>1</onleft>

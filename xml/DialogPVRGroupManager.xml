@@ -28,13 +28,13 @@
                 <left>135</left>
                 <top>24</top>
                 <width>1395</width>
-                <height>60</height>
+                <height>70</height>
                 <texture>dialogheader.png</texture>
             </control>
             <control type="button">
                 <description>Close Window button</description>
-                <left>105</left>
-                <top>0</top>
+                <left>1460</left>
+                <top>24</top>
                 <onclick>PreviousMenu</onclick>
                 <include>DialogCloseButton</include>
                 <onleft>9000</onleft>
@@ -55,7 +55,7 @@
                     <label>19143</label>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <textcolor>selected</textcolor>
+                    <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
                 <control type="group">
@@ -108,12 +108,20 @@
                                 <font>font12</font>
                                 <align>left</align>
                                 <aligny>center</aligny>
-                                <textcolor>grey2</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <info>ListItem.Label</info>
                             </control>
                         </itemlayout>
                         <focusedlayout height="68">
+                            <control type="image">
+                                <left>0</left>
+                                <top>0</top>
+                                <width>450</width>
+                                <height>60</height>
+                                <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                                <visible>Control.HasFocus(13)</visible>
+                            </control>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
@@ -139,8 +147,22 @@
                                 <align>left</align>
                                 <aligny>center</aligny>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <info>ListItem.Label</info>
+                                <visible>!Control.HasFocus(13)</visible>
+                            </control>
+                            <control type="label">
+                                <left>15</left>
+                                <top>0</top>
+                                <width>420</width>
+                                <height>60</height>
+                                <font>font12</font>
+                                <align>left</align>
+                                <aligny>center</aligny>
+                                <textcolor>black</textcolor>
+                                <selectedcolor>black</selectedcolor>
+                                <info>ListItem.Label</info>
+                                <visible>Control.HasFocus(13)</visible>
                             </control>
                         </focusedlayout>
                     </control>
@@ -219,12 +241,20 @@
                                 <font>font12</font>
                                 <align>left</align>
                                 <aligny>center</aligny>
-                                <textcolor>grey2</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <label>$INFO[ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                             </control>
                         </itemlayout>
                         <focusedlayout height="68">
+                            <control type="image">
+                                <left>0</left>
+                                <top>0</top>
+                                <width>450</width>
+                                <height>60</height>
+                                <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                                <visible>Control.HasFocus(11)</visible>
+                            </control>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
@@ -258,8 +288,22 @@
                                 <align>left</align>
                                 <aligny>center</aligny>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <label>$INFO[ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
+                                <visible>!Control.HasFocus(11)</visible>
+                            </control>
+                            <control type="label">
+                                <left>60</left>
+                                <top>0</top>
+                                <width>375</width>
+                                <height>60</height>
+                                <font>font12</font>
+                                <align>left</align>
+                                <aligny>center</aligny>
+                                <textcolor>black</textcolor>
+                                <selectedcolor>black</selectedcolor>
+                                <label>$INFO[ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
+                                <visible>Control.HasFocus(11)</visible>
                             </control>
                         </focusedlayout>
                     </control>
@@ -338,12 +382,20 @@
                                 <font>font12</font>
                                 <align>left</align>
                                 <aligny>center</aligny>
-                                <textcolor>grey2</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <label>$INFO[ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                             </control>
                         </itemlayout>
                         <focusedlayout height="68">
+                            <control type="image">
+                                <left>0</left>
+                                <top>0</top>
+                                <width>450</width>
+                                <height>60</height>
+                                <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                                <visible>Control.HasFocus(12)</visible>
+                            </control>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
@@ -377,8 +429,22 @@
                                 <align>left</align>
                                 <aligny>center</aligny>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <label>$INFO[ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
+                                <visible>!Control.HasFocus(12)</visible>
+                            </control>
+                            <control type="label">
+                                <left>60</left>
+                                <top>0</top>
+                                <width>375</width>
+                                <height>60</height>
+                                <font>font12</font>
+                                <align>left</align>
+                                <aligny>center</aligny>
+                                <textcolor>black</textcolor>
+                                <selectedcolor>black</selectedcolor>
+                                <label>$INFO[ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
+                                <visible>Control.HasFocus(12)</visible>
                             </control>
                         </focusedlayout>
                     </control>

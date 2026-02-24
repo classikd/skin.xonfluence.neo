@@ -190,29 +190,29 @@
             </control>
             <control type="image">
                 <description>Dialog Header image</description>
-                <left>60</left>
-                <top>24</top>
-                <width>390</width>
-                <height>60</height>
+                <left>0</left>
+                <top>0</top>
+                <width>510</width>
+                <height>70</height>
                 <texture>dialogheader.png</texture>
             </control>
             <control type="label" id="1">
                 <description>header label</description>
                 <left>60</left>
-                <top>30</top>
+                <top>15</top>
                 <width>390</width>
                 <height>45</height>
                 <font>font13_title</font>
                 <label>$LOCALIZE[31514]</label>
                 <align>center</align>
                 <aligny>center</aligny>
-                <textcolor>selected</textcolor>
+                <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
             </control>
             <control type="button">
                 <description>Close Window button</description>
-                <left>405</left>
-                <top>24</top>
+                <left>440</left>
+                <top>0</top>
                 <onclick>PreviousMenu</onclick>
                 <include>DialogCloseButton</include>
                 <onleft>9099</onleft>

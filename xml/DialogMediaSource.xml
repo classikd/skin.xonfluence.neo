@@ -10,10 +10,10 @@
         <include content="DialogBackgroundCommons">
             <param name="DialogBackgroundWidth" value="1200" />
             <param name="DialogBackgroundHeight" value="750" />
-            <param name="DialogHeaderWidth" value="1080" />
+            <param name="DialogHeaderWidth" value="1200" />
             <param name="DialogHeaderLabel" value="$LOCALIZE[13406]" />
             <param name="DialogHeaderId" value="2" />
-            <param name="CloseButtonLeft" value="1025" />
+            <param name="CloseButtonLeft" value="1130" />
             <param name="CloseButtonNav" value="10" />
         </include>
         <control type="label">
@@ -56,12 +56,20 @@
                     <font>font13</font>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <textcolor>grey2</textcolor>
-                    <selectedcolor>selected</selectedcolor>
+                    <textcolor>white</textcolor>
+                    <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                     <info>ListItem.Label</info>
                 </control>
             </itemlayout>
             <focusedlayout height="68">
+                <control type="image">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>788</width>
+                    <height>60</height>
+                    <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                    <visible>Control.HasFocus(10)</visible>
+                </control>
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
@@ -86,8 +94,21 @@
                     <font>font13</font>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <selectedcolor>selected</selectedcolor>
+                    <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                     <info>ListItem.Label</info>
+                    <visible>!Control.HasFocus(10)</visible>
+                </control>
+                <control type="label">
+                    <left>15</left>
+                    <top>0</top>
+                    <width>735</width>
+                    <height>60</height>
+                    <font>font13</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <selectedcolor>black</selectedcolor>
+                    <info>ListItem.Label</info>
+                    <visible>Control.HasFocus(10)</visible>
                 </control>
             </focusedlayout>
         </control>

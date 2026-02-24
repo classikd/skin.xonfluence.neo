@@ -510,6 +510,18 @@
                         <visible>String.Contains(ListItem.Icon,image://video)</visible>
                         <visible>!Window.IsActive(music)</visible>
                     </control>
+
+                    <!--
+                    <control type="label">
+                        <left>50</left>
+                        <top>300</top>
+                        <width>800</width>
+                        <height>40</height>
+                        <font>font13</font>
+                        <textcolor>FFFFFFFF</textcolor>
+                        <label>$VAR[FavoritesIconTexture]</label>
+                    </control>-->
+
                     <control type="image">
                         <left>1</left>
                         <top>0</top>

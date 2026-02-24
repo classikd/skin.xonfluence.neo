@@ -163,10 +163,10 @@
                 <texture border="5">black-back2.png</texture>
             </control>
 			<control type="image">
-                <left>404</left>
+                <left>402</left>
                 <top>15</top>
-                <width>1181</width>
-                <height>78</height>
+                <width>1185</width>
+                <height>70</height>
                 <texture>dialogheader.png</texture>
             </control>
 			<control type="label">
@@ -184,7 +184,7 @@
             </control>
             <control type="button">
                 <description>Close Window button</description>
-                <left>1470</left>
+                <left>1517</left>
                 <top>15</top>
                 <onclick>PreviousMenu</onclick>
                 <include>DialogCloseButton</include>

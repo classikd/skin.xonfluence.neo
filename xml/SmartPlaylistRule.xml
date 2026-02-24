@@ -10,10 +10,10 @@
         <include content="DialogBackgroundCommons">
             <param name="DialogBackgroundWidth" value="1200" />
             <param name="DialogBackgroundHeight" value="420" />
-            <param name="DialogHeaderWidth" value="1080" />
+            <param name="DialogHeaderWidth" value="1200" />
             <param name="DialogHeaderLabel" value="$LOCALIZE[21421]" />
             <param name="DialogHeaderId" value="2" />
-            <param name="CloseButtonLeft" value="1025" />
+            <param name="CloseButtonLeft" value="1130" />
             <param name="CloseButtonNav" value="9001" />
         </include>
         <control type="label">

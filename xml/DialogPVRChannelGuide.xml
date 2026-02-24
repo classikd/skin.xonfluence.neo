@@ -14,27 +14,27 @@
                 <top>0</top>
                 <width>720</width>
                 <height>990</height>
-                <texture border="40">DialogBack2.png</texture>
+                <texture border="40">DialogBack.png</texture>
             </control>
             <control type="image">
                 <description>Dialog Header image</description>
-                <left>60</left>
-                <top>24</top>
-                <width>600</width>
-                <height>60</height>
+                <left>0</left>
+                <top>0</top>
+                <width>720</width>
+                <height>70</height>
                 <texture>dialogheader.png</texture>
             </control>
             <control type="label">
                 <description>header label</description>
                 <left>60</left>
-                <top>24</top>
+                <top>7</top>
                 <width>645</width>
                 <height>60</height>
                 <font>font12_title</font>
                 <label>$LOCALIZE[19222] - $INFO[VideoPlayer.ChannelName]</label>
                 <align>center</align>
                 <aligny>center</aligny>
-                <textcolor>$VAR[MainColorOne]</textcolor>
+                <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
@@ -51,8 +51,8 @@
             </control>
             <control type="button">
                 <description>Close Window button</description>
-                <left>545</left>
-                <top>24</top>
+                <left>650</left>
+                <top>0</top>
                 <onclick>PreviousMenu</onclick>
                 <include>DialogCloseButton</include>
                 <onleft>2</onleft>
@@ -87,8 +87,8 @@
                         <width>75</width>
                         <height>45</height>
                         <font>font13</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.StartTime]</label>
@@ -106,14 +106,22 @@
                         <width>471</width>
                         <height>45</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
                 <focusedlayout height="52" width="615">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>615</width>
+                        <height>45</height>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>Control.HasFocus(11)</visible>
+                    </control>
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
@@ -132,18 +140,34 @@
                         <visible>Control.HasFocus(11)</visible>
                         <include>VisibleFadeEffect</include>
                     </control>
+
                     <control type="label">
                         <left>15</left>
                         <top>0</top>
                         <width>75</width>
                         <height>45</height>
                         <font>font13</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.StartTime]</label>
+                        <visible>!Control.HasFocus(11)</visible>
                     </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>75</width>
+                        <height>45</height>
+                        <font>font13</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.StartTime]</label>
+                        <visible>Control.HasFocus(11)</visible>
+                    </control>
+
                     <control type="image">
                         <left>105</left>
                         <top>10</top>
@@ -151,17 +175,32 @@
                         <height>24</height>
                         <texture>$VAR[PVRTimerIcon]</texture>
                     </control>
+
                     <control type="label">
                         <left>129</left>
                         <top>0</top>
                         <width>471</width>
                         <height>45</height>
                         <font>font12</font>
-                        <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
+                        <visible>!Control.HasFocus(11)</visible>
+                    </control>
+                    <control type="label">
+                        <left>129</left>
+                        <top>0</top>
+                        <width>471</width>
+                        <height>45</height>
+                        <font>font12</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>Control.HasFocus(11)</visible>
                     </control>
                 </focusedlayout>
             </control>

@@ -11,10 +11,10 @@
         <include content="DialogBackgroundCommons">
             <param name="DialogBackgroundWidth" value="975" />
             <param name="DialogBackgroundHeight" value="390" />
-            <param name="DialogHeaderWidth" value="855" />
+            <param name="DialogHeaderWidth" value="975" />
             <param name="DialogHeaderLabel" value="31166" />
             <param name="DialogHeaderId" value="600" />
-            <param name="CloseButtonLeft" value="800" />
+            <param name="CloseButtonLeft" value="905" />
             <param name="CloseButtonNav" value="9000" />
         </include>
         <control type="group">

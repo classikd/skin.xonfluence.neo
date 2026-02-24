@@ -11,13 +11,16 @@
         <control type="group">
             <include>VisibleFadeEffect</include>
             <visible>!Window.IsVisible(numericinput)</visible>
+            <control type="group">
+                <include>BgDialog</include>
+            </control>
             <include content="DialogBackgroundCommons">
                 <param name="DialogBackgroundWidth" value="1290" />
                 <param name="DialogBackgroundHeight" value="645" />
-                <param name="DialogHeaderWidth" value="1170" />
+                <param name="DialogHeaderWidth" value="1290" />
                 <param name="DialogHeaderLabel" value="" />
                 <param name="DialogHeaderId" value="311" />
-                <param name="CloseButtonLeft" value="1115" />
+                <param name="CloseButtonLeft" value="1220" />
                 <param name="CloseButtonNav" value="3" />
             </include>
             <control type="group">

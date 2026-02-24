@@ -14,41 +14,41 @@
                 <top>0</top>
                 <width>720</width>
                 <height>990</height>
-                <texture border="40">DialogBack2.png</texture>
+                <texture border="40">DialogBack.png</texture>
             </control>
             <control type="image">
                 <description>Dialog Header image</description>
-                <left>60</left>
-                <top>24</top>
-                <width>600</width>
-                <height>75</height>
+                <left>0</left>
+                <top>0</top>
+                <width>720</width>
+                <height>70</height>
                 <texture>dialogheader.png</texture>
             </control>
             <control type="label">
                 <description>header label</description>
                 <left>60</left>
-                <top>24</top>
+                <top>15</top>
                 <width>645</width>
                 <height>60</height>
                 <font>font12_title</font>
                 <label>$LOCALIZE[19023] - $INFO[VideoPlayer.ChannelGroup]</label>
                 <align>center</align>
                 <aligny>center</aligny>
-                <textcolor>$VAR[MainColorOne]</textcolor>
+                <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <visible>!pvr.IsPlayingRadio</visible>
             </control>
             <control type="label">
                 <description>header label</description>
                 <left>60</left>
-                <top>24</top>
+                <top>15</top>
                 <width>645</width>
                 <height>60</height>
                 <font>font12_title</font>
                 <label>$LOCALIZE[19024] - $INFO[MusicPlayer.ChannelGroup]</label>
                 <align>center</align>
                 <aligny>center</aligny>
-                <textcolor>$VAR[MainColorOne]</textcolor>
+                <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <visible>pvr.IsPlayingRadio</visible>
             </control>
@@ -62,13 +62,13 @@
                 <label>$INFO[System.Date(DDD)], $INFO[System.Date(d)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)] • $INFO[System.Time]</label>
                 <align>center</align>
                 <aligny>center</aligny>
-                <textcolor>grey</textcolor>
+                <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
             </control>
             <control type="button">
                 <description>Close Window button</description>
-                <left>545</left>
-                <top>24</top>
+                <left>650</left>
+                <top>0</top>
                 <onclick>PreviousMenu</onclick>
                 <include>DialogCloseButton</include>
                 <onleft>2</onleft>

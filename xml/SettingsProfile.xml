@@ -189,7 +189,7 @@
             </control>
             <control type="button">
                 <description>Close Window button</description>
-                <left>1470</left>
+                <left>1517</left>
                 <top>15</top>
                 <onclick>PreviousMenu</onclick>
                 <include>DialogCloseButton</include>

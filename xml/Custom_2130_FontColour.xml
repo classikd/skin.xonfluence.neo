@@ -50,44 +50,44 @@
             </control>
             <control type="image">
                 <description>Dialog Header image</description>
-                <left>60</left>
-                <top>24</top>
-                <width>1155</width>
-                <height>60</height>
+                <left>0</left>
+                <top>0</top>
+                <width>1275</width>
+                <height>70</height>
                 <texture>dialogheader.png</texture>
             </control>
             <control type="label" id="1">
                 <description>header label</description>
                 <left>60</left>
-                <top>30</top>
+                <top>15</top>
                 <width>1155</width>
                 <height>45</height>
                 <font>font13_title</font>
                 <label>$LOCALIZE[31365]</label>
                 <align>center</align>
                 <aligny>center</aligny>
-                <textcolor>selected</textcolor>
+                <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <visible>String.IsEmpty(Window.Property(OSDColor))</visible>
             </control>
             <control type="label" id="1">
                 <description>header label</description>
                 <left>60</left>
-                <top>30</top>
+                <top>15</top>
                 <width>1155</width>
                 <height>45</height>
                 <font>font13_title</font>
                 <label>$LOCALIZE[31369]</label>
                 <align>center</align>
                 <aligny>center</aligny>
-                <textcolor>selected</textcolor>
+                <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <visible>!String.IsEmpty(Window.Property(OSDColor))</visible>
             </control>
             <control type="button">
                 <description>Close Window button</description>
-                <left>1100</left>
-                <top>24</top>
+                <left>1205</left>
+                <top>0</top>
                 <onclick>PreviousMenu</onclick>
                 <include>DialogCloseButton</include>
                 <onleft>450</onleft>
@@ -120,13 +120,21 @@
                         <width>765</width>
                         <height>60</height>
                         <font>font13</font>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
                 <focusedlayout height="69" width="825">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>825</width>
+                        <height>60</height>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>Control.HasFocus(450)</visible>
+                    </control>
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
@@ -151,10 +159,23 @@
                         <width>765</width>
                         <height>60</height>
                         <font>font13</font>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
+                        <visible>!Control.HasFocus(450)</visible>
+                    </control>
+                    <control type="label">
+                        <left>30</left>
+                        <top>0</top>
+                        <width>765</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>Control.HasFocus(450)</visible>
                     </control>
                 </focusedlayout>
                 <content>

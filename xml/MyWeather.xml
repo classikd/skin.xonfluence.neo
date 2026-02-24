@@ -50,16 +50,16 @@
                     <texture border="10">ContentPanelMirror.png</texture>
                 </control>
                 <control type="image">
-                    <left>12</left>
-                    <top>8</top>
-                    <width>726</width>
+                    <left>0</left>
+                    <top>0</top>
+                    <width>750</width>
                     <height>68</height>
                     <texture>dialogheader.png</texture>
                 </control>
                 <control type="label">
                     <description>header label</description>
                     <left>30</left>
-                    <top>22</top>
+                    <top>15</top>
                     <width>690</width>
                     <height>45</height>
                     <font>font13_title</font>
@@ -414,9 +414,9 @@
                     <texture border="10">ContentPanelMirror.png</texture>
                 </control>
                 <control type="image">
-                    <left>12</left>
-                    <top>8</top>
-                    <width>951</width>
+                    <left>0</left>
+                    <top>0</top>
+                    <width>975</width>
                     <height>68</height>
                     <texture>dialogheader.png</texture>
                 </control>

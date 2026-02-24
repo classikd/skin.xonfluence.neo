@@ -606,7 +606,7 @@
     </include>
     <variable name="SelectBack">
         <value condition="![Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]">DialogBack.png</value>
-        <value>DialogBack2.png</value>
+        <value>DialogBack.png</value>
     </variable>
     <variable name="typehackflagging">
         <value condition="[String.Contains(ListItem.FilenameAndPath,bluray) | String.Contains(ListItem.FilenameAndPath,bdrip) | String.Contains(ListItem.FilenameAndPath,brrip) | String.Contains(ListItem.FilenameAndPath,bd25) | String.Contains(ListItem.FilenameAndPath,bd50)]">bluray</value>
@@ -764,6 +764,16 @@
 			<animation effect="fade" end="96" time="0" condition="true">Conditional</animation>
 		</control>
 	</include>	
+    <include name="BgDialog">
+        <control type="image"> 
+            <left>-2000</left> 
+            <top>-2000</top> 
+            <width>5000</width> 
+            <height>5000</height> 
+            <texture>black.png</texture>
+            <colordiffuse>BFFFFFFF</colordiffuse>
+       </control> 
+	</include>	
     <include name="DialogBackgroundCommons">
         <control type="image">
             <description>background image</description>
@@ -775,16 +785,16 @@
         </control>
         <control type="image">
             <description>Dialog Header image</description>
-            <left>60</left>
-            <top>24</top>
+            <left>0</left>
+            <top>0</top>
             <width>$PARAM[DialogHeaderWidth]</width>
-            <height>60</height>
+            <height>70</height>
             <texture>dialogheader.png</texture>
         </control>
         <control type="button">
             <description>Close Window button</description>
             <left>$PARAM[CloseButtonLeft]</left>
-            <top>24</top>
+            <top>0</top>
             <onclick>PreviousMenu</onclick>
             <include>DialogCloseButton</include>
             <onleft>$PARAM[CloseButtonNav]</onleft>
@@ -795,14 +805,14 @@
         <control type="label" id="$PARAM[DialogHeaderId]">
             <description>header label</description>
             <left>60</left>
-            <top>30</top>
+            <top>15</top>
             <width>$PARAM[DialogHeaderWidth]</width>
             <height>45</height>
             <font>font13_title</font>
             <label>$PARAM[DialogHeaderLabel]</label>
             <align>center</align>
             <aligny>center</aligny>
-            <textcolor>selected</textcolor>
+            <textcolor>white</textcolor>
             <shadowcolor>black</shadowcolor>
             <wrapmultiline>true</wrapmultiline>
         </control>
@@ -3221,8 +3231,16 @@
         <texturefocus>spin/scroll-up-focus.png</texturefocus>
     </include>
     <include name="DialogCloseButton">
-        <width>96</width>
-        <height>48</height>
+        <width>70</width>
+        <height>70</height>
+        <label></label>
+        <font></font>
+        <include>DialogCloseButtonModern</include>
+        <visible>system.getbool(input.enablemouse)</visible>
+    </include>
+    <include name="DialogCloseButtonSmall">
+        <width>45</width>
+        <height>45</height>
         <label></label>
         <font></font>
         <include>DialogCloseButtonModern</include>
@@ -3230,7 +3248,7 @@
     </include>
     <include name="DialogCloseButtonModern">
         <texturefocus colordiffuse="$VAR[MainColorOne]">DialogCloseButton-focus.png</texturefocus>
-        <texturenofocus>DialogCloseButton.png</texturenofocus>
+        <texturenofocus colordiffuse="$VAR[MainColorOne]">DialogCloseButton.png</texturenofocus>
     </include>
     <include name="FavListDialog">
         <control type="list" id="450">

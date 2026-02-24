@@ -29,7 +29,7 @@
                 <left>8</left>
                 <top>15</top>
                 <width>1635</width>
-                <height>945</height>
+                <height>925</height>
                 <texture border="15">ContentPanel.png</texture>
                 <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
             </control>
@@ -180,14 +180,14 @@
                 <left>402</left>
                 <top>15</top>
                 <width>1240</width>
-                <height>945</height>
+                <height>925</height>
                 <texture border="5">black-back2.png</texture>
             </control>
             <control type="image">
                 <left>402</left>
                 <top>15</top>
                 <width>1240</width>
-                <height>78</height>
+                <height>70</height>
                 <texture>dialogheader.png</texture>
             </control>
             <control type="label">
@@ -196,7 +196,7 @@
                 <top>30</top>
                 <width>1089</width>
                 <height>45</height>
-                <font>font16</font>
+                <font>font14</font>
                 <label>$LOCALIZE[20077] - $INFO[Container(9000).ListItem.Label]</label>
                 <align>center</align>
                 <aligny>center</aligny>
@@ -205,7 +205,7 @@
             </control>
             <control type="button">
                 <description>Close Window button</description>
-                <left>1553</left>
+                <left>1573</left>
                 <top>15</top>
                 <onclick>PreviousMenu</onclick>
                 <include>DialogCloseButton</include>
