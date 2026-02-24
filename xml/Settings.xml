@@ -27,7 +27,7 @@
                 <left>8</left>
                 <top>8</top>
                 <width>1635</width>
-                <height>945</height>
+                <height>930</height>
                 <texture border="15">ContentPanel.png</texture>
                 <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
             </control>
@@ -223,7 +223,7 @@
                 <top>25</top>
                 <width>1110</width>
                 <height>45</height>
-                <font>font16</font>
+                <font>font14</font>
                 <label>$LOCALIZE[31000] $LOCALIZE[5]</label>
                 <align>center</align>
                 <aligny>center</aligny>
@@ -241,38 +241,43 @@
                 <onup>1</onup>
                 <ondown>1</ondown>
             </control>
+
             <control type="image">
-                <left>405</left>
-                <top>93</top>
-                <width>1200</width>
-                <height>675</height>
-                <texture border="5">button-nofocus.png</texture>
-            </control>
-            <control type="image">
-                <left>408</left>
-                <top>96</top>
-                <width>1194</width>
-                <height>669</height>
+                <left>403</left>
+                <top>86</top>
+                <width>1240</width>
+                <height>680</height>
                 <aspectratio>stretch</aspectratio>
                 <fadetime>600</fadetime>
-                <texture background="true">$VAR[SkinBackgroundPath]settings.jpg</texture>
+                <texture background="true" colordiffuse="$VAR[MainColorOne]">settings-alt.jpg</texture>
             </control>
             <control type="image">
-                <left>408</left>
-                <top>96</top>
-                <width>900</width>
-                <height>510</height>
+                <left>403</left>
+                <top>86</top>
+                <width>1240</width>
+                <height>680</height>
                 <aspectratio>stretch</aspectratio>
-                <texture>GlassOverlay.png</texture>
-                <colordiffuse>AAFFFFFF</colordiffuse>
+                <fadetime>600</fadetime>
+                <texture background="true">settings.jpg</texture>
             </control>
+
+            <control type="image">
+                <left>830</left>
+                <top>360</top>
+                <width>400</width>
+                <height>120</height>
+                <aspectratio>keep</aspectratio>
+                <texture>Xonfluence_Logo.png</texture>
+            </control>
+
             <control type="image">
                 <left>405</left>
                 <top>765</top>
-                <width>1200</width>
-                <height>177</height>
+                <width>1238</width>
+                <height>170</height>
                 <texture border="5">black-back2.png</texture>
             </control>
+            
             <control type="textbox">
                 <description>Appearance Description</description>
                 <left>450</left>
