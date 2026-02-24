@@ -294,7 +294,16 @@
                     <top>0</top>
                     <width>321</width>
                     <height>158</height>
+                    <texture colordiffuse="$VAR[MainColorOne]">white85.png</texture>
+                    <visible>!Control.HasFocus(9000)</visible>
+                </control>
+                <control type="image">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>321</width>
+                    <height>158</height>
                     <texture colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                    <visible>Control.HasFocus(9000)</visible>
                 </control>
                 <control type="label">
                     <left>8</left>

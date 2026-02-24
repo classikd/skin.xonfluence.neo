@@ -518,7 +518,7 @@
                 <font>font12</font>
                 <textcolor>white</textcolor>
                 <focusedcolor>black</focusedcolor>
-                <texturefocus flipy="true" border="5" colordiffuse="$VAR[MainColorOne]">bg-search-hover.png</texturefocus>
+                <texturefocus flipy="true" border="5" colordiffuse="$VAR[MainColorOne]">white.png</texturefocus>
                 <texturenofocus flipy="true" border="5"></texturenofocus>
                 <pulseonselect>false</pulseonselect>
                 <label>137</label>
@@ -820,7 +820,7 @@
                 <font>font12</font>
                 <textcolor>white</textcolor>
                 <focusedcolor>black</focusedcolor>
-                <texturefocus flipy="true" border="5" colordiffuse="$VAR[MainColorOne]">HomeSubFO.png</texturefocus>
+                <texturefocus flipy="true" border="5" colordiffuse="$VAR[MainColorOne]">white.png</texturefocus>
                 <texturenofocus flipy="true" border="5">blank.png</texturenofocus>
                 <pulseonselect>false</pulseonselect>
                 <label>31008</label>
