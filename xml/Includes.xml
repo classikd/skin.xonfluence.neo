@@ -3431,14 +3431,14 @@
                     <top>0</top>
                     <width>510</width>
                     <height>45</height>
-                    <texture border="20,19,20,0">DialogContextTop.png</texture>
+                    <texture border="20,19,20,0">DialogBack.png</texture>
                 </control>
                 <control type="button" id="100">
                     <description>Close Window button</description>
-                    <left>413</left>
-                    <top>8</top>
+                    <left>465</left>
+                    <top>0</top>
                     <onclick>PreviousMenu</onclick>
-                    <include>DialogCloseButton</include>
+                    <include>DialogCloseButtonSmall</include>
                     <onleft>2</onleft>
                     <onright>14</onright>
                     <onup>14</onup>
@@ -3455,7 +3455,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="button" id="200">
                     <description>Exit button</description>
@@ -3488,7 +3488,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="button" id="300">
                     <description>Shutdown button</description>
@@ -3522,7 +3522,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="button" id="400">
                     <description>Custom Shutdown Timer</description>
@@ -3555,7 +3555,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="button" id="500">
                     <description>Cancel Shutdown Timer</description>
@@ -3587,7 +3587,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="button" id="600">
                     <description>Suspend button</description>
@@ -3620,7 +3620,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="button" id="700">
                     <description>Hibernate button</description>
@@ -3653,7 +3653,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="button" id="800">
                     <description>Reboot button</description>
@@ -3686,7 +3686,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="button" id="800">
                     <description>Reboot button</description>
@@ -3720,7 +3720,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="button" id="900">
                     <description>Logoff button</description>
@@ -3753,7 +3753,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="togglebutton" id="1000">
                     <description>Master mode button</description>
@@ -3789,7 +3789,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>105</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="textbox">
                     <left>38</left>
@@ -3813,7 +3813,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="button" id="1200">
                     <description>Inhibit idle shutdown</description>
@@ -3845,7 +3845,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="button" id="1300">
                     <description>Allow idle shutdown</description>
@@ -3876,7 +3876,7 @@
                     <top>0</top>
                     <width>510</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="button" id="1400">
                     <description>Skin Settings button</description>
@@ -3904,7 +3904,7 @@
                 <left>0</left>
                 <width>510</width>
                 <height>38</height>
-                <texture border="20,0,19,20">DialogContextBottom.png</texture>
+                <texture border="20,0,19,20">DialogBack.png</texture>
             </control>
         </control>
 	</include>

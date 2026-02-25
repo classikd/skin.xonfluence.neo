@@ -371,7 +371,7 @@
                     <top>0</top>
                     <width>384</width>
                     <height>60</height>
-                    <texture border="20,18,20,0">DialogContextTop.png</texture>
+                    <texture border="20,18,20,0">DialogBack.png</texture>
                 </control>
                 <control type="label">
                     <left>0</left>
@@ -394,7 +394,7 @@
                     <top>0</top>
                     <width>384</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="radiobutton" id="513">
                     <description>---</description>
@@ -427,7 +427,7 @@
                     <top>0</top>
                     <width>384</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="button" id="512">
                     <description>---</description>
@@ -459,7 +459,7 @@
                     <top>0</top>
                     <width>384</width>
                     <height>60</height>
-                    <texture border="25,5,25,5">DialogContextMiddle.png</texture>
+                    <texture border="25,5,25,5">DialogBack.png</texture>
                 </control>
                 <control type="radiobutton" id="511">
                     <description>---</description>
@@ -487,7 +487,7 @@
                 <description>Footer</description>
                 <width>384</width>
                 <height>78</height>
-                <texture border="20,0,20,50">DialogContextSubBottom.png</texture>
+                <texture border="20,0,20,50">DialogBack.png</texture>
             </control>
         </control>
     </controls>
