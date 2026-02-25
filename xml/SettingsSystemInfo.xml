@@ -22,13 +22,6 @@
                 <height>945</height>
                 <texture border="15">ContentPanel.png</texture>
             </control>
-            <control type="image">
-                <left>8</left>
-                <top>938</top>
-                <width>1635</width>
-                <height>96</height>
-                <texture border="15">ContentPanelMirror.png</texture>
-            </control>
 
             <control type="button">
                 <left>98</left>
@@ -42,9 +35,9 @@
             </control>
             
             <control type="grouplist" id="9000">
-                <left>15</left>
+                <left>8</left>
                 <top>135</top>
-                <width>390</width>
+                <width>394</width>
                 <height>722</height>
                 <itemgap>-2</itemgap>
                 <onup>9000</onup>
@@ -52,13 +45,13 @@
                 <control type="button" id="95">
                     <description>Button Summary Values</description>
                     <height>90</height>
-                    <width>390</width>
+                    <width>394</width>
                     <textoffsetx>30</textoffsetx>
                     <align>right</align>
                     <aligny>center</aligny>
                     <font>font13_title</font>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <include>MenuButton</include>
                     <pulseonselect>false</pulseonselect>
                     <label>20037</label>
@@ -66,13 +59,13 @@
                 <control type="button" id="94">
                     <description>Button Storage</description>
                     <height>90</height>
-                    <width>390</width>
+                    <width>394</width>
                     <textoffsetx>30</textoffsetx>
                     <align>right</align>
                     <aligny>center</aligny>
                     <font>font13_title</font>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <include>MenuButton</include>
                     <pulseonselect>false</pulseonselect>
                     <label>13277</label>
@@ -80,13 +73,13 @@
                 <control type="button" id="96">
                     <description>Button Network</description>
                     <height>90</height>
-                    <width>390</width>
+                    <width>394</width>
                     <textoffsetx>30</textoffsetx>
                     <align>right</align>
                     <aligny>center</aligny>
                     <font>font13_title</font>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <include>MenuButton</include>
                     <pulseonselect>false</pulseonselect>
                     <label>13279</label>
@@ -94,13 +87,13 @@
                 <control type="button" id="97">
                     <description>Button Video</description>
                     <height>90</height>
-                    <width>390</width>
+                    <width>394</width>
                     <textoffsetx>30</textoffsetx>
                     <align>right</align>
                     <aligny>center</aligny>
                     <font>font13_title</font>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <include>MenuButton</include>
                     <pulseonselect>false</pulseonselect>
                     <label>13280</label>
@@ -108,13 +101,13 @@
                 <control type="button" id="98">
                     <description>Button Hardware</description>
                     <height>90</height>
-                    <width>390</width>
+                    <width>394</width>
                     <textoffsetx>30</textoffsetx>
                     <align>right</align>
                     <aligny>center</aligny>
                     <font>font13_title</font>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <include>MenuButton</include>
                     <pulseonselect>false</pulseonselect>
                     <label>13281</label>
@@ -122,13 +115,13 @@
                 <control type="button" id="99">
                     <description>Button PVR</description>
                     <height>90</height>
-                    <width>390</width>
+                    <width>394</width>
                     <textoffsetx>30</textoffsetx>
                     <align>right</align>
                     <aligny>center</aligny>
                     <font>font13_title</font>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <include>MenuButton</include>
                     <pulseonselect>false</pulseonselect>
                     <label>19191</label>
@@ -136,13 +129,13 @@
                 <control type="button" id="100">
                     <description>Button Privacy Policy</description>
                     <height>90</height>
-                    <width>390</width>
+                    <width>394</width>
                     <textoffsetx>30</textoffsetx>
                     <align>right</align>
                     <aligny>center</aligny>
                     <font>font13_title</font>
-                    <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>black</focusedcolor>
                     <include>MenuButton</include>
                     <pulseonselect>false</pulseonselect>
                     <label>12389</label>
@@ -151,25 +144,25 @@
             </control>
             <control type="image">
                 <left>402</left>
-                <top>15</top>
-                <width>1185</width>
+                <top>8</top>
+                <width>1240</width>
                 <height>927</height>
                 <texture border="5">black-back2.png</texture>
             </control>
             <control type="image">
                 <left>402</left>
-                <top>15</top>
-                <width>1185</width>
-                <height>78</height>
+                <top>8</top>
+                <width>1240</width>
+                <height>70</height>
                 <texture>dialogheader.png</texture>
             </control>
             <control type="label" id="40">
                 <description>header label</description>
                 <left>450</left>
-                <top>30</top>
+                <top>20</top>
                 <width>1089</width>
                 <height>45</height>
-                <font>font16</font>
+                <font>font14</font>
                 <label></label>
                 <align>center</align>
                 <aligny>center</aligny>
@@ -178,8 +171,8 @@
             </control>
             <control type="button">
                 <description>Close Window button</description>
-                <left>1517</left>
-                <top>15</top>
+                <left>1573</left>
+                <top>8</top>
                 <onclick>PreviousMenu</onclick>
                 <include>DialogCloseButton</include>
                 <onleft>1</onleft>
