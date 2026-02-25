@@ -72,11 +72,6 @@
                 <aligny>center</aligny>
                 <reverse>yes</reverse>
             </control>
-            <control type="image" id="11">
-                <description>separator image</description>
-                <height>3</height>
-                <texture>separator2.png</texture>
-            </control>
             <control type="edit" id="12">
                 <description>Default Edit</description>
                 <height>60</height>

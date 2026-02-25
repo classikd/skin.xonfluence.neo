@@ -22,7 +22,7 @@
                         <left>0</left>
                         <top>0</top>
                         <width>870</width>
-                        <height>62</height>
+                        <height>61</height>
                         <texture border="0,2,0,2">MenuItemNF.png</texture>
                     </control>
                     <control type="label">
@@ -157,8 +157,6 @@
                     <aspectratio>keep</aspectratio>
                     <fadetime>200</fadetime>
                     <texture background="true">$INFO[ListItem.Icon]</texture>
-                    <bordertexture border="8">ThumbShadow.png</bordertexture>
-                    <bordersize>8</bordersize>
                 </control>
                 <control type="group">
                     <top>420</top>
@@ -211,13 +209,7 @@
                         <font>font13</font>
                         <scroll>true</scroll>
                     </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>90</top>
-                        <width>735</width>
-                        <height>6</height>
-                        <texture>separator.png</texture>
-                    </control>
+
                     <control type="textbox">
                         <description>Description</description>
                         <left>15</left>

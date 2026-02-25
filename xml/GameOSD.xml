@@ -92,11 +92,6 @@
                     <label2>Select + Right Stick</label2>
                     <onclick>ActivateWindow(GameVolume)</onclick>
                 </control>
-                <control type="image" id="1005">
-                    <description>separator image</description>
-                    <height>3</height>
-                    <texture>separator2.png</texture>
-                </control>
                 <control type="button" id="1006">
                     <description>Video filter button</description>
                     <width>450</width>

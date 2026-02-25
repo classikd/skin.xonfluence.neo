@@ -114,8 +114,8 @@
             </control>
             <control type="image" id="11">
                 <description>separator image</description>
-                <height>3</height>
-                <texture>separator2.png</texture>
+                <height>40</height>
+                <texture>blank.png</texture>
             </control>
             <control type="edit" id="12">
                 <description>Default Edit</description>

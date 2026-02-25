@@ -84,15 +84,7 @@
                     <aligny>center</aligny>
                     <label>126</label>
                 </control>
-                <control type="image">
-                    <description>separator image</description>
-                    <left>0</left>
-                    <top>75</top>
-                    <width>1650</width>
-                    <height>1</height>
-                    <colordiffuse>88FFFFFF</colordiffuse>
-                    <texture>separator2.png</texture>
-                </control>
+
                 <control type="list" id="50">
                     <left>0</left>
                     <top>82</top>
@@ -109,7 +101,7 @@
                             <left>0</left>
                             <top>0</top>
                             <width>1650</width>
-                            <height>62</height>
+                            <height>61</height>
                             <texture border="5">MenuItemNF.png</texture>
                         </control>
                         <control type="group">
@@ -121,8 +113,8 @@
                                 <height>60</height>
                                 <font>font12</font>
                                 <aligny>center</aligny>
-                                <textcolor>grey2</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <info>ListItem.Label</info>
                             </control>
                         </control>
@@ -144,8 +136,8 @@
                                 <height>60</height>
                                 <font>font12</font>
                                 <aligny>center</aligny>
-                                <textcolor>grey2</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <info>ListItem.ChannelName</info>
                                 <visible>!String.IsEmpty(ListItem.Icon)</visible>
                             </control>
@@ -156,8 +148,8 @@
                                 <height>60</height>
                                 <font>font12</font>
                                 <aligny>center</aligny>
-                                <textcolor>grey2</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <info>ListItem.ChannelName</info>
                                 <visible>String.IsEmpty(ListItem.Icon)</visible>
                             </control>
@@ -168,8 +160,8 @@
                                 <height>60</height>
                                 <font>font12</font>
                                 <aligny>center</aligny>
-                                <textcolor>grey2</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
                             </control>
                             <control type="label">
@@ -179,8 +171,8 @@
                                 <height>60</height>
                                 <font>font12</font>
                                 <aligny>center</aligny>
-                                <textcolor>grey2</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <textcolor>grey</textcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <info>ListItem.Date</info>
                                 <!--							</control>
 							<control type="image">
@@ -199,7 +191,7 @@
 								<font>font10</font>
 								<aligny>center</aligny>
 								<textcolor>grey2</textcolor>
-								<selectedcolor>selected</selectedcolor>
+								<selectedcolor>$VAR[MainColorOne]</selectedcolor>
 								<label>19043</label>
 								<visible>ListItem.IsRecording</visible>
 							</control>
@@ -226,8 +218,8 @@
                                 <height>60</height>
                                 <font>font10</font>
                                 <aligny>center</aligny>
-                                <textcolor>grey2</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <textcolor>grey</textcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <label>$VAR[PVRTimerLabel]</label>
                             </control>
                             <control type="image">
@@ -245,14 +237,7 @@
                             <top>0</top>
                             <width>1650</width>
                             <height>62</height>
-                            <texture border="5">MenuItemNF.png</texture>
-                        </control>
-                        <control type="image">
-                            <left>0</left>
-                            <top>0</top>
-                            <width>1650</width>
-                            <height>62</height>
-                            <texture border="5" colordiffuse="$VAR[MainColorOne]">$VAR[SelectMenuItem]</texture>
+                            <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                             <visible>Control.HasFocus(50)</visible>
                         </control>
                         <control type="group">
@@ -264,7 +249,7 @@
                                 <height>60</height>
                                 <font>font12</font>
                                 <aligny>center</aligny>
-                                <textcolor>grey2</textcolor>
+                                <textcolor>white</textcolor>
                                 <selectedcolor>selected</selectedcolor>
                                 <info>ListItem.Label</info>
                             </control>
@@ -287,7 +272,7 @@
                                 <height>60</height>
                                 <font>font12</font>
                                 <aligny>center</aligny>
-                                <textcolor>grey2</textcolor>
+                                <textcolor>white</textcolor>
                                 <selectedcolor>selected</selectedcolor>
                                 <info>ListItem.ChannelName</info>
                                 <visible>!String.IsEmpty(ListItem.Icon)</visible>
@@ -299,7 +284,7 @@
                                 <height>60</height>
                                 <font>font12</font>
                                 <aligny>center</aligny>
-                                <textcolor>grey2</textcolor>
+                                <textcolor>white</textcolor>
                                 <selectedcolor>selected</selectedcolor>
                                 <info>ListItem.ChannelName</info>
                                 <visible>String.IsEmpty(ListItem.Icon)</visible>
@@ -398,15 +383,7 @@
                     <showonepage>false</showonepage>
                     <orientation>vertical</orientation>
                 </control>
-                <control type="image">
-                    <description>separator image</description>
-                    <left>0</left>
-                    <top>645</top>
-                    <width>1650</width>
-                    <height>1</height>
-                    <colordiffuse>88FFFFFF</colordiffuse>
-                    <texture>separator2.png</texture>
-                </control>
+
                 <control type="group">
                     <visible>!ListItem.HasEPG</visible>
                     <left>0</left>

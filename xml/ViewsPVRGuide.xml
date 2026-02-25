@@ -6,15 +6,7 @@
             <description>TV Guide Timeline</description>
             <visible>Control.IsVisible(10)</visible>
             <include>VisibleFadeEffect</include>
-            <control type="image">
-                <description>separator image</description>
-                <left>120</left>
-                <top>152</top>
-                <width>1650</width>
-                <height>1</height>
-                <colordiffuse>88FFFFFF</colordiffuse>
-                <texture>separator2.png</texture>
-            </control>
+
             <control type="epggrid" id="10">
                 <description>EPG Grid</description>
                 <left>120</left>
@@ -30,7 +22,7 @@
                 <scrolltime>350</scrolltime>
                 <timeblocks>40</timeblocks>
                 <rulerunit>6</rulerunit>
-                <progresstexture border="0,48,18,14">PVR-EpgProgressIndicator.png</progresstexture>
+                <progresstexture border="0,48,18,14" colordiffuse="$VAR[MainColorOne]">PVR-EpgProgressIndicator.png</progresstexture>
                 <rulerlayout height="52" width="60">
                     <control type="label" id="2">
                         <left>0</left>
@@ -62,7 +54,7 @@
                         <left>0</left>
                         <top>0</top>
                         <width>405</width>
-                        <height>72</height>
+                        <height>73</height>
                         <texture border="2">MenuItemNF.png</texture>
                         <include>VisibleFadeEffect</include>
                     </control>
@@ -93,7 +85,7 @@
                         <height>72</height>
                         <font>font13</font>
                         <aligny>center</aligny>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.ChannelName]</label>
                     </control>
@@ -102,11 +94,10 @@
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>405</width>
+                        <width>825</width>
                         <height>72</height>
-                        <texture border="2">MenuItemNF.png</texture>
-                        <visible>!Control.HasFocus(10)</visible>
-                        <include>VisibleFadeEffect</include>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>Control.HasFocus(10)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -144,9 +135,23 @@
                         <height>72</height>
                         <font>font13</font>
                         <aligny>center</aligny>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.ChannelName]</label>
+                        <visible>!Control.HasFocus(10)</visible>
+                    </control>
+                    <control type="label" id="1">
+                        <left>141</left>
+                        <top>0</top>
+                        <width>240</width>
+                        <height>72</height>
+                        <font>font13</font>
+                        <aligny>center</aligny>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <label>$INFO[ListItem.ChannelName]</label>
+                        <visible>Control.HasFocus(10)</visible>
                     </control>
                 </focusedchannellayout>
                 <itemlayout height="72" width="60">
@@ -336,15 +341,7 @@
                     <aligny>center</aligny>
                     <label>126</label>
                 </control>
-                <control type="image">
-                    <description>separator image</description>
-                    <left>0</left>
-                    <top>75</top>
-                    <width>1650</width>
-                    <height>1</height>
-                    <colordiffuse>88FFFFFF</colordiffuse>
-                    <texture>separator2.png</texture>
-                </control>
+
                 <control type="list" id="12">
                     <viewtype label="19031">list</viewtype>
                     <left>0</left>
@@ -362,7 +359,7 @@
                             <left>0</left>
                             <top>0</top>
                             <width>1650</width>
-                            <height>62</height>
+                            <height>61</height>
                             <texture border="5">MenuItemNF.png</texture>
                         </control>
                         <control type="image">
@@ -370,16 +367,16 @@
                             <top>0</top>
                             <width>375</width>
                             <height>60</height>
-                            <colordiffuse>33FFFFFF</colordiffuse>
-                            <texture border="5" colordiffuse="$VAR[MainColorOne]">StackFO.png</texture>
+                            <colordiffuse>FFFFFFFF</colordiffuse>
+                            <texture border="5" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                         </control>
                         <control type="image">
                             <left>1440</left>
                             <top>0</top>
                             <width>210</width>
                             <height>60</height>
-                            <colordiffuse>33FFFFFF</colordiffuse>
-                            <texture border="5" colordiffuse="$VAR[MainColorOne]">StackFO.png</texture>
+                            <colordiffuse>FFFFFFFF</colordiffuse>
+                            <texture border="5" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                         </control>
                         <control type="label">
                             <left>0</left>
@@ -389,8 +386,7 @@
                             <font>font12</font>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <textcolor>grey2</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>white</textcolor>
                             <info>ListItem.StartTime</info>
                         </control>
                         <control type="image">
@@ -409,8 +405,7 @@
                             <font>font12</font>
                             <align>left</align>
                             <aligny>center</aligny>
-                            <textcolor>grey2</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>black</textcolor>
                             <info>ListItem.ChannelName</info>
                         </control>
                         <control type="label">
@@ -421,8 +416,7 @@
                             <font>font13</font>
                             <align>left</align>
                             <aligny>center</aligny>
-                            <textcolor>grey2</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>white</textcolor>
                             <label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
                         </control>
                         <control type="image">
@@ -440,8 +434,7 @@
                             <font>font10</font>
                             <align>left</align>
                             <aligny>center</aligny>
-                            <textcolor>grey2</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>black</textcolor>
                             <label>$VAR[PVRTimerLabel]</label>
                         </control>
                     </itemlayout>
@@ -466,8 +459,8 @@
                             <top>0</top>
                             <width>375</width>
                             <height>60</height>
-                            <colordiffuse>AAFFFFFF</colordiffuse>
-                            <texture border="5" colordiffuse="$VAR[MainColorOne]">StackFO.png</texture>
+                            <colordiffuse>DDFFFFFF</colordiffuse>
+                            <texture border="5" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                             <visible>!Control.HasFocus(12)</visible>
                         </control>
                         <control type="image">
@@ -475,8 +468,8 @@
                             <top>0</top>
                             <width>210</width>
                             <height>60</height>
-                            <colordiffuse>AAFFFFFF</colordiffuse>
-                            <texture border="5" colordiffuse="$VAR[MainColorOne]">StackFO.png</texture>
+                            <colordiffuse>DDFFFFFF</colordiffuse>
+                            <texture border="5" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                             <visible>!Control.HasFocus(12)</visible>
                         </control>
                         <control type="image">
@@ -485,7 +478,7 @@
                             <width>375</width>
                             <height>60</height>
                             <colordiffuse>88FFFFFF</colordiffuse>
-                            <texture border="5" colordiffuse="$VAR[MainColorOne]">StackFO.png</texture>
+                            <texture border="5" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                             <visible>Control.HasFocus(12)</visible>
                         </control>
                         <control type="image">
@@ -494,7 +487,7 @@
                             <width>210</width>
                             <height>60</height>
                             <colordiffuse>88FFFFFF</colordiffuse>
-                            <texture border="5" colordiffuse="$VAR[MainColorOne]">StackFO.png</texture>
+                            <texture border="5" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                             <visible>Control.HasFocus(12)</visible>
                         </control>
                         <control type="label">
@@ -526,7 +519,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>white</selectedcolor>
                             <info>ListItem.ChannelName</info>
                         </control>
                         <control type="label">
@@ -538,7 +531,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>white</selectedcolor>
                             <label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
                         </control>
                         <control type="textbox">
@@ -569,8 +562,8 @@
                             <font>font10</font>
                             <align>left</align>
                             <aligny>center</aligny>
-                            <textcolor>grey2</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>black</textcolor>
+                            <selectedcolor>black</selectedcolor>
                             <label>$VAR[PVRTimerLabel]</label>
                         </control>
                     </focusedlayout>

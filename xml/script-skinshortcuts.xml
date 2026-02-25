@@ -414,12 +414,6 @@
 						<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 				    </control>
 					
-					<control type="image" id="600">
-						<description>Separator Image</description>
-						<width>1125</width>
-						<height>2</height>
-						<texture>separator2.png</texture>
-					</control>
 					<control type="radiobutton" id="313">
 						<description>Disable Menu Item</description>
 						<width>1125</width>
@@ -431,12 +425,7 @@
 						<include>MenuButton</include>
 						<selected>String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</selected>
 					</control>
-					<control type="image" id="601">
-						<description>Separator Image</description>
-						<width>1125</width>
-						<height>2</height>
-						<texture>separator2.png</texture>
-					</control>
+
 					<control type="button" id="303">
 						<description>Move Up</description>
 						<width>1125</width>
@@ -457,12 +446,7 @@
 						<focusedcolor>white</focusedcolor>
 						<include>MenuButton</include>
 					</control>
-					<control type="image" id="602">
-						<description>Separator Image</description>
-						<width>1125</width>
-						<height>2</height>
-						<texture>separator2.png</texture>
-					</control>
+
 					<control type="button" id="301">
 						<description>Add Shortcut</description>
 						<width>1125</width>
@@ -483,12 +467,7 @@
 						<focusedcolor>white</focusedcolor>
 						<include>MenuButton</include>
 					</control>
-					<control type="image" id="603">
-						<description>separator image</description>
-						<width>1125</width>
-						<height>2</height>
-						<texture>separator2.png</texture>
-					</control>
+
 					<control type="button" id="308">
 						<description>Restore Shortcuts</description>
 						<width>1125</width>

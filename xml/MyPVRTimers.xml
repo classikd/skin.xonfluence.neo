@@ -96,15 +96,6 @@
                     <aligny>center</aligny>
                     <label>126</label>
                 </control>
-                <control type="image">
-                    <description>separator image</description>
-                    <left>0</left>
-                    <top>75</top>
-                    <width>1650</width>
-                    <height>1</height>
-                    <colordiffuse>88FFFFFF</colordiffuse>
-                    <texture>separator2.png</texture>
-                </control>
                 <control type="list" id="50">
                     <left>0</left>
                     <top>82</top>
@@ -309,15 +300,7 @@
                     <showonepage>false</showonepage>
                     <orientation>vertical</orientation>
                 </control>
-                <control type="image">
-                    <description>separator image</description>
-                    <left>0</left>
-                    <top>585</top>
-                    <width>1650</width>
-                    <height>1</height>
-                    <colordiffuse>88FFFFFF</colordiffuse>
-                    <texture>separator2.png</texture>
-                </control>
+
                 <control type="group">
                     <visible>!ListItem.HasEPG</visible>
                     <left>0</left>
@@ -378,15 +361,7 @@
                         <label>$INFO[ListItem.Plot]</label>
                     </control>
                 </control>
-                <control type="image">
-                    <description>separator image</description>
-                    <left>0</left>
-                    <top>810</top>
-                    <width>1650</width>
-                    <height>1</height>
-                    <colordiffuse>88FFFFFF</colordiffuse>
-                    <texture>separator2.png</texture>
-                </control>
+
                 <control type="label">
                     <description>Next timer date</description>
                     <left>82</left>
