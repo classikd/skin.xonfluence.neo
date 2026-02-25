@@ -65,10 +65,11 @@
 					<label>103</label>
 				</control>
 				<control type="togglebutton" id="4">
-					<description>Sort asc</description>
-					<include>ButtonCommonValues</include>
-					<alttexturefocus border="5">button-focus.png</alttexturefocus>
-					<alttexturenofocus/>
+                    <description>Sort asc</description>
+                    <include>ButtonCommonValues</include>
+                    <include>NormalButton</include>
+                    <include>AltButton</include>
+                    <alttexturenofocus></alttexturenofocus>
 					<label>31051</label>
 					<altlabel>31050</altlabel>
 					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
