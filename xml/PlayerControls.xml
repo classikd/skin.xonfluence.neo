@@ -8,12 +8,15 @@
         <top>375</top>
     </coordinates>
     <controls>
-        <control type="image">
-            <left>8</left>
-            <top>234</top>
-            <width>724</width>
-            <height>80</height>
-            <texture flipy="true" border="20,20,20,2">InfoMessagePanel.png</texture>
+        <!-- Music Info -->
+        <control type="group">
+            <visible>Player.HasAudio</visible>
+            <include>SmallMusicInfo</include>
+        </control>
+        <!-- Video Info -->
+        <control type="group">
+            <visible>Player.HasVideo</visible>
+            <include>SmallVideoInfo</include>
         </control>
         <control type="group" id="100">
             <left>38</left>
@@ -400,22 +403,12 @@
             <visible>Window.IsVisible(home)</visible>
             <texture border="20">OverlayDialogBackground.png</texture>
         </control>
-        <!-- Music Info -->
-        <control type="group">
-            <visible>Player.HasAudio</visible>
-            <include>SmallMusicInfo</include>
-        </control>
-        <!-- Video Info -->
-        <control type="group">
-            <visible>Player.HasVideo</visible>
-            <include>SmallVideoInfo</include>
-        </control>
         <control type="button">
             <description>Close Window button</description>
-            <left>630</left>
-            <top>8</top>
+            <left>705</left>
+            <top>0</top>
             <onclick>back</onclick>
-            <include>DialogCloseButton</include>
+            <include>DialogCloseButtonSmall</include>
             <onleft>100</onleft>
             <onright>100</onright>
             <onup>100</onup>

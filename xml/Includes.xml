@@ -1299,9 +1299,9 @@
             <left>0</left>
             <top>0</top>
             <width>750</width>
-            <height>248</height>
+            <height>302</height>
             <colordiffuse>DDFFFFFF</colordiffuse>
-            <texture border="20">OverlayDialogBackground.png</texture>
+            <texture border="20">DialogBack.png</texture>
         </control>
         <control type="image">
             <description>Cover image</description>
@@ -1385,9 +1385,8 @@
             <left>0</left>
             <top>0</top>
             <width>750</width>
-            <height>248</height>
-            <colordiffuse>DDFFFFFF</colordiffuse>
-            <texture border="20">OverlayDialogBackground.png</texture>
+            <height>302</height>
+            <texture border="20">DialogBack.png</texture>
         </control>
         <control type="image">
             <description>Cover image</description>
