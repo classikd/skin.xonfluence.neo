@@ -1460,7 +1460,7 @@
                                 <label>  - $LOCALIZE[32032]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[IntroOSDTimeoutLabel][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>ActivateWindow(2137)</onclick>
@@ -1599,7 +1599,7 @@
                                 <label>$LOCALIZE[31339]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UsrOSDBtn.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UsrOSDBtn,Home)</onclick>
@@ -1755,7 +1755,7 @@
                                 <label>$LOCALIZE[31065]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[FavBtnLabel][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UsrFavBtnCmd,Home)</onclick>
@@ -1766,7 +1766,7 @@
                                 <height>60</height>
                                 <font>font13</font>
                                 <label>$LOCALIZE[31450]</label>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>Skin.ToggleSetting(Show_Suspend)</onclick>
@@ -1779,7 +1779,7 @@
                                 <height>60</height>
                                 <font>font13</font>
                                 <label>$LOCALIZE[31451]</label>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>Skin.ToggleSetting(Show_Hibernate)</onclick>
@@ -1792,7 +1792,7 @@
                                 <height>60</height>
                                 <font>font13</font>
                                 <label>$LOCALIZE[31452]</label>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>Skin.ToggleSetting(Show_Logoff)</onclick>
@@ -1805,7 +1805,7 @@
                                 <height>60</height>
                                 <font>font13</font>
                                 <label>$LOCALIZE[31453]</label>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>Skin.ToggleSetting(Show_Mastermode)</onclick>
@@ -1818,7 +1818,7 @@
                                 <height>60</height>
                                 <font>font13</font>
                                 <label>$LOCALIZE[31454]</label>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>Skin.ToggleSetting(Show_Timer)</onclick>
@@ -4909,7 +4909,7 @@
                                 <label>$LOCALIZE[31315] - 1</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuVideosOne][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubVideos.1,Home)</onclick>
@@ -4922,7 +4922,7 @@
                                 <label>$LOCALIZE[31315] - 2</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuVideosTwo][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubVideos.2,Home)</onclick>
@@ -4935,7 +4935,7 @@
                                 <label>$LOCALIZE[31315] - 3</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuVideosThree][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubVideos.3,Home)</onclick>
@@ -4948,7 +4948,7 @@
                                 <label>$LOCALIZE[31315] - 4</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuVideosFour][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubVideos.4,Home)</onclick>
@@ -4961,7 +4961,7 @@
                                 <label>$LOCALIZE[31315] - 5</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuVideosFive][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubVideos.5,Home)</onclick>
@@ -4974,7 +4974,7 @@
                                 <label>$LOCALIZE[31315] - 6</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuVideosSix][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubVideos.6,Home)</onclick>
@@ -4987,7 +4987,7 @@
                                 <label>$LOCALIZE[31315] - 7</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubVideos.7.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubVideos.7,Home)</onclick>
@@ -5000,7 +5000,7 @@
                                 <label>$LOCALIZE[31315] - 8</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubVideos.8.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubVideos.8,Home)</onclick>
@@ -5013,7 +5013,7 @@
                                 <label>$LOCALIZE[31315] - 9</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubVideos.9.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubVideos.9,Home)</onclick>
@@ -5026,7 +5026,7 @@
                                 <label>$LOCALIZE[31315] - 10</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubVideos.10.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubVideos.10,Home)</onclick>
@@ -5078,7 +5078,7 @@
                                 <label>$LOCALIZE[31315] - 1</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuMoviesOne][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMovies.1,Home)</onclick>
@@ -5091,7 +5091,7 @@
                                 <label>$LOCALIZE[31315] - 2</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuMoviesTwo][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMovies.2,Home)</onclick>
@@ -5104,7 +5104,7 @@
                                 <label>$LOCALIZE[31315] - 3</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuMoviesThree][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMovies.3,Home)</onclick>
@@ -5117,7 +5117,7 @@
                                 <label>$LOCALIZE[31315] - 4</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuMoviesFour][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMovies.4,Home)</onclick>
@@ -5130,7 +5130,7 @@
                                 <label>$LOCALIZE[31315] - 5</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuMoviesFive][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMovies.5,Home)</onclick>
@@ -5143,7 +5143,7 @@
                                 <label>$LOCALIZE[31315] - 6</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuMoviesSix][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMovies.6,Home)</onclick>
@@ -5156,7 +5156,7 @@
                                 <label>$LOCALIZE[31315] - 7</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubMovies.7.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMovies.7,Home)</onclick>
@@ -5169,7 +5169,7 @@
                                 <label>$LOCALIZE[31315] - 8</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubMovies.8.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMovies.8,Home)</onclick>
@@ -5182,7 +5182,7 @@
                                 <label>$LOCALIZE[31315] - 9</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubMovies.9.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMovies.9,Home)</onclick>
@@ -5195,7 +5195,7 @@
                                 <label>$LOCALIZE[31315] - 10</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubMovies.10.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMovies.10,Home)</onclick>
@@ -5247,7 +5247,7 @@
                                 <label>$LOCALIZE[31315] - 1</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuTVShowsOne][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubTVShows.1,Home)</onclick>
@@ -5260,7 +5260,7 @@
                                 <label>$LOCALIZE[31315] - 2</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuTVShowsTwo][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubTVShows.2,Home)</onclick>
@@ -5273,7 +5273,7 @@
                                 <label>$LOCALIZE[31315] - 3</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuTVShowsThree][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubTVShows.3,Home)</onclick>
@@ -5286,7 +5286,7 @@
                                 <label>$LOCALIZE[31315] - 4</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuTVShowsFour][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubTVShows.4,Home)</onclick>
@@ -5299,7 +5299,7 @@
                                 <label>$LOCALIZE[31315] - 5</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuTVShowsFive][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubTVShows.5,Home)</onclick>
@@ -5312,7 +5312,7 @@
                                 <label>$LOCALIZE[31315] - 6</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubTVShows.6.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubTVShows.6,Home)</onclick>
@@ -5325,7 +5325,7 @@
                                 <label>$LOCALIZE[31315] - 7</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubTVShows.7.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubTVShows.7,Home)</onclick>
@@ -5338,7 +5338,7 @@
                                 <label>$LOCALIZE[31315] - 8</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubTVShows.8.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubTVShows.8,Home)</onclick>
@@ -5351,7 +5351,7 @@
                                 <label>$LOCALIZE[31315] - 9</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubTVShows.9.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubTVShows.9,Home)</onclick>
@@ -5364,7 +5364,7 @@
                                 <label>$LOCALIZE[31315] - 10</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubTVShows.10.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubTVShows.10,Home)</onclick>
@@ -5416,7 +5416,7 @@
                                 <label>$LOCALIZE[31315] - 1</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuConcertsOne][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubConcerts.1,Home)</onclick>
@@ -5429,7 +5429,7 @@
                                 <label>$LOCALIZE[31315] - 2</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuConcertsTwo][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubConcerts.2,Home)</onclick>
@@ -5442,7 +5442,7 @@
                                 <label>$LOCALIZE[31315] - 3</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuConcertsThree][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubConcerts.3,Home)</onclick>
@@ -5455,7 +5455,7 @@
                                 <label>$LOCALIZE[31315] - 4</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuConcertsFour][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubConcerts.4,Home)</onclick>
@@ -5468,7 +5468,7 @@
                                 <label>$LOCALIZE[31315] - 5</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuConcertsFive][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubConcerts.5,Home)</onclick>
@@ -5481,7 +5481,7 @@
                                 <label>$LOCALIZE[31315] - 6</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubConcerts.6.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubConcerts.6,Home)</onclick>
@@ -5494,7 +5494,7 @@
                                 <label>$LOCALIZE[31315] - 7</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubConcerts.7.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubConcerts.7,Home)</onclick>
@@ -5507,7 +5507,7 @@
                                 <label>$LOCALIZE[31315] - 8</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubConcerts.8.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubConcerts.8,Home)</onclick>
@@ -5520,7 +5520,7 @@
                                 <label>$LOCALIZE[31315] - 9</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubConcerts.9.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubConcerts.9,Home)</onclick>
@@ -5533,7 +5533,7 @@
                                 <label>$LOCALIZE[31315] - 10</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubConcerts.10.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubConcerts.10,Home)</onclick>
@@ -5585,7 +5585,7 @@
                                 <label>$LOCALIZE[31315] - 1</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuMusicOne][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMusic.1,Home)</onclick>
@@ -5598,7 +5598,7 @@
                                 <label>$LOCALIZE[31315] - 2</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuMusicTwo][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMusic.2,Home)</onclick>
@@ -5611,7 +5611,7 @@
                                 <label>$LOCALIZE[31315] - 3</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuMusicThree][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMusic.3,Home)</onclick>
@@ -5624,7 +5624,7 @@
                                 <label>$LOCALIZE[31315] - 4</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuMusicFour][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMusic.4,Home)</onclick>
@@ -5637,7 +5637,7 @@
                                 <label>$LOCALIZE[31315] - 5</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuMusicFive][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMusic.5,Home)</onclick>
@@ -5650,7 +5650,7 @@
                                 <label>$LOCALIZE[31315] - 6</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuMusicSix][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMusic.6,Home)</onclick>
@@ -5663,7 +5663,7 @@
                                 <label>$LOCALIZE[31315] - 7</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubMusic.7.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMusic.7,Home)</onclick>
@@ -5676,7 +5676,7 @@
                                 <label>$LOCALIZE[31315] - 8</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubMusic.8.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMusic.8,Home)</onclick>
@@ -5689,7 +5689,7 @@
                                 <label>$LOCALIZE[31315] - 9</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubMusic.9.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMusic.9,Home)</onclick>
@@ -5702,7 +5702,7 @@
                                 <label>$LOCALIZE[31315] - 10</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubMusic.10.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubMusic.10,Home)</onclick>
@@ -5754,7 +5754,7 @@
                                 <label>$LOCALIZE[31315] - 1</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubProg.1.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubProg.1,Home)</onclick>
@@ -5767,7 +5767,7 @@
                                 <label>$LOCALIZE[31315] - 2</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubProg.2.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubProg.2,Home)</onclick>
@@ -5780,7 +5780,7 @@
                                 <label>$LOCALIZE[31315] - 3</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubProg.3.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubProg.3,Home)</onclick>
@@ -5793,7 +5793,7 @@
                                 <label>$LOCALIZE[31315] - 4</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubProg.4.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubProg.4,Home)</onclick>
@@ -5806,7 +5806,7 @@
                                 <label>$LOCALIZE[31315] - 5</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubProg.5.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubProg.5,Home)</onclick>
@@ -5819,7 +5819,7 @@
                                 <label>$LOCALIZE[31315] - 6</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubProg.6.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubProg.6,Home)</onclick>
@@ -5832,7 +5832,7 @@
                                 <label>$LOCALIZE[31315] - 7</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubProg.7.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubProg.7,Home)</onclick>
@@ -5845,7 +5845,7 @@
                                 <label>$LOCALIZE[31315] - 8</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubProg.8.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubProg.8,Home)</onclick>
@@ -5858,7 +5858,7 @@
                                 <label>$LOCALIZE[31315] - 9</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubProg.9.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubProg.9,Home)</onclick>
@@ -5871,7 +5871,7 @@
                                 <label>$LOCALIZE[31315] - 10</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubProg.10.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubProg.10,Home)</onclick>
@@ -5923,7 +5923,7 @@
                                 <label>$LOCALIZE[31315] - 1</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuPicturesOne][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubPictures.1,Home)</onclick>
@@ -5936,7 +5936,7 @@
                                 <label>$LOCALIZE[31315] - 2</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubPictures.2.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubPictures.2,Home)</onclick>
@@ -5949,7 +5949,7 @@
                                 <label>$LOCALIZE[31315] - 3</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubPictures.3.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubPictures.3,Home)</onclick>
@@ -5962,7 +5962,7 @@
                                 <label>$LOCALIZE[31315] - 4</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubPictures.4.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubPictures.4,Home)</onclick>
@@ -5975,7 +5975,7 @@
                                 <label>$LOCALIZE[31315] - 5</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubPictures.5.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubPictures.5,Home)</onclick>
@@ -5988,7 +5988,7 @@
                                 <label>$LOCALIZE[31315] - 6</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubPictures.6.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubPictures.6,Home)</onclick>
@@ -6001,7 +6001,7 @@
                                 <label>$LOCALIZE[31315] - 7</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubPictures.7.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubPictures.7,Home)</onclick>
@@ -6014,7 +6014,7 @@
                                 <label>$LOCALIZE[31315] - 8</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubPictures.8.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubPictures.8,Home)</onclick>
@@ -6027,7 +6027,7 @@
                                 <label>$LOCALIZE[31315] - 9</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubPictures.9.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubPictures.9,Home)</onclick>
@@ -6040,7 +6040,7 @@
                                 <label>$LOCALIZE[31315] - 10</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubPictures.10.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubPictures.10,Home)</onclick>
@@ -6092,7 +6092,7 @@
                                 <label>$LOCALIZE[31315] - 1</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuLiveTVOne][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubLiveTV.1,Home)</onclick>
@@ -6105,7 +6105,7 @@
                                 <label>$LOCALIZE[31315] - 2</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuLiveTVTwo][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubLiveTV.2,Home)</onclick>
@@ -6118,7 +6118,7 @@
                                 <label>$LOCALIZE[31315] - 3</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuLiveTVThree][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubLiveTV.3,Home)</onclick>
@@ -6131,7 +6131,7 @@
                                 <label>$LOCALIZE[31315] - 4</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuLiveTVFour][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubLiveTV.4,Home)</onclick>
@@ -6144,7 +6144,7 @@
                                 <label>$LOCALIZE[31315] - 5</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuLiveTVFive][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubLiveTV.5,Home)</onclick>
@@ -6157,7 +6157,7 @@
                                 <label>$LOCALIZE[31315] - 6</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubLiveTV.6.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubLiveTV.6,Home)</onclick>
@@ -6170,7 +6170,7 @@
                                 <label>$LOCALIZE[31315] - 7</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubLiveTV.7.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubLiveTV.7,Home)</onclick>
@@ -6183,7 +6183,7 @@
                                 <label>$LOCALIZE[31315] - 8</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubLiveTV.8.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubLiveTV.8,Home)</onclick>
@@ -6196,7 +6196,7 @@
                                 <label>$LOCALIZE[31315] - 9</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubLiveTV.9.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubLiveTV.9,Home)</onclick>
@@ -6209,7 +6209,7 @@
                                 <label>$LOCALIZE[31315] - 10</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubLiveTV.10.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubLiveTV.10,Home)</onclick>
@@ -6261,7 +6261,7 @@
                                 <label>$LOCALIZE[31315] - 1</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuRadioOne][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubRadio.1,Home)</onclick>
@@ -6274,7 +6274,7 @@
                                 <label>$LOCALIZE[31315] - 2</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuRadioTwo][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubRadio.2,Home)</onclick>
@@ -6287,7 +6287,7 @@
                                 <label>$LOCALIZE[31315] - 3</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuRadioThree][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubRadio.3,Home)</onclick>
@@ -6300,7 +6300,7 @@
                                 <label>$LOCALIZE[31315] - 4</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuRadioFour][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubRadio.4,Home)</onclick>
@@ -6313,7 +6313,7 @@
                                 <label>$LOCALIZE[31315] - 5</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuRadioFive][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubRadio.5,Home)</onclick>
@@ -6326,7 +6326,7 @@
                                 <label>$LOCALIZE[31315] - 6</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubRadio.6.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubRadio.6,Home)</onclick>
@@ -6339,7 +6339,7 @@
                                 <label>$LOCALIZE[31315] - 7</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubRadio.7.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubRadio.7,Home)</onclick>
@@ -6352,7 +6352,7 @@
                                 <label>$LOCALIZE[31315] - 8</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubRadio.8.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubRadio.8,Home)</onclick>
@@ -6365,7 +6365,7 @@
                                 <label>$LOCALIZE[31315] - 9</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubRadio.9.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubRadio.9,Home)</onclick>
@@ -6378,7 +6378,7 @@
                                 <label>$LOCALIZE[31315] - 10</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubRadio.10.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubRadio.10,Home)</onclick>
@@ -6430,7 +6430,7 @@
                                 <label>$LOCALIZE[31315] - 1</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuSystemOne][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubSettings.1,Home)</onclick>
@@ -6443,7 +6443,7 @@
                                 <label>$LOCALIZE[31315] - 2</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuSystemTwo][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubSettings.2,Home)</onclick>
@@ -6456,7 +6456,7 @@
                                 <label>$LOCALIZE[31315] - 3</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuSystemThree][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubSettings.3,Home)</onclick>
@@ -6469,7 +6469,7 @@
                                 <label>$LOCALIZE[31315] - 4</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuSystemFour][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubSettings.4,Home)</onclick>
@@ -6482,7 +6482,7 @@
                                 <label>$LOCALIZE[31315] - 5</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuSystemFive][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubSettings.5,Home)</onclick>
@@ -6495,7 +6495,7 @@
                                 <label>$LOCALIZE[31315] - 6</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuSystemSix][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubSettings.6,Home)</onclick>
@@ -6508,7 +6508,7 @@
                                 <label>$LOCALIZE[31315] - 7</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$VAR[SubMenuSystemSeven][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubSettings.7,Home)</onclick>
@@ -6521,7 +6521,7 @@
                                 <label>$LOCALIZE[31315] - 8</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubSettings.8.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubSettings.8,Home)</onclick>
@@ -6534,7 +6534,7 @@
                                 <label>$LOCALIZE[31315] - 9</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubSettings.9.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubSettings.9,Home)</onclick>
@@ -6547,7 +6547,7 @@
                                 <label>$LOCALIZE[31315] - 10</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(SubSettings.10.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,SubSettings.10,Home)</onclick>
@@ -6599,7 +6599,7 @@
                                 <label>$LOCALIZE[31315] - 1</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubOne.1.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubOne.1,Home)</onclick>
@@ -6612,7 +6612,7 @@
                                 <label>$LOCALIZE[31315] - 2</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubOne.2.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubOne.2,Home)</onclick>
@@ -6625,7 +6625,7 @@
                                 <label>$LOCALIZE[31315] - 3</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubOne.3.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubOne.3,Home)</onclick>
@@ -6638,7 +6638,7 @@
                                 <label>$LOCALIZE[31315] - 4</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubOne.4.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubOne.4,Home)</onclick>
@@ -6651,7 +6651,7 @@
                                 <label>$LOCALIZE[31315] - 5</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubOne.5.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubOne.5,Home)</onclick>
@@ -6664,7 +6664,7 @@
                                 <label>$LOCALIZE[31315] - 6</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubOne.6.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubOne.6,Home)</onclick>
@@ -6677,7 +6677,7 @@
                                 <label>$LOCALIZE[31315] - 7</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubOne.7.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubOne.7,Home)</onclick>
@@ -6690,7 +6690,7 @@
                                 <label>$LOCALIZE[31315] - 8</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubOne.8.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubOne.8,Home)</onclick>
@@ -6703,7 +6703,7 @@
                                 <label>$LOCALIZE[31315] - 9</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubOne.9.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubOne.9,Home)</onclick>
@@ -6716,7 +6716,7 @@
                                 <label>$LOCALIZE[31315] - 10</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubOne.10.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubOne.10,Home)</onclick>
@@ -6768,7 +6768,7 @@
                                 <label>$LOCALIZE[31315] - 1</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubTwo.1.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubTwo.1,Home)</onclick>
@@ -6781,7 +6781,7 @@
                                 <label>$LOCALIZE[31315] - 2</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubTwo.2.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubTwo.2,Home)</onclick>
@@ -6794,7 +6794,7 @@
                                 <label>$LOCALIZE[31315] - 3</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubTwo.3.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubTwo.3,Home)</onclick>
@@ -6807,7 +6807,7 @@
                                 <label>$LOCALIZE[31315] - 4</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubTwo.4.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubTwo.4,Home)</onclick>
@@ -6820,7 +6820,7 @@
                                 <label>$LOCALIZE[31315] - 5</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubTwo.5.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubTwo.5,Home)</onclick>
@@ -6833,7 +6833,7 @@
                                 <label>$LOCALIZE[31315] - 6</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubTwo.6.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubTwo.6,Home)</onclick>
@@ -6846,7 +6846,7 @@
                                 <label>$LOCALIZE[31315] - 7</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubTwo.7.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubTwo.7,Home)</onclick>
@@ -6859,7 +6859,7 @@
                                 <label>$LOCALIZE[31315] - 8</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubTwo.8.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubTwo.8,Home)</onclick>
@@ -6872,7 +6872,7 @@
                                 <label>$LOCALIZE[31315] - 9</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubTwo.9.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubTwo.9,Home)</onclick>
@@ -6885,7 +6885,7 @@
                                 <label>$LOCALIZE[31315] - 10</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubTwo.10.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubTwo.10,Home)</onclick>
@@ -6937,7 +6937,7 @@
                                 <label>$LOCALIZE[31315] - 1</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubThree.1.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubThree.1,Home)</onclick>
@@ -6950,7 +6950,7 @@
                                 <label>$LOCALIZE[31315] - 2</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubThree.2.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubThree.2,Home)</onclick>
@@ -6963,7 +6963,7 @@
                                 <label>$LOCALIZE[31315] - 3</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubThree.3.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubThree.3,Home)</onclick>
@@ -6976,7 +6976,7 @@
                                 <label>$LOCALIZE[31315] - 4</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubThree.4.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubThree.4,Home)</onclick>
@@ -6989,7 +6989,7 @@
                                 <label>$LOCALIZE[31315] - 5</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubThree.5.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubThree.5,Home)</onclick>
@@ -7002,7 +7002,7 @@
                                 <label>$LOCALIZE[31315] - 6</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubThree.6.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubThree.6,Home)</onclick>
@@ -7015,7 +7015,7 @@
                                 <label>$LOCALIZE[31315] - 7</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubThree.7.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubThree.7,Home)</onclick>
@@ -7028,7 +7028,7 @@
                                 <label>$LOCALIZE[31315] - 8</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubThree.8.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubThree.8,Home)</onclick>
@@ -7041,7 +7041,7 @@
                                 <label>$LOCALIZE[31315] - 9</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubThree.9.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubThree.9,Home)</onclick>
@@ -7054,7 +7054,7 @@
                                 <label>$LOCALIZE[31315] - 10</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubThree.10.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubThree.10,Home)</onclick>
@@ -7106,7 +7106,7 @@
                                 <label>$LOCALIZE[31315] - 1</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFour.1.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFour.1,Home)</onclick>
@@ -7119,7 +7119,7 @@
                                 <label>$LOCALIZE[31315] - 2</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFour.2.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFour.2,Home)</onclick>
@@ -7132,7 +7132,7 @@
                                 <label>$LOCALIZE[31315] - 3</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFour.3.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFour.3,Home)</onclick>
@@ -7145,7 +7145,7 @@
                                 <label>$LOCALIZE[31315] - 4</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFour.4.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFour.4,Home)</onclick>
@@ -7158,7 +7158,7 @@
                                 <label>$LOCALIZE[31315] - 5</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFour.5.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFour.5,Home)</onclick>
@@ -7171,7 +7171,7 @@
                                 <label>$LOCALIZE[31315] - 6</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFour.6.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFour.6,Home)</onclick>
@@ -7184,7 +7184,7 @@
                                 <label>$LOCALIZE[31315] - 7</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFour.7.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFour.7,Home)</onclick>
@@ -7197,7 +7197,7 @@
                                 <label>$LOCALIZE[31315] - 8</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFour.8.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFour.8,Home)</onclick>
@@ -7210,7 +7210,7 @@
                                 <label>$LOCALIZE[31315] - 9</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFour.9.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFour.9,Home)</onclick>
@@ -7223,7 +7223,7 @@
                                 <label>$LOCALIZE[31315] - 10</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFour.10.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFour.10,Home)</onclick>
@@ -7275,7 +7275,7 @@
                                 <label>$LOCALIZE[31315] - 1</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFive.1.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFive.1,Home)</onclick>
@@ -7288,7 +7288,7 @@
                                 <label>$LOCALIZE[31315] - 2</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFive.2.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFive.2,Home)</onclick>
@@ -7301,7 +7301,7 @@
                                 <label>$LOCALIZE[31315] - 3</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFive.3.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFive.3,Home)</onclick>
@@ -7314,7 +7314,7 @@
                                 <label>$LOCALIZE[31315] - 4</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFive.4.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFive.4,Home)</onclick>
@@ -7327,7 +7327,7 @@
                                 <label>$LOCALIZE[31315] - 5</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFive.5.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFive.5,Home)</onclick>
@@ -7340,7 +7340,7 @@
                                 <label>$LOCALIZE[31315] - 6</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFive.6.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFive.6,Home)</onclick>
@@ -7353,7 +7353,7 @@
                                 <label>$LOCALIZE[31315] - 7</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFive.7.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFive.7,Home)</onclick>
@@ -7366,7 +7366,7 @@
                                 <label>$LOCALIZE[31315] - 8</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFive.8.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFive.8,Home)</onclick>
@@ -7379,7 +7379,7 @@
                                 <label>$LOCALIZE[31315] - 9</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFive.9.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFive.9,Home)</onclick>
@@ -7392,7 +7392,7 @@
                                 <label>$LOCALIZE[31315] - 10</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>[COLOR=white]$INFO[Skin.String(UserSubFive.10.Label)][/COLOR]</label2>
-                                <textcolor>grey</textcolor>
+                                <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UserSubFive.10,Home)</onclick>
