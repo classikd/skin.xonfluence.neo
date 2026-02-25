@@ -1401,7 +1401,7 @@
             </control>
             <control type="group">
                 <left>1065</left>
-                <top>368</top>
+                <top>362</top>
                 <visible>Container.Content(TVShows)</visible>
                 <control type="image">
                     <left>0</left>
@@ -1411,8 +1411,6 @@
                     <aspectratio>keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true">$VAR[BannerThumb]</texture>
-                    <bordertexture border="8">ThumbShadow.png</bordertexture>
-                    <bordersize>8</bordersize>
                 </control>
                 <control type="group">
 				    <visible>!ListItem.IsParentFolder</visible>
@@ -1490,13 +1488,6 @@
                         <pauseatend>1000</pauseatend>
                     </control>
 		    </control>	
-                <control type="image">
-                    <left>0</left>
-                    <top>340</top>
-                    <width>795</width>
-                    <height>6</height>
-                    <texture>separator.png</texture>
-                </control>
                 <control type="textbox">
                     <visible>!ListItem.IsParentFolder</visible>
 					<description>Description Value for TVShows</description>
@@ -3108,8 +3099,6 @@
                     <aspectratio align="left" aligny="bottom">keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true">$VAR[PosterThumb]</texture>
-                    <bordertexture border="8">ThumbShadow.png</bordertexture>
-                    <bordersize>8</bordersize>
                 </control>
             </control>
             <control type="group">
@@ -3291,8 +3280,6 @@
                     <aspectratio align="left" aligny="bottom">keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true">$VAR[PosterThumb]</texture>
-                    <bordertexture border="8">ThumbShadow.png</bordertexture>
-                    <bordersize>8</bordersize>
                 </control>
             </control>
             <control type="group">
@@ -3357,8 +3344,6 @@
                     <aspectratio align="left" aligny="bottom">keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true">$VAR[PosterThumb]</texture>
-                    <bordertexture border="8">ThumbShadow.png</bordertexture>
-                    <bordersize>8</bordersize>
                 </control>
             </control>
             <control type="group">
@@ -3548,8 +3533,6 @@
                     <aspectratio align="left" aligny="bottom">keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true">$INFO[ListItem.Icon]</texture>
-                    <bordertexture border="8">ThumbShadow.png</bordertexture>
-                    <bordersize>8</bordersize>
                     <visible>String.IsEqual(ListItem.Label,..) | [!Skin.HasSetting(EpisodeBackground) + !Skin.HasSetting(HideEpisodeThumb)]</visible>
                 </control>
                 <control type="image">
@@ -3560,8 +3543,6 @@
                     <aspectratio align="left" aligny="bottom">keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-                    <bordertexture border="8">ThumbShadow.png</bordertexture>
-                    <bordersize>8</bordersize>
                     <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     <visible>Skin.HasSetting(EpisodeBackground) | Skin.HasSetting(HideEpisodeThumb)</visible>
                 </control>

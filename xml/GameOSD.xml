@@ -87,7 +87,7 @@
                     <font>fontContextMenu</font>
                     <textcolor>grey2</textcolor>
                     <focusedcolor>white</focusedcolor>
-                    <texturefocus border="5">button-focus.png</texturefocus>
+                    <texturefocus border="5">button/button-focus.png</texturefocus>
                     <label>13376</label>
                     <label2>Select + Right Stick</label2>
                     <onclick>ActivateWindow(GameVolume)</onclick>
@@ -136,7 +136,7 @@
                     <align>center</align>
                     <textcolor>grey2</textcolor>
                     <focusedcolor>white</focusedcolor>
-                    <texturefocus border="5">button-focus.png</texturefocus>
+                    <texturefocus border="5">button/button-focus.png</texturefocus>
                     <label>$LOCALIZE[35234]</label>
                     <onclick>ActivateWindow(gamecontrollers)</onclick>
                 </control>
@@ -148,7 +148,7 @@
                     <align>center</align>
                     <textcolor>grey2</textcolor>
                     <focusedcolor>white</focusedcolor>
-                    <texturefocus border="5">button-focus.png</texturefocus>
+                    <texturefocus border="5">button/button-focus.png</texturefocus>
                     <label>$LOCALIZE[35226]</label>
                     <onclick>ActivateWindow(GameAdvancedSettings)</onclick>
                 </control>

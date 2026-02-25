@@ -1143,7 +1143,7 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <font>font12</font>
-                <textcolor>grey</textcolor>
+                <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
