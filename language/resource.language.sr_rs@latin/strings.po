@@ -429,8 +429,8 @@ msgid "Show \"Paused\" in picture slideshow"
 msgstr "Prikaži \"Pauzirano\" pri reprodukciji slajdova slika"
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
-msgstr "Pusti najave u prozoru [COLOR=grey3](Samo dijalog podataka videa)[/COLOR]"
+msgid "Play trailers in a window [COLOR=white](Video information dialogue only)[/COLOR]"
+msgstr "Pusti najave u prozoru [COLOR=white](Samo dijalog podataka videa)[/COLOR]"
 
 msgctxt "#31105"
 msgid "Artwork"
@@ -441,8 +441,8 @@ msgid "Miscellaneous options"
 msgstr "Razne opcije"
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
-msgstr "Sakrij oznake pročitane iz naziva video datoteka [COLOR=grey3](npr. Blu-ray, HD-DVD)[/COLOR]"
+msgid "Hide flagging read from video filenames [COLOR=white](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgstr "Sakrij oznake pročitane iz naziva video datoteka [COLOR=white](npr. Blu-ray, HD-DVD)[/COLOR]"
 
 msgctxt "#31108"
 msgid "Hide main menu buttons"

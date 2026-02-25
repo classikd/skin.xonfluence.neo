@@ -429,8 +429,8 @@ msgid "Show \"Paused\" in picture slideshow"
 msgstr "При авт. превъртане на снимки да се показва „На пауза“"
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
-msgstr "Възпроизвеждане на трейлърите в прозорец [COLOR=grey3](Само прозорец с информация за видеото)[/COLOR]"
+msgid "Play trailers in a window [COLOR=white](Video information dialogue only)[/COLOR]"
+msgstr "Възпроизвеждане на трейлърите в прозорец [COLOR=white](Само прозорец с информация за видеото)[/COLOR]"
 
 msgctxt "#31105"
 msgid "Artwork"
@@ -441,8 +441,8 @@ msgid "Miscellaneous options"
 msgstr "Разни настройки"
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
-msgstr "Скриване на флаговете, прочеетни от имената на файлове [COLOR=grey3](напр. „Blu-ray“, „HD-DVD“)[/COLOR]"
+msgid "Hide flagging read from video filenames [COLOR=white](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgstr "Скриване на флаговете, прочеетни от имената на файлове [COLOR=white](напр. „Blu-ray“, „HD-DVD“)[/COLOR]"
 
 msgctxt "#31108"
 msgid "Hide main menu buttons"

@@ -429,8 +429,8 @@ msgid "Show \"Paused\" in picture slideshow"
 msgstr "사진 슬라이드쇼에 \"일시 중지됨\" 보기"
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
-msgstr "창에 예고편 재생 [COLOR=grey3](비디오 정보 대화창만)[/COLOR]"
+msgid "Play trailers in a window [COLOR=white](Video information dialogue only)[/COLOR]"
+msgstr "창에 예고편 재생 [COLOR=white](비디오 정보 대화창만)[/COLOR]"
 
 msgctxt "#31105"
 msgid "Artwork"
@@ -441,8 +441,8 @@ msgid "Miscellaneous options"
 msgstr "기타 옵션"
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
-msgstr "비디오 파일 이름에서 읽은 플래그 숨김 [COLOR=grey3](예. 블루레이, HD-DVD)[/COLOR]"
+msgid "Hide flagging read from video filenames [COLOR=white](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgstr "비디오 파일 이름에서 읽은 플래그 숨김 [COLOR=white](예. 블루레이, HD-DVD)[/COLOR]"
 
 msgctxt "#31108"
 msgid "Hide main menu buttons"

@@ -429,8 +429,8 @@ msgid "Show \"Paused\" in picture slideshow"
 msgstr "Wys \"Gepouseer\" in prent skyfievertoning"
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
-msgstr "Speel lokprente in 'n venster [COLOR=grey3](Video inligting dialoog alleenlik)[/COLOR] "
+msgid "Play trailers in a window [COLOR=white](Video information dialogue only)[/COLOR]"
+msgstr "Speel lokprente in 'n venster [COLOR=white](Video inligting dialoog alleenlik)[/COLOR] "
 
 msgctxt "#31105"
 msgid "Artwork"
@@ -441,8 +441,8 @@ msgid "Miscellaneous options"
 msgstr "Diverse opsies"
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
-msgstr "Versteek vlae gelees van video lêername [COLOR=grey3](bv. Blu-ray, HD-DVD)[/COLOR]"
+msgid "Hide flagging read from video filenames [COLOR=white](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgstr "Versteek vlae gelees van video lêername [COLOR=white](bv. Blu-ray, HD-DVD)[/COLOR]"
 
 msgctxt "#31108"
 msgid "Hide main menu buttons"

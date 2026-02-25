@@ -429,8 +429,8 @@ msgid "Show \"Paused\" in picture slideshow"
 msgstr "\"Pause\" in Bilder-Diaschau anzeigen"
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
-msgstr "Film-Trailer im Fenster abspielen [COLOR=grey3](gilt nur für Video-Informationsdialog)[/COLOR]"
+msgid "Play trailers in a window [COLOR=white](Video information dialogue only)[/COLOR]"
+msgstr "Film-Trailer im Fenster abspielen [COLOR=white](gilt nur für Video-Informationsdialog)[/COLOR]"
 
 msgctxt "#31105"
 msgid "Artwork"
@@ -441,8 +441,8 @@ msgid "Miscellaneous options"
 msgstr "Sonstige Einstellungen"
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
-msgstr "Flags von Dateinamen ausblenden [COLOR=grey3](z.B. Blu-ray, HD-DVD)[/COLOR]"
+msgid "Hide flagging read from video filenames [COLOR=white](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgstr "Flags von Dateinamen ausblenden [COLOR=white](z.B. Blu-ray, HD-DVD)[/COLOR]"
 
 msgctxt "#31108"
 msgid "Hide main menu buttons"

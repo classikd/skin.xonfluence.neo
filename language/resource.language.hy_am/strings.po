@@ -429,7 +429,7 @@ msgid "Show \"Paused\" in picture slideshow"
 msgstr ""
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
+msgid "Play trailers in a window [COLOR=white](Video information dialogue only)[/COLOR]"
 msgstr ""
 
 msgctxt "#31105"
@@ -441,7 +441,7 @@ msgid "Miscellaneous options"
 msgstr "Այլ տարբերակներ"
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgid "Hide flagging read from video filenames [COLOR=white](e.g. Blu-ray, HD-DVD)[/COLOR]"
 msgstr ""
 
 msgctxt "#31108"

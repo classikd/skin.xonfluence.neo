@@ -797,7 +797,7 @@
         <value condition="String.IsEqual(Skin.String(TopLeftHomeInfo),ProfileName)">$LOCALIZE[31963]$LOCALIZE[31082]</value>
         <value condition="String.IsEqual(Skin.String(TopLeftHomeInfo),ProfileAvatar)">$LOCALIZE[31964]$LOCALIZE[31082]</value>
         <value condition="String.IsEqual(Skin.String(TopLeftHomeInfo),Weather) + !String.IsEmpty(Weather.Plugin)">$LOCALIZE[24027]</value>
-        <value condition="String.IsEqual(Skin.String(TopLeftHomeInfo),Weather) + String.IsEmpty(Weather.Plugin)">[COLOR=grey3]$LOCALIZE[24027][/COLOR]</value>
+        <value condition="String.IsEqual(Skin.String(TopLeftHomeInfo),Weather) + String.IsEmpty(Weather.Plugin)">[COLOR=white]$LOCALIZE[24027][/COLOR]</value>
     </variable>
     <variable name="InfoBarStats" type="text">
         <value condition="String.IsEqual(Container(9000).ListItem.Property(HiLiteItem),VideoNode) + Integer.IsGreater(Window(home).Property(PlaylistTVShowCount),0)">[B][COLOR=$VAR[MainColorOne]]$LOCALIZE[31424]$LOCALIZE[31156] [/COLOR][/B]$INFO[Window(home).Property(PlaylistTVShowCount)]     [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[20360]$LOCALIZE[31156] [/COLOR][/B]$INFO[Window(home).Property(PlaylistEpisodes)]     [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[16101]$LOCALIZE[31156] [/COLOR][/B]$INFO[Window(home).Property(PlaylistEpisodesUnWatched)]</value>

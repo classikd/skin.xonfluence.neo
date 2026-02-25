@@ -429,8 +429,8 @@ msgid "Show \"Paused\" in picture slideshow"
 msgstr "Tampilkan video dalam daftar berkas gambar."
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
-msgstr "Putar Trailer dalam sebuah jendela [COLOR=grey3](Hanya dialog informasi video Saja)[/COLOR]"
+msgid "Play trailers in a window [COLOR=white](Video information dialogue only)[/COLOR]"
+msgstr "Putar Trailer dalam sebuah jendela [COLOR=white](Hanya dialog informasi video Saja)[/COLOR]"
 
 msgctxt "#31105"
 msgid "Artwork"
@@ -441,7 +441,7 @@ msgid "Miscellaneous options"
 msgstr "Opsi Lainnya"
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgid "Hide flagging read from video filenames [COLOR=white](e.g. Blu-ray, HD-DVD)[/COLOR]"
 msgstr "Sembunyikan flagging membaca dari nama file video [COLOR = grey3] (misalnya Blu-ray, HD-DVD) [/ COLOR]"
 
 msgctxt "#31108"

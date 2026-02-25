@@ -142,7 +142,7 @@
                     <top>75</top>
                     <height>38</height>
                     <width>1200</width>
-                    <label>$INFO[PVR.NextRecordingTitle][COLOR=grey]$INFO[PVR.NextRecordingChannel, - [COLOR=grey3]([/COLOR],[COLOR=grey3])[/COLOR]][/COLOR]</label>
+                    <label>$INFO[PVR.NextRecordingTitle][COLOR=grey]$INFO[PVR.NextRecordingChannel, - [COLOR=white]([/COLOR],[COLOR=white])[/COLOR]][/COLOR]</label>
                     <align>right</align>
                     <aligny>center</aligny>
                     <font>font12_title</font>
@@ -209,7 +209,7 @@
                     <top>75</top>
                     <height>45</height>
                     <width>1200</width>
-                    <label>$INFO[PVR.NowRecordingTitle][COLOR=grey]$INFO[PVR.NowRecordingChannel, - [COLOR=grey3]([/COLOR],[COLOR=grey3])[/COLOR]][/COLOR]</label>
+                    <label>$INFO[PVR.NowRecordingTitle][COLOR=grey]$INFO[PVR.NowRecordingChannel, - [COLOR=white]([/COLOR],[COLOR=white])[/COLOR]][/COLOR]</label>
                     <align>right</align>
                     <aligny>center</aligny>
                     <font>font12_title</font>
@@ -272,7 +272,7 @@
                     <top>465</top>
                     <height>45</height>
                     <width>450</width>
-                    <label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=grey3] / [/COLOR]]</label>
+                    <label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=white] / [/COLOR]]</label>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>font12</font>
@@ -341,7 +341,7 @@
                     <top>475</top>
                     <height>45</height>
                     <width>450</width>
-                    <label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=grey3] / [/COLOR]]</label>
+                    <label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=white] / [/COLOR]]</label>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>font12</font>
@@ -395,7 +395,7 @@
                     <top>475</top>
                     <height>45</height>
                     <width>450</width>
-                    <label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=grey3] / [/COLOR]]</label>
+                    <label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=white] / [/COLOR]]</label>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>font12</font>
@@ -449,7 +449,7 @@
                     <top>475</top>
                     <height>45</height>
                     <width>450</width>
-                    <label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=grey3] / [/COLOR]]</label>
+                    <label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=white] / [/COLOR]]</label>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>font12</font>

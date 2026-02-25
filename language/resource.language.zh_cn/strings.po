@@ -429,8 +429,8 @@ msgid "Show \"Paused\" in picture slideshow"
 msgstr "图片幻灯片播放时显示“暂停”状态"
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
-msgstr "窗口播放预告片[COLOR=grey3]（仅在视频信息显示画面）[/COLOR]"
+msgid "Play trailers in a window [COLOR=white](Video information dialogue only)[/COLOR]"
+msgstr "窗口播放预告片[COLOR=white]（仅在视频信息显示画面）[/COLOR]"
 
 msgctxt "#31105"
 msgid "Artwork"
@@ -441,8 +441,8 @@ msgid "Miscellaneous options"
 msgstr "其他选项"
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
-msgstr "隐藏视频文件名的媒体标识[COLOR=grey3]（Blu-ray, HD-DVD）[/COLOR]"
+msgid "Hide flagging read from video filenames [COLOR=white](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgstr "隐藏视频文件名的媒体标识[COLOR=white]（Blu-ray, HD-DVD）[/COLOR]"
 
 msgctxt "#31108"
 msgid "Hide main menu buttons"

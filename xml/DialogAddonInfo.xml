@@ -171,7 +171,7 @@
                         <top>210</top>
                         <width>450</width>
                         <height>38</height>
-                        <label>$INFO[Container(400).CurrentPage, $LOCALIZE[31024] [COLOR=grey3]([/COLOR]]$INFO[Container(400).NumPages,/,[COLOR=grey3])[/COLOR]]</label>
+                        <label>$INFO[Container(400).CurrentPage, $LOCALIZE[31024] [COLOR=white]([/COLOR]]$INFO[Container(400).NumPages,/,[COLOR=white])[/COLOR]]</label>
                         <align>right</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -237,7 +237,7 @@
                         <top>210</top>
                         <width>450</width>
                         <height>38</height>
-                        <label>$INFO[Container(401).CurrentPage, $LOCALIZE[31024] [COLOR=grey3]([/COLOR]]$INFO[Container(401).NumPages,/,[COLOR=grey3])[/COLOR]]</label>
+                        <label>$INFO[Container(401).CurrentPage, $LOCALIZE[31024] [COLOR=white]([/COLOR]]$INFO[Container(401).NumPages,/,[COLOR=white])[/COLOR]]</label>
                         <align>right</align>
                         <aligny>center</aligny>
                         <font>font12</font>
