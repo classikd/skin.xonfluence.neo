@@ -760,20 +760,6 @@
                                 <onclick condition="Skin.String(MenuLAF,GraphFocused)">Skin.SetString(MenuLAF,GraphText)</onclick>
                                 <onclick condition="Skin.String(MenuLAF,GraphText)">Skin.Reset(MenuLAF)</onclick>
                             </control>
-                            <control type="button" id="200">
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <label>$LOCALIZE[50000]</label>
-                                <shadowcolor>black</shadowcolor>
-                                <label2>[COLOR=white]$VAR[FavoritesIconValue][/COLOR]</label2>
-                                <textcolor>white</textcolor>
-                                <focusedcolor>black</focusedcolor>
-                                <include>MenuButton</include>
-                                <onclick condition="String.IsEmpty(Skin.String(FavoritesIcon))">Skin.SetString(FavoritesIcon,Star)</onclick>
-                                <onclick condition="Skin.String(FavoritesIcon,Star)">Skin.SetString(FavoritesIcon,Bookmark)</onclick>
-                                <onclick condition="Skin.String(FavoritesIcon,Bookmark)">Skin.Reset(FavoritesIcon)</onclick>
-                            </control>
 							<control type="radiobutton" id="135">
                                 <width>1125</width>
                                 <height>60</height>
@@ -1760,6 +1746,20 @@
                                 <include>MenuButton</include>
                                 <onclick>SetProperty(UsrSelectBtn,UsrFavBtnCmd,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
+                            </control>
+                            <control type="button" id="200">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label>$LOCALIZE[50000]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>[COLOR=white]$VAR[FavoritesIconValue][/COLOR]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEmpty(Skin.String(FavoritesIcon))">Skin.SetString(FavoritesIcon,Star)</onclick>
+                                <onclick condition="Skin.String(FavoritesIcon,Star)">Skin.SetString(FavoritesIcon,Bookmark)</onclick>
+                                <onclick condition="Skin.String(FavoritesIcon,Bookmark)">Skin.Reset(FavoritesIcon)</onclick>
                             </control>
                             <control type="radiobutton" id="194">
                                 <width>1125</width>

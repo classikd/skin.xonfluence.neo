@@ -2779,7 +2779,7 @@ msgid "Enable choosing default menu item"
 msgstr ""
 
 msgctxt "#50000"
-msgid "Favorites Icon"
+msgid "Favourites Button Icon"
 msgstr ""
 
 msgctxt "#50001"
