@@ -249,7 +249,7 @@
                 <height>688</height>
                 <aspectratio>stretch</aspectratio>
                 <fadetime>600</fadetime>
-                <texture background="true" colordiffuse="$VAR[MainColorOne]">settings-alt.jpg</texture>
+                <texture background="true">settings-alt.jpg</texture>
             </control>
             <control type="image">
                 <left>403</left>
