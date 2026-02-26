@@ -3656,7 +3656,7 @@
                 <animation effect="slide" start="0,0" end="450,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,2)">Conditional</animation>
                 <animation effect="slide" start="0,0" end="225,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,3)">Conditional</animation>
                 <left>80</left>
-                <top>0</top>
+                <top>5</top>
                 <width>1730</width>
                 <height>428</height>
                 <onleft>$PARAM[Control]</onleft>
@@ -3686,76 +3686,80 @@
                         <left>20</left>
                         <top>15</top>
                         <width>420</width>
-                        <height>340</height>
+                        <height>280</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$VAR[EpisodeThumbImage]</texture>
                         <bordertexture border="5">blank.png</bordertexture>
                         <include>TextureBorderWidgets</include>
-                        <visible>!String.IsEqual(ListItem.DBType,tvshow)</visible>
-                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
-                    </control>
-					<control type="image">
-                        <left>20</left>
-                        <top>15</top>
-                        <width>420</width>
-                        <height>322</height>
-                        <aspectratio>scale</aspectratio>
-                        <texture background="true">$VAR[EpisodeThumbImage]</texture>
-                        <bordertexture border="5">blank.png</bordertexture>
-                        <include>TextureBorderWidgets</include>
-                        <visible>String.IsEqual(ListItem.DBType,tvshow)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
                     <control type="image">
                         <left>20</left>
                         <top>15</top>
                         <width>420</width>
-                        <height>322</height>
+                        <height>280</height>
                         <aspectratio>scale</aspectratio>
                         <texture>$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
                         <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
+
+                    <!-- serie -->
                     <control type="label">
                         <left>20</left>
-                        <top>345</top>
+                        <top>315</top>
                         <width>420</width>
                         <height>30</height>
                         <font>font10</font>
                         <textcolor>grey</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>grey</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.TVShowTitle] - $INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]</label>
 						<visible>String.IsEqual(ListItem.DBType,episode) + ![String.IsEmpty(ListItem.TVShowTitle) | String.IsEmpty(ListItem.Season)]</visible>
                     </control>
-                    <control type="label">
+					<control type="label">
                         <left>20</left>
-                        <top>367</top>
+                        <top>350</top>
                         <width>420</width>
                         <height>30</height>
-                        <font>font12_title</font>
+                        <font>font13_title</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>white</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Title]</label>
+						<visible>String.IsEqual(ListItem.DBType,episode)</visible>
+                    </control>
+
+                    <!-- movie -->
+                    <control type="label">
+                        <left>20</left>
+                        <top>315</top>
+                        <width>420</width>
+                        <height>30</height>
+                        <font>font10</font>
+                        <textcolor>grey</textcolor>
+                        <selectedcolor>grey</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Year]</label>
+						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
+                    </control>
+                    <control type="label">
+                        <left>20</left>
+                        <top>350</top>
+                        <width>420</width>
+                        <height>30</height>
+                        <font>font13_title</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
 						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
                     </control>
   
-					<control type="label">
-                        <left>20</left>
-                        <top>375</top>
-                        <width>420</width>
-                        <height>30</height>
-                        <font>font11</font>
-                        <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Title]</label>
-						<visible>String.IsEqual(ListItem.DBType,episode)</visible>
-                    </control>
 
                     <control type="image">
                         <left>24</left>
@@ -3789,7 +3793,7 @@
                                         
                     <control type="progress">
                         <left>25</left>
-                        <top>347</top>
+                        <top>288</top>
                         <width>410</width>
                         <height>3</height>
                         <info>ListItem.PercentPlayed</info>
@@ -3832,26 +3836,12 @@
                         <left>20</left>
                         <top>15</top>
                         <width>420</width>
-                        <height>340</height>
+                        <height>280</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$VAR[EpisodeThumbImage]</texture>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderWidgets</include>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
-                        <visible>!String.IsEqual(ListItem.DBType,tvshow)</visible>
-                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
-                    </control>
-					<control type="image">
-                        <left>20</left>
-                        <top>15</top>
-                        <width>420</width>
-                        <height>340</height>
-                        <aspectratio>scale</aspectratio>
-                        <texture background="true">$VAR[EpisodeThumbImage]</texture>
-                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
-                        <include>TextureBorderWidgets</include>
-                        <visible>Control.HasFocus($PARAM[Control])</visible>
-                        <visible>String.IsEqual(ListItem.DBType,tvshow)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
 
@@ -3859,26 +3849,12 @@
                         <left>20</left>
                         <top>15</top>
                         <width>420</width>
-                        <height>340</height>
+                        <height>280</height>
                         <aspectratio>scale</aspectratio>
                         <texture>$VAR[EpisodeThumbImage]</texture>
                         <bordertexture border="5">blank.png</bordertexture>
                         <include>TextureBorderWidgets</include>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
-                        <visible>!String.IsEqual(ListItem.DBType,tvshow)</visible>
-                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
-                    </control>
-					<control type="image">
-                        <left>20</left>
-                        <top>15</top>
-                        <width>420</width>
-                        <height>340</height>
-                        <aspectratio>scale</aspectratio>
-                        <texture>$VAR[EpisodeThumbImage]</texture>
-                        <bordertexture border="5">blank.png</bordertexture>
-                        <include>TextureBorderWidgets</include>
-                        <visible>!Control.HasFocus($PARAM[Control])</visible>
-                        <visible>String.IsEqual(ListItem.DBType,tvshow)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
 
@@ -3886,37 +3862,84 @@
                         <left>20</left>
                         <top>15</top>
                         <width>420</width>
-                        <height>340</height>
+                        <height>280</height>
                         <aspectratio>scale</aspectratio>
                         <texture>$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
                         <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
 
+                    <!-- episode -->
                     <control type="label">
                         <left>20</left>
-                        <top>345</top>
+                        <top>315</top>
                         <width>420</width>
                         <height>30</height>
                         <font>font10</font>
                         <textcolor>grey</textcolor>
                         <shadowcolor>black</shadowcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>grey</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.TVShowTitle] - $INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]</label>
 						<visible>String.IsEqual(ListItem.DBType,episode)</visible>
                     </control>
+                    
+                    <control type="group">
+					    <visible>String.IsEqual(ListItem.DBType,episode)</visible>
+                        <control type="label">
+                            <left>20</left>
+                            <top>350</top>
+                            <width>420</width>
+                            <height>30</height>
+                            <font>font13_title</font>
+                            <textcolor>white</textcolor>
+                            <selectedcolor>white</selectedcolor>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <label>$INFO[ListItem.Title]</label>
+                            <visible>!Control.HasFocus($PARAM[Control])</visible>
+                        </control>
+                        <control type="label">
+                            <left>20</left>
+                            <top>350</top>
+                            <width>420</width>
+                            <height>30</height>
+                            <font>font13_title</font>
+                            <textcolor>$VAR[MainColorOne]</textcolor>
+                            <selectedcolor>$VAR[MainColorOne]</selectedcolor>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <label>$INFO[ListItem.Title]</label>
+                            <visible>Control.HasFocus($PARAM[Control])</visible>
+                        </control>
+					</control>			
+
+                    <!-- movie -->
+                    <control type="label">
+                        <left>20</left>
+                        <top>315</top>
+                        <width>420</width>
+                        <height>30</height>
+                        <font>font10</font>
+                        <textcolor>grey</textcolor>
+                        <selectedcolor>grey</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Year]</label>
+						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
+                    </control>
+
 					<control type="group">
 					    <visible>!String.IsEqual(ListItem.DBType,episode)</visible>
                         <control type="label">
                             <left>20</left>
-                            <top>367</top>
+                            <top>350</top>
                             <width>420</width>
                             <height>30</height>
-                            <font>font12_title</font>
+                            <font>font13_title</font>
                             <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>white</selectedcolor>
                             <align>center</align>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
@@ -3924,47 +3947,19 @@
                         </control>
                         <control type="label">
                             <left>20</left>
-                            <top>367</top>
+                            <top>350</top>
                             <width>420</width>
                             <height>30</height>
-                            <font>font12_title</font>
+                            <font>font13_title</font>
                             <textcolor>$VAR[MainColorOne]</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                             <align>center</align>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
                             <visible>Control.HasFocus($PARAM[Control])</visible>
                         </control>
 					</control>
-                    <control type="group">
-					    <visible>String.IsEqual(ListItem.DBType,episode)</visible>
-                        <control type="label">
-                            <left>20</left>
-                            <top>375</top>
-                            <width>420</width>
-                            <height>30</height>
-                            <font>font11</font>
-                            <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <label>$INFO[ListItem.Title]</label>
-                            <visible>!Control.HasFocus($PARAM[Control])</visible>
-                        </control>
-                        <control type="label">
-                            <left>20</left>
-                            <top>375</top>
-                            <width>420</width>
-                            <height>30</height>
-                            <font>font11</font>
-                            <textcolor>$VAR[MainColorOne]</textcolor>
-                            <selectedcolor>selected</selectedcolor>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <label>$INFO[ListItem.Title]</label>
-                            <visible>Control.HasFocus($PARAM[Control])</visible>
-                        </control>
-					</control>					
+		
 
                     <control type="image">
                         <left>24</left>
@@ -3997,25 +3992,13 @@
 
                     <control type="progress">
                         <left>25</left>
-                        <top>347</top>
-                        <width>410</width>
-                        <height>3</height>
-                        <info>ListItem.PercentPlayed</info>
-                        <visible>ListItem.IsResumable</visible>
-                        <texturebg border="0">white.png</texturebg>
-                        <midtexture border="0" colordiffuse="FFFF0000">white.png</midtexture>
-                        <visible>Control.HasFocus($PARAM[Control])</visible>
-                    </control> 
-                    <control type="progress">
-                        <left>25</left>
-                        <top>347</top>
+                        <top>288</top>
                         <width>410</width>
                         <height>3</height>
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
                         <texturebg border="0">white.png</texturebg>
                         <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
-                        <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control> 
 
                 </focusedlayout>
@@ -4050,7 +4033,7 @@
                         <height>30</height>
                         <font>font11</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Premiered]</label>
@@ -4062,19 +4045,20 @@
                         <height>30</height>
                         <font>font10</font>
                         <textcolor>grey</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>grey</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <label>$INFO[ListItem.TVShowTitle] - $INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]</label>
+                        <label>$INFO[ListItem.TVShowTitle] - $INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]</label> 
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
 					<control type="label">
                         <left>20</left>
                         <top>360</top>
                         <width>420</width>
                         <height>30</height>
-                        <font>font11</font>
+                        <font>font12_title</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Title]</label>
@@ -4132,32 +4116,18 @@
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
-                    <control type="group">
-					    <left>20</left>
+                    <control type="label">
+                        <left>20</left>
                         <top>300</top>
-                        <control type="label">
-                            <width>420</width>
-                            <height>30</height>
-                            <font>font11</font>
-                            <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <label>$INFO[ListItem.Premiered]</label>
-                            <visible>!Control.HasFocus($PARAM[Control])</visible>
-                        </control>
-                        <control type="label">
-                            <width>420</width>
-                            <height>30</height>
-                            <font>font11</font>
-                            <textcolor>$VAR[MainColorOne]</textcolor>
-                            <selectedcolor>selected</selectedcolor>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <label>$INFO[ListItem.Premiered]</label>
-                            <visible>Control.HasFocus($PARAM[Control])</visible>
-                        </control>
-					</control>
+                        <width>420</width>
+                        <height>30</height>
+                        <font>font11</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Premiered]</label>
+                    </control>
 					<control type="label">
                         <left>20</left>
                         <top>330</top>
@@ -4165,11 +4135,11 @@
                         <height>30</height>
                         <font>font10</font>
                         <textcolor>grey</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>grey</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.TVShowTitle] - $INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]</label>
-						<visible>String.IsEqual(ListItem.DBType,episode)</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
                     <control type="group">
 					    <left>20</left>
@@ -4177,9 +4147,9 @@
                         <control type="label">
                             <width>420</width>
                             <height>30</height>
-                            <font>font11</font>
+                            <font>font12_title</font>
                             <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>white</selectedcolor>
                             <align>center</align>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Title]</label>
@@ -4188,9 +4158,9 @@
                         <control type="label">
                             <width>420</width>
                             <height>30</height>
-                            <font>font11</font>
+                            <font>font12_title</font>
                             <textcolor>$VAR[MainColorOne]</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                             <align>center</align>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Title]</label>
