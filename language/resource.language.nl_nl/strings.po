@@ -1,6 +1,6 @@
 # Kodi Media Center language file
 # Addon Name: Xonfluence
-# Addon id: skin.xonfluence.modern
+# Addon id: skin.xonfluence.neo
 # Addon Provider: Helly1206
 msgid ""
 msgstr ""
