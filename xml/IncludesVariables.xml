@@ -3233,7 +3233,7 @@
         <value>$INFO[Skin.String(AlternativeBackgroundPath)]</value>
     </variable>
     <variable name="MainColorOne" type="text">
-        <value condition="String.IsEmpty(Skin.String(UsrColorOne))">blue</value>
+        <value condition="String.IsEmpty(Skin.String(UsrColorOne))">mediumvioletred</value>
         <value condition="!String.IsEmpty(Skin.String(UsrColorOne))">$INFO[Skin.String(UsrColorOne)]</value>
         <value>blue</value>
     </variable>
