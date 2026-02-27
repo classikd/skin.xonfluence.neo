@@ -476,7 +476,7 @@
             </control>
 
             <control type="image">
-                <left>18</left>
+                <left>0</left>
                 <right>0</right>
                 <top>0</top>
                 <height>45</height>
@@ -507,12 +507,12 @@
             <control type="radiobutton" id="610">
                 <colordiffuse>CCFFFFFF</colordiffuse>
                 <description>Global Search</description>
-                <left>18</left>
+                <left>0</left>
                 <top>0</top>
                 <height>45</height>
                 <width>228</width>
-                <textwidth>225</textwidth>
-                <textoffsetx>15</textoffsetx>
+                <textwidth>180</textwidth>
+                <textoffsetx>20</textoffsetx>
                 <align>left</align>
                 <aligny>center</aligny>
                 <font>font12</font>
