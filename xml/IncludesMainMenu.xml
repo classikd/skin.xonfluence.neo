@@ -42,7 +42,7 @@
             <width>2220</width>
             <height>113</height>
             <texture border="0,6,0,6">HomeBack.png</texture>
-            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+            <include>HomeTransparentEffect</include>
         </control>
     </include>
 	
@@ -53,7 +53,7 @@
             <width>2220</width>
             <height>158</height>
             <texture border="0,6,0,6">HomeBack.png</texture>
-            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+            <include>HomeTransparentEffect</include>
         </control>
     </include>
 	
@@ -64,7 +64,7 @@
             <width>207</width>
             <height>113</height>
             <texture>SideFade.png</texture>
-            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+            <include>HomeTransparentEffect</include>
         </control>
         <control type="image">
             <left>192r</left>
@@ -72,7 +72,7 @@
             <width>207</width>
             <height>113</height>
             <texture flipx="true">SideFade.png</texture>
-            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+            <include>HomeTransparentEffect</include>
         </control>
     </include>
 	
@@ -83,7 +83,7 @@
             <width>207</width>
             <height>158</height>
             <texture>SideFade.png</texture>
-            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+            <include>HomeTransparentEffect</include>
         </control>
         <control type="image">
             <left>192r</left>
@@ -91,7 +91,7 @@
             <width>207</width>
             <height>158</height>
             <texture flipx="true">SideFade.png</texture>
-            <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+            <include>HomeTransparentEffect</include>
         </control>
     </include>
 	
@@ -1949,7 +1949,7 @@
                 <width>36</width>
                 <height>36</height>
                 <texture>icon-rss.png</texture>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <include>HomeTransparentEffect</include>
             </control>
         </control>
 	</include>
@@ -1967,7 +1967,7 @@
                 <top>0</top>
                 <width>68</width>
                 <height>68</height>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <include>HomeTransparentEffect</include>
                 <texture border="5">floor_button.png</texture>
                 <visible>!Control.HasFocus(23) + !Skin.HasSetting(HideHomePowerBtn)</visible>
             </control>
@@ -2037,7 +2037,7 @@
                 <top>0</top>
                 <width>68</width>
                 <height>68</height>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <include>HomeTransparentEffect</include>
                 <texture border="5">floor_button.png</texture>
                 <visible>!Control.HasFocus(22) + !Skin.HasSetting(HideFavorites)</visible>
             </control>
@@ -2106,7 +2106,7 @@
                 <top>0</top>
                 <width>68</width>
                 <height>68</height>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <include>HomeTransparentEffect</include>
                 <texture border="5">floor_button.png</texture>
                 <visible>!Control.HasFocus(25) + Skin.HasSetting(FloorGlobalSearch)</visible>
             </control>

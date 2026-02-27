@@ -44,7 +44,7 @@
                 <width>207</width>
                 <height>52</height>
                 <texture>SideFade.png</texture>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <include>HomeTransparentEffect</include>
                 <visible>
                     String.IsEqual(Container(9000).ListItem.Property(SubMenu),Videos) + Integer.IsGreater(Container(9010).NumItems,0) |
                     String.IsEqual(Container(9000).ListItem.Property(SubMenu),Movies) + Integer.IsGreater(Container(9016).NumItems,0) |
@@ -71,7 +71,7 @@
                 <width>207</width>
                 <height>52</height>
                 <texture flipx="true">SideFade.png</texture>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <include>HomeTransparentEffect</include>
                 <visible>
                     String.IsEqual(Container(9000).ListItem.Property(SubMenu),Videos) + Integer.IsGreater(Container(9010).NumItems,0) |
                     String.IsEqual(Container(9000).ListItem.Property(SubMenu),Movies) + Integer.IsGreater(Container(9016).NumItems,0) |

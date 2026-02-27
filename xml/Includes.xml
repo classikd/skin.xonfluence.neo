@@ -2451,6 +2451,7 @@
         <animation effect="fade" start="100" end="90" time="0" condition="String.Contains(Skin.String(MediaPanelTrans),10)">Conditional</animation>
     </include>
     <include name="HomeTransparentEffect">
+        <animation effect="fade" start="100" end="70" time="0" condition="String.IsEmpty(Skin.String(HomeTrans))">Conditional</animation>
         <animation effect="fade" start="100" end="40" time="0" condition="String.Contains(Skin.String(HomeTrans),85)">Conditional</animation>
         <animation effect="fade" start="100" end="50" time="0" condition="String.Contains(Skin.String(HomeTrans),70)">Conditional</animation>
         <animation effect="fade" start="100" end="60" time="0" condition="String.Contains(Skin.String(HomeTrans),55)">Conditional</animation>

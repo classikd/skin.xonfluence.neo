@@ -117,7 +117,7 @@
                 <width>52</width>
                 <height>52</height>
                 <texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <include>HomeTransparentEffect</include>
                 <visible>Integer.IsGreater(Container($PARAM[Control]).NumItems,0)</visible>
 				<animation effect="slide" start="0,0" end="145,0" time="0" condition="String.IsEqual(Container(9001).NumItems,5)">conditional</animation>
                 <animation effect="slide" start="0,0" end="290,0" time="0" condition="String.IsEqual(Container(9001).NumItems,4)">conditional</animation>
@@ -131,7 +131,7 @@
                 <width>52</width>
                 <height>52</height>
                 <texture border="0,0,0,3">HomeSubEnd.png</texture>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <include>HomeTransparentEffect</include>
                 <animation effect="slide" start="0,0" end="-145,0" time="0" condition="String.IsEqual(Container(9001).NumItems,5)">conditional</animation>
                 <animation effect="slide" start="0,0" end="-290,0" time="0" condition="String.IsEqual(Container(9001).NumItems,4)">conditional</animation>
                 <animation effect="slide" start="0,0" end="-434,0" time="0" condition="String.IsEqual(Container(9001).NumItems,3)">conditional</animation>

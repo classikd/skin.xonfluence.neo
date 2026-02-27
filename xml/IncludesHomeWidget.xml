@@ -1617,7 +1617,7 @@
                         <width>350</width>
                         <height>330</height>
                         <texture border="15">RecentAddedBack.png</texture>
-                        <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                        <include>HomeTransparentEffect</include>
                     </control>
                     <control type="multiimage">
                         <left>15</left>
@@ -1678,7 +1678,7 @@
                         <width>350</width>
                         <height>330</height>
                         <texture border="15">RecentAddedBack.png</texture>
-                        <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                        <include>HomeTransparentEffect</include>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
 
@@ -1801,7 +1801,7 @@
                 <width>1980</width>
                 <height>420</height>
                 <texture border="5">RecentAddedBack.png</texture>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <include>HomeTransparentEffect</include>
                 <visible>Integer.IsGreater(Container($PARAM[Control]).NumItems,0)</visible>
             </control>
             <control type="list" id="$PARAM[Control]">
@@ -2152,7 +2152,7 @@
                         <width>230</width>
                         <height>330</height>
                         <texture border="15">RecentAddedBack.png</texture>
-                        <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                        <include>HomeTransparentEffect</include>
                     </control>
 
                     
@@ -2222,7 +2222,7 @@
                         <width>230</width>
                         <height>330</height>
                         <texture border="15">RecentAddedBack.png</texture>
-                        <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                        <include>HomeTransparentEffect</include>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
                     <control type="image">
@@ -2348,7 +2348,7 @@
                 <width>1980</width>
                 <height>420</height>
                 <texture border="5">RecentAddedBack.png</texture>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <include>HomeTransparentEffect</include>
                 <visible>Integer.IsGreater(Container($PARAM[Control]).NumItems,0)</visible>
             </control>
             <control type="list" id="$PARAM[Control]">
@@ -2599,7 +2599,7 @@
                         <width>200</width>
                         <height>330</height>
                         <texture border="15">RecentAddedBack.png</texture>
-                        <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                        <include>HomeTransparentEffect</include>
                     </control>
 
                     <control type="image">
@@ -2676,7 +2676,7 @@
                         <width>200</width>
                         <height>330</height>
                         <texture border="15">RecentAddedBack.png</texture>
-                        <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                        <include>HomeTransparentEffect</include>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
                     <control type="image">
@@ -2796,7 +2796,7 @@
                 <width>1980</width>
                 <height>420</height>
                 <texture border="5">RecentAddedBack.png</texture>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <include>HomeTransparentEffect</include>
             </control>
             <control type="list" id="$PARAM[Control]">
                 <animation effect="slide" start="0,0" end="730,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,1)">Conditional</animation>
@@ -3033,7 +3033,7 @@
                         <width>350</width>
                         <height>330</height>
                         <texture border="15">RecentAddedBack.png</texture>
-                        <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                        <include>HomeTransparentEffect</include>
                     </control>
 
                     <control type="image">
@@ -3177,7 +3177,7 @@
                         <width>350</width>
                         <height>330</height>
                         <texture border="15">RecentAddedBack.png</texture>
-                        <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                        <include>HomeTransparentEffect</include>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
                     
@@ -3420,7 +3420,7 @@
                         <width>350</width>
                         <height>330</height>
                         <texture border="15">RecentAddedBack.png</texture>
-                        <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                        <include>HomeTransparentEffect</include>
                     </control>
 
                     <control type="image">
@@ -3491,7 +3491,7 @@
                         <width>350</width>
                         <height>330</height>
                         <texture border="15">RecentAddedBack.png</texture>
-                        <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                        <include>HomeTransparentEffect</include>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
                     
@@ -3639,7 +3639,7 @@
                 <width>1980</width>
                 <height>420</height>
                 <texture border="5">RecentAddedBack.png</texture>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <include>HomeTransparentEffect</include>
 				<visible>!$PARAM[embuaryinfonextaired]</visible>
             </control>
 			<control type="image">
@@ -3648,7 +3648,7 @@
                 <width>1980</width>
                 <height>420</height>
                 <texture border="5">RecentAddedBack.png</texture>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <include>HomeTransparentEffect</include>
 				<visible>$PARAM[embuaryinfonextaired]</visible>
             </control>
             <control type="list" id="$PARAM[Control]">

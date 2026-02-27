@@ -232,7 +232,7 @@
                 <height>125</height>
                 <texture border="5">nowplaying-bg.png</texture>
                 <include>SubMenuAnimation</include>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <include>HomeTransparentEffect</include>
             </control>
             <visible>Player.HasVideo + !Skin.HasSetting(HideNowPlayingInfo)</visible>
             <include>VisibleFadeEffect</include>
@@ -471,7 +471,7 @@
                 <height>45</height>
                 <width>1500</width>
                 <texture border="5">current-playing-bg.png</texture>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <include>HomeTransparentEffect</include>
                 <visible>Skin.HasSetting(FloorGlobalSearch)</visible>
             </control>
 
@@ -482,7 +482,7 @@
                 <height>45</height>
                 <width>1500</width>
                 <texture border="5">current-playing-bg.png</texture>
-                <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
+                <include>HomeTransparentEffect</include>
                 <visible>!Skin.HasSetting(FloorGlobalSearch)</visible>
             </control>
 
