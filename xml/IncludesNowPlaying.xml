@@ -472,7 +472,7 @@
                 <width>1500</width>
                 <texture border="5">current-playing-bg.png</texture>
                 <include>HomeTransparentEffect</include>
-                <visible>Skin.HasSetting(FloorGlobalSearch)</visible>
+                <visible>Skin.HasSetting(FloorGlobalSearch) | Skin.HasSetting(DisableGlobalSearch)</visible>
             </control>
 
             <control type="image">
@@ -483,7 +483,7 @@
                 <width>1500</width>
                 <texture border="5">current-playing-bg.png</texture>
                 <include>HomeTransparentEffect</include>
-                <visible>!Skin.HasSetting(FloorGlobalSearch)</visible>
+                <visible>!Skin.HasSetting(FloorGlobalSearch) + !Skin.HasSetting(DisableGlobalSearch)</visible>
             </control>
 
             <depth>DepthMenu-</depth>
@@ -495,6 +495,7 @@
             <animation effect="slide" start="0,0" end="-150,0" time="225" condition="!Player.HasMedia + Skin.HasSetting(EnableHomeStats)">conditional</animation>
             <animation effect="fade" start="100" end="65" time="150" condition="Window.IsVisible(2123) | Window.IsVisible(2124) | Window.IsVisible(2125) | Window.IsVisible(Favourites)">conditional</animation>
             <animation effect="slide" start="0,0" end="600,0" time="225" condition="!Player.HasMedia + !Skin.HasSetting(EnableHomeStats)">conditional</animation>
+            <animation effect="slide" start="0,0" end="800,0" time="225" condition="!Player.HasMedia + !Skin.HasSetting(EnableHomeStats) + Skin.HasSetting(DisableGlobalSearch)">conditional</animation>
             <animation type="WindowOpen" reversible="false">
                 <effect type="zoom" start="80" end="100" center="960,540" easing="out" tween="back" time="225" />
                 <effect type="fade" start="0" end="100" time="225" />
