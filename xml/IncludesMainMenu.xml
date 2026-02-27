@@ -110,20 +110,6 @@
         <movement>1</movement>
         <orientation>Horizontal</orientation>
         <itemlayout height="90" width="450">
-            <control type="image">
-                <left>0</left>
-                <top>6</top>
-                <width>1</width>
-                <height>85</height>
-                <texture>HomeSeperator.png</texture>
-            </control>
-            <control type="image">
-                <left>450</left>
-                <top>6</top>
-                <width>1</width>
-                <height>85</height>
-                <texture>HomeSeperator.png</texture>
-            </control>
             <control type="label">
                 <left>8</left>
                 <top>15</top>
@@ -155,16 +141,10 @@
             <control type="image">
                 <left>0</left>
                 <top>0</top>
-                <width>1</width>
-                <height>85</height>
-                <texture>HomeSeperator.png</texture>
-            </control>
-            <control type="image">
-                <left>450</left>
-                <top>6</top>
-                <width>1</width>
-                <height>85</height>
-                <texture>HomeSeperator.png</texture>
+                <width>450</width>
+                <height>113</height>
+                <texture colordiffuse="$VAR[MainColorOne]">white85.png</texture>
+                <visible>!Control.HasFocus(9000)</visible>
             </control>
             <control type="image">
                 <left>0</left>
@@ -172,10 +152,11 @@
                 <width>450</width>
                 <height>113</height>
                 <texture colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                <visible>Control.HasFocus(9000)</visible>
             </control>
             <control type="label">
                 <left>8</left>
-                <top>0</top>
+                <top>15</top>
                 <width>435</width>
                 <height>90</height>
                 <font>font_MainMenu</font>
@@ -189,7 +170,7 @@
             </control>
             <control type="label">
                 <left>8</left>
-                <top>0</top>
+                <top>15</top>
                 <width>435</width>
                 <height>90</height>
                 <font>font_MainMenu</font>
@@ -249,20 +230,6 @@
             <movement>1</movement>
             <orientation>Horizontal</orientation>
             <itemlayout height="158" width="321">
-                <control type="image">
-                    <left>0</left>
-                    <top>0</top>
-                    <width>1</width>
-                    <height>158</height>
-                    <texture>HomeSeperator.png</texture>
-                </control>
-                <control type="image">
-                    <left>320</left>
-                    <top>0</top>
-                    <width>1</width>
-                    <height>158</height>
-                    <texture>HomeSeperator.png</texture>
-                </control>
                 <control type="label">
                     <left>8</left>
                     <top>90</top>
@@ -278,7 +245,7 @@
                 </control>
                 <control type="image">
                     <left>8</left>
-                    <top>10</top>
+                    <top>5</top>
                     <width>306</width>
                     <height>90</height>
                     <aspectratio>keep</aspectratio>
@@ -288,7 +255,7 @@
                     <animation effect="zoom" end="160" center="auto" time="0" delay="0" condition="!String.IsEqual(Skin.String(MenuLAF),GraphText)">Conditional</animation>
                 </control>
             </itemlayout>
-            <focusedlayout height="90" width="321">
+            <focusedlayout height="158" width="321">
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
@@ -335,7 +302,7 @@
                 </control>
                 <control type="image">
                     <left>8</left>
-                    <top>10</top>
+                    <top>5</top>
                     <width>306</width>
                     <height>90</height>
                     <aspectratio>keep</aspectratio>
@@ -348,7 +315,7 @@
                 </control>
                 <control type="image">
                     <left>8</left>
-                    <top>10</top>
+                    <top>5</top>
                     <width>306</width>
                     <height>90</height>
                     <aspectratio>keep</aspectratio>
