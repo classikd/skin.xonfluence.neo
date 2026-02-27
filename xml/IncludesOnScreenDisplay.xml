@@ -180,6 +180,7 @@
                 <aligny>center</aligny>
                 <label>$VAR[VideoNowPlaying]</label>
                 <textcolor>$VAR[MainColorOne]</textcolor>
+                <shadowcolor>black</shadowcolor>
                 <scroll>true</scroll>
             </control>
             <control type="image" id="1">
