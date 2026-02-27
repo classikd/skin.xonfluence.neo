@@ -348,6 +348,50 @@
                                 <onclick>ActivateWindow(2130)</onclick>
                                 <include>MenuButton</include>
                             </control>
+                            <control type="button" id="134">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label>$LOCALIZE[31987]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>[COLOR=white]$VAR[MenuLAFValue][/COLOR]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEmpty(Skin.String(MenuLAF))">Skin.SetString(MenuLAF,Graph)</onclick>
+                                <onclick condition="Skin.String(MenuLAF,Graph)">Skin.SetString(MenuLAF,GraphFocused)</onclick>
+                                <onclick condition="Skin.String(MenuLAF,GraphFocused)">Skin.SetString(MenuLAF,GraphText)</onclick>
+                                <onclick condition="Skin.String(MenuLAF,GraphText)">Skin.Reset(MenuLAF)</onclick>
+                            </control>
+                            <control type="button" id="131">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label>$LOCALIZE[31949]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>[COLOR=white]$VAR[OSDLAFValue][/COLOR]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEmpty(Skin.String(OSDLAF))">Skin.SetString(OSDLAF,Modern)</onclick>
+                                <onclick condition="Skin.String(OSDLAF,Modern)">Skin.SetString(OSDLAF,Max)</onclick>
+                                <onclick condition="Skin.String(OSDLAF,Max)">Skin.Reset(OSDLAF)</onclick>
+                            </control>
+                            <control type="button" id="129">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label>$LOCALIZE[31975]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>[COLOR=white]$VAR[SideBladeLabelValue][/COLOR]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEmpty(Skin.String(SideBladeLabel))">Skin.SetString(SideBladeLabel,Small)</onclick>
+                                <onclick condition="Skin.String(SideBladeLabel,Small)">Skin.SetString(SideBladeLabel,Top)</onclick>
+                                <onclick condition="Skin.String(SideBladeLabel,Top)">Skin.SetString(SideBladeLabel,Bottom)</onclick>
+                                <onclick condition="Skin.String(SideBladeLabel,Bottom)">Skin.Reset(SideBladeLabel)</onclick>
+                            </control>
                             <control type="radiobutton" id="99">
                                 <description>Use skinshortcuts for menu config</description>
                                 <width>1125</width>
@@ -716,50 +760,6 @@
                                 <onclick condition="Skin.String(TextureBorder,None)">Skin.Reset(TextureBorder)</onclick>
                             </control>
                             -->
-                            <control type="button" id="129">
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <label>$LOCALIZE[31975]</label>
-                                <shadowcolor>black</shadowcolor>
-                                <label2>[COLOR=white]$VAR[SideBladeLabelValue][/COLOR]</label2>
-                                <textcolor>white</textcolor>
-                                <focusedcolor>black</focusedcolor>
-                                <include>MenuButton</include>
-                                <onclick condition="String.IsEmpty(Skin.String(SideBladeLabel))">Skin.SetString(SideBladeLabel,Small)</onclick>
-                                <onclick condition="Skin.String(SideBladeLabel,Small)">Skin.SetString(SideBladeLabel,Top)</onclick>
-                                <onclick condition="Skin.String(SideBladeLabel,Top)">Skin.SetString(SideBladeLabel,Bottom)</onclick>
-                                <onclick condition="Skin.String(SideBladeLabel,Bottom)">Skin.Reset(SideBladeLabel)</onclick>
-                            </control>
-                            <control type="button" id="131">
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <label>$LOCALIZE[31949]</label>
-                                <shadowcolor>black</shadowcolor>
-                                <label2>[COLOR=white]$VAR[OSDLAFValue][/COLOR]</label2>
-                                <textcolor>white</textcolor>
-                                <focusedcolor>black</focusedcolor>
-                                <include>MenuButton</include>
-                                <onclick condition="String.IsEmpty(Skin.String(OSDLAF))">Skin.SetString(OSDLAF,Modern)</onclick>
-                                <onclick condition="Skin.String(OSDLAF,Modern)">Skin.SetString(OSDLAF,Max)</onclick>
-                                <onclick condition="Skin.String(OSDLAF,Max)">Skin.Reset(OSDLAF)</onclick>
-                            </control>
-                            <control type="button" id="134">
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <label>$LOCALIZE[31987]</label>
-                                <shadowcolor>black</shadowcolor>
-                                <label2>[COLOR=white]$VAR[MenuLAFValue][/COLOR]</label2>
-                                <textcolor>white</textcolor>
-                                <focusedcolor>black</focusedcolor>
-                                <include>MenuButton</include>
-                                <onclick condition="String.IsEmpty(Skin.String(MenuLAF))">Skin.SetString(MenuLAF,Graph)</onclick>
-                                <onclick condition="Skin.String(MenuLAF,Graph)">Skin.SetString(MenuLAF,GraphFocused)</onclick>
-                                <onclick condition="Skin.String(MenuLAF,GraphFocused)">Skin.SetString(MenuLAF,GraphText)</onclick>
-                                <onclick condition="Skin.String(MenuLAF,GraphText)">Skin.Reset(MenuLAF)</onclick>
-                            </control>
 							<control type="radiobutton" id="135">
                                 <width>1125</width>
                                 <height>60</height>
