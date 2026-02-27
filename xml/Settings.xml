@@ -80,7 +80,6 @@
                         <height>82</height>
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Icon]</texture>
-                        <animation effect="slide" start="0,0" end="240,0" time="0" condition="String.IsEqual(Skin.String(MenuLAF),Graph)|String.IsEqual(Skin.String(MenuLAF),GraphFocused)">Conditional</animation>
                     </control>
                 </itemlayout>
                 <focusedlayout height="81" width="395">
@@ -132,9 +131,6 @@
                         <height>82</height>
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Icon]</texture>
-                        <animation effect="slide" start="240,0" end="0,0" time="100" condition="String.IsEqual(Skin.String(MenuLAF),GraphFocused)">Focus</animation>
-                        <animation effect="slide" start="0,0" end="240,0" time="100" condition="String.IsEqual(Skin.String(MenuLAF),GraphFocused)">Unfocus</animation>
-                        <animation effect="slide" start="0,0" end="240,0" time="0" condition="String.IsEqual(Skin.String(MenuLAF),Graph)">Conditional</animation>
                         <visible>!Control.HasFocus(9000)</visible>
                     </control>
                     <control type="image">
@@ -144,9 +140,6 @@
                         <height>82</height>
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="black">$INFO[ListItem.Icon]</texture>
-                        <animation effect="slide" start="240,0" end="0,0" time="100" condition="String.IsEqual(Skin.String(MenuLAF),GraphFocused)">Focus</animation>
-                        <animation effect="slide" start="0,0" end="240,0" time="100" condition="String.IsEqual(Skin.String(MenuLAF),GraphFocused)">Unfocus</animation>
-                        <animation effect="slide" start="0,0" end="240,0" time="0" condition="String.IsEqual(Skin.String(MenuLAF),Graph)">Conditional</animation>
                         <visible>Control.HasFocus(9000)</visible>
                     </control>
                 </focusedlayout>
