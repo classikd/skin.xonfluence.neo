@@ -3275,9 +3275,9 @@
         <value>$LOCALIZE[571]</value>
     </variable>
     <variable name="OSDLAFValue">
-        <value condition="Skin.String(OSDLAF,Modern)">$LOCALIZE[31985]</value>
+        <value condition="Skin.String(OSDLAF,Classic)">$LOCALIZE[31984]</value>
         <value condition="Skin.String(OSDLAF,Max)">$LOCALIZE[31986]</value>
-        <value>$LOCALIZE[31984]</value>
+        <value>$LOCALIZE[31985]</value>
     </variable>
     <variable name="MenuLAFValue">
         <value condition="Skin.String(MenuLAF,Graph)">$LOCALIZE[31988]</value>

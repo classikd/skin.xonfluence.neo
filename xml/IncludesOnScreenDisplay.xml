@@ -475,18 +475,18 @@
         <definition>
             <width>$PARAM[Size]</width>
             <height>$PARAM[Size]</height>
-            <include content="OSDButtonClassicNoAlt" condition="String.IsEmpty(Skin.String(OSDLAF))">
-                <param name="Size" value="$PARAM[Size]" />
-                <param name="Texture" value="$PARAM[Texture]" />
-				<param name="flipx" value="$PARAM[flipx]" />
-            </include>
-            <include content="OSDButtonModernNoAlt" condition="Skin.String(OSDLAF,Modern)">
+            <include content="OSDButtonModernNoAlt" condition="String.IsEmpty(Skin.String(OSDLAF))">
                 <param name="Size" value="$PARAM[Size]" />
                 <param name="Texture" value="$PARAM[Texture]" />
             </include>
             <include content="OSDButtonMaxNoAlt" condition="Skin.String(OSDLAF,Max)">
                 <param name="Size" value="$PARAM[Size]" />
                 <param name="Texture" value="$PARAM[Texture]" />
+            </include>
+            <include content="OSDButtonClassicNoAlt" condition="Skin.String(OSDLAF,Classic)">
+                <param name="Size" value="$PARAM[Size]" />
+                <param name="Texture" value="$PARAM[Texture]" />
+				<param name="flipx" value="$PARAM[flipx]" />
             </include>
             <selected>$PARAM[Selected]</selected>
         </definition>
@@ -499,17 +499,17 @@
         <definition>
             <width>$PARAM[Size]</width>
             <height>$PARAM[Size]</height>
-            <include content="OSDButtonClassic" condition="String.IsEmpty(Skin.String(OSDLAF))">
-                <param name="Size" value="$PARAM[Size]" />
-                <param name="Texture" value="$PARAM[Texture]" />
-                <param name="AltTexture" value="$PARAM[AltTexture]" />
-            </include>
-            <include content="OSDButtonModern" condition="Skin.String(OSDLAF,Modern)">
+            <include content="OSDButtonModern" condition="String.IsEmpty(Skin.String(OSDLAF))">
                 <param name="Size" value="$PARAM[Size]" />
                 <param name="Texture" value="$PARAM[Texture]" />
                 <param name="AltTexture" value="$PARAM[AltTexture]" />
             </include>
             <include content="OSDButtonMax" condition="Skin.String(OSDLAF,Max)">
+                <param name="Size" value="$PARAM[Size]" />
+                <param name="Texture" value="$PARAM[Texture]" />
+                <param name="AltTexture" value="$PARAM[AltTexture]" />
+            </include>
+            <include content="OSDButtonClassic" condition="Skin.String(OSDLAF,Classic)">
                 <param name="Size" value="$PARAM[Size]" />
                 <param name="Texture" value="$PARAM[Texture]" />
                 <param name="AltTexture" value="$PARAM[AltTexture]" />
@@ -2088,7 +2088,8 @@
 	</include>
 	
     <variable name="OSDPath">
-        <value condition="!String.IsEmpty(Skin.String(OSDLAF))">osd_modern/</value>
+        <value condition="String.IsEmpty(Skin.String(OSDLAF))">osd_modern/</value>
+        <value condition="Skin.String(OSDLAF,Max)">osd_modern/</value>
         <value>osd_classic/</value>
     </variable>
 	

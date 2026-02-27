@@ -373,9 +373,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick condition="String.IsEmpty(Skin.String(OSDLAF))">Skin.SetString(OSDLAF,Modern)</onclick>
-                                <onclick condition="Skin.String(OSDLAF,Modern)">Skin.SetString(OSDLAF,Max)</onclick>
-                                <onclick condition="Skin.String(OSDLAF,Max)">Skin.Reset(OSDLAF)</onclick>
+                                <onclick condition="String.IsEmpty(Skin.String(OSDLAF))">Skin.SetString(OSDLAF,Max)</onclick>
+                                <onclick condition="Skin.String(OSDLAF,Max)">Skin.SetString(OSDLAF,Classic)</onclick>
+                                <onclick condition="Skin.String(OSDLAF,Classic)">Skin.Reset(OSDLAF)</onclick>
                             </control>
                             <control type="button" id="129">
                                 <width>1125</width>
