@@ -2108,7 +2108,7 @@
                 <height>68</height>
                 <include>HomeTransparentEffect</include>
                 <texture border="5">floor_button.png</texture>
-                <visible>!Control.HasFocus(25) + Skin.HasSetting(FloorGlobalSearch)</visible>
+                <visible>!Control.HasFocus(25) + Skin.HasSetting(FloorGlobalSearch) + !Skin.HasSetting(DisableGlobalSearch)</visible>
             </control>
             <control type="image"> <!-- hover -->
                 <left>166</left>
@@ -2116,7 +2116,7 @@
                 <width>68</width>
                 <height>68</height>
                 <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texture>
-                <visible>Control.HasFocus(25) + Skin.HasSetting(FloorGlobalSearch)</visible>
+                <visible>Control.HasFocus(25) + Skin.HasSetting(FloorGlobalSearch) + !Skin.HasSetting(DisableGlobalSearch)</visible>
             </control>
             <control type="radiobutton" id="25">
                 <left>166</left>
