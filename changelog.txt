@@ -1,0 +1,9 @@
+# Changelog
+
+## Version 0.1
+- Improve UI (images, views, color usage... )
+- Add options to choose the power button icon, the favorite icon
+- Add option to enable a settings button in floor
+- Add movie progress bars
+- Remove some Xonfluence logos (login page, left filters)
+- and more
