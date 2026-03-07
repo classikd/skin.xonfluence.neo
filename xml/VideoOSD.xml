@@ -71,7 +71,7 @@
                     <param name="Size" value="73" />
                     <param name="Texture" value="OSDChannelUp" />
                 </include>
-                <onclick>PlayerControl(Previous)</onclick>
+                <onclick>ChannelDown</onclick>
                 <visible>VideoPlayer.Content(LiveTV)</visible>
             </control>
             <control type="radiobutton" id="301">
@@ -81,7 +81,7 @@
                     <param name="Size" value="73" />
                     <param name="Texture" value="OSDChannelDown" />
                 </include>
-                <onclick>PlayerControl(Next)</onclick>
+                <onclick>ChannelUp</onclick>
                 <visible>VideoPlayer.Content(LiveTV)</visible>
             </control>
             <control type="radiobutton" id="302">
