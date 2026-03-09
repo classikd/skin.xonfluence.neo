@@ -101,7 +101,7 @@
                 <aspectratio aligny="bottom">keep</aspectratio>
                 <visible>Player.IsInternetStream + [Skin.HasSetting(DisableClearArt) | String.IsEmpty(Player.Art(clearart))] + [String.IsEmpty(Player.Art(clearlogo)) | Skin.HasSetting(DisableLogoArt)] + [Skin.HasSetting(EnableDVDCases) + String.IsEmpty(Player.Art(poster))] + [!Skin.HasSetting(EnableDVDCases) + String.IsEmpty(Player.Art(thumb))]</visible>
             </control>
-            <visible>!Skin.HasSetting(HideArtWorkOSD)</visible>
+            <visible>!Skin.HasSetting(HideArtWorkOSD) + ![Skin.HasSetting(SimpleModOSD) + Window.IsVisible(VideoOSD)]</visible>
         </control>
     </include>
     <include name="OSDTVShowCover">
@@ -159,7 +159,7 @@
                 <bordersize>8</bordersize>
                 <visible>[Skin.HasSetting(DisableClearArt) | String.IsEmpty(Player.Art(tvshow.clearart))] + [String.IsEmpty(Player.Art(tvshow.clearlogo)) | Skin.HasSetting(DisableLogoArt)] + [String.IsEmpty(Player.Art(tvshow.thumb)) | !Skin.HasSetting(EnableDVDCases)]</visible>
             </control>
-            <visible>!Skin.HasSetting(HideArtWorkOSD)</visible>
+            <visible>!Skin.HasSetting(HideArtWorkOSD) + ![Skin.HasSetting(SimpleModOSD) + Window.IsVisible(VideoOSD)]</visible>
         </control>
     </include>
     <include name="OSDMediaFlagging">
