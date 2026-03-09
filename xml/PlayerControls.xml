@@ -19,7 +19,7 @@
             <include>SmallVideoInfo</include>
         </control>
         <control type="group" id="100">
-            <left>38</left>
+            <left>0</left>
             <top>243</top>
             <defaultcontrol always="true">603</defaultcontrol>
             <visible>!VideoPlayer.Content(LiveTV)</visible>
@@ -402,6 +402,13 @@
             <colordiffuse>CCFFFFFF</colordiffuse>
             <visible>Window.IsVisible(home)</visible>
             <texture border="20">OverlayDialogBackground.png</texture>
+        </control>
+        <control type="image">
+            <left>0</left>
+            <top>243</top>
+            <width>750</width>
+            <height>60</height>
+            <texture border="0,2,0,2" colordiffuse="08FFFFFF">white.png</texture>
         </control>
         <control type="button">
             <description>Close Window button</description>
