@@ -116,7 +116,7 @@
                 <onclick>PlayerControl(Next)</onclick>
                 <visible>!VideoPlayer.Content(LiveTV)</visible>
             </control>
-            <control type="button" id="606">
+            <control type="radiobutton" id="606">
                 <left>360</left>
                 <top>0</top>
                 <label></label>
@@ -183,7 +183,7 @@
                     <visible>!VideoPlayer.Content(LiveTV)</visible>
                     <visible>Playlist.IsRepeat</visible>
                 </control>
-                <control type="togglebutton" id="608">
+                <control type="radiobutton" id="608">
                     <left>548</left>
                     <top>0</top>
                     <label></label>
