@@ -1425,6 +1425,18 @@
                             <height>720</height>
                             <itemgap>-1</itemgap>
                             <pagecontrol>2065</pagecontrol>
+                            <control type="radiobutton" id="17888">
+                                <description>OSD simple UI</description>
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$LOCALIZE[50013]</label>
+                                <include>MenuButton</include>
+                                <onclick>Skin.ToggleSetting(SimpleModOSD)</onclick>
+                                <selected>Skin.HasSetting(SimpleModOSD)</selected>
+                            </control>
                             <control type="radiobutton" id="178">
                                 <description>OSD Start Media Intro</description>
                                 <width>1125</width>

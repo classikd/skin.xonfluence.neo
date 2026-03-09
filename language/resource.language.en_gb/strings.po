@@ -2829,3 +2829,7 @@ msgstr ""
 msgctxt "#50012"
 msgid "Menu3"
 msgstr ""
+
+msgctxt "#50013"
+msgid "Enable simple UI (for touch)"
+msgstr ""
