@@ -1109,6 +1109,7 @@
             <include>VisibleFadeEffect</include>
             <animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
             <animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
+
             <control type="button">
                 <description>push button</description>
                 <left>45</left>
@@ -1134,9 +1135,11 @@
                 <aspectratio>keep</aspectratio>
                 <texture>icon_player.png</texture>
             </control>
+            
+            <!-- Title alone -->
             <control type="label">
                 <left>128</left>
-                <top>80r</top>
+                <top>62r</top>
                 <width>1050</width>
                 <height>30</height>
                 <label>$VAR[CommonMediaPlaying]</label>
@@ -1145,6 +1148,22 @@
                 <font>font12</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
+                <visible>![Player.HasAudio | [Player.HasVideo + VideoPlayer.Content(Movies)] | [Player.HasVideo + VideoPlayer.Content(Episodes)] | [Player.HasVideo + VideoPlayer.Content(MusicVideos)] | [Player.HasVideo + VideoPlayer.Content(LiveTV)]]</visible>
+            </control>
+
+            <!-- Title with subtitle -->
+            <control type="label">
+                <left>128</left>
+                <top>78r</top>
+                <width>1050</width>
+                <height>30</height>
+                <label>$VAR[CommonMediaPlaying]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                 <visible>Player.HasAudio | [Player.HasVideo + VideoPlayer.Content(Movies)] | [Player.HasVideo + VideoPlayer.Content(Episodes)] | [Player.HasVideo + VideoPlayer.Content(MusicVideos)] | [Player.HasVideo + VideoPlayer.Content(LiveTV)]</visible>
             </control>
             <control type="label">
                 <left>128</left>
@@ -1161,7 +1180,7 @@
             </control>
             <control type="label">
                 <left>128</left>
-                <top>45r</top>
+                <top>48r</top>
                 <width>1050</width>
                 <height>30</height>
                 <label>$INFO[VideoPlayer.Studio]</label>
@@ -1174,7 +1193,7 @@
             </control>
             <control type="label">
                 <left>128</left>
-                <top>45r</top>
+                <top>48r</top>
                 <width>1050</width>
                 <height>30</height>
                 <label>$INFO[VideoPlayer.TVShowTitle]</label>
@@ -1187,7 +1206,7 @@
             </control>
             <control type="label">
                 <left>128</left>
-                <top>45r</top>
+                <top>48r</top>
                 <width>1050</width>
                 <height>30</height>
                 <label>$INFO[VideoPlayer.Artist]</label>
@@ -1200,7 +1219,7 @@
             </control>
             <control type="label">
                 <left>128</left>
-                <top>45r</top>
+                <top>48r</top>
                 <width>1050</width>
                 <height>30</height>
                 <label>$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.ChannelNumberLabel, - ([COLOR=white],[/COLOR])]</label>
