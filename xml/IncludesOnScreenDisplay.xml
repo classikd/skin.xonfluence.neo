@@ -4,9 +4,8 @@
         <control type="group" id="1">
             <visible>[!String.IsEmpty(VideoPlayer.Plot) | !String.IsEmpty(VideoPlayer.PlotOutline)] + !Player.Caching</visible>
             <visible>[Skin.HasSetting(EnablePauseInfo) + Player.Paused] | [Player.ShowInfo + Skin.HasSetting(EnablePlotInfo)]</visible>
-            <animation effect="slide" end="-210,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HideArtWorkOSD) | [Skin.HasSetting(ShowSeekBarPaused) + Player.Paused + Skin.HasSetting(EnablePauseInfo) + !Window.IsActive(VideoOSD) + !Player.ShowInfo] | [Skin.HasSetting(HideVideoInfoOSD) + Window.IsActive(VideoOSD) + Skin.HasSetting(ShowSeekBarPaused) + Player.Paused + !Player.ShowInfo]" reversible="true">Conditional</animation>
             <animation effect="slide" start="0,0" end="0,38" time="0" condition="Player.ShowInfo + !VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos) + !VideoPlayer.Content(LiveTV)">conditional</animation>
-            <left>480</left>
+            <left>260</left>
             <top>592r</top>
             <control type="image" id="1">
                 <left>0</left>
