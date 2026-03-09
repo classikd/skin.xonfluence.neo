@@ -2833,3 +2833,7 @@ msgstr ""
 msgctxt "#50013"
 msgid "Enable simple UI (for touch)"
 msgstr ""
+
+msgctxt "#50014"
+msgid "Current folder"
+msgstr ""

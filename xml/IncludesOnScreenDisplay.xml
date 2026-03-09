@@ -4,6 +4,7 @@
         <control type="group" id="1">
             <visible>[!String.IsEmpty(VideoPlayer.Plot) | !String.IsEmpty(VideoPlayer.PlotOutline)] + !Player.Caching</visible>
             <visible>[Skin.HasSetting(EnablePauseInfo) + Player.Paused] | [Player.ShowInfo + Skin.HasSetting(EnablePlotInfo)]</visible>
+            <visible>!Window.IsVisible(2333)</visible>
             <animation effect="slide" start="0,0" end="0,38" time="0" condition="Player.ShowInfo + !VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos) + !VideoPlayer.Content(LiveTV)">conditional</animation>
             <left>260</left>
             <top>592r</top>
@@ -254,7 +255,7 @@
         <!-- OSD Simple ui -->
         <control type="grouplist" id="1">
             <visible>[Window.IsVisible(VideoOSD) + !Skin.HasSetting(HideVideoInfoOSD)] | !Window.IsVisible(VideoOSD)</visible>
-			<visible>Skin.HasSetting(SimpleModOSD)</visible>
+			<visible>Skin.HasSetting(SimpleModOSD) + !Window.IsVisible(2333)</visible>
             <left>0</left>
             <top>80</top>
             <width>1700</width>
@@ -350,7 +351,7 @@
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <visible>Player.ChapterCount + !VideoPlayer.Content(LiveTV)</visible>
-                <visible>Skin.HasSetting(SimpleModOSD)</visible>
+                <visible>Skin.HasSetting(SimpleModOSD) + !Window.IsVisible(2333)</visible>
             </control>
             <control type="label" id="1">
                 <description>Now Playing LiveTV Heading label</description>
@@ -365,7 +366,7 @@
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <visible>VideoPlayer.Content(LiveTV) + VideoPlayer.ChannelGroup + !PVR.IsRecordingPlayingChannel</visible>
-                <visible>Skin.HasSetting(SimpleModOSD)</visible>
+                <visible>Skin.HasSetting(SimpleModOSD) + !Window.IsVisible(2333)</visible>
             </control>
             <control type="image" id="1">
                 <top>125</top>
@@ -374,7 +375,7 @@
                 <aspectratio align="center" aligny="center">keep</aspectratio>
                 <texture>PVR-IsRecording.png</texture>
                 <visible>VideoPlayer.Content(LiveTV) + PVR.IsRecordingPlayingChannel</visible>
-                <visible>Skin.HasSetting(SimpleModOSD)</visible>
+                <visible>Skin.HasSetting(SimpleModOSD) + !Window.IsVisible(2333)</visible>
             </control>
             <control type="label" id="1">
                 <description>Heading label</description>
@@ -389,7 +390,7 @@
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <visible>VideoPlayer.Content(LiveTV) + PVR.IsRecordingPlayingChannel</visible>
-                <visible>Skin.HasSetting(SimpleModOSD)</visible>
+                <visible>Skin.HasSetting(SimpleModOSD) + !Window.IsVisible(2333)</visible>
             </control>
 
             <!-- program name -->
@@ -726,6 +727,7 @@
                 <texture border="1" flipy="true">HomeNowPlayingBack.png</texture>
 				<visible>!Skin.HasSetting(HideShadowSeekBar) | Window.IsVisible(VideoOSD)</visible>
                 <visible>Skin.HasSetting(SimpleModOSD)</visible>
+                <visible>!Window.IsVisible(2333)</visible>
             </control>
             <!-- Bottom background -->
 			<control type="image" id="1">
@@ -734,7 +736,8 @@
                 <width>1980</width>
                 <height>345</height>
                 <texture border="1">HomeNowPlayingBack.png</texture>
-				<visible>!Skin.HasSetting(HideShadowSeekBar) | Window.IsVisible(VideoOSD)</visible>
+				<visible>!Skin.HasSetting(HideShadowSeekBar) | Window.IsVisible(VideoOSD) </visible>
+                <visible>!Window.IsVisible(2333)</visible>
             </control>
 			<!-- Poster/thumb/logo -->
             <control type="group" id="1">
@@ -997,7 +1000,7 @@
                 <left>50</left>
                 <top>200r</top>
                 <animation effect="slide" end="-218,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HideArtWorkOSD)" reversible="true">Conditional</animation>
-                <visible>Skin.HasSetting(SimpleModOSD) + Window.IsVisible(VideoOSD)</visible>
+                <visible>Skin.HasSetting(SimpleModOSD) + Window.IsVisible(VideoOSD) + !Window.IsVisible(2333)</visible>
                 <visible>!VideoPlayer.Content(LiveTV) | [VideoPlayer.Content(LiveTV) + VideoPlayer.HasEpg]</visible>
                 <!-- Left label: elapsed time/start time -->
 				<control type="label" id="1">
