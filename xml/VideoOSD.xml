@@ -26,7 +26,7 @@
         <!-- default -->
 		<control type="button" id="10">
             <description>Close Window button</description>
-            <left>126r</left>
+            <left>70r</left>
             <top>0</top>
             <onup>100</onup>
             <ondown>87</ondown>
@@ -41,13 +41,13 @@
         <!-- simple ui -->
 		<control type="button" id="10">
             <description>Close Window button</description>
-            <left>126r</left>
+            <left>120r</left>
             <top>0</top>
             <onup>100</onup>
             <ondown>101</ondown>
             <onclick>Dialog.Close(VideoOSD,true)</onclick>
             <onclick>FullScreen</onclick>
-            <include>DialogCloseButton</include>
+            <include>DialogCloseButtonLarge</include>
             <animation effect="fade" time="150">VisibleChange</animation>
             <visible>system.getbool(input.enablemouse) + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDSubtitleSettings) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(2333)]</visible>
             <visible>!String.IsEqual(Player.Filenameandpath,Skin.String(KodiIntroVideo))</visible>

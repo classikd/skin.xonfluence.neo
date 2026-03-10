@@ -11,7 +11,7 @@
     <controls>
         <control type="button" id="10">
             <description>Close Window button</description>
-            <left>126r</left>
+            <left>70r</left>
             <top>0</top>
             <onup>100</onup>
             <ondown>87</ondown>
@@ -19,7 +19,6 @@
             <onclick>FullScreen</onclick>
             <include>DialogCloseButton</include>
             <animation effect="fade" time="150">VisibleChange</animation>
-            <animation effect="slide" start="0,0" end="-45,0" time="0" condition="Player.Muted">conditional</animation>
             <visible>system.getbool(input.enablemouse) + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVRChannelGuide) | Window.IsVisible(PVRRadioRDSInfo) | Window.IsVisible(Addon) | Window.IsVisible(1105)]</visible>
         </control>
         <control type="slider" id="87">
