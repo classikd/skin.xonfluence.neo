@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 0.2
+- Add option to enable a simple OSD for touch
+- Add OSD button to open current folder videos in a dialog
+- Improve appearance of bottom buttons
+- and more
+
 ## Version 0.1
 - Improve UI (images, views, color usage... )
 - Add options to choose the power button icon, the favorite icon
