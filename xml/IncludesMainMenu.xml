@@ -1966,7 +1966,7 @@
             <control type="image">
                 <left>0</left>
                 <top>0</top>
-                <width>82</width>
+                <width>79</width>
                 <height>75</height>
                 <include>HomeTransparentEffect</include>
                 <texture border="5">floor_button.png</texture>
@@ -1975,7 +1975,7 @@
             <control type="image"> <!-- hover -->
                 <left>0</left>
                 <top>0</top>
-                <width>82</width>
+                <width>79</width>
                 <height>75</height>
                 <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texture>
                 <visible>Control.HasFocus(23) + !Skin.HasSetting(HideHomePowerBtn)</visible>
@@ -1984,7 +1984,7 @@
 
             <!-- Icon -->
             <control type="image">
-                <left>7</left>
+                <left>5</left>
                 <top>0</top>
                 <width>70</width>
                 <height>70</height>
@@ -1994,7 +1994,7 @@
                 <visible>Control.IsVisible(23) + Control.HasFocus(23)</visible>
             </control>
             <control type="image">
-                <left>7</left>
+                <left>5</left>
                 <top>0</top>
                 <width>70</width>
                 <height>70</height>
@@ -2007,7 +2007,7 @@
             <control type="radiobutton" id="23">
                 <left>0</left>
                 <top>0</top>
-                <width>82</width>
+                <width>79</width>
                 <height>75</height>
                 <onright>22</onright>
                 <onleft>25</onleft>
@@ -2034,7 +2034,7 @@
             <!-- FAVORITES -->
             <!-- Bg -->
             <control type="image">
-                <left>82</left>
+                <left>79</left>
                 <top>0</top>
                 <width>82</width>
                 <height>75</height>
@@ -2043,7 +2043,7 @@
                 <visible>!Control.HasFocus(22) + !Skin.HasSetting(HideFavorites)</visible>
             </control>
             <control type="image"> <!-- hover -->
-                <left>82</left>
+                <left>79</left>
                 <top>0</top>
                 <width>82</width>
                 <height>75</height>
@@ -2053,7 +2053,7 @@
 
             <!-- Icon -->
             <control type="image">
-                <left>83</left>
+                <left>80</left>
                 <top>0</top>
                 <width>82</width>
                 <height>75</height>
@@ -2063,7 +2063,7 @@
                 <visible>Control.IsVisible(22) + Control.HasFocus(22)</visible>
             </control>
             <control type="image">
-                <left>83</left>
+                <left>80</left>
                 <top>0</top>
                 <width>82</width>
                 <height>75</height>
@@ -2075,7 +2075,7 @@
 
 
             <control type="radiobutton" id="22">
-                <left>82</left>
+                <left>79</left>
                 <top>0</top>
                 <width>82</width>
                 <height>75</height>
@@ -2103,7 +2103,7 @@
 
             <!-- SEARCH -->
             <control type="image">
-                <left>164</left>
+                <left>161</left>
                 <top>0</top>
                 <width>82</width>
                 <height>75</height>
@@ -2112,7 +2112,7 @@
                 <visible>!Control.HasFocus(25) + Skin.HasSetting(FloorGlobalSearch) + !Skin.HasSetting(DisableGlobalSearch)</visible>
             </control>
             <control type="image"> <!-- hover -->
-                <left>164</left>
+                <left>161</left>
                 <top>0</top>
                 <width>82</width>
                 <height>75</height>
@@ -2120,7 +2120,7 @@
                 <visible>Control.HasFocus(25) + Skin.HasSetting(FloorGlobalSearch) + !Skin.HasSetting(DisableGlobalSearch)</visible>
             </control>
             <control type="radiobutton" id="25">
-                <left>168</left>
+                <left>164</left>
                 <top>0</top>
                 <width>82</width>
                 <height>75</height>
