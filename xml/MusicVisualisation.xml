@@ -126,7 +126,7 @@
                     <align>left</align>
                     <font>font12</font>
                     <label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]</label>
-                    <textcolor>grey2</textcolor>
+                    <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
                 <control type="label">
@@ -137,7 +137,7 @@
                     <height>38</height>
                     <align>left</align>
                     <font>font12</font>
-                    <textcolor>grey2</textcolor>
+                    <textcolor>grey</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <label>$VAR[MusicHeaderLabel]</label>
                 </control>
