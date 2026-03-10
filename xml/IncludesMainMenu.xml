@@ -1958,15 +1958,16 @@
         <control type="group" id="21">
             <depth>DepthFooter</depth>
             <include>Window_OpenClose_Animation</include>
-            <left>30</left>
-            <top>82r</top>
+            <left>15</left>
+            <top>90r</top>
+            <itemgap>0</itemgap>
 
             <!-- POWER -->
             <control type="image">
                 <left>0</left>
                 <top>0</top>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>75</height>
                 <include>HomeTransparentEffect</include>
                 <texture border="5">floor_button.png</texture>
                 <visible>!Control.HasFocus(23) + !Skin.HasSetting(HideHomePowerBtn)</visible>
@@ -1974,8 +1975,8 @@
             <control type="image"> <!-- hover -->
                 <left>0</left>
                 <top>0</top>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>75</height>
                 <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texture>
                 <visible>Control.HasFocus(23) + !Skin.HasSetting(HideHomePowerBtn)</visible>
             </control>
@@ -1983,20 +1984,20 @@
 
             <!-- Icon -->
             <control type="image">
-                <left>0</left>
+                <left>7</left>
                 <top>0</top>
-                <width>68</width>
-                <height>68</height>
+                <width>70</width>
+                <height>70</height>
                 <texture>$VAR[PowerIconTexture]</texture>
                 <colordiffuse>FF000000</colordiffuse>
                 <aspectratio>keep</aspectratio>
                 <visible>Control.IsVisible(23) + Control.HasFocus(23)</visible>
             </control>
             <control type="image">
-                <left>0</left>
+                <left>7</left>
                 <top>0</top>
-                <width>68</width>
-                <height>68</height>
+                <width>70</width>
+                <height>70</height>
                 <texture>$VAR[PowerIconTexture]</texture>
                 <colordiffuse>FFFFFFFF</colordiffuse>
                 <aspectratio>keep</aspectratio>
@@ -2006,8 +2007,8 @@
             <control type="radiobutton" id="23">
                 <left>0</left>
                 <top>0</top>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>75</height>
                 <onright>22</onright>
                 <onleft>25</onleft>
                 <onup condition="!Skin.HasSetting(LowerMainMenuBar) + Control.IsVisible(9002)">9002</onup>
@@ -2033,19 +2034,19 @@
             <!-- FAVORITES -->
             <!-- Bg -->
             <control type="image">
-                <left>83</left>
+                <left>82</left>
                 <top>0</top>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>75</height>
                 <include>HomeTransparentEffect</include>
                 <texture border="5">floor_button.png</texture>
                 <visible>!Control.HasFocus(22) + !Skin.HasSetting(HideFavorites)</visible>
             </control>
             <control type="image"> <!-- hover -->
-                <left>83</left>
+                <left>82</left>
                 <top>0</top>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>75</height>
                 <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texture>
                 <visible>Control.HasFocus(22) + !Skin.HasSetting(HideFavorites)</visible>
             </control>
@@ -2054,8 +2055,8 @@
             <control type="image">
                 <left>83</left>
                 <top>0</top>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>75</height>
                 <texture>$VAR[FavoritesIconTexture]</texture>
                 <colordiffuse>FF000000</colordiffuse>
                 <aspectratio>keep</aspectratio>
@@ -2064,8 +2065,8 @@
             <control type="image">
                 <left>83</left>
                 <top>0</top>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>75</height>
                 <texture>$VAR[FavoritesIconTexture]</texture>
                 <colordiffuse>FFFFFFFF</colordiffuse>
                 <aspectratio>keep</aspectratio>
@@ -2074,10 +2075,10 @@
 
 
             <control type="radiobutton" id="22">
-                <left>83</left>
+                <left>82</left>
                 <top>0</top>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>75</height>
                 <onright>25</onright>
                 <onleft>23</onleft>
                 <onup condition="!Skin.HasSetting(LowerMainMenuBar) + Control.IsVisible(9002)">9002</onup>
@@ -2102,27 +2103,27 @@
 
             <!-- SEARCH -->
             <control type="image">
-                <left>166</left>
+                <left>164</left>
                 <top>0</top>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>75</height>
                 <include>HomeTransparentEffect</include>
                 <texture border="5">floor_button.png</texture>
                 <visible>!Control.HasFocus(25) + Skin.HasSetting(FloorGlobalSearch) + !Skin.HasSetting(DisableGlobalSearch)</visible>
             </control>
             <control type="image"> <!-- hover -->
-                <left>166</left>
+                <left>164</left>
                 <top>0</top>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>75</height>
                 <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texture>
                 <visible>Control.HasFocus(25) + Skin.HasSetting(FloorGlobalSearch) + !Skin.HasSetting(DisableGlobalSearch)</visible>
             </control>
             <control type="radiobutton" id="25">
-                <left>166</left>
+                <left>168</left>
                 <top>0</top>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>75</height>
                 <onright>23</onright>
                 <onleft>22</onleft>
                 <onup condition="!Skin.HasSetting(LowerMainMenuBar) + Control.IsVisible(9002)">9002</onup>
@@ -2136,8 +2137,8 @@
                 <texturefocus border="5">blank.png</texturefocus>
                 <texturenofocus border="5">blank.png</texturenofocus>
 
-                <radiowidth>52</radiowidth>
-                <radioheight>52</radioheight>
+                <radiowidth>56</radiowidth>
+                <radioheight>56</radioheight>
                 <radioposx>8</radioposx>
                 <radioposy>8</radioposy>
 
