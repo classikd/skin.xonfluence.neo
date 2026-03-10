@@ -977,14 +977,15 @@
             <onup>50</onup>
             <ondown>50</ondown>
             <align>right</align>
+            <itemgap>0</itemgap>
             <orientation>horizontal</orientation>
             <animation effect="fade" time="200" condition="Window.Previous(home)">WindowOpen</animation>
             <animation effect="fade" time="200" condition="Window.Next(home)">WindowClose</animation>
             <visible>!Window.IsVisible(BusyDialog)</visible>
             <control type="radiobutton" id="801">
                 <description>Trailer Button</description>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>82</height>
                 <onclick>PlayMedia("$INFO[ListItem.Trailer]")</onclick>
                 <textureradioonfocus colordiffuse="FF000000">FloorButtons/FloorTrailer.png</textureradioonfocus>
                 <textureradioonnofocus>FloorButtons/FloorTrailer.png</textureradioonnofocus>
@@ -992,8 +993,8 @@
                 <textureradiooffnofocus>FloorButtons/FloorTrailer.png</textureradiooffnofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
-                <radiowidth>68</radiowidth>
-                <radioheight>68</radioheight>
+                <radiowidth>82</radiowidth>
+                <radioheight>82</radioheight>
                 <radioposx>1</radioposx>
                 <radioposy>1</radioposy>
                 <font></font>
@@ -1005,8 +1006,8 @@
             </control>
             <control type="radiobutton" id="803">
                 <description>Volume Down Button</description>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>82</height>
                 <onclick>$VAR[VolumeStepDown]</onclick>
                 <onclick>VolumeDown</onclick>
                 <textureradioonfocus colordiffuse="FF000000">FloorButtons/FloorVolMinus.png</textureradioonfocus>
@@ -1015,8 +1016,8 @@
                 <textureradiooffnofocus>FloorButtons/FloorVolMinus.png</textureradiooffnofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
-                <radiowidth>68</radiowidth>
-                <radioheight>68</radioheight>
+                <radiowidth>82</radiowidth>
+                <radioheight>82</radioheight>
                 <radioposx>1</radioposx>
                 <radioposy>1</radioposy>
                 <font></font>
@@ -1025,8 +1026,8 @@
             </control>
             <control type="radiobutton" id="802">
                 <description>Volume Up Button</description>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>82</height>
                 <onclick>$VAR[VolumeStepUp]</onclick>
                 <onclick>VolumeUp</onclick>
                 <textureradioonfocus colordiffuse="FF000000">FloorButtons/FloorVolPlus.png</textureradioonfocus>
@@ -1035,8 +1036,8 @@
                 <textureradiooffnofocus>FloorButtons/FloorVolPlus.png</textureradiooffnofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
-                <radiowidth>68</radiowidth>
-                <radioheight>68</radioheight>
+                <radiowidth>82</radiowidth>
+                <radioheight>82</radioheight>
                 <radioposx>1</radioposx>
                 <radioposy>1</radioposy>
                 <font></font>
@@ -1046,8 +1047,8 @@
 
             <control type="radiobutton" id="805">
                 <description>Settings button</description>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>82</height>
                 <onclick>ActivateWindow(settings)</onclick>
                 <textureradioonfocus colordiffuse="FF000000">icon_system.png</textureradioonfocus>
                 <textureradioonnofocus>icon_system.png</textureradioonnofocus>
@@ -1055,8 +1056,8 @@
                 <textureradiooffnofocus>icon_system.png</textureradiooffnofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
-                <radiowidth>68</radiowidth>
-                <radioheight>68</radioheight>
+                <radiowidth>82</radiowidth>
+                <radioheight>82</radioheight>
                 <radioposx>1</radioposx>
                 <radioposy>1</radioposy>
                 <font></font>
@@ -1066,8 +1067,8 @@
 
             <control type="radiobutton" id="804">
                 <description>Back push button</description>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>82</height>
                 <onclick>back</onclick>
                 <textureradioonfocus colordiffuse="FF000000">FloorButtons/FloorBack.png</textureradioonfocus>
                 <textureradioonnofocus>FloorButtons/FloorBack.png</textureradioonnofocus>
@@ -1075,8 +1076,8 @@
                 <textureradiooffnofocus>FloorButtons/FloorBack.png</textureradiooffnofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
-                <radiowidth>68</radiowidth>
-                <radioheight>68</radioheight>
+                <radiowidth>82</radiowidth>
+                <radioheight>82</radioheight>
                 <radioposx>1</radioposx>
                 <radioposy>1</radioposy>
                 <font></font>
@@ -1084,8 +1085,8 @@
             </control>
             <control type="radiobutton" id="800">
                 <description>Home push button</description>
-                <width>68</width>
-                <height>68</height>
+                <width>82</width>
+                <height>82</height>
                 <onclick>Dialog.Close(all,true)</onclick>
                 <onclick>ActivateWindow(home)</onclick>
                 <textureradioonfocus colordiffuse="FF000000">FloorButtons/FloorHome.png</textureradioonfocus>
@@ -1094,8 +1095,8 @@
                 <textureradiooffnofocus>FloorButtons/FloorHome.png</textureradiooffnofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
-                <radiowidth>68</radiowidth>
-                <radioheight>68</radioheight>
+                <radiowidth>82</radiowidth>
+                <radioheight>82</radioheight>
                 <radioposx>1</radioposx>
                 <radioposy>1</radioposy>
                 <font></font>
