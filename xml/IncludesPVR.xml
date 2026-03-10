@@ -108,9 +108,9 @@
             <include>SideBladeLeft</include>
             <control type="grouplist" id="9000">
                 <left>0</left>
-                <top>82</top>
+                <top>10</top>
                 <width>375</width>
-                <height>900</height>
+                <height>1070</height>
                 <onfocus condition="String.IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onfocus>
                 <onleft>50</onleft>
                 <onright>ClearProperty(SideBladeOpen)</onright>
