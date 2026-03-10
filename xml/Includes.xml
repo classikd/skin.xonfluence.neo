@@ -2649,7 +2649,7 @@
             <control type="group" id="1">
                 <left>30</left>
                 <top>0</top>
-                <visible>!String.IsEmpty(Weather.Plugin)</visible>
+                <visible>!String.IsEmpty(Weather.Plugin) + String.IsEqual(Skin.String(TopLeftHomeInfo),Weather)</visible>
                 <include>Window_OpenClose_Animation</include>
      		    <control type="multiimage" id="1">
                     <description>Weather image</description>
