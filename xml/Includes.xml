@@ -1319,7 +1319,6 @@
             <top>0</top>
             <width>750</width>
             <height>302</height>
-            <colordiffuse>DDFFFFFF</colordiffuse>
             <texture border="20">DialogBack.png</texture>
         </control>
         <control type="image">
