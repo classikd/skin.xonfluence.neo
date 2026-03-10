@@ -223,6 +223,17 @@
                 <onclick>PlayerControl(Next)</onclick>
                 <visible>!VideoPlayer.Content(LiveTV)</visible>
             </control>
+            <!-- open file -->
+            <control type="radiobutton" id="213">
+                <label>13396</label>
+                <font></font>
+                <include content="OSDButton">
+                    <param name="Size" value="73" />
+                    <param name="Texture" value="OSDepg" />
+                </include>
+                <onclick>ActivateWindow(2333)</onclick>
+                <visible>!VideoPlayer.Content(LiveTV)</visible>
+            </control>
             <control type="radiobutton" id="306">
                 <label>19019</label>
                 <font></font>
