@@ -57,7 +57,7 @@
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <content target="video">$INFO[Player.FolderPath]</content>
-
+                <onclick>PlayMedia($INFO[Player.FolderPath],isdir,playoffset=$INFO[Container(9000).CurrentItem])</onclick>
                 <itemlayout height="60">
                     <control type="label">
                         <left>20</left>
