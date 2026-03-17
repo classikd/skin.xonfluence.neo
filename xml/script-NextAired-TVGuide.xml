@@ -123,7 +123,7 @@
             </control>
             <control type="label">
                 <include>WindowTitleCommons</include>
-                <label>[COLOR=$VAR[MainColorOne]] - [/COLOR]$LOCALIZE[31208]</label>
+                <label>> [COLOR=$VAR[MainColorOne]]$LOCALIZE[31208][/COLOR]</label>
             </control>
         </control>
         <include condition="Skin.HasSetting(AllScreenTopLeftWidget) + !Skin.HasSetting(HideTopLeftWindows)">TopLeftInfo</include>

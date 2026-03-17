@@ -2817,12 +2817,12 @@
                     </control>
                     <control type="label">
                         <include>WindowTitleCommons</include>
-                        <label>[COLOR=$VAR[MainColorOne]] - [/COLOR]$INFO[Container.FolderName]</label>
+                        <label>> [COLOR=$VAR[MainColorOne]]$INFO[Container.FolderName][/COLOR]</label>
                         <visible>!String.IsEmpty(Container.FolderName)</visible>
                     </control>
                     <control type="label">
                         <include>WindowTitleCommons</include>
-                        <label>[COLOR=$VAR[MainColorOne]] - [/COLOR]$INFO[Control.GetLabel(2)]</label>
+                        <label>> [COLOR=$VAR[MainColorOne]]$INFO[Control.GetLabel(2)][/COLOR]</label>
                         <visible>$PARAM[ShowLabel2]</visible>
                     </control>
                 </control>

@@ -88,7 +88,7 @@
                 </control>
                 <control type="label">
                     <include>WindowTitleCommons</include>
-                    <label>[COLOR=$VAR[MainColorOne]] - [/COLOR]$INFO[Window.Property(GlobalSearch.SearchString)]</label>
+                    <label>> [COLOR=$VAR[MainColorOne]]$INFO[Window.Property(GlobalSearch.SearchString)][/COLOR]</label>
                 </control>
             </control>
             <include>Clock</include>
