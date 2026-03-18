@@ -1023,6 +1023,7 @@
                 <font></font>
                 <visible>Skin.HasSetting(EnableVolumeButtons)</visible>
                 <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
+                <visible>!Skin.HasSetting(HideFloorVolumeButtons)</visible>
             </control>
             <control type="radiobutton" id="802">
                 <description>Volume Up Button</description>
@@ -1043,6 +1044,7 @@
                 <font></font>
                 <visible>Skin.HasSetting(EnableVolumeButtons)</visible>
                 <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
+                <visible>!Skin.HasSetting(HideFloorVolumeButtons)</visible>
             </control>
 
             <control type="radiobutton" id="805">
@@ -1063,6 +1065,7 @@
                 <font></font>
                 <visible>Skin.HasSetting(EnableFloorSettingsButtons)</visible>
                 <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
+                <visible>!String.Contains(Window.Property(xmlfile),Settings)</visible>
             </control>
 
             <control type="radiobutton" id="804">
@@ -1082,6 +1085,7 @@
                 <radioposy>1</radioposy>
                 <font></font>
                 <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
+                <visible>![Window.IsVisible(MyFavourites.xml) + Skin.HasSetting(HideFloorBackButtonOnFavourites)]</visible>
             </control>
             <control type="radiobutton" id="800">
                 <description>Home push button</description>
@@ -1100,6 +1104,7 @@
                 <radioposx>1</radioposx>
                 <radioposy>1</radioposy>
                 <font></font>
+                <visible>!Skin.HasSetting(HideFloorHomeButtons)</visible>
                 <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
             </control>
         </control>

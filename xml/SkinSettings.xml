@@ -1654,7 +1654,7 @@
                                 <selected>Skin.HasSetting(EnableFloorReturnButtons)</selected>
                                 <include>MenuButton</include>
                             </control>
-                            <control type="radiobutton" id="188">
+                            <control type="radiobutton" id="1881">
                                 <description>enable floor settings button</description>
                                 <width>1125</width>
                                 <height>60</height>
@@ -1664,6 +1664,42 @@
                                 <label>$LOCALIZE[50004]</label>
                                 <onclick>Skin.ToggleSetting(EnableFloorSettingsButtons)</onclick>
                                 <selected>Skin.HasSetting(EnableFloorSettingsButtons)</selected>
+                                <include>MenuButton</include>
+                            </control>
+                            <control type="radiobutton" id="1882">
+                                <description>hide floor home button</description>
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$LOCALIZE[50015]</label>
+                                <onclick>Skin.ToggleSetting(HideFloorHomeButtons)</onclick>
+                                <selected>Skin.HasSetting(HideFloorHomeButtons)</selected>
+                                <include>MenuButton</include>
+                            </control>
+                            <control type="radiobutton" id="1883">
+                                <description>hide floor volume buttons</description>
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$LOCALIZE[50016]</label>
+                                <onclick>Skin.ToggleSetting(HideFloorVolumeButtons)</onclick>
+                                <selected>Skin.HasSetting(HideFloorVolumeButtons)</selected>
+                                <include>MenuButton</include>
+                            </control>
+                            <control type="radiobutton" id="1885">
+                                <description>hide floor back button on favourites</description>
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$LOCALIZE[50018]</label>
+                                <onclick>Skin.ToggleSetting(HideFloorBackButtonOnFavourites)</onclick>
+                                <selected>Skin.HasSetting(HideFloorBackButtonOnFavourites)</selected>
                                 <include>MenuButton</include>
                             </control>
                             <control type="radiobutton" id="189">

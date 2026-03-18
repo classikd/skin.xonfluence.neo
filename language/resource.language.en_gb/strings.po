@@ -2837,3 +2837,15 @@ msgstr ""
 msgctxt "#50014"
 msgid "Current folder"
 msgstr ""
+
+msgctxt "#50015"
+msgid "Hide Floor Home Button"
+msgstr ""
+
+msgctxt "#50016"
+msgid "Hide Floor Volume Buttons"
+msgstr ""
+
+msgctxt "#50018"
+msgid "Hide Floor Back Button on favourites"
+msgstr ""
