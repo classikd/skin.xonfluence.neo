@@ -974,7 +974,7 @@
                         <bordertexture border="5">blank.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[BannerThumb]</texture>
-                        <aspectratio>keep</aspectratio>
+                        <aspectratio>scale</aspectratio>
                     </control>
                     <control type="label">
                         <left>1</left>
@@ -983,27 +983,44 @@
                         <height>38</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
                     </control>
                     <control type="image">
-                        <left>375</left>
-                        <top>105</top>
-                        <width>52</width>
-                        <height>52</height>
-                        <texture>OverlayWatching.png</texture>
+                        <left>770</left>
+                        <top>118</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                    </control>
+                    <control type="image">
+                        <left>770</left>
+                        <top>118</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
-                        <left>375</left>
-                        <top>105</top>
-                        <width>52</width>
-                        <height>52</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
-                        <visible>!ListItem.IsResumable</visible>
+                        <left>770</left>
+                        <top>118</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>770</left>
+                        <top>118</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
                     </control>
                 </itemlayout>
                 <focusedlayout height="202" width="810" condition="!Skin.HasSetting(HideWideViewLabels)">
@@ -1015,7 +1032,7 @@
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[BannerThumb]</texture>
-                        <aspectratio>keep</aspectratio>
+                        <aspectratio>scale</aspectratio>
                     </control>
                     <control type="label">
                         <left>1</left>
@@ -1024,27 +1041,44 @@
                         <height>38</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
                     </control>
                     <control type="image">
-                        <left>375</left>
-                        <top>105</top>
-                        <width>52</width>
-                        <height>52</height>
-                        <texture>OverlayWatching.png</texture>
+                        <left>770</left>
+                        <top>118</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                    </control>
+                    <control type="image">
+                        <left>770</left>
+                        <top>118</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
-                        <left>375</left>
-                        <top>105</top>
-                        <width>52</width>
-                        <height>52</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
-                        <visible>!ListItem.IsResumable</visible>
+                        <left>770</left>
+                        <top>118</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>770</left>
+                        <top>118</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
                     </control>
                 </focusedlayout>
                 <itemlayout height="162" width="810" condition="Skin.HasSetting(HideWideViewLabels)">
@@ -1056,24 +1090,41 @@
                         <bordertexture border="5">blank.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[BannerThumb]</texture>
-                        <aspectratio>keep</aspectratio>
+                        <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image">
-                        <left>375</left>
-                        <top>105</top>
-                        <width>52</width>
-                        <height>52</height>
-                        <texture>OverlayWatching.png</texture>
+                        <left>770</left>
+                        <top>118</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                    </control>
+                    <control type="image">
+                        <left>770</left>
+                        <top>118</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
-                        <left>375</left>
-                        <top>105</top>
-                        <width>52</width>
-                        <height>52</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
-                        <visible>!ListItem.IsResumable</visible>
+                        <left>770</left>
+                        <top>118</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>770</left>
+                        <top>118</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
                     </control>
                 </itemlayout>
                 <focusedlayout height="162" width="810" condition="Skin.HasSetting(HideWideViewLabels)">
@@ -1085,24 +1136,41 @@
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[BannerThumb]</texture>
-                        <aspectratio>keep</aspectratio>
+                        <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image">
-                        <left>375</left>
-                        <top>105</top>
-                        <width>52</width>
-                        <height>52</height>
-                        <texture>OverlayWatching.png</texture>
+                        <left>770</left>
+                        <top>118</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                    </control>
+                    <control type="image">
+                        <left>770</left>
+                        <top>118</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
-                        <left>375</left>
-                        <top>105</top>
-                        <width>52</width>
-                        <height>52</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
-                        <visible>!ListItem.IsResumable</visible>
+                        <left>770</left>
+                        <top>118</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>770</left>
+                        <top>118</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
                     </control>
                 </focusedlayout>
             </control>
