@@ -42,7 +42,7 @@
                 <aspectratio>keep</aspectratio>
                 <texturefocus>Xonfluence_Logo.png</texturefocus>
                 <texturenofocus>Xonfluence_Logo.png</texturenofocus>
-                <onclick>ActivateWindow(Home)</onclick>
+                <onclick>PreviousMenu</onclick>
             </control>
             <control type="button" id="50">
                 <include>InvisibleButton</include>
