@@ -528,7 +528,7 @@
                         <width>321</width>
                         <height>240</height>
                         <aspectratio>scale</aspectratio>
-                        <bordertexture border="5">button-nofocus.png</bordertexture>
+                        <bordertexture border="5">transparent.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
                         <visible>Container.Content(Episodes)</visible>
@@ -540,7 +540,7 @@
                         <width>321</width>
                         <height>240</height>
                         <aspectratio>scale</aspectratio>
-                        <bordertexture border="5">button-nofocus.png</bordertexture>
+                        <bordertexture border="5">transparent.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(fanart)]</texture>
                         <visible>Container.Content(Episodes) + Skin.HasSetting(HideEpisodeThumb) + !String.IsEqual(ListItem.Label,..)</visible>
@@ -566,7 +566,7 @@
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
-                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
                     </control>
 
                     <control type="image">
@@ -577,7 +577,7 @@
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
                         <visible>ListItem.IsPlaying</visible>
                         <visible>Player.Playing</visible>
-                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
                     </control>
                     <control type="image">
                         <left>5</left>
@@ -587,7 +587,7 @@
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
                         <visible>ListItem.IsPlaying</visible>
                         <visible>!Player.Playing</visible>
-                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
                     </control>
 
 
@@ -600,7 +600,7 @@
                         <visible>ListItem.IsResumable</visible>
                         <texturebg border="0">white.png</texturebg>
                         <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
-                        <visible>String.Contains(ListItem.Icon,image://video)</visible>     
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>     
                     </control> 
 
                 </itemlayout>
@@ -760,7 +760,7 @@
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
-                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
                     </control>
 
                     <control type="image">
@@ -771,7 +771,7 @@
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
                         <visible>ListItem.IsPlaying</visible>
                         <visible>Player.Playing</visible>
-                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
                     </control>
                     <control type="image">
                         <left>5</left>
@@ -781,7 +781,7 @@
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
                         <visible>ListItem.IsPlaying</visible>
                         <visible>!Player.Playing</visible>
-                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
                     </control>
 
                     <control type="progress">
@@ -793,7 +793,7 @@
                         <visible>ListItem.IsResumable</visible>
                         <texturebg border="0">white.png</texturebg>
                         <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white.png</midtexture>
-                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
                     </control> 
 
 
