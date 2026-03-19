@@ -262,17 +262,6 @@
             <itemgap>0</itemgap>
             <animation effect="fade" time="150">VisibleChange</animation>
             <visible>Player.HasMedia</visible>
-            <control type="radiobutton" id="201">
-                <label>210</label>
-                <font></font>
-                <include content="OSDButton">
-                    <param name="Size" value="82" />
-                    <param name="Texture" value="OSDVolUp" />
-                </include>
-                <onclick>$VAR[VolumeStepUp]</onclick>
-                <onclick>VolumeUp</onclick>
-                <visible>Skin.HasSetting(EnableVolumeButtons)</visible>
-            </control>
             <control type="radiobutton" id="202">
                 <label>210</label>
                 <font></font>
@@ -282,6 +271,17 @@
                 </include>
                 <onclick>$VAR[VolumeStepDown]</onclick>
                 <onclick>VolumeDown</onclick>
+                <visible>Skin.HasSetting(EnableVolumeButtons)</visible>
+            </control>
+            <control type="radiobutton" id="201">
+                <label>210</label>
+                <font></font>
+                <include content="OSDButton">
+                    <param name="Size" value="82" />
+                    <param name="Texture" value="OSDVolUp" />
+                </include>
+                <onclick>$VAR[VolumeStepUp]</onclick>
+                <onclick>VolumeUp</onclick>
                 <visible>Skin.HasSetting(EnableVolumeButtons)</visible>
             </control>
             <control type="radiobutton" id="203">

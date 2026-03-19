@@ -68,17 +68,6 @@
                 <onclick>PlayerControl(Next)</onclick>
                 <visible>MusicPlayer.Content(LiveTV)</visible>
             </control>
-            <control type="radiobutton" id="302">
-                <label>210</label>
-                <font></font>
-                <include content="OSDButton">
-                    <param name="Size" value="73" />
-                    <param name="Texture" value="OSDVolUp" />
-                </include>
-                <onclick>$VAR[VolumeStepUp]</onclick>
-                <onclick>VolumeUp</onclick>
-                <visible>Skin.HasSetting(EnableVolumeButtons)</visible>
-            </control>
             <control type="radiobutton" id="303">
                 <label>210</label>
                 <font></font>
@@ -88,6 +77,17 @@
                 </include>
                 <onclick>$VAR[VolumeStepDown]</onclick>
                 <onclick>VolumeDown</onclick>
+                <visible>Skin.HasSetting(EnableVolumeButtons)</visible>
+            </control>
+            <control type="radiobutton" id="302">
+                <label>210</label>
+                <font></font>
+                <include content="OSDButton">
+                    <param name="Size" value="73" />
+                    <param name="Texture" value="OSDVolUp" />
+                </include>
+                <onclick>$VAR[VolumeStepUp]</onclick>
+                <onclick>VolumeUp</onclick>
                 <visible>Skin.HasSetting(EnableVolumeButtons)</visible>
             </control>
             <control type="radiobutton" id="600">
