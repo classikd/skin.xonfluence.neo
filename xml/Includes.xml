@@ -977,6 +977,7 @@
             <width>1980</width>
             <height>250</height>
             <texture border="1">HomeNowPlayingBack.png</texture>
+            <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
         </control>
         <control type="grouplist" id="810">
             <left>0</left>
