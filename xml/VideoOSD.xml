@@ -408,7 +408,7 @@
             <control type="radiobutton" id="300">
                 <label>210</label>
                 <font></font>
-                <include content="OSDButton">
+                <include content="OSDButtonLarge">
                     <param name="Size" value="162" />
                     <param name="Texture" value="OSDChannelDown" />
                 </include>
@@ -418,7 +418,7 @@
             <control type="radiobutton" id="301">
                 <label>209</label>
                 <font></font>
-                <include content="OSDButton">
+                <include content="OSDButtonLarge">
                     <param name="Size" value="162" />
                     <param name="Texture" value="OSDChannelUp" />
                 </include>
@@ -430,7 +430,7 @@
             <control type="radiobutton" id="213">
                 <label>13396</label>
                 <font></font>
-                <include content="OSDButton">
+                <include content="OSDButtonLarge">
                     <param name="Size" value="162" />
                     <param name="Texture" value="OSDepg" />
                 </include>
@@ -442,7 +442,7 @@
             <control type="radiobutton" id="200">
                 <label>210</label>
                 <font></font>
-                <include content="OSDButton">
+                <include content="OSDButtonLarge">
                     <param name="Size" value="162" />
                     <param name="Texture" value="OSDPrevTrack" />
                 </include>
@@ -452,7 +452,7 @@
             <control type="radiobutton" id="201">
                 <label>31354</label>
                 <font></font>
-                <include content="OSDButton">
+                <include content="OSDButtonLarge">
                     <param name="Size" value="162" />
                     <param name="Texture" value="OSDRewind" />
                 </include>
@@ -469,7 +469,7 @@
                 <label>31351</label>
                 <label2>208</label2>
                 <font></font>
-                <include content="OSDButtonAlt">
+                <include content="OSDButtonAltLarge">
                     <param name="Size" value="162" />
                     <param name="Texture" value="OSDPause" />
                     <param name="AltTexture" value="OSDPlay" />
@@ -484,7 +484,7 @@
             <control type="radiobutton" id="204">
                 <label>31353</label>
                 <font></font>
-                <include content="OSDButton">
+                <include content="OSDButtonLarge">
                     <param name="Size" value="162" />
                     <param name="Texture" value="OSDForward" />
                 </include>
@@ -498,7 +498,7 @@
             <control type="radiobutton" id="205">
                 <label>209</label>
                 <font></font>
-                <include content="OSDButton">
+                <include content="OSDButtonLarge">
                     <param name="Size" value="162" />
                     <param name="Texture" value="OSDNextTrack" />
                 </include>
@@ -510,7 +510,7 @@
             <control type="radiobutton" id="293">
                 <label>31352</label>
                 <font></font>
-                <include content="OSDButton">
+                <include content="OSDButtonLarge">
                     <param name="Size" value="162" />
                     <param name="Texture" value="OSDStop" />
                 </include>
@@ -520,7 +520,7 @@
             <control type="radiobutton" id="306">
                 <label>19019</label>
                 <font></font>
-                <include content="OSDButton">
+                <include content="OSDButtonLarge">
                     <param name="Size" value="162" />
                     <param name="Texture" value="OSDChannelList" />
                 </include>
@@ -530,7 +530,7 @@
             <control type="radiobutton" id="307">
                 <label>$LOCALIZE[19029]$INFO[VideoPlayer.ChannelName, - ]</label>
                 <font></font>
-                <include content="OSDButton">
+                <include content="OSDButtonLarge">
                     <param name="Size" value="162" />
                     <param name="Texture" value="OSDepg" />
                 </include>
@@ -540,7 +540,7 @@
             <control type="radiobutton" id="350">
                 <label>31356</label>
                 <font></font>
-                <include content="OSDButton">
+                <include content="OSDButtonLarge">
                     <param name="Size" value="162" />
                     <param name="Texture" value="OSDTeleText" />
                 </include>
