@@ -43,6 +43,7 @@
             <param name="Icon" value="icon_music" />
             <param name="Label" value="$LOCALIZE[10516]" />
         </include>
+        <include>PiPBackground</include>
         <control type="group">
             <visible>!Skin.HasSetting(KioskMode)</visible>
             <left>-375</left>

@@ -2849,3 +2849,7 @@ msgstr ""
 msgctxt "#50018"
 msgid "Hide Floor Back Button on favourites"
 msgstr ""
+
+msgctxt "#50020"
+msgid "Enable PiP playing media"
+msgstr ""

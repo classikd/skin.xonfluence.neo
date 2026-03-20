@@ -28,6 +28,7 @@
 			<param name="Icon" value="icon_favourites" />
 			<param name="Label" value="$LOCALIZE[10134]" />
 		</include>
+		<include>PiPBackground</include>
 		<control type="group">
 			<left>-375</left>
 			<include>SideBladeLeft</include>

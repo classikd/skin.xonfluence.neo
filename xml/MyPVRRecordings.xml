@@ -300,6 +300,7 @@
             <animation effect="fade" time="150">Hidden</animation>
             <visible>Window.IsActive(FileBrowser) | Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo) | Window.IsActive(PVRTimerSetting) | Window.IsActive(PVRGroupManager) | Window.IsActive(PVRGuideSearch)</visible>
         </control>
+        <include>PiPBackground</include>
         <include>PVRSideBlade</include>
     </controls>
 </window>

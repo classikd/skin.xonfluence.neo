@@ -272,5 +272,6 @@
             <param name="Label" value="$LOCALIZE[5]" />
             <param name="ShowLabel2" value="true" />
         </include>
+        <include>PiPBackground</include>
     </controls>
 </window>

@@ -308,5 +308,6 @@
             <param name="Icon" value="icon_system" />
             <param name="Label" value="$LOCALIZE[5]" />
         </include>
+        <include>PiPBackground</include>
     </controls>
 </window>

@@ -135,5 +135,6 @@
 				<textcolor>selected</textcolor>
 			</control>
 		</control>
+		<include>PiPBackground</include>
 	</controls>
 </window>

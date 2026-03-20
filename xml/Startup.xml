@@ -49,5 +49,6 @@
             <visible>Skin.HasSetting(UseStartUpPlaylistPath)</visible>
         </control> -->
         <include>CommonBackground</include>
+        <include>PiPBackground</include>
     </controls>
 </window>

@@ -32,6 +32,7 @@
             <param name="Icon" value="icon_addons" />
             <param name="Label" value="$LOCALIZE[24001]" />
         </include>
+        <include>PiPBackground</include>
         <control type="group">
             <visible>!Skin.HasSetting(KioskMode)</visible>
             <left>-375</left>

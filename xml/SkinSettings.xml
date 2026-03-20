@@ -500,6 +500,17 @@
                                 <onclick>Skin.ToggleSetting(HidePVRNowPlaying)</onclick>
                                 <selected>!Skin.HasSetting(HidePVRNowPlaying)</selected>
                             </control>
+                            <control type="radiobutton" id="1077">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label>$LOCALIZE[50020]</label>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>Skin.ToggleSetting(EnablePiP)</onclick>
+                                <selected>Skin.HasSetting(EnablePiP)</selected>
+                            </control>
                             <control type="radiobutton" id="108">
                                 <description>Fanart Animation</description>
                                 <width>1125</width>
@@ -12496,5 +12507,6 @@
         <include>CommonNowPlaying</include>
         <include>FloorReturnButtons</include>
         <include>BehindDialogFadeOut</include>
+        <include>PiPBackground</include>
     </controls>
 </window>

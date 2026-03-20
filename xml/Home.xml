@@ -118,6 +118,8 @@
             <include>Clock</include>
             <include>Date</include>
         </control>
+
+        <include>PiPBackground</include>
 		
     </controls>
 </window>

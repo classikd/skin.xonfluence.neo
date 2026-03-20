@@ -251,5 +251,6 @@
                 <animation effect="slide" start="0,0" end="0,-82" time="150" condition="Window.IsVisible(busydialog)">conditional</animation>
             </control>
         </control>
+        <include>PiPBackground</include>
     </controls>
 </window>
