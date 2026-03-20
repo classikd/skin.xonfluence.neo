@@ -41,7 +41,6 @@
                 </control>
             </control>
         </control>
-        <include>FloorReturnButtons</include>
         <include>PVRHeader</include>
         <control type="group">
             <include>Window_OpenClose_Animation</include>
@@ -300,6 +299,7 @@
             <animation effect="fade" time="150">Hidden</animation>
             <visible>Window.IsActive(FileBrowser) | Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo) | Window.IsActive(PVRTimerSetting) | Window.IsActive(PVRGroupManager) | Window.IsActive(PVRGuideSearch)</visible>
         </control>
+        <include>FloorReturnButtons</include>
         <include>PiPBackground</include>
         <include>PVRSideBlade</include>
     </controls>
