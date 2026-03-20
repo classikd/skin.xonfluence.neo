@@ -3153,6 +3153,14 @@
             </focusedlayout>
         </definition>
     </include>
+
+    <include name="WindowSettingsTop">
+        <top>45</top>
+    </include>
+    <include name="WindowSettingsTopTouch">
+        <top>-15</top>
+    </include>
+
     <include name="Button0">
         <left>30</left>
         <width>1844</width>
