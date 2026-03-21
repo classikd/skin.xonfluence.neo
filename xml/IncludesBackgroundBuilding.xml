@@ -145,7 +145,7 @@
                 <texture background="true" fallback="Backgrounds/SKINDEFAULT.jpg">$VAR[SkinBackgroundPath]$INFO[Skin.CurrentTheme,,.jpg]</texture>
                 <include>BackgroundFade</include>
                 <fadetime>FanartCrossfadeTime</fadetime>
-                <include>Window_OpenClose_Animation</include>
+                
                 <visible>String.IsEmpty(Skin.String(GlobalBackGroundPath)) + !Skin.HasSetting(GlobalLiveWeatherImage)</visible>
             </control>
             <control type="multiimage">
@@ -155,7 +155,7 @@
                 <randomize>true</randomize>
                 <include>BackgroundFade</include>
                 <fadetime>FanartCrossfadeTime</fadetime>
-                <include>Window_OpenClose_Animation</include>
+                
                 <visible>Skin.HasSetting(GlobalLiveWeatherImage)</visible>
             </control>
         </control>
@@ -168,7 +168,7 @@
                 <aspectratio>scale</aspectratio>
                 <include>BackgroundFade</include>
                 <fadetime>FanartCrossfadeTime</fadetime>
-                <include>Window_OpenClose_Animation</include>
+                
                 <texture>special://skin/extras/Holiday/xmastree.jpg</texture>
                 <visible>String.IsEmpty(Skin.String(HolidayThemePath)) | !Window.IsVisible(Home) + !String.IsEmpty(Skin.String(HolidayThemePath))</visible>
             </control>
@@ -191,7 +191,7 @@
 			<control type="group">
                 <include>BackgroundFade</include>
                 <fadetime>FanartCrossfadeTime</fadetime>
-                <include>Window_OpenClose_Animation</include>
+                
                 <include>LiveContentBackgrounds</include>
                 <visible>Window.IsVisible(Home) + String.IsEqual(Container(9000).ListItem.Property(Background),Live) + !String.IsEqual(Container(9000).ListItem.Property(HiLiteItem),Weather)</visible>
             </control>
@@ -202,7 +202,7 @@
                 <randomize>true</randomize>
                 <include>BackgroundFade</include>
                 <fadetime>FanartCrossfadeTime</fadetime>
-                <include>Window_OpenClose_Animation</include>
+                
                 <visible>Window.IsVisible(Home) + String.IsEqual(Container(9000).ListItem.Property(Background),Live)  + String.IsEqual(Container(9000).ListItem.Property(HiLiteItem),Weather)</visible>
             </control>
             <control type="multiimage">
@@ -270,7 +270,7 @@
                 <texture background="true" fallback="Backgrounds/SKINDEFAULT.jpg">$INFO[Fanart.Image]</texture>
                 <include>BackgroundFade</include>
                 <fadetime>FanartCrossfadeTime</fadetime>
-                <include>Window_OpenClose_Animation</include>
+                
                 <visible>!String.IsEmpty(Fanart.Image)</visible>
                 <visible>String.IsEqual(ListItem.Label,..) + [Container.Content(Seasons) | Container.Content(Episodes)]</visible>
             </control>
@@ -289,7 +289,7 @@
                 <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                 <include>BackgroundFade</include>
                 <fadetime>FanartCrossfadeTime</fadetime>
-                <include>Window_OpenClose_Animation</include>
+                
                 <visible>!String.IsEmpty(ListItem.Property(Fanart_Image))</visible>
             </control>
             <control type="image">
@@ -298,7 +298,7 @@
                 <texture background="true">$VAR[GenreLabelFanart]</texture>
                 <include>BackgroundFade</include>
                 <fadetime>FanartCrossfadeTime</fadetime>
-                <include>Window_OpenClose_Animation</include>
+                
                 <visible>!String.IsEqual(ListItem.Label,..) + Container.Content(genres)</visible>
             </control>
             <control type="image">
@@ -307,7 +307,7 @@
                 <texture background="true">$VAR[GenreFolderFanart]</texture>
                 <include>BackgroundFade</include>
                 <fadetime>FanartCrossfadeTime</fadetime>
-                <include>Window_OpenClose_Animation</include>
+                
                 <visible>String.IsEqual(ListItem.Label,..)</visible>
                 <visible>String.Contains(ListItem.FilenameAndPath,videodb://movies/genres) | String.Contains(ListItem.FilenameAndPath,videodb://tvshows/genres) | String.Contains(ListItem.FilenameAndPath,videodb://musicvideos/genres) | String.Contains(ListItem.FilenameAndPath,musicdb://genres)</visible>
             </control>
@@ -373,7 +373,7 @@
             </control>
             <control type="group">
                 <visible>Container.Content(Episodes)  + !Control.IsVisible(515) + Skin.HasSetting(EpisodeBackground) + !String.IsEqual(ListItem.Label,..)</visible>
-                <include>Window_OpenClose_Animation</include>
+                
                 <control type="image">
                     <include>Dimensions_Fullscreen</include>
                     <aspectratio>scale</aspectratio>
@@ -381,7 +381,7 @@
                     <fadetime>FanartCrossfadeTime</fadetime>
                 </control>
                 <control type="image">
-                    <include>Window_OpenClose_Animation</include>
+                    
                     <include>Dimensions_Fullscreen</include>
                     <include>VisibleFadeEffect</include>
                     <aspectratio>stretch</aspectratio>
@@ -392,9 +392,9 @@
             <control type="group">
                 <visible>Control.IsVisible(724) | Control.IsVisible(508) | Control.IsVisible(51)</visible>
                 <visible>!String.IsEmpty(ListItem.Title) + Skin.HasSetting(EnableAdditionalArtWork)</visible>
-                <include>Window_OpenClose_Animation</include>
+                
                 <control type="image">
-                    <include>Window_OpenClose_Animation</include>
+                    
                     <include>Dimensions_Fullscreen</include>
                     <include>VisibleFadeEffect</include>
                     <aspectratio>stretch</aspectratio>
@@ -582,7 +582,7 @@
     </include>
     <include name="ContentPanelBackgrounds">
         <control type="group">
-            <include>Window_OpenClose_Animation</include>
+            
             <control type="group">
                 <include>VisibleFadeEffect</include>
                 <visible>Control.IsVisible(50)</visible>
