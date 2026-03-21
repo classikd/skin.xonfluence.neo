@@ -388,7 +388,6 @@
                 </control>
             </control>
         </control>
-        <include>CommonNowPlaying</include>
         <include>FloorReturnButtons</include>
         <include content="CommonWindowHeader">
             <param name="Icon" value="icon_system" />

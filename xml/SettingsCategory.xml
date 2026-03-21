@@ -263,10 +263,6 @@
             <font></font>
             <visible>false</visible>
         </control>
-        <control type="group">
-            <depth>DepthFooter</depth>
-            <include>CommonNowPlaying</include>
-        </control>
         <include>FloorReturnButtons</include>
         <include content="CommonWindowHeader">
             <param name="Icon" value="icon_system" />

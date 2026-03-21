@@ -15,10 +15,6 @@
         <include>AllWidthList</include>
         <!-- view id = 5040 -->
         <include>MediaInfoPVR</include>
-        <control type="group">
-            <depth>DepthFooter</depth>
-            <include>CommonNowPlaying</include>
-        </control>
         <include>BehindDialogFadeOut</include>
         <include>ScrollOffsetLabel</include>
         <control type="image">

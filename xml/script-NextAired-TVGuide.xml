@@ -481,7 +481,6 @@
                 <include>VisibleFadeEffect</include>
             </control>
         </control>
-        <include>CommonNowPlaying</include>
         <include>FloorReturnButtons</include>
         <include>BehindDialogFadeOut</include>
         <control type="group">

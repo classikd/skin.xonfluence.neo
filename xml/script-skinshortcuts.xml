@@ -497,7 +497,6 @@
                 </control>
 			</control>
 		</control>
-		<include>CommonNowPlaying</include>
         <include>FloorReturnButtons</include>
         <include>BehindDialogFadeOut</include>
 		<include>PiPBackground</include>

@@ -33,10 +33,6 @@
             <include>PVRGuideViewTimeline</include>
             <include>PVRGuideViewNext</include>
         </control>
-        <control type="group">
-            <depth>DepthFooter</depth>
-            <include>CommonNowPlaying</include>
-        </control>
         <include>BehindDialogFadeOut</include>
         <include>ScrollOffsetLabel</include>
         <control type="image">

@@ -354,7 +354,6 @@
                     <include>Window_OpenClose_Animation</include>
                 </control>
             </control>
-            <include>CommonNowPlaying</include>
         </control>
         <include>FloorReturnButtons</include>
         <include>BehindDialogFadeOut</include>

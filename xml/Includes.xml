@@ -1099,165 +1099,94 @@
     <include name="CommonNowPlaying">
         <control type="group">
             <visible>Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia)) + !Skin.HasSetting(HideNowPlayingInfo) + !Control.IsVisible(507)</visible>
+            <visible>!String.Contains(Window.Property(xmlfile),Settings)</visible>
+            <visible>!Window.IsActive(home)</visible>
             <include>VisibleFadeEffect</include>
             <animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
             <animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
+            <width>240</width>
 
-            <control type="button">
+            <control type="button" id="9898">
+                <width>240</width>
                 <description>push button</description>
-                <left>45</left>
-                <top>82r</top>
-                <width>68</width>
-                <height>68</height>
+                <left>0</left>
+                <height>85</height>
                 <label>31003</label>
                 <font />
                 <onclick>ActivateWindow(PlayerControls)</onclick>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
-                <texturenofocus border="5">floor_button.png</texturenofocus>
+                <texturenofocus border="5" colordiffuse="70000000">blank.png</texturenofocus>
                 <onleft>50</onleft>
                 <onright>50</onright>
                 <onup>50</onup>
                 <ondown>50</ondown>
             </control>
-            <control type="image">
-                <description>Player Icon</description>
-                <left>52</left>
-                <top>75r</top>
-                <width>52</width>
-                <height>52</height>
-                <aspectratio>keep</aspectratio>
-                <texture>icon_player.png</texture>
-            </control>
-            
-            <!-- Title alone -->
-            <control type="label">
-                <left>128</left>
-                <top>62r</top>
-                <width>1050</width>
-                <height>30</height>
-                <label>$VAR[CommonMediaPlaying]</label>
-                <align>left</align>
+
+            <control type="grouplist">
+                <width>auto</width>
+                <height>45</height>
+                <orientation>horizontal</orientation>
+                <align>right</align>
                 <aligny>center</aligny>
-                <font>font12</font>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>![Player.HasAudio | [Player.HasVideo + VideoPlayer.Content(Movies)] | [Player.HasVideo + VideoPlayer.Content(Episodes)] | [Player.HasVideo + VideoPlayer.Content(MusicVideos)] | [Player.HasVideo + VideoPlayer.Content(LiveTV)]]</visible>
+                <itemgap>8</itemgap>
+
+                <control type="image">
+                    <description>Player Icon</description>
+                    <width>40</width>
+                    <height>40</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="$VAR[MainColorOne]">equaliser.gif</texture>
+                    <visible>!Control.HasFocus(9898)</visible>
+                </control>
+                <control type="image">
+                    <description>Player Icon</description>
+                    <width>40</width>
+                    <height>40</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="black">equaliser.gif</texture>
+                    <visible>Control.HasFocus(9898)</visible>
+                </control>
+
+                <control type="label">
+                    <width>180</width>
+                    <height>45</height>
+                    <label>$VAR[CommonMediaPlayingTitle]</label>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>font12</font>
+                    <scroll>true</scroll>
+                    <scrollsuffix>&#160;               </scrollsuffix>
+                    <scrollspeed>20</scrollspeed>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <visible>!Control.HasFocus(9898)</visible>
+                </control>
+                <control type="label">
+                    <width>180</width>
+                    <height>45</height>
+                    <label>$VAR[CommonMediaPlayingTitle]</label>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>font12</font>
+                    <scroll>true</scroll>
+                    <scrollsuffix>&#160;               </scrollsuffix>
+                    <scrollspeed>50</scrollspeed>
+                    <textcolor>black</textcolor>
+                    <visible>Control.HasFocus(9898)</visible>
+                </control>
+                <!--
+                <control type="label"> 
+                    <width>110</width>
+                    <height>45</height>
+                    <label>$VAR[CommonMediaPlayingTime]</label>
+                    <align>right</align>
+                    <aligny>center</aligny>
+                    <font>font12</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                </control>-->
             </control>
 
-            <!-- Title with subtitle -->
-            <control type="label">
-                <left>128</left>
-                <top>78r</top>
-                <width>1050</width>
-                <height>30</height>
-                <label>$VAR[CommonMediaPlaying]</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <font>font12</font>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-                 <visible>Player.HasAudio | [Player.HasVideo + VideoPlayer.Content(Movies)] | [Player.HasVideo + VideoPlayer.Content(Episodes)] | [Player.HasVideo + VideoPlayer.Content(MusicVideos)] | [Player.HasVideo + VideoPlayer.Content(LiveTV)]</visible>
-            </control>
-            <control type="label">
-                <left>128</left>
-                <top>48r</top>
-                <width>1050</width>
-                <height>30</height>
-                <label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <font>font12</font>
-                <textcolor>grey</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>Player.HasAudio</visible>
-            </control>
-            <control type="label">
-                <left>128</left>
-                <top>48r</top>
-                <width>1050</width>
-                <height>30</height>
-                <label>$INFO[VideoPlayer.Studio]</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <font>font12</font>
-                <textcolor>grey</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>Player.HasVideo + VideoPlayer.Content(Movies)</visible>
-            </control>
-            <control type="label">
-                <left>128</left>
-                <top>48r</top>
-                <width>1050</width>
-                <height>30</height>
-                <label>$INFO[VideoPlayer.TVShowTitle]</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <font>font12</font>
-                <textcolor>grey</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>Player.HasVideo + VideoPlayer.Content(Episodes)</visible>
-            </control>
-            <control type="label">
-                <left>128</left>
-                <top>48r</top>
-                <width>1050</width>
-                <height>30</height>
-                <label>$INFO[VideoPlayer.Artist]</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <font>font12</font>
-                <textcolor>grey</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>Player.HasVideo + VideoPlayer.Content(MusicVideos)</visible>
-            </control>
-            <control type="label">
-                <left>128</left>
-                <top>48r</top>
-                <width>1050</width>
-                <height>30</height>
-                <label>$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.ChannelNumberLabel, - ([COLOR=white],[/COLOR])]</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <font>font12</font>
-                <textcolor>grey</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>Player.HasVideo + VideoPlayer.Content(LiveTV)</visible>
-            </control>
-        </control>
-    </include>
-    <include name="CommonPageCount">
-        <control type="group">
-            <animation effect="slide" start="0,0" end="-105,0" time="0" condition="!Skin.HasSetting(DisableFloorBtns)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="-68,0" time="0" condition="!Skin.HasSetting(HideTrailerBtn)">Conditional</animation>
-            <visible>[!Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)] + !Skin.HasSetting(HidePageCountInfo)</visible>
-            <control type="label">
-                <description>Page Count Label</description>
-                <left>300</left>
-                <top>80r</top>
-                <width>1650</width>
-                <height>30</height>
-                <font>font12</font>
-                <textcolor>grey</textcolor>
-                <scroll>false</scroll>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>$INFO[Container.NumItems,([COLOR=white],[/COLOR]) $LOCALIZE[31025]]$INFO[Container.CurrentPage, - $LOCALIZE[31024] ([COLOR=white]]$INFO[Container.NumPages,/,[/COLOR])]</label>
-                <include>Window_OpenClose_Animation</include>
-            </control>
-            <control type="label">
-                <description>Container Duration Label</description>
-                <left>300</left>
-                <top>48r</top>
-                <width>1650</width>
-                <height>30</height>
-                <font>font12</font>
-                <textcolor>grey</textcolor>
-                <scroll>false</scroll>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>$INFO[Container.TotalTime,$LOCALIZE[31009] ([COLOR=white],[/COLOR])]</label>
-                <include>Window_OpenClose_Animation</include>
-            </control>
         </control>
     </include>
     <include name="NextAired">

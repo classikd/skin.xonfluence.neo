@@ -31,11 +31,6 @@
             <!-- view id = 551 -->
             <include>AddonInfoThumbView1</include>
         </control>
-        <control type="group">
-            <depth>DepthFooter</depth>
-            <include>CommonPageCount</include>
-            <include>CommonNowPlaying</include>
-        </control>
         <include>FloorReturnButtons</include>
         <include>BehindDialogFadeOut</include>
         <include>ScrollOffsetLabel</include>
