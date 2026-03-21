@@ -1737,59 +1737,61 @@
         <label>$INFO[System.Time(hh:mm:ss xx)]</label>
     </include>
     <include name="Clock">
-        <control type="label" id="1">
-            <animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(DialogVolumeBar.xml)">Conditional</animation>
-			<description>time label</description>
-            <right>30</right>
-            <top>8</top>
-            <width>300</width>
+        
+        <control type="grouplist">
+            <left>120</left>
+            <top>25</top>
+            <width>1725</width>
             <height>45</height>
+            <orientation>horizontal</orientation>
             <align>right</align>
-            <aligny>center</aligny>
-            <font>font28_title</font>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
-            <include condition="!Skin.HasSetting(ClockShowSeconds)">ClockDefault</include>
-            <include condition="Skin.HasSetting(ClockShowSeconds)">ClockSeconds</include>
-            <include>Window_OpenClose_Animation</include>
-            <animation effect="slide" start="0,0" end="-60,0" time="75" condition="Player.Muted">conditional</animation>
-            <animation effect="slide" start="0,0" end="-120,0" time="0" condition="![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(1105)]+system.getbool(input.enablemouse)+Window.IsVisible(MusicOSD)">conditional</animation>
-            <animation effect="slide" start="0,0" end="-120,0" time="0" condition="![Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]+system.getbool(input.enablemouse)+Window.IsVisible(VideoOSD)">conditional</animation>
-            <animation effect="slide" start="0,0" end="-120,0" time="0" condition="system.getbool(input.enablemouse)+Window.IsVisible(1198)">conditional</animation>
-            <animation effect="slide" start="0,0" end="0,-82" time="150" condition="Window.IsVisible(busydialog)">conditional</animation>
-            <visible>!Skin.HasSetting(HideSystemTime)</visible>
+            <itemgap>8</itemgap>
+
+            <include>CommonNowPlaying</include>
+
+            <control type="image">
+                <description>time icon</description>
+                <width>40</width>
+                <height>40</height>
+                <texture colordiffuse="$VAR[MainColorOne]">icon_time.png</texture> 
+                <visible>!Skin.HasSetting(HideSystemTime)</visible>
+            </control>
+            <control type="label" id="1">
+                <description>time label</description> 
+                <width>auto</width>
+                <height>45</height>
+                <align>right</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <include condition="!Skin.HasSetting(ClockShowSeconds)">ClockDefault</include>
+                <include condition="Skin.HasSetting(ClockShowSeconds)">ClockSeconds</include>
+                <visible>!Skin.HasSetting(HideSystemTime)</visible>
+            </control>
         </control>
+
     </include>
     <include name="Date">
         <control type="group" id="1">
-			<animation effect="fade" start="100" end="0" time="200" condition="[Control.IsVisible(508) | Control.IsVisible(509) | 
-			                                                                    Window.IsVisible(MyWeather.xml) | Window.IsVisible(DialogVolumeBar.xml) | 
-																				Window.IsVisible(FileManager.xml) | Window.IsVisible(SmartPlaylistEditor.xml) | 
-																				Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml) | 
-																				Window.IsVisible(SkinSettings.xml)]">Conditional</animation>
 		    <control type="label" id="1">
                 <description>Date label</description>
-                <right>30</right>
-                <top>52</top>
+                <right>75</right>
+                <top>68</top>
                 <width>450</width>
                 <height>22</height>
                 <align>right</align>
                 <aligny>center</aligny>
-                <font>font10</font>
+                <font>font11</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <label>$INFO[System.Date]</label>
                 <include>Window_OpenClose_Animation</include>
-                <animation effect="slide" start="0,0" end="-60,0" time="75" condition="Player.Muted">conditional</animation>
-                <animation effect="slide" start="0,0" end="-120,0" time="0" condition="![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(1105)]+system.getbool(input.enablemouse)+Window.IsVisible(MusicOSD)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-120,0" time="0" condition="![Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]+system.getbool(input.enablemouse)+Window.IsVisible(VideoOSD)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-120,0" time="0" condition="system.getbool(input.enablemouse) + Window.IsVisible(1198)">conditional</animation>
-                <animation effect="slide" start="0,0" end="0,-82" time="150" condition="Window.IsVisible(busydialog)">conditional</animation>
                 <visible>!Skin.HasSetting(HideSystemTime) + Skin.HasSetting(HideCPUTemp)</visible>
             </control>
 		    <control type="label" id="1">
                 <description>Date label</description>
-                <right>30</right>
+                <right>75</right>
                 <top>980</top>
                 <width>650</width>
                 <height>120</height>
@@ -1800,51 +1802,36 @@
                 <shadowcolor>black</shadowcolor>
                 <label></label>
                 <include>Window_OpenClose_Animation</include>
-                <animation effect="slide" start="0,0" end="-60,0" time="75" condition="Player.Muted">conditional</animation>
-                <animation effect="slide" start="0,0" end="-120,0" time="0" condition="![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(1105)]+system.getbool(input.enablemouse)+Window.IsVisible(MusicOSD)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-120,0" time="0" condition="![Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]+system.getbool(input.enablemouse)+Window.IsVisible(VideoOSD)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-120,0" time="0" condition="system.getbool(input.enablemouse) + Window.IsVisible(1198)">conditional</animation>
-                <animation effect="slide" start="0,0" end="0,-82" time="150" condition="Window.IsVisible(busydialog)">conditional</animation>
                 <visible>!Skin.HasSetting(HideSystemTime) + Skin.HasSetting(HideCPUTemp)</visible>
             </control>			
 		    <control type="label" id="1">
                 <description>Date label</description>
-                <right>30</right>
-                <top>52</top>
+                <right>75</right>
+                <top>68</top>
                 <width>450</width>
                 <height>22</height>
                 <align>right</align>
                 <aligny>center</aligny>
-                <font>font10</font>
+                <font>font11</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <label>$INFO[System.Date] • [COLOR=$VAR[MainColorOne]]$INFO[System.CPUTemperature][/COLOR]</label>
                 <include>Window_OpenClose_Animation</include>
-                <animation effect="slide" start="0,0" end="-60,0" time="75" condition="Player.Muted">conditional</animation>
-                <animation effect="slide" start="0,0" end="-120,0" time="0" condition="![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(1105)]+system.getbool(input.enablemouse)+Window.IsVisible(MusicOSD)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-120,0" time="0" condition="![Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]+system.getbool(input.enablemouse)+Window.IsVisible(VideoOSD)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-120,0" time="0" condition="system.getbool(input.enablemouse) + Window.IsVisible(1198)">conditional</animation>
-                <animation effect="slide" start="0,0" end="0,-82" time="150" condition="Window.IsVisible(busydialog)">conditional</animation>
                 <visible>!Skin.HasSetting(HideSystemTime) + !Skin.HasSetting(HideCPUTemp) + !String.IsEqual(System.CPUTemperature,Not Available)</visible>
             </control>
 		    <control type="label" id="1">
                 <description>Date label</description>
-                <right>30</right>
-                <top>52</top>
+                <right>75</right>
+                <top>68</top>
                 <width>450</width>
                 <height>22</height>
                 <align>right</align>
                 <aligny>center</aligny>
-                <font>font10</font>
+                <font>font11</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <label>$INFO[System.Date] • [COLOR=$VAR[MainColorOne]]$LOCALIZE[32016][/COLOR]</label>
                 <include>Window_OpenClose_Animation</include>
-                <animation effect="slide" start="0,0" end="-60,0" time="75" condition="Player.Muted">conditional</animation>
-                <animation effect="slide" start="0,0" end="-120,0" time="0" condition="![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(1105)]+system.getbool(input.enablemouse)+Window.IsVisible(MusicOSD)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-120,0" time="0" condition="![Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]+system.getbool(input.enablemouse)+Window.IsVisible(VideoOSD)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-120,0" time="0" condition="system.getbool(input.enablemouse) + Window.IsVisible(1198)">conditional</animation>
-                <animation effect="slide" start="0,0" end="0,-82" time="150" condition="Window.IsVisible(busydialog)">conditional</animation>
                 <visible>!Skin.HasSetting(HideSystemTime) + !Skin.HasSetting(HideCPUTemp) + String.IsEqual(System.CPUTemperature,Not Available)</visible>
             </control>
 		</control>	
@@ -2748,7 +2735,6 @@
                     </control>
                 </control>
                 <include>Clock</include>
-				<include>Date</include>
                 <include condition="Skin.HasSetting(AllScreenTopLeftWidget) + !Skin.HasSetting(HideTopLeftWindows)">TopLeftInfo</include>
             </control>
         </definition>

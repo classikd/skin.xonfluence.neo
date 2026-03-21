@@ -851,7 +851,6 @@
             <control type="group" id="1">
                 <include>TopLeftInfo</include>
                 <include>Clock</include>
-                <include>Date</include>
                 <visible>!Skin.HasSetting(SimpleModOSD)</visible>
             </control>
 			<!-- Plot -->
@@ -1501,7 +1500,6 @@
             <control type="group" id="1">
                 <include>TopLeftInfo</include>
                 <include>Clock</include>
-                <include>Date</include>
             </control>
             <control type="image" id="1">
                 <left>-30</left>
