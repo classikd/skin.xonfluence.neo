@@ -1,5 +1,14 @@
 # Changelog
 
+## Version 0.3
+- Add option to enable PiP playing media
+- Add options to hide some floor buttons
+- Remove some useless animations for better UX/perf
+- Improve header / now playing block
+- Improve floor buttons UX
+- Adapt some views to full background
+- and more
+
 ## Version 0.2
 - Add option to enable a simple OSD for touch
 - Add OSD button to open current folder videos in a dialog
