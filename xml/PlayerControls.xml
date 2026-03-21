@@ -321,7 +321,7 @@
                 <label></label>
                 <include content="OSDButton">
                     <param name="Size" value="60" />
-                    <param name="Texture" value="OSDChannelUp" />
+                    <param name="Texture" value="OSDChannelDown" />
                 </include>
                 <onleft>704</onleft>
                 <onright>705</onright>
@@ -336,7 +336,7 @@
                 <label></label>
                 <include content="OSDButton">
                     <param name="Size" value="60" />
-                    <param name="Texture" value="OSDChannelDown" />
+                    <param name="Texture" value="OSDChannelUp" />
                 </include>
                 <onleft>700</onleft>
                 <onright>706</onright>

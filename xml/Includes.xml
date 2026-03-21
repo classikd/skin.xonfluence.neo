@@ -1505,14 +1505,6 @@
                 <onback>50</onback>
                 <onup>610</onup>
                 <ondown>611</ondown>
-                <control type="radiobutton" id="600">
-                    <label />
-                    <include content="OSDButton">
-                        <param name="Size" value="58" />
-                        <param name="Texture" value="OSDChannelUp" />
-                    </include>
-                    <onclick>ChannelDown</onclick>
-                </control>
                 <control type="radiobutton" id="601">
                     <label />
                     <include content="OSDButton">
@@ -1520,6 +1512,14 @@
                         <param name="Texture" value="OSDChannelDown" />
                     </include>
                     <onclick>ChannelUp</onclick>
+                </control>
+                <control type="radiobutton" id="600">
+                    <label />
+                    <include content="OSDButton">
+                        <param name="Size" value="58" />
+                        <param name="Texture" value="OSDChannelUp" />
+                    </include>
+                    <onclick>ChannelDown</onclick>
                 </control>
                 <control type="radiobutton" id="603">
                     <label />
