@@ -832,7 +832,7 @@
     <include name="WindowTitleCommons">
         <left>0</left>
         <top>0</top>
-        <width min="0" max="1200">auto</width>
+        <width min="0" max="600">auto</width>
         <height>45</height>
         <font>font14</font>
         <textcolor>white</textcolor>
@@ -840,7 +840,6 @@
         <scroll>false</scroll>
         <align>left</align>
         <aligny>center</aligny>
-        <animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(notification)">Conditional</animation>
     </include>
     <include name="ButtonCommonValues">
         <height>60</height>
@@ -2698,26 +2697,27 @@
         <definition>
             <control type="group">
                 <depth>DepthHeader</depth>
-                <animation effect="fade" start="100" end="0" time="0" condition="Skin.HasSetting(NotificationsTopLeft) + [Window.IsVisible(notification) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogExtendedProgressBar.xml)]">Conditional</animation>
-				<visible>!Skin.HasSetting(NotificationsTopLeft) | [Skin.HasSetting(NotificationsTopLeft) + !Window.IsVisible(BusyDialog)]</visible>
+                <animation effect="fade" start="100" end="0" time="0" condition="Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogExtendedProgressBar.xml)">Conditional</animation>
+				<visible>!Window.IsVisible(BusyDialog)</visible>
+				<visible>!String.Contains(Window.Property(xmlfile),Settings)</visible>
 				<control type="image">
                     <description>Section header image</description>
-                    <left>30</left>
-                    <top>4</top>
-                    <width>52</width>
-                    <height>52</height>
+                    <left>75</left>
+                    <top>25</top>
+                    <width>36</width>
+                    <height>36</height>
                     <aspectratio>keep</aspectratio>
                     <texture>$PARAM[Icon].png</texture>
                     <visible>!Skin.HasSetting(AllScreenTopLeftWidget) + !Skin.HasSetting(HideTopLeftWindows)</visible>
                 </control>
                 <control type="grouplist">
-                    <left>98</left>
-                    <top>8</top>
+                    <left>120</left>
+                    <top>21</top>
                     <width>1500</width>
                     <height>45</height>
                     <orientation>horizontal</orientation>
                     <align>left</align>
-                    <itemgap>8</itemgap>
+                    <itemgap>15</itemgap>
                     <visible>!Skin.HasSetting(AllScreenTopLeftWidget) + !Skin.HasSetting(HideTopLeftWindows)</visible>
                     <control type="label">
                         <include>WindowTitleCommons</include>
@@ -2732,6 +2732,19 @@
                         <include>WindowTitleCommons</include>
                         <label>> [COLOR=$VAR[MainColorOne]]$INFO[Control.GetLabel(2)][/COLOR]</label>
                         <visible>$PARAM[ShowLabel2]</visible>
+                    </control>
+                    <control type="label">
+                        <height>48</height>
+                        <aligny>center</aligny>
+                        <visible>!Skin.HasSetting(HidePageCountInfo)</visible>
+                        <visible>!String.IsEmpty(Container.NumItems)</visible>
+                        <description>Page Count Label</description>
+                        <font>font11</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                        <label>($INFO[Container.NumItems,, $LOCALIZE[31025]])</label>
+                        <include>Window_OpenClose_Animation</include>
                     </control>
                 </control>
                 <include>Clock</include>
