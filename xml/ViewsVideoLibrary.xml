@@ -3534,8 +3534,8 @@
             </control>
             <control type="panel" id="732">
                 <hitrect x="0" y="-82" w="1920" h="1080" />
-                <left>22</left>
-                <top>82</top>
+                <left>70</left>
+                <top>100</top>
                 <width>1876</width>
                 <height>945</height>
                 <onleft>2</onleft>
@@ -3547,11 +3547,11 @@
                 <scrolltime>200</scrolltime>
                 <preloaditems>200</preloaditems>
                 <visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Sets) | Container.Content(MusicVideos)</visible>
-                <itemlayout height="303" width="208">
+                <itemlayout height="303" width="196">
                     <control type="image">
                         <left>10</left>
                         <top>0</top>
-                        <width>198</width>
+                        <width>196</width>
                         <height>303</height>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <include>VisibleFadeEffect</include>
@@ -3580,7 +3580,7 @@
                     <control type="progress">
                         <left>10</left>
                         <top>300</top>
-                        <width>197</width>
+                        <width>195</width>
                         <height>3</height>
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
@@ -3591,7 +3591,7 @@
                     <control type="image">
                         <left>10</left>
                         <top>0</top>
-                        <width>198</width>
+                        <width>196</width>
                         <height>303</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>black-back.png</texture>

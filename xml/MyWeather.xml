@@ -32,8 +32,8 @@
             </animation>
             <include>VisibleFadeEffect</include>
             <control type="group">
-                <left>90</left>
-                <top>60</top>
+                <left>80</left>
+                <top>100</top>
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
@@ -397,7 +397,7 @@
             </control>
             <control type="group">
                 <left>870</left>
-                <top>60</top>
+                <top>100</top>
                 <control type="image">
                     <left>0</left>
                     <top>0</top>

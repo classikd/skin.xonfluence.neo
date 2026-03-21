@@ -391,10 +391,10 @@
             <visible>Control.IsVisible(500)</visible>
             <include>VisibleFadeEffect</include>
             <control type="panel" id="500">
-                <left>135</left>
-                <top>130</top>
-                <width>1620</width>
-                <height>838</height>
+                <left>70</left>
+                <top>100</top>
+                <width>1820</width>
+                <height>985</height>
                 <onleft>2</onleft>
                 <onright>60</onright>
                 <onup>500</onup>
@@ -404,12 +404,12 @@
 				<orientation>vertical</orientation>
                 <scrolltime>200</scrolltime>
                 <preloaditems>10</preloaditems>
-                <itemlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(TVShows) + !Container.Content(Sets)" height="279" width="324">
+                <itemlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(TVShows) + !Container.Content(Sets)" height="279" width="297">
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <bordertexture border="5">transparent.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultGenre.png">$VAR[MovieGenreIcon]</texture>
@@ -419,8 +419,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <bordertexture border="5">transparent.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultStudios.png">$VAR[StudioIcon]</texture>
@@ -432,8 +432,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <include>TextureBorderViews</include>
                         <texture background="true">DefaultFolderBack.png</texture>
                         <aspectratio>keep</aspectratio>
@@ -444,8 +444,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <include>TextureBorderViews</include>
                         <texture background="true" colordiffuse="$VAR[MainColorOne]">DefaultAlbumCover.png</texture>
                         <aspectratio>keep</aspectratio>
@@ -456,8 +456,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <include>TextureBorderViews</include>
                         <texture background="true" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
                         <aspectratio>keep</aspectratio>
@@ -470,8 +470,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideo.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
                         <aspectratio>keep</aspectratio>
@@ -485,8 +485,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
                         <aspectratio>keep</aspectratio>
@@ -500,8 +500,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <include>TextureBorderViews</include>
                         <bordertexture border="5">transparent.png</bordertexture>
                         <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
@@ -525,8 +525,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="5">transparent.png</bordertexture>
                         <include>TextureBorderViews</include>
@@ -537,8 +537,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="5">transparent.png</bordertexture>
                         <include>TextureBorderViews</include>
@@ -547,8 +547,8 @@
                     </control>
                     <control type="label">
                         <left>10</left>
-                        <top>238</top>
-                        <width>310</width>
+                        <top>228</top>
+                        <width>285</width>
                         <height>38</height>
                         <font>font11</font>
                         <textcolor>white</textcolor>
@@ -593,8 +593,8 @@
 
                     <control type="progress">
                         <left>5</left>
-                        <top>232</top>
-                        <width>310</width>
+                        <top>222</top>
+                        <width>285</width>
                         <height>3</height>
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
@@ -604,12 +604,12 @@
                     </control> 
 
                 </itemlayout>
-                <focusedlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(TVShows) + !Container.Content(Sets)" height="279" width="324">
+                <focusedlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(TVShows) + !Container.Content(Sets)" height="279" width="297">
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultGenre.png">$VAR[MovieGenreIcon]</texture>
@@ -619,8 +619,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultStudios.png">$VAR[StudioIcon]</texture>
@@ -632,8 +632,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <include>TextureBorderViews</include>
                         <texture background="true">DefaultFolderBack.png</texture>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
@@ -645,8 +645,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <include>TextureBorderViews</include>
                         <texture background="true" colordiffuse="$VAR[MainColorOne]">DefaultAlbumCover.png</texture>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
@@ -658,8 +658,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <include>TextureBorderViews</include>
                         <texture background="true" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
@@ -673,8 +673,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <include>TextureBorderViews</include>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <texture background="true" fallback="DefaultVideo.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
@@ -689,8 +689,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <include>TextureBorderViews</include>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
@@ -705,8 +705,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPoster]">$VAR[PosterThumb]</texture>
@@ -719,8 +719,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
@@ -731,8 +731,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>321</width>
-                        <height>240</height>
+                        <width>294</width>
+                        <height>230</height>
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
@@ -741,8 +741,8 @@
                     </control>
                     <control type="label">
                         <left>10</left>
-                        <top>238</top>
-                        <width>310</width>
+                        <top>228</top>
+                        <width>285</width>
                         <height>38</height>
                         <font>font11</font>
                         <textcolor>white</textcolor>
@@ -786,8 +786,8 @@
 
                     <control type="progress">
                         <left>5</left>
-                        <top>232</top>
-                        <width>310</width>
+                        <top>222</top>
+                        <width>285</width>
                         <height>3</height>
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
@@ -798,7 +798,7 @@
 
 
                 </focusedlayout>
-                <itemlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="419" width="230">
+                <itemlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="419" width="222">
                     <control type="image">
                         <left>10</left>
                         <top>0</top>
@@ -816,6 +816,7 @@
                         <height>38</height>
                         <font>font11</font>
                         <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
@@ -863,7 +864,7 @@
                     </control> 
 
                 </itemlayout>
-                <focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="419" width="230">
+                <focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="419" width="222">
                     <control type="image">
                         <left>10</left>
                         <top>0</top>
@@ -881,6 +882,7 @@
                         <height>38</height>
                         <font>font11</font>
                         <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
@@ -930,10 +932,10 @@
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="60">
-                <left>1755</left>
-                <top>120</top>
+                <left>1865</left>
+                <top>97</top>
                 <width>38</width>
-                <height>825</height>
+                <height>950</height>
                 <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
                 <texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
                 <texturesliderbarfocus border="2,16,2,16" colordiffuse="$VAR[MainColorOne]">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -953,10 +955,10 @@
             <include>VisibleFadeEffect</include>
             <control type="panel" id="505">
                 <visible>Container.Content(TVShows) | Container.Content(Files)</visible>
-                <left>142</left>
-                <top>120</top>
-                <width>1620</width>
-                <height>810</height>
+                <left>80</left>
+                <top>100</top>
+                <width>1820</width>
+                <height>945</height>
                 <onleft>2</onleft>
                 <onright>60</onright>
                 <onup>505</onup>
@@ -965,12 +967,12 @@
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <preloaditems>2</preloaditems>
-                <itemlayout height="202" width="810" condition="!Skin.HasSetting(HideWideViewLabels)">
+                <itemlayout height="240" width="885" condition="!Skin.HasSetting(HideWideViewLabels)">
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>807</width>
-                        <height>158</height>
+                        <width>885</width>
+                        <height>188</height>
                         <bordertexture border="5">blank.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[BannerThumb]</texture>
@@ -978,8 +980,8 @@
                     </control>
                     <control type="label">
                         <left>1</left>
-                        <top>158</top>
-                        <width>807</width>
+                        <top>185</top>
+                        <width>885</width>
                         <height>38</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
@@ -989,24 +991,24 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="image">
-                        <left>770</left>
-                        <top>118</top>
+                        <left>3</left>
+                        <top>3</top>
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                     </control>
                     <control type="image">
-                        <left>770</left>
-                        <top>118</top>
+                        <left>3</left>
+                        <top>3</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
-                        <left>770</left>
-                        <top>118</top>
+                        <left>3</left>
+                        <top>3</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
@@ -1014,8 +1016,8 @@
                         <visible>Player.Playing</visible>
                     </control>
                     <control type="image">
-                        <left>770</left>
-                        <top>118</top>
+                        <left>3</left>
+                        <top>3</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
@@ -1023,12 +1025,12 @@
                         <visible>!Player.Playing</visible>
                     </control>
                 </itemlayout>
-                <focusedlayout height="202" width="810" condition="!Skin.HasSetting(HideWideViewLabels)">
+                <focusedlayout height="240" width="885" condition="!Skin.HasSetting(HideWideViewLabels)">
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>807</width>
-                        <height>158</height>
+                        <width>885</width>
+                        <height>188</height>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[BannerThumb]</texture>
@@ -1036,8 +1038,8 @@
                     </control>
                     <control type="label">
                         <left>1</left>
-                        <top>158</top>
-                        <width>807</width>
+                        <top>185</top>
+                        <width>885</width>
                         <height>38</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
@@ -1047,24 +1049,24 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="image">
-                        <left>770</left>
-                        <top>118</top>
+                        <left>3</left>
+                        <top>3</top>
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                     </control>
                     <control type="image">
-                        <left>770</left>
-                        <top>118</top>
+                        <left>3</left>
+                        <top>3</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
-                        <left>770</left>
-                        <top>118</top>
+                        <left>3</left>
+                        <top>3</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
@@ -1072,8 +1074,8 @@
                         <visible>Player.Playing</visible>
                     </control>
                     <control type="image">
-                        <left>770</left>
-                        <top>118</top>
+                        <left>3</left>
+                        <top>3</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
@@ -1081,36 +1083,36 @@
                         <visible>!Player.Playing</visible>
                     </control>
                 </focusedlayout>
-                <itemlayout height="162" width="810" condition="Skin.HasSetting(HideWideViewLabels)">
+                <itemlayout height="190" width="885" condition="Skin.HasSetting(HideWideViewLabels)">
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>807</width>
-                        <height>158</height>
+                        <width>885</width>
+                        <height>188</height>
                         <bordertexture border="5">blank.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[BannerThumb]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image">
-                        <left>770</left>
-                        <top>118</top>
+                        <left>3</left>
+                        <top>3</top>
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                     </control>
                     <control type="image">
-                        <left>770</left>
-                        <top>118</top>
+                        <left>3</left>
+                        <top>3</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
-                        <left>770</left>
-                        <top>118</top>
+                        <left>3</left>
+                        <top>3</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
@@ -1118,8 +1120,8 @@
                         <visible>Player.Playing</visible>
                     </control>
                     <control type="image">
-                        <left>770</left>
-                        <top>118</top>
+                        <left>3</left>
+                        <top>3</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
@@ -1127,36 +1129,36 @@
                         <visible>!Player.Playing</visible>
                     </control>
                 </itemlayout>
-                <focusedlayout height="162" width="810" condition="Skin.HasSetting(HideWideViewLabels)">
+                <focusedlayout height="190" width="885" condition="Skin.HasSetting(HideWideViewLabels)">
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>807</width>
-                        <height>158</height>
+                        <width>885</width>
+                        <height>188</height>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[BannerThumb]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image">
-                        <left>770</left>
-                        <top>118</top>
+                        <left>3</left>
+                        <top>3</top>
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                     </control>
                     <control type="image">
-                        <left>770</left>
-                        <top>118</top>
+                        <left>3</left>
+                        <top>3</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
-                        <left>770</left>
-                        <top>118</top>
+                        <left>3</left>
+                        <top>3</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
@@ -1164,8 +1166,8 @@
                         <visible>Player.Playing</visible>
                     </control>
                     <control type="image">
-                        <left>770</left>
-                        <top>118</top>
+                        <left>3</left>
+                        <top>3</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
@@ -1175,10 +1177,10 @@
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="60">
-                <left>1755</left>
-                <top>120</top>
+                <left>1865</left>
+                <top>95</top>
                 <width>38</width>
-                <height>825</height>
+                <height>950</height>
                 <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
                 <texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
                 <texturesliderbarfocus border="2,16,2,16" colordiffuse="$VAR[MainColorOne]">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -1197,10 +1199,10 @@
             <visible>Control.IsVisible(51)</visible>
             <include>VisibleFadeEffect</include>
             <control type="list" id="51">
-                <left>132</left>
-                <top>120</top>
-                <width>1620</width>
-                <height>842</height>
+                <left>80</left>
+                <top>100</top>
+                <width>1820</width>
+                <height>945</height>
                 <onleft>2</onleft>
                 <onright>60</onright>
                 <onup>51</onup>
@@ -1208,11 +1210,11 @@
                 <viewtype label="537">list</viewtype>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
-                <itemlayout height="60" width="1620">
+                <itemlayout height="60" width="1820">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>1620</width>
+                        <width>1770</width>
                         <height>61</height>
                         <texture border="0,1,0,1">MenuItemNF.png</texture>
                     </control>
@@ -1295,7 +1297,7 @@
                     <control type="label">
                         <left>98</left>
                         <top>0</top>
-                        <width>1410</width>
+                        <width>1545</width>
                         <height>60</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
@@ -1308,7 +1310,7 @@
                         <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
                     </control>
                     <control type="image">
-                        <left>1515</left>
+                        <left>1658</left>
                         <top>12</top>
                         <width>60</width>
                         <height>39</height>
@@ -1317,7 +1319,7 @@
                         <visible>Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
                     </control>
                     <control type="image">
-                        <left>1575</left>
+                        <left>1720</left>
                         <top>11</top>
                         <width>40</width>
                         <height>40</height>
@@ -1325,7 +1327,7 @@
                         <visible>Window.IsVisible(Videos) + ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
-                        <left>1575</left>
+                        <left>1720</left>
                         <top>11</top>
                         <width>40</width>
                         <height>40</height>
@@ -1334,7 +1336,7 @@
                         <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
-                        <left>1575</left>
+                        <left>1720</left>
                         <top>11</top>
                         <width>40</width>
                         <height>40</height>
@@ -1343,7 +1345,7 @@
                         <visible>Player.Playing</visible>
                     </control>
                     <control type="image">
-                        <left>1575</left>
+                        <left>1720</left>
                         <top>11</top>
                         <width>40</width>
                         <height>40</height>
@@ -1352,11 +1354,11 @@
                         <visible>!Player.Playing</visible>
                     </control>
                 </itemlayout>
-                <focusedlayout height="60" width="1620">
+                <focusedlayout height="60" width="1820">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>1620</width>
+                        <width>1770</width>
                         <height>62</height>
                         <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                         <visible>Control.HasFocus(51)</visible>
@@ -1490,7 +1492,7 @@
                     <control type="label">
                         <left>98</left>
                         <top>0</top>
-                        <width>1410</width>
+                        <width>1545</width>
                         <height>60</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
@@ -1506,7 +1508,7 @@
                     <control type="label">
                         <left>98</left>
                         <top>0</top>
-                        <width>1410</width>
+                        <width>1545</width>
                         <height>60</height>
                         <font>font12</font>
                         <textcolor>black</textcolor>
@@ -1521,7 +1523,7 @@
                     </control>
 
                     <control type="image">
-                        <left>1515</left>
+                        <left>1658</left>
                         <top>12</top>
                         <width>60</width>
                         <height>39</height>
@@ -1530,7 +1532,7 @@
                         <visible>Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
                     </control>
                     <control type="image">
-                        <left>1575</left>
+                        <left>1720</left>
                         <top>11</top>
                         <width>40</width>
                         <height>40</height>
@@ -1538,7 +1540,7 @@
                         <visible>Window.IsVisible(Videos) + ListItem.IsResumable</visible>
                     </control>
                     <control type="image">
-                        <left>1575</left>
+                        <left>1720</left>
                         <top>11</top>
                         <width>40</width>
                         <height>40</height>
@@ -1548,7 +1550,7 @@
                     </control>
 
                     <control type="image">
-                        <left>1575</left>
+                        <left>1720</left>
                         <top>11</top>
                         <width>40</width>
                         <height>40</height>
@@ -1557,7 +1559,7 @@
                         <visible>Player.Playing</visible>
                     </control>
                     <control type="image">
-                        <left>1575</left>
+                        <left>1720</left>
                         <top>11</top>
                         <width>40</width>
                         <height>40</height>
@@ -1568,10 +1570,10 @@
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="60">
-                <left>1755</left>
-                <top>120</top>
+                <left>1865</left>
+                <top>95</top>
                 <width>38</width>
-                <height>825</height>
+                <height>950</height>
                 <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
                 <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
                 <texturesliderbarfocus border="0,14,0,14" colordiffuse="$VAR[MainColorOne]">ScrollBarV_bar_focus.png</texturesliderbarfocus>

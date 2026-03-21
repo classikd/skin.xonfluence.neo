@@ -657,18 +657,6 @@
             </control>
             <control type="group">
                 <include>VisibleFadeEffect</include>
-                <visible>Control.IsVisible(501)</visible>
-                <control type="image">
-                    <left>75</left>
-                    <top>95</top>
-                    <width>1770</width>
-                    <height>895</height>
-                    <texture border="15">ContentPanel.png</texture>
-                    <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
-                </control>
-            </control>
-            <control type="group">
-                <include>VisibleFadeEffect</include>
                 <visible>Control.IsVisible(503)</visible>
                 <control type="image">
                     <left>75</left>
@@ -703,12 +691,12 @@
             </control>
             <control type="group">
                 <include>VisibleFadeEffect</include>
-                <visible>Control.IsVisible(51) | Control.IsVisible(500) | Control.IsVisible(505)</visible>
+                <visible>Control.IsVisible(501) | Control.IsVisible(51) | Control.IsVisible(500) | Control.IsVisible(505)</visible>
                 <control type="image">
-                    <left>112</left>
-                    <top>90</top>
-                    <width>1695</width>
-                    <height>900</height>
+                    <left>0</left>
+                    <top>0</top>
+                    <width>1920</width>
+                    <height>1080</height>
                     <texture border="15">ContentPanel.png</texture>
                     <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 </control>

@@ -553,44 +553,8 @@
     </include>
     <include name="ChannelList2">
         <control type="group">
-            <visible>Control.IsVisible(5010)</visible>
-            <include>Window_OpenClose_Animation</include>
-            <control type="group">
-                <include>VisibleFadeEffect</include>
-                <!--BG image LEFTVIEW -->
-                <control type="image">
-                    <left>75</left>
-                    <top>90</top>
-                    <width>900</width>
-                    <height>900</height>
-                    <texture border="15">ContentPanel.png</texture>
-                </control>
-                <control type="image">
-                    <left>75</left>
-                    <top>978</top>
-                    <width>900</width>
-                    <height>96</height>
-                    <texture border="15">ContentPanelMirror.png</texture>
-                </control>
-                <control type="image">
-                    <left>990</left>
-                    <top>90</top>
-                    <width>870</width>
-                    <height>900</height>
-                    <texture border="15">ContentPanel.png</texture>
-                </control>
-                <control type="image">
-                    <left>990</left>
-                    <top>978</top>
-                    <width>870</width>
-                    <height>96</height>
-                    <texture border="15">ContentPanelMirror.png</texture>
-                </control>
-            </control>
-        </control>
-        <control type="group">
             <description>Small Media Window</description>
-            <left>1020</left>
+            <left>1060</left>
             <top>120</top>
             <visible>Control.IsVisible(5010)</visible>
             <include>VisibleFadeEffect</include>
@@ -631,11 +595,11 @@
             <visible>Control.IsVisible(5010)</visible>
             <include>VisibleFadeEffect</include>
             <control type="group">
-                <left>1020</left>
+                <left>1060</left>
                 <top>510</top>
                 <control type="label">
                     <left>0</left>
-                    <top>-60</top>
+                    <top>0</top>
                     <width>795</width>
                     <height>30</height>
                     <font>font13</font>
@@ -689,9 +653,9 @@
                 <control type="textbox">
                     <description>Plot Value for TVShow</description>
                     <left>0</left>
-                    <top>-22</top>
+                    <top>42</top>
                     <width>795</width>
-                    <height>480</height>
+                    <height>390</height>
                     <font>font13</font>
                     <align>justify</align>
                     <textcolor>grey</textcolor>
@@ -703,24 +667,24 @@
                 </control>
                 <control type="label">
                     <left>0</left>
-                    <top>420</top>
+                    <top>-70</top>
                     <width>495</width>
                     <height>30</height>
-                    <font>font12</font>
-                    <textcolor>grey2</textcolor>
+                    <font>font11</font>
+                    <textcolor>grey</textcolor>
                     <align>left</align>
                     <aligny>center</aligny>
                     <scroll>false</scroll>
                     <visible>!String.IsEmpty(Container(5010).ListItem.NextTitle)</visible>
-                    <label>$LOCALIZE[19031]: $INFO[Container(5010).ListItem.NextTitle]</label>
+                    <label>$LOCALIZE[19031]: [COLOR=white]$INFO[Container(5010).ListItem.NextTitle][/COLOR]</label>
                 </control>
                 <control type="label">
                     <left>502</left>
-                    <top>420</top>
+                    <top>-70</top>
                     <width>300</width>
                     <height>30</height>
-                    <font>font12</font>
-                    <textcolor>grey2</textcolor>
+                    <font>font11</font>
+                    <textcolor>grey</textcolor>
                     <align>right</align>
                     <aligny>center</aligny>
                     <scroll>false</scroll>
@@ -729,10 +693,10 @@
                 </control>
             </control>
             <control type="list" id="5010">
-                <left>105</left>
-                <top>128</top>
+                <left>80</left>
+                <top>100</top>
                 <width>838</width>
-                <height>801</height>
+                <height>945</height>
                 <onleft>100</onleft>
                 <onright>70</onright>
                 <onup>50</onup>
@@ -740,7 +704,7 @@
                 <viewtype label="537">list</viewtype>
                 <pagecontrol>70</pagecontrol>
                 <scrolltime>200</scrolltime>
-                <itemlayout height="57" width="885">
+                <itemlayout height="57" width="930">
 
                     <control type="label">
                         <left>4</left>
@@ -769,7 +733,7 @@
                         <height>46</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -825,11 +789,11 @@
                         <visible>ListItem.IsRecording</visible>
                     </control>
                 </itemlayout>
-                <focusedlayout height="57" width="885">
+                <focusedlayout height="57" width="930">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>820</width>
+                        <width>880</width>
                         <height>57</height>
                         <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                         <visible>Control.HasFocus(5010)</visible>
@@ -982,10 +946,10 @@
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="70">
-                <left>922</left>
+                <left>940</left>
                 <top>128</top>
                 <width>38</width>
-                <height>810</height>
+                <height>940</height>
                 <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
                 <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
                 <texturesliderbarfocus border="0,14,0,14" colordiffuse="$VAR[MainColorOne]">ScrollBarV_bar_focus.png</texturesliderbarfocus>

@@ -79,8 +79,8 @@
             </control>
         </control>
         <control type="image">
-            <left>1840</left>
-            <top>8</top>
+            <left>1855</left>
+            <top>10</top>
             <width>68</width>
             <height>68</height>
             <aspectratio>keep</aspectratio>

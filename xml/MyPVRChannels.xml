@@ -6,6 +6,20 @@
     <onunload>ClearProperty(SideBladeOpen)</onunload>
     <controls>
         <include>CommonBackground</include>
+
+        <control type="group">
+            <include>VisibleFadeEffect</include>
+            <visible>Control.IsVisible(5010) </visible>
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>1920</width>
+                <height>1080</height>
+                <texture border="15">ContentPanel.png</texture>
+                <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
+            </control>
+        </control>
+
         <include>PVRHeader</include>
         <!-- view id = 50 -->
         <include>ChannelList</include>
