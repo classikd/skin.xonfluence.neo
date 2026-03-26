@@ -2820,6 +2820,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.1.Type),MusicPlayList)">$VAR[SkinBackgroundPath]musicvideos.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.1.Type),Radio)">$VAR[SkinBackgroundPath]radio.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.1.Type),PlayDisc)">$VAR[SkinBackgroundPath]playdisc.jpg</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.1.Type),Games)">$VAR[SkinBackgroundPath]games.jpg</value>
         <value>$VAR[SkinBackgroundPath]$INFO[Skin.CurrentTheme,,.jpg]</value>
     </variable>
     <variable name="SetMenuTwoBackground" type="text">
@@ -2842,6 +2843,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.2.Type),MusicPlayList)">$VAR[SkinBackgroundPath]musicvideos.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.2.Type),Radio)">$VAR[SkinBackgroundPath]radio.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.2.Type),PlayDisc)">$VAR[SkinBackgroundPath]playdisc.jpg</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.2.Type),Games)">$VAR[SkinBackgroundPath]games.jpg</value>
         <value>$VAR[SkinBackgroundPath]$INFO[Skin.CurrentTheme,,.jpg]</value>
     </variable>
     <variable name="SetMenuThreeBackground" type="text">
@@ -2864,6 +2866,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.3.Type),MusicPlayList)">$VAR[SkinBackgroundPath]musicvideos.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.3.Type),Radio)">$VAR[SkinBackgroundPath]radio.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.3.Type),PlayDisc)">$VAR[SkinBackgroundPath]playdisc.jpg</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.3.Type),Games)">$VAR[SkinBackgroundPath]games.jpg</value>
         <value>$VAR[SkinBackgroundPath]$INFO[Skin.CurrentTheme,,.jpg]</value>
     </variable>
     <variable name="SetMenuFourBackground" type="text">
@@ -2886,6 +2889,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.4.Type),MusicPlayList)">$VAR[SkinBackgroundPath]musicvideos.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.4.Type),Radio)">$VAR[SkinBackgroundPath]radio.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.4.Type),PlayDisc)">$VAR[SkinBackgroundPath]playdisc.jpg</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.4.Type),Games)">$VAR[SkinBackgroundPath]games.jpg</value>
         <value>$VAR[SkinBackgroundPath]$INFO[Skin.CurrentTheme,,.jpg]</value>
     </variable>
     <variable name="SetMenuFiveBackground" type="text">
@@ -2908,6 +2912,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.5.Type),MusicPlayList)">$VAR[SkinBackgroundPath]musicvideos.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.5.Type),Radio)">$VAR[SkinBackgroundPath]radio.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.5.Type),PlayDisc)">$VAR[SkinBackgroundPath]playdisc.jpg</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.5.Type),Games)">$VAR[SkinBackgroundPath]games.jpg</value>
         <value>$VAR[SkinBackgroundPath]$INFO[Skin.CurrentTheme,,.jpg]</value>
     </variable>
     <variable name="SetMenuSixBackground" type="text">
@@ -2930,6 +2935,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.6.Type),MusicPlayList)">$VAR[SkinBackgroundPath]musicvideos.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.6.Type),Radio)">$VAR[SkinBackgroundPath]radio.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.6.Type),PlayDisc)">$VAR[SkinBackgroundPath]playdisc.jpg</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.6.Type),Games)">$VAR[SkinBackgroundPath]games.jpg</value>
         <value>$VAR[SkinBackgroundPath]$INFO[Skin.CurrentTheme,,.jpg]</value>
     </variable>
     <variable name="SetMenuSevenBackground" type="text">
@@ -2952,6 +2958,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.7.Type),MusicPlayList)">$VAR[SkinBackgroundPath]musicvideos.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.7.Type),Radio)">$VAR[SkinBackgroundPath]radio.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.7.Type),PlayDisc)">$VAR[SkinBackgroundPath]playdisc.jpg</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.7.Type),Games)">$VAR[SkinBackgroundPath]games.jpg</value>
         <value>$VAR[SkinBackgroundPath]$INFO[Skin.CurrentTheme,,.jpg]</value>
     </variable>
     <variable name="SetMenuEightBackground" type="text">
@@ -2974,6 +2981,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.8.Type),MusicPlayList)">$VAR[SkinBackgroundPath]musicvideos.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.8.Type),Radio)">$VAR[SkinBackgroundPath]radio.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.8.Type),PlayDisc)">$VAR[SkinBackgroundPath]playdisc.jpg</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.8.Type),Games)">$VAR[SkinBackgroundPath]games.jpg</value>
         <value>$VAR[SkinBackgroundPath]$INFO[Skin.CurrentTheme,,.jpg]</value>
     </variable>
     <variable name="SetMenuNineBackground" type="text">
@@ -2996,6 +3004,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.9.Type),MusicPlayList)">$VAR[SkinBackgroundPath]musicvideos.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.9.Type),Radio)">$VAR[SkinBackgroundPath]radio.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.9.Type),PlayDisc)">$VAR[SkinBackgroundPath]playdisc.jpg</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.9.Type),Games)">$VAR[SkinBackgroundPath]games.jpg</value>
         <value>$VAR[SkinBackgroundPath]$INFO[Skin.CurrentTheme,,.jpg]</value>
     </variable>
     <variable name="SetMenuTenBackground" type="text">
@@ -3018,6 +3027,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.10.Type),MusicPlayList)">$VAR[SkinBackgroundPath]musicvideos.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.10.Type),Radio)">$VAR[SkinBackgroundPath]radio.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.10.Type),PlayDisc)">$VAR[SkinBackgroundPath]playdisc.jpg</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.10.Type),Games)">$VAR[SkinBackgroundPath]games.jpg</value>
         <value>$VAR[SkinBackgroundPath]$INFO[Skin.CurrentTheme,,.jpg]</value>
     </variable>
     <variable name="SetMenuElevenBackground" type="text">
@@ -3040,6 +3050,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.11.Type),MusicPlayList)">$VAR[SkinBackgroundPath]musicvideos.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.11.Type),Radio)">$VAR[SkinBackgroundPath]radio.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.11.Type),PlayDisc)">$VAR[SkinBackgroundPath]playdisc.jpg</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.11.Type),Games)">$VAR[SkinBackgroundPath]games.jpg</value>
         <value>$VAR[SkinBackgroundPath]$INFO[Skin.CurrentTheme,,.jpg]</value>
     </variable>
     <variable name="SetMenuTwelveBackground" type="text">
@@ -3062,6 +3073,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.12.Type),MusicPlayList)">$VAR[SkinBackgroundPath]musicvideos.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.12.Type),Radio)">$VAR[SkinBackgroundPath]radio.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.12.Type),PlayDisc)">$VAR[SkinBackgroundPath]playdisc.jpg</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.12.Type),Games)">$VAR[SkinBackgroundPath]games.jpg</value>
         <value>$VAR[SkinBackgroundPath]$INFO[Skin.CurrentTheme,,.jpg]</value>
     </variable>
     <variable name="SetMenuThirteenBackground" type="text">
@@ -3084,6 +3096,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.13.Type),MusicPlayList)">$VAR[SkinBackgroundPath]musicvideos.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.13.Type),Radio)">$VAR[SkinBackgroundPath]radio.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.13.Type),PlayDisc)">$VAR[SkinBackgroundPath]playdisc.jpg</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.13.Type),Games)">$VAR[SkinBackgroundPath]games.jpg</value>
         <value>$VAR[SkinBackgroundPath]$INFO[Skin.CurrentTheme,,.jpg]</value>
     </variable>
     <variable name="SetMenuFourteenBackground" type="text">
@@ -3106,6 +3119,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.14.Type),MusicPlayList)">$VAR[SkinBackgroundPath]musicvideos.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.14.Type),Radio)">$VAR[SkinBackgroundPath]radio.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.14.Type),PlayDisc)">$VAR[SkinBackgroundPath]playdisc.jpg</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.14.Type),Games)">$VAR[SkinBackgroundPath]games.jpg</value>
         <value>$VAR[SkinBackgroundPath]$INFO[Skin.CurrentTheme,,.jpg]</value>
     </variable>
     <variable name="SetMenuFifteenBackground" type="text">
@@ -3128,9 +3142,11 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.15.Type),MusicPlayList)">$VAR[SkinBackgroundPath]musicvideos.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.15.Type),Radio)">$VAR[SkinBackgroundPath]radio.jpg</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.15.Type),PlayDisc)">$VAR[SkinBackgroundPath]playdisc.jpg</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.15.Type),Games)">$VAR[SkinBackgroundPath]games.jpg</value>
         <value>$VAR[SkinBackgroundPath]$INFO[Skin.CurrentTheme,,.jpg]</value>
     </variable>
     <variable name="HomeBackgroundLabel" type="text">
+        <value condition="String.IsEqual(Container(9005).ListItem.Property(HiLiteItem),Games) + String.Contains(Container(9005).ListItem.Thumb,games.jpg)">$LOCALIZE[31257]</value>
         <value condition="String.IsEqual(Container(9005).ListItem.Property(HiLiteItem),Weather) + String.Contains(Container(9005).ListItem.Thumb,weather.jpg)">$LOCALIZE[31257]</value>
         <value condition="String.IsEqual(Container(9005).ListItem.Property(HiLiteItem),Pictures) + String.Contains(Container(9005).ListItem.Thumb,pictures.jpg)">$LOCALIZE[31257]</value>
         <value condition="String.IsEqual(Container(9005).ListItem.Property(HiLiteItem),Videos) + String.Contains(Container(9005).ListItem.Thumb,videos.jpg)">$LOCALIZE[31257]</value>
@@ -3757,7 +3773,7 @@
     <variable name="SkinBackgroundPath">
         <value condition="!String.IsEmpty(Skin.String(AlternativeBackgroundPath))">$INFO[Skin.String(AlternativeBackgroundPath)]</value>
         <value condition="!String.IsEmpty(Skin.String(SkinFanart.path))">$INFO[Skin.String(SkinFanart.path)]</value>
-        <value></value>
+        <value>Backgrounds/</value>
     </variable>
 
 	<variable name="SeasonEpisodeLabel">

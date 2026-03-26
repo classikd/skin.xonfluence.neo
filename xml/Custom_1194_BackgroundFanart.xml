@@ -18,7 +18,6 @@
             <param name="CloseButtonNav" value="9000" />
         </include>
         <control type="group">
-            <visible>String.IsEmpty(Window.Property(UpdateFanart))</visible>
             <control type="textbox" id="609">
                 <description>text</description>
                 <left>45</left>
@@ -47,69 +46,10 @@
                     <textcolor>white</textcolor>
                     <focusedcolor>white</focusedcolor>
                     <align>center</align>
-                    <onclick>Skin.SetString(SkinFanart.Name,Skin Backgrounds - xonfluence)</onclick>
-                    <onclick>Skin.SetString(SkinFanart.Path,resource://resource.images.skinbackgrounds.xonfluence/)</onclick>
+                    <onclick>Skin.SetString(SkinFanart.Name,)</onclick>
+                    <onclick>Skin.SetString(SkinFanart.Path,Backgrounds/)</onclick>
                     <onclick>Skin.SetString(SkinFanart.Ext,.jpg)</onclick>
-                    <onclick condition="!System.HasAddon(resource.images.skinbackgrounds.xonfluence)">InstallAddon(resource.images.skinbackgrounds.xonfluence)</onclick>
-                    <onclick>SetProperty(UpdateFanart,True)</onclick>
-                </control>
-                <control type="button" id="610">
-                    <description>Cancel button</description>
-                    <width>300</width>
-                    <height>60</height>
-                    <label>222</label>
-                    <font>font12_title</font>
-                    <textcolor>white</textcolor>
-                    <focusedcolor>white</focusedcolor>
-                    <align>center</align>
-                    <onclick>SetProperty(UpdateFanart,True)</onclick>
-                    <!--<onclick>PreviousMenu</onclick>-->
-                </control>
-                <control type="button" id="612">
-                    <description>Don't ask again button</description>
-                    <width>300</width>
-                    <height>60</height>
-                    <label>31165</label>
-                    <font>font12_title</font>
-                    <textcolor>white</textcolor>
-                    <focusedcolor>white</focusedcolor>
-                    <align>center</align>
                     <onclick>Skin.SetBool(DontAskBackgroundFanart)</onclick>
-                    <onclick>PreviousMenu</onclick>
-                </control>
-            </control>
-        </control>
-        <control type="group">
-            <visible>!String.IsEmpty(Window.Property(UpdateFanart))</visible>
-            <control type="textbox" id="609">
-                <description>text</description>
-                <left>45</left>
-                <top>93</top>
-                <width>885</width>
-                <height>147</height>
-                <align>left</align>
-                <label>31163</label>
-                <font>font13</font>
-                <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
-            </control>
-            <control type="grouplist" id="9000">
-                <left>38</left>
-                <top>292</top>
-                <width>900</width>
-                <height>60</height>
-                <align>center</align>
-                <itemgap>0</itemgap>
-                <orientation>horizontal</orientation>
-                <control type="button" id="610">
-                    <visible>System.HasAddon(resource.images.skinbackgrounds.xonfluence) + !String.IsEmpty(Skin.String(SkinFanart.Path))</visible>
-                    <description>OK button</description>
-                    <width>300</width>
-                    <height>60</height>
-                    <label>186</label>
-                    <font>font12_title</font>
-                    <textcolor>white</textcolor>
-                    <focusedcolor>white</focusedcolor>
-                    <align>center</align>
                     <onclick condition="!String.IsEmpty(Skin.String(HomeItem.1.Path))">Skin.SetString(HomeItem.1.Fanart,$VAR[SetMenuOneBackground])</onclick>
                     <onclick condition="!String.IsEmpty(Skin.String(HomeItem.2.Path))">Skin.SetString(HomeItem.2.Fanart,$VAR[SetMenuTwoBackground])</onclick>
                     <onclick condition="!String.IsEmpty(Skin.String(HomeItem.3.Path))">Skin.SetString(HomeItem.3.Fanart,$VAR[SetMenuThreeBackground])</onclick>
@@ -125,10 +65,9 @@
                     <onclick condition="!String.IsEmpty(Skin.String(HomeItem.13.Path))">Skin.SetString(HomeItem.13.Fanart,$VAR[SetMenuThirteenBackground])</onclick>
                     <onclick condition="!String.IsEmpty(Skin.String(HomeItem.14.Path))">Skin.SetString(HomeItem.14.Fanart,$VAR[SetMenuFourteenBackground])</onclick>
                     <onclick condition="!String.IsEmpty(Skin.String(HomeItem.15.Path))">Skin.SetString(HomeItem.15.Fanart,$VAR[SetMenuFifteenBackground])</onclick>
-                    <onclick>ClearProperty(UpdateFanart)</onclick>
                     <onclick>PreviousMenu</onclick>
                 </control>
-                <control type="button" id="611">
+                <control type="button" id="610">
                     <description>Cancel button</description>
                     <width>300</width>
                     <height>60</height>
@@ -137,7 +76,18 @@
                     <textcolor>white</textcolor>
                     <focusedcolor>white</focusedcolor>
                     <align>center</align>
-                    <onclick>ClearProperty(UpdateFanart)</onclick>
+                    <onclick>PreviousMenu</onclick>
+                </control>
+                <control type="button" id="612">
+                    <description>Don't ask again button</description>
+                    <width>300</width>
+                    <height>60</height>
+                    <label>31165</label>
+                    <font>font12_title</font>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>white</focusedcolor>
+                    <align>center</align>
+                    <onclick>Skin.SetBool(DontAskBackgroundFanart)</onclick>
                     <onclick>PreviousMenu</onclick>
                 </control>
             </control>
