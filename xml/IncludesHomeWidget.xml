@@ -2210,8 +2210,7 @@
                         <font>font10</font>
                         <textcolor>FFFFFFFF</textcolor>
                         <label>test</label>
-                        <visible>String.IsEmpty($INFO[ListItem.Icon])</visible>
-
+                        <visible>String.IsEmpty(ListItem.Icon)</visible>
                     </control>
                 </itemlayout>
                 <focusedlayout height="330" width="240">
