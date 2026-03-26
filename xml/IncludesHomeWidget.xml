@@ -4730,7 +4730,7 @@
         <content target="music" sortby="dateadded" sortorder="descending" limit="10">musicdb://recentlyaddedalbums</content>
     </include>
     <include name="RandomAlbumContent">
-        <content sortby="random" sortorder="" limit="10" target="music">library://music/albums.xml/</content>
+        <content sortby="random" sortorder="" limit="10" target="music">musicdb://albums/</content>
     </include>
     <include name="SuggestedAlbumContent">
         <!-- Suggested albums is the 20 most played albums -->
