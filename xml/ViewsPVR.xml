@@ -1426,29 +1426,6 @@
                         <label>$LOCALIZE[19031]: $INFO[Container(5060).ListItem.NextTitle]</label>
                         <animation effect="fade" start="100" end="0" time="2000" condition="Player.HasVideo + System.IdleTime(10) + !Skin.HasSetting(HideNowPlayingInfo)">Conditional</animation>
                     </control>
-                    <control type="label">
-                        <description>header label</description>
-                        <posx>368</posx>
-                        <posy>-712</posy>
-                        <width>210</width>
-                        <height>60</height>
-                        <font>font12</font>
-                        <label>$INFO[ListItem.ChannelGroup]</label>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <textcolor>$VAR[MainColorOne]</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <visible>!pvr.IsPlayingRadio</visible>
-                    </control>
-                    <control type="image">
-                        <description>group logo</description>
-                        <posx>-15</posx>
-                        <posy>232</posy>
-                        <width>195</width>
-                        <height>135</height>
-                        <texture>group/$INFO[ListItem.ChannelGroup].png</texture>
-                        <visible>!pvr.IsPlayingRadio</visible>
-                    </control>
                 </control>
                 <visible>Control.IsVisible(5060)</visible>
             </control>
