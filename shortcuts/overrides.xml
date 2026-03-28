@@ -196,7 +196,7 @@
 			<shortcut widget="mysubmenu" label="$LOCALIZE[1034]" icon="DefaultAddon.png" widgetType="addons" widgetTarget="programs">$INCLUDE[skinshortcuts-submenu]</shortcut>
 		</node>
 		<!-- Picture sources -->
-		<node label="32020">
+		<node label="31734">
 			<content>picturesources</content>
 		</node>
 		<!-- Games -->
@@ -205,17 +205,17 @@
 		</node>
 		<shortcut label="$LOCALIZE[10821]" icon="DefaultGames.png" widget="gamesources" widgetType="games" widgetTarget="games">sources://games/</shortcut>
 		<!-- Add-ons -->
-		<node label="32007">
-			<node label="32010">
+		<node label="31721">
+			<node label="31724">
 				<content>addon-video</content>
 			</node>
-			<node label="32011">
+			<node label="31725">
 				<content>addon-audio</content>
 			</node>
-			<node label="32012">
+			<node label="31726">
 				<content>addon-image</content>
 			</node>
-			<node label="32009">
+			<node label="31723">
 				<content>addon-program</content>
 			</node>
 			<shortcut label="$LOCALIZE[1043]" widget="addon" icon="DefaultAddonProgram.png" widgetType="addons" widgetTarget="programs">addons://sources/executable/</shortcut>
@@ -226,9 +226,9 @@
 			<shortcut label="$LOCALIZE[35049]" widget="addon" icon="DefaultAddonGame.png" widgetType="addons" widgetTarget="games">addons://sources/game</shortcut>
 		</node>
 		<!-- Video Library -->
-		<node label="32030">
+		<node label="31744">
 			<content>video</content>
-			<node label="32040">
+			<node label="31754">
 				<content>playlist-video</content>
 			</node>
 			<node label="32075">
@@ -236,9 +236,9 @@
 			</node>
 		</node>
 		<!-- Music Library -->
-		<node label="32031">
+		<node label="31745">
 			<content>music</content>
-			<node label="32040">
+			<node label="31754">
 				<content>playlist-audio</content>
 			</node>
 			<node label="32075">

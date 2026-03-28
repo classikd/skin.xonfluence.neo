@@ -836,7 +836,7 @@
                             <align>left</align>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <font>font12</font>
-                            <label>$INFO[Window.Property(AlsoKnownAs),$ADDON[script.extendedinfo 32016]: [COLOR=white],[/COLOR]]</label>
+                            <label>$INFO[Window.Property(AlsoKnownAs),$ADDON[script.extendedinfo 31730]: [COLOR=white],[/COLOR]]</label>
                             <visible>!String.IsEmpty(Window.Property(AlsoKnownAs))</visible>
                         </control>
                         <control type="label">
@@ -844,7 +844,7 @@
                             <align>left</align>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <font>font12</font>
-                            <label>$INFO[Window.Property(Birthday),$ADDON[script.extendedinfo 32012]: [COLOR=white],[/COLOR]] $INFO[Window.Property(Age),$ADDON[script.extendedinfo 32020]: [COLOR=white],[/COLOR]]</label>
+                            <label>$INFO[Window.Property(Birthday),$ADDON[script.extendedinfo 31726]: [COLOR=white],[/COLOR]] $INFO[Window.Property(Age),$ADDON[script.extendedinfo 31734]: [COLOR=white],[/COLOR]]</label>
                             <visible>!String.IsEmpty(Window.Property(Birthday))</visible>
                         </control>
                         <control type="label">
@@ -852,7 +852,7 @@
                             <align>left</align>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <font>font12</font>
-                            <label>$INFO[Window.Property(PlaceOfBirth),$ADDON[script.extendedinfo 32014]: [COLOR=white],[/COLOR]]</label>
+                            <label>$INFO[Window.Property(PlaceOfBirth),$ADDON[script.extendedinfo 31728]: [COLOR=white],[/COLOR]]</label>
                             <visible>!String.IsEmpty(Window.Property(PlaceOfBirth))</visible>
                         </control>
                         <control type="label">
@@ -860,7 +860,7 @@
                             <align>left</align>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <font>font12</font>
-                            <label>$INFO[Window.Property(TotalMovies),$ADDON[script.extendedinfo 32011]: [COLOR=white],[/COLOR]]</label>
+                            <label>$INFO[Window.Property(TotalMovies),$ADDON[script.extendedinfo 31725]: [COLOR=white],[/COLOR]]</label>
                             <visible>!String.IsEmpty(Window.Property(TotalMovies))</visible>
                         </control>
                         <control type="label">
@@ -868,7 +868,7 @@
                             <align>left</align>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <font>font12</font>
-                            <label>$INFO[Window.Property(DBMovies),$ADDON[script.extendedinfo 32021]: [COLOR=white],[/COLOR]]</label>
+                            <label>$INFO[Window.Property(DBMovies),$ADDON[script.extendedinfo 31735]: [COLOR=white],[/COLOR]]</label>
                             <visible>!String.IsEmpty(Window.Property(DBMovies))</visible>
                         </control>
                         <control type="label">
@@ -876,7 +876,7 @@
                             <align>left</align>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <font>font12</font>
-                            <label>$INFO[Window.Property(Homepage),$ADDON[script.extendedinfo 32017]: [COLOR=white],[/COLOR]]</label>
+                            <label>$INFO[Window.Property(Homepage),$ADDON[script.extendedinfo 31731]: [COLOR=white],[/COLOR]]</label>
                             <visible>!String.IsEmpty(Window.Property(Homepage))</visible>
                         </control>
                         <control type="label">
@@ -884,7 +884,7 @@
                             <align>left</align>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <font>font12</font>
-                            <label>$INFO[Window.Property(Deathday),$ADDON[script.extendedinfo 32013]: [COLOR=white],[/COLOR]]</label>
+                            <label>$INFO[Window.Property(Deathday),$ADDON[script.extendedinfo 31727]: [COLOR=white],[/COLOR]]</label>
                             <visible>!String.IsEmpty(Window.Property(Deathday))</visible>
                         </control>
                         <control type="group" id="140">

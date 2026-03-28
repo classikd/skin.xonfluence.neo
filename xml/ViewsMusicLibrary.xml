@@ -946,7 +946,7 @@
                         <top>45</top>
                         <width>525</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[ListItem.Property(Artist_Genre)]</label>
+                        <label fallback="31730">$INFO[ListItem.Property(Artist_Genre)]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font13</font>

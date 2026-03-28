@@ -1432,7 +1432,7 @@
                         <top>180</top>
                         <width>540</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.episode] [COLOR=grey] ($INFO[ListItem.Property(WatchedEpisodes),,] $LOCALIZE[16102] - $INFO[ListItem.Property(UnWatchedEpisodes),,] $LOCALIZE[16101])[/COLOR]</label>
+                        <label fallback="31730">$INFO[listitem.episode] [COLOR=grey] ($INFO[ListItem.Property(WatchedEpisodes),,] $LOCALIZE[16102] - $INFO[ListItem.Property(UnWatchedEpisodes),,] $LOCALIZE[16101])[/COLOR]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -1456,7 +1456,7 @@
                         <top>218</top>
                         <width>540</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.premiered]</label>
+                        <label fallback="31730">$INFO[listitem.premiered]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -1480,7 +1480,7 @@
                         <top>255</top>
                         <width>540</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Genre]</label>
+                        <label fallback="31730">$INFO[listitem.Genre]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -1758,7 +1758,7 @@
                             <left>555</left>
                             <width>220</width>
                             <height>38</height>
-                            <label fallback="32016">$INFO[listitem.Duration]</label>
+                            <label fallback="31730">$INFO[listitem.Duration]</label>
                             <align>left</align>
                             <aligny>center</aligny>
                             <font>font12</font>
@@ -1769,7 +1769,7 @@
                             <left>520</left>
                             <width>220</width>
                             <height>38</height>
-                            <label fallback="32016">$INFO[listitem.Duration]</label>
+                            <label fallback="31730">$INFO[listitem.Duration]</label>
                             <align>left</align>
                             <aligny>center</aligny>
                             <font>font12</font>
@@ -2190,7 +2190,7 @@
                         <top>502</top>
                         <width>100</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Year]</label>
+                        <label fallback="31730">$INFO[listitem.Year]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font13</font>
@@ -2215,7 +2215,7 @@
                         <top>502</top>
                         <width>250</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Duration]</label>
+                        <label fallback="31730">$INFO[listitem.Duration]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font13</font>
@@ -2239,7 +2239,7 @@
                         <top>540</top>
                         <width>510</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Genre]</label>
+                        <label fallback="31730">$INFO[listitem.Genre]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font13</font>
@@ -2329,7 +2329,7 @@
                             <top>502</top>
                             <width>210</width>
                             <height>38</height>
-                            <label fallback="32016">$INFO[listitem.Premiered]</label>
+                            <label fallback="31730">$INFO[listitem.Premiered]</label>
                             <align>left</align>
                             <aligny>center</aligny>
                             <font>font13</font>
@@ -2356,7 +2356,7 @@
                             <top>526</top>
                             <width>210</width>
                             <height>38</height>
-                            <label fallback="32016">$INFO[listitem.Premiered]</label>
+                            <label fallback="31730">$INFO[listitem.Premiered]</label>
                             <align>left</align>
                             <aligny>center</aligny>
                             <font>font13</font>
@@ -2383,7 +2383,7 @@
                             <top>502</top>
                             <width>280</width>
                             <height>38</height>
-                            <label fallback="32016">$INFO[listitem.Duration]</label>
+                            <label fallback="31730">$INFO[listitem.Duration]</label>
                             <align>left</align>
                             <aligny>center</aligny>
                             <font>font13</font>
@@ -2410,7 +2410,7 @@
                             <top>526</top>
                             <width>280</width>
                             <height>38</height>
-                            <label fallback="32016">$INFO[listitem.Duration]</label>
+                            <label fallback="31730">$INFO[listitem.Duration]</label>
                             <align>left</align>
                             <aligny>center</aligny>
                             <font>font13</font>
@@ -2437,7 +2437,7 @@
                             <top>540</top>
                             <width>510</width>
                             <height>38</height>
-                            <label fallback="32016">$INFO[listitem.Season,,x]$INFO[listitem.Episode]</label>
+                            <label fallback="31730">$INFO[listitem.Season,,x]$INFO[listitem.Episode]</label>
                             <align>left</align>
                             <aligny>center</aligny>
                             <font>font13</font>
@@ -2911,7 +2911,7 @@
                         <left>210</left>
                         <width>120</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Duration]</label>
+                        <label fallback="31730">$INFO[listitem.Duration]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -2937,7 +2937,7 @@
                         <left>250</left>
                         <width>220</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Duration]</label>
+                        <label fallback="31730">$INFO[listitem.Duration]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -2964,7 +2964,7 @@
                         <left>465</left>
                         <width>80</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Year]</label>
+                        <label fallback="31730">$INFO[listitem.Year]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -2990,7 +2990,7 @@
                         <left>495</left>
                         <width>80</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Year]</label>
+                        <label fallback="31730">$INFO[listitem.Year]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -3017,7 +3017,7 @@
                         <left>700</left>
                         <width>80</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Rating]</label>
+                        <label fallback="31730">$INFO[listitem.Rating]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -3043,7 +3043,7 @@
                         <left>780</left>
                         <width>80</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Rating]</label>
+                        <label fallback="31730">$INFO[listitem.Rating]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -3161,7 +3161,7 @@
                         <left>130</left>
                         <width>80</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Year]</label>
+                        <label fallback="31730">$INFO[listitem.Year]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -3187,7 +3187,7 @@
                         <left>145</left>
                         <width>80</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Year]</label>
+                        <label fallback="31730">$INFO[listitem.Year]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -3214,7 +3214,7 @@
                         <left>380</left>
                         <width>80</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Rating]</label>
+                        <label fallback="31730">$INFO[listitem.Rating]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -3240,7 +3240,7 @@
                         <left>450</left>
                         <width>80</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Rating]</label>
+                        <label fallback="31730">$INFO[listitem.Rating]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -3413,7 +3413,7 @@
                         <left>165</left>
                         <width>220</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Duration]</label>
+                        <label fallback="31730">$INFO[listitem.Duration]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -3424,7 +3424,7 @@
                         <left>195</left>
                         <width>220</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Duration]</label>
+                        <label fallback="31730">$INFO[listitem.Duration]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -3451,7 +3451,7 @@
                         <left>440</left>
                         <width>220</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Premiered]</label>
+                        <label fallback="31730">$INFO[listitem.Premiered]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -3477,7 +3477,7 @@
                         <left>478</left>
                         <width>220</width>
                         <height>38</height>
-                        <label fallback="32016">$INFO[listitem.Premiered]</label>
+                        <label fallback="31730">$INFO[listitem.Premiered]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font12</font>

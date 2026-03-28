@@ -272,7 +272,7 @@
                             <width>435</width>
                             <height>338</height>
                             <align>justify</align>
-                            <label fallback="32016">$INFO[Container(500).ListItem.Plot,,[CR][CR]  ]</label>
+                            <label fallback="31730">$INFO[Container(500).ListItem.Plot,,[CR][CR]  ]</label>
                             <include condition="Skin.HasSetting(AutoScroll) + !Skin.HasSetting(AutoScroll.Slow)">StandardAutoScroll</include>
 					        <include condition="Skin.HasSetting(AutoScroll) + Skin.HasSetting(AutoScroll.Slow)">SlowerAutoScroll</include>
                             <font>font12</font>
@@ -395,7 +395,7 @@
                 </control>
                 <control type="button" id="7000">
                     <include>ButtonCommonValues</include>
-                    <label>$ADDON[script.extendedinfo 32024]</label>
+                    <label>$ADDON[script.extendedinfo 31738]</label>
                 </control>
                 <control type="button" id="5007">
                     <include>ButtonCommonValues</include>
@@ -416,7 +416,7 @@
                     <textcolor>$VAR[MainColorOne]</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <label>$ADDON[script.extendedinfo 32023]</label>
+                    <label>$ADDON[script.extendedinfo 31737]</label>
                 </control>
                 <control type="button" id="5002">
                     <include>ButtonCommonValues</include>
@@ -448,7 +448,7 @@
                 </control>
                 <control type="button" id="5005">
                     <include>ButtonCommonValues</include>
-                    <label>$ADDON[script.extendedinfo 32022]</label>
+                    <label>$ADDON[script.extendedinfo 31736]</label>
                 </control>
                 <include>CommonNowPlaying_Controls</include>
             </control>

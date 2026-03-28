@@ -4,64 +4,64 @@
 	<expression name="showSmallWidget">Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</expression>
 	
 	<variable name="UsrDefItemOneWidgetLayout">
-        <value condition="String.IsEqual(Skin.String(HomeItem.1.WidgetLayout),Small)">$LOCALIZE[32025]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.1.WidgetLayout),Large)">$LOCALIZE[32026]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.1.WidgetLayout),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.1.WidgetLayout),Large)">$LOCALIZE[31740]</value>
     </variable>
 	<variable name="UsrDefItemTwoWidgetLayout">
-        <value condition="String.IsEqual(Skin.String(HomeItem.2.WidgetLayout),Small)">$LOCALIZE[32025]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.2.WidgetLayout),Large)">$LOCALIZE[32026]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.2.WidgetLayout),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.2.WidgetLayout),Large)">$LOCALIZE[31740]</value>
     </variable>
 	<variable name="UsrDefItemThreeWidgetLayout">
-        <value condition="String.IsEqual(Skin.String(HomeItem.3.WidgetLayout),Small)">$LOCALIZE[32025]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.3.WidgetLayout),Large)">$LOCALIZE[32026]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.3.WidgetLayout),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.3.WidgetLayout),Large)">$LOCALIZE[31740]</value>
     </variable>
 	<variable name="UsrDefItemFourWidgetLayout">
-        <value condition="String.IsEqual(Skin.String(HomeItem.4.WidgetLayout),Small)">$LOCALIZE[32025]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.4.WidgetLayout),Large)">$LOCALIZE[32026]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.4.WidgetLayout),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.4.WidgetLayout),Large)">$LOCALIZE[31740]</value>
     </variable>
 	<variable name="UsrDefItemFiveWidgetLayout">
-        <value condition="String.IsEqual(Skin.String(HomeItem.5.WidgetLayout),Small)">$LOCALIZE[32025]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.5.WidgetLayout),Large)">$LOCALIZE[32026]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.5.WidgetLayout),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.5.WidgetLayout),Large)">$LOCALIZE[31740]</value>
     </variable>
 	<variable name="UsrDefItemSixWidgetLayout">
-        <value condition="String.IsEqual(Skin.String(HomeItem.6.WidgetLayout),Small)">$LOCALIZE[32025]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.6.WidgetLayout),Large)">$LOCALIZE[32026]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.6.WidgetLayout),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.6.WidgetLayout),Large)">$LOCALIZE[31740]</value>
     </variable>
 	<variable name="UsrDefItemSevenWidgetLayout">
-        <value condition="String.IsEqual(Skin.String(HomeItem.7.WidgetLayout),Small)">$LOCALIZE[32025]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.7.WidgetLayout),Large)">$LOCALIZE[32026]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.7.WidgetLayout),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.7.WidgetLayout),Large)">$LOCALIZE[31740]</value>
     </variable>
 	<variable name="UsrDefItemEightWidgetLayout">
-        <value condition="String.IsEqual(Skin.String(HomeItem.8.WidgetLayout),Small)">$LOCALIZE[32025]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.8.WidgetLayout),Large)">$LOCALIZE[32026]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.8.WidgetLayout),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.8.WidgetLayout),Large)">$LOCALIZE[31740]</value>
     </variable>
 	<variable name="UsrDefItemNineWidgetLayout">
-        <value condition="String.IsEqual(Skin.String(HomeItem.9.WidgetLayout),Small)">$LOCALIZE[32025]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.9.WidgetLayout),Large)">$LOCALIZE[32026]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.9.WidgetLayout),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.9.WidgetLayout),Large)">$LOCALIZE[31740]</value>
     </variable>
 	<variable name="UsrDefItemTenWidgetLayout">
-        <value condition="String.IsEqual(Skin.String(HomeItem.10.WidgetLayout),Small)">$LOCALIZE[32025]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.10.WidgetLayout),Large)">$LOCALIZE[32026]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.10.WidgetLayout),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.10.WidgetLayout),Large)">$LOCALIZE[31740]</value>
     </variable>
 	<variable name="UsrDefItemElevenWidgetLayout">
-        <value condition="String.IsEqual(Skin.String(HomeItem.11.WidgetLayout),Small)">$LOCALIZE[32025]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.11.WidgetLayout),Large)">$LOCALIZE[32026]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.11.WidgetLayout),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.11.WidgetLayout),Large)">$LOCALIZE[31740]</value>
     </variable>
 	<variable name="UsrDefItemTwelveWidgetLayout">
-        <value condition="String.IsEqual(Skin.String(HomeItem.12.WidgetLayout),Small)">$LOCALIZE[32025]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.12.WidgetLayout),Large)">$LOCALIZE[32026]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.12.WidgetLayout),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.12.WidgetLayout),Large)">$LOCALIZE[31740]</value>
     </variable>
 	<variable name="UsrDefItemThirteenWidgetLayout">
-        <value condition="String.IsEqual(Skin.String(HomeItem.13.WidgetLayout),Small)">$LOCALIZE[32025]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.13.WidgetLayout),Large)">$LOCALIZE[32026]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.13.WidgetLayout),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.13.WidgetLayout),Large)">$LOCALIZE[31740]</value>
     </variable>
 	<variable name="UsrDefItemFourteenWidgetLayout">
-        <value condition="String.IsEqual(Skin.String(HomeItem.14.WidgetLayout),Small)">$LOCALIZE[32025]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.14.WidgetLayout),Large)">$LOCALIZE[32026]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.14.WidgetLayout),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.14.WidgetLayout),Large)">$LOCALIZE[31740]</value>
     </variable>
 	<variable name="UsrDefItemFifteenWidgetLayout">
-        <value condition="String.IsEqual(Skin.String(HomeItem.15.WidgetLayout),Small)">$LOCALIZE[32025]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.15.WidgetLayout),Large)">$LOCALIZE[32026]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.15.WidgetLayout),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.15.WidgetLayout),Large)">$LOCALIZE[31740]</value>
     </variable>
 	
 	<include name="HomeWidgetDisplay">

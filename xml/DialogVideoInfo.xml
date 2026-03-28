@@ -1089,7 +1089,7 @@
 					<control type="button" id="13">
 						<description>Same Director</description>
 						<include>ButtonInfoDialogsCommonValues</include>
-						<label>$LOCALIZE[32020]</label>
+						<label>$LOCALIZE[31734]</label>
 						<visible>!String.IsEmpty(ListItem.Director)</visible>
 					</control>
 					<control type="button" id="7">

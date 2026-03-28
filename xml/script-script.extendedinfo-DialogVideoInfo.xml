@@ -169,11 +169,11 @@
                             <visible>Integer.IsGreater(Container(1350).NumItems,0)</visible>
                         </item>
                         <item id="15">
-                            <label>$ADDON[script.extendedinfo 32026]$INFO[Container(450).NumItems, (,)]</label>
+                            <label>$ADDON[script.extendedinfo 31740]$INFO[Container(450).NumItems, (,)]</label>
                             <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
                         </item>
                         <item id="16">
-                            <label>$ADDON[script.extendedinfo 32025] $INFO[Container(2000).NumItems,(,)]</label>
+                            <label>$ADDON[script.extendedinfo 31739] $INFO[Container(2000).NumItems,(,)]</label>
                             <visible>Integer.IsGreater(Container(2000).NumItems,0)</visible>
                         </item>
                     </content>

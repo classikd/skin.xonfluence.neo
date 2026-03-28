@@ -47,7 +47,7 @@
                 <width>1155</width>
                 <height>45</height>
                 <font>font13_title</font>
-                <label>$LOCALIZE[32031]</label>
+                <label>$LOCALIZE[31745]</label>
                 <align>center</align>
                 <aligny>center</aligny>
                 <textcolor>white</textcolor>
@@ -153,13 +153,13 @@
                 <content>
                     <item>
                         <description>Small</description>
-                        <label>$LOCALIZE[32025]</label>
+                        <label>$LOCALIZE[31739]</label>
                         <onclick>Dialog.Close(2136)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetLayout,Small)</onclick>
                     </item>
 					<item>
                         <description>Large</description>
-                        <label>$LOCALIZE[32026]</label>
+                        <label>$LOCALIZE[31740]</label>
                         <onclick>Dialog.Close(2136)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetLayout,Large)</onclick>
                     </item>

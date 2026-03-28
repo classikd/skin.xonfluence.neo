@@ -173,7 +173,7 @@ msgstr "Veuillez indiquer le chemin d'accès au serveur UPnP"
 
 msgctxt "#31037"
 msgid "Image only minimum popup seekbar"
-msgstr "Barre de lecture pop-up minimale : image seule"
+msgstr "Barre de progression pop-up minimale : image seule"
 
 msgctxt "#31038"
 msgid "Select item to swap"
@@ -277,7 +277,7 @@ msgstr "Boutons volume"
 
 msgctxt "#31064"
 msgid "Volume buttons small jump"
-msgstr "Boutons volume par petits sauts"
+msgstr "Boutons volume petits sauts"
 
 msgctxt "#31065"
 msgid "Favourites action"
@@ -341,7 +341,7 @@ msgstr "Cacher Power"
 
 msgctxt "#31080"
 msgid "Floor buttons options"
-msgstr "Paramètres des boutons du bas"
+msgstr "Réglages des boutons du bas"
 
 msgctxt "#31081"
 msgid "Clock and date"
@@ -425,7 +425,7 @@ msgstr "Fanart Météo"
 
 msgctxt "#31101"
 msgid "Home screen options"
-msgstr "Options de l'écran d'accueil"
+msgstr "Réglages de l'écran d'accueil"
 
 msgctxt "#31102"
 msgid "Background"
@@ -860,56 +860,56 @@ msgid "Unwatched movies"
 msgstr "Films non visionnés"
 
 msgctxt "#31230"
-msgid "User selection 1"
-msgstr "Sélection utilisateur 1"
+msgid "Selection 1"
+msgstr "Sélection 1"
 
 msgctxt "#31231"
-msgid "User selection 2"
-msgstr "Sélection utilisateur 2"
+msgid "Selection 2"
+msgstr "Sélection 2"
 
 msgctxt "#31232"
-msgid "User selection 3"
-msgstr "Sélection utilisateur 3"
+msgid "Selection 3"
+msgstr "Sélection 3"
 
 msgctxt "#31233"
-msgid "User selection 4"
-msgstr "Sélection utilisateur 4"
+msgid "Selection 4"
+msgstr "Sélection 4"
 
 msgctxt "#31234"
-msgid "User selection 5"
-msgstr "Sélection utilisateur 5"
+msgid "Selection 5"
+msgstr "Sélection 5"
 
 msgctxt "#31235"
-msgid "User selection 6"
-msgstr "Sélection utilisateur 6"
+msgid "Selection 6"
+msgstr "Sélection 6"
 
 msgctxt "#31236"
-msgid "User selection 7"
-msgstr "Sélection utilisateur 7"
+msgid "Selection 7"
+msgstr "Sélection 7"
 
 msgctxt "#31237"
-msgid "User selection 8"
-msgstr "Sélection utilisateur 8"
+msgid "Selection 8"
+msgstr "Sélection 8"
 
 msgctxt "#31238"
-msgid "User selection 9"
-msgstr "Sélection utilisateur 9"
+msgid "Selection 9"
+msgstr "Sélection 9"
 
 msgctxt "#31239"
-msgid "User selection 10"
-msgstr "Sélection utilisateur 10"
+msgid "Selection 10"
+msgstr "Sélection 10"
 
 msgctxt "#31240"
 msgid "User friendly name"
-msgstr "Nom commmun"
+msgstr "Libellé"
 
 msgctxt "#31241"
-msgid "User selection 11"
-msgstr "Sélection utilisateur 11"
+msgid "Selection 11"
+msgstr "Sélection 11"
 
 msgctxt "#31242"
-msgid "User selection 12"
-msgstr "Sélection utilisateur 12"
+msgid "Selection 12"
+msgstr "Sélection 12"
 
 msgctxt "#31243"
 msgid "Kodi command"
@@ -1065,7 +1065,7 @@ msgstr "Élément de menu"
 
 msgctxt "#31291"
 msgid "Submenu set"
-msgstr "Ensemble sous-menus"
+msgstr "Ensemble de sous-menus"
 
 msgctxt "#31292"
 msgid "Add-on set"
@@ -1145,11 +1145,11 @@ msgstr "Numéro de la piste"
 
 msgctxt "#31315"
 msgid "Submenu item"
-msgstr "Élément de sous-menu"
+msgstr "Élément"
 
 msgctxt "#31316"
-msgid "Select add-on set"
-msgstr "Sélectionner l'ensemble d'extensions'"
+msgid "Select add-on"
+msgstr "Sélectionner l'extension"
 
 msgctxt "#31317"
 msgid "Set fanart path"
@@ -1229,12 +1229,12 @@ msgid "Select submenu set"
 msgstr "Sélectionner ensemble de sous-menu"
 
 msgctxt "#31336"
-msgid "Select menu item"
-msgstr "Sélectionner élément de menu"
+msgid "Select item"
+msgstr "Sélectionner élément"
 
 msgctxt "#31337"
 msgid "Global skin options"
-msgstr "Options d'habillage globales"
+msgstr "Réglages d'habillage globaux"
 
 msgctxt "#31338"
 msgid "Favourites window"
@@ -1326,7 +1326,7 @@ msgstr "Thème actuel"
 
 msgctxt "#31369"
 msgid "Select main OSD colour"
-msgstr ""
+msgstr "Couleur principale OSD"
 
 msgctxt "#31370"
 msgid "Instant"
@@ -1342,11 +1342,11 @@ msgstr "Introduction début lecture"
 
 msgctxt "#31373"
 msgid "Plot on pause"
-msgstr "Synopsis en pause"
+msgstr "Synopsis lors d'une pause"
 
 msgctxt "#31374"
 msgid "Video info & seekbar on pause"
-msgstr "Informations vidéo et barre de progression en pause"
+msgstr "Informations vidéo et barre de progression lors d'une pause"
 
 msgctxt "#31375"
 msgid "Graphical textures on keyboards"
@@ -1386,15 +1386,15 @@ msgstr "Cacher l'intitulé dans la vue d'icône large"
 
 msgctxt "#31386"
 msgid "Music OSD settings"
-msgstr "Paramètres OSD musique"
+msgstr "Réglages OSD musique"
 
 msgctxt "#31387"
 msgid "Video OSD settings"
-msgstr "Paramètres OSD vidéo"
+msgstr "Réglages OSD vidéo"
 
 msgctxt "#31388"
 msgid "Media View settings"
-msgstr "Paramètres d'affichage des médias"
+msgstr "Réglages d'affichage des médias"
 
 msgctxt "#31390"
 msgid "Skin default"
@@ -1683,7 +1683,7 @@ msgstr "[COLOR=selected][B]Attention !![/B][/COLOR] - Réinitialiser les valeur
 
 msgctxt "#31494"
 msgid "Background path:"
-msgstr "Chemin arrière-plan:"
+msgstr "Arrière-plan:"
 
 msgctxt "#31495"
 msgid "Startup"
@@ -2141,6 +2141,286 @@ msgctxt "#31713"
 msgid "Auto scrolling for plot & review"
 msgstr "Défilement automatique pour le synopsys et les critiques"
 
+msgctxt "#31714"
+msgid "Recent Movies (includes watched)"
+msgstr "Films récents (visionnés inclus)"
+
+msgctxt "#31715"
+msgid "Recent Episodes (includes watched)"
+msgstr "Épisodes récents (visionnés inclus)"
+
+msgctxt "#31716"
+msgid "Recent Concerts (includes watched)"
+msgstr "Concerts récents (visionnés inclus)"
+
+msgctxt "#31717"
+msgid "Main menu in all caps"
+msgstr "Menu principal en majuscules"
+
+msgctxt "#31718"
+msgid "Favourites script"
+msgstr "Script Favourites"
+
+msgctxt "#31719"
+msgid "Video node stats script"
+msgstr "Script Video node stats"
+
+msgctxt "#31720"
+msgid "Disable video hardware acceleration for .AVI and .WMV"
+msgstr "Désactiver l'accélération matérielle pour les formats .AVI et .WMV"
+
+msgctxt "#31721"
+msgid "Configure service.library.data.provider"
+msgstr "Configurer service.library.data.provider"
+
+msgctxt "#31722"
+msgid "Larger seekbar when rewinding or forwarding"
+msgstr "Barre de progression plus large en rembobinage ou avance rapide"
+
+msgctxt "#31723"
+msgid "Seekbar"
+msgstr "Barre de progression"
+
+msgctxt "#31724"
+msgid "Hide shadow behind seekbar"
+msgstr "Cacher l'ombre derrière la barre de progression"
+
+msgctxt "#31725"
+msgid "CPU temperature"
+msgstr "Température CPU"
+
+msgctxt "#31726"
+msgid "Chapter/cutlist markers on seekbar"
+msgstr "Repères chapitres/coupures sur la barre de progression"
+
+msgctxt "#31727"
+msgid "End time"
+msgstr "Temps de fin"
+
+msgctxt "#31728"
+msgid "Hide rating"
+msgstr "Cacher la note"
+
+msgctxt "#31729"
+msgid "Hide widgets until focused"
+msgstr "Cacher les widgets jusqu'à ce qu'ils soient sélectionnés"
+
+msgctxt "#31730"
+msgid "N/A"
+msgstr "N/A"
+
+msgctxt "#31731"
+msgid "Selection 13"
+msgstr "Sélection 13"
+
+msgctxt "#31732"
+msgid "Selection 14"
+msgstr "Sélection 14"
+
+msgctxt "#31733"
+msgid "Selection 15"
+msgstr "Sélection 15"
+
+msgctxt "#31734"
+msgid "Same director"
+msgstr "Même réalisateur"
+
+msgctxt "#31735"
+msgid "Xonfluence Initial Use"
+msgstr "Initialisation de Xonfluence"
+
+msgctxt "#31736"
+msgid "Since this is Xonfluence's first use, Kodi needs to be restarted for proper menu configuration.[CR][CR]Press the button below to proceed."
+msgstr "Comme il s'agit de la première utilisation de Xonfluence, Kodi doit être redémarré pour une configuration de menu correcte.[CR][CR]Appuyez sur le bouton ci-dessous pour continuer."
+
+msgctxt "#31737"
+msgid "Proceed with Kodi Exit"
+msgstr "Quitter Kodi"
+
+msgctxt "#31738"
+msgid "Widget layout"
+msgstr "Disposition Widget"
+
+msgctxt "#31739"
+msgid "Small"
+msgstr "Petit"
+
+msgctxt "#31740"
+msgid "Large"
+msgstr "Large"
+
+msgctxt "#31741"
+msgid "Large 2"
+msgstr "Large 2"
+
+msgctxt "#31742"
+msgid "Large 3"
+msgstr "Large 3"
+
+msgctxt "#31743"
+msgid "Large 4"
+msgstr "Large 4"
+
+msgctxt "#31744"
+msgid "Large 5"
+msgstr "Large 5"
+
+msgctxt "#31745"
+msgid "Select Widget Layout"
+msgstr "Sélectionner la disposition du widget"
+
+msgctxt "#31746"
+msgid "Duration"
+msgstr "Durée"
+
+msgctxt "#31747"
+msgid "Reboot to Android"
+msgstr "Redémarrer sur Android"
+
+msgctxt "#31748"
+msgid "Slower automatic scrolling"
+msgstr "Défilement automatique plus lent"
+
+msgctxt "#31749"
+msgid "Extra Fanart if available"
+msgstr "Fanart supplémentaire si disponible"
+
+msgctxt "#31750"
+msgid "Widget fanart/extra fanart"
+msgstr "Fanart/fanart supplémentaire Widget"
+
+msgctxt "#31751"
+msgid "Adjust Extra fanart cycle rate"
+msgstr "Ajuster le cycle des fanarts supplémentaires"
+
+msgctxt "#31752"
+msgid "Emulationstation"
+msgstr "Emulationstation"
+
+msgctxt "#31753"
+msgid "Retroarch"
+msgstr "Retroarch"
+
+msgctxt "#31754"
+msgid "Pegasus"
+msgstr "Pegasus"
+
+msgctxt "#31755"
+msgid "Moonlight"
+msgstr "Moonlight"
+
+msgctxt "#31756"
+msgid "Hide Reboot to Android option in shutdown menu"
+msgstr "Cacher l'option Redémarrer sous Android dans le menu d'arrêt"
+
+msgctxt "#31757"
+msgid "Extended Info script"
+msgstr "Script Extended Info"
+
+msgctxt "#31758"
+msgid "Configure Extended Info"
+msgstr "Configurer Extended Info"
+
+msgctxt "#31759"
+msgid "Open Extended Info for video info dialogs"
+msgstr "Ouvrir Extended Info pour les boîtes de dialogue d'info vidéo"
+
+msgctxt "#31760"
+msgid "Weather (extended)"
+msgstr "Météo (extended)"
+
+msgctxt "#31761"
+msgid "script.skinshortcuts for menu/submenu/widget configuration"
+msgstr "script.skinshortcuts pour la config menu/submenu/widget"
+
+msgctxt "#31762"
+msgid "Customize Home menu"
+msgstr "Personnaliser menu d'accueil"
+
+msgctxt "#31763"
+msgid "Customize Power menu"
+msgstr "Personnaliser le menu Power"
+
+msgctxt "#31764"
+msgid "Choosing default menu item"
+msgstr "Choisir l'élément de menu par défaut"
+
+msgctxt "#31765"
+msgid "Favourites Icon"
+msgstr "Icône Favoris"
+
+msgctxt "#31766"
+msgid "Heart"
+msgstr "Cœur"
+
+msgctxt "#31767"
+msgid "Star"
+msgstr "Étoile"
+
+msgctxt "#31768"
+msgid "Bookmark"
+msgstr "Marque-page"
+
+msgctxt "#31769"
+msgid "Settings"
+msgstr "Paramètres"
+
+msgctxt "#31770"
+msgid "Power Icon"
+msgstr "Icône Power"
+
+msgctxt "#31771"
+msgid "Restart"
+msgstr "Redémarrer"
+
+msgctxt "#31772"
+msgid "Logout"
+msgstr "Déconnexion"
+
+msgctxt "#31773"
+msgid "Settings"
+msgstr "Paramètres"
+
+msgctxt "#31774"
+msgid "Poweroff"
+msgstr "Éteindre"
+
+msgctxt "#31775"
+msgid "Menu1"
+msgstr "Menu1"
+
+msgctxt "#31776"
+msgid "Menu2"
+msgstr "Menu2"
+
+msgctxt "#31777"
+msgid "Menu3"
+msgstr "Menu3"
+
+msgctxt "#31778"
+msgid "Simple mod (for touch)"
+msgstr "Mode simple (tactile)"
+
+msgctxt "#31779"
+msgid "Current folder"
+msgstr "Dossier courant"
+
+msgctxt "#31780"
+msgid "Hide Home"
+msgstr "Cacher Accueil"
+
+msgctxt "#31781"
+msgid "Hide Volume"
+msgstr "Cacher Volume"
+
+msgctxt "#31782"
+msgid "Hide Back on favourites"
+msgstr "Cacher Retour sur les favoris"
+
+msgctxt "#31783"
+msgid "PiP"
+msgstr "Fenêtre vidéo superposée (PiP)"
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr "Prévisions sur 36 heures"
@@ -2255,7 +2535,7 @@ msgstr "Secondes"
 
 msgctxt "#31941"
 msgid "Running artwork downloader automaticaly after updating library"
-msgstr "Lancement automatique du téléchargement d'illustrations après la mise à jour de la bibliothèque"
+msgstr "Lancement auto du téléchargement d'illustrations après maj de la bibliothèque"
 
 msgctxt "#31942"
 msgid "YouTube"
@@ -2415,7 +2695,7 @@ msgstr "Enregistrer les paramètres et recharger Xonfluence"
 
 msgctxt "#31981"
 msgid "Kodi intro movie path"
-msgstr "Chemin de la vidéo d'intro de Kodi"
+msgstr "Chemin: "
 
 msgctxt "#31982"
 msgid "Custom widgets limit amount"
@@ -2488,283 +2768,3 @@ msgstr "Ajouté récemment"
 msgctxt "#31999"
 msgid "Resolution"
 msgstr "Résolution"
-
-msgctxt "#32000"
-msgid "Recent Movies (includes watched)"
-msgstr "Films récents (visionnés inclus)"
-
-msgctxt "#32001"
-msgid "Recent Episodes (includes watched)"
-msgstr "Épisodes récents (visionnés inclus)"
-
-msgctxt "#32002"
-msgid "Recent Concerts (includes watched)"
-msgstr "Concerts récents (visionnés inclus)"
-
-msgctxt "#32003"
-msgid "Main menu in all caps"
-msgstr "Menu principal en majuscules"
-
-msgctxt "#32004"
-msgid "Favourites script"
-msgstr "Script Favourites"
-
-msgctxt "#32005"
-msgid "Video node stats script"
-msgstr "Script Video node stats"
-
-msgctxt "#32006"
-msgid "Disable video hardware acceleration for .AVI and .WMV"
-msgstr "Désactiver l'accélération matérielle pour les formats .AVI et .WMV"
-
-msgctxt "#32007"
-msgid "Configure service.library.data.provider"
-msgstr "Configurer service.library.data.provider"
-
-msgctxt "#32008"
-msgid "Larger seekbar when rewinding or forwarding"
-msgstr "Barre de lecture plus large en rembobinage ou avance rapide"
-
-msgctxt "#32009"
-msgid "Seekbar"
-msgstr "Barre de lecture"
-
-msgctxt "#32010"
-msgid "Hide shadow behind seekbar"
-msgstr "Cacher l'ombre derrière la barre de lecture"
-
-msgctxt "#32011"
-msgid "CPU temperature"
-msgstr "Température CPU"
-
-msgctxt "#32012"
-msgid "Chapter/cutlist markers on seekbar"
-msgstr "Repères chapitres/coupures sur la barre de lecture"
-
-msgctxt "#32013"
-msgid "End time"
-msgstr "Temps de fin"
-
-msgctxt "#32014"
-msgid "Hide rating"
-msgstr "Cacher la note"
-
-msgctxt "#32015"
-msgid "Hide widgets until focused"
-msgstr "Cacher les widgets jusqu'à ce qu'ils soient sélectionnés"
-
-msgctxt "#32016"
-msgid "N/A"
-msgstr "N/A"
-
-msgctxt "#32017"
-msgid "User selection 13"
-msgstr "Sélection utilisateur 13"
-
-msgctxt "#32018"
-msgid "User selection 14"
-msgstr "Sélection utilisateur 14"
-
-msgctxt "#32019"
-msgid "User selection 15"
-msgstr "Sélection utilisateur 15"
-
-msgctxt "#32020"
-msgid "Same director"
-msgstr "Même réalisateur"
-
-msgctxt "#32021"
-msgid "Xonfluence Initial Use"
-msgstr "Initialisation de Xonfluence"
-
-msgctxt "#32022"
-msgid "Since this is Xonfluence's first use, Kodi needs to be restarted for proper menu configuration.[CR][CR]Press the button below to proceed."
-msgstr "Comme il s'agit de la première utilisation de Xonfluence, Kodi doit être redémarré pour une configuration de menu correcte.[CR][CR]Appuyez sur le bouton ci-dessous pour continuer."
-
-msgctxt "#32023"
-msgid "Proceed with Kodi Exit"
-msgstr "Quitter Kodi"
-
-msgctxt "#32024"
-msgid "Widget layout"
-msgstr "Disposition Widget"
-
-msgctxt "#32025"
-msgid "Small"
-msgstr "Petit"
-
-msgctxt "#32026"
-msgid "Large"
-msgstr "Large"
-
-msgctxt "#32027"
-msgid "Large 2"
-msgstr "Large 2"
-
-msgctxt "#32028"
-msgid "Large 3"
-msgstr "Large 3"
-
-msgctxt "#32029"
-msgid "Large 4"
-msgstr "Large 4"
-
-msgctxt "#32030"
-msgid "Large 5"
-msgstr "Large 5"
-
-msgctxt "#32031"
-msgid "Select Widget Layout"
-msgstr "Sélectionner la disposition du widget"
-
-msgctxt "#32032"
-msgid "Duration"
-msgstr "Durée"
-
-msgctxt "#32033"
-msgid "Reboot to Android"
-msgstr "Redémarrer sur Android"
-
-msgctxt "#32034"
-msgid "Slower automatic scrolling"
-msgstr "Défilement automatique plus lent"
-
-msgctxt "#32035"
-msgid "Extra Fanart if available"
-msgstr "Fanart supplémentaire si disponible"
-
-msgctxt "#32036"
-msgid "Widget fanart/extra fanart"
-msgstr "Fanart/fanart supplémentaire Widget"
-
-msgctxt "#32037"
-msgid "Adjust Extra fanart cycle rate"
-msgstr "Ajuster le cycle des fanarts supplémentaires"
-
-msgctxt "#32038"
-msgid "Emulationstation"
-msgstr "Emulationstation"
-
-msgctxt "#32039"
-msgid "Retroarch"
-msgstr "Retroarch"
-
-msgctxt "#32040"
-msgid "Pegasus"
-msgstr "Pegasus"
-
-msgctxt "#32041"
-msgid "Moonlight"
-msgstr "Moonlight"
-
-msgctxt "#32042"
-msgid "Hide Reboot to Android option in shutdown menu"
-msgstr "Cacher l'option Redémarrer sous Android dans le menu d'arrêt"
-
-msgctxt "#32043"
-msgid "Extended Info script"
-msgstr "Script Extended Info"
-
-msgctxt "#32044"
-msgid "Configure Extended Info"
-msgstr "Configurer Extended Info"
-
-msgctxt "#32045"
-msgid "Open Extended Info for video info dialogs"
-msgstr "Ouvrir Extended Info pour les boîtes de dialogue d'info vidéo"
-
-msgctxt "#32046"
-msgid "Weather (extended)"
-msgstr "Météo (extended)"
-
-msgctxt "#32047"
-msgid "script.skinshortcuts for menu/submenu/widget configuration"
-msgstr "script.skinshortcuts pour la config menu/submenu/widget"
-
-msgctxt "#32049"
-msgid "Customize Home menu"
-msgstr "Personnaliser menu d'accueil"
-
-msgctxt "#32050"
-msgid "Customize Power menu"
-msgstr "Personnaliser le menu Power"
-
-msgctxt "#32051"
-msgid "Choosing default menu item"
-msgstr "Choisir l'élément de menu par défaut"
-
-msgctxt "#50000"
-msgid "Favourites Icon"
-msgstr "Icône Favoris"
-
-msgctxt "#50001"
-msgid "Heart"
-msgstr "Cœur"
-
-msgctxt "#50002"
-msgid "Star"
-msgstr "Étoile"
-
-msgctxt "#50003"
-msgid "Bookmark"
-msgstr "Marque-page"
-
-msgctxt "#50004"
-msgid "Settings"
-msgstr "Paramètres"
-
-msgctxt "#50005"
-msgid "Power Icon"
-msgstr "Icône Power"
-
-msgctxt "#50006"
-msgid "Restart"
-msgstr "Redémarrer"
-
-msgctxt "#50007"
-msgid "Logout"
-msgstr "Déconnexion"
-
-msgctxt "#50008"
-msgid "Settings"
-msgstr "Paramètres"
-
-msgctxt "#50009"
-msgid "Poweroff"
-msgstr "Éteindre"
-
-msgctxt "#50010"
-msgid "Menu1"
-msgstr "Menu1"
-
-msgctxt "#50011"
-msgid "Menu2"
-msgstr "Menu2"
-
-msgctxt "#50012"
-msgid "Menu3"
-msgstr "Menu3"
-
-msgctxt "#50013"
-msgid "Simple mod (for touch)"
-msgstr "Mode simple (tactile)"
-
-msgctxt "#50014"
-msgid "Current folder"
-msgstr "Dossier courant"
-
-msgctxt "#50015"
-msgid "Hide Home"
-msgstr "Cacher Accueil"
-
-msgctxt "#50016"
-msgid "Hide Volume"
-msgstr "Cacher Volume"
-
-msgctxt "#50018"
-msgid "Hide Back on favourites"
-msgstr "Cacher Retour sur les favoris"
-
-msgctxt "#50020"
-msgid "PiP"
-msgstr "Fenêtre vidéo superposée (PiP)"

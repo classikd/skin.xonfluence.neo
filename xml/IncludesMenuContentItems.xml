@@ -296,10 +296,10 @@
             </item>
 			<item>
                 <description>EmulationStation</description>
-                <label>$LOCALIZE[32038]</label>
+                <label>$LOCALIZE[31752]</label>
                 <include>ClearButtonChoice</include>
                 <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunScript(/usr/bin/frontend-emulationstation.py))</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32038])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31752])</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
@@ -314,10 +314,10 @@
             </item>
 			<item>
                 <description>Retroarch</description>
-                <label>$LOCALIZE[32039]</label>
+                <label>$LOCALIZE[31753]</label>
                 <include>ClearButtonChoice</include>
                 <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunScript(/usr/bin/frontend-retroarch.py))</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32039])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31753])</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
@@ -332,10 +332,10 @@
             </item>
 			<item>
                 <description>Pegasus</description>
-                <label>$LOCALIZE[32040]</label>
+                <label>$LOCALIZE[31754]</label>
                 <include>ClearButtonChoice</include>
                 <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunScript(/usr/bin/frontend-pegasus-fe.py))</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32040])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31754])</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
@@ -350,10 +350,10 @@
             </item>
 			<item>
                 <description>Moonlight</description>
-                <label>$LOCALIZE[32041]</label>
+                <label>$LOCALIZE[31755]</label>
                 <include>ClearButtonChoice</include>
                 <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunScript(/usr/bin/moonlight-qt.py))</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32041])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31755])</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
@@ -2848,10 +2848,10 @@
             </item>
 			<item>
                 <description>EmulationStation</description>
-                <label>$LOCALIZE[32038]</label>
+                <label>$LOCALIZE[31752]</label>
                 <include>ClearButtonChoice</include>
                 <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunScript(/usr/bin/frontend-emulationstation.py))</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32038])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31752])</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
@@ -2866,10 +2866,10 @@
             </item>
 			<item>
                 <description>Retroarch</description>
-                <label>$LOCALIZE[32039]</label>
+                <label>$LOCALIZE[31753]</label>
                 <include>ClearButtonChoice</include>
                 <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunScript(/usr/bin/frontend-retroarch.py))</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32039])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31753])</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
@@ -2884,10 +2884,10 @@
             </item>
 			<item>
                 <description>Pegasus</description>
-                <label>$LOCALIZE[32040]</label>
+                <label>$LOCALIZE[31754]</label>
                 <include>ClearButtonChoice</include>
                 <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunScript(/usr/bin/frontend-pegasus-fe.py))</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32040])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31754])</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
@@ -2902,10 +2902,10 @@
             </item>
 			<item>
                 <description>Moonlight</description>
-                <label>$LOCALIZE[32041]</label>
+                <label>$LOCALIZE[31755]</label>
                 <include>ClearButtonChoice</include>
                 <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunScript(/usr/bin/moonlight-qt.py))</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32041])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31755])</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>

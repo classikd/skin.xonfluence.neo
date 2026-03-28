@@ -235,7 +235,7 @@
                     </item>
 					<item>
                         <description>Weather Extended</description>
-                        <label>$LOCALIZE[32046]</label>
+                        <label>$LOCALIZE[31760]</label>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,WeatherExtended)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetFormat,Thumb)</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetLayout,Small)</onclick>
@@ -255,7 +255,7 @@
                     </item>
 					<item>
                         <description>Recent Movies (with watched)</description>
-                        <label>$LOCALIZE[32000]</label>
+                        <label>$LOCALIZE[31714]</label>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMoviesWatched)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetFormat,Poster)</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetLayout,Small)</onclick>
@@ -306,7 +306,7 @@
                     </item>
 					<item>
                         <description>Recent Episodes</description>
-                        <label>$LOCALIZE[32001]</label>
+                        <label>$LOCALIZE[31715]</label>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentEpisodesWatched)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetFormat,Thumb)</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetLayout,Small)</onclick>
@@ -384,7 +384,7 @@
                     </item>
 					<item>
                         <description>Recent Concerts</description>
-                        <label>$LOCALIZE[32002]</label>
+                        <label>$LOCALIZE[31716]</label>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentConcertsWatched)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetFormat,Thumb)</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetLayout,Small)</onclick>

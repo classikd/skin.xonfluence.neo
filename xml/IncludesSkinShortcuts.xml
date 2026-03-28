@@ -15,7 +15,7 @@
     </variable>
 	
 	<variable name="SkinShortcutsItemLabelVar">
-		<value condition="String.EndsWith(Window.Property(groupname),.1) + String.IsEmpty(Container(211).ListItem.Property(widgetName))">$ADDON[script.skinshortcuts 32013]</value>
+		<value condition="String.EndsWith(Window.Property(groupname),.1) + String.IsEmpty(Container(211).ListItem.Property(widgetName))">$ADDON[script.skinshortcuts 31727]</value>
 		<value condition="String.EndsWith(Window.Property(groupname),.1)">$INFO[Container(211).ListItem.Property(widgetName)]</value>
 		<value>$INFO[Container(211).ListItem.Label]</value>
     </variable>

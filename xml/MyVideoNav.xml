@@ -218,7 +218,7 @@
                     <description>Hide Ratings</description>
                     <textwidth>255</textwidth>
                     <include>ButtonCommonValues</include>
-                    <label>$LOCALIZE[32014]</label>
+                    <label>$LOCALIZE[31728]</label>
                     <onclick>Skin.ToggleSetting(HideRatingsViews)</onclick>
                     <selected>Skin.HasSetting(HideRatingsViews)</selected>
                     <!-- diable rating in all views, not just episodes  by:Rafi  -->
