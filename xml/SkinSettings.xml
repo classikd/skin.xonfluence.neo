@@ -571,21 +571,6 @@
                                 <onclick>Skin.ToggleSetting(HideBusyAnimation)</onclick>
                                 <selected>!Skin.HasSetting(HideBusyAnimation)</selected>
                             </control>
-                            <control type="button" id="113">
-                                <description>hide home floor</description>
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <textcolor>white</textcolor>
-                                <focusedcolor>black</focusedcolor>
-                                <include>MenuButton</include>
-                                <label>$LOCALIZE[31069]</label>
-                                <shadowcolor>black</shadowcolor>
-                                <label2>[COLOR=white]$VAR[HomeFloorValue][/COLOR]</label2>
-                                <onclick condition="String.IsEmpty(Skin.String(HomeFloor))">Skin.SetString(HomeFloor,Transparent)</onclick>
-                                <onclick condition="Skin.String(HomeFloor,Transparent)">Skin.SetString(HomeFloor,Enabled)</onclick>
-                                <onclick condition="Skin.String(HomeFloor,Enabled)">Skin.Reset(HomeFloor)</onclick>
-                            </control>
                             <control type="radiobutton" id="114">
                                 <description>Orig Popup Seektime Window</description>
                                 <width>1125</width>
@@ -878,6 +863,21 @@
                                 <label>$LOCALIZE[31137]</label>
                                 <onclick>Skin.ToggleSetting(LowerMainMenuBar)</onclick>
                                 <selected>Skin.HasSetting(LowerMainMenuBar)</selected>
+                            </control>
+                            <control type="button" id="113">
+                                <description>hide home floor</description>
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <label>$LOCALIZE[31069]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>[COLOR=white]$VAR[HomeFloorValue][/COLOR]</label2>
+                                <onclick condition="String.IsEmpty(Skin.String(HomeFloor))">Skin.SetString(HomeFloor,Transparent)</onclick>
+                                <onclick condition="Skin.String(HomeFloor,Transparent)">Skin.SetString(HomeFloor,Enabled)</onclick>
+                                <onclick condition="Skin.String(HomeFloor,Enabled)">Skin.Reset(HomeFloor)</onclick>
                             </control>
                             <control type="radiobutton" id="138">
                                 <description>enable wrap around menu</description>
