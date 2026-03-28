@@ -494,23 +494,25 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label>$LOCALIZE[31283]</label>
+                                <label> - $LOCALIZE[31283]</label>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>Skin.ToggleSetting(HidePVRNowPlaying)</onclick>
                                 <selected>!Skin.HasSetting(HidePVRNowPlaying)</selected>
+                                <enable>!Skin.HasSetting(HideHomeNowPlaying)</enable>
                             </control>
                             <control type="radiobutton" id="1077">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label>$LOCALIZE[50020]</label>
+                                <label> - $LOCALIZE[50020]</label>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick>Skin.ToggleSetting(EnablePiP)</onclick>
                                 <selected>Skin.HasSetting(EnablePiP)</selected>
+                                <enable>!Skin.HasSetting(HideHomeNowPlaying)</enable>
                             </control>
                             <control type="radiobutton" id="108">
                                 <description>Fanart Animation</description>
@@ -519,9 +521,10 @@
                                 <font>font13</font>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[31068]</label>
+                                <label> - $LOCALIZE[31068]</label>
                                 <onclick>Skin.ToggleSetting(NoAnimateVizFanart)</onclick>
                                 <selected>!Skin.HasSetting(NoAnimateVizFanart)</selected>
+                                <enable>!Skin.HasSetting(HideHomeNowPlaying)</enable>
                                 <include>MenuButton</include>
                             </control>
                             <control type="radiobutton" id="109">
@@ -1211,7 +1214,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label>20189</label>
+                                <label>31713</label>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
@@ -1486,6 +1489,7 @@
                                 <include>MenuButton</include>
                                 <onclick>Skin.ToggleSetting(ShowSeekBarIntro)</onclick>
                                 <selected>Skin.HasSetting(ShowSeekBarIntro)</selected>
+                                <enable>!Skin.HasSetting(HideInfoStartOSD)</enable>
                             </control>
                             <control type="radiobutton" id="179">
                                 <description>OSD Plot on Media Pause</description>
@@ -1673,9 +1677,10 @@
                                 <font>font13</font>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[50004]</label>
+                                <label> - $LOCALIZE[50004]</label>
                                 <onclick>Skin.ToggleSetting(EnableFloorSettingsButtons)</onclick>
                                 <selected>Skin.HasSetting(EnableFloorSettingsButtons)</selected>
+                                <enable>Skin.HasSetting(EnableFloorReturnButtons)</enable>
                                 <include>MenuButton</include>
                             </control>
                             <control type="radiobutton" id="1882">
@@ -1685,9 +1690,10 @@
                                 <font>font13</font>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[50015]</label>
+                                <label> - $LOCALIZE[50015]</label>
                                 <onclick>Skin.ToggleSetting(HideFloorHomeButtons)</onclick>
                                 <selected>Skin.HasSetting(HideFloorHomeButtons)</selected>
+                                <enable>Skin.HasSetting(EnableFloorReturnButtons)</enable>
                                 <include>MenuButton</include>
                             </control>
                             <control type="radiobutton" id="1883">
@@ -1697,9 +1703,10 @@
                                 <font>font13</font>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[50016]</label>
+                                <label> - $LOCALIZE[50016]</label>
                                 <onclick>Skin.ToggleSetting(HideFloorVolumeButtons)</onclick>
                                 <selected>Skin.HasSetting(HideFloorVolumeButtons)</selected>
+                                <enable>Skin.HasSetting(EnableFloorReturnButtons)</enable>
                                 <include>MenuButton</include>
                             </control>
                             <control type="radiobutton" id="1885">
@@ -1709,9 +1716,10 @@
                                 <font>font13</font>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[50018]</label>
+                                <label> - $LOCALIZE[50018]</label>
                                 <onclick>Skin.ToggleSetting(HideFloorBackButtonOnFavourites)</onclick>
                                 <selected>Skin.HasSetting(HideFloorBackButtonOnFavourites)</selected>
+                                <enable>Skin.HasSetting(EnableFloorReturnButtons)</enable>
                                 <include>MenuButton</include>
                             </control>
                             <control type="radiobutton" id="189">
@@ -11639,7 +11647,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label>- $LOCALIZE[24020]</label>
+                                <label> - $LOCALIZE[24020]</label>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
