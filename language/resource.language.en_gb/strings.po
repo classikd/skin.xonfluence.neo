@@ -16,7 +16,7 @@ msgstr ""
 "Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#Misc labels
+
 
 msgctxt "#31000"
 msgid "Change your"
@@ -103,11 +103,11 @@ msgid "Automatic suggestion"
 msgstr ""
 
 msgctxt "#31021"
-msgid "Enable trailers button"
+msgid "Trailers button"
 msgstr ""
 
 msgctxt "#31022"
-msgid "Enable playlist at startup"
+msgid "Playlist at startup"
 msgstr ""
 
 msgctxt "#31023"
@@ -129,8 +129,6 @@ msgstr ""
 msgctxt "#31027"
 msgid "Location"
 msgstr ""
-
-#View Type labels
 
 msgctxt "#31028"
 msgid "Poster wrap"
@@ -157,7 +155,7 @@ msgid "Info"
 msgstr ""
 
 msgctxt "#31034"
-msgid "Enable media info on fullscreen playback"
+msgid "Media info on fullscreen playback"
 msgstr ""
 
 msgctxt "#31035"
@@ -179,8 +177,6 @@ msgstr ""
 msgctxt "#31039"
 msgid "Actions"
 msgstr ""
-
-#Extra labels
 
 msgctxt "#31040"
 msgid "Now playing"
@@ -242,8 +238,6 @@ msgctxt "#31054"
 msgid "Special features"
 msgstr ""
 
-#Playlist Editor labels
-
 msgctxt "#31055"
 msgid "Open playlist"
 msgstr ""
@@ -264,8 +258,6 @@ msgctxt "#31059"
 msgid "Current playlist"
 msgstr ""
 
-#empty string with id 31060
-
 msgctxt "#31061"
 msgid "Current selected"
 msgstr ""
@@ -275,7 +267,7 @@ msgid "Episode backdrop"
 msgstr ""
 
 msgctxt "#31063"
-msgid "Show volume buttons"
+msgid "Volume buttons"
 msgstr ""
 
 msgctxt "#31064"
@@ -283,51 +275,51 @@ msgid "Volume buttons small jump"
 msgstr ""
 
 msgctxt "#31065"
-msgid "Favourites button action"
+msgid "Favourites action"
 msgstr ""
 
 msgctxt "#31066"
-msgid "Enable original confluence popup seek bar"
+msgid "Original confluence popup seek bar"
 msgstr ""
 
 msgctxt "#31067"
-msgid "Enable CD wall as fallback background of playing albums"
+msgid "CD wall as fallback background of playing albums"
 msgstr ""
 
 msgctxt "#31068"
-msgid "Enable fanart animation of playing media"
+msgid "Fanart animation"
 msgstr ""
 
 msgctxt "#31069"
-msgid "Enable home floor"
+msgid "Floor"
 msgstr ""
 
 msgctxt "#31070"
-msgid "Enable list item background fanart"
+msgid "List item background fanart"
 msgstr ""
 
 msgctxt "#31071"
-msgid "Enable now playing info"
+msgid "Now playing info"
 msgstr ""
 
 msgctxt "#31072"
-msgid "Home top left info area"
+msgid "Top left info area"
 msgstr ""
 
 msgctxt "#31073"
-msgid "Enable home stats bar"
+msgid "Stats bar"
 msgstr ""
 
 msgctxt "#31074"
-msgid "Enable large home widgets"
+msgid "Large home widgets"
 msgstr ""
 
 msgctxt "#31075"
-msgid "Enable episode thumbnails"
+msgid "Episode thumbnails"
 msgstr ""
 
 msgctxt "#31076"
-msgid "Enable raindrop effect"
+msgid "Raindrop effect"
 msgstr ""
 
 msgctxt "#31077"
@@ -335,19 +327,19 @@ msgid "Shutdown menu"
 msgstr ""
 
 msgctxt "#31078"
-msgid "Power button action"
+msgid "Power action"
 msgstr ""
 
 msgctxt "#31079"
-msgid "Hide power button"
+msgid "Hide power"
 msgstr ""
 
 msgctxt "#31080"
-msgid "Floor button options"
+msgid "Floor buttons options"
 msgstr ""
 
 msgctxt "#31081"
-msgid "Enable clock and date display"
+msgid "Clock and date"
 msgstr ""
 
 msgctxt "#31082"
@@ -359,7 +351,7 @@ msgid "Kodi icon"
 msgstr ""
 
 msgctxt "#31084"
-msgid "Enable kodi intro movie"
+msgid "Kodi intro movie"
 msgstr ""
 
 msgctxt "#31085"
@@ -379,11 +371,11 @@ msgid "of"
 msgstr ""
 
 msgctxt "#31089"
-msgid "Enable PVR recording info"
+msgid "PVR recording info"
 msgstr ""
 
 msgctxt "#31090"
-msgid "Use wide banners"
+msgid "Wide banners"
 msgstr ""
 
 msgctxt "#31091"
@@ -399,7 +391,7 @@ msgid "Ping MAC address"
 msgstr ""
 
 msgctxt "#31094"
-msgid "Enable WOL ping"
+msgid "WOL ping"
 msgstr ""
 
 msgctxt "#31095"
@@ -407,11 +399,11 @@ msgid "WOL ping timer"
 msgstr ""
 
 msgctxt "#31096"
-msgid "Enable suggested movies or TV shows info"
+msgid "Suggested movies or TV shows info"
 msgstr ""
 
 msgctxt "#31097"
-msgid "Enable Floor Return Buttons (for touch)"
+msgid "Additional navigation (for touch)"
 msgstr ""
 
 msgctxt "#31098"
@@ -419,10 +411,8 @@ msgid "Top left widget on all screens"
 msgstr ""
 
 msgctxt "#31099"
-msgid "Use extra fanart on navigation"
+msgid "Extra fanart on navigation"
 msgstr ""
-
-#Skin Settings labels
 
 msgctxt "#31100"
 msgid "Weather fanart"
@@ -437,11 +427,11 @@ msgid "Background"
 msgstr ""
 
 msgctxt "#31103"
-msgid "Show \"Paused\" in picture slideshow"
+msgid "\"Paused\" in picture slideshow"
 msgstr ""
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=white](Video information dialogue only)[/COLOR]"
+msgid "Trailers played in a window [COLOR=white](Video information dialogue only)[/COLOR]"
 msgstr ""
 
 msgctxt "#31105"
@@ -461,7 +451,7 @@ msgid "Hide main menu buttons"
 msgstr ""
 
 msgctxt "#31109"
-msgid "Enable custom background"
+msgid "Custom background"
 msgstr ""
 
 msgctxt "#31110"
@@ -509,7 +499,7 @@ msgid "Home page \"Games\" submenu"
 msgstr ""
 
 msgctxt "#31121"
-msgid "Show plot info on info screen"
+msgid "Plot info on info screen"
 msgstr ""
 
 msgctxt "#31122"
@@ -528,8 +518,6 @@ msgctxt "#31125"
 msgid "Show background \"Now playing\" visualisation"
 msgstr ""
 
-#empty string with id 31126
-
 msgctxt "#31127"
 msgid "TvTunes"
 msgstr ""
@@ -543,7 +531,7 @@ msgid "Hide fanart in full screen visualisation"
 msgstr ""
 
 msgctxt "#31130"
-msgid "Hide favorites button"
+msgid "Hide favorites"
 msgstr ""
 
 msgctxt "#31131"
@@ -571,15 +559,15 @@ msgid "Home page \"Pictures\" submenu"
 msgstr ""
 
 msgctxt "#31137"
-msgid "Enable low main menu bar"
+msgid "Low main menu bar"
 msgstr ""
 
 msgctxt "#31138"
-msgid "Play party mode music on screensaver"
+msgid "Party mode music on screensaver"
 msgstr ""
 
 msgctxt "#31139"
-msgid "Enable automatic fullscreen music playback"
+msgid "Automatic fullscreen music playback"
 msgstr ""
 
 msgctxt "#31140"
@@ -607,7 +595,7 @@ msgid "Plex"
 msgstr ""
 
 msgctxt "#31146"
-msgid "Enable busy animation"
+msgid "Busy animation"
 msgstr ""
 
 msgctxt "#31147"
@@ -615,7 +603,7 @@ msgid "Setup UPnP library"
 msgstr ""
 
 msgctxt "#31148"
-msgid "Enable UPnP client mode"
+msgid "UPnP client mode"
 msgstr ""
 
 msgctxt "#31149"
@@ -631,11 +619,11 @@ msgid "Restart kodi instead of system reboot"
 msgstr ""
 
 msgctxt "#31152"
-msgid "Enable kiosk mode"
+msgid "Kiosk mode"
 msgstr ""
 
 msgctxt "#31153"
-msgid "Show minimal picture info"
+msgid "Minimal picture info"
 msgstr ""
 
 msgctxt "#31154"
@@ -643,7 +631,7 @@ msgid "Notifications at top left"
 msgstr ""
 
 msgctxt "#31155"
-msgid "Show global search button on bottom left"
+msgid "Global search on bottom left"
 msgstr ""
 
 msgctxt "#31156"
@@ -651,7 +639,7 @@ msgid ":"
 msgstr ""
 
 msgctxt "#31157"
-msgid "Enable manual opening of media views slide menu"
+msgid "Manual opening of media views slide menu"
 msgstr ""
 
 msgctxt "#31158"
@@ -691,10 +679,8 @@ msgid "Setup default background"
 msgstr ""
 
 msgctxt "#31167"
-msgid "No backgrounds set, install and setup default backgrounds add-on?"
+msgid "No backgrounds set, setup default backgrounds?"
 msgstr ""
-
-#empty strings from id 31168 to 31187
 
 msgctxt "#31188"
 msgid "Random concerts"
@@ -801,7 +787,7 @@ msgid "Streaming navigator"
 msgstr ""
 
 msgctxt "#31214"
-msgid "Show addon names"
+msgid "Addon names"
 msgstr ""
 
 msgctxt "#31215"
@@ -860,46 +846,44 @@ msgctxt "#31228"
 msgid "Unwatched movies"
 msgstr ""
 
-#empty string with id 31229
-
 msgctxt "#31230"
-msgid "User selection one"
+msgid "User selection 1"
 msgstr ""
 
 msgctxt "#31231"
-msgid "User selection two"
+msgid "User selection 2"
 msgstr ""
 
 msgctxt "#31232"
-msgid "User selection three"
+msgid "User selection 3"
 msgstr ""
 
 msgctxt "#31233"
-msgid "User selection four"
+msgid "User selection 4"
 msgstr ""
 
 msgctxt "#31234"
-msgid "User selection five"
+msgid "User selection 5"
 msgstr ""
 
 msgctxt "#31235"
-msgid "User selection six"
+msgid "User selection 6"
 msgstr ""
 
 msgctxt "#31236"
-msgid "User selection seven"
+msgid "User selection 7"
 msgstr ""
 
 msgctxt "#31237"
-msgid "User selection eight"
+msgid "User selection 8"
 msgstr ""
 
 msgctxt "#31238"
-msgid "User selection nine"
+msgid "User selection 9"
 msgstr ""
 
 msgctxt "#31239"
-msgid "User selection ten"
+msgid "User selection 10"
 msgstr ""
 
 msgctxt "#31240"
@@ -907,11 +891,11 @@ msgid "User friendly name"
 msgstr ""
 
 msgctxt "#31241"
-msgid "User selection eleven"
+msgid "User selection 11"
 msgstr ""
 
 msgctxt "#31242"
-msgid "User selection twelve"
+msgid "User selection 12"
 msgstr ""
 
 msgctxt "#31243"
@@ -926,8 +910,6 @@ msgctxt "#31245"
 msgid "Next aired episodes"
 msgstr ""
 
-#empty string with id 31246
-
 msgctxt "#31247"
 msgid "Move menu item"
 msgstr ""
@@ -939,8 +921,6 @@ msgstr ""
 msgctxt "#31249"
 msgid "Background transparency"
 msgstr ""
-
-#empty string with id 31250
 
 msgctxt "#31251"
 msgid "Suggested"
@@ -974,8 +954,6 @@ msgctxt "#31258"
 msgid "User select"
 msgstr ""
 
-#empty string with id 31259
-
 msgctxt "#31260"
 msgid "No disc media detected"
 msgstr ""
@@ -983,8 +961,6 @@ msgstr ""
 msgctxt "#31261"
 msgid "Next tracks"
 msgstr ""
-
-#empty strings from id 31262 to 31266
 
 msgctxt "#31267"
 msgid "Playing"
@@ -1007,19 +983,19 @@ msgid "Ubuntu Bold"
 msgstr ""
 
 msgctxt "#31272"
-msgid "Enable holiday theme"
+msgid "Holiday theme"
 msgstr ""
 
 msgctxt "#31273"
-msgid "Enable wrap around menu"
+msgid "Wrap around menu"
 msgstr ""
 
 msgctxt "#31274"
-msgid "Enable return to start menu scroll"
+msgid "Return to start menu scroll"
 msgstr ""
 
 msgctxt "#31275"
-msgid "Enable visible horizontal submenu"
+msgid "Horizontal submenu"
 msgstr ""
 
 msgctxt "#31276"
@@ -1027,23 +1003,23 @@ msgid "Extra artwork options"
 msgstr ""
 
 msgctxt "#31277"
-msgid "Enable music visualization on home screen"
+msgid "Music visualization"
 msgstr ""
 
 msgctxt "#31278"
-msgid "Enable CD case and disk art"
+msgid "CD case and disk art"
 msgstr ""
 
 msgctxt "#31279"
-msgid "Enable next 5 songs scroller"
+msgid "Next 5 songs scroller"
 msgstr ""
 
 msgctxt "#31280"
-msgid "Diffuse music visualization with artist fanart"
+msgid "Music visualization with artist fanart"
 msgstr ""
 
 msgctxt "#31281"
-msgid "Enable background playing media"
+msgid "Background playing media"
 msgstr ""
 
 msgctxt "#31282"
@@ -1051,10 +1027,8 @@ msgid "Home menu"
 msgstr ""
 
 msgctxt "#31283"
-msgid "Enable background video in PVR windows"
+msgid "In PVR windows"
 msgstr ""
-
-#empty strings from id 31284 to 31285
 
 msgctxt "#31286"
 msgid "Remote"
@@ -1085,7 +1059,7 @@ msgid "Add-on set"
 msgstr ""
 
 msgctxt "#31293"
-msgid "Widget set"
+msgid "Widget"
 msgstr ""
 
 msgctxt "#31294"
@@ -1111,8 +1085,6 @@ msgstr ""
 msgctxt "#31299"
 msgid "Artists fanart"
 msgstr ""
-
-#Extra labels
 
 msgctxt "#31300"
 msgid "Current temperature"
@@ -1157,8 +1129,6 @@ msgstr ""
 msgctxt "#31310"
 msgid "Track number"
 msgstr ""
-
-#empty strings from id 31311 to 31314
 
 msgctxt "#31315"
 msgid "Submenu item"
@@ -1257,37 +1227,33 @@ msgid "Favourites window"
 msgstr ""
 
 msgctxt "#31339"
-msgid "User video OSD button user selection"
+msgid "User video button user selection"
 msgstr ""
 
 msgctxt "#31340"
-msgid "Enable logo artwork for all media"
+msgid "Logo artwork for all media"
 msgstr ""
 
 msgctxt "#31341"
-msgid "Enable clearart and character art for movies and TV shows"
+msgid "Clearart and character art for movies and TV shows"
 msgstr ""
 
 msgctxt "#31342"
-msgid "Enable discart for all media"
+msgid "Discart for all media"
 msgstr ""
 
 msgctxt "#31343"
 msgid "Download art"
 msgstr ""
 
-#empty string with id 31344
-
 msgctxt "#31345"
-msgid "Show user video OSD button"
+msgid "User video button"
 msgstr ""
 
 msgctxt "#31346"
 msgid "Up one level"
 msgstr ""
 
-#empty strings from id 31347 to 31350
-#Video and Music OSD Labels
 
 msgctxt "#31351"
 msgid "Pause"
@@ -1313,13 +1279,10 @@ msgctxt "#31356"
 msgid "Download subtitles"
 msgstr ""
 
-#empty strings from id 31357 to 31358
-
 msgctxt "#31359"
-msgid "User video OSD button"
+msgid "User video button"
 msgstr ""
 
-# Stereoscopic labels
 msgctxt "#31360"
 msgid "Watch as 2D"
 msgstr ""
@@ -1341,14 +1304,12 @@ msgid "Holiday theme"
 msgstr ""
 
 msgctxt "#31365"
-msgid "Select main colour"
+msgid "Colour"
 msgstr ""
 
 msgctxt "#31366"
 msgid "Current theme"
 msgstr ""
-
-#empty strings from id 31367 to 31378
 
 msgctxt "#31369"
 msgid "Select main OSD colour"
@@ -1363,19 +1324,19 @@ msgid "Delayed"
 msgstr ""
 
 msgctxt "#31372"
-msgid "Enable video OSD start playing introduction"
+msgid "Start playing introduction"
 msgstr ""
 
 msgctxt "#31373"
-msgid "Enable video OSD plot on pause"
+msgid "Plot on pause"
 msgstr ""
 
 msgctxt "#31374"
-msgid "Enable video info and seekbar on pause"
+msgid "Video info & seekbar on pause"
 msgstr ""
 
 msgctxt "#31375"
-msgid "Use graphical textures on keyboards"
+msgid "Graphical textures on keyboards"
 msgstr ""
 
 msgctxt "#31376"
@@ -1383,13 +1344,11 @@ msgid "Use autocomplete on keyboards"
 msgstr ""
 
 msgctxt "#31377"
-msgid "Enable video info on OSD menu"
+msgid "Video info on menu"
 msgstr ""
 
-#empty strings from id 31378 to 31379
-
 msgctxt "#31380"
-msgid "Enable playlist widget script"
+msgid "Playlist widget script"
 msgstr ""
 
 msgctxt "#31381"
@@ -1401,11 +1360,11 @@ msgid "Playlist widget should [B]randomize[/B] the playlist sort order"
 msgstr ""
 
 msgctxt "#31383"
-msgid "Enable video artwork to show with OSD information"
+msgid "Video artwork to show with information"
 msgstr ""
 
 msgctxt "#31384"
-msgid "Enable music artwork to show with OSD information"
+msgid "Music artwork to show with information"
 msgstr ""
 
 msgctxt "#31385"
@@ -1424,8 +1383,6 @@ msgctxt "#31388"
 msgid "Media View settings"
 msgstr ""
 
-#empty string with id 31389
-
 msgctxt "#31390"
 msgid "Skin default"
 msgstr ""
@@ -1442,17 +1399,13 @@ msgctxt "#31393"
 msgid "Massive"
 msgstr ""
 
-#empty strings from id 31394 to 31395
-
 msgctxt "#31397"
-msgid "Enable TV show next aired"
+msgid "TV show next aired"
 msgstr ""
 
 msgctxt "#31398"
 msgid "Configure script.tv.show.next.aired"
 msgstr ""
-
-#empty string with id 31399
 
 msgctxt "#31400"
 msgid "OpenELEC OS"
@@ -1463,18 +1416,16 @@ msgid "Raspberry OS"
 msgstr ""
 
 msgctxt "#31402"
-msgid "Enable disk type media cases"
+msgid "Disk type media cases"
 msgstr ""
 
 msgctxt "#31403"
-msgid "Enable single global background"
+msgid "Single global background"
 msgstr ""
 
 msgctxt "#31404"
 msgid "Default focused menu item"
 msgstr ""
-
-#empty strings from id 31405 to 31410
 
 msgctxt "#31411"
 msgid "First run help..."
@@ -1487,8 +1438,6 @@ msgstr ""
 msgctxt "#31413"
 msgid "Local subtitle available"
 msgstr ""
-
-#empty strings from id 31414 to 31419
 
 msgctxt "#31420"
 msgid "Login"
@@ -1514,13 +1463,9 @@ msgctxt "#31425"
 msgid "Concerts"
 msgstr ""
 
-#empty string with id 31426
-
 msgctxt "#31427"
 msgid "Concerts"
 msgstr ""
-
-#empty string with id 31428
 
 msgctxt "#31429"
 msgid "Cinema"
@@ -1558,8 +1503,6 @@ msgctxt "#31437"
 msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Xonfluence skin · Add and remove home menu items · Change skin backgrounds"
 msgstr ""
 
-#empty strings from id 31438 to 31439
-
 msgctxt "#31440"
 msgid "Select widget set"
 msgstr ""
@@ -1584,26 +1527,24 @@ msgctxt "#31445"
 msgid "Clean library"
 msgstr ""
 
-#empty strings from id 31446 to 31449
-
 msgctxt "#31450"
-msgid "Show suspend button"
+msgid "Suspend"
 msgstr ""
 
 msgctxt "#31451"
-msgid "Show hibernate button"
+msgid "Hibernate"
 msgstr ""
 
 msgctxt "#31452"
-msgid "Show logoff button"
+msgid "Logoff"
 msgstr ""
 
 msgctxt "#31453"
-msgid "Show mastermode button"
+msgid "Mastermode"
 msgstr ""
 
 msgctxt "#31454"
-msgid "Show timer button"
+msgid "Timer"
 msgstr ""
 
 msgctxt "#31455"
@@ -1611,7 +1552,7 @@ msgid "Custom shutdown scripts"
 msgstr ""
 
 msgctxt "#31456"
-msgid "Enable custom shutdown script"
+msgid "Custom shutdown script"
 msgstr ""
 
 msgctxt "#31457"
@@ -1623,7 +1564,7 @@ msgid "Custom shutdown argument"
 msgstr ""
 
 msgctxt "#31459"
-msgid "Enable custom timer script"
+msgid "Custom timer script"
 msgstr ""
 
 msgctxt "#31460"
@@ -1635,7 +1576,7 @@ msgid "Custom timer argument"
 msgstr ""
 
 msgctxt "#31462"
-msgid "Enable custom hibernate script"
+msgid "Custom hibernate script"
 msgstr ""
 
 msgctxt "#31463"
@@ -1647,7 +1588,7 @@ msgid "Custom hibernate argument"
 msgstr ""
 
 msgctxt "#31465"
-msgid "Enable custom suspend script"
+msgid "Custom suspend script"
 msgstr ""
 
 msgctxt "#31466"
@@ -1657,8 +1598,6 @@ msgstr ""
 msgctxt "#31467"
 msgid "Custom suspend argument"
 msgstr ""
-
-#empty strings from id 31468 to 31489
 
 msgctxt "#31490"
 msgid "Radio 105"
@@ -1727,8 +1666,6 @@ msgstr ""
 msgctxt "#31506"
 msgid "Available[CR]Groups"
 msgstr ""
-
-#empty strings from id 31507 to 31508
 
 msgctxt "#31509"
 msgid "Channel group"
@@ -1820,32 +1757,26 @@ msgctxt "#31530"
 msgid "Game Sources"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31531"
 msgid "Additional widgets"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31532"
 msgid "Recently Added Movies"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31533"
 msgid "Recently Played Movies"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31534"
 msgid "Random Movies"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31535"
 msgid "In Progress Movies"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31536"
 msgid "Unwatched Movies"
 msgstr ""
@@ -1854,22 +1785,18 @@ msgctxt "#31537"
 msgid "Top Rated Movies"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31538"
 msgid "Movie Genres"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31539"
 msgid "Movie Sets"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31540"
 msgid "Movie Nodes"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31541"
 msgid "IMDB Top 250 Movies"
 msgstr ""
@@ -1878,112 +1805,90 @@ msgctxt "#31542"
 msgid "Decades"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31543"
 msgid "TV Shows"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31544"
 msgid "Recently Added TV Shows"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31545"
 msgid "Recently Played TV Shows"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31546"
 msgid "Random TV Shows"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31547"
 msgid "In Progress TV Shows"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31548"
 msgid "Unwatched TV Shows"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31549"
 msgid "Top Rated TV Shows"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31550"
 msgid "TV Show Genres"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31551"
 msgid "TV Show Nodes"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31552"
 msgid "Recently Added Episodes"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31553"
 msgid "Recently Played Episodes"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31554"
 msgid "Random Episodes"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31555"
 msgid "In Progress Episodes"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31556"
 msgid "Unwatched Episodes"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31557"
 msgid "Top Rated Episodes"
 msgstr ""
 
-#: script-skinshortcuts.xml
 msgctxt "#31588"
 msgid "Next Aired Episodes"
 msgstr ""
 
-#: script-skinshortcuts.xml
 msgctxt "#31559"
 msgid "Recommended Episodes"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31560"
 msgid "Recently Added Episodes (with watched)"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31561"
 msgid "Recently Added Albums"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31562"
 msgid "Recently Played Albums"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31563"
 msgid "Recently Released Albums"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31564"
 msgid "Top 100 Albums"
 msgstr ""
@@ -1996,140 +1901,100 @@ msgctxt "#31566"
 msgid "Most played albums"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31567"
 msgid "Recently Added Artists"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31568"
 msgid "Random Artists"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31569"
 msgid "Music Nodes"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31570"
 msgid "Recently Added Songs"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31571"
 msgid "Recently Released Songs"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31572"
 msgid "Most Played Songs"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31573"
 msgid "Random Songs"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31574"
 msgid "Recently Added Music Videos"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31575"
 msgid "Recently Added Music Videos (with watched)"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31576"
 msgid "In-Progress Music Videos"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31577"
 msgid "Random Music Videos"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31578"
 msgid "Unwatched Music Videos"
 msgstr ""
 
-#: /1080i/Settings.xml
 msgctxt "#31579"
 msgid "PVR"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31580"
 msgid "Last Played TV Channels"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31581"
 msgid "Active TV Recordings"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31582"
 msgid "Grouped Active TV Recordings"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31583"
 msgid "Grouped Deleted TV Recordings"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31584"
 msgid "Last Played Radio Channels"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31585"
 msgid "Active Radio Recordings"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31586"
 msgid "Grouped Active Radio Recordings"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31587"
 msgid "Grouped Deleted Radio Recordings"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31588"
 msgid "Daily Weather Forecast"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31589"
 msgid "Hourly Weather Forecast"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31590"
 msgid "Recently added movies (with watched)"
-msgstr ""
-
-msgctxt "#31591"
-msgid "Surprise Me"
-msgstr ""
-
-msgctxt "#31592"
-msgid "Surprise Me (Movie)"
-msgstr ""
-
-msgctxt "#31593"
-msgid "Surprise Me (Episode)"
-msgstr ""
-
-msgctxt "#31594"
-msgid "Surprise Me (Music Video)"
 msgstr ""
 
 msgctxt "#31595"
@@ -2140,20 +2005,13 @@ msgctxt "#31596"
 msgid "Current Default Menu Item"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31597"
 msgid "Recently Added TV Shows (with watched)"
 msgstr ""
 
-#: /shortcuts/overrides.xml
 msgctxt "#31598"
 msgid "Recently Played TV Shows (with fully played)"
 msgstr ""
-
-#empty strings from id 31599 to 31647
-
-
-#empty strings from id 31649 to 31697
 
 msgctxt "#31698"
 msgid "Media certification country"
@@ -2215,8 +2073,9 @@ msgctxt "#31712"
 msgid "Skin Settings"
 msgstr ""
 
-#empty strings from id 31712 to 31900
-#Weather plugin
+msgctxt "#31713"
+msgid "Auto scrolling for plot & review"
+msgstr ""
 
 msgctxt "#31901"
 msgid "36-hour forecast"
@@ -2238,8 +2097,6 @@ msgctxt "#31905"
 msgid "Forecast"
 msgstr ""
 
-#empty strings from id 31906 to 31908
-
 msgctxt "#31909"
 msgid "Fetching forecast info..."
 msgstr ""
@@ -2247,8 +2104,6 @@ msgstr ""
 msgctxt "#31910"
 msgid "Maps"
 msgstr ""
-
-#empty strings from id 31911 to 31918
 
 msgctxt "#31919"
 msgid "Music path"
@@ -2263,11 +2118,11 @@ msgid "Centralized fanart directories"
 msgstr ""
 
 msgctxt "#31922"
-msgid "Enable fanart script"
+msgid "Fanart script"
 msgstr ""
 
 msgctxt "#31923"
-msgid "Disable PVR in view"
+msgid "Disable PVR in menu"
 msgstr ""
 
 msgctxt "#31924"
@@ -2275,21 +2130,19 @@ msgid "Album thumbnails"
 msgstr ""
 
 msgctxt "#31925"
-msgid "Enable tvtunes"
+msgid "Tvtunes"
 msgstr ""
 
 msgctxt "#31926"
 msgid "Configure script.tvtunes"
 msgstr ""
 
-#empty strings with id 31927
-
 msgctxt "#31928"
-msgid "Enable extra fanart"
+msgid "Extra fanart"
 msgstr ""
 
 msgctxt "#31929"
-msgid "Enable artist slideshow"
+msgid "Artist slideshow"
 msgstr ""
 
 msgctxt "#31930"
@@ -2297,7 +2150,7 @@ msgid "Configure script.artistslideshow"
 msgstr ""
 
 msgctxt "#31931"
-msgid "Enable global search"
+msgid "Global search"
 msgstr ""
 
 msgctxt "#31932"
@@ -2305,7 +2158,7 @@ msgid "Configure script.globalsearch"
 msgstr ""
 
 msgctxt "#31933"
-msgid "Enable simple playlists (watch it later)"
+msgid "Simple playlists (watch it later)"
 msgstr ""
 
 msgctxt "#31934"
@@ -2321,7 +2174,7 @@ msgid "Configure service.skin.widgets"
 msgstr ""
 
 msgctxt "#31937"
-msgid "Use alternative background folder"
+msgid "Alternative background folder"
 msgstr ""
 
 msgctxt "#31938"
@@ -2337,7 +2190,7 @@ msgid "Seconds"
 msgstr ""
 
 msgctxt "#31941"
-msgid "Enable running artwork downloader automaticaly after updating library"
+msgid "Running artwork downloader automaticaly after updating library"
 msgstr ""
 
 msgctxt "#31942"
@@ -2345,7 +2198,7 @@ msgid "YouTube"
 msgstr ""
 
 msgctxt "#31943"
-msgid "Use default confluence favourites window look and feel"
+msgid "Default confluence favourites window style"
 msgstr ""
 
 msgctxt "#31944"
@@ -2361,15 +2214,15 @@ msgid "Reset fanart to skin default"
 msgstr ""
 
 msgctxt "#31947"
-msgid "Button look and feel"
+msgid "Button style"
 msgstr ""
 
 msgctxt "#31948"
-msgid "Button layout look and feel"
+msgid "Button layout style"
 msgstr ""
 
 msgctxt "#31949"
-msgid "OSD look and feel"
+msgid "OSD style"
 msgstr ""
 
 msgctxt "#31950"
@@ -2437,7 +2290,7 @@ msgid "Multi-image background time per image"
 msgstr ""
 
 msgctxt "#31966"
-msgid "Enable custom video info script"
+msgid "Custom video info script"
 msgstr ""
 
 msgctxt "#31967"
@@ -2453,7 +2306,7 @@ msgid "Airs"
 msgstr ""
 
 msgctxt "#31970"
-msgid "Enable DVD cases"
+msgid "DVD cases"
 msgstr ""
 
 msgctxt "#31971"
@@ -2461,7 +2314,7 @@ msgid "Wrap around lists on video fanart view"
 msgstr ""
 
 msgctxt "#31972"
-msgid "Enable shorter plot outline"
+msgid "Shorter plot outline"
 msgstr ""
 
 msgctxt "#31973"
@@ -2469,11 +2322,11 @@ msgid "DVD drive"
 msgstr ""
 
 msgctxt "#31974"
-msgid "Show seconds on clock display"
+msgid "Clock seconds"
 msgstr ""
 
 msgctxt "#31975"
-msgid "Sideblade label size and location"
+msgid "Sideblade location & label size"
 msgstr ""
 
 msgctxt "#31976"
@@ -2505,7 +2358,7 @@ msgid "Custom widgets limit amount"
 msgstr ""
 
 msgctxt "#31983"
-msgid "Dialog look and feel"
+msgid "Dialog style"
 msgstr ""
 
 msgctxt "#31984"
@@ -2521,7 +2374,7 @@ msgid "Max"
 msgstr ""
 
 msgctxt "#31987"
-msgid "Menu look and feel"
+msgid "Menu style"
 msgstr ""
 
 msgctxt "#31988"
@@ -2561,7 +2414,7 @@ msgid "Shortcuts"
 msgstr ""
 
 msgctxt "#31997"
-msgid "Show clock on full screen video"
+msgid "Clock on full screen video"
 msgstr ""
 
 msgctxt "#31998"
@@ -2585,15 +2438,15 @@ msgid "Recent Concerts (includes watched)"
 msgstr ""
 
 msgctxt "#32003"
-msgid "Show main menu in all caps"
+msgid "Main menu in all caps"
 msgstr ""
 
 msgctxt "#32004"
-msgid "Enable favourites script"
+msgid "Favourites script"
 msgstr ""
 
 msgctxt "#32005"
-msgid "Enable video node stats script"
+msgid "Video node stats script"
 msgstr ""
 
 msgctxt "#32006"
@@ -2605,11 +2458,11 @@ msgid "Configure service.library.data.provider"
 msgstr ""
 
 msgctxt "#32008"
-msgid "Show larger seekbar when rewinding or forwarding"
+msgid "Larger seekbar when rewinding or forwarding"
 msgstr ""
 
 msgctxt "#32009"
-msgid "Show seekbar with intro"
+msgid "Seekbar"
 msgstr ""
 
 msgctxt "#32010"
@@ -2617,15 +2470,15 @@ msgid "Hide shadow behind seekbar"
 msgstr ""
 
 msgctxt "#32011"
-msgid "Enable CPU temperature display"
+msgid "CPU temperature"
 msgstr ""
 
 msgctxt "#32012"
-msgid "Show chapter/cutlist markers on seekbar"
+msgid "Chapter/cutlist markers on seekbar"
 msgstr ""
 
 msgctxt "#32013"
-msgid "Show end time in OSD"
+msgid "End time"
 msgstr ""
 
 msgctxt "#32014"
@@ -2641,15 +2494,15 @@ msgid "N/A"
 msgstr ""
 
 msgctxt "#32017"
-msgid "User selection thirteen"
+msgid "User selection 13"
 msgstr ""
 
 msgctxt "#32018"
-msgid "User selection fourteen"
+msgid "User selection 14"
 msgstr ""
 
 msgctxt "#32019"
-msgid "User selection fifteen"
+msgid "User selection 15"
 msgstr ""
 
 msgctxt "#32020"
@@ -2701,7 +2554,7 @@ msgid "Select Widget Layout"
 msgstr ""
 
 msgctxt "#32032"
-msgid "Duration of OSD intro"
+msgid "Duration"
 msgstr ""
 
 msgctxt "#32033"
@@ -2713,11 +2566,11 @@ msgid "Slower automatic scrolling"
 msgstr ""
 
 msgctxt "#32035"
-msgid "Enable Extra Fanart if available"
+msgid "Extra Fanart if available"
 msgstr ""
 
 msgctxt "#32036"
-msgid "Show widget fanart/extra fanart"
+msgid "Widget fanart/extra fanart"
 msgstr ""
 
 msgctxt "#32037"
@@ -2745,7 +2598,7 @@ msgid "Hide Reboot to Android option in shutdown menu"
 msgstr ""
 
 msgctxt "#32043"
-msgid "Enable use of Extended Info script"
+msgid "Extended Info script"
 msgstr ""
 
 msgctxt "#32044"
@@ -2761,10 +2614,8 @@ msgid "Weather (extended)"
 msgstr ""
 
 msgctxt "#32047"
-msgid "Use script.skinshortcuts for menu/submenu/widget configuration"
+msgid "script.skinshortcuts for menu/submenu/widget configuration"
 msgstr ""
-
-#empty string 32048
 
 msgctxt "#32049"
 msgid "Customize Home menu"
@@ -2775,11 +2626,11 @@ msgid "Customize Power menu"
 msgstr ""
 
 msgctxt "#32051"
-msgid "Enable choosing default menu item"
+msgid "Choosing default menu item"
 msgstr ""
 
 msgctxt "#50000"
-msgid "Favourites Button Icon"
+msgid "Favourites Icon"
 msgstr ""
 
 msgctxt "#50001"
@@ -2795,11 +2646,11 @@ msgid "Bookmark"
 msgstr ""
 
 msgctxt "#50004"
-msgid "Enable Floor Settings Button"
+msgid "Settings"
 msgstr ""
 
 msgctxt "#50005"
-msgid "Power Button Icon"
+msgid "Power Icon"
 msgstr ""
 
 msgctxt "#50006"
@@ -2831,7 +2682,7 @@ msgid "Menu3"
 msgstr ""
 
 msgctxt "#50013"
-msgid "Enable simple UI (for touch)"
+msgid "Simple mod (for touch)"
 msgstr ""
 
 msgctxt "#50014"
@@ -2839,17 +2690,17 @@ msgid "Current folder"
 msgstr ""
 
 msgctxt "#50015"
-msgid "Hide Floor Home Button"
+msgid "Hide Home"
 msgstr ""
 
 msgctxt "#50016"
-msgid "Hide Floor Volume Buttons"
+msgid "Hide Volume"
 msgstr ""
 
 msgctxt "#50018"
-msgid "Hide Floor Back Button on favourites"
+msgid "Hide Back on favourites"
 msgstr ""
 
 msgctxt "#50020"
-msgid "Enable PiP playing media"
+msgid "PiP"
 msgstr ""
