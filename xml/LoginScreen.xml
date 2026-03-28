@@ -27,20 +27,13 @@
                 <height>900</height>
                 <texture border="10">ContentPanel.png</texture>
             </control>
-            <control type="image">
-                <left>398</left>
-                <top>978</top>
-                <width>1125</width>
-                <height>96</height>
-                <texture border="10">ContentPanelMirror.png</texture>
-            </control>
             <control type="label">
                 <left>442</left>
                 <top>150</top>
                 <width>1035</width>
                 <height>60</height>
                 <font>font13</font>
-                <textcolor>grey2</textcolor>
+                <textcolor>white</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <label>$LOCALIZE[31421]</label>
@@ -198,7 +191,7 @@
                     <width>870</width>
                     <height>68</height>
                     <font>font12</font>
-                    <textcolor>grey2</textcolor>
+                    <textcolor>white</textcolor>
                     <align>right</align>
                     <aligny>center</aligny>
                     <label>$LOCALIZE[31003]</label>
@@ -228,28 +221,23 @@
                     <height>52</height>
                     <aspectratio>keep</aspectratio>
                     <texture>icon_power.png</texture>
+                    <visible>!Control.HasFocus(20)</visible>
+                </control>
+                <control type="image">
+                    <description>Power Icon</description>
+                    <left>22</left>
+                    <top>8</top>
+                    <width>52</width>
+                    <height>52</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="FF000000">icon_power.png</texture>
+                    <visible>Control.HasFocus(20)</visible>
                 </control>
             </control>
         </control>
         <control type="group">
             <depth>DepthHeader</depth>
             <include>Clock</include>
-            <control type="label">
-                <description>Date label</description>
-                <right>30</right>
-                <top>52</top>
-                <width>300</width>
-                <height>22</height>
-                <align>right</align>
-                <aligny>center</aligny>
-                <font>font10</font>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <label>$INFO[System.Date]</label>
-                <include>Window_OpenClose_Animation</include>
-                <animation effect="slide" start="0,0" end="-60,0" time="75" condition="Player.Muted">conditional</animation>
-                <animation effect="slide" start="0,0" end="0,-82" time="150" condition="Window.IsVisible(busydialog)">conditional</animation>
-            </control>
         </control>
         <include>PiPBackground</include>
     </controls>
