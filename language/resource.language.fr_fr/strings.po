@@ -2421,6 +2421,10 @@ msgctxt "#31783"
 msgid "PiP"
 msgstr "Fenêtre vidéo superposée (PiP)"
 
+msgctxt "#31784"
+msgid "Disabled"
+msgstr "Désactivé"
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr "Prévisions sur 36 heures"

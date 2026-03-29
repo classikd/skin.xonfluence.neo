@@ -502,18 +502,24 @@
                                 <selected>!Skin.HasSetting(HidePVRNowPlaying)</selected>
                                 <enable>!Skin.HasSetting(HideHomeNowPlaying)</enable>
                             </control>
-                            <control type="radiobutton" id="1077">
+                           
+                            <control type="button" id="1311">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
                                 <label> - $LOCALIZE[31783]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>[COLOR=white]$VAR[PiPValue][/COLOR]</label2>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick>Skin.ToggleSetting(EnablePiP)</onclick>
-                                <selected>Skin.HasSetting(EnablePiP)</selected>
+                                <onclick condition="String.IsEmpty(Skin.String(PiP))">Skin.SetString(PiP,Small)</onclick>
+                                <onclick condition="Skin.String(PiP,Small)">Skin.SetString(PiP,Large)</onclick>
+                                <onclick condition="Skin.String(PiP,Large)">Skin.Reset(PiP)</onclick>
                                 <enable>!Skin.HasSetting(HideHomeNowPlaying)</enable>
                             </control>
+
+
                             <control type="radiobutton" id="108">
                                 <description>Fanart Animation</description>
                                 <width>1125</width>

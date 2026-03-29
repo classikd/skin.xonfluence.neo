@@ -3304,6 +3304,11 @@
         <value condition="Skin.String(SideBladeLabel,Small)">$LOCALIZE[31977]</value>
         <value>$LOCALIZE[571]</value>
     </variable>
+    <variable name="PiPValue">
+        <value condition="Skin.String(PiP,Small)">$LOCALIZE[31992]</value>
+        <value condition="Skin.String(PiP,Large)">$LOCALIZE[31994]</value>
+        <value>$LOCALIZE[31784]</value>
+    </variable>
     <variable name="OSDLAFValue">
         <value condition="Skin.String(OSDLAF,Classic)">$LOCALIZE[31984]</value>
         <value condition="Skin.String(OSDLAF,Max)">$LOCALIZE[31986]</value>

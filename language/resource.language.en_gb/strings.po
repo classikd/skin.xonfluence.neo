@@ -2357,6 +2357,10 @@ msgctxt "#31783"
 msgid "PiP"
 msgstr ""
 
+msgctxt "#31784"
+msgid "Disabled"
+msgstr ""
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr ""

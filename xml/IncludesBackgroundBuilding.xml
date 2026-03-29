@@ -518,7 +518,7 @@
             <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
-            <visible>!Skin.HasSetting(EnablePiP)</visible>
+            <visible>String.IsEmpty(Skin.String(PiP))</visible>
         </control>
         <control type="videowindow">
             <depth>DepthBackground</depth>
@@ -526,40 +526,43 @@
             <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
-            <visible>!Skin.HasSetting(EnablePiP)</visible>
+            <visible>String.IsEmpty(Skin.String(PiP))</visible>
         </control>
 
     </include>
 
     <include name="PiPBackground">
+
         <!-- PiP bg media -->
         <control type="image">
             <left>490r</left>
-            <top>280r</top>
+            <top>305r</top>
             <width>480</width>
-            <height>270</height>
+            <height>295</height>
             <texture>black.png</texture>
             <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
             <visible> Skin.HasSetting(EnablePiP)</visible>
+            <visible> String.IsEqual(Skin.String(PiP),Small)</visible>
         </control>
         <control type="videowindow">
             <left>490r</left>
-            <top>280r</top>
+            <top>305r</top>
             <width>480</width>
-            <height>270</height>
-            <depth>DepthBackground</depth>
+            <height>295</height>
+            <aspectratio>center</aspectratio>
             <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
             <visible> Skin.HasSetting(EnablePiP)</visible>
+            <visible> String.IsEqual(Skin.String(PiP),Small)</visible>
         </control>
         <control type="image">
             <left>490r</left>
-            <top>265r</top>
+            <top>293r</top>
             <width>65</width>
-            <height>35</height>
+            <height>45</height>
             <align>left</align>
             <aspectratio>keep</aspectratio>
             <texture>icon_pip.png</texture> 
@@ -567,7 +570,78 @@
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
             <visible> Skin.HasSetting(EnablePiP)</visible>
+            <visible> String.IsEqual(Skin.String(PiP),Small)</visible>
         </control>
+        <control type="button">
+            <right>23</right>
+            <top>293r</top>
+            <width>40</width>
+            <height>40</height>
+            <texturefocus>close.png</texturefocus>
+            <texturenofocus>close.png</texturenofocus>
+            <onclick>PlayerControl(Stop)</onclick>
+            <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
+            <visible>Player.HasVideo</visible>
+            <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
+            <visible> Skin.HasSetting(EnablePiP)</visible>
+            <visible> String.IsEqual(Skin.String(PiP),Small)</visible>
+        </control>
+
+        <!-- PiP bg media large -->
+        <control type="image">
+            <left>706r</left>
+            <top>439r</top>
+            <width>696</width>
+            <height>428</height>
+            <texture>black.png</texture>
+            <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
+            <visible>Player.HasVideo</visible>
+            <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
+            <visible> Skin.HasSetting(EnablePiP)</visible>
+            <visible> String.IsEqual(Skin.String(PiP),Large)</visible>
+        </control>
+        <control type="videowindow">
+            <left>706r</left>
+            <top>439r</top>
+            <width>696</width>
+            <height>428</height>
+            <aspectratio>center</aspectratio>
+            <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
+            <visible>Player.HasVideo</visible>
+            <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
+            <visible> Skin.HasSetting(EnablePiP)</visible>
+            <visible> String.IsEqual(Skin.String(PiP),Large)</visible>
+        </control>
+        <control type="image">
+            <left>700r</left>
+            <top>430r</top>
+            <width>64</width>
+            <height>64</height>
+            <align>left</align>
+            <aspectratio>keep</aspectratio>
+            <texture>icon_pip.png</texture> 
+            <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
+            <visible>Player.HasVideo</visible>
+            <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
+            <visible> Skin.HasSetting(EnablePiP)</visible>
+            <visible> String.IsEqual(Skin.String(PiP),Large)</visible>
+        </control>
+        <control type="button">
+            <right>23</right>
+            <top>428r</top>
+            <width>56</width>
+            <height>56</height>
+            <texturefocus>close.png</texturefocus>
+            <texturenofocus>close.png</texturenofocus>
+            <onclick>PlayerControl(Stop)</onclick>
+            <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
+            <visible>Player.HasVideo</visible>
+            <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
+            <visible> Skin.HasSetting(EnablePiP)</visible>
+            <visible> String.IsEqual(Skin.String(PiP),Large)</visible>
+        </control>
+
+
     </include>
 	
     <include name="ArtistExtraFanArt">
