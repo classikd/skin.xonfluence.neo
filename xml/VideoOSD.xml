@@ -80,15 +80,15 @@
             <depth>DepthOSD+</depth>
             <description>Seek Slider</description>
             <left>200</left>
-            <top>183r</top>
+            <top>190r</top>
             <width>1510</width>
-            <height>22</height>
+            <height>30</height>
             <onup>101</onup>
             <ondown>100</ondown>
             <action>seek</action>
             <texturesliderbar>seekslider2.png</texturesliderbar>
-            <textureslidernib colordiffuse="$VAR[MainColorOne]">OSD_slider_nibNF.png</textureslidernib>
-            <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">osd_slider_nib.png</textureslidernibfocus>
+            <textureslidernib colordiffuse="$VAR[MainColorOne]">OSD_slider_nibNF_large.png</textureslidernib>
+            <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">osd_slider_nib_large.png</textureslidernibfocus>
             <animation effect="fade" time="150">VisibleChange</animation>
             <animation effect="slide" end="-218,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HideArtWorkOSD)" reversible="true">Conditional</animation>
             <visible>!String.IsEqual(Player.Filenameandpath,Skin.String(KodiIntroVideo))</visible>
