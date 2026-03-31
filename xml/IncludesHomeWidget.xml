@@ -1797,7 +1797,7 @@
         <definition>
             <control type="image">
                 <left>-30</left>
-                <top>0</top>
+                <top>25</top>
                 <width>1980</width>
                 <height>420</height>
                 <texture border="5">RecentAddedBack.png</texture>
@@ -1810,7 +1810,7 @@
                 <animation effect="slide" start="0,0" end="368,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,3)">Conditional</animation>
                 <animation effect="slide" start="0,0" end="184,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,4)">Conditional</animation>
                 <left>40</left>
-                <top>0</top>
+                <top>25</top>
                 <width>1840</width>
                 <height>428</height>
                 <onleft>$PARAM[Control]</onleft>
@@ -2343,7 +2343,7 @@
         <definition>
             <control type="image">
                 <left>-30</left>
-                <top>0</top>
+                <top>25</top>
                 <width>1980</width>
                 <height>420</height>
                 <texture border="5">RecentAddedBack.png</texture>
@@ -2356,7 +2356,7 @@
                 <animation effect="slide" start="0,0" end="360,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,3)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="180,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,4)">Conditional</animation>
                 <left>140</left>
-                <top>5</top>
+                <top>30</top>
                 <width>1625</width>
                 <height>428</height>
                 <onleft>$PARAM[Control]</onleft>
@@ -2791,7 +2791,7 @@
         <definition>
             <control type="image">
 				<left>-30</left>
-                <top>0</top>
+                <top>25</top>
                 <width>1980</width>
                 <height>420</height>
                 <texture border="5">RecentAddedBack.png</texture>
@@ -2804,7 +2804,7 @@
                 <animation effect="slide" start="0,0" end="292,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,4)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="146,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,5)">Conditional</animation>
                 <left>84</left>
-                <top>0</top>
+                <top>25</top>
                 <width>1762</width>
                 <height>428</height>
                 <onleft>$PARAM[Control]</onleft>
@@ -3634,28 +3634,19 @@
         <definition>
             <control type="image">
                 <left>-30</left>
-                <top>0</top>
+                <top>25</top>
                 <width>1980</width>
                 <height>420</height>
                 <texture border="5">RecentAddedBack.png</texture>
                 <include>HomeTransparentEffect</include>
 				<visible>!$PARAM[embuaryinfonextaired]</visible>
             </control>
-			<control type="image">
-                <left>-30</left>
-                <top>0</top>
-                <width>1980</width>
-                <height>420</height>
-                <texture border="5">RecentAddedBack.png</texture>
-                <include>HomeTransparentEffect</include>
-				<visible>$PARAM[embuaryinfonextaired]</visible>
-            </control>
             <control type="list" id="$PARAM[Control]">
                 <animation effect="slide" start="0,0" end="675,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,1)">Conditional</animation>
                 <animation effect="slide" start="0,0" end="450,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,2)">Conditional</animation>
                 <animation effect="slide" start="0,0" end="225,0" time="0" condition="String.IsEqual(Container($PARAM[Control]).NumItems,3)">Conditional</animation>
                 <left>80</left>
-                <top>5</top>
+                <top>30</top>
                 <width>1730</width>
                 <height>428</height>
                 <onleft>$PARAM[Control]</onleft>
@@ -4282,7 +4273,7 @@
 			    <visible>$PARAM[visibility]</visible>
 			    <control type="button">
 				    <left>30</left>
-                    <top>150</top>
+                    <top>200</top>
                     <width>45</width>
                     <height>60</height>
                     <texturefocus>arrow-big-left.png</texturefocus>
@@ -4294,7 +4285,7 @@
                 </control>
                 <control type="button">
                     <left>1845</left>
-                    <top>150</top>
+                    <top>200</top>
                     <width>45</width>
                     <height>60</height>
                     <texturefocus>arrow-big-right.png</texturefocus>
@@ -4349,7 +4340,7 @@
 				<visible>$PARAM[visibility]</visible>
                 <control type="button">
                     <left>30</left>
-                    <top>170</top>
+                    <top>200</top>
                     <width>45</width>
                     <height>60</height>
                     <texturefocus>arrow-big-left.png</texturefocus>
@@ -4361,7 +4352,7 @@
                 </control>
                 <control type="button">
                     <left>1845</left>
-                    <top>170</top>
+                    <top>200</top>
                     <width>45</width>
                     <height>60</height>
                     <texturefocus>arrow-big-right.png</texturefocus>
@@ -4416,7 +4407,7 @@
 				<visible>$PARAM[visibility]</visible>
 			    <control type="button">
                     <left>50</left>
-                    <top>150</top>
+                    <top>180</top>
                     <width>45</width>
                     <height>60</height>
                     <texturefocus>arrow-big-left.png</texturefocus>
@@ -4428,7 +4419,7 @@
                 </control>
                 <control type="button">
                     <left>1825</left>
-                    <top>150</top>
+                    <top>180</top>
                     <width>45</width>
                     <height>60</height>
                     <texturefocus>arrow-big-right.png</texturefocus>
