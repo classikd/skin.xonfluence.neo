@@ -1687,9 +1687,9 @@
             <include>ButtonCommonValues</include>
             <label>31008</label>
             <onclick>fullscreen</onclick>
-            <textureradioonfocus>GoFullscreen.png</textureradioonfocus>
+            <textureradioonfocus colordiffuse="black">GoFullscreen.png</textureradioonfocus>
             <textureradioonnofocus>GoFullscreen.png</textureradioonnofocus>
-            <textureradioofffocus>GoFullscreen.png</textureradioofffocus>
+            <textureradioofffocus colordiffuse="black">GoFullscreen.png</textureradioofffocus>
             <textureradiooffnofocus>GoFullscreen.png</textureradiooffnofocus>
             <visible>Player.HasMedia</visible>
         </control>
