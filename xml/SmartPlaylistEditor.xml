@@ -84,7 +84,7 @@
                         <height>60</height>
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <font>font13</font>
                     </control>
                 </itemlayout>
@@ -112,7 +112,7 @@
                         <height>60</height>
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <font>font13</font>
                     </control>
                 </focusedlayout>

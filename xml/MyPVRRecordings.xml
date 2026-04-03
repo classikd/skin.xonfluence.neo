@@ -83,7 +83,7 @@
                         <height>60</height>
                         <font>font13</font>
                         <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label,,]$INFO[ListItem.EpisodeName,(,) ]$INFO[Listitem.Season,,.]$INFO[Listitem.Episode]</label>
@@ -95,7 +95,7 @@
                         <height>60</height>
                         <font>font12</font>
                         <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Date]</label>
@@ -160,7 +160,7 @@
                         <height>60</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label,,]$INFO[ListItem.EpisodeName,(,) ]$INFO[Listitem.Season,,.]$INFO[Listitem.Episode]</label>
@@ -172,7 +172,7 @@
                         <height>60</height>
                         <font>font12</font>
                         <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Date]</label>

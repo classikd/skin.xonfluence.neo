@@ -66,7 +66,7 @@
             <label>186</label>
             <font>font12_title</font>
             <textcolor>white</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <focusedcolor>black</focusedcolor>
             <align>center</align>
             <onclick>Dialog.Close(2129)</onclick>
             <onclick condition="Window.IsVisible(2114)">Dialog.Close(2114)</onclick>

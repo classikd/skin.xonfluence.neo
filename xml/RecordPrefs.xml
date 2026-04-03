@@ -77,7 +77,7 @@
             <height>60</height>
             <font>font13</font>
             <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <focusedcolor>black</focusedcolor>
             <label>$ADDON[pvr.nextpvr 30120]</label>
             <onright>21</onright>
             <onleft>21</onleft>
@@ -92,7 +92,7 @@
             <height>60</height>
             <font>font13</font>
             <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <focusedcolor>black</focusedcolor>
             <label>$ADDON[pvr.nextpvr 30132]</label>
             <onright>23</onright>
             <onleft>23</onleft>
@@ -107,7 +107,7 @@
             <height>60</height>
             <font>font13</font>
             <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <focusedcolor>black</focusedcolor>
             <label>$ADDON[pvr.nextpvr 30133]</label>
             <onright>23</onright>
             <onleft>23</onleft>
@@ -122,7 +122,7 @@
             <height>60</height>
             <font>font13</font>
             <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <focusedcolor>black</focusedcolor>
             <label>$ADDON[pvr.nextpvr 30130]</label>
             <onright>23</onright>
             <onleft>23</onleft>
@@ -137,7 +137,7 @@
             <height>60</height>
             <font>font13</font>
             <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <focusedcolor>black</focusedcolor>
             <label>$ADDON[pvr.nextpvr 30134]</label>
             <onright>23</onright>
             <onleft>23</onleft>

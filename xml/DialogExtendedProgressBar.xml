@@ -27,7 +27,7 @@
                 <width>555</width>
                 <height>27</height>
                 <font>font10_title</font>
-                <textcolor>selected</textcolor>
+                <textcolor>$VAR[MainColorOne]</textcolor>
                 <align>left</align>
                 <aligny>center</aligny>
             </control>

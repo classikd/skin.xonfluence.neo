@@ -27,7 +27,7 @@
             <control type="label">
                 <description>header label</description>
                 <left>60</left>
-                <top>15</top>
+                <top>8</top>
                 <width>645</width>
                 <height>60</height>
                 <font>font12_title</font>
@@ -41,7 +41,7 @@
             <control type="label">
                 <description>header label</description>
                 <left>60</left>
-                <top>15</top>
+                <top>8</top>
                 <width>645</width>
                 <height>60</height>
                 <font>font12_title</font>
@@ -51,19 +51,6 @@
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <visible>pvr.IsPlayingRadio</visible>
-            </control>
-            <control type="label">
-                <description>header label</description>
-                <left>60</left>
-                <top>-10</top>
-                <width>645</width>
-                <height>180</height>
-                <font>font10_title</font>
-                <label>$INFO[System.Date(DDD)], $INFO[System.Date(d)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)] • $INFO[System.Time]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
             </control>
             <control type="button">
                 <description>Close Window button</description>
@@ -80,7 +67,7 @@
                 <left>45</left>
                 <top>105</top>
                 <width>615</width>
-                <height>780</height>
+                <height>840</height>
                 <onleft>PreviousChannelGroup</onleft>
                 <onright>60</onright>
                 <onup>11</onup>
@@ -124,7 +111,7 @@
                         <height>38</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -244,7 +231,7 @@
                         <height>38</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -323,7 +310,7 @@
                 <left>660</left>
                 <top>105</top>
                 <width>38</width>
-                <height>780</height>
+                <height>840</height>
                 <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
                 <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
                 <texturesliderbarfocus border="0,14,0,14" colordiffuse="$VAR[MainColorOne]">ScrollBarV_bar_focus.png</texturesliderbarfocus>

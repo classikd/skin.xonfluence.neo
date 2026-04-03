@@ -53,22 +53,22 @@
                 <description>Default Button</description>
                 <height>60</height>
                 <font>font13</font>
-                <textcolor>grey2</textcolor>
-                <focusedcolor>white</focusedcolor>
+                <textcolor>white</textcolor>
+                <focusedcolor>black</focusedcolor>
             </control>
             <control type="radiobutton" id="8">
                 <description>Default RadioButton</description>
                 <height>60</height>
                 <font>font13</font>
-                <textcolor>grey2</textcolor>
-                <focusedcolor>white</focusedcolor>
+                <textcolor>white</textcolor>
+                <focusedcolor>black</focusedcolor>
             </control>
             <control type="spincontrolex" id="9">
                 <description>Default SpinControlex</description>
                 <height>60</height>
                 <font>font13</font>
-                <textcolor>grey2</textcolor>
-                <focusedcolor>white</focusedcolor>
+                <textcolor>white</textcolor>
+                <focusedcolor>black</focusedcolor>
                 <aligny>center</aligny>
                 <reverse>yes</reverse>
             </control>
@@ -76,15 +76,15 @@
                 <description>Default Edit</description>
                 <height>60</height>
                 <font>font13</font>
-                <textcolor>grey2</textcolor>
-                <focusedcolor>white</focusedcolor>
+                <textcolor>white</textcolor>
+                <focusedcolor>black</focusedcolor>
             </control>
             <control type="sliderex" id="13">
                 <description>Default Slider</description>
                 <height>60</height>
                 <font>font13</font>
-                <textcolor>grey2</textcolor>
-                <focusedcolor>white</focusedcolor>
+                <textcolor>white</textcolor>
+                <focusedcolor>black</focusedcolor>
             </control>
             <control type="label" id="14">
                 <description>Default Heading</description>

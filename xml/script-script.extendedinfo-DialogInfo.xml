@@ -170,7 +170,7 @@
                                 <height>38</height>
                                 <font>font12</font>
                                 <textcolor>grey2</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Label][CR][COLOR FF999999]$INFO[ListItem.Property(Character)][/COLOR]</label>
                                 <scroll>false</scroll>
@@ -223,7 +223,7 @@
                                 <height>38</height>
                                 <font>font12</font>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Label][CR][COLOR FF999999]$INFO[ListItem.Property(Character)][/COLOR]</label>
                                 <scroll>true</scroll>
@@ -285,7 +285,7 @@
                                 <height>38</height>
                                 <font>font12</font>
                                 <textcolor>grey2</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Label][CR][COLOR FF999999]$INFO[ListItem.Property(Character)][/COLOR]</label>
                                 <scroll>false</scroll>
@@ -338,7 +338,7 @@
                                 <height>38</height>
                                 <font>font12</font>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Label][CR][COLOR FF999999]$INFO[ListItem.Property(Character)][/COLOR]</label>
                                 <scroll>true</scroll>
@@ -400,7 +400,7 @@
                                 <height>38</height>
                                 <font>font12</font>
                                 <textcolor>grey2</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Label][CR][COLOR FF999999]$INFO[ListItem.Property(Job)][/COLOR]</label>
                                 <scroll>false</scroll>
@@ -453,7 +453,7 @@
                                 <height>38</height>
                                 <font>font12</font>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Label][CR][COLOR FF999999]$INFO[ListItem.Property(Job)][/COLOR]</label>
                                 <scroll>true</scroll>
@@ -515,7 +515,7 @@
                                 <height>38</height>
                                 <font>font12</font>
                                 <textcolor>grey2</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Label][CR][COLOR FF999999]$INFO[ListItem.Property(Job)][/COLOR]</label>
                                 <scroll>false</scroll>
@@ -568,7 +568,7 @@
                                 <height>38</height>
                                 <font>font12</font>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Label][CR][COLOR FF999999]$INFO[ListItem.Property(Job)][/COLOR]</label>
                                 <scroll>true</scroll>
@@ -630,7 +630,7 @@
                                 <height>38</height>
                                 <font>font12</font>
                                 <textcolor>grey2</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <align>center</align>
                                 <info>ListItem.Label</info>
                                 <scroll>false</scroll>
@@ -655,7 +655,7 @@
                                 <height>38</height>
                                 <font>font12</font>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <align>center</align>
                                 <info>ListItem.Label</info>
                                 <scroll>true</scroll>
@@ -724,7 +724,7 @@
                                 <height>38</height>
                                 <font>font12</font>
                                 <textcolor>grey2</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Title]</label>
                                 <scroll>false</scroll>
@@ -749,7 +749,7 @@
                                 <height>38</height>
                                 <font>font12</font>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Title]</label>
                                 <scroll>true</scroll>

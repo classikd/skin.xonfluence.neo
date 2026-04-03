@@ -68,7 +68,7 @@
                 <label>$LOCALIZE[31965]</label>
                 <align>center</align>
                 <aligny>center</aligny>
-                <textcolor>selected</textcolor>
+                <textcolor>$VAR[MainColorOne]</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <visible>!String.IsEqual(Window.Property(MenuItemType),EditMenu)</visible>
             </control>
@@ -304,7 +304,7 @@
                         <label>222</label>
                         <font>font12_title</font>
                         <textcolor>white</textcolor>
-                        <focusedcolor>white</focusedcolor>
+                        <focusedcolor>black</focusedcolor>
                         <align>center</align>
                         <onclick>PreviousMenu</onclick>
                     </control>

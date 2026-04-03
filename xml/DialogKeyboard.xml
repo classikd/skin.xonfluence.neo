@@ -111,7 +111,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>font13</font>
-                        <focusedcolor>white</focusedcolor>
+                        <focusedcolor>black</focusedcolor>
                     </control>
                     <control type="button" id="100">
                         <description>(0,0) key button</description>
@@ -303,6 +303,21 @@
                     <font>font13</font>
                     <textcolor>white</textcolor>
                     <visible>!Skin.HasSetting(KeyboardGraphicalTextures)</visible>
+                    <visible>!Control.HasFocus(302)</visible>
+                </control>
+                <control type="label">
+                    <description>SHIFT label</description>
+                    <top>75</top>
+                    <left>0</left>
+                    <width>300</width>
+                    <height>75</height>
+                    <label>20178</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <font>font13</font>
+                    <textcolor>black</textcolor>
+                    <visible>!Skin.HasSetting(KeyboardGraphicalTextures)</visible>
+                    <visible>Control.HasFocus(302)</visible>
                 </control>
                 <control type="image">
                     <description>SHIFT icon</description>
@@ -416,6 +431,21 @@
                     <font>font13</font>
                     <textcolor>white</textcolor>
                     <visible>!Skin.HasSetting(KeyboardGraphicalTextures)</visible>
+                    <visible>!Control.HasFocus(303)</visible>
+                </control>
+                <control type="label">
+                    <description>CAPS LOCK label</description>
+                    <top>150</top>
+                    <left>0</left>
+                    <width>300</width>
+                    <height>75</height>
+                    <label>20179</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <font>font13</font>
+                    <textcolor>black</textcolor>
+                    <visible>!Skin.HasSetting(KeyboardGraphicalTextures)</visible>
+                    <visible>Control.HasFocus(303)</visible>
                 </control>
                 <control type="image">
                     <description>CAPS LOCK icon</description>
@@ -443,7 +473,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>font13</font>
-                        <focusedcolor>white</focusedcolor>
+                        <focusedcolor>black</focusedcolor>
                     </control>
                     <control type="radiobutton" id="304">
                         <description>Symbols button</description>
@@ -460,7 +490,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>font13</font>
-                        <focusedcolor>white</focusedcolor>
+                        <focusedcolor>black</focusedcolor>
                     </control>
                     <control type="button" id="160">
                         <description>(3,0) key button</description>
@@ -550,6 +580,7 @@
                         <onup>304</onup>
                         <ondown condition="!Control.IsVisible(5000)">309</ondown>
                         <ondown condition="Control.IsVisible(5000)">5000</ondown>
+                        <focusedcolor>black</focusedcolor>
                     </control>
                     <control type="button" id="32">
                         <description>SPACE button</description>
@@ -561,6 +592,7 @@
                         <onup>161</onup>
                         <ondown condition="!Control.IsVisible(5000)">101</ondown>
                         <ondown condition="Control.IsVisible(5000)">5000</ondown>
+                        <focusedcolor>black</focusedcolor>
                     </control>
                     <control type="button" id="8">
                         <description>BACKSPACE button</description>
@@ -572,6 +604,7 @@
                         <ondown condition="Control.IsVisible(5000)">5000</ondown>
                         <texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
                         <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">KeyboardKey.png</texturefocus>
+                        <focusedcolor>black</focusedcolor>
                     </control>
                     <control type="button" id="305">
                         <description>previous button</description>
@@ -583,7 +616,7 @@
                         <texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
                         <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">KeyboardKey.png</texturefocus>
                         <font>font30</font>
-                        <focusedcolor>white</focusedcolor>
+                        <focusedcolor>black</focusedcolor>
                         <onup>167</onup>
                         <ondown condition="!Control.IsVisible(5000)">107</ondown>
                         <ondown condition="Control.IsVisible(5000)">5000</ondown>
@@ -598,7 +631,7 @@
                         <texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
                         <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">KeyboardKey.png</texturefocus>
                         <font>font30</font>
-                        <focusedcolor>white</focusedcolor>
+                        <focusedcolor>black</focusedcolor>
                         <onup>168</onup>
                         <ondown condition="!Control.IsVisible(5000)">108</ondown>
                         <ondown condition="Control.IsVisible(5000)">5000</ondown>
@@ -613,12 +646,14 @@
                         <ondown condition="!Control.IsVisible(5000)">109</ondown>
                         <ondown condition="Control.IsVisible(5000)">5000</ondown>
                         <onclick>Close</onclick>
+                        <focusedcolor>black</focusedcolor>
                     </control>
                 </control>
                 <control type="grouplist">
                     <top>300</top>
                     <itemgap>0</itemgap>
                     <orientation>horizontal</orientation>
+                    
                     <control type="label">
                         <width>300</width>
                         <height>75</height>
@@ -628,7 +663,21 @@
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
                         <visible>!Skin.HasSetting(KeyboardGraphicalTextures)</visible>
+                        <visible>!Control.HasFocus(300)</visible>
                     </control>
+                    <control type="label">
+                        <width>300</width>
+                        <height>75</height>
+                        <label>20177</label>
+                        <font>font13</font>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <textcolor>black</textcolor>
+                        <visible>!Skin.HasSetting(KeyboardGraphicalTextures)</visible>
+                        <visible>Control.HasFocus(300)</visible>
+                    </control>
+
+
                     <control type="label">
                         <width>300</width>
                         <height>75</height>
@@ -638,7 +687,21 @@
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
                         <visible>!Skin.HasSetting(KeyboardGraphicalTextures)</visible>
+                        <visible>!Control.HasFocus(32)</visible>
                     </control>
+                    <control type="label">
+                        <width>300</width>
+                        <height>75</height>
+                        <label>20182</label>
+                        <font>font13</font>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <textcolor>black</textcolor>
+                        <visible>!Skin.HasSetting(KeyboardGraphicalTextures)</visible>
+                        <visible>Control.HasFocus(32)</visible>
+                    </control>
+
+
                     <control type="label">
                         <width>225</width>
                         <height>75</height>
@@ -648,7 +711,21 @@
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
                         <visible>!Skin.HasSetting(KeyboardGraphicalTextures)</visible>
+                        <visible>!Control.HasFocus(8)</visible>
                     </control>
+                    <control type="label">
+                        <width>225</width>
+                        <height>75</height>
+                        <label>20181</label>
+                        <font>font13</font>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <textcolor>black</textcolor>
+                        <visible>!Skin.HasSetting(KeyboardGraphicalTextures)</visible>
+                        <visible>Control.HasFocus(8)</visible>
+                    </control>
+
+
                     <control type="label">
                         <width>150</width>
                         <height>75</height>
@@ -659,6 +736,7 @@
                         <textcolor>white</textcolor>
                         <visible>!Skin.HasSetting(KeyboardGraphicalTextures)</visible>
                     </control>
+
                     <control type="label">
                         <width>225</width>
                         <height>75</height>
@@ -668,7 +746,20 @@
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
                         <visible>!Skin.HasSetting(KeyboardGraphicalTextures)</visible>
+                        <visible>!Control.HasFocus(308)</visible>
                     </control>
+                    <control type="label">
+                        <width>225</width>
+                        <height>75</height>
+                        <label>222</label>
+                        <font>font13</font>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <textcolor>black</textcolor>
+                        <visible>!Skin.HasSetting(KeyboardGraphicalTextures)</visible>
+                        <visible>Control.HasFocus(308)</visible>
+                    </control>
+
                 </control>
                 <control type="group">
                     <top>315</top>

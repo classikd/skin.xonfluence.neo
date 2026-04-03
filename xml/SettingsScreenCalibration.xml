@@ -132,7 +132,7 @@
 				<label></label>
 				<align>center</align>
 				<font>Regular20</font>
-				<textcolor>selected</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 			</control>
 		</control>
 		<include>PiPBackground</include>

@@ -44,7 +44,7 @@
                     <label>186</label>
                     <font>font12_title</font>
                     <textcolor>white</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <onclick>Skin.SetString(SkinFanart.Name,)</onclick>
                     <onclick>Skin.SetString(SkinFanart.Path,Backgrounds/)</onclick>
@@ -74,7 +74,7 @@
                     <label>222</label>
                     <font>font12_title</font>
                     <textcolor>white</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <onclick>PreviousMenu</onclick>
                 </control>
@@ -85,7 +85,7 @@
                     <label>31165</label>
                     <font>font12_title</font>
                     <textcolor>white</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <onclick>Skin.SetBool(DontAskBackgroundFanart)</onclick>
                     <onclick>PreviousMenu</onclick>

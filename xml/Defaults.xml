@@ -24,6 +24,7 @@
         <include>NormalButton</include>
         <font>font13</font>
         <textcolor>white</textcolor>
+        <focusedcolor>black</focusedcolor>
         <disabledcolor>grey3</disabledcolor>
         <textoffsetx>10</textoffsetx>
         <aligny>center</aligny>
@@ -39,6 +40,7 @@
         <alttexturefocus colordiffuse="$VAR[MainColorOne]">scroll-down-focus.png</alttexturefocus>
         <alttexturenofocus>scroll-down.png</alttexturenofocus>
         <textcolor>white</textcolor>
+        <shadowcolor>black</shadowcolor>
         <label></label>
         <font>font13</font>
         <disabledcolor>grey3</disabledcolor>
@@ -90,6 +92,7 @@
         <include>SpinControlModern</include>
         <font>font13</font>
         <textcolor>white</textcolor>
+        <shadowcolor>black</shadowcolor>
         <disabledcolor>grey3</disabledcolor>
         <textoffsetx>10</textoffsetx>
         <aligny>center</aligny>
@@ -106,6 +109,7 @@
         <label></label>
         <font>font13</font>
         <textcolor>white</textcolor>
+        <shadowcolor>black</shadowcolor>
         <disabledcolor>grey3</disabledcolor>
         <textoffsetx>10</textoffsetx>
         <aligny>center</aligny>

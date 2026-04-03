@@ -24,13 +24,6 @@
                 <texture border="15">ContentPanel.png</texture>
             </control>
             <control type="image">
-                <left>8</left>
-                <top>938</top>
-                <width>1635</width>
-                <height>96</height>
-                <texture border="15">ContentPanelMirror.png</texture>
-            </control>
-            <control type="image">
                 <description>LOGO</description>
                 <left>98</left>
                 <top>30</top>
@@ -88,6 +81,19 @@
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
+                        <visible>!Control.HasFocus(9000)</visible>
+                    </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>360</width>
+                        <height>82</height>
+                        <font>font24_title</font>
+                        <textcolor>black</textcolor>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>Control.HasFocus(9000)</visible>
                     </control>
                 </focusedlayout>
                 <content>
@@ -215,8 +221,8 @@
                         <height>60</height>
                         <font>font13</font>
                         <label>20096</label>
-                        <textcolor>grey2</textcolor>
-                        <focusedcolor>white</focusedcolor>
+                        <textcolor>white</textcolor>
+                        <focusedcolor>black</focusedcolor>
                         <include>MenuButton</include>
                     </control>
                     <control type="button" id="5">
@@ -226,8 +232,8 @@
                         <font>font13</font>
                         <label>33084</label>
                         <label2>$INFO[System.ProfileAutoLogin]</label2>
-                        <textcolor>grey2</textcolor>
-                        <focusedcolor>white</focusedcolor>
+                        <textcolor>white</textcolor>
+                        <focusedcolor>black</focusedcolor>
                         <include>MenuButton</include>
                         <enable>!System.HasLoginScreen</enable>
                     </control>
@@ -297,8 +303,8 @@
                             <width>267</width>
                             <height>38</height>
                             <font>font13</font>
-                            <textcolor>grey2</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>grey</textcolor>
+                            <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                             <align>center</align>
                             <aligny>center</aligny>
                             <info>ListItem.Label</info>
@@ -322,7 +328,7 @@
                             <height>38</height>
                             <font>font13</font>
                             <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                             <align>center</align>
                             <aligny>center</aligny>
                             <info>ListItem.Label</info>

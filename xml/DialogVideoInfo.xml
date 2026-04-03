@@ -370,7 +370,7 @@
 								<align>right</align>
 								<aligny>center</aligny>
 								<textcolor>$VAR[MainColorOne]</textcolor>
-								<selectedcolor>selected</selectedcolor>
+								<selectedcolor>$VAR[MainColorOne]</selectedcolor>
 								<info>ListItem.Label</info>
 							</control>
 							<control type="label">
@@ -405,7 +405,7 @@
 								<align>right</align>
 								<aligny>center</aligny>
 								<textcolor>$VAR[MainColorOne]</textcolor>
-								<selectedcolor>selected</selectedcolor>
+								<selectedcolor>$VAR[MainColorOne]</selectedcolor>
 								<info>ListItem.Label</info>
 							</control>
 							<control type="label">

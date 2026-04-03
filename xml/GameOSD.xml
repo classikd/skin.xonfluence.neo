@@ -51,7 +51,7 @@
                     <height>57</height>
                     <font>fontContextMenu</font>
                     <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">$VAR[SelectButton1]</texturefocus>
                     <label>$LOCALIZE[13404]</label>
                     <label2>Select + X</label2>
@@ -63,7 +63,7 @@
                     <height>57</height>
                     <font>fontContextMenu</font>
                     <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">$VAR[SelectButton1]</texturefocus>
                     <label>$LOCALIZE[13007]</label>
                     <onclick>PlayerControl(Reset)</onclick>
@@ -74,7 +74,7 @@
                     <height>57</height>
                     <font>fontContextMenu</font>
                     <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">$VAR[SelectButton1]</texturefocus>
                     <label>$LOCALIZE[35222]</label>
                     <label2>Select + Start</label2>
@@ -86,7 +86,7 @@
                     <height>57</height>
                     <font>fontContextMenu</font>
                     <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <texturefocus border="5">button/button-focus.png</texturefocus>
                     <label>13376</label>
                     <label2>Select + Right Stick</label2>
@@ -99,7 +99,7 @@
                     <font>fontContextMenu</font>
                     <align>center</align>
                     <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">$VAR[SelectButton1]</texturefocus>
                     <label>$LOCALIZE[230]</label>
                     <onclick>ActivateWindow(GameVideoFilter)</onclick>
@@ -111,7 +111,7 @@
                     <font>fontContextMenu</font>
                     <align>center</align>
                     <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">$VAR[SelectButton1]</texturefocus>
                     <label>35233</label>
                     <onclick>ActivateWindow(GameViewMode)</onclick>
@@ -123,7 +123,7 @@
                     <font>fontContextMenu</font>
                     <align>center</align>
                     <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">$VAR[SelectButton1]</texturefocus>
                     <label>35227</label>
                     <onclick>ActivateWindow(GameVideoRotation)</onclick>
@@ -135,7 +135,7 @@
                     <font>fontContextMenu</font>
                     <align>center</align>
                     <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <texturefocus border="5">button/button-focus.png</texturefocus>
                     <label>$LOCALIZE[35234]</label>
                     <onclick>ActivateWindow(gamecontrollers)</onclick>
@@ -147,7 +147,7 @@
                     <font>fontContextMenu</font>
                     <align>center</align>
                     <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <texturefocus border="5">button/button-focus.png</texturefocus>
                     <label>$LOCALIZE[35226]</label>
                     <onclick>ActivateWindow(GameAdvancedSettings)</onclick>

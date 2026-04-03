@@ -249,8 +249,21 @@
                                 <font>font12</font>
                                 <aligny>center</aligny>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <info>ListItem.Label</info>
+                                <visible>!Control.HasFocus(50)</visible>
+                            </control>
+                            <control type="label">
+                                <left>75</left>
+                                <top>0</top>
+                                <width>975</width>
+                                <height>60</height>
+                                <font>font12</font>
+                                <aligny>center</aligny>
+                                <textcolor>black</textcolor>
+                                <selectedcolor>black</selectedcolor>
+                                <info>ListItem.Label</info>
+                                <visible>Control.HasFocus(50)</visible>
                             </control>
                         </control>
                         <control type="group">
@@ -264,6 +277,7 @@
                                 <aspectratio>keep</aspectratio>
                                 <visible>!String.IsEmpty(ListItem.Icon)</visible>
                             </control>
+
                             <control type="label">
                                 <left>75</left>
                                 <top>0</top>
@@ -272,10 +286,25 @@
                                 <font>font12</font>
                                 <aligny>center</aligny>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <info>ListItem.ChannelName</info>
                                 <visible>!String.IsEmpty(ListItem.Icon)</visible>
+                                <visible>!Control.HasFocus(50)</visible>
                             </control>
+                            <control type="label">
+                                <left>75</left>
+                                <top>0</top>
+                                <width>285</width>
+                                <height>60</height>
+                                <font>font12</font>
+                                <aligny>center</aligny>
+                                <textcolor>black</textcolor>
+                                <selectedcolor>black</selectedcolor>
+                                <info>ListItem.ChannelName</info>
+                                <visible>!String.IsEmpty(ListItem.Icon)</visible>
+                                <visible>Control.HasFocus(50)</visible>
+                            </control>
+
                             <control type="label">
                                 <left>0</left>
                                 <top>0</top>
@@ -284,10 +313,26 @@
                                 <font>font12</font>
                                 <aligny>center</aligny>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <info>ListItem.ChannelName</info>
                                 <visible>String.IsEmpty(ListItem.Icon)</visible>
+                                <visible>!Control.HasFocus(50)</visible>
                             </control>
+                            <control type="label">
+                                <left>0</left>
+                                <top>0</top>
+                                <width>285</width>
+                                <height>60</height>
+                                <font>font12</font>
+                                <aligny>center</aligny>
+                                <textcolor>black</textcolor>
+                                <selectedcolor>black</selectedcolor>
+                                <info>ListItem.ChannelName</info>
+                                <visible>String.IsEmpty(ListItem.Icon)</visible>
+                                <visible>Control.HasFocus(50)</visible>
+                            </control>
+
+
                             <control type="label">
                                 <left>360</left>
                                 <top>0</top>
@@ -296,9 +341,24 @@
                                 <font>font12</font>
                                 <aligny>center</aligny>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+                                <visible>!Control.HasFocus(50)</visible>
                             </control>
+                            <control type="label">
+                                <left>360</left>
+                                <top>0</top>
+                                <width>765</width>
+                                <height>60</height>
+                                <font>font12</font>
+                                <aligny>center</aligny>
+                                <textcolor>black</textcolor>
+                                <selectedcolor>black</selectedcolor>
+                                <label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+                                <visible>Control.HasFocus(50)</visible>
+                            </control>
+
+
                             <control type="label">
                                 <left>1125</left>
                                 <top>0</top>
@@ -307,44 +367,34 @@
                                 <font>font12</font>
                                 <aligny>center</aligny>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                                 <info>ListItem.Date</info>
-                                <!--							</control>
-							<control type="image">
-								<left>980</left>
-								<top>10</top>
-								<width>30</width>
-								<height>20</height>
-								<texture>PVR-IsRecording.png</texture>
-								<visible>ListItem.IsRecording</visible>
-							</control>
-							<control type="label">
-								<left>1015</left>
-								<top>0</top>
-								<width>80</width>
-								<height>40</height>
-								<font>font10</font>
-								<aligny>center</aligny>
-								<textcolor>grey2</textcolor>
-								<selectedcolor>selected</selectedcolor>
-								<label>19043</label>
-								<visible>ListItem.IsRecording</visible>
-							</control>
-							<control type="image">
-								<left>980</left>
-								<top>10</top>
-								<width>20</width>
-								<height>20</height>
-								<texture>PVR-HasTimer.png</texture>
-								<visible>ListItem.HasTimer + !ListItem.IsRecording + !ListItem.HasTimerSchedule</visible>
-							</control>
-							<control type="image">
-								<left>980</left>
-								<top>10</top>
-								<width>20</width>
-								<height>20</height>
-								<texture>PVR-HasTimerSchedule.png</texture>
-								<visible>ListItem.HasTimerSchedule + !ListItem.IsRecording</visible>-->
+                                <visible>!Control.HasFocus(50)</visible>
+                            </control>
+                            <control type="label">
+                                <left>1125</left>
+                                <top>0</top>
+                                <width>345</width>
+                                <height>60</height>
+                                <font>font12</font>
+                                <aligny>center</aligny>
+                                <textcolor>black</textcolor>
+                                <selectedcolor>black</selectedcolor>
+                                <info>ListItem.Date</info>
+                                <visible>Control.HasFocus(50)</visible>
+                            </control>
+
+                            <control type="label">
+                                <left>1515</left>
+                                <top>0</top>
+                                <width>120</width>
+                                <height>60</height>
+                                <font>font10</font>
+                                <aligny>center</aligny>
+                                <textcolor>grey</textcolor>
+                                <selectedcolor>$VAR[MainColorOne]</selectedcolor>
+                                <label>$VAR[PVRTimerLabel]</label>
+                                <visible>!Control.HasFocus(50)</visible>
                             </control>
                             <control type="label">
                                 <left>1515</left>
@@ -353,10 +403,12 @@
                                 <height>60</height>
                                 <font>font10</font>
                                 <aligny>center</aligny>
-                                <textcolor>grey2</textcolor>
-                                <selectedcolor>selected</selectedcolor>
+                                <textcolor>black</textcolor>
+                                <selectedcolor>black</selectedcolor>
                                 <label>$VAR[PVRTimerLabel]</label>
+                                <visible>Control.HasFocus(50)</visible>
                             </control>
+
                             <control type="image">
                                 <left>1470</left>
                                 <top>15</top>

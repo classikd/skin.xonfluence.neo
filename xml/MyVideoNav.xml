@@ -130,7 +130,7 @@
                     <font>font13</font>
                     <label>$LOCALIZE[31123] $VAR[PopupInfoType]</label>
                     <textcolor>white</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <texturenofocus></texturenofocus>
                     <pulseonselect>false</pulseonselect>
                     <onclick condition="String.IsEmpty(Skin.String(MediaPopupControl))">Skin.SetString(MediaPopupControl,Delayed)</onclick>

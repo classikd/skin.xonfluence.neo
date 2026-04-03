@@ -120,7 +120,7 @@
                         <height>38</height>
                         <font>font13</font>
                         <aligny>center</aligny>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <info>ListItem.Label</info>
                     </control>
@@ -135,7 +135,7 @@
                         <aligny>center</aligny>
                         <shadowcolor>black</shadowcolor>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.Label]</label>
                         <visible>!Control.HasFocus(110)</visible>
@@ -148,7 +148,7 @@
                         <font>font13</font>
                         <aligny>center</aligny>
                         <shadowcolor>black</shadowcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>$VAR[MainColorOne]</textcolor>
                         <align>left</align>
                         <label fallback="--">$INFO[ListItem.Label]</label>
                         <visible>Control.HasFocus(110)</visible>
@@ -210,7 +210,7 @@
                         <font>font13</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <info>ListItem.Label</info>
                     </control>
                 </itemlayout>
@@ -239,7 +239,7 @@
                         <font>font13</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <info>ListItem.Label</info>
                     </control>
                 </focusedlayout>

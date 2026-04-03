@@ -54,7 +54,7 @@
                         <font>font13_title</font>
                         <textcolor>white</textcolor>
                         <shadowcolor>black</shadowcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -78,7 +78,7 @@
                         <font>font13</font>
                         <textcolor>white</textcolor>
                         <shadowcolor>black</shadowcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[ListItem.Property(HighTemp)]$INFO[ListItem.Property(TempUnits)]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[ListItem.Property(LowTemp)]$INFO[ListItem.Property(TempUnits)]</label>
@@ -92,7 +92,7 @@
                         <font>font13</font>
                         <textcolor>white</textcolor>
                         <shadowcolor>black</shadowcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.Property(Outlook)]</label>
                     </control>
@@ -133,7 +133,7 @@
                         <font>font13_title</font>
                         <textcolor>white</textcolor>
                         <shadowcolor>black</shadowcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -157,7 +157,7 @@
                         <font>font13</font>
                         <textcolor>white</textcolor>
                         <shadowcolor>black</shadowcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[ListItem.Property(HighTemp)]$INFO[ListItem.Property(TempUnits)]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[ListItem.Property(LowTemp)]$INFO[ListItem.Property(TempUnits)]</label>
@@ -171,7 +171,7 @@
                         <font>font13</font>
                         <textcolor>white</textcolor>
                         <shadowcolor>black</shadowcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.Property(Outlook)]</label>
                     </control>
@@ -191,7 +191,7 @@
                         <height>180</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -214,7 +214,7 @@
                         <height>105</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
@@ -226,7 +226,7 @@
                         <height>72</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <label>$INFO[ListItem.ActualIcon]</label>
                     </control>
@@ -257,7 +257,7 @@
                         <height>180</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -280,7 +280,7 @@
                         <height>105</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
@@ -292,7 +292,7 @@
                         <height>72</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <label>$INFO[ListItem.ActualIcon]</label>
                     </control>
@@ -502,7 +502,7 @@
                         <height>60</height>
                         <font>font13_title</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>[COLOR=grey2]$INFO[Window.Property(36Hour.1.TemperatureHeading)][CR][/COLOR]$INFO[Window.Property(36Hour.1.Temperature),[B] ,[/B]]</label>
@@ -514,7 +514,7 @@
                         <height>195</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[Window.Property(36Hour.1.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR][CR]$INFO[Window.Property(36Hour.1.Precipitation),[COLOR=grey2]$LOCALIZE[33021] :[/COLOR][B] ,[/B]][CR][CR]$INFO[Window.Property(36Hour.1.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label>
@@ -526,7 +526,7 @@
                         <height>102</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <label>$INFO[Window.Property(36hour.1.Outlook),[COLOR=grey2]$LOCALIZE[31905]: [/COLOR]]</label>
                     </control>
@@ -570,7 +570,7 @@
                         <height>60</height>
                         <font>font13_title</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>[COLOR=grey2]$INFO[Window.Property(36Hour.2.TemperatureHeading)][CR][/COLOR]$INFO[Window.Property(36Hour.2.Temperature),[B] ,[/B]]</label>
@@ -582,7 +582,7 @@
                         <height>195</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[Window.Property(36Hour.2.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR][CR]$INFO[Window.Property(36Hour.2.Precipitation),[COLOR=grey2]$LOCALIZE[33021] :[/COLOR][B] ,[/B]][CR][CR]$INFO[Window.Property(36Hour.2.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label>
@@ -594,7 +594,7 @@
                         <height>102</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <label>$INFO[Window.Property(36hour.2.Outlook),[COLOR=grey2]$LOCALIZE[31905]: [/COLOR]]</label>
                     </control>
@@ -638,7 +638,7 @@
                         <height>60</height>
                         <font>font13_title</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>[COLOR=grey2]$INFO[Window.Property(36Hour.3.TemperatureHeading)][CR][/COLOR]$INFO[Window.Property(36Hour.3.Temperature),[B] ,[/B]]</label>
@@ -650,7 +650,7 @@
                         <height>195</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[Window.Property(36Hour.3.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR][CR]$INFO[Window.Property(36Hour.3.Precipitation),[COLOR=grey2]$LOCALIZE[33021] :[/COLOR][B] ,[/B]][CR][CR]$INFO[Window.Property(36Hour.3.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label>
@@ -662,7 +662,7 @@
                         <height>102</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <label>$INFO[Window.Property(36hour.3.Outlook),[COLOR=grey2]$LOCALIZE[31905]: [/COLOR]]</label>
                     </control>
@@ -733,7 +733,7 @@
                         <height>75</height>
                         <font>font13_title</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>[COLOR=grey2]$LOCALIZE[393][CR][/COLOR]$INFO[Window.Property(Weekend.1.HighTemperature),[B] ,[/B]]</label>
@@ -745,7 +745,7 @@
                         <height>75</height>
                         <font>font13_title</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>[COLOR=grey2]$LOCALIZE[391][CR][/COLOR]$INFO[Window.Property(Weekend.1.LowTemperature),[B] ,[/B]]</label>
@@ -767,7 +767,7 @@
                         <height>30</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[Window.Property(Weekend.1.WindSpeed),[COLOR=grey2]$LOCALIZE[404]: [/COLOR]]$INFO[Window.Property(Weekend.1.WindDirection), - ]</label>
@@ -779,7 +779,7 @@
                         <height>102</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <label>$INFO[Window.Property(Weekend.1.Outlook),[COLOR=grey2]$LOCALIZE[31905]: [/COLOR]][CR]</label>
                     </control>
@@ -823,7 +823,7 @@
                         <height>75</height>
                         <font>font13_title</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>[COLOR=grey2]$LOCALIZE[393][CR][/COLOR]$INFO[Window.Property(Weekend.2.HighTemperature),[B] ,[/B]]</label>
@@ -835,7 +835,7 @@
                         <height>75</height>
                         <font>font13_title</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>[COLOR=grey2]$LOCALIZE[391][CR][/COLOR]$INFO[Window.Property(Weekend.2.LowTemperature),[B] ,[/B]]</label>
@@ -857,7 +857,7 @@
                         <height>30</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[Window.Property(Weekend.2.WindSpeed),[COLOR=grey2]$LOCALIZE[404]: [/COLOR]]$INFO[Window.Property(Weekend.2.WindDirection), - ]</label>
@@ -869,7 +869,7 @@
                         <height>102</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <label>$INFO[Window.Property(Weekend.2.Outlook),[COLOR=grey2]$LOCALIZE[31905]: [/COLOR]][CR]</label>
                     </control>
@@ -923,7 +923,7 @@
                         <height>180</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -946,7 +946,7 @@
                         <height>105</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
@@ -958,7 +958,7 @@
                         <height>72</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <label>$INFO[ListItem.ActualIcon]</label>
                     </control>
@@ -989,7 +989,7 @@
                         <height>180</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -1012,7 +1012,7 @@
                         <height>105</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
@@ -1024,7 +1024,7 @@
                         <height>72</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <label>$INFO[ListItem.ActualIcon]</label>
                     </control>
@@ -1352,7 +1352,7 @@
                     <height>597</height>
                     <font>font12</font>
                     <textcolor>white</textcolor>
-                    <selectedcolor>selected</selectedcolor>
+                    <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                     <align>center</align>
                     <label>$INFO[Window.Property(Alerts)]</label>
                     <include condition="Skin.HasSetting(AutoScroll) + !Skin.HasSetting(AutoScroll.Slow)">StandardAutoScroll</include>

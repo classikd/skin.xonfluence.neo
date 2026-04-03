@@ -6,7 +6,10 @@
         <top>98</top>
     </coordinates>
     <include>dialogeffect</include>
-    <controls>
+    <controls>       
+        <control type="group">
+            <include>BgDialog</include>
+        </control>
         <include content="DialogBackgroundCommons">
             <param name="DialogBackgroundWidth" value="1680" />
             <param name="DialogBackgroundHeight" value="855" />
@@ -88,7 +91,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
                         <visible>ListItem.Property(ActiveChannel)</visible>
                     </control>
@@ -101,7 +104,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <textcolor>grey3</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
                         <visible>!ListItem.Property(ActiveChannel)</visible>
                     </control>
@@ -151,7 +154,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
                         <visible>ListItem.Property(ActiveChannel)</visible>
                     </control>
@@ -164,7 +167,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <textcolor>grey3</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
                         <visible>!ListItem.Property(ActiveChannel)</visible>
                     </control>
@@ -185,7 +188,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <label>$LOCALIZE[19210]: $INFO[ListItem.Property(ClientName)]</label>
                     </control>
                 </focusedlayout>
@@ -221,8 +224,7 @@
                     <height>60</height>
                     <font>font12</font>
                     <textcolor>white</textcolor>
-                    <focusedcolor>white</focusedcolor>
-                    <shadowcolor>black</shadowcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>left</align>
                     <aligny>center</aligny>
                     <pulseonselect>no</pulseonselect>
@@ -236,8 +238,7 @@
                     <height>60</height>
                     <font>font12</font>
                     <textcolor>white</textcolor>
-                    <focusedcolor>white</focusedcolor>
-                    <shadowcolor>black</shadowcolor>
+                    <focusedcolor>black</focusedcolor>
                     <label>19201</label>
                 </control>
                 <control type="group" id="9005">
@@ -276,8 +277,7 @@
                     <height>60</height>
                     <font>font12</font>
                     <textcolor>white</textcolor>
-                    <focusedcolor>white</focusedcolor>
-                    <shadowcolor>black</shadowcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>left</align>
                     <aligny>center</aligny>
                     <pulseonselect>no</pulseonselect>
@@ -300,8 +300,7 @@
                     <height>60</height>
                     <font>font12</font>
                     <textcolor>white</textcolor>
-                    <focusedcolor>white</focusedcolor>
-                    <shadowcolor>black</shadowcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>left</align>
                     <aligny>center</aligny>
                     <pulseonselect>no</pulseonselect>

@@ -388,7 +388,7 @@
                     <label>24096</label>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <textcolor>selected</textcolor>
+                    <textcolor>$VAR[MainColorOne]</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
                 <control type="textbox">

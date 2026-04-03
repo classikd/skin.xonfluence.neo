@@ -32,7 +32,7 @@
             <width>465</width>
             <height>75</height>
             <font>font13</font>
-            <textcolor>selected</textcolor>
+            <textcolor>$VAR[MainColorOne]</textcolor>
             <disabledcolor>grey2</disabledcolor>
             <align>center</align>
             <aligny>center</aligny>
@@ -52,7 +52,7 @@
                 <texturenofocus border="25,25,5,5">KeyboardCornerTopNF.png</texturenofocus>
                 <texturefocus border="25,25,5,5" colordiffuse="$VAR[MainColorOne]">KeyboardCornerTop.png</texturefocus>
                 <label>12311</label>
-                <focusedcolor>white</focusedcolor>
+                <focusedcolor>black</focusedcolor>
                 <onleft>23</onleft>
                 <onright>12</onright>
                 <onup>20</onup>
@@ -70,7 +70,7 @@
                 <texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">KeyboardKey.png</texturefocus>
                 <label>12312</label>
-                <focusedcolor>white</focusedcolor>
+                <focusedcolor>black</focusedcolor>
                 <onleft>11</onleft>
                 <onright>13</onright>
                 <onup>10</onup>
@@ -88,7 +88,7 @@
                 <texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">KeyboardKey.png</texturefocus>
                 <label>12313</label>
-                <focusedcolor>white</focusedcolor>
+                <focusedcolor>black</focusedcolor>
                 <onleft>12</onleft>
                 <onright>23</onright>
                 <onup>22</onup>
@@ -141,7 +141,7 @@
                 <texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">KeyboardKey.png</texturefocus>
                 <label>12314</label>
-                <focusedcolor>white</focusedcolor>
+                <focusedcolor>black</focusedcolor>
                 <onleft>23</onleft>
                 <onright>15</onright>
                 <onup>11</onup>
@@ -159,7 +159,7 @@
                 <texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">KeyboardKey.png</texturefocus>
                 <label>12315</label>
-                <focusedcolor>white</focusedcolor>
+                <focusedcolor>black</focusedcolor>
                 <onleft>14</onleft>
                 <onright>16</onright>
                 <onup>12</onup>
@@ -177,7 +177,7 @@
                 <texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">KeyboardKey.png</texturefocus>
                 <label>12316</label>
-                <focusedcolor>white</focusedcolor>
+                <focusedcolor>black</focusedcolor>
                 <onleft>15</onleft>
                 <onright>23</onright>
                 <onup>13</onup>
@@ -195,7 +195,7 @@
                 <texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">KeyboardKey.png</texturefocus>
                 <label>12317</label>
-                <focusedcolor>white</focusedcolor>
+                <focusedcolor>black</focusedcolor>
                 <onleft>21</onleft>
                 <onright>18</onright>
                 <onup>14</onup>
@@ -213,7 +213,7 @@
                 <texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">KeyboardKey.png</texturefocus>
                 <label>12318</label>
-                <focusedcolor>white</focusedcolor>
+                <focusedcolor>black</focusedcolor>
                 <onleft>17</onleft>
                 <onright>19</onright>
                 <onup>15</onup>
@@ -231,7 +231,7 @@
                 <texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">KeyboardKey.png</texturefocus>
                 <label>12319</label>
-                <focusedcolor>white</focusedcolor>
+                <focusedcolor>black</focusedcolor>
                 <onleft>18</onleft>
                 <onright>21</onright>
                 <onup>16</onup>
@@ -280,7 +280,7 @@
                 <height>90</height>
                 <font>font30</font>
                 <label>&lt;</label>
-                <focusedcolor>white</focusedcolor>
+                <focusedcolor>black</focusedcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <texturenofocus border="5,25,25,5">KeyboardCornerBottomNF.png</texturenofocus>
@@ -302,7 +302,7 @@
                 <texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
                 <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">KeyboardKey.png</texturefocus>
                 <label>12310</label>
-                <focusedcolor>white</focusedcolor>
+                <focusedcolor>black</focusedcolor>
                 <onleft>20</onleft>
                 <onright>22</onright>
                 <onup>18</onup>
@@ -316,7 +316,7 @@
                 <height>90</height>
                 <font>font30</font>
                 <label>&gt;</label>
-                <focusedcolor>white</focusedcolor>
+                <focusedcolor>black</focusedcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>

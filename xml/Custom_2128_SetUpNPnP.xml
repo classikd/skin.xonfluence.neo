@@ -75,7 +75,7 @@
             <label>107</label>
             <font>font12_title</font>
             <textcolor>white</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <focusedcolor>black</focusedcolor>
             <align>center</align>
             <onleft>10</onleft>
             <onright>10</onright>
@@ -97,7 +97,7 @@
             <label>106</label>
             <font>font12_title</font>
             <textcolor>white</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <focusedcolor>black</focusedcolor>
             <align>center</align>
             <onleft>11</onleft>
             <onright>11</onright>

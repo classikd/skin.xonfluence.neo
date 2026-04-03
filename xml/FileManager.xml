@@ -63,7 +63,7 @@
                 <width>705</width>
                 <height>45</height>
                 <font>font12_title</font>
-                <textcolor>selected</textcolor>
+                <textcolor>$VAR[MainColorOne]</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <scroll>true</scroll>
                 <align>left</align>
@@ -265,7 +265,7 @@
                 <width>705</width>
                 <height>45</height>
                 <font>font12_title</font>
-                <textcolor>selected</textcolor>
+                <textcolor>$VAR[MainColorOne]</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <scroll>true</scroll>
                 <align>right</align>

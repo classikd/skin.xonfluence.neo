@@ -36,7 +36,7 @@
                     <font>font13_title</font>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <textcolor>selected</textcolor>
+                    <textcolor>$VAR[MainColorOne]</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
                 <control type="textbox" id="5">

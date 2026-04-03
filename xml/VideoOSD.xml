@@ -738,7 +738,7 @@
                     <onup>255</onup>
                     <ondown>502</ondown>
                     <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <textoffsetx>15</textoffsetx>
                     <aligny>center</aligny>
                     <textwidth>306</textwidth>
@@ -771,7 +771,7 @@
                     <onup>503</onup>
                     <ondown>501</ondown>
                     <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <textoffsetx>15</textoffsetx>
                     <aligny>center</aligny>
                     <textwidth>306</textwidth>
@@ -803,7 +803,7 @@
                     <onup>502</onup>
                     <ondown>255</ondown>
                     <textcolor>grey2</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <textoffsetx>15</textoffsetx>
                     <aligny>center</aligny>
                     <textwidth>306</textwidth>

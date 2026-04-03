@@ -7,6 +7,9 @@
     <include>dialogeffect</include>
     <depth>DepthDialog+</depth>
     <controls>
+        <control type="group">
+            <include>BgDialog</include>
+        </control>
         <include content="DialogBackgroundCommons">
             <param name="DialogBackgroundWidth" value="975" />
             <param name="DialogBackgroundHeight" value="390" />
@@ -50,7 +53,7 @@
                 <label>107</label>
                 <font>font12_title</font>
                 <textcolor>white</textcolor>
-                <focusedcolor>white</focusedcolor>
+                <focusedcolor>black</focusedcolor>
                 <align>center</align>
             </control>
             <control type="button" id="10">
@@ -60,7 +63,7 @@
                 <label>106</label>
                 <font>font12_title</font>
                 <textcolor>white</textcolor>
-                <focusedcolor>white</focusedcolor>
+                <focusedcolor>black</focusedcolor>
                 <align>center</align>
             </control>
             <control type="button" id="12">
@@ -70,7 +73,7 @@
                 <label>106</label>
                 <font>font12_title</font>
                 <textcolor>white</textcolor>
-                <focusedcolor>white</focusedcolor>
+                <focusedcolor>black</focusedcolor>
                 <align>center</align>
             </control>
         </control>

@@ -143,7 +143,7 @@
                             <font>font13</font>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                             <align>left</align>
                             <info>ListItem.Label</info>
                         </control>
@@ -171,7 +171,7 @@
                             <font>font13</font>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                             <align>left</align>
                             <info>ListItem.Label2</info>
                         </control>
@@ -216,7 +216,7 @@
                             <font>font13</font>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                             <align>left</align>
                             <info>ListItem.Label</info>
                         </control>
@@ -244,7 +244,7 @@
                             <font>font13</font>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                             <align>left</align>
                             <info>ListItem.Label2</info>
                         </control>
@@ -371,7 +371,7 @@
                             <font>font13</font>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                             <align>left</align>
                             <info>ListItem.Label</info>
                         </control>
@@ -400,7 +400,7 @@
                             <font>font13</font>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                             <align>left</align>
                             <info>ListItem.Label</info>
                         </control>
@@ -419,7 +419,7 @@
                     <label>$LOCALIZE[24120]</label>
                     <font>font12_title</font>
                     <textcolor>white</textcolor>
-                    <focusedcolor>white</focusedcolor>
+                    <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <hitrect x="1388" y="908" w="300" h="150" />
                 </control>

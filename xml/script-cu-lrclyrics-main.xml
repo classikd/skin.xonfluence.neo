@@ -56,7 +56,7 @@
                 <font>font13_title</font>
                 <align>center</align>
                 <aligny>center</aligny>
-                <textcolor>selected</textcolor>
+                <textcolor>$VAR[MainColorOne]</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <visible>Control.IsVisible(120) + !Control.IsVisible(110)</visible>
             </control>
@@ -81,7 +81,7 @@
                         <font>font13</font>
                         <aligny>center</aligny>
                         <align>center</align>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
@@ -96,7 +96,7 @@
                         <align>center</align>
                         <shadowcolor>black</shadowcolor>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <label>$INFO[ListItem.Label]</label>
                         <visible>!Control.HasFocus(110)</visible>
                     </control>
@@ -109,7 +109,7 @@
                         <aligny>center</aligny>
                         <align>center</align>
                         <shadowcolor>black</shadowcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>black</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                         <visible>Control.HasFocus(110)</visible>
                     </control>
@@ -168,7 +168,7 @@
                         <font>font13</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
@@ -197,7 +197,7 @@
                         <font>font13</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </focusedlayout>

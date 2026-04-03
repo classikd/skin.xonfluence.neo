@@ -130,7 +130,7 @@
                         <label>222</label>
                         <font>font12_title</font>
                         <textcolor>white</textcolor>
-                        <focusedcolor>white</focusedcolor>
+                        <focusedcolor>black</focusedcolor>
                         <align>center</align>
                         <onclick>PreviousMenu</onclick>
                     </control>

@@ -215,7 +215,7 @@
 						<label>$ADDON[script.skinshortcuts 32048]</label>
 						<label2>$INFO[Container(211).ListItem.Label]</label2>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 						<visible>!String.EndsWith(Window.Property(groupname),.1)</visible>
 					</control>
@@ -229,7 +229,7 @@
 						<label>$LOCALIZE[31522]</label>
                         <label2>$INFO[Container(211).ListItem.Property(path)]</label2>
                         <textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 						<onclick>SetProperty(custom-grouping,widget)</onclick>
                         <onclick>SendClick(401)</onclick>
@@ -276,7 +276,7 @@
 						<label>$ADDON[script.skinshortcuts 31741]</label>
 						<label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 						<visible>!String.EndsWith(Window.Property(groupname),.1)</visible>
 					</control>
@@ -290,7 +290,7 @@
 						<label>$ADDON[script.skinshortcuts 31739]</label>
 						<label2>$VAR[SkinShortcutsItemLabelVar]</label2>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 						<visible>!String.EndsWith(Window.Property(groupname),.1)</visible>
 					</control>
@@ -301,7 +301,7 @@
 					    <label>$ADDON[script.skinshortcuts 31740]</label>
 					    <label2>$INFO[Container(211).ListItem.Icon]</label2>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 						<visible>!String.EndsWith(Window.Property(groupname),.1)</visible>
 				    </control>					
@@ -313,7 +313,7 @@
 						<label>$ADDON[script.skinshortcuts 31759]</label>
 						<label2>$INFO[Container(211).ListItem.Property(background)]</label2>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 						<visible>!String.EndsWith(Window.Property(groupname),.1)</visible>
 					</control>
@@ -324,7 +324,7 @@
 						<font>font13</font>
 						<label>$ADDON[script.skinshortcuts 32072]</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 						<onfocus>SetProperty(ShortcutsCurrentItem,$INFO[Container(211).ListItem.Label],Home)</onfocus>
 						<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -336,7 +336,7 @@
 						<font>font13</font>
 						<label>$LOCALIZE[31520]</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 						<onfocus>SetProperty(ShortcutsCurrentItem,$INFO[Container(211).ListItem.Label],Home)</onfocus>
 						<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -347,7 +347,7 @@
 						<height>60</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 						<label>$LOCALIZE[31512]</label>
 						<onfocus>SetProperty(ShortcutsCurrentItem,$INFO[Container(211).ListItem.Label],Home)</onfocus>
@@ -362,7 +362,7 @@
 						<label>$ADDON[script.skinshortcuts 32099]</label>
 						<label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 						<visible>String.EndsWith(Window.Property(groupname),.1)</visible>
 					</control>
@@ -373,7 +373,7 @@
 						<height>60</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 					    <label>  -  $LOCALIZE[31523]</label>
 					    <label2>$VAR[WidgetSortByLabelVar]</label2>
@@ -389,7 +389,7 @@
 						<height>60</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 					    <label>  -  $LOCALIZE[31524]</label>
 					    <label2>$VAR[WidgetSortDirectionLabelVar]</label2>
@@ -405,7 +405,7 @@
 						<height>60</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 					    <label>  -  $LOCALIZE[31525]</label>
 					    <label2>$VAR[WidgetLimitLabelVar]</label2>
@@ -422,7 +422,7 @@
 						<font>font13</font>
 						<label>$LOCALIZE[31513]</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 						<selected>String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</selected>
 					</control>
@@ -434,7 +434,7 @@
 						<font>font13</font>
 						<label>$ADDON[script.skinshortcuts 31716]</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 					</control>
 					<control type="button" id="304">
@@ -444,7 +444,7 @@
 						<font>font13</font>
 						<label>$ADDON[script.skinshortcuts 31717]</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 					</control>
 
@@ -455,7 +455,7 @@
 						<font>font13</font>
 						<label>$ADDON[script.skinshortcuts 31714]</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 					</control>
 					<control type="button" id="302">
@@ -465,7 +465,7 @@
 						<font>font13</font>
 						<label>$ADDON[script.skinshortcuts 31715]</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 					</control>
 
@@ -476,7 +476,7 @@
 						<font>font13</font>
 						<label>$ADDON[script.skinshortcuts 31742]</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<focusedcolor>black</focusedcolor>
 						<include>MenuButton</include>
 					</control>
 				</control>

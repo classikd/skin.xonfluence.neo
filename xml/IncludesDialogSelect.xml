@@ -114,7 +114,7 @@
                         <height>60</height>
                         <font>font13</font>
                         <textcolor>grey2</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -146,7 +146,7 @@
                         <height>60</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -189,7 +189,7 @@
                         <height>45</height>
                         <font>font13</font>
                         <textcolor>grey</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>[B]$INFO[ListItem.Label][/B]</label>
@@ -201,7 +201,7 @@
                         <height>72</height>
                         <font>font12</font>
                         <textcolor>grey</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
@@ -242,7 +242,7 @@
                         <height>45</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>[B]$INFO[ListItem.Label][/B]</label>
@@ -254,7 +254,7 @@
                         <height>72</height>
                         <font>font12</font>
                         <textcolor>grey</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
@@ -308,7 +308,7 @@
                         <label />
                         <font>font12_title</font>
                         <textcolor>white</textcolor>
-                        <focusedcolor>white</focusedcolor>
+                        <focusedcolor>black</focusedcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="7">
@@ -318,7 +318,7 @@
                         <label />
                         <font>font12_title</font>
                         <textcolor>white</textcolor>
-                        <focusedcolor>white</focusedcolor>
+                        <focusedcolor>black</focusedcolor>
                         <align>center</align>
                     </control>
                 </control>
@@ -404,7 +404,7 @@
                         <width>339</width>
                         <height>22</height>
                         <font>font12</font>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
