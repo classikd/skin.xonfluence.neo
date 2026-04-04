@@ -543,7 +543,6 @@
             <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
-            <visible> Skin.HasSetting(EnablePiP)</visible>
             <visible> String.IsEqual(Skin.String(PiP),Small)</visible>
         </control>
         <control type="videowindow">
@@ -555,7 +554,6 @@
             <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
-            <visible> Skin.HasSetting(EnablePiP)</visible>
             <visible> String.IsEqual(Skin.String(PiP),Small)</visible>
         </control>
         <control type="image">
@@ -569,7 +567,6 @@
             <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
-            <visible> Skin.HasSetting(EnablePiP)</visible>
             <visible> String.IsEqual(Skin.String(PiP),Small)</visible>
         </control>
         <control type="button">
@@ -583,7 +580,6 @@
             <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
-            <visible> Skin.HasSetting(EnablePiP)</visible>
             <visible> String.IsEqual(Skin.String(PiP),Small)</visible>
         </control>
 
@@ -597,7 +593,6 @@
             <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
-            <visible> Skin.HasSetting(EnablePiP)</visible>
             <visible> String.IsEqual(Skin.String(PiP),Large)</visible>
         </control>
         <control type="videowindow">
@@ -609,7 +604,6 @@
             <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
-            <visible> Skin.HasSetting(EnablePiP)</visible>
             <visible> String.IsEqual(Skin.String(PiP),Large)</visible>
         </control>
         <control type="image">
@@ -623,7 +617,6 @@
             <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
-            <visible> Skin.HasSetting(EnablePiP)</visible>
             <visible> String.IsEqual(Skin.String(PiP),Large)</visible>
         </control>
         <control type="button">
@@ -637,7 +630,6 @@
             <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
-            <visible> Skin.HasSetting(EnablePiP)</visible>
             <visible> String.IsEqual(Skin.String(PiP),Large)</visible>
         </control>
 
