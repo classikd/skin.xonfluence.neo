@@ -1,5 +1,14 @@
 # Changelog
 
+## Version 0.4
+- Clean all settings names to be easily readable
+- Add PiP size option and close button
+- Fix several issues to run in Kodi 22
+- Fix missing backgrounds package at startup
+- Fix wrong position of home large blocks since last release 
+- Remove 72 incomplete languages, maintain only English and French
+- and more
+
 ## Version 0.3
 - Add option to enable PiP playing media
 - Add options to hide some floor buttons
