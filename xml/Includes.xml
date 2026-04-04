@@ -2974,7 +2974,7 @@
                     <width>50</width>
                     <height>33</height>
                     <include>DownControlModern</include>
-                    <onclick>Control.Move($PARAM[Control],1)</onclick>
+                    <onclick>Control.Move($PARAM[Control],-1)</onclick>
                     <onleft>$PARAM[Left]</onleft>
                     <onright>8002</onright>
                     <onup>$PARAM[Up]</onup>
@@ -2987,7 +2987,7 @@
                     <width>50</width>
                     <height>33</height>
                     <include>UpControlModern</include>
-                    <onclick>Control.Move($PARAM[Control],-1)</onclick>
+                    <onclick>Control.Move($PARAM[Control],1)</onclick>
                     <onleft>8001</onleft>
                     <onright>$PARAM[Right]</onright>
                     <onup>$PARAM[Up]</onup>
