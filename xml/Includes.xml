@@ -1744,29 +1744,84 @@
             <height>45</height>
             <orientation>horizontal</orientation>
             <align>right</align>
-            <itemgap>8</itemgap>
+            <itemgap>20</itemgap>
 
             <include>CommonNowPlaying</include>
 
-            <control type="image">
-                <description>time icon</description>
-                <width>40</width>
-                <height>40</height>
-                <texture colordiffuse="$VAR[MainColorOne]">icon_time.png</texture> 
-                <visible>!Skin.HasSetting(HideSystemTime)</visible>
+            <!-- Weather -->
+            <control type="grouplist" id="111">
+                <top>0</top>
+                <width min="0" max="200">auto</width>
+                <orientation>horizontal</orientation>
+                <itemgap>0</itemgap>
+                <visible>!String.IsEmpty(Weather.Plugin)</visible>
+     		    <control type="multiimage" id="1111">
+                    <description>Weather image</description>
+                    <left>0</left>
+                    <top>-8</top>
+                    <width>55</width>
+                    <height>55</height>
+				    <aspectratio aligny="center">keep</aspectratio>
+                    <timeperimage>70</timeperimage>
+                    <fadetime>1</fadetime>
+                    <randomize>false</randomize>
+                    <imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherIconExt]</imagepath>
+                </control>
+                <control type="grouplist" id="1112">
+                    <top>0</top>
+                    <width min="0" max="150">auto</width>
+                    <orientation>horizontal</orientation>
+                    <itemgap>0</itemgap>
+                    <control type="label" id="1113">
+                        <description>Temp label</description>
+                        <width min="0" max="150">auto</width>
+                        <height>45</height>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font13_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <label>[B]$INFO[Window(Weather).Property(Current.Temperature)][/B]</label>
+                    </control>
+                    <control type="label" id="1114">
+                        <description>Temp Units</description>
+                        <width min="0" max="150">auto</width>
+                        <height>33</height>
+                        <font>font10</font>
+                        <aligny>center</aligny>
+                        <label>$INFO[System.TemperatureUnits]</label>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <visible>!String.IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
+                    </control>
+                </control>
             </control>
-            <control type="label" id="1">
-                <description>time label</description> 
-                <width>auto</width>
-                <height>45</height>
-                <align>right</align>
-                <aligny>center</aligny>
-                <font>font13_title</font>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <include condition="!Skin.HasSetting(ClockShowSeconds)">ClockDefault</include>
-                <include condition="Skin.HasSetting(ClockShowSeconds)">ClockSeconds</include>
+
+            <!-- Clock -->
+            <control type="grouplist" id="1112">
+
+                <width min="60" max="265">auto</width>
                 <visible>!Skin.HasSetting(HideSystemTime)</visible>
+                <orientation>horizontal</orientation>
+                <control type="image">
+                    <description>time icon</description>
+                    <width>40</width>
+                    <height>40</height>
+                    <texture colordiffuse="$VAR[MainColorOne]">icon_time.png</texture> 
+                </control>
+                <control type="label" id="1">
+                    <top>0</top>
+                    <description>time label</description> 
+                    <width min="60" max="450">auto</width>
+                    <height>45</height>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>font13_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <include condition="!Skin.HasSetting(ClockShowSeconds)">ClockDefault</include>
+                    <include condition="Skin.HasSetting(ClockShowSeconds)">ClockSeconds</include>
+                </control>
             </control>
         </control>
 
