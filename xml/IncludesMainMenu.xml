@@ -160,7 +160,7 @@
                 <width>435</width>
                 <height>90</height>
                 <font>font_MainMenu</font>
-                <textcolor>white</textcolor>
+                <textcolor>black</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <scroll>true</scroll>
@@ -174,7 +174,7 @@
                 <width>435</width>
                 <height>90</height>
                 <font>font_MainMenu</font>
-                <textcolor>white</textcolor>
+                <textcolor>black</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <scroll>true</scroll>
