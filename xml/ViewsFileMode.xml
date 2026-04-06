@@ -95,6 +95,7 @@
                         <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>Window.IsVisible(Videos) + ListItem.IsResumable</visible>
                     </control>
+
                     <control type="image">
                         <left>982</left>
                         <top>11</top>
@@ -104,7 +105,21 @@
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
                         <visible>!ListItem.IsResumable</visible>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
+                    <control type="image">
+                        <left>982</left>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+
                     <control type="image">
                         <left>982</left>
                         <top>11</top>
@@ -272,6 +287,7 @@
                         <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>Window.IsVisible(Videos) + ListItem.IsResumable</visible>
                     </control>
+
                     <control type="image">
                         <left>982</left>
                         <top>11</top>
@@ -280,7 +296,20 @@
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
+                    <control type="image">
+                        <left>982</left>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+
                     <control type="image">
                         <left>982</left>
                         <top>11</top>
@@ -567,6 +596,19 @@
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
                         <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+                    <control type="image">
+                        <left>5</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
 
                     <control type="image">
@@ -761,6 +803,19 @@
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
                         <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+                    <control type="image">
+                        <left>5</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
 
                     <control type="image">
@@ -830,6 +885,18 @@
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+                    <control type="image">
+                        <left>14</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
 
                     <control type="image">
@@ -896,6 +963,18 @@
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <visible>!ListItem.IsResumable</visible>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+                    <control type="image">
+                        <left>14</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
 
                     <control type="image">
@@ -990,6 +1069,7 @@
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
                     </control>
+
                     <control type="image">
                         <left>3</left>
                         <top>3</top>
@@ -997,7 +1077,19 @@
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
+                    <control type="image">
+                        <left>3</left>
+                        <top>3</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+
                     <control type="image">
                         <left>3</left>
                         <top>3</top>
@@ -1048,6 +1140,7 @@
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
                     </control>
+
                     <control type="image">
                         <left>3</left>
                         <top>3</top>
@@ -1055,7 +1148,19 @@
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
+                    <control type="image">
+                        <left>3</left>
+                        <top>3</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+
                     <control type="image">
                         <left>3</left>
                         <top>3</top>
@@ -1094,6 +1199,7 @@
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[BannerThumb]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
+
                     <control type="image">
                         <left>3</left>
                         <top>3</top>
@@ -1101,7 +1207,19 @@
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
+                    <control type="image">
+                        <left>3</left>
+                        <top>3</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+
                     <control type="image">
                         <left>3</left>
                         <top>3</top>
@@ -1140,6 +1258,7 @@
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[BannerThumb]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
+
                     <control type="image">
                         <left>3</left>
                         <top>3</top>
@@ -1147,7 +1266,19 @@
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
+                    <control type="image">
+                        <left>3</left>
+                        <top>3</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+
                     <control type="image">
                         <left>3</left>
                         <top>3</top>
@@ -1326,6 +1457,7 @@
                         <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>Window.IsVisible(Videos) + ListItem.IsResumable</visible>
                     </control>
+
                     <control type="image">
                         <left>1720</left>
                         <top>11</top>
@@ -1334,7 +1466,20 @@
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
+                    <control type="image">
+                        <left>1720</left>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+
                     <control type="image">
                         <left>1720</left>
                         <top>11</top>
@@ -1539,6 +1684,7 @@
                         <texture colordiffuse="$VAR[MainColorOne]">OverlayWatching.png</texture>
                         <visible>Window.IsVisible(Videos) + ListItem.IsResumable</visible>
                     </control>
+
                     <control type="image">
                         <left>1720</left>
                         <top>11</top>
@@ -1547,6 +1693,18 @@
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+                    <control type="image">
+                        <left>1720</left>
+                        <top>11</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsVisible(Videos) + !ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
 
                     <control type="image">

@@ -2361,6 +2361,10 @@ msgctxt "#31784"
 msgid "Disabled"
 msgstr ""
 
+msgctxt "#31785"
+msgid "Hide Unwatched icon"
+msgstr ""
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr ""

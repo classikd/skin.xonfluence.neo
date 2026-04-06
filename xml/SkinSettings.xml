@@ -1205,6 +1205,17 @@
                                 <onclick condition="Skin.String(MediaPanelTrans,70)">Skin.SetString(MediaPanelTrans,85)</onclick>
                                 <onclick condition="Skin.String(MediaPanelTrans,85)">Skin.Reset(MediaPanelTrans)</onclick>
                             </control>
+                            <control type="radiobutton" id="1599">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label>31785</label>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>Skin.ToggleSetting(ShowUnwatchedIcon)</onclick>
+                                <selected>!Skin.HasSetting(ShowUnwatchedIcon)</selected>
+                            </control>
                             <control type="radiobutton" id="160">
                                 <width>1125</width>
                                 <height>60</height>

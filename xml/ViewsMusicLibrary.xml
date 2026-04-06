@@ -306,6 +306,7 @@
                         <animation reversible="false" effect="zoom" start="-3,24,252,252" end="-18,-6,297,297" time="150">focus</animation>
                         <animation reversible="false" effect="zoom" end="-3,24,252,252" start="-18,-6,297,297" time="150">unfocus</animation>
                     </control>
+                    
                     <control type="image">
                         <depth>DepthContentPopout</depth>
                         <left>270</left>
@@ -322,7 +323,28 @@
                             <effect type="fade" start="100" end="0" time="150" />
                             <effect type="slide" end="0,0" start="60,60" time="150" />
                         </animation>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
+                    <control type="image">
+                        <depth>DepthContentPopout</depth>
+                        <left>270</left>
+                        <top>488</top>
+                        <width>52</width>
+                        <height>52</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <animation type="focus">
+                            <effect type="fade" start="0" end="100" time="150" />
+                            <effect type="slide" start="0,0" end="60,60" time="150" />
+                        </animation>
+                        <animation type="unfocus">
+                            <effect type="fade" start="100" end="0" time="150" />
+                            <effect type="slide" end="0,0" start="60,60" time="150" />
+                        </animation>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="60">
@@ -519,6 +541,16 @@
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+                    <control type="image">
+                        <left>1102</left>
+                        <top>14</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
                     
                     <control type="image">
@@ -619,6 +651,16 @@
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+                    <control type="image">
+                        <left>1102</left>
+                        <top>14</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
                     
                     <control type="image">
