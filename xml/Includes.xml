@@ -1103,23 +1103,7 @@
             <include>VisibleFadeEffect</include>
             <animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
             <animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
-            <width>240</width>
-
-            <control type="button" id="9898">
-                <width>240</width>
-                <description>push button</description>
-                <left>0</left>
-                <height>85</height>
-                <label>31003</label>
-                <font />
-                <onclick>ActivateWindow(PlayerControls)</onclick>
-                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
-                <texturenofocus border="5" colordiffuse="70000000">blank.png</texturenofocus>
-                <onleft>50</onleft>
-                <onright>50</onright>
-                <onup>50</onup>
-                <ondown>50</ondown>
-            </control>
+            <width min="0" max="310">auto</width>
 
             <control type="grouplist">
                 <width>auto</width>
@@ -1129,25 +1113,38 @@
                 <aligny>center</aligny>
                 <itemgap>8</itemgap>
 
-                <control type="image">
-                    <description>Player Icon</description>
+
+                <control type="group">
                     <width>40</width>
-                    <height>40</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture colordiffuse="$VAR[MainColorOne]">equaliser.gif</texture>
-                    <visible>!Control.HasFocus(9898)</visible>
-                </control>
-                <control type="image">
-                    <description>Player Icon</description>
-                    <width>40</width>
-                    <height>40</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture colordiffuse="black">equaliser.gif</texture>
-                    <visible>Control.HasFocus(9898)</visible>
+                    <control type="button" id="9898">
+                        <description>Player Icon</description>
+                        <width>40</width>
+                        <height>40</height>
+                        <aspectratio>keep</aspectratio>
+                        <texturenofocus colordiffuse="$VAR[MainColorOne]">blank.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[MainColorOne]">white.png</texturefocus>
+                        <onclick>ActivateWindow(PlayerControls)</onclick>
+                    </control>
+                    <control type="image">
+                        <description>Player Icon</description>
+                        <width>40</width>
+                        <height>40</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">equaliser.gif</texture>
+                        <visible>!Control.HasFocus(9898)</visible>
+                    </control>
+                    <control type="image">
+                        <description>Player Icon</description>
+                        <width>40</width>
+                        <height>40</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="black">equaliser.gif</texture>
+                        <visible>Control.HasFocus(9898)</visible>
+                    </control>
                 </control>
 
                 <control type="label">
-                    <width>180</width>
+                    <width min="0" max="270">auto</width>
                     <height>45</height>
                     <label>$VAR[CommonMediaPlayingTitle]</label>
                     <align>left</align>
@@ -1161,16 +1158,16 @@
                     <visible>!Control.HasFocus(9898)</visible>
                 </control>
                 <control type="label">
-                    <width>180</width>
+                    <width min="0" max="270">auto</width>
                     <height>45</height>
                     <label>$VAR[CommonMediaPlayingTitle]</label>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>font12</font>
                     <scroll>true</scroll>
-                    <scrollsuffix>&#160;               </scrollsuffix>
+                    <scrollsuffix>&#160;             </scrollsuffix>
                     <scrollspeed>50</scrollspeed>
-                    <textcolor>black</textcolor>
+                    <textcolor>white</textcolor>
                     <visible>Control.HasFocus(9898)</visible>
                 </control>
                 <!--

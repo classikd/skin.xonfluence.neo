@@ -711,6 +711,7 @@
         <value condition="String.IsEqual(VideoPlayer.Title,player.swf playpath=rmc1 live=true)">[B]$LOCALIZE[31221][/B]</value>
         <value condition="Player.IsInternetStream + String.Contains(VideoPlayer.Title,Virgin 1,Left)">[B]$LOCALIZE[31222][/B]</value>
         <value condition="VideoPlayer.HasEpg + VideoPlayer.Content(LiveTV)">[B]$INFO[VideoPlayer.ChannelName] - $INFO[Player.Title][/B]</value>
+        <value condition="Player.HasAudio + !Player.HasVideo">[B]$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title][/B]</value>
         <value>[B]$INFO[Player.Title][/B]</value>
     </variable>
     <variable name="CommonMediaPlayingTime">
