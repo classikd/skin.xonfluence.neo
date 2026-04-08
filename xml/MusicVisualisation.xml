@@ -28,15 +28,15 @@
             <visible>[Player.ShowInfo | Window.IsActive(MusicOSD)] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVRChannelGuide) | Window.IsVisible(PVRRadioRDSInfo) | Window.IsVisible(Addon) | Window.IsVisible(1105)]</visible>
             <control type="image">
                 <left>-30</left>
-                <top>-225</top>
+                <top>0</top>
                 <width>1980</width>
                 <height>384</height>
                 <texture flipy="true" border="1">HomeNowPlayingBack.png</texture>
-                <visible>!Skin.String(MusicOSDInfo,never)</visible>
+                <visible>Skin.HasSetting(SimpleModOSDMusic)</visible>
             </control>
-            <include condition="!Skin.String(MusicOSDInfo,never)">TopLeftInfo</include>
-            <include condition="!Skin.String(MusicOSDInfo,never)">Clock</include>
-            <include condition="!Skin.String(MusicOSDInfo,never)">Date</include>
+            <include condition="!Skin.String(MusicOSDInfo,never) + !Skin.HasSetting(SimpleModOSDMusic)">TopLeftInfo</include>
+            <include condition="!Skin.String(MusicOSDInfo,never) + !Skin.HasSetting(SimpleModOSDMusic)">Clock</include>
+            <include condition="!Skin.String(MusicOSDInfo,never) + !Skin.HasSetting(SimpleModOSDMusic)">Date</include>
             <control type="image">
                 <left>-30</left>
                 <top>345r</top>
@@ -48,6 +48,7 @@
             </control>
             <control type="group">
                 <visible>!Skin.String(MusicOSDInfo,never) + Skin.HasSetting(EnableCDArtWork) + !Skin.HasSetting(HideMusicArtWorkOSD) + !Player.IsInternetStream</visible>
+                <visible>!Skin.HasSetting(SimpleModOSDMusic)</visible>
                 <left>15</left>
                 <top>398r</top>
                 <animation effect="slide" start="0,0" end="0,30" time="0" condition="!Skin.HasSetting(HidePopUpSeekBar) + Skin.HasSetting(HideNextSongsInfo)">Conditional</animation>
@@ -79,6 +80,7 @@
                     <texture background="true">CDCase/cdglass.png</texture>
                 </control>
             </control>
+            
             <control type="image">
                 <depth>DepthOSDPopout</depth>
                 <description>orig cover image</description>
@@ -92,9 +94,13 @@
                 <bordertexture border="8">ThumbShadow.png</bordertexture>
                 <bordersize>8</bordersize>
                 <visible>!Skin.String(MusicOSDInfo,never) + !Skin.HasSetting(HideMusicArtWorkOSD) + [!Skin.HasSetting(EnableCDArtWork) | Player.IsInternetStream]</visible>
+                <visible>!Skin.HasSetting(SimpleModOSDMusic)</visible>
             </control>
+
+            <!-- default -->
             <control type="group">
                 <visible>!Skin.String(MusicOSDInfo,never)</visible>
+                <visible>!Skin.HasSetting(SimpleModOSDMusic)</visible>
                 <animation effect="slide" end="-218,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HideMusicArtWorkOSD)" reversible="true">Conditional</animation>
                 <left>495</left>
                 <top>382r</top>
@@ -188,6 +194,103 @@
                     </control>
                 </control>
             </control>
+            <!-- Simple OSD -->
+            <control type="group">
+                <visible>!Skin.String(MusicOSDInfo,never)</visible>
+                <visible>Skin.HasSetting(SimpleModOSDMusic)</visible>
+                <left>80</left>
+                <top>-95</top>
+                <control type="image">
+                    <left>0</left>
+                    <top>-15</top>
+                    <width>300</width>
+                    <height>117</height>
+                    <texture>$INFO[Player.FolderPath,,../logo.png]</texture>
+                    <aspectratio aligny="bottom" align="left">keep</aspectratio>
+                    <visible>String.IsEmpty(Skin.String(PhysicalMusicFolder)) + !Skin.HasSetting(HideMusicArtWorkOSD)</visible>
+                    <visible>!Player.IsInternetStream</visible>
+                </control>
+                <control type="image">
+                    <left>0</left>
+                    <top>-15</top>
+                    <width>300</width>
+                    <height>117</height>
+                    <texture>$INFO[Skin.String(PhysicalMusicFolder)]$INFO[MusicPlayer.Artist]/logo.png</texture>
+                    <aspectratio aligny="bottom" align="left">keep</aspectratio>
+                    <visible>!String.IsEmpty(Skin.String(PhysicalMusicFolder)) + !Skin.HasSetting(HideMusicArtWorkOSD)</visible>
+                </control>
+                <control type="label" id="1">
+                    <description>Artist label</description>
+                    <left>0</left>
+                    <top>105</top>
+                    <width>1365</width>
+                    <height>38</height>
+                    <align>left</align>
+                    <font>font12</font>
+                    <label>$INFO[MusicPlayer.Album]</label>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                </control>
+                <control type="label">
+                    <description>Header label</description>
+                    <left>0</left>
+                    <top>185</top>
+                    <width>1365</width>
+                    <height>38</height>
+                    <align>left</align>
+                    <font>font11</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <label>$VAR[MusicHeaderLabel]</label>
+                </control>
+                <control type="grouplist">
+                    <left>0</left>
+                    <top>145</top>
+                    <width>1565</width>
+                    <height>52</height>
+                    <itemgap>8</itemgap>
+                    <orientation>horizontal</orientation>
+                    <control type="label">
+                        <width min="15" max="1036">auto</width>
+                        <height>30</height>
+                        <font>font30</font>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[MusicPlayer.Artist] - $INFO[Player.Title]</label>
+                        <textcolor>$VAR[MainColorOne]</textcolor>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="image">
+                        <description>Audio Codec Image</description>
+                        <width>122</width>
+                        <height>44</height>
+                        <visible>!Player.ChannelPreviewActive</visible>
+                        <texture>$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
+                    </control>
+                    <control type="group">
+                        <description>Rating</description>
+                        <width>258</width>
+                        <height>44</height>
+                        <control type="image">
+                            <description>rating back</description>
+                            <left>0</left>
+                            <top>0</top>
+                            <width>258</width>
+                            <height>44</height>
+                            <texture border="5">flagging/blank.png</texture>
+                        </control>
+                        <control type="image">
+                            <description>User Rating</description>
+                            <left>3</left>
+                            <top>8</top>
+                            <width>252</width>
+                            <height>32</height>
+                            <texture fallback="ratings/0.png">$INFO[MusicPlayer.UserRating,ratings/,.png]</texture>
+                        </control>
+                    </control>
+                </control>
+            </control>
+
             <control type="label">
                 <left>0</left>
                 <top>68r</top>
@@ -225,6 +328,8 @@
                 <visible>!Skin.HasSetting(HideNextSongsInfo)</visible>
                 <visible>!Skin.String(MusicOSDInfo,never)</visible>
             </control>
+
+            <!-- Seekbar default -->
             <control type="group">
                 <left>495</left>
                 <top>142r</top>
@@ -259,8 +364,47 @@
                 </control>
                 <visible>Integer.IsGreater(Player.time,0)</visible>
                 <visible>!Skin.String(MusicOSDInfo,never) | Window.IsActive(MusicOSD)</visible>
+                <visible>!Skin.HasSetting(SimpleModOSDMusic)</visible>
                 <animation effect="slide" end="-218,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HideMusicArtWorkOSD) | [Skin.String(MusicOSDInfo,never) +  !Skin.HasSetting(HidePopUpSeekBar)]" reversible="true">Conditional</animation>
             </control>
+            <!-- Simple OSD -->
+            <control type="group">
+                <left>50</left>
+                <top>200r</top>
+                <control type="label">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>150</width>
+                    <height>60</height>
+                    <font>font13</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[Player.Time(hh:mm:ss)]</label>
+                </control>
+                <control type="progress">
+                    <description>Progressbar</description>
+                    <left>150</left>
+                    <top>22</top>
+                    <width>1510</width>
+                    <height>16</height>
+                    <info>Player.Progress</info>
+                    <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                </control>
+                <control type="label">
+                    <left>1670</left>
+                    <top>0</top>
+                    <width>150</width>
+                    <height>60</height>
+                    <font>font13</font>
+                    <align>right</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[Player.Duration(hh:mm:ss)]</label>
+                </control>
+                <visible>Integer.IsGreater(Player.time,0)</visible>
+                <visible>!Skin.String(MusicOSDInfo,never) | Window.IsActive(MusicOSD)</visible>
+                <visible>Skin.HasSetting(SimpleModOSDMusic)</visible>
+            </control>
+
         </control>
     </controls>
 </window>
