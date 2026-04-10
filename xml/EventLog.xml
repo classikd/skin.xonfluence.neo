@@ -6,7 +6,6 @@
     <controls>
         <include>CommonBackground</include>
         <include>ContentPanelBackgrounds</include>
-        <include>FloorReturnButtons</include>
         <include>BehindDialogFadeOut</include>
         <include>ScrollOffsetLabel</include>
         <control type="group">
@@ -180,6 +179,7 @@
             <param name="Icon" value="icon_events" />
             <param name="Label" value="$LOCALIZE[14111]" />
         </include>
+        <include>FloorReturnButtons</include>
         <include>PiPBackground</include>
         <control type="group">
             <left>-375</left>
