@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 0.5
+- Add possibility to install the skin from a repository
+- Add option to hide Unwatched icons
+- Add weather info next to clock in header
+- Add simple UI option (touch) for music player
+- Improve Nowplaying block in left sideblade
+- and more
+
 ## Version 0.4
 - Clean all settings names to be easily readable
 - Add PiP size option and close button
