@@ -1472,29 +1472,135 @@
             <shadowcolor>black</shadowcolor>
         </control>
     </include>
+    <include name="MiniMusicInfo">
+        <control type="image">
+            <description>Cover image</description>
+            <left>15</left>
+            <top>15</top>
+            <width>70</width>
+            <height>70</height>
+            <aspectratio>keep</aspectratio>
+            <texture>$INFO[MusicPlayer.Cover]</texture>
+        </control>
+        <control type="fadelabel">
+            <description>Title label</description>
+            <left>100</left>
+            <top>15</top>
+            <height>45</height>
+            <width>260</width>
+            <label>$INFO[MusicPlayer.Artist] - $INFO[Player.Title]</label>
+            <align>left</align>
+            <aligny>center</aligny>
+            <font>font12_title</font>
+            <textcolor>black</textcolor>
+            <scrollout>false</scrollout>
+            <pauseatend>2000</pauseatend>
+        </control>
+        <control type="label">
+            <description>Time Label</description>
+            <left>100</left>
+            <top>45</top>
+            <height>45</height>
+            <width>260</width>
+            <label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
+            <align>left</align>
+            <aligny>center</aligny>
+            <font>font11</font>
+            <textcolor>black</textcolor>
+        </control>
+    </include>
+    <include name="MiniVideoInfo">
+        <control type="image">
+            <description>Cover image</description>
+            <left>15</left>
+            <top>15</top>
+            <width>70</width>
+            <height>70</height>
+            <aspectratio>scale</aspectratio>
+            <texture>$INFO[VideoPlayer.cover]</texture>
+            <visible>!Player.IsInternetStream</visible>
+        </control>
+        <control type="image">
+            <description>Streaming image</description>
+            <left>15</left>
+            <top>15</top>
+            <width>70</width>
+            <height>70</height>
+            <aspectratio>scale</aspectratio>
+            <texture>$VAR[StreamingVideoIcon]</texture>
+            <visible>Player.IsInternetStream</visible>
+        </control>
+        <control type="fadelabel">
+            <description>Title label</description>
+            <left>100</left>
+            <top>15</top>
+            <height>45</height>
+            <width>260</width>
+            <label>$VAR[VideoNowPlaying]</label>
+            <align>left</align>
+            <aligny>center</aligny>
+            <font>font12_title</font>
+            <textcolor>black</textcolor>
+            <scrollout>false</scrollout>
+            <pauseatend>2000</pauseatend>
+        </control>
+        <control type="label">
+            <description>Time Label</description>
+            <left>100</left>
+            <top>45</top>
+            <height>45</height>
+            <width>260</width>
+            <label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
+            <align>left</align>
+            <aligny>center</aligny>
+            <font>font11</font>
+            <textcolor>black</textcolor>
+        </control>
+    </include>
     <include name="CommonNowPlaying_Controls">
         <control type="label" id="202">
             <width>375</width>
-            <height>52</height>
-            <font>font12</font>
-            <label>31023</label>
-            <textcolor>$VAR[MainColorOne]</textcolor>
-            <align>center</align>
-            <aligny>center</aligny>
+            <height>20</height>
+            <label></label>
             <visible>Player.HasMedia</visible>
-            <include>VisibleFadeEffect</include>
         </control>
+        
         <control type="button" id="610">
             <description>Fake Button to fix Player Controls Navigation</description>
             <visible>false</visible>
         </control>
+
+
         <control type="group" id="90060">
-            <height>68</height>
+            <height>168</height>
             <visible>VideoPlayer.Content(LiveTV)</visible>
             <include>VisibleFadeEffect</include>
+
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>400</width>
+                <height>158</height>
+                <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white90.png</texture>
+            </control>
+
+            <control type="image">
+                <left>0</left>
+                <top>100</top>
+                <width>400</width>
+                <height>60</height>
+                <texture border="0,2,0,2" colordiffuse="30000000">white90.png</texture>
+            </control>
+
+            <control type="group">
+                <visible>Player.HasVideo</visible>
+                <include>MiniVideoInfo</include>
+            </control>
+
             <control type="grouplist" id="9006">
                 <width>375</width>
                 <height>68</height>
+                <top>100</top>
                 <itemgap>1</itemgap>
                 <orientation>horizontal</orientation>
                 <onright>50</onright>
@@ -1503,7 +1609,7 @@
                 <ondown>611</ondown>
                 <control type="radiobutton" id="601">
                     <label />
-                    <include content="OSDButton">
+                    <include content="OSDButtonReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDChannelDown" />
                     </include>
@@ -1511,7 +1617,7 @@
                 </control>
                 <control type="radiobutton" id="600">
                     <label />
-                    <include content="OSDButton">
+                    <include content="OSDButtonReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDChannelUp" />
                     </include>
@@ -1519,7 +1625,7 @@
                 </control>
                 <control type="radiobutton" id="603">
                     <label />
-                    <include content="OSDButton">
+                    <include content="OSDButtonReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDStop" />
                     </include>
@@ -1528,7 +1634,7 @@
                 </control>
                 <control type="radiobutton" id="604">
                     <label />
-                    <include content="OSDButtonAlt">
+                    <include content="OSDButtonAltReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDPause" />
                         <param name="AltTexture" value="OSDPlay" />
@@ -1540,7 +1646,7 @@
                 </control>
                 <control type="radiobutton" id="605">
                     <label />
-                    <include content="OSDButton">
+                    <include content="OSDButtonReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDRecordOff" />
                     </include>
@@ -1550,7 +1656,7 @@
                 </control>
                 <control type="radiobutton" id="606">
                     <label />
-                    <include content="OSDButton">
+                    <include content="OSDButtonReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDRadioRDS" />
                     </include>
@@ -1559,7 +1665,7 @@
                 </control>
                 <control type="radiobutton" id="622">
                     <label />
-                    <include content="OSDButton">
+                    <include content="OSDButtonReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDChannelList" />
                     </include>
@@ -1572,10 +1678,39 @@
             <visible>Player.HasMedia</visible>
             <visible>!VideoPlayer.Content(LiveTV)</visible>
             <include>VisibleFadeEffect</include>
-            <height>68</height>
+            <height>168</height>
+
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>400</width>
+                <height>158</height>
+                <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white90.png</texture>
+            </control>
+
+            <control type="image">
+                <left>0</left>
+                <top>100</top>
+                <width>400</width>
+                <height>60</height>
+                <texture border="0,2,0,2" colordiffuse="30000000">white90.png</texture>
+            </control>
+            
+            <!-- Music Info mini -->
+            <control type="group">
+                <visible>Player.HasAudio</visible>
+                <include>MiniMusicInfo</include>
+            </control>
+            <!-- Video Info mini -->
+            <control type="group">
+                <visible>Player.HasVideo</visible>
+                <include>MiniVideoInfo</include>
+            </control>
+
             <control type="grouplist" id="9005">
                 <width>375</width>
                 <height>68</height>
+                <top>100</top>
                 <itemgap>1</itemgap>
                 <orientation>horizontal</orientation>
                 <onright>50</onright>
@@ -1585,7 +1720,7 @@
                 <defaultcontrol always="true">603</defaultcontrol>
                 <control type="radiobutton" id="700">
                     <label />
-                    <include content="OSDButton">
+                    <include content="OSDButtonReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDPrevTrack" />
                     </include>
@@ -1593,7 +1728,7 @@
                 </control>
                 <control type="radiobutton" id="706">
                     <label />
-                    <include content="OSDButton">
+                    <include content="OSDButtonReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDRewind" />
                     </include>
@@ -1602,7 +1737,7 @@
                 </control>
                 <control type="radiobutton" id="703">
                     <label />
-                    <include content="OSDButtonAlt">
+                    <include content="OSDButtonAltReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDPause" />
                         <param name="AltTexture" value="OSDPlay" />
@@ -1612,7 +1747,7 @@
                 </control>
                 <control type="radiobutton" id="701">
                     <label />
-                    <include content="OSDButton">
+                    <include content="OSDButtonReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDStop" />
                     </include>
@@ -1621,7 +1756,7 @@
                 </control>
                 <control type="radiobutton" id="707">
                     <label />
-                    <include content="OSDButton">
+                    <include content="OSDButtonReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDForward" />
                     </include>
@@ -1630,7 +1765,7 @@
                 </control>
                 <control type="radiobutton" id="702">
                     <label />
-                    <include content="OSDButton">
+                    <include content="OSDButtonReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDNextTrack" />
                     </include>
@@ -1638,7 +1773,7 @@
                 </control>
                 <control type="radiobutton" id="704">
                     <label />
-                    <include content="OSDButton">
+                    <include content="OSDButtonReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDRepeatOne" />
                     </include>
@@ -1648,7 +1783,7 @@
                 </control>
                 <control type="radiobutton" id="705">
                     <label />
-                    <include content="OSDButton">
+                    <include content="OSDButtonReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDRepeatAll" />
                     </include>
@@ -1658,7 +1793,7 @@
                 </control>
                 <control type="radiobutton" id="708">
                     <label />
-                    <include content="OSDButton">
+                    <include content="OSDButtonReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDRepeat" />
                     </include>
@@ -1668,7 +1803,7 @@
                 </control>
                 <control type="radiobutton" id="709">
                     <label />
-                    <include content="OSDButtonAlt">
+                    <include content="OSDButtonAltReverse">
                         <param name="Size" value="58" />
                         <param name="Texture" value="OSDRandomOff" />
                         <param name="AltTexture" value="OSDRandomOn" />
@@ -1679,6 +1814,14 @@
                 </control>
             </control>
         </control>
+
+        <control type="label" id="202">
+            <width>375</width>
+            <height>10</height>
+            <label></label>
+            <visible>Player.HasMedia</visible>
+        </control>
+
         <control type="radiobutton" id="611">
             <description>Go to fullscreen Playback</description>
             <include>ButtonCommonValues</include>
