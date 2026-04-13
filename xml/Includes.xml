@@ -1097,7 +1097,7 @@
     </include>
     <include name="CommonNowPlaying">
         <control type="group">
-            <visible>Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia)) + !Skin.HasSetting(HideNowPlayingInfo) + !Control.IsVisible(507)</visible>
+            <visible>Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia)) + !Skin.HasSetting(HideNowPlayingInfo)</visible>
             <visible>!String.Contains(Window.Property(xmlfile),Settings)</visible>
             <visible>!Window.IsActive(home)</visible>
             <include>VisibleFadeEffect</include>
