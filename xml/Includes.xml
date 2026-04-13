@@ -460,7 +460,8 @@
     </variable>
     <variable name="MusicInfoListViewThumb">
         <value condition="Control.IsVisible(506)">$INFO[ListItem.Icon]</value>
-        <value condition="Control.IsVisible(507)">$INFO[Player.Art(thumb)]</value>
+        <value condition="Control.IsVisible(507) + !Player.HasAudio">$INFO[ListItem.Icon]</value>
+        <value condition="Control.IsVisible(507) + Player.HasAudio">$INFO[Player.Art(thumb)]</value>
     </variable>
     <variable name="MusicInfoListThumb">
         <value condition="Container.Content(Artists) + !String.IsEmpty(Container(50).Listitem.Icon)">$INFO[Container(50).Listitem.Icon]</value>

@@ -171,7 +171,19 @@
                     <texture background="true">DefaultAlbumCover.png</texture>
                     <aspectratio>scale</aspectratio>
                     <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                    <visible>!Player.HasAudio</visible>
                 </control>
+
+                <control type="image">
+                    <left>20</left>
+                    <top>30</top>
+                    <width>425</width>
+                    <height>465</height>
+                    <aspectratio aligny="bottom">scale</aspectratio>
+                    <fadetime>IconCrossfadeTime</fadetime>
+                    <texture fallback="DefaultAlbumCover.png" background="true">$VAR[MusicInfoListViewThumb]</texture>
+                    <visible>String.Contains(ListItem.Icon,DefaultFolder.png) + Player.HasAudio</visible>
+               </control>
                 <control type="image">
                     <left>20</left>
                     <top>30</top>
