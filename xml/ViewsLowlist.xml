@@ -259,7 +259,7 @@
                         <height>720</height>
                         <aspectratio aligny="bottom">keep</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
-                        <texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$INFO[ListItem.Icon]</texture>
+                        <texture background="true" diffuse="ClearCase/EmptyCaseMask.png" colordiffuse="$VAR[DiffuseIfNoIcon]">$INFO[ListItem.Icon]</texture>
                         <visible>String.IsEmpty(ListItem.thumbnailImage)</visible>
                     </control>
                 </control>

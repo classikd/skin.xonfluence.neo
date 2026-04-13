@@ -28,8 +28,7 @@
                 <height>120</height>
                 <aspectratio>keep</aspectratio>
                 <info>Container(20).ListItem.Icon</info>
-                <bordertexture border="5">button-nofocus.png</bordertexture>
-                <bordersize>3</bordersize>
+                <colordiffuse>$VAR[MainColorOne]</colordiffuse>
             </control>
             <control type="label">
                 <description>header label</description>
@@ -230,8 +229,7 @@
                 <height>120</height>
                 <aspectratio>keep</aspectratio>
                 <info>Container(21).ListItem.Icon</info>
-                <bordertexture border="5">button-nofocus.png</bordertexture>
-                <bordersize>3</bordersize>
+                <colordiffuse>$VAR[MainColorOne]</colordiffuse>
             </control>
             <control type="label">
                 <description>header label</description>

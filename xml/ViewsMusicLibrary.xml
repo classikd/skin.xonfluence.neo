@@ -168,7 +168,7 @@
                     <top>30</top>
                     <width>425</width>
                     <height>465</height>
-                    <texture background="true">DefaultAlbumCover.png</texture>
+                    <texture background="true" colordiffuse="$VAR[MainColorOne]">DefaultAlbumCover.png</texture>
                     <aspectratio>scale</aspectratio>
                     <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     <visible>!Player.HasAudio</visible>
@@ -730,7 +730,7 @@
                     <height>325</height>
                     <aspectratio>center</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
-                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <texture background="true" colordiffuse="$VAR[DiffuseIfNoIcon]">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="grouplist">
                     <description>Media Codec Flagging Images</description>
