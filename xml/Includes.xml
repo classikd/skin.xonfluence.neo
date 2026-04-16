@@ -3415,16 +3415,17 @@
                     <top>0</top>
                     <width>1125</width>
                     <height>60</height>
-                    <texture border="5" colordiffuse="$VAR[MainColorOne]">$VAR[SelectMenuItem]</texture>
+                    <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                     <visible>[Control.HasFocus(8001) | Control.HasFocus(8002)]</visible>
                 </control>
+
                 <control type="label">
                     <left>15</left>
                     <top>0</top>
                     <width>900</width>
                     <height>60</height>
                     <font>font13</font>
-                    <textcolor>grey2</textcolor>
+                    <textcolor>white</textcolor>
                     <align>left</align>
                     <aligny>center</aligny>
                     <label>$PARAM[Label]</label>
@@ -3436,12 +3437,13 @@
                     <width>900</width>
                     <height>60</height>
                     <font>font13</font>
-                    <textcolor>white</textcolor>
+                    <textcolor>black</textcolor>
                     <align>left</align>
                     <aligny>center</aligny>
                     <label>$PARAM[Label]</label>
                     <visible>[Control.HasFocus(8001) | Control.HasFocus(8002)]</visible>
                 </control>
+
                 <control type="label">
                     <left>15</left>
                     <top>0</top>
@@ -3460,12 +3462,13 @@
                     <width>960</width>
                     <height>60</height>
                     <font>font13_title</font>
-                    <textcolor>white</textcolor>
+                    <textcolor>black</textcolor>
                     <align>right</align>
                     <aligny>center</aligny>
                     <label>$INFO[ListItem.Label]</label>
                     <visible>[Control.HasFocus(8001) | Control.HasFocus(8002)]</visible>
                 </control>
+
             </focusedlayout>
         </definition>
     </include>
