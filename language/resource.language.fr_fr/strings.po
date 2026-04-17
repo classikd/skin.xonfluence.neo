@@ -2429,6 +2429,10 @@ msgctxt "#31785"
 msgid "Hide Unwatched icon"
 msgstr "Cacher l'icône Non-visionné"
 
+msgctxt "#31786"
+msgid "Big Thumbnail"
+msgstr "Miniatures larges"
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr "Prévisions sur 36 heures"

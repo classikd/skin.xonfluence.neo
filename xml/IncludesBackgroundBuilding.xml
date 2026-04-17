@@ -767,7 +767,7 @@
             </control>
             <control type="group">
                 <include>VisibleFadeEffect</include>
-                <visible>Control.IsVisible(501) | Control.IsVisible(51) | Control.IsVisible(500) | Control.IsVisible(505)</visible>
+                <visible>Control.IsVisible(501) | Control.IsVisible(51) | Control.IsVisible(500) | Control.IsVisible(526) | Control.IsVisible(505)</visible>
                 <control type="image">
                     <left>0</left>
                     <top>0</top>

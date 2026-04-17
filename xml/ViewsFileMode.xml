@@ -1074,6 +1074,672 @@
             </control>
         </control>
     </include>
+    <include name="ThumbnailLargeView">
+        <control type="group">
+            <visible>Control.IsVisible(526)</visible>
+            <include>VisibleFadeEffect</include>
+            <control type="panel" id="526">
+                <left>70</left>
+                <top>100</top>
+                <width>1820</width>
+                <height>985</height>
+                <onleft>2</onleft>
+                <onright>60</onright>
+                <onup>526</onup>
+                <ondown>526</ondown>
+                <viewtype label="31786">list</viewtype>
+                <pagecontrol>60</pagecontrol>
+				<orientation>vertical</orientation>
+                <scrolltime>200</scrolltime>
+                <preloaditems>10</preloaditems>
+                <itemlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(TVShows) + !Container.Content(Sets)" height="420" width="446">
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <bordertexture border="5">transparent.png</bordertexture>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultGenre.png" colordiffuse="$VAR[MainColorOne]">$VAR[MovieGenreIcon]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Container.Content(genres)</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <bordertexture border="5">transparent.png</bordertexture>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultStudios.png">$VAR[StudioIcon]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Container.Content(studios)</visible>
+                    </control>
+
+                    <!-- music-->
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true">DefaultFolderBack.png</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsActive(music)</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>ListItem.IsParentFolder</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" colordiffuse="$VAR[MainColorOne]">DefaultAlbumCover.png</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsActive(music)</visible>
+                        <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>!ListItem.IsParentFolder</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsActive(music)</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>!ListItem.IsParentFolder</visible>
+                    </control>
+
+                    <!-- No image://video but extension in label (=> regular video) -->
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultVideo.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
+                        <visible>String.Contains(ListItem.Label,.mkv) | String.Contains(ListItem.Label,.mp4) | String.Contains(ListItem.Label,.avi)</visible>
+                    </control>
+
+                   <!-- No image://video and no extension in label (=> folder or back) -->
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
+                        <visible>!String.Contains(ListItem.Label,.mkv) + !String.Contains(ListItem.Label,.mp4) + !String.Contains(ListItem.Label,.avi)</visible>
+                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultFolderBack.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
+                        <visible>!String.Contains(ListItem.Label,.mkv) + !String.Contains(ListItem.Label,.mp4) + !String.Contains(ListItem.Label,.avi)</visible>
+                        <visible>String.IsEqual(ListItem.Label,..)</visible>
+                    </control>
+                    
+                    <!-- Contains image://video = center mode -->
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <bordertexture border="5">transparent.png</bordertexture>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" colordiffuse="black">white.png</texture>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <include>TextureBorderViews</include>
+                        <bordertexture border="5">transparent.png</bordertexture>
+                        <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                        <aspectratio>center</aspectratio>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
+                    </control>
+
+                    <!--
+                    <control type="label">
+                        <left>50</left>
+                        <top>300</top>
+                        <width>800</width>
+                        <height>40</height>
+                        <font>font13</font>
+                        <textcolor>FFFFFFFF</textcolor>
+                        <label>$VAR[FavoritesIconTexture]</label>
+                    </control>-->
+
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <aspectratio>scale</aspectratio>
+                        <bordertexture border="5">transparent.png</bordertexture>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
+                        <visible>Container.Content(Episodes)</visible>
+                        <visible>String.IsEqual(ListItem.Label,..) | !Skin.HasSetting(HideEpisodeThumb)</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <aspectratio>scale</aspectratio>
+                        <bordertexture border="5">transparent.png</bordertexture>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(fanart)]</texture>
+                        <visible>Container.Content(Episodes) + Skin.HasSetting(HideEpisodeThumb) + !String.IsEqual(ListItem.Label,..)</visible>
+                    </control>
+                    <control type="label">
+                        <left>10</left>
+                        <top>360</top>
+                        <width>420</width>
+                        <height>38</height>
+                        <font>font11</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <info>ListItem.Label</info>
+                    </control>
+
+                    <control type="image">
+                        <left>5</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+                    <control type="image">
+                        <left>5</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+
+                    <control type="image">
+                        <left>5</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
+                    </control>
+                    <control type="image">
+                        <left>5</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
+                    </control>
+
+
+                    <control type="progress">
+                        <left>5</left>
+                        <top>352</top>
+                        <width>431</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>     
+                    </control> 
+
+                </itemlayout>
+                <focusedlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(TVShows) + !Container.Content(Sets)" height="420" width="446">
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultGenre.png" colordiffuse="$VAR[MainColorOne]">$VAR[MovieGenreIcon]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Container.Content(genres)</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultStudios.png">$VAR[StudioIcon]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Container.Content(studios)</visible>
+                    </control>
+
+                    <!-- music-->
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true">DefaultFolderBack.png</texture>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsActive(music)</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>ListItem.IsParentFolder</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" colordiffuse="$VAR[MainColorOne]">DefaultAlbumCover.png</texture>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsActive(music)</visible>
+                        <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>!ListItem.IsParentFolder</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsActive(music)</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>!ListItem.IsParentFolder</visible>
+                    </control>
+
+                    <!-- No image://video but extension in label (=> regular video) -->
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <include>TextureBorderViews</include>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <texture background="true" fallback="DefaultVideo.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
+                        <visible>String.Contains(ListItem.Label,.mkv) | String.Contains(ListItem.Label,.mp4) | String.Contains(ListItem.Label,.avi)</visible>
+                    </control>
+
+                    <!-- No image://video and no extension in label (=> folder or back) -->
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <include>TextureBorderViews</include>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
+                        <visible>!String.Contains(ListItem.Label,.mkv) + !String.Contains(ListItem.Label,.mp4) + !String.Contains(ListItem.Label,.avi)</visible>
+                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <include>TextureBorderViews</include>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <texture background="true" fallback="DefaultFolderBack.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
+                        <visible>!String.Contains(ListItem.Label,.mkv) + !String.Contains(ListItem.Label,.mp4) + !String.Contains(ListItem.Label,.avi)</visible>
+                        <visible>String.IsEqual(ListItem.Label,..)</visible>
+                    </control>
+                    
+                    <!-- Contains image://video = center mode -->
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <bordertexture border="5">transparent.png</bordertexture>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" colordiffuse="black">white.png</texture>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                        <aspectratio>center</aspectratio>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
+                    </control>
+
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <aspectratio>scale</aspectratio>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
+                        <visible>Container.Content(Episodes)</visible>
+                        <visible>String.IsEqual(ListItem.Label,..) | !Skin.HasSetting(HideEpisodeThumb)</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <aspectratio>scale</aspectratio>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(fanart)]</texture>
+                        <visible>Container.Content(Episodes) + Skin.HasSetting(HideEpisodeThumb) + !String.IsEqual(ListItem.Label,..)</visible>
+                    </control>
+                    <control type="label">
+                        <left>10</left>
+                        <top>360</top>
+                        <width>420</width>
+                        <height>38</height>
+                        <font>font11</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <info>ListItem.Label</info>
+                    </control>
+
+                    <control type="image">
+                        <left>5</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+                    <control type="image">
+                        <left>5</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+
+                    <control type="image">
+                        <left>5</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
+                    </control>
+                    <control type="image">
+                        <left>5</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
+                    </control>
+
+                    <control type="progress">
+                        <left>5</left>
+                        <top>352</top>
+                        <width>431</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white.png</midtexture>
+                        <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
+                    </control> 
+
+
+                </focusedlayout>
+                <itemlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="620" width="353">
+                    
+                    <control type="image">
+                        <left>10</left>
+                        <top>0</top>
+                        <width>352</width>
+                        <height>565</height>
+                        <bordertexture border="5">blank.png</bordertexture>
+                        <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
+                        <aspectratio>scale</aspectratio>
+                        <include>TextureBorderWidgets</include>
+                    </control>
+                    
+                    <control type="label">
+                        <left>12</left>
+                        <top>562</top>
+                        <width>352</width>
+                        <height>38</height>
+                        <font>font11</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <info>ListItem.Label</info>
+                    </control>
+
+                    <control type="image">
+                        <left>14</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+                    <control type="image">
+                        <left>14</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+
+                    <control type="image">
+                        <left>15</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>15</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                    </control>
+
+
+                    <control type="progress">
+                        <left>15</left>
+                        <top>557</top>
+                        <width>342</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                    </control> 
+
+                </itemlayout>
+                <focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="620" width="353">
+                    <control type="image">
+                        <left>10</left>
+                        <top>0</top>
+                        <width>352</width>
+                        <height>565</height>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
+                        <aspectratio>scale</aspectratio>
+                        <include>TextureBorderWidgets</include>
+                    </control>
+                    <control type="label">
+                        <left>12</left>
+                        <top>562</top>
+                        <width>352</width>
+                        <height>38</height>
+                        <font>font11</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <info>ListItem.Label</info>
+                    </control>
+
+                    <control type="image">
+                        <left>14</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+                    <control type="image">
+                        <left>14</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                    </control>
+
+                    <control type="image">
+                        <left>15</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_play.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>15</left>
+                        <top>5</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                    </control>
+
+
+                    <control type="progress">
+                        <left>15</left>
+                        <top>557</top>
+                        <width>342</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white.png</midtexture>
+                    </control> 
+
+                </focusedlayout>
+            </control>
+            <control type="scrollbar" id="60">
+                <left>1865</left>
+                <top>97</top>
+                <width>38</width>
+                <height>950</height>
+                <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+                <texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
+                <texturesliderbarfocus border="2,16,2,16" colordiffuse="$VAR[MainColorOne]">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+                <textureslidernib colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernib>
+                <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernibfocus>
+                <onleft>526</onleft>
+                <onright>800</onright>
+                <showonepage>true</showonepage>
+                <orientation>vertical</orientation>
+                <visible>Control.IsVisible(526)</visible>
+            </control>
+        </control>
+    </include>
     <include name="WideIconView">
         <control type="group">
             <visible>Control.IsVisible(505)</visible>
