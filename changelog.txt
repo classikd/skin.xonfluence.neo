@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 0.6
+- Add a Big thumbnail view
+- Add option to hide progress bars
+- Add option for music video thumbnails aspect ratio (scale/center)
+- Fix main color usage in multiple views
+- and more
+
 ## Version 0.5
 - Add possibility to install the skin from a repository
 - Add option to hide Unwatched icons
