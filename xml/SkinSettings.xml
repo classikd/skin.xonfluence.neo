@@ -1200,6 +1200,17 @@
                                 <onclick>Skin.ToggleSetting(ShowUnwatchedIcon)</onclick>
                                 <selected>!Skin.HasSetting(ShowUnwatchedIcon)</selected>
                             </control>
+                            <control type="radiobutton" id="1597">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label>31788</label>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>Skin.ToggleSetting(HideProgressBars)</onclick>
+                                <selected>Skin.HasSetting(HideProgressBars)</selected>
+                            </control>
                             <control type="radiobutton" id="1598">
                                 <width>1125</width>
                                 <height>60</height>

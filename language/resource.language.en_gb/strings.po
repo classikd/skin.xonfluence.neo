@@ -2373,6 +2373,10 @@ msgctxt "#31787"
 msgid "Video thumbnails \"center\" aspect ratio"
 msgstr ""
 
+msgctxt "#31788"
+msgid "Hide progress bars"
+msgstr ""
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr ""
