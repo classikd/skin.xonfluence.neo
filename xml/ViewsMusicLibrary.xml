@@ -728,7 +728,7 @@
                     <top>0</top>
                     <width>435</width>
                     <height>325</height>
-                    <aspectratio>center</aspectratio>
+                    <aspectratio>scale</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" colordiffuse="$VAR[DiffuseIfNoIcon]">$INFO[ListItem.Icon]</texture>
                 </control>

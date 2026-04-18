@@ -2369,6 +2369,10 @@ msgctxt "#31786"
 msgid "Big Thumbnail"
 msgstr ""
 
+msgctxt "#31787"
+msgid "Video thumbnails \"center\" aspect ratio"
+msgstr ""
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr ""

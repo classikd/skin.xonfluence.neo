@@ -553,7 +553,21 @@
                         <visible>String.IsEqual(ListItem.Label,..)</visible>
                     </control>
                     
-                    <!-- Contains image://video = center mode -->
+                    <!-- Contains image://video = center mode or scale -->
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>294</width>
+                        <height>230</height>
+                        <include>TextureBorderViews</include>
+                        <bordertexture border="5">transparent.png</bordertexture>
+                        <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                        <aspectratio>scale</aspectratio>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
+                        <visible>!Skin.HasSetting(VideoThumbnailsCenter)</visible>
+                    </control>
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
@@ -566,6 +580,7 @@
                         <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
                         <visible>String.Contains(ListItem.Icon,image://video)</visible>
                         <visible>!Window.IsActive(music)</visible>
+                        <visible>Skin.HasSetting(VideoThumbnailsCenter)</visible>
                     </control>
 
                     <!--
@@ -787,7 +802,21 @@
                         <visible>String.IsEqual(ListItem.Label,..)</visible>
                     </control>
                     
-                    <!-- Contains image://video = center mode -->
+                    <!-- Contains image://video = center mode or scale -->
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>294</width>
+                        <height>230</height>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                        <aspectratio>scale</aspectratio>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
+                        <visible>!Skin.HasSetting(VideoThumbnailsCenter)</visible>
+                    </control>
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
@@ -800,6 +829,7 @@
                         <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
                         <visible>String.Contains(ListItem.Icon,image://video)</visible>
                         <visible>!Window.IsActive(music)</visible>
+                        <visible>Skin.HasSetting(VideoThumbnailsCenter)</visible>
                     </control>
 
                     <control type="image">
@@ -1199,7 +1229,7 @@
                         <visible>String.IsEqual(ListItem.Label,..)</visible>
                     </control>
                     
-                    <!-- Contains image://video = center mode -->
+                    <!-- Contains image://video = center mode or scale -->
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
@@ -1218,10 +1248,25 @@
                         <include>TextureBorderViews</include>
                         <bordertexture border="5">transparent.png</bordertexture>
                         <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                        <aspectratio>scale</aspectratio>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
+                        <visible>!Skin.HasSetting(VideoThumbnailsCenter)</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <include>TextureBorderViews</include>
+                        <bordertexture border="5">transparent.png</bordertexture>
+                        <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
                         <aspectratio>center</aspectratio>
                         <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
                         <visible>String.Contains(ListItem.Icon,image://video)</visible>
                         <visible>!Window.IsActive(music)</visible>
+                        <visible>Skin.HasSetting(VideoThumbnailsCenter)</visible>
                     </control>
 
                     <!--
@@ -1443,7 +1488,7 @@
                         <visible>String.IsEqual(ListItem.Label,..)</visible>
                     </control>
                     
-                    <!-- Contains image://video = center mode -->
+                    <!-- Contains image://video = center mode or scale -->
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
@@ -1462,10 +1507,25 @@
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                        <aspectratio>scale</aspectratio>
+                        <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                        <visible>!Window.IsActive(music)</visible>
+                        <visible>!Skin.HasSetting(VideoThumbnailsCenter)</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>0</top>
+                        <width>440</width>
+                        <height>360</height>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <include>TextureBorderViews</include>
+                        <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
                         <aspectratio>center</aspectratio>
                         <visible>!Container.Content(Episodes) + !Container.Content(genres) + !Container.Content(studios)</visible>
                         <visible>String.Contains(ListItem.Icon,image://video)</visible>
                         <visible>!Window.IsActive(music)</visible>
+                        <visible>Skin.HasSetting(VideoThumbnailsCenter)</visible>
                     </control>
 
                     <control type="image">

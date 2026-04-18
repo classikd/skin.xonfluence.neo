@@ -1200,6 +1200,17 @@
                                 <onclick>Skin.ToggleSetting(ShowUnwatchedIcon)</onclick>
                                 <selected>!Skin.HasSetting(ShowUnwatchedIcon)</selected>
                             </control>
+                            <control type="radiobutton" id="1598">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label>31787</label>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>Skin.ToggleSetting(VideoThumbnailsCenter)</onclick>
+                                <selected>Skin.HasSetting(VideoThumbnailsCenter)</selected>
+                            </control>
                             <control type="radiobutton" id="160">
                                 <width>1125</width>
                                 <height>60</height>
