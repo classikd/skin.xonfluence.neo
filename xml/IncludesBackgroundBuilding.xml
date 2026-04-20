@@ -242,12 +242,14 @@
             <include>BackgroundTimePerImage</include>
             <randomize>true</randomize>
             <fadetime>1000</fadetime>
-            <visible>!Skin.HasSetting(SingleGlobalBackground) + !Skin.HasSetting(HolidayEffects) + !Window.IsVisible(Home) + !Player.HasVideo + Skin.HasSetting(HideBackGroundFanart)</visible>
+            <visible>!Skin.HasSetting(SingleGlobalBackground) + !Skin.HasSetting(HolidayEffects) + !Window.IsVisible(Home) + Skin.HasSetting(HideBackGroundFanart)</visible>
+            <visible>!Player.HasVideo | [Player.HasVideo + !String.IsEmpty(Skin.String(PiP))]</visible>
         </control>
         <control type="group">
             <depth>DepthBackground</depth>
-            <visible>!Window.IsVisible(Home) + !Player.HasVideo + !Skin.HasSetting(HideBackGroundFanart)</visible>
-			<control type="multiimage">
+            <visible>!Window.IsVisible(Home) + !Skin.HasSetting(HideBackGroundFanart)</visible>
+			<visible>!Player.HasVideo | [Player.HasVideo + !String.IsEmpty(Skin.String(PiP))]</visible>
+            <control type="multiimage">
                 <include>Dimensions_Fullscreen</include>
                 <aspectratio>scale</aspectratio>
                 <imagepath background="true">$VAR[CommonMenuItemBackground]</imagepath>
