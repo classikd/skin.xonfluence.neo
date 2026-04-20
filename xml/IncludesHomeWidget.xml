@@ -2820,7 +2820,7 @@
                         <visible>ListItem.IsResumable</visible>
                         <visible>!Skin.HasSetting(HideProgressBars)</visible>
                         <texturebg border="0">white.png</texturebg>
-                        <midtexture border="0" colordiffuse="FFFF0000">white.png</midtexture>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control> 
                     <control type="progress">
@@ -3081,7 +3081,7 @@
                         <visible>ListItem.IsResumable</visible>
                         <visible>!Skin.HasSetting(HideProgressBars)</visible>
                         <texturebg border="0">white.png</texturebg>
-                        <midtexture border="0" colordiffuse="FFFF0000">white.png</midtexture>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control> 
                     <control type="progress">
@@ -3543,7 +3543,7 @@
                         <visible>ListItem.IsResumable</visible>
                         <visible>!Skin.HasSetting(HideProgressBars)</visible>
                         <texturebg border="0">white.png</texturebg>
-                        <midtexture border="0" colordiffuse="FFFF0000">white.png</midtexture>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control> 
                     <control type="progress">
