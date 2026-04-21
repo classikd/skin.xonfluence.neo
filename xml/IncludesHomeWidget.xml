@@ -2680,9 +2680,9 @@
                     </control>
                     <!-- Image TV Channel -->
                     <control type="image">
-                        <left>15</left>
+                        <left>40</left>
                         <top>10</top>
-                        <width>190</width>
+                        <width>140</width>
                         <height>310</height>
                         <texture background="true">$VAR[VideoThumbImage]</texture>
                         <aspectratio>keep</aspectratio>
@@ -2815,9 +2815,9 @@
                     </control>
                     <!-- image Tv channel -->
                     <control type="image">
-                        <left>15</left>
+                        <left>40</left>
                         <top>10</top>
-                        <width>190</width>
+                        <width>140</width>
                         <height>310</height>
                         <texture background="true">$VAR[VideoThumbImage]</texture>
                         <aspectratio>keep</aspectratio>
@@ -2972,9 +2972,9 @@
                     </control>
                     <!-- image tv channel -->
                     <control type="image">
-                        <left>0</left>
+                        <left>30</left>
                         <top>16</top>
-                        <width>245</width>
+                        <width>180</width>
                         <height>390</height>
                         <aspectratio>keep</aspectratio>
                         <texture background="true">$VAR[VideoThumbImage]</texture>
@@ -3110,8 +3110,8 @@
                         <top>16</top>
                         <width>245</width>
                         <height>390</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture background="true">$VAR[VideoThumbImage]</texture>
+                        <aspectratio>scale</aspectratio>
+                        <texture background="true">blank.png</texture>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderWidgets</include>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
@@ -3119,9 +3119,21 @@
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
                     <control type="image">
-                        <left>0</left>
+                        <left>30</left>
                         <top>16</top>
-                        <width>245</width>
+                        <width>180</width>
+                        <height>390</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture background="true">$VAR[VideoThumbImage]</texture>
+                        <include>TextureBorderWidgets</include>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                        <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
+                    <control type="image">
+                        <left>30</left>
+                        <top>16</top>
+                        <width>180</width>
                         <height>390</height>
                         <aspectratio>keep</aspectratio>
                         <texture background="true">$VAR[VideoThumbImage]</texture>
@@ -3286,9 +3298,9 @@
                     </control>
                     <!-- image tv channel -->
 					<control type="image">
-                        <left>15</left>
+                        <left>110</left>
                         <top>25</top>
-                        <width>340</width>
+                        <width>140</width>
                         <height>220</height>
                         <aspectratio>keep</aspectratio>
                         <texture background="true">$VAR[EpisodeThumbImage]</texture>
@@ -3495,9 +3507,9 @@
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                         <control type="image">
-                            <left>15</left>
+                            <left>110</left>
                             <top>25</top>
-                            <width>340</width>
+                            <width>140</width>
                             <height>220</height>
                             <aspectratio>keep</aspectratio>
                             <texture background="true">$VAR[EpisodeThumbImage]</texture>
@@ -3987,9 +3999,9 @@
                     </control>
                     <!-- image tv channel -->
                     <control type="image">
-                        <left>20</left>
+                        <left>130</left>
                         <top>30</top>
-                        <width>420</width>
+                        <width>210</width>
                         <height>280</height>
                         <aspectratio>keep</aspectratio>
                         <texture background="true">$VAR[EpisodeThumbImage]</texture>
@@ -4193,12 +4205,24 @@
                     <!-- image tv channel -->
                     <control type="image">
                         <left>20</left>
-                        <top>30</top>
+                        <top>15</top>
                         <width>420</width>
+                        <height>380</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture background="true">blank.png</texture>
+                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
+                        <include>TextureBorderWidgets</include>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                    </control>
+                    <control type="image">
+                        <left>130</left>
+                        <top>30</top>
+                        <width>210</width>
                         <height>280</height>
                         <aspectratio>keep</aspectratio>
                         <texture background="true">$VAR[EpisodeThumbImage]</texture>
-                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderWidgets</include>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
