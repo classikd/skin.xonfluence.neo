@@ -2377,6 +2377,10 @@ msgctxt "#31788"
 msgid "Hide progress bars"
 msgstr ""
 
+msgctxt "#31789"
+msgid "TV channels"
+msgstr ""
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr ""

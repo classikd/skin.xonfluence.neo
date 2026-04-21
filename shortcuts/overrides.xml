@@ -166,7 +166,7 @@
 			<!-- PVR - TV -->
 			<node label="$LOCALIZE[31579]" icon="DefaultAddonPVRClient.png">
 				<shortcut widget="LastPlayedChannels" label="$LOCALIZE[31580]" icon="DefaultAddonPVRClient.png" widgetType="tv" widgetTarget="pvr" condition="Pvr.HasTVChannels">pvr://channels/tv/*?view=lastplayed</shortcut>
-				<shortcut widget="AllChannels" label="$LOCALIZE[19217]" icon="DefaultAddonPVRClient.png" widgetType="tv" widgetTarget="pvr" condition="Pvr.HasTVChannels">pvr://channels/tv/*</shortcut>
+				<shortcut widget="AllChannels" label="$LOCALIZE[31789]" icon="DefaultAddonPVRClient.png" widgetType="tv" widgetTarget="pvr" condition="Pvr.HasTVChannels">pvr://channels/tv/*</shortcut>
                 <shortcut widget="TVChannelGroups" label="$LOCALIZE[19173]" icon="DefaultAddonPVRClient.png" widgetType="tv" widgetTarget="tvguide" condition="Pvr.HasTVChannels">pvr://channels/tv/</shortcut>
 				<shortcut widget="ActiveRecordings" label="$LOCALIZE[31581]" icon="DefaultAddonPVRClient.png" widgetType="tv" widgetTarget="pvr" condition="Pvr.HasTVChannels">pvr://recordings/tv/active?view=flat</shortcut>
 				<shortcut widget="GroupedActiveRecordings" label="$LOCALIZE[31582]" icon="DefaultAddonPVRClient.png" widgetType="tv" widgetTarget="pvr" condition="Pvr.HasTVChannels">pvr://recordings/tv/active?view=grouped</shortcut>

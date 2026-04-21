@@ -1241,6 +1241,7 @@
         <onload condition="Skin.String(HomeItem.1.Widget,UPnPMovies)">Skin.SetString(HomeItem.1.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.1.Widget,RecentMovies)">Skin.SetString(HomeItem.1.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.1.Widget,RandomMovies)">Skin.SetString(HomeItem.1.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.1.Widget,AllChannels)">Skin.SetString(HomeItem.1.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.1.Widget,SuggestedMovies)">Skin.SetString(HomeItem.1.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.1.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.1.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.1.Widget,None)">Skin.SetString(HomeItem.1.WidgetFormat,-)</onload>
@@ -1263,6 +1264,7 @@
         <onload condition="Skin.String(HomeItem.2.Widget,UPnPMovies)">Skin.SetString(HomeItem.2.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.2.Widget,RecentMovies)">Skin.SetString(HomeItem.2.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.2.Widget,RandomMovies)">Skin.SetString(HomeItem.2.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.2.Widget,AllChannels)">Skin.SetString(HomeItem.2.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.2.Widget,SuggestedMovies)">Skin.SetString(HomeItem.2.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.2.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.2.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.2.Widget,None)">Skin.SetString(HomeItem.2.WidgetFormat,-)</onload>
@@ -1285,6 +1287,7 @@
         <onload condition="Skin.String(HomeItem.3.Widget,UPnPMovies)">Skin.SetString(HomeItem.3.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.3.Widget,RecentMovies)">Skin.SetString(HomeItem.3.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.3.Widget,RandomMovies)">Skin.SetString(HomeItem.3.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.3.Widget,AllChannels)">Skin.SetString(HomeItem.3.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.3.Widget,SuggestedMovies)">Skin.SetString(HomeItem.3.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.3.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.3.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.3.Widget,None)">Skin.SetString(HomeItem.3.WidgetFormat,-)</onload>
@@ -1307,6 +1310,7 @@
         <onload condition="Skin.String(HomeItem.4.Widget,UPnPMovies)">Skin.SetString(HomeItem.4.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.4.Widget,RecentMovies)">Skin.SetString(HomeItem.4.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.4.Widget,RandomMovies)">Skin.SetString(HomeItem.4.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.4.Widget,AllChannels)">Skin.SetString(HomeItem.4.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.4.Widget,SuggestedMovies)">Skin.SetString(HomeItem.4.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.4.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.4.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.4.Widget,None)">Skin.SetString(HomeItem.4.WidgetFormat,-)</onload>
@@ -1329,6 +1333,7 @@
         <onload condition="Skin.String(HomeItem.5.Widget,UPnPMovies)">Skin.SetString(HomeItem.5.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.5.Widget,RecentMovies)">Skin.SetString(HomeItem.5.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.5.Widget,RandomMovies)">Skin.SetString(HomeItem.5.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.5.Widget,AllChannels)">Skin.SetString(HomeItem.5.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.5.Widget,SuggestedMovies)">Skin.SetString(HomeItem.5.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.5.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.5.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.5.Widget,None)">Skin.SetString(HomeItem.5.WidgetFormat,-)</onload>
@@ -1351,6 +1356,7 @@
         <onload condition="Skin.String(HomeItem.6.Widget,UPnPMovies)">Skin.SetString(HomeItem.6.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.6.Widget,RecentMovies)">Skin.SetString(HomeItem.6.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.6.Widget,RandomMovies)">Skin.SetString(HomeItem.6.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.6.Widget,AllChannels)">Skin.SetString(HomeItem.6.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.6.Widget,SuggestedMovies)">Skin.SetString(HomeItem.6.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.6.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.6.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.6.Widget,None)">Skin.SetString(HomeItem.6.WidgetFormat,-)</onload>
@@ -1373,6 +1379,7 @@
         <onload condition="Skin.String(HomeItem.7.Widget,UPnPMovies)">Skin.SetString(HomeItem.7.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.7.Widget,RecentMovies)">Skin.SetString(HomeItem.7.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.7.Widget,RandomMovies)">Skin.SetString(HomeItem.7.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.7.Widget,AllChannels)">Skin.SetString(HomeItem.7.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.7.Widget,SuggestedMovies)">Skin.SetString(HomeItem.7.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.7.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.7.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.7.Widget,None)">Skin.SetString(HomeItem.7.WidgetFormat,-)</onload>
@@ -1395,6 +1402,7 @@
         <onload condition="Skin.String(HomeItem.8.Widget,UPnPMovies)">Skin.SetString(HomeItem.8.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.8.Widget,RecentMovies)">Skin.SetString(HomeItem.8.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.8.Widget,RandomMovies)">Skin.SetString(HomeItem.8.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.8.Widget,AllChannels)">Skin.SetString(HomeItem.8.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.8.Widget,SuggestedMovies)">Skin.SetString(HomeItem.8.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.8.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.8.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.8.Widget,None)">Skin.SetString(HomeItem.8.WidgetFormat,-)</onload>
@@ -1417,6 +1425,7 @@
         <onload condition="Skin.String(HomeItem.9.Widget,UPnPMovies)">Skin.SetString(HomeItem.9.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.9.Widget,RecentMovies)">Skin.SetString(HomeItem.9.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.9.Widget,RandomMovies)">Skin.SetString(HomeItem.9.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.9.Widget,AllChannels)">Skin.SetString(HomeItem.9.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.9.Widget,SuggestedMovies)">Skin.SetString(HomeItem.9.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.9.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.9.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.9.Widget,None)">Skin.SetString(HomeItem.9.WidgetFormat,-)</onload>
@@ -1439,6 +1448,7 @@
         <onload condition="Skin.String(HomeItem.10.Widget,UPnPMovies)">Skin.SetString(HomeItem.10.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.10.Widget,RecentMovies)">Skin.SetString(HomeItem.10.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.10.Widget,RandomMovies)">Skin.SetString(HomeItem.10.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.10.Widget,AllChannels)">Skin.SetString(HomeItem.10.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.10.Widget,SuggestedMovies)">Skin.SetString(HomeItem.10.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.10.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.10.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.10.Widget,None)">Skin.SetString(HomeItem.10.WidgetFormat,-)</onload>
@@ -1461,6 +1471,7 @@
         <onload condition="Skin.String(HomeItem.11.Widget,UPnPMovies)">Skin.SetString(HomeItem.11.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.11.Widget,RecentMovies)">Skin.SetString(HomeItem.11.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.11.Widget,RandomMovies)">Skin.SetString(HomeItem.11.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.11.Widget,AllChannels)">Skin.SetString(HomeItem.11.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.11.Widget,SuggestedMovies)">Skin.SetString(HomeItem.11.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.11.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.11.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.11.Widget,None)">Skin.SetString(HomeItem.11.WidgetFormat,-)</onload>
@@ -1483,6 +1494,7 @@
         <onload condition="Skin.String(HomeItem.12.Widget,UPnPMovies)">Skin.SetString(HomeItem.12.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.12.Widget,RecentMovies)">Skin.SetString(HomeItem.12.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.12.Widget,RandomMovies)">Skin.SetString(HomeItem.12.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.12.Widget,AllChannels)">Skin.SetString(HomeItem.12.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.12.Widget,SuggestedMovies)">Skin.SetString(HomeItem.12.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.12.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.12.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.12.Widget,None)">Skin.SetString(HomeItem.12.WidgetFormat,-)</onload>
@@ -1505,6 +1517,7 @@
         <onload condition="Skin.String(HomeItem.13.Widget,UPnPMovies)">Skin.SetString(HomeItem.13.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.13.Widget,RecentMovies)">Skin.SetString(HomeItem.13.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.13.Widget,RandomMovies)">Skin.SetString(HomeItem.13.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.13.Widget,AllChannels)">Skin.SetString(HomeItem.13.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.13.Widget,SuggestedMovies)">Skin.SetString(HomeItem.13.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.13.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.13.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.13.Widget,None)">Skin.SetString(HomeItem.13.WidgetFormat,-)</onload>
@@ -1527,6 +1540,7 @@
         <onload condition="Skin.String(HomeItem.14.Widget,UPnPMovies)">Skin.SetString(HomeItem.14.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.14.Widget,RecentMovies)">Skin.SetString(HomeItem.14.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.14.Widget,RandomMovies)">Skin.SetString(HomeItem.14.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.14.Widget,AllChannels)">Skin.SetString(HomeItem.14.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.14.Widget,SuggestedMovies)">Skin.SetString(HomeItem.14.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.14.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.14.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.14.Widget,None)">Skin.SetString(HomeItem.14.WidgetFormat,-)</onload>
@@ -1549,6 +1563,7 @@
         <onload condition="Skin.String(HomeItem.15.Widget,UPnPMovies)">Skin.SetString(HomeItem.15.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.15.Widget,RecentMovies)">Skin.SetString(HomeItem.15.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.15.Widget,RandomMovies)">Skin.SetString(HomeItem.15.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.15.Widget,AllChannels)">Skin.SetString(HomeItem.15.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.15.Widget,SuggestedMovies)">Skin.SetString(HomeItem.15.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.15.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.15.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.15.Widget,None)">Skin.SetString(HomeItem.15.WidgetFormat,-)</onload>
