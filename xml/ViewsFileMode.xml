@@ -607,13 +607,13 @@
                     <!--
                     <control type="label">
                         <left>50</left>
-                        <top>300</top>
+                        <top>0</top>
                         <width>800</width>
                         <height>40</height>
                         <font>font13</font>
                         <textcolor>FFFFFFFF</textcolor>
-                        <label>$VAR[FavoritesIconTexture]</label>
-                    </control>-->
+                        <label>$INFO[ListItem.Icon]</label>
+                    </control> -->
 
                     <control type="image">
                         <left>1</left>
@@ -2443,7 +2443,19 @@
                         <texture background="true" fallback="DefaultGenre.png" colordiffuse="$VAR[MainColorOne]">$VAR[MovieGenreIcon]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>Container.Content(genres)</visible>
+                        <visible>!Control.HasFocus(51)</visible>
                     </control>
+                    <control type="image">
+                        <left>15</left>
+                        <top>6</top>
+                        <width>60</width>
+                        <height>48</height>
+                        <texture background="true" fallback="DefaultGenre.png" colordiffuse="$VAR[DiffuseIfNoPosterThumbAlt]">$VAR[MovieGenreIcon]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Container.Content(genres)</visible>
+                        <visible>Control.HasFocus(51)</visible>
+                    </control>
+
                     <control type="image">
                         <left>15</left>
                         <top>6</top>
@@ -2453,6 +2465,7 @@
                         <aspectratio>keep</aspectratio>
                         <visible>Container.Content(studios)</visible>
                     </control>
+
                     <control type="image">
                         <left>15</left>
                         <top>6</top>
@@ -2462,7 +2475,20 @@
                         <aspectratio>keep</aspectratio>
                         <visible>String.IsEqual(ListItem.Label,..) | !Container.Content(Episodes) | !Skin.HasSetting(HideEpisodeThumb)</visible>
                         <visible>!Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>!Control.HasFocus(51)</visible>
                     </control>
+                    <control type="image">
+                        <left>15</left>
+                        <top>6</top>
+                        <width>60</width>
+                        <height>48</height>
+                        <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumbAlt]">$VAR[PosterThumb]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>String.IsEqual(ListItem.Label,..) | !Container.Content(Episodes) | !Skin.HasSetting(HideEpisodeThumb)</visible>
+                        <visible>!Container.Content(genres) + !Container.Content(studios)</visible>
+                        <visible>Control.HasFocus(51)</visible>
+                    </control>
+
                     <control type="image">
                         <left>15</left>
                         <top>6</top>
