@@ -500,6 +500,7 @@
                         <visible>Window.IsActive(music)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                         <visible>ListItem.IsParentFolder</visible>
+                        <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
                     </control>
                     <control type="image">
                         <left>1</left>
@@ -512,6 +513,7 @@
                         <visible>Window.IsActive(music)</visible>
                         <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                         <visible>!ListItem.IsParentFolder</visible>
+                        <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
                     </control>
                     <control type="image">
                         <left>1</left>
@@ -524,6 +526,7 @@
                         <visible>Window.IsActive(music)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                         <visible>!ListItem.IsParentFolder</visible>
+                        <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
                     </control>
 
                     <!-- No image://video but extension in label (=> regular video) -->
@@ -756,6 +759,7 @@
                         <visible>Window.IsActive(music)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                         <visible>ListItem.IsParentFolder</visible>
+                        <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
                     </control>
                     <control type="image">
                         <left>1</left>
@@ -769,6 +773,7 @@
                         <visible>Window.IsActive(music)</visible>
                         <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                         <visible>!ListItem.IsParentFolder</visible>
+                        <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
                     </control>
                     <control type="image">
                         <left>1</left>
@@ -782,6 +787,7 @@
                         <visible>Window.IsActive(music)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                         <visible>!ListItem.IsParentFolder</visible>
+                        <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
                     </control>
 
                     <!-- No image://video but extension in label (=> regular video) -->
