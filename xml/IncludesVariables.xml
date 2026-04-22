@@ -707,13 +707,13 @@
         <value>[B]$INFO[Player.Title][/B]  ($INFO[Player.Time])</value>
     </variable>
     <variable name="CommonMediaPlayingTitle">
-        <value condition="String.IsEqual(VideoPlayer.Title,player.swf playpath=105Test1 live=true)">[B]$LOCALIZE[31490][/B]</value>
-        <value condition="String.IsEqual(VideoPlayer.Title,player.swf playpath=rmc1 live=true)">[B]$LOCALIZE[31221][/B]</value>
-        <value condition="Player.IsInternetStream + String.Contains(VideoPlayer.Title,Virgin 1,Left)">[B]$LOCALIZE[31222][/B]</value>
-        <value condition="VideoPlayer.HasEpg + VideoPlayer.Content(LiveTV)">[B]$INFO[VideoPlayer.ChannelName] - $INFO[Player.Title][/B]</value>
-        <value condition="Player.HasAudio + !Player.HasVideo + !String.IsEmpty(MusicPlayer.Artist)">[B]$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title][/B]</value>
-        <value condition="Player.HasAudio + !Player.HasVideo +  String.IsEmpty(MusicPlayer.Artist)">[B]$INFO[MusicPlayer.Title][/B]</value>
-        <value>[B]$INFO[Player.Title][/B]</value>
+        <value condition="String.IsEqual(VideoPlayer.Title,player.swf playpath=105Test1 live=true)">$LOCALIZE[31490]</value>
+        <value condition="String.IsEqual(VideoPlayer.Title,player.swf playpath=rmc1 live=true)">$LOCALIZE[31221]</value>
+        <value condition="Player.IsInternetStream + String.Contains(VideoPlayer.Title,Virgin 1,Left)">$LOCALIZE[31222]</value>
+        <value condition="VideoPlayer.HasEpg + VideoPlayer.Content(LiveTV)">$INFO[VideoPlayer.ChannelName] - $INFO[Player.Title]</value>
+        <value condition="Player.HasAudio + !Player.HasVideo + !String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title]</value>
+        <value condition="Player.HasAudio + !Player.HasVideo +  String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Title]</value>
+        <value>$INFO[Player.Title]</value>
     </variable>
     <variable name="CommonMediaPlayingTime">
         <value condition="String.IsEqual(VideoPlayer.Title,player.swf playpath=105Test1 live=true)">$LOCALIZE[31212]</value>

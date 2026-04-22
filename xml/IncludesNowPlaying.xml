@@ -25,11 +25,13 @@
                 <top>415</top>
                 <width>106</width>
                 <height>106</height>
-                <aspectratio aligny="bottom">keep</aspectratio>
+                <aspectratio aligny="bottom">scale</aspectratio>
                 <texture fallback="DefaultAlbumCover.png">$INFO[Player.Art(thumb)]</texture>
                 <bordertexture border="8" colordiffuse="33FFFFFF">ThumbBorder.png</bordertexture>
                 <bordersize>5</bordersize>
             </control>
+
+            <!-- with album title -->
             <control type="label">
                 <description>Album Label</description>
                 <left>200</left>
@@ -39,36 +41,91 @@
                 <label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
                 <align>left</align>
                 <aligny>center</aligny>
-                <font>font12</font>
+                <font>font11</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
+                <visible>!String.IsEmpty(MusicPlayer.Album)</visible>
             </control>
             <control type="label">
                 <description>Title label</description>
                 <left>200</left>
-                <top>442</top>
+                <top>443</top>
                 <height>45</height>
                 <width>1500</width>
-                <label>$INFO[Player.Title]</label>
+                <label>$INFO[MusicPlayer.Title]</label>
                 <align>left</align>
                 <aligny>center</aligny>
                 <font>font13_title</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
+                <visible>!String.IsEmpty(MusicPlayer.Album)</visible>
+            </control>
+            <control type="image">
+                <description>Player Icon</description>
+                <left>200</left>
+                <top>484</top>
+                <width>28</width>
+                <height>28</height>
+                <aspectratio>keep</aspectratio>
+                <texture colordiffuse="white">equaliser.gif</texture>
+                <visible>!String.IsEmpty(MusicPlayer.Album)</visible>
             </control>
             <control type="label">
                 <description>Time Label</description>
-                <left>200</left>
-                <top>475</top>
+                <left>237</left>
+                <top>477</top>
                 <height>45</height>
                 <width>450</width>
-                <label>$INFO[Player.Time][COLOR=$VAR[MainColorOne]] / [/COLOR]$INFO[Player.Duration]</label>
+                <label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font11</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>!String.IsEmpty(MusicPlayer.Album)</visible>
+            </control>
+
+            
+            <!-- without album title -->
+            <control type="label">
+                <description>Title label</description>
+                <left>200</left>
+                <top>432</top>
+                <height>45</height>
+                <width>1500</width>
+                <label>$INFO[MusicPlayer.Title]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>String.IsEmpty(MusicPlayer.Album)</visible>
+            </control>
+            <control type="image">
+                <description>Player Icon</description>
+                <left>200</left>
+                <top>468</top>
+                <width>32</width>
+                <height>32</height>
+                <aspectratio>keep</aspectratio>
+                <texture colordiffuse="white">equaliser.gif</texture>
+                <visible>String.IsEmpty(MusicPlayer.Album)</visible>
+            </control>
+            <control type="label">
+                <description>Time Label</description>
+                <left>240</left>
+                <top>465</top>
+                <height>45</height>
+                <width>450</width>
+                <label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
                 <align>left</align>
                 <aligny>center</aligny>
                 <font>font12</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
+                <visible>String.IsEmpty(MusicPlayer.Album)</visible>
             </control>
+
         </control>
 	</include>
 	
@@ -244,7 +301,7 @@
                 <visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(LiveTV)</visible>
                 <control type="image">
                     <description>Cover image</description>
-                    <left>30</left>
+                    <left>60</left>
                     <top>415</top>
                     <width>146</width>
                     <height>106</height>
@@ -255,7 +312,7 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <left>200</left>
+                    <left>230</left>
                     <top>428</top>
                     <height>45</height>
                     <width>1500</width>
@@ -266,9 +323,19 @@
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
+                
+                <control type="image">
+                    <description>Player Icon</description>
+                    <left>230</left>
+                    <top>470</top>
+                    <width>32</width>
+                    <height>32</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="white">equaliser.gif</texture>
+                </control>
                 <control type="label">
                     <description>Time Label</description>
-                    <left>200</left>
+                    <left>270</left>
                     <top>465</top>
                     <height>45</height>
                     <width>450</width>
@@ -282,7 +349,7 @@
                 </control>
                 <control type="label">
                     <description>Time Label</description>
-                    <left>200</left>
+                    <left>270</left>
                     <top>465</top>
                     <height>45</height>
                     <width>450</width>
@@ -300,31 +367,30 @@
                 <visible>VideoPlayer.Content(LiveTV)</visible>
                 <control type="image">
                     <description>Cover image</description>
-                    <left>30</left>
-                    <top>415</top>
+                    <left>60</left>
+                    <top>410</top>
                     <width>146</width>
-                    <height>106</height>
+                    <height>116</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
 					<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
-                    <bordertexture border="8" colordiffuse="33FFFFFF">ThumbBorder.png</bordertexture>
                     <bordersize>5</bordersize>
                 </control>
                 <control type="label">
                     <description>Channel label</description>
-                    <left>200</left>
+                    <left>230</left>
                     <top>415</top>
                     <height>38</height>
                     <width>990</width>
                     <label>$INFO[VideoPlayer.ChannelName]</label>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <font>font12</font>
+                    <font>font11</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <left>200</left>
+                    <left>230</left>
                     <top>442</top>
                     <height>45</height>
                     <width>1500</width>
@@ -335,16 +401,25 @@
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
+                <control type="image">
+                    <description>Player Icon</description>
+                    <left>230</left>
+                    <top>484</top>
+                    <width>28</width>
+                    <height>28</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="white">equaliser.gif</texture>
+                </control>
                 <control type="label">
                     <description>Time Label</description>
-                    <left>200</left>
-                    <top>475</top>
+                    <left>267</left>
+                    <top>477</top>
                     <height>45</height>
                     <width>450</width>
                     <label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=white] / [/COLOR]]</label>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <font>font12</font>
+                    <font>font11</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
@@ -354,7 +429,7 @@
                 <visible>VideoPlayer.Content(Movies)</visible>
                 <control type="image">
                     <description>Cover image</description>
-                    <left>30</left>
+                    <left>60</left>
                     <top>415</top>
                     <width>146</width>
                     <height>106</height>
@@ -365,40 +440,49 @@
                 </control>
                 <control type="label">
                     <description>Studio label</description>
-                    <left>200</left>
+                    <left>230</left>
                     <top>415</top>
                     <height>38</height>
                     <width>1500</width>
                     <label>$INFO[VideoPlayer.Studio]</label>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <font>font12</font>
+                    <font>font11</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <left>200</left>
-                    <top>442</top>
+                    <left>230</left>
+                    <top>443</top>
                     <height>45</height>
                     <width>1500</width>
-                    <label>$INFO[Player.Title]$INFO[VideoPlayer.Year,[COLOR=grey] (,)[/COLOR]]</label>
+                    <label>$INFO[Player.Title]$INFO[VideoPlayer.Year, (,)]</label>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>font13_title</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
+                <control type="image">
+                    <description>Player Icon</description>
+                    <left>230</left>
+                    <top>484</top>
+                    <width>28</width>
+                    <height>28</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="white">equaliser.gif</texture>
+                </control>
                 <control type="label">
                     <description>Time Label</description>
-                    <left>200</left>
-                    <top>475</top>
+                    <left>267</left>
+                    <top>477</top>
                     <height>45</height>
                     <width>450</width>
                     <label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=white] / [/COLOR]]</label>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <font>font12</font>
+                    <font>font11</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
@@ -408,7 +492,7 @@
                 <visible>VideoPlayer.Content(Episodes)</visible>
                 <control type="image">
                     <description>Cover image</description>
-                    <left>30</left>
+                    <left>60</left>
                     <top>415</top>
                     <width>146</width>
                     <height>106</height>
@@ -419,21 +503,21 @@
                 </control>
                 <control type="label">
                     <description>TV Show Season Ep Label</description>
-                    <left>200</left>
+                    <left>230</left>
                     <top>415</top>
                     <height>38</height>
                     <width>1500</width>
                     <label>$INFO[VideoPlayer.TVShowTitle] ($INFO[VideoPlayer.Season,$LOCALIZE[20373] , - ]$INFO[VideoPlayer.episode,$LOCALIZE[20359] ,])</label>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <font>font12</font>
+                    <font>font11</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <left>200</left>
-                    <top>445</top>
+                    <left>230</left>
+                    <top>442</top>
                     <height>45</height>
                     <width>1500</width>
                     <label>$INFO[Player.Title]</label>
@@ -443,16 +527,25 @@
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
+                <control type="image">
+                    <description>Player Icon</description>
+                    <left>230</left>
+                    <top>484</top>
+                    <width>28</width>
+                    <height>28</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="white">equaliser.gif</texture>
+                </control>
                 <control type="label">
                     <description>Time Label</description>
-                    <left>200</left>
-                    <top>475</top>
+                    <left>267</left>
+                    <top>477</top>
                     <height>45</height>
                     <width>450</width>
                     <label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=white] / [/COLOR]]</label>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <font>font12</font>
+                    <font>font11</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>

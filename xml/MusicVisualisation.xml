@@ -160,7 +160,7 @@
                         <font>font30</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <label>$INFO[Player.Title]</label>
+                        <label>$INFO[MusicPlayer.Title]</label>
                         <textcolor>$VAR[MainColorOne]</textcolor>
                         <scroll>true</scroll>
                     </control>
@@ -257,21 +257,9 @@
                         <font>font30</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <label>$INFO[MusicPlayer.Artist] - $INFO[Player.Title]</label>
+                        <label>$VAR[CommonMediaPlayingTitle]</label>
                         <textcolor>$VAR[MainColorOne]</textcolor>
                         <scroll>true</scroll>
-                        <visible>!String.IsEmpty(MusicPlayer.Artist)</visible>
-                    </control>
-                    <control type="label">
-                        <width min="15" max="1036">auto</width>
-                        <height>30</height>
-                        <font>font30</font>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[Player.Title]</label>
-                        <textcolor>$VAR[MainColorOne]</textcolor>
-                        <scroll>true</scroll>
-                        <visible>String.IsEmpty(MusicPlayer.Artist)</visible>
                     </control>
 
                     <control type="image">

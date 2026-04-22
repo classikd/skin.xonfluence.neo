@@ -1664,7 +1664,7 @@
             <top>64</top>
             <height>45</height>
             <width>488</width>
-            <label>$INFO[Player.Title]</label>
+            <label>$INFO[MusicPlayer.Title]</label>
             <align>left</align>
             <aligny>center</aligny>
             <font>font13_title</font>
@@ -1887,29 +1887,13 @@
             <top>15</top>
             <height>45</height>
             <width>260</width>
-            <label>$INFO[MusicPlayer.Artist] - $INFO[Player.Title]</label>
+            <label>$VAR[CommonMediaPlayingTitle]</label>
             <align>left</align>
             <aligny>center</aligny>
             <font>font12_title</font>
             <textcolor>black</textcolor>
             <scrollout>false</scrollout>
             <pauseatend>2000</pauseatend>
-            <visible>!String.IsEmpty(MusicPlayer.Artist)</visible>
-        </control>
-        <control type="fadelabel">
-            <description>Title label</description>
-            <left>100</left>
-            <top>15</top>
-            <height>45</height>
-            <width>260</width>
-            <label>$INFO[Player.Title]</label>
-            <align>left</align>
-            <aligny>center</aligny>
-            <font>font12_title</font>
-            <textcolor>black</textcolor>
-            <scrollout>false</scrollout>
-            <pauseatend>2000</pauseatend>
-            <visible>String.IsEmpty(MusicPlayer.Artist)</visible>
         </control>
 
         <control type="image">
@@ -2022,6 +2006,12 @@
                 <texture border="0,2,0,2" colordiffuse="30000000">white90.png</texture>
             </control>
 
+            <!-- Music Info mini -->
+            <control type="group">
+                <visible>Player.HasAudio</visible>
+                <include>MiniMusicInfo</include>
+            </control>
+            <!-- Video Info mini -->
             <control type="group">
                 <visible>Player.HasVideo</visible>
                 <include>MiniVideoInfo</include>

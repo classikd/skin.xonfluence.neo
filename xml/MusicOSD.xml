@@ -92,16 +92,6 @@
             <animation effect="slide" end="-218,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HideMusicArtWorkOSD) | [Skin.String(MusicOSDInfo,never) +  !Skin.HasSetting(HidePopUpSeekBar)]" reversible="true">Conditional</animation>
             <visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVRChannelGuide) | Window.IsVisible(PVRRadioRDSInfo) | Window.IsVisible(Addon) | Window.IsVisible(1105)]</visible>
             <visible>!Skin.HasSetting(SimpleModOSDMusic)</visible>
-            <control type="radiobutton" id="300">
-                <label>210</label>
-                <font></font>
-                <include content="OSDButton">
-                    <param name="Size" value="73" />
-                    <param name="Texture" value="OSDChannelUp" />
-                </include>
-                <onclick>PlayerControl(Previous)</onclick>
-                <visible>MusicPlayer.Content(LiveTV)</visible>
-            </control>
             <control type="radiobutton" id="301">
                 <label>209</label>
                 <font></font>
@@ -109,7 +99,17 @@
                     <param name="Size" value="73" />
                     <param name="Texture" value="OSDChannelDown" />
                 </include>
-                <onclick>PlayerControl(Next)</onclick>
+                <onclick>ChannelDown</onclick>
+                <visible>MusicPlayer.Content(LiveTV)</visible>
+            </control>
+            <control type="radiobutton" id="300">
+                <label>210</label>
+                <font></font>
+                <include content="OSDButton">
+                    <param name="Size" value="73" />
+                    <param name="Texture" value="OSDChannelUp" />
+                </include>
+                <onclick>ChannelUp</onclick>
                 <visible>MusicPlayer.Content(LiveTV)</visible>
             </control>
             <control type="radiobutton" id="303">
@@ -416,6 +416,16 @@
                 <onclick>FullScreen</onclick>
                 <onclick>ActivateWindow(2333)</onclick>
             </control>
+            <control type="radiobutton" id="301">
+                <label>209</label>
+                <font></font>
+                <include content="OSDButtonLarge">
+                    <param name="Size" value="162" />
+                    <param name="Texture" value="OSDChannelDown" />
+                </include>
+                <onclick>ChannelDown</onclick>
+                <visible>MusicPlayer.Content(LiveTV)</visible>
+            </control>
             <control type="radiobutton" id="600">
                 <label>210</label>
                 <font></font>
@@ -461,6 +471,16 @@
                 <animation effect="fade" start="100" end="50" time="75" condition="!Player.SeekEnabled">Conditional</animation>
                 <onclick>PlayerControl(Forward)</onclick>
                 <enable>Player.SeekEnabled</enable>
+            </control>
+            <control type="radiobutton" id="300">
+                <label>210</label>
+                <font></font>
+                <include content="OSDButtonLarge">
+                    <param name="Size" value="162" />
+                    <param name="Texture" value="OSDChannelUp" />
+                </include>
+                <onclick>ChannelUp</onclick>
+                <visible>MusicPlayer.Content(LiveTV)</visible>
             </control>
             <control type="radiobutton" id="605">
                 <label>209</label>
@@ -659,31 +679,11 @@
                 <visible>!MusicPlayer.Content(LiveTV)</visible>
                 <onclick>PlayerControl(Random)</onclick>
             </control>
-            <control type="radiobutton" id="300">
-                <label>210</label>
-                <font></font>
-                <include content="OSDButtonLarge">
-                    <param name="Size" value="73" />
-                    <param name="Texture" value="OSDChannelUp" />
-                </include>
-                <onclick>PlayerControl(Previous)</onclick>
-                <visible>MusicPlayer.Content(LiveTV)</visible>
-            </control>
-            <control type="radiobutton" id="301">
-                <label>209</label>
-                <font></font>
-                <include content="OSDButtonLarge">
-                    <param name="Size" value="73" />
-                    <param name="Texture" value="OSDChannelDown" />
-                </include>
-                <onclick>PlayerControl(Next)</onclick>
-                <visible>MusicPlayer.Content(LiveTV)</visible>
-            </control>
             <control type="radiobutton" id="306">
                 <label>19019</label>
                 <font></font>
                 <include content="OSDButtonLarge">
-                    <param name="Size" value="162" />
+                    <param name="Size" value="73" />
                     <param name="Texture" value="OSDChannelList" />
                 </include>
                 <onclick>ActivateWindow(PVROSDChannels)</onclick>
@@ -693,7 +693,7 @@
                 <label>$LOCALIZE[19029]$INFO[MusicPlayer.ChannelName, - ]</label>
                 <font></font>
                 <include content="OSDButtonLarge">
-                    <param name="Size" value="162" />
+                    <param name="Size" value="73" />
                     <param name="Texture" value="OSDepg" />
                 </include>
                 <onclick>ActivateWindow(PVRChannelGuide)</onclick>
@@ -704,7 +704,7 @@
                 <label>209</label>
                 <font></font>
                 <include content="OSDButtonLarge">
-                    <param name="Size" value="162" />
+                    <param name="Size" value="73" />
                     <param name="Texture" value="OSDRadioRDS" />
                 </include>
                 <onclick>ActivateWindow(PVRRadioRDSInfo)</onclick>
