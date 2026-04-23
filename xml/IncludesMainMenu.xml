@@ -1973,8 +1973,8 @@
         <control type="group" id="21">
             <depth>DepthFooter</depth>
             <include>Window_OpenClose_Animation</include>
-            <left>15</left>
-            <top>90r</top>
+            <left>65</left>
+            <top>100r</top>
             <itemgap>0</itemgap>
 
             <!-- POWER -->
