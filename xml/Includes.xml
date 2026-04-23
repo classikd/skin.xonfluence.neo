@@ -3130,8 +3130,8 @@
 		    <animation effect="fade" start="100" end="0" time="200" condition="SkinHasSetting(NotificationsTopLeft) + [Window.IsVisible(notification) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogExtendedProgressBar.xml)]">Conditional</animation>
 		    <control type="image" id="1">
                 <description>LOGO</description>
-                <left>15</left>
-                <top>8</top>
+                <left>55</left>
+                <top>22</top>
                 <width>180</width>
                 <height>74</height>
                 <aspectratio aligny="top" align="left">keep</aspectratio>
@@ -3144,23 +3144,23 @@
                 <visible>!String.IsEqual(System.ProfileName,Master user)</visible>
                 <control type="image" id="1">
                     <visible>String.IsEqual(Skin.String(TopLeftHomeInfo),ProfileAvatar)</visible>
-                    <top>8</top>
-                    <left>30</left>
-                    <width>90</width>
-                    <height>90</height>
+                    <top>25</top>
+                    <left>62</left>
+                    <width>70</width>
+                    <height>70</height>
                     <texture>$INFO[System.ProfileThumb]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="label" id="1">
                     <description>Logged User</description>
-                    <left>30</left>
-                    <top>8</top>
+                    <left>60</left>
+                    <top>25</top>
                     <height>68</height>
                     <width>525</width>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>font28_title</font>
-                    <textcolor>C0FFFFFF</textcolor>
+                    <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <info>System.ProfileName</info>
                     <include>VisibleFadeEffect</include>
@@ -3169,8 +3169,8 @@
                 </control>
             </control>
             <control type="group" id="1">
-                <left>30</left>
-                <top>0</top>
+                <left>60</left>
+                <top>20</top>
                 <visible>!String.IsEmpty(Weather.Plugin) + String.IsEqual(Skin.String(TopLeftHomeInfo),Weather)</visible>
                 <include>Window_OpenClose_Animation</include>
      		    <control type="multiimage" id="1">
