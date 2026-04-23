@@ -69,20 +69,54 @@
 	</include>
 	
     <include name="SkinShortcutsSubMenu">
+        
+        <!-- Submenu bg -->
+        <control type="image">
+            <left>0</left>
+            <right>0</right>
+            <top>158</top>
+            <height>52</height>
+            <texture border="5" colordiffuse="$VAR[MainColorOne]">home-submenu-bg.png</texture>
+            <include>SubMenuAnimation</include>
+            <visible>Integer.IsGreater(Container(9001).NumItems,0)</visible>
+        </control>
+
+        <!-- Submenu side shadows -->
+        <control type="image">
+            <left>-15</left>
+            <top>158</top>
+            <width>207</width>
+            <height>52</height>
+            <texture>SideFade.png</texture>
+            <include>HomeTransparentEffect</include>
+            <visible>Integer.IsGreater(Container(9001).NumItems,0)</visible>
+            <include>SubMenuAnimation</include>
+        </control>
+        <control type="image">
+            <left>192r</left>
+            <top>158</top>
+            <width>207</width>
+            <height>52</height>
+            <texture flipx="true">SideFade.png</texture>
+            <include>HomeTransparentEffect</include>
+            <visible>Integer.IsGreater(Container(9001).NumItems,0)</visible>
+            <include>SubMenuAnimation</include>
+        </control>
+
         <control type="list" id="9001">
             <depth>DepthMenu-</depth>
             <left>92</left>
-			<top>105</top>
+			<top>113</top>
 			<width>1740</width>
             <height>52</height>
             <onup>9000</onup>
 			<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + Control.IsVisible(9002)">9002</ondown>
             <ondown condition="Skin.HasSetting(LowerMainMenuBar) | !Control.IsVisible(9002)">21</ondown>
-            <animation effect="slide" start="0,0" end="0,45" time="0" condition="!String.IsEmpty(Skin.String(MenuLAF))">Conditional</animation>
+            <animation effect="slide" start="0,-30" end="0,45" delay="200" time="150" tween="quadratic" easing="out" condition="Integer.IsGreater(Container(9001).NumItems,0)">Conditional</animation> 
             <viewtype label="535">list</viewtype>
             <scrolltime>200</scrolltime>
             <orientation>Horizontal</orientation>
-            <hitrect x="0" y="0" w="1920" h="66" />
+            <hitrect x="0" y="113" w="1920" h="66" />
 			<include>SubMenuAnimationSkinShortcuts</include>
 			<include content="SubMenuCommonLayout">
 			    <param name="visibility">Control.HasFocus(9001)</param>
@@ -111,34 +145,6 @@
 	<include name="SubMenuPositionImagesSkinShortcuts">
         <param name="Control" default="9000" />
         <definition>
-            <control type="image">
-                <left>40</left>
-                <top>105</top>
-                <width>52</width>
-                <height>52</height>
-                <texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
-                <include>HomeTransparentEffect</include>
-                <visible>Integer.IsGreater(Container($PARAM[Control]).NumItems,0)</visible>
-				<animation effect="slide" start="0,0" end="145,0" time="0" condition="String.IsEqual(Container(9001).NumItems,5)">conditional</animation>
-                <animation effect="slide" start="0,0" end="290,0" time="0" condition="String.IsEqual(Container(9001).NumItems,4)">conditional</animation>
-                <animation effect="slide" start="0,0" end="434,0" time="0" condition="String.IsEqual(Container(9001).NumItems,3)">conditional</animation>
-                <animation effect="slide" start="0,0" end="579,0" time="0" condition="String.IsEqual(Container(9001).NumItems,2)">conditional</animation>
-                <animation effect="slide" start="0,0" end="724,0" time="0" condition="String.IsEqual(Container(9001).NumItems,1)">conditional</animation>
-            </control>
-            <control type="image">
-                <left>1832</left>
-                <top>105</top>
-                <width>52</width>
-                <height>52</height>
-                <texture border="0,0,0,3">HomeSubEnd.png</texture>
-                <include>HomeTransparentEffect</include>
-                <animation effect="slide" start="0,0" end="-145,0" time="0" condition="String.IsEqual(Container(9001).NumItems,5)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-290,0" time="0" condition="String.IsEqual(Container(9001).NumItems,4)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-434,0" time="0" condition="String.IsEqual(Container(9001).NumItems,3)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-579,0" time="0" condition="String.IsEqual(Container(9001).NumItems,2)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-725,0" time="0" condition="String.IsEqual(Container(9001).NumItems,1)">conditional</animation>
-                <visible>Integer.IsGreater(Container($PARAM[Control]).NumItems,0)</visible>
-            </control>
             <control type="image">
                 <left>62</left>
                 <top>113</top>

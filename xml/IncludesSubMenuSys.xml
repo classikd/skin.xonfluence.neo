@@ -38,6 +38,7 @@
                 <include>SubMenuAnimation</include>
             </control>
 
+            <!-- Submenu side shadows -->
             <control type="image">
                 <left>-15</left>
                 <top>0</top>
