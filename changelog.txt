@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 0.7
+- Add TV channels widget
+- Rewrite home shortcuts and widgets with improved alignments
+- Multiple fixes for PVR radios
+- Fix submenu with SkinShortcuts script
+- and more
+
 ## Version 0.6
 - Add a Big thumbnail view
 - Add option to hide progress bars
