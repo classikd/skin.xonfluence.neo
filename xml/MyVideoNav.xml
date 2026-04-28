@@ -210,6 +210,15 @@
                     <selected>Skin.HasSetting(EnableAdditionalArtWork)</selected>
                     <visible>Control.IsVisible(724) | Control.IsVisible(508) | Control.IsVisible(527) | Control.IsVisible(51)</visible>
                 </control>
+                <control type="radiobutton" id="107">
+                    <description>Enable horizontal scrollbar</description>
+                    <textwidth>255</textwidth>
+                    <include>ButtonCommonValues</include>
+                    <label>21383</label>
+                    <onclick>Skin.ToggleSetting(EnableHorizontalScrollbar)</onclick>
+                    <selected>Skin.HasSetting(EnableHorizontalScrollbar)</selected>
+                    <visible>Control.IsVisible(508) | Control.IsVisible(527) | Control.IsVisible(501)</visible>
+                </control>
                 <control type="radiobutton" id="108">
                     <description>Extra Thumbs</description>
                     <textwidth>255</textwidth>
