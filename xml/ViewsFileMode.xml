@@ -24,6 +24,8 @@
                         <height>61</height>
                         <texture border="0,2,0,2">MenuItemNF.png</texture>
                     </control>
+
+                    <!-- label without rating -->
                     <control type="label">
                         <left>15</left>
                         <top>0</top>
@@ -36,6 +38,7 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label] - $INFO[listItem.PictureDatetime]</label>
                         <visible>Window.IsVisible(pictures) + !String.IsEmpty(listItem.PictureDatetime)</visible>
+                        <visible>!Integer.IsGreater(ListItem.Rating,0)</visible>
                     </control>
                     <control type="label">
                         <left>15</left>
@@ -49,7 +52,39 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                         <visible>!Window.IsVisible(pictures) | String.IsEmpty(listItem.PictureDatetime)</visible>
+                        <visible>!Integer.IsGreater(ListItem.Rating,0)</visible>
                     </control>
+                    <!-- with rating -->
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>730</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label] - $INFO[listItem.PictureDatetime]</label>
+                        <visible>Window.IsVisible(pictures) + !String.IsEmpty(listItem.PictureDatetime)</visible>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
+                    </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>730</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>!Window.IsVisible(pictures) | String.IsEmpty(listItem.PictureDatetime)</visible>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
+                    </control>
+
+                    <!-- label2 (e.g. picture filesize) -->
                     <control type="label">
                         <left>405</left>
                         <top>0</top>
@@ -63,21 +98,33 @@
                         <label>$INFO[ListItem.Label2]</label>
                         <visible>!Window.IsVisible(Videos)</visible>
                     </control>
-                    <control type="label">
-                        <left>315</left>
-                        <top>0</top>
-                        <width>600</width>
-                        <height>60</height>
-                        <font>font12</font>
-                        <textcolor>white</textcolor>
-                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label2]</label>
+
+                    <!-- rating -->
+                    <control type="group">
+                        <left>780</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="$VAR[MainColorOne]" />
+                        </include>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
                         <visible>Window.IsVisible(Videos)</visible>
 						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
-                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
+                        <visible>Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
                     </control>
+                    <!-- rating no quality icon -->
+                    <control type="group">
+                        <left>830</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="$VAR[MainColorOne]" />
+                        </include>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
+                        <visible>Window.IsVisible(Videos)</visible>
+						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
+                        <visible>![Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)]]</visible>
+                    </control>
+
+                     <!-- quality -->
                     <control type="image">
                         <left>922</left>
                         <top>12</top>
@@ -87,6 +134,7 @@
                         <aspectratio>keep</aspectratio>
                         <visible>Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
                     </control>
+
                     <control type="image">
                         <left>982</left>
                         <top>11</top>
@@ -159,6 +207,7 @@
                         <visible>Control.HasFocus(50)</visible>
                     </control>
 
+                    <!-- label without rating -->
                     <control type="label">
                         <left>15</left>
                         <top>0</top>
@@ -172,6 +221,7 @@
                         <label>$INFO[ListItem.Label] - $INFO[ListItem.PictureDatetime]</label>
                         <visible>Window.IsVisible(pictures) + !String.IsEmpty(listItem.PictureDatetime)</visible>
                         <visible>!Control.HasFocus(50)</visible>
+                        <visible>!Integer.IsGreater(ListItem.Rating,0)</visible>
                     </control>
                     <control type="label">
                         <left>15</left>
@@ -186,6 +236,7 @@
                         <label>$INFO[ListItem.Label] - $INFO[ListItem.PictureDatetime]</label>
                         <visible>Window.IsVisible(pictures) + !String.IsEmpty(listItem.PictureDatetime)</visible>
                         <visible>Control.HasFocus(50)</visible>
+                        <visible>!Integer.IsGreater(ListItem.Rating,0)</visible>
                     </control>
 
                     <control type="label">
@@ -201,6 +252,7 @@
                         <label>$INFO[ListItem.Label]</label>
                         <visible>!Window.IsVisible(pictures) | String.IsEmpty(listItem.PictureDatetime)</visible>
                         <visible>!Control.HasFocus(50)</visible>
+                        <visible>!Integer.IsGreater(ListItem.Rating,0)</visible>
                     </control>
                     <control type="label">
                         <left>15</left>
@@ -215,8 +267,74 @@
                         <label>$INFO[ListItem.Label]</label>
                         <visible>!Window.IsVisible(pictures) | String.IsEmpty(listItem.PictureDatetime)</visible>
                         <visible>Control.HasFocus(50)</visible>
+                        <visible>!Integer.IsGreater(ListItem.Rating,0)</visible>
                     </control>
 
+                    <!-- with rating -->
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>730</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label] - $INFO[ListItem.PictureDatetime]</label>
+                        <visible>Window.IsVisible(pictures) + !String.IsEmpty(listItem.PictureDatetime)</visible>
+                        <visible>!Control.HasFocus(50)</visible>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
+                    </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>730</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label] - $INFO[ListItem.PictureDatetime]</label>
+                        <visible>Window.IsVisible(pictures) + !String.IsEmpty(listItem.PictureDatetime)</visible>
+                        <visible>Control.HasFocus(50)</visible>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
+                    </control>
+                    <!-- rating no quality icon -->
+
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>730</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>!Window.IsVisible(pictures) | String.IsEmpty(listItem.PictureDatetime)</visible>
+                        <visible>!Control.HasFocus(50)</visible>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
+                    </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>0</top>
+                        <width>730</width>
+                        <height>60</height>
+                        <font>font13</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>!Window.IsVisible(pictures) | String.IsEmpty(listItem.PictureDatetime)</visible>
+                        <visible>Control.HasFocus(50)</visible>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
+                    </control>
+
+                    <!-- label2 -->
                     <control type="label">
                         <left>405</left>
                         <top>0</top>
@@ -246,37 +364,56 @@
                         <visible>Control.HasFocus(50)</visible>
                     </control>
 
-                    <control type="label">
-                        <left>315</left>
-                        <top>0</top>
-                        <width>600</width>
-                        <height>60</height>
-                        <font>font12</font>
-                        <textcolor>white</textcolor>
-                        <selectedcolor>white</selectedcolor>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label2]</label>
+                    <!-- rating -->
+                    <control type="group">
+                        <left>780</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="$VAR[MainColorOne]" />
+                        </include>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
                         <visible>Window.IsVisible(Videos)</visible>
 						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
-                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
                         <visible>!Control.HasFocus(50)</visible>
+                        <visible>Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
                     </control>
-                    <control type="label">
-                        <left>315</left>
-                        <top>0</top>
-                        <width>600</width>
-                        <height>60</height>
-                        <font>font12</font>
-                        <textcolor>black</textcolor>
-                        <selectedcolor>black</selectedcolor>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label2]</label>
+                    <control type="group">
+                        <left>780</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="black" />
+                        </include>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
                         <visible>Window.IsVisible(Videos)</visible>
 						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
-                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
                         <visible>Control.HasFocus(50)</visible>
+                        <visible>Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+                    </control>
+
+                    <!-- rating no quality icon -->
+                    <control type="group">
+                        <left>830</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="$VAR[MainColorOne]" />
+                        </include>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
+                        <visible>Window.IsVisible(Videos)</visible>
+						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
+                        <visible>!Control.HasFocus(50)</visible>
+                        <visible>![Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)]]</visible>
+                    </control>
+                    <control type="group">
+                        <left>830</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="black" />
+                        </include>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
+                        <visible>Window.IsVisible(Videos)</visible>
+						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
+                        <visible>Control.HasFocus(50)</visible>
+                        <visible>![Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)]]</visible>
                     </control>
 
                     <control type="image">

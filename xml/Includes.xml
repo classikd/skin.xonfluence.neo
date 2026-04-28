@@ -4497,7 +4497,7 @@
         <control type="image">
             <width>135</width>
             <height>36</height>
-            <texture colordiffuse="$VAR[MainColorOne]">LeftRating/rating0.png</texture>
+            <texture colordiffuse="$PARAM[Color]">LeftRating/rating0.png</texture>
             <aspectratio>keep</aspectratio>
             <visible>Integer.IsGreaterOrEqual(ListItem.Rating,0)</visible>
             <visible>Integer.IsLess(ListItem.Rating,1)</visible>
@@ -4505,7 +4505,7 @@
         <control type="image">
             <width>135</width>
             <height>36</height>
-            <texture colordiffuse="$VAR[MainColorOne]">LeftRating/rating0.5.png</texture>
+            <texture colordiffuse="$PARAM[Color]">LeftRating/rating0.5.png</texture>
             <aspectratio>keep</aspectratio>
             <visible>Integer.IsGreaterOrEqual(ListItem.Rating,1)</visible>
             <visible>Integer.IsLess(ListItem.Rating,2)</visible>
@@ -4513,7 +4513,7 @@
         <control type="image">
             <width>135</width>
             <height>36</height>
-            <texture colordiffuse="$VAR[MainColorOne]">LeftRating/rating1.png</texture>
+            <texture colordiffuse="$PARAM[Color]">LeftRating/rating1.png</texture>
             <aspectratio>keep</aspectratio>
             <visible>Integer.IsGreaterOrEqual(ListItem.Rating,2)</visible>
             <visible>Integer.IsLess(ListItem.Rating,3)</visible>
@@ -4521,7 +4521,7 @@
         <control type="image">
             <width>135</width>
             <height>36</height>
-            <texture colordiffuse="$VAR[MainColorOne]">LeftRating/rating1.5.png</texture>
+            <texture colordiffuse="$PARAM[Color]">LeftRating/rating1.5.png</texture>
             <aspectratio>keep</aspectratio>
             <visible>Integer.IsGreaterOrEqual(ListItem.Rating,3)</visible>
             <visible>Integer.IsLess(ListItem.Rating,4)</visible>
@@ -4529,7 +4529,7 @@
         <control type="image">
             <width>135</width>
             <height>36</height>
-            <texture colordiffuse="$VAR[MainColorOne]">LeftRating/rating2.png</texture>
+            <texture colordiffuse="$PARAM[Color]">LeftRating/rating2.png</texture>
             <aspectratio>keep</aspectratio>
             <visible>Integer.IsGreaterOrEqual(ListItem.Rating,4)</visible>
             <visible>Integer.IsLess(ListItem.Rating,5)</visible>
@@ -4537,7 +4537,7 @@
         <control type="image">
             <width>135</width>
             <height>36</height>
-            <texture colordiffuse="$VAR[MainColorOne]">LeftRating/rating2.5.png</texture>
+            <texture colordiffuse="$PARAM[Color]">LeftRating/rating2.5.png</texture>
             <aspectratio>keep</aspectratio>
             <visible>Integer.IsGreaterOrEqual(ListItem.Rating,5)</visible>
             <visible>Integer.IsLess(ListItem.Rating,6)</visible>
@@ -4545,7 +4545,7 @@
         <control type="image">
             <width>135</width>
             <height>36</height>
-            <texture colordiffuse="$VAR[MainColorOne]">LeftRating/rating3.png</texture>
+            <texture colordiffuse="$PARAM[Color]">LeftRating/rating3.png</texture>
             <aspectratio>keep</aspectratio>
             <visible>Integer.IsGreaterOrEqual(ListItem.Rating,6)</visible>
             <visible>Integer.IsLess(ListItem.Rating,7)</visible>
@@ -4553,7 +4553,7 @@
         <control type="image">
             <width>135</width>
             <height>36</height>
-            <texture colordiffuse="$VAR[MainColorOne]">LeftRating/rating3.5.png</texture>
+            <texture colordiffuse="$PARAM[Color]">LeftRating/rating3.5.png</texture>
             <aspectratio>keep</aspectratio>
             <visible>Integer.IsGreaterOrEqual(ListItem.Rating,7)</visible>
             <visible>Integer.IsLess(ListItem.Rating,8)</visible>
@@ -4561,7 +4561,7 @@
         <control type="image">
             <width>135</width>
             <height>36</height>
-            <texture colordiffuse="$VAR[MainColorOne]">LeftRating/rating4.png</texture>
+            <texture colordiffuse="$PARAM[Color]">LeftRating/rating4.png</texture>
             <aspectratio>keep</aspectratio>
             <visible>Integer.IsGreaterOrEqual(ListItem.Rating,8)</visible>
             <visible>Integer.IsLess(ListItem.Rating,9)</visible>
@@ -4569,7 +4569,7 @@
         <control type="image">
             <width>135</width>
             <height>36</height>
-            <texture colordiffuse="$VAR[MainColorOne]">LeftRating/rating4.5.png</texture>
+            <texture colordiffuse="$PARAM[Color]">LeftRating/rating4.5.png</texture>
             <aspectratio>keep</aspectratio>
             <visible>Integer.IsGreaterOrEqual(ListItem.Rating,9)</visible>
             <visible>Integer.IsLess(ListItem.Rating,10)</visible>
