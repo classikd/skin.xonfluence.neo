@@ -208,7 +208,7 @@
                     <label>31332</label>
                     <onclick>Skin.ToggleSetting(EnableAdditionalArtWork)</onclick>
                     <selected>Skin.HasSetting(EnableAdditionalArtWork)</selected>
-                    <visible>Control.IsVisible(724) | Control.IsVisible(508) | Control.IsVisible(51)</visible>
+                    <visible>Control.IsVisible(724) | Control.IsVisible(508) | Control.IsVisible(527) | Control.IsVisible(51)</visible>
                 </control>
                 <control type="radiobutton" id="108">
                     <description>Extra Thumbs</description>
