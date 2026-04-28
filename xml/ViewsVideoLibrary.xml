@@ -3,9 +3,9 @@
     <include name="PosterWrapView">
         <control type="grouplist">
             <visible>Control.IsVisible(501)</visible>
-            <left>90</left>
+            <left>0</left>
             <top>120</top>
-            <width>1740</width>
+            <width>1920</width>
             <height>690</height>
             <onup>9000</onup>
             <ondown>803</ondown>
@@ -14,9 +14,9 @@
             <control type="fixedlist" id="501">
                 <visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)</visible>
                 <visible>!Container.Content(LiveTV)</visible>
-                <left>-274</left>
+                <left>-185</left>
                 <top>0</top>
-                <width>2014</width>
+                <width>2214</width>
                 <height>585</height>
                 <onleft>501</onleft>
                 <onright>501</onright>
@@ -30,6 +30,7 @@
                 <orientation>horizontal</orientation>
                 <preloaditems>4</preloaditems>
                 <itemlayout height="465" width="327">
+
                     <control type="image">
                         <left>3</left>
                         <top>60</top>
@@ -37,6 +38,27 @@
                         <height>500</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$VAR[PosterThumbPoster]</texture>
+                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
+                    </control>
+
+                     <!-- back -->
+                    <control type="image">
+                        <left>3</left>
+                        <top>60</top>
+                        <width>321</width>
+                        <height>500</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture background="true">white-darker.png</texture>
+                        <visible>String.IsEqual(ListItem.Label,..)</visible>
+                    </control>
+                    <control type="image">
+                        <left>3</left>
+                        <top>60</top>
+                        <width>321</width>
+                        <height>500</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture background="true">DefaultFolderBack.png</texture>
+                        <visible>String.IsEqual(ListItem.Label,..)</visible>
                     </control>
 
                     <control type="image">
@@ -99,6 +121,7 @@
                     </control> 
                 </itemlayout>
                 <focusedlayout height="465" width="327">
+
                     <control type="image">
                         <depth>DepthContentPopout</depth>
                         <left>3</left>
@@ -109,6 +132,31 @@
                         <texture background="true">$VAR[PosterThumbPoster]</texture>
                         <animation reversible="false" effect="zoom" start="3,60,321,500" end="-42,0,380,585" time="150">focus</animation>
                         <animation reversible="false" effect="zoom" end="3,60,321,500" start="-42,0,380,585" time="150">unfocus</animation>
+                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
+                    </control>
+
+                    <!-- back -->
+                    <control type="image">
+                        <left>3</left>
+                        <top>60</top>
+                        <width>321</width>
+                        <height>500</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture background="true">white-darker.png</texture>
+                        <animation reversible="false" effect="zoom" start="3,60,321,500" end="-42,0,380,585" time="150">focus</animation>
+                        <animation reversible="false" effect="zoom" end="3,60,321,500" start="-42,0,380,585" time="150">unfocus</animation>
+                        <visible>String.IsEqual(ListItem.Label,..)</visible>
+                    </control>
+                    <control type="image">
+                        <left>3</left>
+                        <top>60</top>
+                        <width>321</width>
+                        <height>500</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture background="true">DefaultFolderBack.png</texture>
+                        <animation reversible="false" effect="zoom" start="3,60,321,500" end="-42,0,380,585" time="150">focus</animation>
+                        <animation reversible="false" effect="zoom" end="3,60,321,500" start="-42,0,380,585" time="150">unfocus</animation>
+                        <visible>String.IsEqual(ListItem.Label,..)</visible>
                     </control>
                     
                     <control type="image">
@@ -296,7 +344,7 @@
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="60">
-                <left>210</left>
+                <left>280</left>
                 <top>0</top>
                 <width>1320</width>
                 <height>38</height>
@@ -314,23 +362,6 @@
             </control>
         </control>
         <control type="group">
-            <visible>Control.IsVisible(501)</visible>
-            <control type="image">
-                <left>84</left>
-                <top>180</top>
-                <width>192</width>
-                <height>500</height>
-                <texture>SideFade.png</texture>
-            </control>
-            <control type="image">
-                <left>1641</left>
-                <top>180</top>
-                <width>192</width>
-                <height>500</height>
-                <texture flipx="true">SideFade.png</texture>
-            </control>
-        </control>
-        <control type="group">
             <visible>Control.IsVisible(501) + [Container.Content(Movies) | Container.Content(Sets)]</visible>
             <control type="image">
                 <left>45</left>
@@ -342,13 +373,59 @@
                 <fadetime>FanartCrossfadeTime</fadetime>
                 <visible>!Skin.HasSetting(DisableLogoArt) + !String.IsEmpty(ListItem.Art(clearlogo)) + !Skin.HasSetting(View515Hidelogo)</visible>
             </control>
+
+            <control type="group">
+                <top>870</top>
+                <left>780</left>
+                <control type="fadelabel">
+                    <left>150</left>
+                    <top>2</top>
+                    <width>600</width>
+                    <height>45</height>
+                    <font>font11_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <scroll>true</scroll>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>|    $INFO[ListItem.Year]</label>
+                    <scrollout>false</scrollout>
+                    <pauseatend>2000</pauseatend>
+                </control>
+
+                <control type="fadelabel">
+                    <left>245</left>
+                    <top>2</top>
+                    <width>600</width>
+                    <height>45</height>
+                    <font>font11_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <scroll>true</scroll>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>|    $VAR[DurationInMinutes]</label>
+                    <scrollout>false</scrollout>
+                    <pauseatend>2000</pauseatend>
+                </control>
+
+                <!-- rating -->
+                <control type="group">
+                    <left>0</left>
+                    <top>6</top>
+                    <include content="ItemRating">
+                        <param name="Color" value="$VAR[MainColorOne]" />
+                    </include>
+                    </control>
+            </control>
+
             <control type="label">
-                <left>45</left>
-                <top>750</top>
+                <left>55</left>
+                <top>780</top>
                 <width>1830</width>
                 <height>52</height>
-                <font>font28_title</font>
-                <textcolor>$VAR[MainColorOne]</textcolor>
+                <font>font_MainMenu</font>
+                <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <scroll>true</scroll>
                 <align>center</align>
@@ -356,39 +433,11 @@
                 <label>$INFO[ListItem.Label]</label>
                 <visible>Skin.HasSetting(DisableLogoArt) | String.IsEmpty(ListItem.Art(clearlogo)) | Skin.HasSetting(View515Hidelogo)</visible>
             </control>
-            <control type="label">
-                <left>0</left>
-                <top>810</top>
-                <width>1920</width>
-                <height>52</height>
-                <font>font30</font>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <scroll>true</scroll>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>$INFO[ListItem.Year]</label>
-                <visible>Skin.HasSetting(DisableLogoArt) | String.IsEmpty(ListItem.Art(clearlogo)) | Skin.HasSetting(View515Hidelogo)</visible>
-				<visible>!String.IsEmpty(ListItem.Year)</visible>
-            </control>
-            <control type="label">
-                <left>0</left>
-                <top>870</top>
-                <width>1920</width>
-                <height>30</height>
-                <font>font13</font>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <scroll>true</scroll>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>$INFO[ListItem.Duration,$LOCALIZE[2050] ,]</label>
-				<visible>!String.IsEmpty(ListItem.Duration)</visible>
-            </control>
+
             <control type="grouplist">
                 <description>Media Codec Flagging Images</description>
-                <left>0</left>
-                <top>915</top>
+                <left>100</left>
+                <top>940</top>
                 <width>1920</width>
                 <align>center</align>
                 <itemgap>3</itemgap>
@@ -405,12 +454,12 @@
         <control type="group">
             <visible>Control.IsVisible(501) + Container.Content(Seasons)</visible>
             <control type="label">
-                <left>45</left>
-                <top>750</top>
+                <left>55</left>
+                <top>780</top>
                 <width>1830</width>
                 <height>52</height>
-                <font>font28_title</font>
-                <textcolor>$VAR[MainColorOne]</textcolor>
+                <font>font_MainMenu</font>
+                <textcolor>white</textcolor>
                 <scroll>true</scroll>
                 <align>center</align>
                 <aligny>center</aligny>
@@ -418,31 +467,7 @@
             </control>
             <control type="label">
                 <left>0</left>
-                <top>810</top>
-                <width>1920</width>
-                <height>52</height>
-                <font>font30</font>
-                <textcolor>white</textcolor>
-                <scroll>true</scroll>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>$INFO[ListItem.TVShowTitle]</label>
-            </control>
-            <control type="label">
-                <left>0</left>
-                <top>862</top>
-                <width>1920</width>
-                <height>52</height>
-                <font>font13</font>
-                <textcolor>white</textcolor>
-                <scroll>true</scroll>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>$INFO[ListItem.Episode,, $LOCALIZE[20453]]</label>
-            </control>
-            <control type="label">
-                <left>0</left>
-                <top>908</top>
+                <top>865</top>
                 <width>1920</width>
                 <height>52</height>
                 <font>font12</font>
@@ -450,7 +475,8 @@
                 <scroll>true</scroll>
                 <align>center</align>
                 <aligny>center</aligny>
-                <label>($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])</label>
+                <label>$INFO[ListItem.TVShowTitle]     $VAR[EpisodeLabel] ($INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]])</label>
+                <visible>!String.IsEqual(ListItem.Label,..)</visible>
             </control>
         </control>
         <control type="group">
@@ -465,55 +491,62 @@
                 <fadetime>FanartCrossfadeTime</fadetime>
                 <visible>!Skin.HasSetting(DisableLogoArt) + !String.IsEmpty(ListItem.Art(clearlogo)) + !Skin.HasSetting(View515Hidelogo)</visible>
             </control>
+            <control type="group">
+                <top>870</top>
+                <left>700</left>
+                <control type="fadelabel">
+                    <left>150</left>
+                    <top>2</top>
+                    <width>600</width>
+                    <height>45</height>
+                    <font>font11_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <scroll>true</scroll>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>|    $INFO[ListItem.Year]</label>
+                    <scrollout>false</scrollout>
+                    <pauseatend>2000</pauseatend>
+                </control>
+
+                <control type="fadelabel">
+                    <left>245</left>
+                    <top>2</top>
+                    <width>600</width>
+                    <height>45</height>
+                    <font>font11_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <scroll>true</scroll>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$VAR[EpisodeLabel] ($INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]])</label>
+                    <scrollout>false</scrollout>
+                    <pauseatend>2000</pauseatend>
+                </control>
+
+                <!-- rating -->
+                <control type="group">
+                    <left>0</left>
+                    <top>6</top>
+                    <include content="ItemRating">
+                        <param name="Color" value="$VAR[MainColorOne]" />
+                    </include>
+                    </control>
+            </control>
             <control type="label">
                 <left>45</left>
-                <top>750</top>
+                <top>780</top>
                 <width>1830</width>
                 <height>52</height>
-                <font>font28_title</font>
-                <textcolor>$VAR[MainColorOne]</textcolor>
+                <font>font_MainMenu</font>
+                <textcolor>white</textcolor>
                 <scroll>true</scroll>
                 <align>center</align>
                 <aligny>center</aligny>
                 <label>$INFO[ListItem.Label]</label>
                 <visible>Skin.HasSetting(DisableLogoArt) | String.IsEmpty(ListItem.Art(clearlogo)) | Skin.HasSetting(View515Hidelogo)</visible>
-            </control>
-            <control type="label">
-                <left>0</left>
-                <top>810</top>
-                <width>1920</width>
-                <height>52</height>
-                <font>font30</font>
-                <textcolor>white</textcolor>
-                <scroll>true</scroll>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>$INFO[ListItem.Genre]</label>
-                <visible>Skin.HasSetting(DisableLogoArt) | String.IsEmpty(ListItem.Art(clearlogo)) | Skin.HasSetting(View515Hidelogo)</visible>
-            </control>
-            <control type="label">
-                <left>0</left>
-                <top>862</top>
-                <width>1920</width>
-                <height>52</height>
-                <font>font13</font>
-                <textcolor>white</textcolor>
-                <scroll>true</scroll>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>$INFO[ListItem.Episode,, $LOCALIZE[20453]]</label>
-            </control>
-            <control type="label">
-                <left>0</left>
-                <top>908</top>
-                <width>1920</width>
-                <height>52</height>
-                <font>font12</font>
-                <textcolor>white</textcolor>
-                <scroll>true</scroll>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])</label>
             </control>
         </control>
     </include>
