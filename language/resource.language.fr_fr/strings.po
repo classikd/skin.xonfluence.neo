@@ -2445,6 +2445,10 @@ msgctxt "#31789"
 msgid "TV channels"
 msgstr "Chaines TV"
 
+msgctxt "#31790"
+msgid "Fanart 2"
+msgstr "FanArt 2"
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr "Prévisions sur 36 heures"

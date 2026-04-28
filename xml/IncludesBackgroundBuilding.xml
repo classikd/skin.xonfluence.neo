@@ -392,7 +392,7 @@
                 </control>
             </control>
             <control type="group">
-                <visible>Control.IsVisible(724) | Control.IsVisible(508) | Control.IsVisible(51)</visible>
+                <visible>Control.IsVisible(724) | Control.IsVisible(508) | Control.IsVisible(527) | Control.IsVisible(51)</visible>
                 <visible>!String.IsEmpty(ListItem.Title) + Skin.HasSetting(EnableAdditionalArtWork)</visible>
                 
                 <control type="image">
@@ -637,7 +637,7 @@
 
 
     </include>
-	
+
     <include name="ArtistExtraFanArt">
         <control type="multiimage" id="5043">
             <include>InvisibleButton</include>

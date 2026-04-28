@@ -3854,4 +3854,10 @@
 									     [Container(9000).HasFocus(14) + Skin.String(HomeItem.14.PlaylistType,music)] | 
 									     [Container(9000).HasFocus(15) + Skin.String(HomeItem.15.PlaylistType,music)]</expression>
 	
+    <variable name="EpisodeLabel">
+        <value condition="Integer.IsEqual(ListItem.Episode,1)">|    $INFO[ListItem.Episode] $LOCALIZE[20452] </value>
+        <value condition="Integer.IsGreater(ListItem.Episode,1)">|    $INFO[ListItem.Episode] $LOCALIZE[20453] </value>
+        <value>|    0 $LOCALIZE[20452] </value>
+    </variable>
+
 </includes>
