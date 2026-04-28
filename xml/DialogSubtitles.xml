@@ -31,7 +31,7 @@
                 <width>1725</width>
                 <height>1080</height>
                 <colordiffuse>BBFFFFFF</colordiffuse>
-                <texture border="20,0,0,0" flipx="true">MediaBladeSub.png</texture>
+                <texture border="20,0,0,0" flipx="true">mediabladesub.png</texture>
             </control>
             <control type="button">
                 <description>Close Window button</description>

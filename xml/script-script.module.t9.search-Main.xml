@@ -10,7 +10,7 @@
                 <top>0</top>
                 <width>420</width>
                 <height>1080</height>
-                <texture border="0,0,10,0">MediaBladeSub.png</texture>
+                <texture border="0,0,10,0">mediabladesub.png</texture>
             </control>
             <control type="image">
                 <description>LOGO</description>

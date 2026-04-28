@@ -127,7 +127,7 @@
                 <top>0</top>
                 <width>720</width>
                 <height>1080</height>
-                <texture border="0,0,15,0">MediaBladeSub.png</texture>
+                <texture border="0,0,15,0">mediabladesub.png</texture>
             </control>
             <control type="label">
                 <left>45</left>
@@ -266,7 +266,7 @@
                 <top>0</top>
                 <width>720</width>
                 <height>1080</height>
-                <texture border="15,0,0,0" flipx="true">MediaBladeSub.png</texture>
+                <texture border="15,0,0,0" flipx="true">mediabladesub.png</texture>
             </control>
             <control type="label">
                 <left>45</left>
