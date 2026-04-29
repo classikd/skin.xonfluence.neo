@@ -471,8 +471,8 @@
     </variable>
     <variable name="MediaInfoOverlayVar">
         <value condition="ListItem.IsCollection">flagging/video/Set.png</value>
-        <value condition="!ListItem.IsStereoscopic">$INFO[ListItem.VideoResolution,flagging/lists/,.png]</value>
-        <value>flagging/lists/3D.png</value>
+        <value condition="!ListItem.IsStereoscopic">$INFO[ListItem.VideoResolution,flagging/video/,.png]</value>
+        <value>flagging/video/3D.png</value>
     </variable>
     <variable name="BannerThumb">
         <value condition="!String.IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
