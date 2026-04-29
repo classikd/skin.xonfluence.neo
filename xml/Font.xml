@@ -113,9 +113,19 @@
     <fontset id="Massive" idloc="15110">
         <!-- Normal Fonts -->
         <font>
+            <name>font9</name>
+            <filename>Roboto-Regular.ttf</filename>
+            <size>22</size>
+        </font>
+        <font>
             <name>font10</name>
             <filename>Roboto-Regular.ttf</filename>
             <size>26</size>
+        </font>
+        <font>
+            <name>font11</name>
+            <filename>Roboto-Regular.ttf</filename>
+            <size>30</size>
         </font>
         <font>
             <name>font12</name>
@@ -149,9 +159,19 @@
         </font>
         <!-- Title Fonts -->
         <font>
+            <name>font9_title</name>
+            <filename>Roboto-Bold.ttf</filename>
+            <size>16</size>
+        </font>
+        <font>
             <name>font10_title</name>
             <filename>Roboto-Bold.ttf</filename>
             <size>18</size>
+        </font>
+        <font>
+            <name>font11_title</name>
+            <filename>Roboto-Bold.ttf</filename>
+            <size>22</size>
         </font>
         <font>
             <name>font12_title</name>
@@ -203,9 +223,19 @@
     <fontset id="DefaultNoCaps" idloc="31391">
         <!-- Normal Fonts -->
         <font>
+            <name>font9</name>
+            <filename>Roboto-Regular.ttf</filename>
+            <size>18</size>
+        </font>
+        <font>
             <name>font10</name>
             <filename>Roboto-Regular.ttf</filename>
             <size>21</size>
+        </font>
+        <font>
+            <name>font11</name>
+            <filename>Roboto-Regular.ttf</filename>
+            <size>24</size>
         </font>
         <font>
             <name>font12</name>
@@ -239,9 +269,19 @@
         </font>
         <!-- Title Fonts -->
         <font>
+            <name>font9_title</name>
+            <filename>Roboto-Bold.ttf</filename>
+            <size>16</size>
+        </font>
+        <font>
             <name>font10_title</name>
             <filename>Roboto-Bold.ttf</filename>
             <size>18</size>
+        </font>
+        <font>
+            <name>font11_title</name>
+            <filename>Roboto-Bold.ttf</filename>
+            <size>22</size>
         </font>
         <font>
             <name>font12_title</name>
@@ -293,9 +333,19 @@
     <fontset id="Arial" idloc="31392">
         <!-- Arial Font better for non English -->
         <font>
+            <name>font9</name>
+            <filename>arial.ttf</filename>
+            <size>16</size>
+        </font>
+        <font>
             <name>font10</name>
             <filename>arial.ttf</filename>
             <size>18</size>
+        </font>
+        <font>
+            <name>font11</name>
+            <filename>arial.ttf</filename>
+            <size>20</size>
         </font>
         <font>
             <name>font12</name>
@@ -329,9 +379,21 @@
         </font>
         <!-- Title Fonts -->
         <font>
+            <name>font9_title</name>
+            <filename>arial.ttf</filename>
+            <size>14</size>
+            <style>bold</style>
+        </font>
+        <font>
             <name>font10_title</name>
             <filename>arial.ttf</filename>
             <size>15</size>
+            <style>bold</style>
+        </font>
+        <font>
+            <name>font11_title</name>
+            <filename>arial.ttf</filename>
+            <size>18</size>
             <style>bold</style>
         </font>
         <font>
@@ -392,9 +454,19 @@
     <fontset id="LargeFont" idloc="31393" unicode="true">
         <!-- Normal Fonts -->
         <font>
+            <name>font9</name>
+            <filename>Massive.ttf</filename>
+            <size>16</size>
+        </font>
+        <font>
             <name>font10</name>
             <filename>Massive.ttf</filename>
             <size>18</size>
+        </font>
+        <font>
+            <name>font11</name>
+            <filename>Massive.ttf</filename>
+            <size>22</size>
         </font>
         <font>
             <name>font12</name>
@@ -428,9 +500,19 @@
         </font>
         <!-- Title Fonts -->
         <font>
+            <name>font9_title</name>
+            <filename>Massive.ttf</filename>
+            <size>18</size>
+        </font>
+        <font>
             <name>font10_title</name>
             <filename>Massive.ttf</filename>
             <size>21</size>
+        </font>
+        <font>
+            <name>font11_title</name>
+            <filename>Massive.ttf</filename>
+            <size>24</size>
         </font>
         <font>
             <name>font12_title</name>
@@ -482,9 +564,19 @@
     <fontset id="Ubuntu Normal" idloc="31270">
         <!-- Normal Fonts -->
         <font>
+            <name>font9</name>
+            <filename>Ubuntu-M.ttf</filename>
+            <size>16</size>
+        </font>
+        <font>
             <name>font10</name>
             <filename>Ubuntu-M.ttf</filename>
             <size>18</size>
+        </font>
+        <font>
+            <name>font11</name>
+            <filename>Ubuntu-M.ttf</filename>
+            <size>22</size>
         </font>
         <font>
             <name>font12</name>
@@ -518,9 +610,19 @@
         </font>
         <!-- Title Fonts -->
         <font>
+            <name>font9_title</name>
+            <filename>Ubuntu-M.ttf</filename>
+            <size>18</size>
+        </font>
+        <font>
             <name>font10_title</name>
             <filename>Ubuntu-M.ttf</filename>
             <size>21</size>
+        </font>
+        <font>
+            <name>font11_title</name>
+            <filename>Ubuntu-M.ttf</filename>
+            <size>24</size>
         </font>
         <font>
             <name>font12_title</name>
@@ -572,9 +674,19 @@
     <fontset id="Ubuntu Bold" idloc="31271">
         <!-- Normal Fonts -->
         <font>
+            <name>font9</name>
+            <filename>Ubuntu-B.ttf</filename>
+            <size>16</size>
+        </font>
+        <font>
             <name>font10</name>
             <filename>Ubuntu-B.ttf</filename>
             <size>18</size>
+        </font>
+        <font>
+            <name>font11</name>
+            <filename>Ubuntu-B.ttf</filename>
+            <size>22</size>
         </font>
         <font>
             <name>font12</name>
@@ -608,9 +720,19 @@
         </font>
         <!-- Title Fonts -->
         <font>
+            <name>font9_title</name>
+            <filename>Ubuntu-B.ttf</filename>
+            <size>18</size>
+        </font>
+        <font>
             <name>font10_title</name>
             <filename>Ubuntu-B.ttf</filename>
             <size>21</size>
+        </font>
+        <font>
+            <name>font11_title</name>
+            <filename>Ubuntu-B.ttf</filename>
+            <size>24</size>
         </font>
         <font>
             <name>font12_title</name>
