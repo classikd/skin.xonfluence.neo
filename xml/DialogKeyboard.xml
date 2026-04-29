@@ -16,8 +16,8 @@
             </control>
             <include content="DialogBackgroundCommons">
                 <param name="DialogBackgroundWidth" value="1290" />
-                <param name="DialogBackgroundHeight" value="645" />
-                <param name="DialogHeaderWidth" value="1290" />
+                <param name="DialogBackgroundHeight" value="630" />
+                <param name="DialogHeaderWidth" value="1220" />
                 <param name="DialogHeaderLabel" value="" />
                 <param name="DialogHeaderId" value="311" />
                 <param name="CloseButtonLeft" value="1220" />
@@ -25,7 +25,7 @@
             </include>
             <control type="group">
                 <left>0</left>
-                <top>-135</top>
+                <top>-153</top>
                 <visible>Control.IsVisible(313)</visible>
                 <control type="image">
                     <left>0</left>
@@ -41,14 +41,6 @@
                     <height>48</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="20">KeyboardEditArea.png</texture>
-                </control>
-                <control type="image">
-                    <left>0</left>
-                    <top>80</top>
-                    <width>1290</width>
-                    <height>3</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture>separator.png</texture>
                 </control>
                 <control type="label" id="313">
                     <description>HZCODE label</description>
@@ -72,9 +64,9 @@
                 </control>
             </control>
             <control type="image">
-                <left>75</left>
-                <top>90</top>
-                <width>1140</width>
+                <left>45</left>
+                <top>102</top>
+                <width>1200</width>
                 <height>75</height>
                 <aspectratio>stretch</aspectratio>
                 <texture border="20">KeyboardEditArea.png</texture>
@@ -82,7 +74,7 @@
             <control type="edit" id="312">
                 <description>Edit Text</description>
                 <left>82</left>
-                <top>90</top>
+                <top>102</top>
                 <width>1125</width>
                 <height>75</height>
                 <font>font13</font>
@@ -214,7 +206,7 @@
                         <ondown>303</ondown>
                         <texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
                         <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">KeyboardKey.png</texturefocus>
-                        <radioposy>8</radioposy>
+                        <radioposy>13</radioposy>
                         <radiowidth>50</radiowidth>
                         <radioheight>50</radioheight>
                     </control>
@@ -342,7 +334,7 @@
                         <ondown>307</ondown>
                         <texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
                         <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">KeyboardKey.png</texturefocus>
-                        <radioposy>8</radioposy>
+                        <radioposy>13</radioposy>
                         <radiowidth>50</radiowidth>
                         <radioheight>50</radioheight>
                     </control>
@@ -479,12 +471,12 @@
                         <description>Symbols button</description>
                         <width>150</width>
                         <height>75</height>
-                        <label>@#!*   </label>
+                        <label>@#!*     </label>
                         <onup>303</onup>
                         <ondown>300</ondown>
                         <texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
                         <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">KeyboardKey.png</texturefocus>
-                        <radioposy>8</radioposy>
+                        <radioposy>13</radioposy>
                         <radiowidth>50</radiowidth>
                         <radioheight>50</radioheight>
                         <align>center</align>
