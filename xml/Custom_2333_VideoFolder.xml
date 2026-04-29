@@ -59,10 +59,26 @@
                 <content target="video">$INFO[Player.FolderPath]</content>
                 <onclick>PlayMedia($INFO[Player.FolderPath],isdir,playoffset=$INFO[Container(9000).CurrentItem])</onclick>
                 <onclick condition="Player.HasAudio">ActivateWindow(Visualisation)</onclick>
-                <itemlayout height="60">
+                <itemlayout height="120">
+                    <control type="image">
+                        <left>0</left>
+                        <top>100</top>
+                        <width>620</width>
+                        <height>20</height>
+                        <texture border="0,1,0,1">MenuItemNF-bottom.png</texture>
+                    </control>
+                    <control type="image">
+                        <left>15</left>
+                        <top>15</top>
+                        <width>130</width>
+                        <height>90</height>
+                        <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                        <aspectratio>scale</aspectratio>
+                    </control>
                     <control type="label">
-                        <left>20</left>
-                        <width>600</width>
+                        <left>165</left>
+                        <top>25</top>
+                        <width>450</width>
                         <height>60</height>
                         <font>font13</font>
                         <label>$INFO[ListItem.Label]</label>
@@ -72,19 +88,39 @@
                         <aligny>center</aligny>
                     </control>
                 </itemlayout>
-                <focusedlayout height="60">
+                <focusedlayout height="120">
+
+                    <control type="image">
+                        <left>0</left>
+                        <top>100</top>
+                        <width>620</width>
+                        <height>20</height>
+                        <texture border="0,1,0,1">MenuItemNF-bottom.png</texture>
+                        <visible>!Control.HasFocus(9000)</visible>
+                    </control>
+
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>825</width>
-                        <height>60</height>
+                        <width>830</width>
+                        <height>120</height>
                         <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                         <visible>Control.HasFocus(9000)</visible>
                     </control>
 
+                    <control type="image">
+                        <left>15</left>
+                        <top>15</top>
+                        <width>130</width>
+                        <height>90</height>
+                        <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                        <aspectratio>scale</aspectratio>
+                    </control>
+
                     <control type="label">
-                        <left>20</left>
-                        <width>600</width>
+                        <left>165</left>
+                        <top>25</top>
+                        <width>450</width>
                         <height>60</height>
                         <font>font13</font>
                         <label>$INFO[ListItem.Label]</label>
@@ -95,8 +131,9 @@
                         <visible>!Control.HasFocus(9000)</visible>
                     </control>
                     <control type="label">
-                        <left>20</left>
-                        <width>600</width>
+                        <left>165</left>
+                        <top>25</top>
+                        <width>450</width>
                         <height>60</height>
                         <font>font13</font>
                         <label>$INFO[ListItem.Label]</label>
@@ -110,7 +147,7 @@
             </control>
      
             <control type="scrollbar" id="60">
-                <left>660</left>
+                <left>665</left>
                 <top>105</top>
                 <width>38</width>
                 <height>850</height>
