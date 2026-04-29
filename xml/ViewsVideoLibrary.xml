@@ -130,8 +130,8 @@
                         <height>500</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$VAR[PosterThumbPoster]</texture>
-                        <animation reversible="false" effect="zoom" start="3,60,321,500" end="-42,0,380,585" time="150">focus</animation>
-                        <animation reversible="false" effect="zoom" end="3,60,321,500" start="-42,0,380,585" time="150">unfocus</animation>
+                        <animation reversible="false" effect="zoom" start="3,60,321,500" end="-22,0,380,585" time="150">focus</animation>
+                        <animation reversible="false" effect="zoom" end="3,60,321,500" start="-22,0,380,585" time="150">unfocus</animation>
                         <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     </control>
 
@@ -143,8 +143,8 @@
                         <height>500</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">white-darker.png</texture>
-                        <animation reversible="false" effect="zoom" start="3,60,321,500" end="-42,0,380,585" time="150">focus</animation>
-                        <animation reversible="false" effect="zoom" end="3,60,321,500" start="-42,0,380,585" time="150">unfocus</animation>
+                        <animation reversible="false" effect="zoom" start="3,60,321,500" end="-22,0,380,585" time="150">focus</animation>
+                        <animation reversible="false" effect="zoom" end="3,60,321,500" start="-22,0,380,585" time="150">unfocus</animation>
                         <visible>String.IsEqual(ListItem.Label,..)</visible>
                     </control>
                     <control type="image">
@@ -154,8 +154,8 @@
                         <height>500</height>
                         <aspectratio>keep</aspectratio>
                         <texture background="true">DefaultFolderBack.png</texture>
-                        <animation reversible="false" effect="zoom" start="3,60,321,500" end="-42,0,380,585" time="150">focus</animation>
-                        <animation reversible="false" effect="zoom" end="3,60,321,500" start="-42,0,380,585" time="150">unfocus</animation>
+                        <animation reversible="false" effect="zoom" start="3,60,321,500" end="-22,0,380,585" time="150">focus</animation>
+                        <animation reversible="false" effect="zoom" end="3,60,321,500" start="-22,0,380,585" time="150">unfocus</animation>
                         <visible>String.IsEqual(ListItem.Label,..)</visible>
                     </control>
                     
@@ -194,11 +194,11 @@
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <animation type="focus">
                             <effect type="fade" start="0" end="100" time="150" />
-                            <effect type="slide" start="0,0" end="60,0" time="150" />
+                            <effect type="slide" start="0,0" end="80,0" time="150" />
                         </animation>
                         <animation type="unfocus">
                             <effect type="fade" start="100" end="0" time="150" />
-                            <effect type="slide" end="0,0" start="60,0" time="150" />
+                            <effect type="slide" end="0,0" start="80,0" time="150" />
                         </animation>
                         <visible>!ListItem.IsResumable</visible>
                         <visible>Control.HasFocus(501)</visible>
@@ -213,11 +213,11 @@
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
                         <animation type="focus">
                             <effect type="fade" start="0" end="100" time="150" />
-                            <effect type="slide" start="0,0" end="60,0" time="150" />
+                            <effect type="slide" start="0,0" end="80,0" time="150" />
                         </animation>
                         <animation type="unfocus">
                             <effect type="fade" start="100" end="0" time="150" />
-                            <effect type="slide" end="0,0" start="60,0" time="150" />
+                            <effect type="slide" end="0,0" start="80,0" time="150" />
                         </animation>
                         <visible>!ListItem.IsResumable</visible>
                         <visible>Control.HasFocus(501)</visible>
@@ -260,11 +260,11 @@
                         <visible>Player.Playing</visible>
                         <animation type="focus">
                             <effect type="fade" start="0" end="100" time="150" />
-                            <effect type="slide" start="0,0" end="60,0" time="150" />
+                            <effect type="slide" start="0,0" end="80,0" time="150" />
                         </animation>
                         <animation type="unfocus">
                             <effect type="fade" start="100" end="0" time="150" />
-                            <effect type="slide" end="0,0" start="60,0" time="150" />
+                            <effect type="slide" end="0,0" start="80,0" time="150" />
                         </animation>
                         <visible>Control.HasFocus(501)</visible>
                     </control>
@@ -279,11 +279,11 @@
                         <visible>Player.Playing</visible>
                         <animation type="focus">
                             <effect type="fade" start="0" end="100" time="150" />
-                            <effect type="slide" start="0,0" end="60,0" time="150" />
+                            <effect type="slide" start="0,0" end="80,0" time="150" />
                         </animation>
                         <animation type="unfocus">
                             <effect type="fade" start="100" end="0" time="150" />
-                            <effect type="slide" end="0,0" start="60,0" time="150" />
+                            <effect type="slide" end="0,0" start="80,0" time="150" />
                         </animation>
                         <visible>Control.HasFocus(501)</visible>
                     </control>
@@ -312,11 +312,11 @@
                         <visible>!Player.Playing</visible>
                         <animation type="focus">
                             <effect type="fade" start="0" end="100" time="150" />
-                            <effect type="slide" start="0,0" end="60,0" time="150" />
+                            <effect type="slide" start="0,0" end="80,0" time="150" />
                         </animation>
                         <animation type="unfocus">
                             <effect type="fade" start="100" end="0" time="150" />
-                            <effect type="slide" end="0,0" start="60,0" time="150" />
+                            <effect type="slide" end="0,0" start="80,0" time="150" />
                         </animation>
                         <visible>Control.HasFocus(501)</visible>
                     </control>
@@ -332,11 +332,11 @@
                         <texturebg border="0">white.png</texturebg>
                         <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white.png</midtexture>
                         <animation type="focus">
-                            <effect type="slide" start="0,0" end="-45,25" time="150" />
+                            <effect type="slide" start="0,0" end="-25,25" time="150" />
                             <effect type="zoom" start="100,100" end="118,100" time="150" />
                         </animation>
                         <animation type="unfocus">
-                            <effect type="slide" end="0,0" start="-45,25" time="150" />
+                            <effect type="slide" end="0,0" start="-25,25" time="150" />
                             <effect type="zoom" end="100,100" start="118,100"  time="150" />
                         </animation>
                     </control> 
