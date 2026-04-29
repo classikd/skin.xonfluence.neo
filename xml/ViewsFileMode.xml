@@ -108,7 +108,7 @@
                         </include>
                         <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
                         <visible>Window.IsVisible(Videos)</visible>
-						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
+						<visible>![Skin.HasSetting(HideRatingsViews)]</visible>
                         <visible>Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
                     </control>
                     <!-- rating no quality icon -->
@@ -120,7 +120,7 @@
                         </include>
                         <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
                         <visible>Window.IsVisible(Videos)</visible>
-						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
+						<visible>![Skin.HasSetting(HideRatingsViews)]</visible>
                         <visible>![Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)]]</visible>
                     </control>
 
@@ -373,7 +373,7 @@
                         </include>
                         <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
                         <visible>Window.IsVisible(Videos)</visible>
-						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
+						<visible>![Skin.HasSetting(HideRatingsViews)]</visible>
                         <visible>!Control.HasFocus(50)</visible>
                         <visible>Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
                     </control>
@@ -385,7 +385,7 @@
                         </include>
                         <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
                         <visible>Window.IsVisible(Videos)</visible>
-						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
+						<visible>![Skin.HasSetting(HideRatingsViews)]</visible>
                         <visible>Control.HasFocus(50)</visible>
                         <visible>Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
                     </control>
@@ -399,7 +399,7 @@
                         </include>
                         <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
                         <visible>Window.IsVisible(Videos)</visible>
-						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
+						<visible>![Skin.HasSetting(HideRatingsViews)]</visible>
                         <visible>!Control.HasFocus(50)</visible>
                         <visible>![Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)]]</visible>
                     </control>
@@ -411,7 +411,7 @@
                         </include>
                         <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
                         <visible>Window.IsVisible(Videos)</visible>
-						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
+						<visible>![Skin.HasSetting(HideRatingsViews)]</visible>
                         <visible>Control.HasFocus(50)</visible>
                         <visible>![Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)]]</visible>
                     </control>
