@@ -558,26 +558,18 @@
             <top>525</top>
             <visible>Control.IsVisible(508) + [Skin.String(MediaPopupControl,Hidden) | Container.Content(Sets)]</visible>
             <include>VisibleFadeEffect</include>
-            <control type="image">
-                <left>0</left>
-                <top>0</top>
-                <width>1920</width>
-                <height>405</height>
-                <texture border="1">HomeNowPlayingBack.png</texture>
-            </control>
             <control type="label">
-                <left>60</left>
+                <left>115</left>
                 <top>105</top>
                 <width>1800</width>
                 <height>30</height>
-                <font>font24_title</font>
-                <textcolor>$VAR[MainColorOne]</textcolor>
+                <font>font_MainMenu</font>
+                <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <scroll>true</scroll>
-                <align>center</align>
+                <align>left</align>
                 <aligny>center</aligny>
                 <label>$INFO[ListItem.Label]</label>
-                <animation effect="slide" start="0,0" end="0,38" time="150" condition="!Control.HasFocus(508)">conditional</animation>
             </control>
         </control>
     </include>
