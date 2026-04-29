@@ -424,7 +424,7 @@
                 <top>780</top>
                 <width>1830</width>
                 <height>52</height>
-                <font>font_MainMenu</font>
+                <font>font40_title</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <scroll>true</scroll>
@@ -458,7 +458,7 @@
                 <top>780</top>
                 <width>1830</width>
                 <height>52</height>
-                <font>font_MainMenu</font>
+                <font>font40_title</font>
                 <textcolor>white</textcolor>
                 <scroll>true</scroll>
                 <align>center</align>
@@ -540,7 +540,7 @@
                 <top>780</top>
                 <width>1830</width>
                 <height>52</height>
-                <font>font_MainMenu</font>
+                <font>font40_title</font>
                 <textcolor>white</textcolor>
                 <scroll>true</scroll>
                 <align>center</align>
@@ -563,7 +563,7 @@
                 <top>105</top>
                 <width>1800</width>
                 <height>30</height>
-                <font>font_MainMenu</font>
+                <font>font40_title</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <scroll>true</scroll>
@@ -1391,7 +1391,7 @@
                 <top>160</top>
                 <width>700</width>
                 <height>30</height>
-                <font>font_MainMenu</font>
+                <font>font40_title</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <scroll>true</scroll>

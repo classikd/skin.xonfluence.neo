@@ -94,6 +94,16 @@
             <size>52</size>
         </font>
         <font>
+            <name>font40_title</name>
+            <filename>Roboto-Bold.ttf</filename>
+            <size>60</size>
+        </font>
+        <font>
+            <name>font45_title</name>
+            <filename>Roboto-Bold.ttf</filename>
+            <size>70</size>
+        </font>
+        <font>
             <name>font_MainMenu</name>
             <filename>Roboto-Bold.ttf</filename>
             <size>60</size>
@@ -204,6 +214,16 @@
             <size>52</size>
         </font>
         <font>
+            <name>font40_title</name>
+            <filename>Roboto-Bold.ttf</filename>
+            <size>60</size>
+        </font>
+        <font>
+            <name>font45_title</name>
+            <filename>Roboto-Bold.ttf</filename>
+            <size>70</size>
+        </font>
+        <font>
             <name>font_MainMenu</name>
             <filename>Roboto-Bold.ttf</filename>
             <size>60</size>
@@ -312,6 +332,16 @@
             <name>font35_title</name>
             <filename>Roboto-Bold.ttf</filename>
             <size>52</size>
+        </font>
+        <font>
+            <name>font40_title</name>
+            <filename>Roboto-Bold.ttf</filename>
+            <size>60</size>
+        </font>
+        <font>
+            <name>font45_title</name>
+            <filename>Roboto-Bold.ttf</filename>
+            <size>70</size>
         </font>
         <font>
             <name>font_MainMenu</name>
@@ -433,6 +463,18 @@
             <style>bold</style>
         </font>
         <font>
+            <name>font40_title</name>
+            <filename>arial.ttf</filename>
+            <size>60</size>
+            <style>bold</style>
+        </font>
+        <font>
+            <name>font45_title</name>
+            <filename>arial.ttf</filename>
+            <size>70</size>
+            <style>bold</style>
+        </font>
+        <font>
             <name>font_MainMenu</name>
             <filename>arial.ttf</filename>
             <size>52</size>
@@ -543,6 +585,16 @@
             <name>font35_title</name>
             <filename>Massive.ttf</filename>
             <size>57</size>
+        </font>        
+        <font>
+            <name>font40_title</name>
+            <filename>Massive.ttf</filename>
+            <size>66</size>
+        </font>
+        <font>
+            <name>font45_title</name>
+            <filename>Massive.ttf</filename>
+            <size>75</size>
         </font>
         <font>
             <name>font_MainMenu</name>
@@ -653,6 +705,16 @@
             <name>font35_title</name>
             <filename>Ubuntu-M.ttf</filename>
             <size>57</size>
+        </font>        
+        <font>
+            <name>font40_title</name>
+            <filename>Ubuntu-M.ttf</filename>
+            <size>66</size>
+        </font>
+        <font>
+            <name>font45_title</name>
+            <filename>Ubuntu-M.ttf</filename>
+            <size>75</size>
         </font>
         <font>
             <name>font_MainMenu</name>
@@ -763,6 +825,16 @@
             <name>font35_title</name>
             <filename>Ubuntu-B.ttf</filename>
             <size>57</size>
+        </font>        
+        <font>
+            <name>font40_title</name>
+            <filename>Ubuntu-B.ttf</filename>
+            <size>66</size>
+        </font>
+        <font>
+            <name>font45_title</name>
+            <filename>Ubuntu-B.ttf</filename>
+            <size>75</size>
         </font>
         <font>
             <name>font_MainMenu</name>
