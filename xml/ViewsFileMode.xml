@@ -2469,7 +2469,7 @@
                     <control type="label">
                         <left>90</left>
                         <top>0</top>
-                        <width>1500</width>
+                        <width>1650</width>
                         <height>60</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
@@ -2479,21 +2479,34 @@
                         <label>$INFO[ListItem.Label2]</label>
                         <visible>!Window.IsVisible(Videos)</visible>
                     </control>
-                    <control type="label">
-                        <left>98</left>
-                        <top>0</top>
-                        <width>1545</width>
-                        <height>60</height>
-                        <font>font12</font>
-                        <textcolor>white</textcolor>
-                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label2]</label>
+
+
+                    <!-- rating -->
+                    <control type="group">
+                        <left>1510</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="$VAR[MainColorOne]" />
+                        </include>
                         <visible>Window.IsVisible(Videos)</visible>
-						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
-                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
+                        <visible>![Skin.HasSetting(HideRatingsViews) | !String.Contains(ListItem.Rating,.)]</visible>			
+                        <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
+                        <visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)</visible>
                     </control>
+                    <!-- rating without quality icon -->
+                    <control type="group">
+                        <left>1560</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="$VAR[MainColorOne]" />
+                        </include>
+                        <visible>Window.IsVisible(Videos)</visible>
+                        <visible>![Skin.HasSetting(HideRatingsViews) | !String.Contains(ListItem.Rating,.)]</visible>			
+                        <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
+                        <visible>![String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)]</visible>
+                    </control>
+
+
                     <control type="image">
                         <left>1658</left>
                         <top>12</top>
@@ -2697,7 +2710,7 @@
                     <control type="label">
                         <left>90</left>
                         <top>0</top>
-                        <width>1500</width>
+                        <width>1650</width>
                         <height>60</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
@@ -2711,7 +2724,7 @@
                     <control type="label">
                         <left>90</left>
                         <top>0</top>
-                        <width>1500</width>
+                        <width>1650</width>
                         <height>60</height>
                         <font>font12</font>
                         <textcolor>black</textcolor>
@@ -2723,37 +2736,56 @@
                         <visible>Control.HasFocus(51)</visible>
                     </control>
 
-                    <control type="label">
-                        <left>98</left>
-                        <top>0</top>
-                        <width>1545</width>
-                        <height>60</height>
-                        <font>font12</font>
-                        <textcolor>white</textcolor>
-                        <selectedcolor>white</selectedcolor>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label2]</label>
+                    <!-- rating -->
+                    <control type="group">
+                        <left>1510</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="$VAR[MainColorOne]" />
+                        </include>
                         <visible>Window.IsVisible(Videos)</visible>
-						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
-                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
+                        <visible>![Skin.HasSetting(HideRatingsViews) | !String.Contains(ListItem.Rating,.)]</visible>			
+                        <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
                         <visible>!Control.HasFocus(51)</visible>
+                        <visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)</visible>
                     </control>
-                    <control type="label">
-                        <left>98</left>
-                        <top>0</top>
-                        <width>1545</width>
-                        <height>60</height>
-                        <font>font12</font>
-                        <textcolor>black</textcolor>
-                        <selectedcolor>black</selectedcolor>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label2]</label>
+                    <control type="group">
+                        <left>1510</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="black" />
+                        </include>
                         <visible>Window.IsVisible(Videos)</visible>
-						<visible>![Skin.HasSetting(HideRatingsViews) + String.IsEqual(ListItem.Label2,ListItem.Rating)]</visible>
-                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
+                        <visible>![Skin.HasSetting(HideRatingsViews) | !String.Contains(ListItem.Rating,.)]</visible>			
+                        <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
                         <visible>Control.HasFocus(51)</visible>
+                        <visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)</visible>
+                    </control>
+
+                    <!-- rating without quality icon -->
+                    <control type="group">
+                        <left>1560</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="$VAR[MainColorOne]" />
+                        </include>
+                        <visible>Window.IsVisible(Videos)</visible>
+                        <visible>![Skin.HasSetting(HideRatingsViews) | !String.Contains(ListItem.Rating,.)]</visible>			
+                        <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
+                        <visible>!Control.HasFocus(51)</visible>
+                        <visible>![String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)]</visible>
+                    </control>
+                    <control type="group">
+                        <left>1560</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="black" />
+                        </include>
+                        <visible>Window.IsVisible(Videos)</visible>
+                        <visible>![Skin.HasSetting(HideRatingsViews) | !String.Contains(ListItem.Rating,.)]</visible>			
+                        <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
+                        <visible>Control.HasFocus(51)</visible>
+                        <visible>![String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)]</visible>
                     </control>
 
                     <control type="image">

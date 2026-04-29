@@ -1817,57 +1817,41 @@
                     <control type="label">
                         <left>15</left>
                         <top>0</top>
-                        <width>780</width>
+                        <width>580</width>
                         <height>60</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>$VAR[MainColorOne]</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
-				                <!-- BEGIN runtime addition by:rafi    <label>$INFO[ListItem.Label]</label> -->
                         <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
-				                <!-- END runtime addition -->
                     </control>
-                    <control type="label">
-                        <right>330</right>
-                        <top>0</top>
-                        <width>750</width>
-                        <height>60</height>
-                        <font>font12</font>
-                        <textcolor>white</textcolor>
-                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
-                        <align>right</align>
-                        <aligny>center</aligny>
-				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
-                        <label>$INFO[ListItem.Votes,(,)][COLOR yellow]$INFO[ListItem.Rating, , ][/COLOR]</label>
-				                <!-- END runtime addition -->
+                    
+                    <!-- rating -->
+                    <control type="group">
+                        <left>615</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="$VAR[MainColorOne]" />
+                        </include>
                         <visible>Window.IsVisible(Videos)</visible>
-						<!-- BEGIN runtime addition by:rafi  -->
                         <visible>![Skin.HasSetting(HideRatingsViews) | !String.Contains(ListItem.Rating,.)]</visible>			
                         <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
-						<!-- END runtime addition by:rafi  -->
-                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
+                        <visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)</visible>
                     </control>
-                    <control type="label">
-                        <left>15</left>
-                        <top>0</top>
-                        <width>750</width>
-                        <height>60</height>
-                        <font>font12</font>
-                        <textcolor>white</textcolor>
-                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
-                        <align>right</align>
-                        <aligny>center</aligny>
-				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
-                        <label>$INFO[ListItem.DateAdded(dd/mm/yy),, ]$INFO[ListItem.Duration(hh:mm),,]</label>
-				                <!-- END runtime addition -->
+                    <!-- rating without quality icon -->
+                    <control type="group">
+                        <left>665</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="$VAR[MainColorOne]" />
+                        </include>
                         <visible>Window.IsVisible(Videos)</visible>
-						<!-- BEGIN runtime addition by:rafi  -->
-                        <visible>![Skin.HasSetting(HideRatingsViews)]</visible>			
+                        <visible>![Skin.HasSetting(HideRatingsViews) | !String.Contains(ListItem.Rating,.)]</visible>			
                         <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
-						<!-- END runtime addition by:rafi  -->
-                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
+                        <visible>![String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)]</visible>
                     </control>
+
                     <control type="image">
                         <left>772</left>
                         <top>12</top>
@@ -1959,119 +1943,82 @@
                     <control type="label">
                         <left>15</left>
                         <top>0</top>
-                        <width>780</width>
+                        <width>580</width>
                         <height>60</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>white</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <!-- BEGIN runtime addition by:rafi    -->
                         <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
-                        <!-- END runtime addition    -->
                         <visible>!Control.HasFocus(503)</visible>
                     </control>
                     <control type="label">
                         <left>15</left>
                         <top>0</top>
-                        <width>780</width>
+                        <width>580</width>
                         <height>60</height>
                         <font>font13</font>
                         <textcolor>black</textcolor>
                         <selectedcolor>black</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <!-- BEGIN runtime addition by:rafi    -->
                         <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
-                        <!-- END runtime addition    -->
                         <visible>Control.HasFocus(503)</visible>
                     </control>
 
-                    <control type="label">
-                        <right>330</right>
-                        <top>0</top>
-                        <width>750</width>0
-                        <height>60</height>
-                        <font>font12</font>
-                        <textcolor>white</textcolor>
-                        <selectedcolor>white</selectedcolor>
-                        <align>right</align>
-                        <aligny>center</aligny>
-				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
-                        <label>$INFO[ListItem.Votes,(,)][COLOR yellow]$INFO[ListItem.Rating, , ][/COLOR]</label>
-				                <!-- END runtime addition -->
+                    <!-- rating -->
+                    <control type="group">
+                        <left>615</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="$VAR[MainColorOne]" />
+                        </include>
                         <visible>Window.IsVisible(Videos)</visible>
-						<!-- BEGIN runtime addition by:rafi  -->
                         <visible>![Skin.HasSetting(HideRatingsViews) | !String.Contains(ListItem.Rating,.)]</visible>			
                         <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
-						<!-- END runtime addition by:rafi  -->
-                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
                         <visible>!Control.HasFocus(503)</visible>
+                        <visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)</visible>
                     </control>
-                    <control type="label">
-                        <right>330</right>
-                        <top>0</top>
-                        <width>750</width>0
-                        <height>60</height>
-                        <font>font12</font>
-                        <textcolor>black</textcolor>
-                        <selectedcolor>black</selectedcolor>
-                        <align>right</align>
-                        <aligny>center</aligny>
-				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
-                        <label>$INFO[ListItem.Votes,(,)][COLOR yellow]$INFO[ListItem.Rating, , ][/COLOR]</label>
-				                <!-- END runtime addition -->
+                    <control type="group">
+                        <left>615</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="black" />
+                        </include>
                         <visible>Window.IsVisible(Videos)</visible>
-						<!-- BEGIN runtime addition by:rafi  -->
                         <visible>![Skin.HasSetting(HideRatingsViews) | !String.Contains(ListItem.Rating,.)]</visible>			
                         <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
-						<!-- END runtime addition by:rafi  -->
-                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
                         <visible>Control.HasFocus(503)</visible>
+                        <visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)</visible>
                     </control>
 
-                    <control type="label">
-                        <left>15</left>
-                        <top>0</top>
-                        <width>750</width>
-                        <height>60</height>
-                        <font>font12</font>
-                        <textcolor>white</textcolor>
-                        <selectedcolor>white</selectedcolor>
-                        <align>right</align>
-                        <aligny>center</aligny>
-				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
-                        <label>$INFO[ListItem.DateAdded(dd/mm/yy),, ]$INFO[ListItem.Duration(hh:mm),,]</label>
-				                <!-- END runtime addition -->
+                    <!-- rating without quality icon -->
+                    <control type="group">
+                        <left>665</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="$VAR[MainColorOne]" />
+                        </include>
                         <visible>Window.IsVisible(Videos)</visible>
-						<!-- BEGIN runtime addition by:rafi  -->
-                        <visible>![Skin.HasSetting(HideRatingsViews)]</visible>			
+                        <visible>![Skin.HasSetting(HideRatingsViews) | !String.Contains(ListItem.Rating,.)]</visible>			
                         <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
-						<!-- END runtime addition by:rafi  -->
-                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
                         <visible>!Control.HasFocus(503)</visible>
+                        <visible>![String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)]</visible>
                     </control>
-                    <control type="label">
-                        <left>15</left>
-                        <top>0</top>
-                        <width>750</width>
-                        <height>60</height>
-                        <font>font12</font>
-                        <textcolor>black</textcolor>
-                        <selectedcolor>black</selectedcolor>
-                        <align>right</align>
-                        <aligny>center</aligny>
-				                <!-- BEGIN runtime addition by:rafi ( <label>$INFO[ListItem.Label2]</label>  Media Info 2 )  -->
-                        <label>$INFO[ListItem.DateAdded(dd/mm/yy),, ]$INFO[ListItem.Duration(hh:mm),,]</label>
-				                <!-- END runtime addition -->
+                    <control type="group">
+                        <left>665</left>
+                        <top>13</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="black" />
+                        </include>
                         <visible>Window.IsVisible(Videos)</visible>
-						<!-- BEGIN runtime addition by:rafi  -->
-                        <visible>![Skin.HasSetting(HideRatingsViews)]</visible>			
+                        <visible>![Skin.HasSetting(HideRatingsViews) | !String.Contains(ListItem.Rating,.)]</visible>			
                         <visible> Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Movies) </visible>
-						<!-- END runtime addition by:rafi  -->
-                        <animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
                         <visible>Control.HasFocus(503)</visible>
+                        <visible>![String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,set) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)]</visible>
                     </control>
+
 
                     <control type="image">
                         <left>772</left>
