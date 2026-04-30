@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 0.8
+- Add option to choose Home TopRight info, add more choices to Topleft/Right info
+- Add "Fanart2" view
+- Improve "Poster wrap" view & "Fanart" view
+- Replace text rating by star rating
+- Add sideblade option to show/hide horizontal scrollbar
+- and more
+
 ## Version 0.7
 - Add TV channels widget
 - Rewrite home shortcuts and widgets with improved alignments

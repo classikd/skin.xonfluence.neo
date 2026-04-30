@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.xonfluence.neo"
-  version="0.7"
+  version="0.8"
   name="Xonfluence Neo"
   provider-name="Helly, bsoriano, jdig4240, classikd">
   <requires>
@@ -16,12 +16,10 @@
     <res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
-    <summary lang="fr">eXtended MOD du thème Confluence, créé à l'origine par Jezz_X et CCM par Mudislander.</summary>
-    <description lang="en">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
-    <description lang="fr">Xonfluence est un MOD de Confluence permettant une plus grande personnalisation par l'utilisateur du thème par défaut (basé sur le CCM de Mudislander).</description>
-    <disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="fr">Tu le casses, tu gardes les morceaux.</disclaimer>
+    <summary lang="en">Modern UI skin</summary>
+    <summary lang="fr">Skin avec interface moderne</summary>
+    <description lang="en">Xonfluence Neo is a MOD of Xonfluence with a more modern interface, more options and better use of the main color.</description>
+    <description lang="fr">Xonfluence Neo est un MOD de Xonfluence avec une interface plus moderne, plus d'options et un meilleur usage de la couleur principale.</description>
     <platform>all</platform>
 	  <license>GNU General Public License version 2</license>
 	  <forum>https://forum.kodi.tv/showthread.php?tid=384697</forum>
