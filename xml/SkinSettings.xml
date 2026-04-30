@@ -994,9 +994,35 @@
                                 <onclick condition="String.IsEmpty(Skin.String(TopLeftHomeInfo))">Skin.SetString(TopLeftHomeInfo,Weather)</onclick>
                                 <onclick condition="Skin.String(TopLeftHomeInfo,Weather)">Skin.SetString(TopLeftHomeInfo,ProfileName)</onclick>
                                 <onclick condition="Skin.String(TopLeftHomeInfo,ProfileName)">Skin.SetString(TopLeftHomeInfo,ProfileAvatar)</onclick>
-                                <onclick condition="Skin.String(TopLeftHomeInfo,ProfileAvatar)">Skin.SetString(TopLeftHomeInfo,Blank)</onclick>
+                                <onclick condition="Skin.String(TopLeftHomeInfo,ProfileAvatar)">Skin.SetString(TopLeftHomeInfo,ProfileAvatarName)</onclick>
+                                <onclick condition="Skin.String(TopLeftHomeInfo,ProfileAvatarName)">Skin.SetString(TopLeftHomeInfo,ClockDate)</onclick>
+                                <onclick condition="Skin.String(TopLeftHomeInfo,ClockDate)">Skin.SetString(TopLeftHomeInfo,Clock)</onclick>
+                                <onclick condition="Skin.String(TopLeftHomeInfo,Clock)">Skin.SetString(TopLeftHomeInfo,Date)</onclick>
+                                <onclick condition="Skin.String(TopLeftHomeInfo,Date)">Skin.SetString(TopLeftHomeInfo,Blank)</onclick>
                                 <onclick condition="Skin.String(TopLeftHomeInfo,Blank)">Skin.SetString(TopLeftHomeInfo,Logo)</onclick>
                                 <onclick condition="Skin.String(TopLeftHomeInfo,Logo)">Skin.SetString(TopLeftHomeInfo,Weather)</onclick>
+                                <include>MenuButton</include>
+                            </control>
+                            <control type="button" id="147">
+                                <description>Top Right Home Info</description>
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$LOCALIZE[31791]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[TopRightInfoType]</label2>
+                                <onclick condition="String.IsEmpty(Skin.String(TopRightHomeInfo))">Skin.SetString(TopRightHomeInfo,Weather)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,Weather)">Skin.SetString(TopRightHomeInfo,ProfileName)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,ProfileName)">Skin.SetString(TopRightHomeInfo,ProfileAvatar)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,ProfileAvatar)">Skin.SetString(TopRightHomeInfo,ProfileAvatarName)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,ProfileAvatarName)">Skin.SetString(TopRightHomeInfo,ClockDate)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,ClockDate)">Skin.SetString(TopRightHomeInfo,Clock)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,Clock)">Skin.SetString(TopRightHomeInfo,Date)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,Date)">Skin.SetString(TopRightHomeInfo,Blank)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,Blank)">Skin.SetString(TopRightHomeInfo,Logo)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,Logo)">Skin.SetString(TopRightHomeInfo,Weather)</onclick>
                                 <include>MenuButton</include>
                             </control>
                             <control type="radiobutton" id="148">

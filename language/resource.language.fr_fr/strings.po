@@ -2449,6 +2449,14 @@ msgctxt "#31790"
 msgid "Fanart 2"
 msgstr "FanArt 2"
 
+msgctxt "#31791"
+msgid "Top right info area"
+msgstr "Zone d’info en haut à droite"
+
+msgctxt "#31792"
+msgid "Clock"
+msgstr "Horloge"
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr "Prévisions sur 36 heures"

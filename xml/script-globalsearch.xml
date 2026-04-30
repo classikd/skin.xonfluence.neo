@@ -90,7 +90,7 @@
                     <label>> [COLOR=$VAR[MainColorOne]]$INFO[Window.Property(GlobalSearch.SearchString)][/COLOR]</label>
                 </control>
             </control>
-            <include>Clock</include>
+            <include>TopRightInfo</include>
         </control>
         <control type="group">
             <!-- <visible>!Skin.HasSetting(KioskMode)</visible> -->

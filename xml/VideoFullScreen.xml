@@ -102,7 +102,8 @@
         </control>
         <!-- media infos -->
         <control type="group" id="2">
-            <include>Clock</include>
+            <!-- TODO: need change because !ShowFullScreenClock will also hide weather and nowplaying -->
+            <include>TopRightInfo</include>
             <visible>Skin.HasSetting(ShowFullScreenClock) + !String.IsEqual(Player.Filenameandpath,Skin.String(KodiIntroVideo)) + ![Window.IsVisible(SliderDialog) |Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(videobookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
         </control>
 		<include>OSDStandardSeekBarInfo</include>

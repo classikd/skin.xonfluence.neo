@@ -16,8 +16,8 @@
             <texture flipy="true" border="1">HomeNowPlayingBack.png</texture>
             <visible>!Skin.HasSetting(HideSystemTime)</visible>
         </control>
-        <include condition="!Skin.HasSetting(HideSystemTime)">TopLeftInfo</include>
-        <include condition="!Skin.HasSetting(HideSystemTime)">Clock</include>
+        <include>TopLeftInfo</include>
+        <include>TopRightInfo</include>
         <include condition="!Skin.HasSetting(HideSystemTime)">Date</include>
         <control type="image" id="1">
             <left>0</left>

@@ -35,7 +35,7 @@
                 <visible>Skin.HasSetting(SimpleModOSDMusic)</visible>
             </control>
             <include condition="!Skin.String(MusicOSDInfo,never) + !Skin.HasSetting(SimpleModOSDMusic)">TopLeftInfo</include>
-            <include condition="!Skin.String(MusicOSDInfo,never) + !Skin.HasSetting(SimpleModOSDMusic)">Clock</include>
+            <include condition="!Skin.String(MusicOSDInfo,never) + !Skin.HasSetting(SimpleModOSDMusic)">TopRightInfo</include>
             <include condition="!Skin.String(MusicOSDInfo,never) + !Skin.HasSetting(SimpleModOSDMusic)">Date</include>
             <control type="image">
                 <left>-30</left>

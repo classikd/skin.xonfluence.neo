@@ -107,7 +107,7 @@
                 <description>Empty so we can pass the values up one level</description>
                 <visible>False</visible>
             </control>
-            <include>Clock</include>
+            <include>TopRightInfo</include>
         </control>
     </include>
     <include name="PVRSideBlade">

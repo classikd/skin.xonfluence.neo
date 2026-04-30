@@ -5119,7 +5119,7 @@
                 <icon>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherIconExt]</icon>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Current.FanartCode)]</thumb>
                 <property name="Temperatures">$LOCALIZE[419] : $INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]     $LOCALIZE[418] : $INFO[Window(Weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</property>
-                <visible>!String.IsEqual(Skin.String(TopLeftHomeInfo),Weather)</visible>
+                <visible>![String.IsEqual(Skin.String(TopLeftHomeInfo),Weather) | String.IsEqual(Skin.String(TopRightHomeInfo),Weather)]</visible>
             </item>
             <item>
                 <label>$INFO[Window(Weather).Property(Day1.Title)]</label>
@@ -5152,7 +5152,7 @@
                 <icon>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Day4.FanartCode)]$VAR[WeatherIconExt]</icon>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Day4.FanartCode)]</thumb>
                 <property name="Temperatures">$LOCALIZE[419] : $INFO[Window(Weather).Property(Day4.HighTemp)]$INFO[System.TemperatureUnits]     $LOCALIZE[418] : $INFO[Window(Weather).Property(Day4.LowTemp)]$INFO[System.TemperatureUnits]</property>
-                <visible>String.IsEqual(Skin.String(TopLeftHomeInfo),Weather)</visible>
+                <visible>String.IsEqual(Skin.String(TopLeftHomeInfo),Weather) | String.IsEqual(Skin.String(TopRightHomeInfo),Weather)</visible>
             </item>
         </content>
     </include>

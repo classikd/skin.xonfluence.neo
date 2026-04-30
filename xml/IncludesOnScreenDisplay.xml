@@ -983,7 +983,7 @@
 			<!-- Top info: weather, clock, etc. -->
             <control type="group" id="1">
                 <include>TopLeftInfo</include>
-                <include>Clock</include>
+                <include>TopRightInfo</include>
                 <visible>!Skin.HasSetting(SimpleModOSD)</visible>
             </control>
 			<!-- Plot -->
@@ -1631,7 +1631,7 @@
             </control>
             <control type="group" id="1">
                 <include>TopLeftInfo</include>
-                <include>Clock</include>
+                <include>TopRightInfo</include>
             </control>
             <control type="image" id="1">
                 <left>-30</left>

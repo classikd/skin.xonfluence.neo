@@ -2305,7 +2305,200 @@
     <include name="ClockSeconds">
         <label>$INFO[System.Time(hh:mm:ss xx)]</label>
     </include>
-    <include name="Clock">
+
+    <include name="TopLeftInfo">
+        <control type="group" id="1">
+		    <animation effect="fade" start="100" end="0" time="200" condition="SkinHasSetting(NotificationsTopLeft) + [Window.IsVisible(notification) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogExtendedProgressBar.xml)]">Conditional</animation>
+            <!-- kodi logo (default) -->
+            <control type="image" id="1">
+                <description>LOGO</description>
+                <left>55</left>
+                <top>22</top>
+                <width>180</width>
+                <height>74</height>
+                <aspectratio aligny="top" align="left">keep</aspectratio>
+                <texture>special://skin/extras/resources/kodi-logo.png</texture>
+                <include>VisibleFadeEffect</include>
+                <include>Window_OpenClose_Animation</include>
+                <visible>String.IsEmpty(Skin.String(TopLeftHomeInfo)) | String.IsEqual(Skin.String(TopLeftHomeInfo),Logo)</visible>
+            </control>
+            <control type="group" id="1">
+                <!-- avatar -->
+                <control type="image" id="1">
+                    <visible>String.IsEqual(Skin.String(TopLeftHomeInfo),ProfileAvatar) | String.IsEqual(Skin.String(TopLeftHomeInfo),ProfileAvatarName)</visible>
+                    <top>26</top>
+                    <left>59</left>
+                    <width>76</width>
+                    <height>67</height>
+                    <texture colordiffuse="$VAR[MainColorOne]">circle-small.png</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
+                <control type="image" id="1">
+                    <visible>String.IsEqual(Skin.String(TopLeftHomeInfo),ProfileAvatar) | String.IsEqual(Skin.String(TopLeftHomeInfo),ProfileAvatarName)</visible>
+                    <top>30</top>
+                    <left>68</left>
+                    <width>58</width>
+                    <height>58</height>
+                    <texture diffuse="circle-small.png">$INFO[System.ProfileThumb]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
+                <!-- label -->
+                <control type="label" id="1">
+                    <description>Logged User</description>
+                    <left>62</left>
+                    <top>25</top>
+                    <height>68</height>
+                    <width>525</width>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>font24_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <info>System.ProfileName</info>
+                    <include>VisibleFadeEffect</include>
+                    <include>Window_OpenClose_Animation</include>
+                    <visible>String.IsEqual(Skin.String(TopLeftHomeInfo),ProfileName)</visible>
+                </control>
+                <control type="label" id="1">
+                    <description>Logged User</description>
+                    <left>140</left>
+                    <top>25</top>
+                    <height>68</height>
+                    <width>525</width>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>font24_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <info>System.ProfileName</info>
+                    <include>VisibleFadeEffect</include>
+                    <include>Window_OpenClose_Animation</include>
+                    <visible>String.IsEqual(Skin.String(TopLeftHomeInfo),ProfileAvatarName)</visible>
+                </control>
+                <!-- clock date -->
+                <control type="grouplist">
+                    <left>60</left>
+                    <top>25</top>
+                    <width>1725</width>
+                    <height>45</height>
+                    <orientation>horizontal</orientation>
+                    <align>left</align>
+                    <itemgap>20</itemgap>
+                    <depth>DepthHeader</depth>
+                    <include>BlockClockSmall</include>
+                    <visible>String.IsEqual(Skin.String(TopLeftHomeInfo),ClockDate)</visible>
+                </control>
+                <include condition="String.IsEqual(Skin.String(TopLeftHomeInfo),ClockDate)">DateLeftPosition</include>
+            
+                <!-- clock -->
+                <control type="grouplist">
+                    <left>65</left>
+                    <top>35</top>
+                    <width>1725</width>
+                    <height>45</height>
+                    <orientation>horizontal</orientation>
+                    <align>left</align>
+                    <itemgap>20</itemgap>
+                    <depth>DepthHeader</depth>
+                    <include>BlockClock</include>
+                    <visible>String.IsEqual(Skin.String(TopLeftHomeInfo),Clock)</visible>
+                </control>
+
+                <!-- date -->
+                <control type="label" id="1">
+                    <description>Date label</description>
+                    <left>65</left>
+                    <top>52</top>
+                    <width>650</width>
+                    <height>22</height>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>font13_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <label>$INFO[System.Date]</label>
+                    <include>Window_OpenClose_Animation</include>
+                    <visible>!Skin.HasSetting(HideSystemTime)</visible>
+                    <visible>String.IsEqual(Skin.String(TopLeftHomeInfo),Date)</visible>
+                </control>
+            
+            </control>
+            <!-- weather -->
+            <control type="group" id="1">
+                <left>50</left>
+                <top>20</top>
+                <visible>!String.IsEmpty(Weather.Plugin) + String.IsEqual(Skin.String(TopLeftHomeInfo),Weather)</visible>
+                <include>Window_OpenClose_Animation</include>
+     		    <control type="multiimage" id="1">
+                    <description>Weather image</description>
+                    <left>0</left>
+                    <top>-7</top>
+                    <width>90</width>
+                    <height>90</height>
+				    <aspectratio aligny="center">keep</aspectratio>
+                    <timeperimage>70</timeperimage>
+                    <fadetime>1</fadetime>
+                    <randomize>false</randomize>
+                    <imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherIconExt]</imagepath>
+                </control>
+                <control type="label" id="1">
+                    <description>Location label</description>
+                    <left>85</left>
+                    <top>8</top>
+                    <width>750</width>
+                    <height>22</height>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>font10</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <label>$INFO[Window(Weather).Property(Location)]</label>
+                </control>
+                <control type="grouplist" id="1">
+                    <left>85</left>
+                    <top>30</top>
+                    <width>1500</width>
+                    <height>45</height>
+                    <orientation>horizontal</orientation>
+                    <align>left</align>
+                    <itemgap>0</itemgap>
+                    <control type="label" id="1">
+                        <description>Temp label</description>
+                        <width min="0" max="450">auto</width>
+                        <height>45</height>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font28_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <label>[B]$INFO[Window(Weather).Property(Current.Temperature)][/B]</label>
+                    </control>
+                    <control type="label" id="1">
+                        <description>Temp Units</description>
+                        <width min="0" max="150">auto</width>
+                        <height>33</height>
+                        <font>font10</font>
+                        <aligny>center</aligny>
+                        <label>$INFO[System.TemperatureUnits]</label>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <visible>!String.IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
+                    </control>
+                    <control type="label" id="1">
+                        <description>Conditions Label</description>
+                        <width>750</width>
+                        <height>33</height>
+                        <font>font10</font>
+                        <aligny>center</aligny>
+                        <label>$INFO[Window(Weather).Property(Current.Condition),  ]</label>
+                        <textcolor>grey</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                    </control>
+                </control>
+            </control>
+		</control>	
+    </include>
+    <include name="TopRightInfo">
         
         <control type="grouplist">
             <left>120</left>
@@ -2316,6 +2509,7 @@
             <align>right</align>
             <itemgap>20</itemgap>
 
+            <!-- NowPlaying -->
             <include>CommonNowPlaying</include>
 
             <!-- Weather -->
@@ -2368,36 +2562,250 @@
             </control>
 
             <!-- Clock -->
-            <control type="grouplist" id="1112">
+            <include>BlockClockSmall</include>
+        </control>
 
-                <width min="60" max="265">auto</width>
-                <visible>!Skin.HasSetting(HideSystemTime)</visible>
+    </include>
+    <include name="TopRightInfoHome">
+        
+        <!-- Clock date (default) -->
+        <control type="grouplist">
+            <left>120</left>
+            <top>25</top>
+            <width>1725</width>
+            <height>45</height>
+            <orientation>horizontal</orientation>
+            <align>right</align>
+            <itemgap>20</itemgap>
+            <include condition="String.IsEmpty(Skin.String(TopRightHomeInfo)) | String.IsEqual(Skin.String(TopRightHomeInfo),ClockDate)">BlockClockSmall</include>
+        </control>
+        <include condition="String.IsEmpty(Skin.String(TopRightHomeInfo)) | String.IsEqual(Skin.String(TopRightHomeInfo),ClockDate)">Date</include>
+    
+        <!-- Clock -->
+        <control type="grouplist">
+            <left>120</left>
+            <top>35</top>
+            <width>1725</width>
+            <height>55</height>
+            <orientation>horizontal</orientation>
+            <align>right</align>
+            <itemgap>20</itemgap>
+            <include condition="String.IsEqual(Skin.String(TopRightHomeInfo),Clock)">BlockClock</include>
+        </control>
+
+        <!-- Date -->
+        <control type="label" id="1">
+            <description>Date label</description>
+            <right>75</right>
+            <top>52</top>
+            <width>650</width>
+            <height>22</height>
+            <align>right</align>
+            <aligny>center</aligny>
+            <font>font13_title</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <label>$INFO[System.Date]</label>
+            <include>Window_OpenClose_Animation</include>
+            <visible>!Skin.HasSetting(HideSystemTime)</visible>
+            <visible>String.IsEqual(Skin.String(TopRightHomeInfo),Date)</visible>
+        </control>
+    
+        <!-- kodi logo (default) -->
+        <control type="image" id="1">
+            <description>LOGO</description>
+            <left>1680</left>
+            <top>22</top>
+            <width>180</width>
+            <height>74</height>
+            <aspectratio aligny="top" align="right">keep</aspectratio>
+            <texture>special://skin/extras/resources/kodi-logo.png</texture>
+            <include>VisibleFadeEffect</include>
+            <include>Window_OpenClose_Animation</include>
+            <visible>String.IsEqual(Skin.String(TopRightHomeInfo),Logo)</visible>
+        </control>
+
+        <!-- avatar -->
+        <control type="image" id="1">
+            <visible>String.IsEqual(Skin.String(TopRightHomeInfo),ProfileAvatar) | String.IsEqual(Skin.String(TopRightHomeInfo),ProfileAvatarName)</visible>
+            <top>26</top>
+            <left>1779</left>
+            <width>76</width>
+            <height>67</height>
+            <texture colordiffuse="$VAR[MainColorOne]">circle-small.png</texture>
+            <aspectratio>keep</aspectratio>
+        </control>
+        <control type="image" id="1">
+            <visible>String.IsEqual(Skin.String(TopRightHomeInfo),ProfileAvatar) | String.IsEqual(Skin.String(TopRightHomeInfo),ProfileAvatarName)</visible>
+            <top>30</top>
+            <left>1788</left>
+            <width>58</width>
+            <height>58</height>
+            <texture diffuse="circle-small.png">$INFO[System.ProfileThumb]</texture>
+            <aspectratio>keep</aspectratio>
+        </control>
+        <!-- label -->
+        <control type="label" id="1">
+            <description>Logged User</description>
+            <left>1322</left>
+            <top>25</top>
+            <height>68</height>
+            <width>525</width>
+            <align>right</align>
+            <aligny>center</aligny>
+            <font>font24_title</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <info>System.ProfileName</info>
+            <include>VisibleFadeEffect</include>
+            <include>Window_OpenClose_Animation</include>
+            <visible>String.IsEqual(Skin.String(TopRightHomeInfo),ProfileName)</visible>
+        </control>
+        <control type="label" id="1">
+            <description>Logged User</description>
+            <left>1247</left>
+            <top>25</top>
+            <height>68</height>
+            <width>525</width>
+            <align>right</align>
+            <aligny>center</aligny>
+            <font>font24_title</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <info>System.ProfileName</info>
+            <include>VisibleFadeEffect</include>
+            <include>Window_OpenClose_Animation</include>
+            <visible>String.IsEqual(Skin.String(TopRightHomeInfo),ProfileAvatarName)</visible>
+        </control>
+
+        <!-- weather -->
+        <control type="group" id="1">
+            <left>60</left>
+            <top>20</top>
+            <visible>!String.IsEmpty(Weather.Plugin) + String.IsEqual(Skin.String(TopRightHomeInfo),Weather)</visible>
+            <include>Window_OpenClose_Animation</include>
+            <control type="multiimage" id="1">
+                <description>Weather image</description>
+                <left>1720</left>
+                <top>-7</top>
+                <width>90</width>
+                <height>90</height>
+                <aspectratio aligny="center">keep</aspectratio>
+                <timeperimage>70</timeperimage>
+                <fadetime>1</fadetime>
+                <randomize>false</randomize>
+                <imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherIconExt]</imagepath>
+            </control>
+            <control type="label" id="1">
+                <description>Location label</description>
+                <left>0</left>
+                <top>8</top>
+                <width>1720</width>
+                <height>22</height>
+                <align>right</align>
+                <aligny>center</aligny>
+                <font>font10</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>$INFO[Window(Weather).Property(Location)]</label>
+            </control>
+            <control type="grouplist" id="1">
+                <left>0</left>
+                <top>30</top>
+                <width>1800</width>
+                <height>45</height>
                 <orientation>horizontal</orientation>
-                <control type="image">
-                    <description>time icon</description>
-                    <width>40</width>
-                    <height>40</height>
-                    <texture colordiffuse="$VAR[MainColorOne]">icon_time.png</texture> 
-                </control>
+                <align>left</align>
+                <itemgap>0</itemgap>
                 <control type="label" id="1">
-                    <top>0</top>
-                    <description>time label</description> 
-                    <width min="60" max="450">auto</width>
+                    <description>Temp label</description>
+                    <width min="0" max="1700">auto</width>
                     <height>45</height>
-                    <align>left</align>
+                    <align>right</align>
                     <aligny>center</aligny>
-                    <font>font13_title</font>
+                    <font>font28_title</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
-                    <include condition="!Skin.HasSetting(ClockShowSeconds)">ClockDefault</include>
-                    <include condition="Skin.HasSetting(ClockShowSeconds)">ClockSeconds</include>
+                    <label>[B]$INFO[Window(Weather).Property(Current.Temperature)][/B]</label>
+                </control>
+                <control type="label" id="1">
+                    <description>Temp Units</description>
+                    <width min="0" max="1668">auto</width>
+                    <height>33</height>
+                    <font>font10</font>
+                    <align>right</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[System.TemperatureUnits]</label>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <visible>!String.IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
+                </control>
+                <control type="label" id="1">
+                    <description>Conditions Label</description>
+                    <width>1565</width>
+                    <height>33</height>
+                    <font>font10</font>
+                    <aligny>center</aligny>
+                    <align>right</align>
+                    <label>$INFO[Window(Weather).Property(Current.Condition),  ]</label>
+                    <textcolor>grey</textcolor>
+                    <shadowcolor>black</shadowcolor>
                 </control>
             </control>
         </control>
 
     </include>
+
+    <include name="BlockClock">
+
+
+            <control type="label" id="1">
+                <description>time label</description> 
+                <width min="60" max="550">auto</width>
+                <height>55</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font35_title</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <include condition="!Skin.HasSetting(ClockShowSeconds)">ClockDefault</include>
+                <include condition="Skin.HasSetting(ClockShowSeconds)">ClockSeconds</include>
+            </control>
+
+    </include>
+
+    <include name="BlockClockSmall">
+
+        <control type="grouplist" id="1112">
+            <width min="60" max="265">auto</width>
+            <visible>!Skin.HasSetting(HideSystemTime)</visible>
+            <orientation>horizontal</orientation>
+            <control type="image">
+                <description>time icon</description>
+                <width>40</width>
+                <height>40</height>
+                <texture colordiffuse="$VAR[MainColorOne]">icon_time.png</texture> 
+            </control>
+            <control type="label" id="1">
+                <top>0</top>
+                <description>time label</description> 
+                <width min="60" max="450">auto</width>
+                <height>45</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <include condition="!Skin.HasSetting(ClockShowSeconds)">ClockDefault</include>
+                <include condition="Skin.HasSetting(ClockShowSeconds)">ClockSeconds</include>
+            </control>
+        </control>
+
+    </include>
+
     <include name="Date">
         <control type="group" id="1">
+            <!-- without cpu temp -->
 		    <control type="label" id="1">
                 <description>Date label</description>
                 <right>75</right>
@@ -2412,22 +2820,8 @@
                 <label>$INFO[System.Date]</label>
                 <include>Window_OpenClose_Animation</include>
                 <visible>!Skin.HasSetting(HideSystemTime) + Skin.HasSetting(HideCPUTemp)</visible>
-            </control>
-		    <control type="label" id="1">
-                <description>Date label</description>
-                <right>75</right>
-                <top>980</top>
-                <width>650</width>
-                <height>120</height>
-                <align>right</align>
-                <aligny>center</aligny>
-                <font>font11</font>
-                <textcolor>blue</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <label></label>
-                <include>Window_OpenClose_Animation</include>
-                <visible>!Skin.HasSetting(HideSystemTime) + Skin.HasSetting(HideCPUTemp)</visible>
-            </control>			
+            </control>	
+            <!-- with cpu temp and available -->
 		    <control type="label" id="1">
                 <description>Date label</description>
                 <right>75</right>
@@ -2443,6 +2837,7 @@
                 <include>Window_OpenClose_Animation</include>
                 <visible>!Skin.HasSetting(HideSystemTime) + !Skin.HasSetting(HideCPUTemp) + !String.IsEqual(System.CPUTemperature,Not Available)</visible>
             </control>
+            <!-- with cpu temp but not available -->
 		    <control type="label" id="1">
                 <description>Date label</description>
                 <right>75</right>
@@ -2450,6 +2845,58 @@
                 <width>450</width>
                 <height>22</height>
                 <align>right</align>
+                <aligny>center</aligny>
+                <font>font11</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>$INFO[System.Date] • [COLOR=$VAR[MainColorOne]]$LOCALIZE[31730][/COLOR]</label>
+                <include>Window_OpenClose_Animation</include>
+                <visible>!Skin.HasSetting(HideSystemTime) + !Skin.HasSetting(HideCPUTemp) + String.IsEqual(System.CPUTemperature,Not Available)</visible>
+            </control>
+		</control>	
+    </include>
+    <include name="DateLeftPosition">
+        <control type="group" id="1">
+            <!-- without cpu temp -->
+		    <control type="label" id="1">
+                <description>Date label</description>
+                <left>65</left>
+                <top>68</top>
+                <width>450</width>
+                <height>22</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font11</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>$INFO[System.Date]</label>
+                <include>Window_OpenClose_Animation</include>
+                <visible>!Skin.HasSetting(HideSystemTime) + Skin.HasSetting(HideCPUTemp)</visible>
+            </control>	
+            <!-- with cpu temp and available -->
+		    <control type="label" id="1">
+                <description>Date label</description>
+                <left>65</left>
+                <top>68</top>
+                <width>450</width>
+                <height>22</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font11</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>$INFO[System.Date] • [COLOR=$VAR[MainColorOne]]$INFO[System.CPUTemperature][/COLOR]</label>
+                <include>Window_OpenClose_Animation</include>
+                <visible>!Skin.HasSetting(HideSystemTime) + !Skin.HasSetting(HideCPUTemp) + !String.IsEqual(System.CPUTemperature,Not Available)</visible>
+            </control>
+            <!-- with cpu temp but not available -->
+		    <control type="label" id="1">
+                <description>Date label</description>
+                <left>65</left>
+                <top>68</top>
+                <width>450</width>
+                <height>22</height>
+                <align>left</align>
                 <aligny>center</aligny>
                 <font>font11</font>
                 <textcolor>white</textcolor>
@@ -3135,123 +3582,6 @@
 			!String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.15.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.15)
 		</visible>
     </include>
-    <include name="TopLeftInfo">
-        <control type="group" id="1">
-		    <animation effect="fade" start="100" end="0" time="200" condition="SkinHasSetting(NotificationsTopLeft) + [Window.IsVisible(notification) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogExtendedProgressBar.xml)]">Conditional</animation>
-		    <control type="image" id="1">
-                <description>LOGO</description>
-                <left>55</left>
-                <top>22</top>
-                <width>180</width>
-                <height>74</height>
-                <aspectratio aligny="top" align="left">keep</aspectratio>
-                <texture>special://skin/extras/resources/kodi-logo.png</texture>
-                <include>VisibleFadeEffect</include>
-                <include>Window_OpenClose_Animation</include>
-                <visible>String.IsEmpty(Skin.String(TopLeftHomeInfo)) | String.IsEqual(Skin.String(TopLeftHomeInfo),Logo)</visible>
-            </control>
-            <control type="group" id="1">
-                <visible>!String.IsEqual(System.ProfileName,Master user)</visible>
-                <control type="image" id="1">
-                    <visible>String.IsEqual(Skin.String(TopLeftHomeInfo),ProfileAvatar)</visible>
-                    <top>25</top>
-                    <left>62</left>
-                    <width>70</width>
-                    <height>70</height>
-                    <texture>$INFO[System.ProfileThumb]</texture>
-                    <aspectratio>scale</aspectratio>
-                </control>
-                <control type="label" id="1">
-                    <description>Logged User</description>
-                    <left>60</left>
-                    <top>25</top>
-                    <height>68</height>
-                    <width>525</width>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>font28_title</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <info>System.ProfileName</info>
-                    <include>VisibleFadeEffect</include>
-                    <include>Window_OpenClose_Animation</include>
-                    <visible>String.IsEqual(Skin.String(TopLeftHomeInfo),ProfileName)</visible>
-                </control>
-            </control>
-            <control type="group" id="1">
-                <left>60</left>
-                <top>20</top>
-                <visible>!String.IsEmpty(Weather.Plugin) + String.IsEqual(Skin.String(TopLeftHomeInfo),Weather)</visible>
-                <include>Window_OpenClose_Animation</include>
-     		    <control type="multiimage" id="1">
-                    <description>Weather image</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>90</width>
-                    <height>90</height>
-				    <aspectratio aligny="center">keep</aspectratio>
-                    <timeperimage>70</timeperimage>
-                    <fadetime>1</fadetime>
-                    <randomize>false</randomize>
-                    <imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherIconExt]</imagepath>
-                </control>
-                <control type="label" id="1">
-                    <description>Location label</description>
-                    <left>98</left>
-                    <top>8</top>
-                    <width>750</width>
-                    <height>22</height>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>font10</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <label>$INFO[Window(Weather).Property(Location)]</label>
-                </control>
-                <control type="grouplist" id="1">
-                    <left>98</left>
-                    <top>30</top>
-                    <width>1500</width>
-                    <height>45</height>
-                    <orientation>horizontal</orientation>
-                    <align>left</align>
-                    <itemgap>0</itemgap>
-                    <control type="label" id="1">
-                        <description>Temp label</description>
-                        <width min="0" max="450">auto</width>
-                        <height>45</height>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <font>font28_title</font>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <label>[B]$INFO[Window(Weather).Property(Current.Temperature)][/B]</label>
-                    </control>
-                    <control type="label" id="1">
-                        <description>Temp Units</description>
-                        <width min="0" max="150">auto</width>
-                        <height>33</height>
-                        <font>font10</font>
-                        <aligny>center</aligny>
-                        <label>$INFO[System.TemperatureUnits]</label>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <visible>!String.IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
-                    </control>
-                    <control type="label" id="1">
-                        <description>Conditions Label</description>
-                        <width>750</width>
-                        <height>33</height>
-                        <font>font10</font>
-                        <aligny>center</aligny>
-                        <label>$INFO[Window(Weather).Property(Current.Condition),  ]</label>
-                        <textcolor>grey2</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                    </control>
-                </control>
-            </control>
-		</control>	
-    </include>
     <include name="ExtendedInfoAutoComplete">
         <control type="group" id="5000">
             <animation effect="slide" start="0,-360" end="0,0" time="300" tween="quadratic" easing="out">VisibleChange</animation>
@@ -3372,7 +3702,7 @@
                         <include>Window_OpenClose_Animation</include>
                     </control>
                 </control>
-                <include>Clock</include>
+                <include>TopRightInfo</include>
                 <include condition="Skin.HasSetting(AllScreenTopLeftWidget) + !Skin.HasSetting(HideTopLeftWindows)">TopLeftInfo</include>
             </control>
         </definition>

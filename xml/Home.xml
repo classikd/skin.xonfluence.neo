@@ -115,8 +115,7 @@
 		<!-- Header info: Clock and Date -->
         <control type="group">
             <depth>DepthHeader</depth>
-            <include>Clock</include>
-            <include>Date</include>
+            <include>TopRightInfoHome</include>
         </control>
 
         <include>PiPBackground</include>
