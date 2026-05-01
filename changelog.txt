@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 0.9
+- Add seekbar to PiP video
+- Fixes for features coming in 0.8 version
+
 ## Version 0.8
 - Add option to choose Home TopRight info, add more choices to Topleft/Right info
 - Add "Fanart2" view
