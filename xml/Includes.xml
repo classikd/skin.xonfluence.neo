@@ -2709,17 +2709,30 @@
                 <shadowcolor>black</shadowcolor>
                 <label>$INFO[Window(Weather).Property(Location)]</label>
             </control>
-            <control type="grouplist" id="1">
-                <left>0</left>
+
+            <control type="grouplist" id="100">
+                <right>140</right>
                 <top>30</top>
-                <width>1800</width>
+                <width>1650</width>
                 <height>45</height>
                 <orientation>horizontal</orientation>
-                <align>left</align>
-                <itemgap>0</itemgap>
-                <control type="label" id="1">
-                    <description>Temp label</description>
-                    <width min="0" max="1700">auto</width>
+                <align>right</align>
+                <aligny>center</aligny>
+                <itemgap>5</itemgap>
+
+                <control type="label">
+                    <width>auto</width>
+                    <height>33</height>
+                    <font>font10</font>
+                    <align>right</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[Window(Weather).Property(Current.Condition)]</label>
+                    <textcolor>grey</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                </control>
+
+                <control type="label">
+                    <width>auto</width>
                     <height>45</height>
                     <align>right</align>
                     <aligny>center</aligny>
@@ -2728,30 +2741,19 @@
                     <shadowcolor>black</shadowcolor>
                     <label>[B]$INFO[Window(Weather).Property(Current.Temperature)][/B]</label>
                 </control>
-                <control type="label" id="1">
-                    <description>Temp Units</description>
-                    <width min="0" max="1668">auto</width>
+
+                <control type="label">
+                    <width>auto</width>
                     <height>33</height>
                     <font>font10</font>
                     <align>right</align>
                     <aligny>center</aligny>
-                    <label>$INFO[System.TemperatureUnits]</label>
-                    <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
+                    <label>$INFO[System.TemperatureUnits]</label>
                     <visible>!String.IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
                 </control>
-                <control type="label" id="1">
-                    <description>Conditions Label</description>
-                    <width>1565</width>
-                    <height>33</height>
-                    <font>font10</font>
-                    <aligny>center</aligny>
-                    <align>right</align>
-                    <label>$INFO[Window(Weather).Property(Current.Condition),  ]</label>
-                    <textcolor>grey</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                </control>
             </control>
+
         </control>
 
     </include>
