@@ -585,6 +585,61 @@
             <visible> String.IsEqual(Skin.String(PiP),Small)</visible>
         </control>
 
+        <control type="group">
+            <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
+            <visible>Player.HasVideo</visible>
+            <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
+            <visible> String.IsEqual(Skin.String(PiP),Small)</visible>
+
+            <visible>VideoPlayer.Content(LiveTV)</visible>
+            <control type="progress">
+                <description>ProgressbarTimeshift</description>
+                <left>490r</left>
+                <top>13r</top>
+                <width>480</width>
+                <height>3</height>
+                <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                <info>PVR.TimeshiftProgressBufferEnd</info>
+                <visible>PVR.IsTimeShift</visible>
+            </control>
+            <control type="progress">
+                <description>Progressbar</description>
+                <left>490r</left>
+                <top>13r</top>
+                <width>480</width>
+                <height>3</height>
+                <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                <info>PVR.EpgEventProgress</info>
+            </control>
+        </control>
+        <control type="group">
+            <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
+            <visible>Player.HasVideo</visible>
+            <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
+            <visible> String.IsEqual(Skin.String(PiP),Small)</visible>
+
+            <visible>!VideoPlayer.Content(LiveTV)</visible>
+            <control type="progress">
+                <description>ProgressbarCache</description>
+                <left>490r</left>
+                <top>13r</top>
+                <width>480</width>
+                <height>3</height>
+                <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                <info>Player.ProgressCache</info>
+                <visible>!Player.ChannelPreviewActive</visible>
+            </control>
+            <control type="progress">
+                <description>Progressbar</description>
+                <left>490r</left>
+                <top>13r</top>
+                <width>480</width>
+                <height>3</height>
+                <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                <info>Player.Progress</info>
+            </control>
+        </control>
+
         <!-- PiP bg media large -->
         <control type="image">
             <left>706r</left>
@@ -633,6 +688,61 @@
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
             <visible> String.IsEqual(Skin.String(PiP),Large)</visible>
+        </control>
+
+        <control type="group">
+            <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
+            <visible>Player.HasVideo</visible>
+            <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
+            <visible> String.IsEqual(Skin.String(PiP),Large)</visible>
+
+            <visible>VideoPlayer.Content(LiveTV)</visible>
+            <control type="progress">
+                <description>ProgressbarTimeshift</description>
+                <left>706r</left>
+                <top>14r</top>
+                <width>696</width>
+                <height>4</height>
+                <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                <info>PVR.TimeshiftProgressBufferEnd</info>
+                <visible>PVR.IsTimeShift</visible>
+            </control>
+            <control type="progress">
+                <description>Progressbar</description>
+                <left>706r</left>
+                <top>14r</top>
+                <width>696</width>
+                <height>4</height>
+                <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                <info>PVR.EpgEventProgress</info>
+            </control>
+        </control>
+        <control type="group">
+            <visible>!Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
+            <visible>Player.HasVideo</visible>
+            <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
+            <visible> String.IsEqual(Skin.String(PiP),Large)</visible>
+            
+            <visible>!VideoPlayer.Content(LiveTV)</visible>
+            <control type="progress">
+                <description>ProgressbarCache</description>
+                <left>706r</left>
+                <top>14r</top>
+                <width>696</width>
+                <height>4</height>
+                <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                <info>Player.ProgressCache</info>
+                <visible>!Player.ChannelPreviewActive</visible>
+            </control>
+            <control type="progress">
+                <description>Progressbar</description>
+                <left>706r</left>
+                <top>14r</top>
+                <width>696</width>
+                <height>4</height>
+                <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                <info>Player.Progress</info>
+            </control>
         </control>
 
 
