@@ -1552,7 +1552,6 @@
                 <width>220</width>
                 <height>335</height>
                 <aspectratio>scale</aspectratio>
-                <fadetime>200</fadetime>
                 <texture background="true">$VAR[PosterThumbPoster]</texture>
                 <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">blank.png</bordertexture>
                 <include>TextureBorderViews</include>
@@ -1627,7 +1626,6 @@
                 <width>220</width>
                 <height>335</height>
                 <aspectratio>scale</aspectratio>
-                <fadetime>200</fadetime>
                 <texture background="true">$VAR[PosterThumbPoster]</texture>
                 <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">blank.png</bordertexture>
                 <include>TextureBorderViews</include>
@@ -1639,7 +1637,6 @@
                 <width>220</width>
                 <height>335</height>
                 <aspectratio>scale</aspectratio>
-                <fadetime>200</fadetime>
                 <texture background="true">$VAR[PosterThumbPoster]</texture>
                 <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                 <include>TextureBorderViews</include>
