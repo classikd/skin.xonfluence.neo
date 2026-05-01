@@ -853,6 +853,7 @@
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
                         <visible>!Skin.HasSetting(HideProgressBars)</visible>
+                        <visible>!ListItem.IsPlaying</visible>
                         <texturebg border="0">white.png</texturebg>
                         <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
                         <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>     
@@ -1104,6 +1105,7 @@
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
                         <visible>!Skin.HasSetting(HideProgressBars)</visible>
+                        <visible>!ListItem.IsPlaying</visible>
                         <texturebg border="0">white.png</texturebg>
                         <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white.png</midtexture>
                         <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
@@ -1196,6 +1198,7 @@
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
                         <visible>!Skin.HasSetting(HideProgressBars)</visible>
+                        <visible>!ListItem.IsPlaying</visible>
                         <texturebg border="0">white.png</texturebg>
                         <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
                     </control> 
@@ -1284,6 +1287,7 @@
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
                         <visible>!Skin.HasSetting(HideProgressBars)</visible>
+                       <visible>!ListItem.IsPlaying</visible>
                         <texturebg border="0">white.png</texturebg>
                         <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white.png</midtexture>
                     </control> 
@@ -1584,6 +1588,7 @@
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
                         <visible>!Skin.HasSetting(HideProgressBars)</visible>
+                        <visible>!ListItem.IsPlaying</visible>
                         <texturebg border="0">white.png</texturebg>
                         <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
                         <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>     
@@ -1842,6 +1847,7 @@
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
                         <visible>!Skin.HasSetting(HideProgressBars)</visible>
+                        <visible>!ListItem.IsPlaying</visible>
                         <texturebg border="0">white.png</texturebg>
                         <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white.png</midtexture>
                         <visible>String.Contains(ListItem.Icon,image://video) | String.IsEqual(ListItem.DBTYPE,episode)</visible>
@@ -1934,6 +1940,7 @@
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
                         <visible>!Skin.HasSetting(HideProgressBars)</visible>
+                        <visible>!ListItem.IsPlaying</visible>
                         <texturebg border="0">white.png</texturebg>
                         <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
                     </control> 
@@ -2022,6 +2029,7 @@
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
                         <visible>!Skin.HasSetting(HideProgressBars)</visible>
+                        <visible>!ListItem.IsPlaying</visible>
                         <texturebg border="0">white.png</texturebg>
                         <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white.png</midtexture>
                     </control> 
