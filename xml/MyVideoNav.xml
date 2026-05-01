@@ -210,7 +210,7 @@
                     <selected>Skin.HasSetting(EnableAdditionalArtWork)</selected>
                     <visible>Control.IsVisible(724) | Control.IsVisible(508) | Control.IsVisible(527) | Control.IsVisible(51)</visible>
                 </control>
-                <control type="radiobutton" id="107">
+                <control type="radiobutton" id="110">
                     <description>Enable horizontal scrollbar</description>
                     <textwidth>255</textwidth>
                     <include>ButtonCommonValues</include>
