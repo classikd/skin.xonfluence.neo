@@ -2387,8 +2387,9 @@
                     <depth>DepthHeader</depth>
                     <include>BlockClockSmall</include>
                     <visible>String.IsEqual(Skin.String(TopLeftHomeInfo),ClockDate)</visible>
+                    <visible>!Skin.HasSetting(HideSystemTime)</visible>
                 </control>
-                <include condition="String.IsEqual(Skin.String(TopLeftHomeInfo),ClockDate)">DateLeftPosition</include>
+                <include condition="!Skin.HasSetting(HideSystemTime) + String.IsEqual(Skin.String(TopLeftHomeInfo),ClockDate)">DateLeftPosition</include>
             
                 <!-- clock -->
                 <control type="grouplist">
@@ -2402,6 +2403,7 @@
                     <depth>DepthHeader</depth>
                     <include>BlockClock</include>
                     <visible>String.IsEqual(Skin.String(TopLeftHomeInfo),Clock)</visible>
+                    <visible>!Skin.HasSetting(HideSystemTime)</visible>
                 </control>
 
                 <!-- date -->
@@ -2578,8 +2580,9 @@
             <align>right</align>
             <itemgap>20</itemgap>
             <include condition="String.IsEmpty(Skin.String(TopRightHomeInfo)) | String.IsEqual(Skin.String(TopRightHomeInfo),ClockDate)">BlockClockSmall</include>
+            <visible>!Skin.HasSetting(HideSystemTime)</visible>
         </control>
-        <include condition="String.IsEmpty(Skin.String(TopRightHomeInfo)) | String.IsEqual(Skin.String(TopRightHomeInfo),ClockDate)">Date</include>
+        <include condition="!Skin.HasSetting(HideSystemTime) + [String.IsEmpty(Skin.String(TopRightHomeInfo)) | String.IsEqual(Skin.String(TopRightHomeInfo),ClockDate)]">Date</include>
     
         <!-- Clock -->
         <control type="grouplist">
@@ -2591,6 +2594,7 @@
             <align>right</align>
             <itemgap>20</itemgap>
             <include condition="String.IsEqual(Skin.String(TopRightHomeInfo),Clock)">BlockClock</include>
+            <visible>!Skin.HasSetting(HideSystemTime)</visible>
         </control>
 
         <!-- Date -->
