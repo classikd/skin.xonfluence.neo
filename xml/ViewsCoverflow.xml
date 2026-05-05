@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+    <!-- View ID 528: Coverflow -->
+    <include name="Coverflow">
+		<control type="wraplist" id="528">
+			<viewtype label="31793">wrap</viewtype>
+			<top>225</top>
+            <left>300</left>
+            <width>1920</width> 
+			<height>600</height>
+			<onleft>528</onleft>
+			<onright>528</onright>
+			<onup>2</onup>
+            <ondown condition="!Skin.HasSetting(EnableHorizontalScrollbar)">2</ondown>
+            <ondown condition="Skin.HasSetting(EnableHorizontalScrollbar)">60</ondown>
+			<focusposition>2</focusposition>
+			<orientation>horizontal</orientation>
+			<preloaditems>4</preloaditems>
+			<pagecontrol>60</pagecontrol>
+			<itemlayout height="540" width="195"/>
+			<focusedlayout height="600" width="564"/>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(528)</visible>
+            <!-- anim when scrolling right  -->
+			<control type="group" id="3011">
+				<left>15</left>
+				<top>90</top>
+				<camera x="960" y="540" />
+				<visible>Container(528).OnNext</visible>
+				<animation effect="slide" end="-190,0" time="200" reversible="false">Hidden</animation>
+				<control type="image">
+					<left>81</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(-5)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="-60" end="-60" condition="true">Conditional</animation>
+                    <animation effect="fade" start="100" end="0" time="210" condition="true" loop="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,10) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,9) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>273</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(-4)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="130" end="-60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,8) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,7) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>465</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(-3)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="320" end="-60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,6) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,5) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>656</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(-2)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="505" end="-60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,4) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,3) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+                <control type="image">
+					<left>1650</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(4)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="2190" end="60" condition="true">Conditional</animation>
+					<animation effect="fade" start="0" end="100" time="210" condition="true" loop="true">Conditional</animation>
+                    <visible>[Integer.IsGreater(Container(528).NumItems,7) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,6) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+                <control type="image">
+					<left>1460</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(3)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="2000" end="60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,5) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,4) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>1273</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(2)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="1810" end="60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,3) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,2) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>1085</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(1)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="1620" end="60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,1) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,0) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="group">
+					<visible>Container(528).OnNext</visible>
+					<animation effect="slide" end="-90,0" time="200" reversible="false">Hidden</animation>
+					<control type="image">
+						<left>775</left>
+						<top>109</top>
+						<width>385</width>
+						<height>600</height>
+						<texture background="true">$VAR[Icon(-1)Poster]</texture>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<visible>[Integer.IsGreater(Container(528).NumItems,2) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,1) + $EXP[isEnabledParentDirectory]]</visible>			
+						<animation effect="rotatey" center="780" start="0" end="-60" time="210" condition="true" loop="true">Conditional</animation>
+                        <animation effect="slide" center="780" end="160,0" time="210" condition="true" loop="true">Conditional</animation>
+                    </control>
+					<control type="image">
+						<left>897</left>
+						<top>109</top>
+						<width>385</width>
+						<height>600</height>
+						<texture background="true">$VAR[Icon(0)Poster]</texture>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<animation effect="rotatey" center="1430" start="60" end="0" time="210" condition="true" loop="true">Conditional</animation>
+                        <animation effect="slide" end="162,0" time="210" condition="true" loop="true">Conditional</animation>
+                    </control>
+				</control>
+			</control>
+            <!-- anim when scrolling left  -->
+			<control type="group" id="3012">
+				<left>15</left>
+				<top>90</top>
+				<camera x="960" y="540" />
+				<visible>Container(528).OnPrevious</visible>
+				<animation effect="slide" end="190,0" time="200" reversible="false">Hidden</animation>
+                <control type="image">
+					<left>-110</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(-4)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="-250" end="-60" condition="true">Conditional</animation>
+					<animation effect="fade" start="0" end="100" time="210" condition="true" loop="true">Conditional</animation>
+                    <visible>[Integer.IsGreater(Container(528).NumItems,8) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,7) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+                <control type="image">
+					<left>81</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(-3)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="-60" end="-60" condition="true">Conditional</animation>
+                    <visible>[Integer.IsGreater(Container(528).NumItems,6) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,5) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>273</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(-2)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="120" end="-60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,4) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,3) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>465</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(-1)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="310" end="-60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,2) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,1) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>1460</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(5)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="2000" end="60" condition="true">Conditional</animation>
+                    <animation effect="fade" start="100" end="0" time="210" condition="true" loop="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,9) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,8) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>1273</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(4)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="1815" end="60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,7) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,6) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>1085</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(3)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="1630" end="60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,5) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,4) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>897</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<texture background="true">$VAR[Icon(2)Poster]</texture>
+					<animation effect="rotatey" center="1430" end="60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,3) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,2) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="group">
+					<visible>Container(528).OnPrevious</visible>
+					<animation effect="slide" end="90,0" time="200" reversible="false">Hidden</animation>
+					<control type="image">
+						<left>775</left>
+						<top>109</top>
+						<width>385</width>
+						<height>600</height>
+						<texture background="true">$VAR[Icon(1)Poster]</texture>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+                        <animation effect="rotatey" center="1150" start="0" end="60" time="210" condition="true" loop="true">Conditional</animation>
+                        <animation effect="slide" center="1150" end="-160,0" time="210" condition="true" loop="true">Conditional</animation>
+                        <visible>[Integer.IsGreater(Container(528).NumItems,1) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,0) + $EXP[isEnabledParentDirectory]]</visible>
+					</control>
+					<control type="image">
+						<left>666</left>
+						<top>109</top>
+						<width>385</width>
+						<height>600</height>
+						<texture background="true">$VAR[Icon(0)Poster]</texture>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<animation effect="rotatey" center="520" start="-60" end="0" time="210" condition="true" loop="true">Conditional</animation>
+                        <animation effect="slide" center="520" end="-165,0" time="210" condition="true" loop="true">Conditional</animation>
+                    </control>
+				</control>
+			</control>
+            <!-- when no scrolling -->
+			<control type="group" id="3010">
+				<left>15</left>
+				<top>90</top>
+				<camera x="960" y="540" />
+				<visible>!Control.IsVisible(3011) + !Control.IsVisible(3012)</visible>
+				<control type="image">
+					<left>81</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(-4)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="-60" end="-60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,8) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,7) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>273</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(-3)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="130" end="-60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,6) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,5) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>465</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(-2)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="310" end="-60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,4) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,3) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>656</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(-1)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="500" end="-60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,2) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,1) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>1460</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(4)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="2000" end="60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,7) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,6) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>1273</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(3)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="1815" end="60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,5) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,4) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>1085</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(2)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="1620" end="60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,3) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,2) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>897</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(1)Poster]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="rotatey" center="1430" end="60" condition="true">Conditional</animation>
+					<visible>[Integer.IsGreater(Container(528).NumItems,1) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(528).NumItems,0) + $EXP[isEnabledParentDirectory]]</visible>
+				</control>
+				<control type="image">
+					<left>780</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true">$VAR[Icon(0)Poster]</texture>
+					
+					<aspectratio scalediffuse="false">scale</aspectratio>
+				</control>
+                <!-- icons over image -->
+                <control type="group">
+                    <left>777</left>
+                    <top>149</top>
+                    <control type="image">
+                        <left>3</left>
+                        <top>-40</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <animation effect="fade" start="0" end="100" time="300">Visible</animation>
+                    </control>
+                    <control type="image">
+                        <left>3</left>
+                        <top>-40</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
+                        <visible>!ListItem.IsResumable</visible>
+                        <visible>String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
+                        <animation effect="fade" start="0" end="100" time="300">Visible</animation>
+                    </control>
+
+                    <control type="image">
+                        <left>3</left>
+                        <top>-40</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                        <animation effect="fade" start="0" end="100" time="300">Visible</animation>
+                    </control>
+                    <control type="image">
+                        <left>6</left>
+                        <top>-37</top>
+                        <width>28</width>
+                        <height>28</height>
+                        <texture colordiffuse="black">equaliser.gif</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                        <animation effect="fade" start="0" end="100" time="300">Visible</animation>
+                    </control>
+                    <control type="image">
+                        <left>3</left>
+                        <top>-40</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>!Player.Playing</visible>
+                        <animation effect="fade" start="0" end="100" time="300">Visible</animation>
+                    </control>
+                    <control type="progress">
+                        <left>3</left>
+                        <top>557</top>
+                        <width>385</width>
+                        <height>3</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <visible>!Skin.HasSetting(HideProgressBars)</visible>
+                        <visible>!ListItem.IsPlaying</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                        <animation effect="fade" start="0" end="100" time="300">Visible</animation>
+                    </control> 
+                </control> 
+			</control>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(528)</visible>
+
+			<control type="scrollbar" id="60">
+                <left>0</left>
+                <top>1052</top>
+                <width>1920</width>
+                <height>38</height>
+				<orientation>horizontal</orientation>
+				<ondown>528</ondown>
+				<onup>528</onup>
+                <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
+                <texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
+                <texturesliderbarfocus border="14,0,14,0" colordiffuse="$VAR[MainColorOne]">ScrollBarH_bar_focus.png</texturesliderbarfocus>
+                <textureslidernib colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernib>
+                <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernibfocus>
+                <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
+            </control>
+            <control type="group">
+                <top>90</top>
+                <left>15</left>
+                <visible>Control.IsVisible(528) + [Container.Content(Movies) | Container.Content(Sets)]</visible>
+                <control type="image">
+                    <left>45</left>
+                    <top>750</top>
+                    <width>1830</width>
+                    <height>112</height>
+                    <aspectratio align="center" aligny="bottom">keep</aspectratio>
+                    <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+                    <fadetime>FanartCrossfadeTime</fadetime>
+                    <visible>!Skin.HasSetting(DisableLogoArt) + !String.IsEmpty(ListItem.Art(clearlogo)) + !Skin.HasSetting(View515Hidelogo)</visible>
+                </control>
+
+                <control type="group">
+                    <top>870</top>
+                    <left>780</left>
+                    <control type="fadelabel">
+                        <left>150</left>
+                        <top>2</top>
+                        <width>600</width>
+                        <height>45</height>
+                        <font>font11_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>true</scroll>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>|    $INFO[ListItem.Year]</label>
+                        <scrollout>false</scrollout>
+                        <pauseatend>2000</pauseatend>
+                    </control>
+
+                    <control type="fadelabel">
+                        <left>245</left>
+                        <top>2</top>
+                        <width>600</width>
+                        <height>45</height>
+                        <font>font11_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>true</scroll>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>|    $VAR[DurationInMinutes]</label>
+                        <scrollout>false</scrollout>
+                        <pauseatend>2000</pauseatend>
+                    </control>
+
+                    <!-- rating -->
+                    <control type="group">
+                        <left>0</left>
+                        <top>6</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="$VAR[MainColorOne]" />
+                        </include>
+                        </control>
+                </control>
+
+                <control type="label">
+                    <left>55</left>
+                    <top>780</top>
+                    <width>1830</width>
+                    <height>52</height>
+                    <font>font40_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <scroll>true</scroll>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.Label]</label>
+                    <visible>Skin.HasSetting(DisableLogoArt) | String.IsEmpty(ListItem.Art(clearlogo)) | Skin.HasSetting(View515Hidelogo)</visible>
+                </control>
+
+                <!--
+                <control type="grouplist">
+                    <description>Media Codec Flagging Images</description>
+                    <left>90</left>
+                    <top>0</top>
+                    <width>1920</width>
+                    <align>left</align>
+                    <itemgap>3</itemgap>
+                    <orientation>horizontal</orientation>
+                    <include>VideoMPAAFlaggingConditions</include>
+                    <include>VideoCodecFlaggingConditions</include>
+                    <include>AudioCodecFlaggingConditions</include>
+                    <include>AudioChannelsFlaggingConditions</include>
+                    <include>AspectCodecFlaggingConditions</include>
+                    <include>SpecialFeaturesFlaggingConditions</include>
+                    <include>VideoTypeHackFlaggingConditions</include>
+                </control>
+                -->
+
+            </control>
+            <control type="group">
+                <top>90</top>
+                <left>15</left>
+                <visible>Control.IsVisible(528) + Container.Content(Seasons)</visible>
+                <control type="label">
+                    <left>55</left>
+                    <top>780</top>
+                    <width>1830</width>
+                    <height>52</height>
+                    <font>font40_title</font>
+                    <textcolor>white</textcolor>
+                    <scroll>true</scroll>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="label">
+                    <left>0</left>
+                    <top>865</top>
+                    <width>1920</width>
+                    <height>52</height>
+                    <font>font12</font>
+                    <textcolor>white</textcolor>
+                    <scroll>true</scroll>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.TVShowTitle]     $VAR[EpisodeLabel] ($INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]])</label>
+                    <visible>!String.IsEqual(ListItem.Label,..)</visible>
+                </control>
+            </control>
+            <control type="group">
+                <top>90</top>
+                <left>15</left>
+                <visible>Control.IsVisible(528) + Container.Content(TVShows)</visible>
+                <control type="image">
+                    <left>45</left>
+                    <top>750</top>
+                    <width>1830</width>
+                    <height>112</height>
+                    <aspectratio align="center" aligny="bottom">keep</aspectratio>
+                    <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+                    <fadetime>FanartCrossfadeTime</fadetime>
+                    <visible>!Skin.HasSetting(DisableLogoArt) + !String.IsEmpty(ListItem.Art(clearlogo)) + !Skin.HasSetting(View515Hidelogo)</visible>
+                </control>
+                <control type="group">
+                    <top>870</top>
+                    <left>700</left>
+                    <control type="fadelabel">
+                        <left>150</left>
+                        <top>2</top>
+                        <width>600</width>
+                        <height>45</height>
+                        <font>font11_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>true</scroll>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>|    $INFO[ListItem.Year]</label>
+                        <scrollout>false</scrollout>
+                        <pauseatend>2000</pauseatend>
+                    </control>
+
+                    <control type="fadelabel">
+                        <left>245</left>
+                        <top>2</top>
+                        <width>600</width>
+                        <height>45</height>
+                        <font>font11_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>true</scroll>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$VAR[EpisodeLabel] ($INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]])</label>
+                        <scrollout>false</scrollout>
+                        <pauseatend>2000</pauseatend>
+                    </control>
+
+                    <!-- rating -->
+                    <control type="group">
+                        <left>0</left>
+                        <top>6</top>
+                        <include content="ItemRating">
+                            <param name="Color" value="$VAR[MainColorOne]" />
+                        </include>
+                        </control>
+                </control>
+                <control type="label">
+                    <left>45</left>
+                    <top>780</top>
+                    <width>1830</width>
+                    <height>52</height>
+                    <font>font40_title</font>
+                    <textcolor>white</textcolor>
+                    <scroll>true</scroll>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.Label]</label>
+                    <visible>Skin.HasSetting(DisableLogoArt) | String.IsEmpty(ListItem.Art(clearlogo)) | Skin.HasSetting(View515Hidelogo)</visible>
+                </control>
+            </control>
+            <control type="group">
+                <top>90</top>
+                <left>15</left>
+                <visible>Control.IsVisible(528) + !Container.Content(TVShows)+ !Container.Content(Seasons) + ![Container.Content(Movies) | Container.Content(Sets)]</visible>
+                <control type="label">
+                    <left>45</left>
+                    <top>780</top>
+                    <width>1830</width>
+                    <height>52</height>
+                    <font>font40_title</font>
+                    <textcolor>white</textcolor>
+                    <scroll>true</scroll>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+            </control>
+		</control>
+    </include>
+</includes>

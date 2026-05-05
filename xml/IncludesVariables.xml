@@ -3838,7 +3838,9 @@
         <value condition="!String.IsEmpty(Skin.String(WeatherFanart.ext))">$INFO[Skin.String(WeatherFanart.ext)]</value>
         <value>.jpg</value>
     </variable>
-	
+
+	<expression name="isEnabledParentDirectory">System.GetBool(filelists.showparentdiritems)</expression>
+	<expression name="isnotEnabledParentDirectory">!System.GetBool(filelists.showparentdiritems)</expression>
 	<expression name="IsVideoPlaylist">[Container(9000).HasFocus(1) + Skin.String(HomeItem.1.PlaylistType,video)] | 
 	                                   [Container(9000).HasFocus(2) + Skin.String(HomeItem.2.PlaylistType,video)] | 
 									   [Container(9000).HasFocus(3) + Skin.String(HomeItem.3.PlaylistType,video)] | 

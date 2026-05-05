@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">50</defaultcontrol>
     <menucontrol>9000</menucontrol>
-    <views>504,50,51,500,526,732,724,550,551,560,501,508,527,503,515,505,511</views>
+    <views>504,50,51,500,526,732,724,550,551,560,501,508,527,528,503,515,505,511</views>
     <include condition="!Skin.HasSetting(DisableTVTunes)">LoadTvTunes</include>
     <onload condition="!Skin.HasSetting(DisableTVNextAired)">RunScript(script.tv.show.next.aired,backend=True,silent=True)</onload>
     <onunload>ClearProperty(SideBladeOpen)</onunload>
@@ -32,6 +32,8 @@
             <!-- view id = 527 -->
             <include condition="Skin.HasSetting(WrapMediaViews)">PosterWrapViewFanart2</include>
             <include condition="!Skin.HasSetting(WrapMediaViews)">PosterListViewFanart2</include>
+            <!-- view id = 528 -->
+            <include>Coverflow</include>
             <!-- view id = 503 -->
             <include>MediaInfo2</include>
             <!-- view id = 504 -->
@@ -152,7 +154,7 @@
                     <onclick>Skin.ToggleSetting(View515Hidelogo)</onclick>
                     <selected>Skin.HasSetting(View515Hidelogo)</selected>
                     <visible>!Skin.HasSetting(DisableLogoArt)</visible>
-                    <visible>[Control.IsVisible(515)| Control.IsVisible(501)| Control.IsVisible(527)] + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
+                    <visible>[Control.IsVisible(515)| Control.IsVisible(501)| Control.IsVisible(527) | Control.IsVisible(528)] + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
                 </control>
                 <control type="radiobutton" id="102">
                     <description>TVShow Banners Banners</description>
@@ -217,7 +219,7 @@
                     <label>21383</label>
                     <onclick>Skin.ToggleSetting(EnableHorizontalScrollbar)</onclick>
                     <selected>Skin.HasSetting(EnableHorizontalScrollbar)</selected>
-                    <visible>Control.IsVisible(508) | Control.IsVisible(527) | Control.IsVisible(501)</visible>
+                    <visible>Control.IsVisible(508) | Control.IsVisible(527) | Control.IsVisible(528) | Control.IsVisible(501)</visible>
                 </control>
                 <control type="radiobutton" id="108">
                     <description>Extra Thumbs</description>

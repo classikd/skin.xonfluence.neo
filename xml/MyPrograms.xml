@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">50</defaultcontrol>
     <menucontrol>9000</menucontrol>
-    <views>50,51,500,526,550,551</views>
+    <views>50,51,500,526,550,551,529</views>
     <onunload>ClearProperty(SideBladeOpen)</onunload>
     <controls>
         <include>CommonBackground</include>
@@ -21,6 +21,8 @@
             <include>AddonInfoListView1</include>
             <!-- view id = 551 -->
             <include>AddonInfoThumbView1</include>
+            <!-- view id = 529 -->
+            <include>CoverflowKeep</include>
         </control>
         <include>FloorReturnButtons</include>
         <include>BehindDialogFadeOut</include>
