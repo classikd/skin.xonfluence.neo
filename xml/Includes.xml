@@ -2310,6 +2310,17 @@
             <visible>Player.HasMedia</visible>
         </control>
 
+        <control type="button" id="100">
+            <description>PiP toggle</description>
+            <textwidth>352</textwidth>
+            <include>ButtonCommonValues</include>
+            <label>$LOCALIZE[31783]: $VAR[PiPValue]</label>
+            <onclick condition="String.IsEmpty(Skin.String(PiP))">Skin.SetString(PiP,Small)</onclick>
+            <onclick condition="Skin.String(PiP,Small)">Skin.SetString(PiP,Large)</onclick>
+            <onclick condition="Skin.String(PiP,Large)">Skin.Reset(PiP)</onclick>
+            <visible>Player.HasMedia</visible>
+        </control>
+
         <control type="radiobutton" id="611">
             <description>Go to fullscreen Playback</description>
             <include>ButtonCommonValues</include>
