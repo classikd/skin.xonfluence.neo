@@ -21,8 +21,8 @@
                 <onleft>501</onleft>
                 <onright>501</onright>
                 <onup>2</onup>
-                <ondown condition="!Skin.HasSetting(EnableHorizontalScrollbar)">2</ondown>
-			    <ondown condition="Skin.HasSetting(EnableHorizontalScrollbar)">60</ondown>
+                <ondown condition="Skin.HasSetting(EnableScrollbarHorizontal)">2</ondown>
+			    <ondown condition="!Skin.HasSetting(EnableScrollbarHorizontal)">60</ondown>
                 <viewtype label="31028">bigwrap</viewtype>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
@@ -362,7 +362,7 @@
             <showonepage>true</showonepage>
             <orientation>horizontal</orientation>
             <visible>Control.IsVisible(501)</visible>
-            <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
+            <visible>!Skin.HasSetting(EnableScrollbarHorizontal)</visible>
         </control>
         <control type="group">
             <visible>Control.IsVisible(501) + [Container.Content(Movies) | Container.Content(Sets)]</visible>
@@ -593,8 +593,8 @@
                 <onleft>508</onleft>
                 <onright>508</onright>
                 <onup>2</onup>
-                <ondown condition="!Skin.HasSetting(EnableHorizontalScrollbar)">2</ondown>
-			    <ondown condition="Skin.HasSetting(EnableHorizontalScrollbar)">60</ondown>
+                <ondown condition="Skin.HasSetting(EnableScrollbarHorizontal)">2</ondown>
+			    <ondown condition="!Skin.HasSetting(EnableScrollbarHorizontal)">60</ondown>
                 <viewtype label="31029">wrap</viewtype>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
@@ -621,7 +621,7 @@
             <showonepage>true</showonepage>
             <orientation>horizontal</orientation>
             <visible>Control.IsVisible(508)</visible>
-            <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
+            <visible>!Skin.HasSetting(EnableScrollbarHorizontal)</visible>
         </control>
         <include>PosterWrapFanartInfo</include>
     </include>
@@ -643,8 +643,8 @@
                 <onleft>508</onleft>
                 <onright>508</onright>
                 <onup>2</onup>
-                <ondown condition="!Skin.HasSetting(EnableHorizontalScrollbar)">2</ondown>
-			    <ondown condition="Skin.HasSetting(EnableHorizontalScrollbar)">60</ondown>
+                <ondown condition="Skin.HasSetting(EnableScrollbarHorizontal)">2</ondown>
+			    <ondown condition="!Skin.HasSetting(EnableScrollbarHorizontal)">60</ondown>
                 <viewtype label="31029">wrap</viewtype>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
@@ -672,7 +672,7 @@
             <showonepage>true</showonepage>
             <orientation>horizontal</orientation>
             <visible>Control.IsVisible(508)</visible>
-            <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
+            <visible>!Skin.HasSetting(EnableScrollbarHorizontal)</visible>
         </control>
         <include>PosterWrapFanartInfo</include>
     </include>
@@ -1294,8 +1294,8 @@
                 <onleft>527</onleft>
                 <onright>527</onright>
                 <onup>2</onup>
-                <ondown condition="!Skin.HasSetting(EnableHorizontalScrollbar)">2</ondown>
-			    <ondown condition="Skin.HasSetting(EnableHorizontalScrollbar)">60</ondown>
+                <ondown condition="Skin.HasSetting(EnableScrollbarHorizontal)">2</ondown>
+			    <ondown condition="!Skin.HasSetting(EnableScrollbarHorizontal)">60</ondown>
                 <viewtype label="31790">wrap</viewtype>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
@@ -1322,7 +1322,7 @@
             <showonepage>true</showonepage>
             <orientation>horizontal</orientation>
             <visible>Control.IsVisible(527)</visible>
-            <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
+            <visible>!Skin.HasSetting(EnableScrollbarHorizontal)</visible>
         </control>
         <include>PosterWrapFanartInfo2</include>
     </include>
@@ -1344,8 +1344,8 @@
                 <onleft>527</onleft>
                 <onright>527</onright>
                 <onup>2</onup>
-                <ondown condition="!Skin.HasSetting(EnableHorizontalScrollbar)">2</ondown>
-			    <ondown condition="Skin.HasSetting(EnableHorizontalScrollbar)">60</ondown>
+                <ondown condition="Skin.HasSetting(EnableScrollbarHorizontal)">2</ondown>
+			    <ondown condition="!Skin.HasSetting(EnableScrollbarHorizontal)">60</ondown>
                 <viewtype label="31790">wrap</viewtype>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
@@ -1373,7 +1373,7 @@
             <showonepage>true</showonepage>
             <orientation>horizontal</orientation>
             <visible>Control.IsVisible(527)</visible>
-            <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
+            <visible>!Skin.HasSetting(EnableScrollbarHorizontal)</visible>
         </control>
         <include>PosterWrapFanartInfo2</include>
     </include>

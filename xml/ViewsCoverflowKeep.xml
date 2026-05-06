@@ -11,8 +11,8 @@
 			<onleft>529</onleft>
 			<onright>529</onright>
 			<onup>2</onup>
-            <ondown condition="!Skin.HasSetting(EnableHorizontalScrollbar)">2</ondown>
-            <ondown condition="Skin.HasSetting(EnableHorizontalScrollbar)">60</ondown>
+            <ondown condition="Skin.HasSetting(EnableScrollbarHorizontal)">2</ondown>
+            <ondown condition="!Skin.HasSetting(EnableScrollbarHorizontal)">60</ondown>
 			<focusposition>2</focusposition>
 			<orientation>horizontal</orientation>
 			<preloaditems>4</preloaditems>
@@ -458,7 +458,7 @@
                 <texturesliderbarfocus border="14,0,14,0" colordiffuse="$VAR[MainColorOne]">ScrollBarH_bar_focus.png</texturesliderbarfocus>
                 <textureslidernib colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernib>
                 <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernibfocus>
-                <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
+                <visible>!Skin.HasSetting(EnableScrollbarHorizontal)</visible>
             </control>
             <control type="group">
                 <top>90</top>
