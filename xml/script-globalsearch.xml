@@ -59,7 +59,6 @@
         </control>
         <!-- <include>MainWindowMouseButtons</include> -->
         <include>BehindDialogFadeOut</include>
-        <include>ScrollOffsetLabel</include>
         <control type="group">
             <depth>DepthHeader</depth>
             <control type="image">
@@ -184,5 +183,6 @@
             </control>
         </control>
         <include>PiPBackground</include>
+        <include>ScrollOffsetLabel</include>
     </controls>
 </window>

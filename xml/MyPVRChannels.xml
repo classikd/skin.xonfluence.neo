@@ -30,7 +30,6 @@
         <!-- view id = 5040 -->
         <include>MediaInfoPVR</include>
         <include>BehindDialogFadeOut</include>
-        <include>ScrollOffsetLabel</include>
         <control type="image">
             <left>0</left>
             <top>0</top>
@@ -43,6 +42,7 @@
         </control>
         <include>FloorReturnButtons</include>
         <include>PiPBackground</include>
+        <include>ScrollOffsetLabel</include>
         <include>PVRSideBlade</include>
     </controls>
 </window>

@@ -53,7 +53,6 @@
         </control>
         <include>FloorReturnButtons</include>
         <include>BehindDialogFadeOut</include>
-        <include>ScrollOffsetLabel</include>
         <include condition="!Skin.HasSetting(DisableTVNextAired)">NextAired</include>
         <include content="CommonWindowHeader">
             <param name="Icon" value="icon_video" />
@@ -317,5 +316,6 @@
             </control>
         </control>
         <include>PiPBackground</include>
+        <include>ScrollOffsetLabel</include>
     </controls>
 </window>

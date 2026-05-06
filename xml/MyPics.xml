@@ -45,7 +45,6 @@
         </control>
         <include>FloorReturnButtons</include>
         <include>BehindDialogFadeOut</include>
-        <include>ScrollOffsetLabel</include>
         <include content="CommonWindowHeader">
             <param name="Icon" value="icon_pictures" />
             <param name="Label" value="$LOCALIZE[1]" />
@@ -160,5 +159,6 @@
             </control>
         </control>
         <include>PiPBackground</include>
+        <include>ScrollOffsetLabel</include>
     </controls>
 </window>

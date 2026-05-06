@@ -7,7 +7,6 @@
         <include>CommonBackground</include>
         <include>ContentPanelBackgrounds</include>
         <include>BehindDialogFadeOut</include>
-        <include>ScrollOffsetLabel</include>
         <control type="group">
             <visible>Control.IsVisible(570)</visible>
             <include>Window_OpenClose_Animation</include>
@@ -181,6 +180,7 @@
         </include>
         <include>FloorReturnButtons</include>
         <include>PiPBackground</include>
+        <include>ScrollOffsetLabel</include>
         <control type="group">
             <left>-375</left>
             <include>SideBladeLeft</include>

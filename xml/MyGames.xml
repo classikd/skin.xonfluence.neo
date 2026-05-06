@@ -24,12 +24,12 @@
         </control>
         <include>FloorReturnButtons</include>
         <include>BehindDialogFadeOut</include>
-        <include>ScrollOffsetLabel</include>
         <include content="CommonWindowHeader">
             <param name="Icon" value="icon_games" />
             <param name="Label" value="$LOCALIZE[15016]" />
         </include>
         <include>PiPBackground</include>
+        <include>ScrollOffsetLabel</include>
         <control type="group">
             <visible>!Skin.HasSetting(KioskMode)</visible>
             <left>-375</left>
