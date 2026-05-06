@@ -537,8 +537,8 @@
 
         <!-- PiP bg media -->
         <control type="image">
-            <left>490r</left>
-            <top>305r</top>
+            <left>500r</left>
+            <top>315r</top>
             <width>480</width>
             <height>295</height>
             <texture>black.png</texture>
@@ -548,8 +548,8 @@
             <visible> String.IsEqual(Skin.String(PiP),Small)</visible>
         </control>
         <control type="videowindow">
-            <left>490r</left>
-            <top>305r</top>
+            <left>500r</left>
+            <top>315r</top>
             <width>480</width>
             <height>295</height>
             <aspectratio>scale</aspectratio>
@@ -559,8 +559,8 @@
             <visible> String.IsEqual(Skin.String(PiP),Small)</visible>
         </control>
         <control type="image">
-            <left>490r</left>
-            <top>293r</top>
+            <left>500r</left>
+            <top>303r</top>
             <width>65</width>
             <height>45</height>
             <align>left</align>
@@ -572,8 +572,8 @@
             <visible> String.IsEqual(Skin.String(PiP),Small)</visible>
         </control>
         <control type="button">
-            <right>23</right>
-            <top>293r</top>
+            <right>33</right>
+            <top>303r</top>
             <width>40</width>
             <height>40</height>
             <texturefocus>close.png</texturefocus>
@@ -594,8 +594,8 @@
             <visible>VideoPlayer.Content(LiveTV)</visible>
             <control type="progress">
                 <description>ProgressbarTimeshift</description>
-                <left>490r</left>
-                <top>13r</top>
+                <left>500r</left>
+                <top>23r</top>
                 <width>480</width>
                 <height>3</height>
                 <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
@@ -604,8 +604,8 @@
             </control>
             <control type="progress">
                 <description>Progressbar</description>
-                <left>490r</left>
-                <top>13r</top>
+                <left>500r</left>
+                <top>23r</top>
                 <width>480</width>
                 <height>3</height>
                 <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
@@ -621,8 +621,8 @@
             <visible>!VideoPlayer.Content(LiveTV)</visible>
             <control type="progress">
                 <description>ProgressbarCache</description>
-                <left>490r</left>
-                <top>13r</top>
+                <left>500r</left>
+                <top>23r</top>
                 <width>480</width>
                 <height>3</height>
                 <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
@@ -631,8 +631,8 @@
             </control>
             <control type="progress">
                 <description>Progressbar</description>
-                <left>490r</left>
-                <top>13r</top>
+                <left>500r</left>
+                <top>23r</top>
                 <width>480</width>
                 <height>3</height>
                 <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
@@ -642,8 +642,8 @@
 
         <!-- PiP bg media large -->
         <control type="image">
-            <left>706r</left>
-            <top>439r</top>
+            <left>716r</left>
+            <top>449r</top>
             <width>696</width>
             <height>428</height>
             <texture>black.png</texture>
@@ -653,8 +653,8 @@
             <visible> String.IsEqual(Skin.String(PiP),Large)</visible>
         </control>
         <control type="videowindow">
-            <left>706r</left>
-            <top>439r</top>
+            <left>716r</left>
+            <top>449r</top>
             <width>696</width>
             <height>428</height>
             <aspectratio>scale</aspectratio>
@@ -664,8 +664,8 @@
             <visible> String.IsEqual(Skin.String(PiP),Large)</visible>
         </control>
         <control type="image">
-            <left>700r</left>
-            <top>430r</top>
+            <left>710r</left>
+            <top>440r</top>
             <width>64</width>
             <height>64</height>
             <align>left</align>
@@ -677,8 +677,8 @@
             <visible> String.IsEqual(Skin.String(PiP),Large)</visible>
         </control>
         <control type="button">
-            <right>23</right>
-            <top>428r</top>
+            <right>33</right>
+            <top>438r</top>
             <width>56</width>
             <height>56</height>
             <texturefocus>close.png</texturefocus>
@@ -699,8 +699,8 @@
             <visible>VideoPlayer.Content(LiveTV)</visible>
             <control type="progress">
                 <description>ProgressbarTimeshift</description>
-                <left>706r</left>
-                <top>14r</top>
+                <left>716r</left>
+                <top>24r</top>
                 <width>696</width>
                 <height>4</height>
                 <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
@@ -709,8 +709,8 @@
             </control>
             <control type="progress">
                 <description>Progressbar</description>
-                <left>706r</left>
-                <top>14r</top>
+                <left>716r</left>
+                <top>24r</top>
                 <width>696</width>
                 <height>4</height>
                 <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
@@ -726,8 +726,8 @@
             <visible>!VideoPlayer.Content(LiveTV)</visible>
             <control type="progress">
                 <description>ProgressbarCache</description>
-                <left>706r</left>
-                <top>14r</top>
+                <left>716r</left>
+                <top>24r</top>
                 <width>696</width>
                 <height>4</height>
                 <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
@@ -736,8 +736,8 @@
             </control>
             <control type="progress">
                 <description>Progressbar</description>
-                <left>706r</left>
-                <top>14r</top>
+                <left>716r</left>
+                <top>24r</top>
                 <width>696</width>
                 <height>4</height>
                 <midtexture border="6,0,6,0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
