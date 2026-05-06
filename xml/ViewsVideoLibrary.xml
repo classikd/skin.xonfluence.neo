@@ -6,9 +6,9 @@
             <left>0</left>
             <top>120</top>
             <width>1920</width>
-            <height>690</height>
+            <height>990</height>
             <onup>9000</onup>
-            <ondown>803</ondown>
+            <ondown>60</ondown>
             <usecontrolcoords>true</usecontrolcoords>
             <include>VisibleFadeEffect</include>
             <control type="fixedlist" id="501">
@@ -345,23 +345,24 @@
 
                 </focusedlayout>
             </control>
-            <control type="scrollbar" id="60">
-                <left>280</left>
-                <top>0</top>
-                <width>1320</width>
-                <height>38</height>
-                <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
-                <texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
-                <texturesliderbarfocus border="14,0,14,0" colordiffuse="$VAR[MainColorOne]">ScrollBarH_bar_focus.png</texturesliderbarfocus>
-                <textureslidernib colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernib>
-                <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernibfocus>
-                <onup>501</onup>
-                <ondown>800</ondown>
-                <showonepage>true</showonepage>
-                <orientation>horizontal</orientation>
-                <visible>Control.IsVisible(501)</visible>
-                <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
-            </control>
+        </control>
+        <control type="scrollbar" id="60">
+            <left>0</left>
+            <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
+            <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
+            <width>1920</width>
+            <height>38</height>
+            <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
+            <texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
+            <texturesliderbarfocus border="14,0,14,0" colordiffuse="$VAR[MainColorOne]">ScrollBarH_bar_focus.png</texturesliderbarfocus>
+            <textureslidernib colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernib>
+            <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernibfocus>
+            <onup>501</onup>
+            <ondown>800</ondown>
+            <showonepage>true</showonepage>
+            <orientation>horizontal</orientation>
+            <visible>Control.IsVisible(501)</visible>
+            <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
         </control>
         <control type="group">
             <visible>Control.IsVisible(501) + [Container.Content(Movies) | Container.Content(Sets)]</visible>
@@ -603,23 +604,24 @@
                 <preloaditems>4</preloaditems>
                 <include>PosterWrapFanartContent</include>
             </control>
-            <control type="scrollbar" id="60">
-                <left>465</left>
-                <top>300</top>
-                <width>990</width>
-                <height>38</height>
-                <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
-                <texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
-                <texturesliderbarfocus border="14,0,14,0" colordiffuse="$VAR[MainColorOne]">ScrollBarH_bar_focus.png</texturesliderbarfocus>
-                <textureslidernib colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernib>
-                <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernibfocus>
-                <onup>508</onup>
-                <ondown>800</ondown>
-                <showonepage>true</showonepage>
-                <orientation>horizontal</orientation>
-                <visible>Control.IsVisible(508)</visible>
-                <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
-            </control>
+        </control>
+        <control type="scrollbar" id="60">
+            <left>0</left>
+            <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
+            <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
+            <width>1920</width>
+            <height>38</height>
+            <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
+            <texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
+            <texturesliderbarfocus border="14,0,14,0" colordiffuse="$VAR[MainColorOne]">ScrollBarH_bar_focus.png</texturesliderbarfocus>
+            <textureslidernib colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernib>
+            <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernibfocus>
+            <onup>508</onup>
+            <ondown>800</ondown>
+            <showonepage>true</showonepage>
+            <orientation>horizontal</orientation>
+            <visible>Control.IsVisible(508)</visible>
+            <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
         </control>
         <include>PosterWrapFanartInfo</include>
     </include>
@@ -652,24 +654,25 @@
                 <preloaditems>4</preloaditems>
                 <include>PosterWrapFanartContent</include>
             </control>
-            <control type="scrollbar" id="60">
-                <depth>DepthContent</depth>
-                <left>465</left>
-                <top>300</top>
-                <width>990</width>
-                <height>38</height>
-                <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
-                <texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
-                <texturesliderbarfocus border="14,0,14,0" colordiffuse="$VAR[MainColorOne]">ScrollBarH_bar_focus.png</texturesliderbarfocus>
-                <textureslidernib colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernib>
-                <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernibfocus>
-                <onup>508</onup>
-                <ondown>800</ondown>
-                <showonepage>true</showonepage>
-                <orientation>horizontal</orientation>
-                <visible>Control.IsVisible(508)</visible>
-                <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
-            </control>
+        </control>
+        <control type="scrollbar" id="60">
+            <depth>DepthContent</depth>
+            <left>0</left>
+            <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
+            <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
+            <width>1920</width>
+            <height>38</height>
+            <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
+            <texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
+            <texturesliderbarfocus border="14,0,14,0" colordiffuse="$VAR[MainColorOne]">ScrollBarH_bar_focus.png</texturesliderbarfocus>
+            <textureslidernib colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernib>
+            <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernibfocus>
+            <onup>508</onup>
+            <ondown>800</ondown>
+            <showonepage>true</showonepage>
+            <orientation>horizontal</orientation>
+            <visible>Control.IsVisible(508)</visible>
+            <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
         </control>
         <include>PosterWrapFanartInfo</include>
     </include>
@@ -1302,23 +1305,24 @@
                 <preloaditems>4</preloaditems>
                 <include>PosterWrapFanartContent2</include>
             </control>
-            <control type="scrollbar" id="60">
-                <left>465</left>
-                <top>375</top>
-                <width>990</width>
-                <height>38</height>
-                <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
-                <texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
-                <texturesliderbarfocus border="14,0,14,0" colordiffuse="$VAR[MainColorOne]">ScrollBarH_bar_focus.png</texturesliderbarfocus>
-                <textureslidernib colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernib>
-                <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernibfocus>
-                <onup>527</onup>
-                <ondown>800</ondown>
-                <showonepage>true</showonepage>
-                <orientation>horizontal</orientation>
-                <visible>Control.IsVisible(527)</visible>
-                <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
-            </control>
+        </control>
+        <control type="scrollbar" id="60">
+            <left>0</left>
+            <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
+            <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
+            <width>1920</width>
+            <height>38</height>
+            <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
+            <texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
+            <texturesliderbarfocus border="14,0,14,0" colordiffuse="$VAR[MainColorOne]">ScrollBarH_bar_focus.png</texturesliderbarfocus>
+            <textureslidernib colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernib>
+            <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernibfocus>
+            <onup>527</onup>
+            <ondown>800</ondown>
+            <showonepage>true</showonepage>
+            <orientation>horizontal</orientation>
+            <visible>Control.IsVisible(527)</visible>
+            <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
         </control>
         <include>PosterWrapFanartInfo2</include>
     </include>
@@ -1351,24 +1355,25 @@
                 <preloaditems>4</preloaditems>
                 <include>PosterWrapFanartContent2</include>
             </control>
-            <control type="scrollbar" id="60">
-                <depth>DepthContent</depth>
-                <left>465</left>
-                <top>375</top>
-                <width>990</width>
-                <height>38</height>
-                <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
-                <texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
-                <texturesliderbarfocus border="14,0,14,0" colordiffuse="$VAR[MainColorOne]">ScrollBarH_bar_focus.png</texturesliderbarfocus>
-                <textureslidernib colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernib>
-                <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernibfocus>
-                <onup>527</onup>
-                <ondown>800</ondown>
-                <showonepage>true</showonepage>
-                <orientation>horizontal</orientation>
-                <visible>Control.IsVisible(527)</visible>
-                <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
-            </control>
+        </control>
+        <control type="scrollbar" id="60">
+            <depth>DepthContent</depth>
+            <left>0</left>
+            <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
+            <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
+            <width>1920</width>
+            <height>38</height>
+            <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
+            <texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
+            <texturesliderbarfocus border="14,0,14,0" colordiffuse="$VAR[MainColorOne]">ScrollBarH_bar_focus.png</texturesliderbarfocus>
+            <textureslidernib colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernib>
+            <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernibfocus>
+            <onup>527</onup>
+            <ondown>800</ondown>
+            <showonepage>true</showonepage>
+            <orientation>horizontal</orientation>
+            <visible>Control.IsVisible(527)</visible>
+            <visible>Skin.HasSetting(EnableHorizontalScrollbar)</visible>
         </control>
         <include>PosterWrapFanartInfo2</include>
     </include>

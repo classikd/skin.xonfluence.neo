@@ -3839,6 +3839,13 @@
         <value>.jpg</value>
     </variable>
 
+    <include name="ScrollbarPositionTop">
+        <top>-14</top>
+    </include>
+    <include name="ScrollbarPositionBottom">
+        <top>1053</top>
+    </include>
+
 	<expression name="isEnabledParentDirectory">System.GetBool(filelists.showparentdiritems)</expression>
 	<expression name="isnotEnabledParentDirectory">!System.GetBool(filelists.showparentdiritems)</expression>
 	<expression name="IsVideoPlaylist">[Container(9000).HasFocus(1) + Skin.String(HomeItem.1.PlaylistType,video)] | 

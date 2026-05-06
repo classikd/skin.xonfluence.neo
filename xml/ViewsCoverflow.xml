@@ -446,7 +446,8 @@
 
 			<control type="scrollbar" id="60">
                 <left>0</left>
-                <top>1052</top>
+                <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
+                <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
                 <width>1920</width>
                 <height>38</height>
 				<orientation>horizontal</orientation>
