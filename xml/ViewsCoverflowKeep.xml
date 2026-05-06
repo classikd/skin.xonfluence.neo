@@ -36,8 +36,9 @@
 					<height>600</height>
 					<texture background="true">$VAR[Icon(-5)Poster]</texture>
 					<aspectratio scalediffuse="false">keep</aspectratio>
+				    <visible>Container(529).OnNext</visible>
 					<animation effect="rotatey" center="-60" end="-60" condition="true">Conditional</animation>
-                    <animation effect="fade" start="100" end="0" time="210" condition="true" loop="true">Conditional</animation>
+                    <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 					<visible>[Integer.IsGreater(Container(529).NumItems,10) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(529).NumItems,9) + $EXP[isEnabledParentDirectory]]</visible>
 				</control>
 				<control type="image">
@@ -75,10 +76,11 @@
 					<top>109</top>
 					<width>385</width>
 					<height>600</height>
+                    <visible>Container(529).OnNext</visible>
 					<texture background="true">$VAR[Icon(4)Poster]</texture>
 					<aspectratio scalediffuse="false">keep</aspectratio>
 					<animation effect="rotatey" center="2190" end="60" condition="true">Conditional</animation>
-					<animation effect="fade" start="0" end="100" time="210" condition="true" loop="true">Conditional</animation>
+					<animation effect="fade" start="0" end="100" time="200" reversible="false">Hidden</animation>
                     <visible>[Integer.IsGreater(Container(529).NumItems,7) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(529).NumItems,6) + $EXP[isEnabledParentDirectory]]</visible>
 				</control>
                 <control type="image">
@@ -122,8 +124,11 @@
 						<texture background="true">$VAR[Icon(-1)Poster]</texture>
 						<aspectratio scalediffuse="false">keep</aspectratio>
 						<visible>[Integer.IsGreater(Container(529).NumItems,2) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(529).NumItems,1) + $EXP[isEnabledParentDirectory]]</visible>			
-						<animation effect="rotatey" center="780" start="0" end="-60" time="210" condition="true" loop="true">Conditional</animation>
-                        <animation effect="slide" center="780" end="160,0" time="210" condition="true" loop="true">Conditional</animation>
+					    <visible>Container(529).OnNext</visible>
+                        <animation type="Hidden" reversible="false">
+                            <effect type="rotatey" center="780" start="0" end="-60" time="200" /> 
+                            <effect type="slide" center="780" end="155,0" time="200" />
+                        </animation>
                     </control>
 					<control type="image">
 						<left>897</left>
@@ -132,8 +137,14 @@
 						<height>600</height>
 						<texture background="true">$VAR[Icon(0)Poster]</texture>
 						<aspectratio scalediffuse="false">keep</aspectratio>
-						<animation effect="rotatey" center="1430" start="60" end="0" time="210" condition="true" loop="true">Conditional</animation>
-                        <animation effect="slide" end="162,0" time="210" condition="true" loop="true">Conditional</animation>
+					    <visible>Container(529).OnNext</visible>
+                        <!-- initial position visible only some ms -->
+                        <animation effect="rotatey" center="1430" end="60" condition="true">Conditional</animation>
+                        <!-- anim -->
+                        <animation type="Hidden" reversible="false">
+                            <effect type="rotatey" center="1430" start="0" end="-60" time="200" /> 
+                            <effect type="slide" start="0,0" end="165,0" time="200" />
+                        </animation>
                     </control>
 				</control>
 			</control>
@@ -151,8 +162,9 @@
 					<height>600</height>
 					<texture background="true">$VAR[Icon(-4)Poster]</texture>
 					<aspectratio scalediffuse="false">keep</aspectratio>
+				    <visible>Container(529).OnPrevious</visible>
 					<animation effect="rotatey" center="-250" end="-60" condition="true">Conditional</animation>
-					<animation effect="fade" start="0" end="100" time="210" condition="true" loop="true">Conditional</animation>
+					<animation effect="fade" start="0" end="100" time="200" reversible="false">Hidden</animation>
                     <visible>[Integer.IsGreater(Container(529).NumItems,8) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(529).NumItems,7) + $EXP[isEnabledParentDirectory]]</visible>
 				</control>
                 <control type="image">
@@ -192,8 +204,9 @@
 					<height>600</height>
 					<texture background="true">$VAR[Icon(5)Poster]</texture>
 					<aspectratio scalediffuse="false">keep</aspectratio>
+				    <visible>Container(529).OnPrevious</visible>
 					<animation effect="rotatey" center="2000" end="60" condition="true">Conditional</animation>
-                    <animation effect="fade" start="100" end="0" time="210" condition="true" loop="true">Conditional</animation>
+                    <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 					<visible>[Integer.IsGreater(Container(529).NumItems,9) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(529).NumItems,8) + $EXP[isEnabledParentDirectory]]</visible>
 				</control>
 				<control type="image">
@@ -236,8 +249,11 @@
 						<height>600</height>
 						<texture background="true">$VAR[Icon(1)Poster]</texture>
 						<aspectratio scalediffuse="false">keep</aspectratio>
-                        <animation effect="rotatey" center="1150" start="0" end="60" time="210" condition="true" loop="true">Conditional</animation>
-                        <animation effect="slide" center="1150" end="-160,0" time="210" condition="true" loop="true">Conditional</animation>
+					    <visible>Container(529).OnPrevious</visible>
+                        <animation type="Hidden" reversible="false">
+                            <effect type="rotatey" center="1150" start="0" end="60" time="200" /> 
+                            <effect type="slide" center="1150" end="-155,0" time="200" />
+                        </animation>
                         <visible>[Integer.IsGreater(Container(529).NumItems,1) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(529).NumItems,0) + $EXP[isEnabledParentDirectory]]</visible>
 					</control>
 					<control type="image">
@@ -247,8 +263,14 @@
 						<height>600</height>
 						<texture background="true">$VAR[Icon(0)Poster]</texture>
 						<aspectratio scalediffuse="false">keep</aspectratio>
-						<animation effect="rotatey" center="520" start="-60" end="0" time="210" condition="true" loop="true">Conditional</animation>
-                        <animation effect="slide" center="520" end="-165,0" time="210" condition="true" loop="true">Conditional</animation>
+					    <visible>Container(529).OnPrevious</visible>
+                        <!-- initial position visible only some ms -->
+                        <animation effect="rotatey" center="520" end="-60" condition="true">Conditional</animation>
+                        <!-- anim -->
+                        <animation type="Hidden" reversible="false">
+                            <effect type="rotatey" center="520" start="0" end="60" time="200" /> 
+                            <effect type="slide" start="0,0" end="-165,0" time="200" />
+                        </animation>
                     </control>
 				</control>
 			</control>
