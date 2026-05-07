@@ -350,7 +350,7 @@
             <left>0</left>
             <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
             <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
-            <width>1920</width>
+            <width>1926</width>
             <height>38</height>
             <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
             <texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
@@ -609,7 +609,7 @@
             <left>0</left>
             <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
             <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
-            <width>1920</width>
+            <width>1926</width>
             <height>38</height>
             <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
             <texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
@@ -660,7 +660,7 @@
             <left>0</left>
             <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
             <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
-            <width>1920</width>
+            <width>1926</width>
             <height>38</height>
             <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
             <texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
@@ -1310,7 +1310,7 @@
             <left>0</left>
             <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
             <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
-            <width>1920</width>
+            <width>1926</width>
             <height>38</height>
             <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
             <texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
@@ -1361,7 +1361,7 @@
             <left>0</left>
             <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
             <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
-            <width>1920</width>
+            <width>1926</width>
             <height>38</height>
             <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
             <texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>

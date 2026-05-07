@@ -448,7 +448,7 @@
                 <left>0</left>
                 <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
                 <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
-                <width>1920</width>
+                <width>1926</width>
                 <height>38</height>
 				<orientation>horizontal</orientation>
 				<ondown>528</ondown>
