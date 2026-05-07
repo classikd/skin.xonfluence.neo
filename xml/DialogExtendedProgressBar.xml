@@ -18,7 +18,7 @@
                 <top>-15</top>
                 <width>600</width>
                 <height>105</height>
-                <texture flipy="true" border="20,20,20,2">InfoMessagePanel.png</texture>
+                <texture flipy="true" border="20,20,20,2">black-back.png</texture>
             </control>
             <control type="label" id="30">
                 <description>Header Label</description>
