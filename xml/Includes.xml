@@ -4990,4 +4990,65 @@
         </control>
     </include>
 
+    <include name="InfoLine">
+        <control type="grouplist">
+            <description>Video infos</description>
+            <left>0</left>
+            <top>0</top>
+            <width>1500</width>
+            <align>left</align>
+            <itemgap>3</itemgap>
+            <orientation>horizontal</orientation>
+
+            <control type="group">
+                <width>130</width>
+                <include content="ItemRating">
+                    <param name="Color" value="$VAR[MainColorOne]" />
+                </include>
+            </control>
+
+            <control type="label">
+                <width min="0" max="200">auto</width>
+                <font>font11_title</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>    |    $INFO[ListItem.Year]</label>
+                <visible>!String.IsEmpty(ListItem.Year)</visible>
+            </control>
+
+            <control type="label">
+                <width min="0" max="200">auto</width>
+                <font>font11_title</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>    |    $VAR[DurationInMinutes]</label>
+                <visible>!Container.Content(TVShows)</visible>
+            </control>
+
+            <control type="label">
+                <width min="0" max="200">auto</width>
+                <font>font11_title</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>    |    $VAR[EpisodeLabel]</label>
+                <visible>Container.Content(TVShows)</visible>
+            </control>
+
+            <control type="image">
+                <width>12</width>
+                <height>20</height>
+                <texture>blank.png</texture>
+            </control>
+
+            <control type="image">
+                <width>50</width>
+                <height>32</height>
+                <texture>$VAR[MediaInfoOverlayVar]</texture>
+                <aspectratio>keep</aspectratio>
+                <visible>Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+            </control>
+
+        </control>
+    </include>
+
 </includes>
