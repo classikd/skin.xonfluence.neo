@@ -21,13 +21,13 @@
             <animation effect="slide" start="0,0" end="0,175" time="0" condition="Skin.HasSetting(LowerMainMenuBar)">Conditional</animation>
             <control type="image">
                 <description>Cover image</description>
-                <left>60</left>
+                <left>65</left>
                 <top>415</top>
                 <width>106</width>
                 <height>106</height>
                 <aspectratio aligny="bottom">scale</aspectratio>
                 <texture fallback="DefaultAlbumCover.png">$INFO[Player.Art(thumb)]</texture>
-                <bordertexture border="8" colordiffuse="33FFFFFF">ThumbBorder.png</bordertexture>
+                <bordertexture border="8" colordiffuse="40000000">white.png</bordertexture>
                 <bordersize>5</bordersize>
             </control>
 
@@ -156,7 +156,7 @@
                     <height>120</height>
                     <aspectratio>keep</aspectratio>
                     <texture background="true" fallback="DefaultVideoCover.png">$INFO[PVR.NextRecordingChannelIcon]</texture>
-                    <bordertexture border="8" colordiffuse="33FFFFFF">ThumbBorder.png</bordertexture>
+                    <bordertexture border="8" colordiffuse="40000000">white.png</bordertexture>
                     <bordersize>4</bordersize>
                 </control>
                 <control type="image">
@@ -223,7 +223,7 @@
                     <height>120</height>
                     <aspectratio>keep</aspectratio>
                     <texture background="true" fallback="DefaultVideoCover.png">$INFO[PVR.NowRecordingChannelIcon]</texture>
-                    <bordertexture border="8" colordiffuse="33FFFFFF">ThumbBorder.png</bordertexture>
+                    <bordertexture border="8" colordiffuse="40000000">white.png</bordertexture>
                     <bordersize>4</bordersize>
                 </control>
                 <control type="image">
@@ -301,13 +301,13 @@
                 <visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(LiveTV)</visible>
                 <control type="image">
                     <description>Cover image</description>
-                    <left>60</left>
+                    <left>65</left>
                     <top>415</top>
                     <width>146</width>
                     <height>106</height>
                     <aspectratio aligny="bottom">scale</aspectratio>
                     <texture fallback="DefaultVideoCover.png">$VAR[StreamingVideoIcon]</texture>
-                    <bordertexture border="8" colordiffuse="33FFFFFF">ThumbBorder.png</bordertexture>
+                    <bordertexture border="8" colordiffuse="40000000">white.png</bordertexture>
                     <bordersize>5</bordersize>
                 </control>
                 <control type="label">
@@ -367,7 +367,7 @@
                 <visible>VideoPlayer.Content(LiveTV)</visible>
                 <control type="image">
                     <description>Cover image</description>
-                    <left>60</left>
+                    <left>65</left>
                     <top>410</top>
                     <width>146</width>
                     <height>116</height>
@@ -429,13 +429,13 @@
                 <visible>VideoPlayer.Content(Movies)</visible>
                 <control type="image">
                     <description>Cover image</description>
-                    <left>60</left>
+                    <left>65</left>
                     <top>415</top>
                     <width>146</width>
                     <height>106</height>
                     <aspectratio aligny="bottom">scale</aspectratio>
                     <texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
-                    <bordertexture border="8" colordiffuse="33FFFFFF">ThumbBorder.png</bordertexture>
+                    <bordertexture border="8" colordiffuse="40000000">white.png</bordertexture>
                     <bordersize>5</bordersize>
                 </control>
                 <control type="label">
@@ -492,13 +492,13 @@
                 <visible>VideoPlayer.Content(Episodes)</visible>
                 <control type="image">
                     <description>Cover image</description>
-                    <left>60</left>
+                    <left>65</left>
                     <top>415</top>
                     <width>146</width>
                     <height>106</height>
                     <aspectratio aligny="bottom">scale</aspectratio>
                     <texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
-                    <bordertexture border="8" colordiffuse="33FFFFFF">ThumbBorder.png</bordertexture>
+                    <bordertexture border="8" colordiffuse="40000000">white.png</bordertexture>
                     <bordersize>5</bordersize>
                 </control>
                 <control type="label">
