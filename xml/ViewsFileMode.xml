@@ -1297,7 +1297,7 @@
             <control type="scrollbar" id="60">
                 <right>-10</right>
                 <top>-6</top>
-                <width>38</width>
+                <width>28</width>
                 <height>1095</height>
                 <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
                 <texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
@@ -2039,7 +2039,7 @@
             <control type="scrollbar" id="60">
                 <right>-10</right>
                 <top>-6</top>
-                <width>38</width>
+                <width>28</width>
                 <height>1095</height>
                 <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
                 <texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
@@ -2868,7 +2868,7 @@
             <control type="scrollbar" id="60">
                 <right>-10</right>
                 <top>-6</top>
-                <width>38</width>
+                <width>28</width>
                 <height>1095</height>
                 <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
                 <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
