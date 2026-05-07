@@ -514,7 +514,8 @@
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
                                 <onclick condition="String.IsEmpty(Skin.String(PiP))">Skin.SetString(PiP,Small)</onclick>
-                                <onclick condition="Skin.String(PiP,Small)">Skin.SetString(PiP,Large)</onclick>
+                                <onclick condition="Skin.String(PiP,Small)">Skin.SetString(PiP,Medium)</onclick>
+                                <onclick condition="Skin.String(PiP,Medium)">Skin.SetString(PiP,Large)</onclick>
                                 <onclick condition="Skin.String(PiP,Large)">Skin.Reset(PiP)</onclick>
                                 <enable>!Skin.HasSetting(HideHomeNowPlaying)</enable>
                             </control>

@@ -3340,6 +3340,7 @@
     </variable>
     <variable name="PiPValue">
         <value condition="Skin.String(PiP,Small)">$LOCALIZE[31992]</value>
+        <value condition="Skin.String(PiP,Medium)">$LOCALIZE[392]</value>
         <value condition="Skin.String(PiP,Large)">$LOCALIZE[31994]</value>
         <value>$LOCALIZE[31784]</value>
     </variable>
