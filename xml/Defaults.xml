@@ -168,7 +168,8 @@
         <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">osd_slider_nib.png</textureslidernibfocus>
         <font>font12</font>
         <textcolor>white</textcolor>
-        <disabledcolor>grey3</disabledcolor>
+        <disabledcolor>grey3</disabledcolor> 
+        <pulseonselect>false</pulseonselect>
     </default>
     <default type="mover">
         <left>90</left>
