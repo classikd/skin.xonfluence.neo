@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 0.10
+- Add "Coverflow" view
+- Add option to toggle PiP from left sideblade and add a medium size
+- Improve full-width/height scrollbars, and reactivate them by default
+- and more
+
 ## Version 0.9
 - Add seekbar to PiP video
 - Fixes for features coming in 0.8 version
