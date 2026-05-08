@@ -445,7 +445,6 @@
 			<visible>Control.IsVisible(528)</visible>
 
 			<control type="scrollbar" id="60">
-                <top>1060</top>
                 <left>0</left>
                 <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
                 <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>

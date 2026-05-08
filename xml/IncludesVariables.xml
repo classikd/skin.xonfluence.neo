@@ -3844,7 +3844,7 @@
         <top>-14</top>
     </include>
     <include name="ScrollbarPositionBottom">
-        <top>1053</top>
+        <top>1060</top>
     </include>
 
 	<expression name="isEnabledParentDirectory">System.GetBool(filelists.showparentdiritems)</expression>
