@@ -1347,7 +1347,15 @@
         <aligny>center</aligny>
         <font>font12_title</font>
         <pulseonselect>false</pulseonselect>
+        <focusedcolor>black</focusedcolor>
+        <shadowcolor>00FF0000</shadowcolor>
+        <include>ButtonInfoDialogBackground</include>
     </include>
+
+    <include name="ButtonInfoDialogBackground">
+        <texturenofocus colordiffuse="20FFFFFF">white50.png</texturenofocus>
+    </include>
+
     <include name="SideBladeLeft">
         <animation effect="slide" start="0,0" end="375,0" time="300" tween="quadratic" easing="out" condition="[[Window.IsActive(script-globalsearch.xml) + ControlGroup(9999).HasFocus] | !String.IsEmpty(Window.Property(SideBladeOpen)) | ControlGroup(9000).HasFocus | ControlGroup(8999).HasFocus] + ![Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRadioRDSInfo)]">Conditional</animation>
         <animation effect="slide" start="0,0" end="-450,0" time="300" tween="quadratic" easing="out" condition="!String.IsEmpty(Window.Property(SideBladeOpen)) | ControlGroup(9000).HasFocus">WindowClose</animation>

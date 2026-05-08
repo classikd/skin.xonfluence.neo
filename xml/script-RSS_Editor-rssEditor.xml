@@ -121,6 +121,7 @@
                 <onleft>60</onleft>
                 <onright>10</onright>
                 <ondown>13</ondown>
+                <include>ButtonInfoDialogBackground</include>
             </control>
             <control type="button" id="13">
                 <description>Add Button</description>
@@ -136,6 +137,7 @@
                 <onleft>60</onleft>
                 <onright>10</onright>
                 <ondown>14</ondown>
+                <include>ButtonInfoDialogBackground</include>
             </control>
             <control type="button" id="14">
                 <description>Remove Button</description>
@@ -151,6 +153,7 @@
                 <onleft>60</onleft>
                 <onright>10</onright>
                 <ondown>9001</ondown>
+                <include>ButtonInfoDialogBackground</include>
             </control>
         </control>
         <control type="group" id="9001">
@@ -168,6 +171,7 @@
                 <onleft>20</onleft>
                 <onright>19</onright>
                 <ondown>10</ondown>
+                <include>ButtonInfoDialogBackground</include>
             </control>
             <control type="button" id="19">
                 <description>Cancel Button</description>
@@ -183,6 +187,7 @@
                 <onleft>18</onleft>
                 <onright>20</onright>
                 <ondown>10</ondown>
+                <include>ButtonInfoDialogBackground</include>
             </control>
         </control>
     </controls>

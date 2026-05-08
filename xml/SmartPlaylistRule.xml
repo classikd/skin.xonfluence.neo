@@ -101,6 +101,7 @@
                 <onleft>19</onleft>
                 <onright>19</onright>
                 <ondown>9001</ondown>
+                <include>ButtonInfoDialogBackground</include>
             </control>
             <control type="button" id="19">
                 <description>Cancel Button</description>
@@ -116,6 +117,7 @@
                 <onleft>18</onleft>
                 <onright>19</onright>
                 <ondown>9001</ondown>
+                <include>ButtonInfoDialogBackground</include>
             </control>
         </control>
     </controls>

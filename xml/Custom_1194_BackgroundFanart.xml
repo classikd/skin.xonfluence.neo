@@ -66,6 +66,7 @@
                     <onclick condition="!String.IsEmpty(Skin.String(HomeItem.14.Path))">Skin.SetString(HomeItem.14.Fanart,$VAR[SetMenuFourteenBackground])</onclick>
                     <onclick condition="!String.IsEmpty(Skin.String(HomeItem.15.Path))">Skin.SetString(HomeItem.15.Fanart,$VAR[SetMenuFifteenBackground])</onclick>
                     <onclick>PreviousMenu</onclick>
+                    <include>ButtonInfoDialogBackground</include>
                 </control>
                 <control type="button" id="610">
                     <description>Cancel button</description>
@@ -77,6 +78,7 @@
                     <focusedcolor>black</focusedcolor>
                     <align>center</align>
                     <onclick>PreviousMenu</onclick>
+                    <include>ButtonInfoDialogBackground</include>
                 </control>
                 <control type="button" id="612">
                     <description>Don't ask again button</description>
@@ -89,6 +91,7 @@
                     <align>center</align>
                     <onclick>Skin.SetBool(DontAskBackgroundFanart)</onclick>
                     <onclick>PreviousMenu</onclick>
+                    <include>ButtonInfoDialogBackground</include>
                 </control>
             </control>
         </control>

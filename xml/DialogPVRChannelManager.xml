@@ -383,6 +383,7 @@
                 <onright>20</onright>
                 <onup>6</onup>
                 <ondown>5</ondown>
+                <include>ButtonInfoDialogBackground</include>
             </control>
             <control type="button" id="5">
                 <description>Apply changes Button</description>
@@ -398,6 +399,7 @@
                 <onright>20</onright>
                 <onup>4</onup>
                 <ondown>6</ondown>
+                <include>ButtonInfoDialogBackground</include>
             </control>
             <control type="button" id="6">
                 <description>Cancel Button</description>
@@ -413,6 +415,7 @@
                 <onright>20</onright>
                 <onup>5</onup>
                 <ondown>4</ondown>
+                <include>ButtonInfoDialogBackground</include>
             </control>
             <control type="group">
                 <left>-8</left>

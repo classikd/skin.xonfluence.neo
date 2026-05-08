@@ -333,6 +333,7 @@
                         <focusedcolor>black</focusedcolor>
                         <align>center</align>
                         <onclick>PreviousMenu</onclick>
+                        <include>ButtonInfoDialogBackground</include>
                     </control>
                 </control>
             </control>

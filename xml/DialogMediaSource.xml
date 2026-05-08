@@ -203,6 +203,7 @@
             <onleft>12</onleft>
             <onright>19</onright>
             <ondown>9001</ondown>
+            <include>ButtonInfoDialogBackground</include>
         </control>
         <control type="group" id="9001">
             <left>285</left>
@@ -221,6 +222,7 @@
                 <onleft>19</onleft>
                 <onright>19</onright>
                 <ondown>10</ondown>
+                <include>ButtonInfoDialogBackground</include>
             </control>
             <control type="button" id="19">
                 <description>Cancel Button</description>
@@ -236,6 +238,7 @@
                 <onleft>18</onleft>
                 <onright>18</onright>
                 <ondown>10</ondown>
+                <include>ButtonInfoDialogBackground</include>
             </control>
         </control>
     </controls>

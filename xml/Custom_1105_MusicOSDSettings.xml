@@ -84,6 +84,7 @@
                 <onup>5000</onup>
                 <ondown>5000</ondown>
                 <onclick>PreviousMenu</onclick>
+                <include>ButtonInfoDialogBackground</include>
             </control>
 		</control>
 	</controls>

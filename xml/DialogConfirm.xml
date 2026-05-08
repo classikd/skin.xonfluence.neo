@@ -55,6 +55,7 @@
                 <textcolor>white</textcolor>
                 <focusedcolor>black</focusedcolor>
                 <align>center</align>
+                <include>ButtonInfoDialogBackground</include>
             </control>
             <control type="button" id="10">
                 <description>Cancel button</description>
@@ -65,6 +66,7 @@
                 <textcolor>white</textcolor>
                 <focusedcolor>black</focusedcolor>
                 <align>center</align>
+                <include>ButtonInfoDialogBackground</include>
             </control>
             <control type="button" id="12">
                 <description>Custom button</description>
@@ -75,6 +77,7 @@
                 <textcolor>white</textcolor>
                 <focusedcolor>black</focusedcolor>
                 <align>center</align>
+                <include>ButtonInfoDialogBackground</include>
             </control>
         </control>
     </controls>
