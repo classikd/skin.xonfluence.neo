@@ -6,17 +6,16 @@
     <controls>
         <control type="group">
             <depth>DepthOSD</depth>
-            <left>730</left>
+            <left>680</left>
             <top>15</top>
             <include>VisibleFadeEffect</include>
             <visible>!Player.Muted</visible>
-            <animation effect="slide" start="0,0" end="-120,0" time="0" condition="system.getbool(input.enablemouse) + Window.IsActive(VideoOSD)">conditional</animation>
             <control type="image">
                 <left>0</left>
                 <top>-15</top>
-                <width>450</width>
+                <width>555</width>
                 <height>90</height>
-                <texture flipy="true" border="20,20,20,2">black-back.png</texture>
+                <texture flipy="true" border="20,20,20,2">OverlayDialogBackground.png</texture>
                 <visible>!Skin.HasSetting(HidePopUpSeekBar)</visible>
             </control>
             <control type="group">
@@ -34,14 +33,14 @@
                     <description>progress control</description>
                     <left>75</left>
                     <top>12</top>
-                    <width>345</width>
+                    <width>450</width>
                     <height>27</height>
                     <info>Player.Volume</info>
                 </control>
                 <control type="label" id="1">
                     <left>75</left>
                     <top>40</top>
-                    <width>342</width>
+                    <width>450</width>
                     <height>27</height>
                     <label>$LOCALIZE[13376] $INFO[Player.Volume]</label>
                     <font>font9</font>
@@ -67,7 +66,7 @@
                     <description>Passthrough Label</description>
                     <left>75</left>
                     <top>9</top>
-                    <width>345</width>
+                    <width>450</width>
                     <height>30</height>
                     <label>$LOCALIZE[29802]</label>
                     <font>font9</font>
@@ -86,7 +85,7 @@
             <aspectratio>keep</aspectratio>
             <texture>icon-mute.png</texture>
             <include>VisibleFadeEffect</include>
-            <animation effect="slide" start="0,0" end="-120,0" time="0" condition="system.getbool(input.enablemouse) + Window.IsActive(VideoOSD)">conditional</animation>
+            <animation effect="slide" start="0,0" end="-70,0" time="0" condition="system.getbool(input.enablemouse) + Window.IsActive(VideoOSD)">conditional</animation>
             <visible>Player.Muted</visible>
         </control>
     </controls>

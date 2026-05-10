@@ -11,9 +11,7 @@
     <controls>
         <control type="group">
             <visible>player.chaptercount + Window.IsVisible(FullScreenVideo)</visible>
-            <animation effect="slide" start="0,0" end="-150,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="-60,0" time="75" condition="Player.Muted">conditional</animation>
-            <left>1258r</left>
+            <left>252</left>
             <top>-9</top>
             <include>VisibleFadeEffect</include>
             <control type="image">
@@ -27,20 +25,20 @@
             <control type="label" id="1">
                 <description>Chapter Pos No</description>
                 <left>30</left>
-                <top>15</top>
+                <top>25</top>
                 <width>365</width>
                 <height>30</height>
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>font12_title</font>
-                <textcolor>grey2</textcolor>
+                <textcolor>white</textcolor>
                 <label>[COLOR=$VAR[MainColorOne]]$LOCALIZE[21396][/COLOR] $INFO[player.chapter]$INFO[player.chaptercount, $LOCALIZE[31088] ]</label>
                 <visible>player.chaptercount</visible>
             </control>
             <control type="label" id="1">
                 <description>Chapter Name</description>
                 <left>30</left>
-                <top>45</top>
+                <top>55</top>
                 <width>365</width>
                 <height>30</height>
                 <align>center</align>
@@ -52,10 +50,7 @@
             </control>
         </control>
         <control type="group">
-            <!-- <animation effect="slide" start="0,0" end="292,998" time="0" condition="Skin.HasSetting(HidePopUpSeekBar)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="-150,0" time="0" condition="!Skin.HasSetting(HidePopUpSeekBar) + system.getbool(input.enablemouse)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="-60,0" time="75" condition="!Skin.HasSetting(HidePopUpSeekBar) + Player.Muted">conditional</animation> -->
-            <left>940r</left>
+            <left>680</left>
             <top>-9</top>
             <visible>!Window.IsVisible(busydialog)</visible>
             <control type="image">
@@ -67,7 +62,7 @@
                 <texture border="12">OverlayDialogBackground.png</texture>
             </control>
             <control type="group">
-                <left>390</left>
+                <left>400</left>
                 <top>15</top>
                 <control type="image">
                     <left>15</left>
@@ -248,7 +243,7 @@
             <control type="label">
                 <description>Seekbar Label</description>
                 <left>30</left>
-                <top>10</top>
+                <top>15</top>
                 <width>360</width>
                 <height>30</height>
                 <align>left</align>
@@ -260,12 +255,12 @@
             <control type="label" id="1">
                 <description>Seek Number label</description>
                 <left>560</left>
-                <top>34</top>
+                <top>38</top>
                 <width>195</width>
                 <height>30</height>
                 <align>left</align>
                 <aligny>center</aligny>
-                <font>font13_title</font>
+                <font>font12</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <label>$INFO[Player.SeekNumeric(hh:mm:ss)]</label>
@@ -279,10 +274,10 @@
 				    <control type="label">
                         <description>Elapsed Time Label</description>
                         <left>30</left>
-                        <top>34</top>
+                        <top>38</top>
                         <width>360</width>
                         <height>30</height>
-                        <font>font13_title</font>
+                        <font>font12</font>
                         <textcolor>white</textcolor>
                         <align>left</align>
                         <aligny>center</aligny>
@@ -292,10 +287,10 @@
                     <control type="label">
                         <description>Seek Time Label</description>
                         <left>30</left>
-                        <top>34</top>
+                        <top>38</top>
                         <width>360</width>
                         <height>30</height>
-                        <font>font13_title</font>
+                        <font>font12</font>
                         <textcolor>white</textcolor>
                         <align>left</align>
                         <aligny>center</aligny>
@@ -332,15 +327,16 @@
                         <visible>Player.Seeking</visible>
                     </control>
                 </control>
+
                 <control type="group">
                     <visible>![VideoPlayer.Content(LiveTV) + VideoPlayer.HasEpg]</visible>
 				    <control type="label">
                         <description>Elapsed Time Label</description>
                         <left>30</left>
-                        <top>34</top>
+                        <top>38</top>
                         <width>360</width>
                         <height>30</height>
-                        <font>font13_title</font>
+                        <font>font12</font>
                         <textcolor>white</textcolor>
                         <align>left</align>
                         <aligny>center</aligny>
@@ -350,10 +346,10 @@
                     <control type="label">
                         <description>Seek Time Label</description>
                         <left>30</left>
-                        <top>34</top>
+                        <top>38</top>
                         <width>360</width>
                         <height>30</height>
-                        <font>font13_title</font>
+                        <font>font12</font>
                         <textcolor>white</textcolor>
                         <align>left</align>
                         <aligny>center</aligny>
