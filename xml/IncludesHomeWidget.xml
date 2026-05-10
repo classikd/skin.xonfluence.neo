@@ -3953,7 +3953,7 @@
                         <top>120</top>
                         <width>120</width>
                         <height>80</height>
-                        <aspectratio>keep</aspectratio>
+                        <aspectratio aligny="center">keep</aspectratio>
                         <texture>$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
                         <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
@@ -4158,7 +4158,7 @@
                         <top>120</top>
                         <width>120</width>
                         <height>80</height>
-                        <aspectratio>keep</aspectratio>
+                        <aspectratio aligny="center">keep</aspectratio>
                         <texture>$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
                         <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
@@ -4371,6 +4371,17 @@
                         <include>TextureBorderWidgets</include>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
+                    <control type="image">
+                        <left>40</left>
+                        <top>105</top>
+                        <width>120</width>
+                        <height>80</height>
+                        <aspectratio aligny="center">keep</aspectratio>
+                        <texture>$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
+                        <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
                     <control type="label">
                         <left>20</left>
                         <top>300</top>
@@ -4461,6 +4472,19 @@
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
+
+                    <control type="image">
+                        <left>40</left>
+                        <top>105</top>
+                        <width>120</width>
+                        <height>80</height>
+                        <aspectratio aligny="center">keep</aspectratio>
+                        <texture>$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
+                        <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
+
                     <control type="label">
                         <left>20</left>
                         <top>300</top>
