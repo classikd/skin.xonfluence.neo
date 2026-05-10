@@ -724,7 +724,7 @@
                             <param name="Texture" value="OSDNextTrack" />
                         </include>
                         <onleft>605</onleft>
-                        <onright>607</onright>
+                        <onright>608</onright>
                         <onup condition="!Skin.HasSetting(LowerMainMenuBar)">9003</onup>
                         <onup condition="Skin.HasSetting(LowerMainMenuBar)">9002</onup>
                         <ondown>9000</ondown>
@@ -738,8 +738,8 @@
                             <param name="Size" value="45" />
                             <param name="Texture" value="OSDVolDown" />
                         </include>
-                        <onleft>607</onleft>
-                        <onright>609</onright>
+                        <onleft>606</onleft>
+                        <onright>607</onright>
                         <onup condition="!Skin.HasSetting(LowerMainMenuBar)">9003</onup>
                         <onup condition="Skin.HasSetting(LowerMainMenuBar)">9002</onup>
                         <ondown>9000</ondown>
@@ -756,7 +756,7 @@
                             <param name="Texture" value="OSDVolUp" />
                         </include>
                         <onleft>608</onleft>
-                        <onright>602</onright>
+                        <onright>609</onright>
                         <onup condition="!Skin.HasSetting(LowerMainMenuBar)">9003</onup>
                         <onup condition="Skin.HasSetting(LowerMainMenuBar)">9002</onup>
                         <ondown>9000</ondown>
