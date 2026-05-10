@@ -3222,11 +3222,11 @@
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
                     <control type="image">
-                        <aspectratio align="center" aligny="bottom">keep</aspectratio>
-                        <left>15</left>
-                        <top>5</top>
-                        <width>340</width>
-                        <height>235</height>
+                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <left>30</left>
+                        <top>80</top>
+                        <width>110</width>
+                        <height>70</height>
                         <texture>$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
                         <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
@@ -3355,7 +3355,7 @@
                     
                     <control type="progress">
                         <left>20</left>
-                        <top>217</top>
+                        <top>232</top>
                         <width>330</width>
                         <height>3</height>
                         <info>ListItem.PercentPlayed</info>
@@ -3429,11 +3429,11 @@
                         </control>
 					</control>
                     <control type="image">
-                        <aspectratio align="center" aligny="bottom">keep</aspectratio>
-                        <left>15</left>
-                        <top>5</top>
-                        <width>340</width>
-                        <height>235</height>
+                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <left>30</left>
+                        <top>80</top>
+                        <width>110</width>
+                        <height>70</height>
                         <texture>$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
                         <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
@@ -3624,7 +3624,7 @@
 
                     <control type="progress">
                         <left>20</left>
-                        <top>217</top>
+                        <top>232</top>
                         <width>330</width>
                         <height>3</height>
                         <info>ListItem.PercentPlayed</info>
@@ -3637,7 +3637,7 @@
                     </control> 
                     <control type="progress">
                         <left>20</left>
-                        <top>217</top>
+                        <top>232</top>
                         <width>330</width>
                         <height>3</height>
                         <info>ListItem.PercentPlayed</info>
@@ -3682,6 +3682,17 @@
                         <bordertexture border="5">blank.png</bordertexture>
                         <include>TextureBorderWidgets</include>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                    </control>
+                    <control type="image">
+                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <left>30</left>
+                        <top>80</top>
+                        <width>110</width>
+                        <height>70</height>
+                        <texture>$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
+                        <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
 
                     <control type="label">
@@ -3777,6 +3788,18 @@
                         <texture background="true">$VAR[EpisodeThumbImage]</texture>
                         <include>TextureBorderWidgets</include>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                    </control>
+
+                    <control type="image">
+                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <left>30</left>
+                        <top>80</top>
+                        <width>110</width>
+                        <height>70</height>
+                        <texture>$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
+                        <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
+                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
 
                     <control type="group">
