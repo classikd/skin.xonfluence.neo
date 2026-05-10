@@ -1599,12 +1599,14 @@
                         <texturefocus colordiffuse="$VAR[MainColorOne]">white.png</texturefocus>
                         <onclick>ActivateWindow(PlayerControls)</onclick>
                     </control>
+
                     <control type="image">
                         <description>Player Icon</description>
                         <width>40</width>
                         <height>40</height>
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="$VAR[MainColorOne]">equaliser.gif</texture>
+                        <visible>Player.Playing</visible>
                         <visible>!Control.HasFocus(9898)</visible>
                     </control>
                     <control type="image">
@@ -1613,6 +1615,26 @@
                         <height>40</height>
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="black">equaliser.gif</texture>
+                        <visible>Player.Playing</visible>
+                        <visible>Control.HasFocus(9898)</visible>
+                    </control>
+
+                    <control type="image">
+                        <description>Player Icon</description>
+                        <width>40</width>
+                        <height>45</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="$VAR[MainColorOne]">osd_modern/osdpause.png</texture>
+                        <visible>!Player.Playing</visible>
+                        <visible>!Control.HasFocus(9898)</visible>
+                    </control>
+                    <control type="image">
+                        <description>Player Icon</description>
+                        <width>40</width>
+                        <height>45</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="black">osd_modern/osdpause.png</texture>
+                        <visible>!Player.Playing</visible>
                         <visible>Control.HasFocus(9898)</visible>
                     </control>
                 </control>
@@ -1978,7 +2000,18 @@
             <width>24</width>
             <height>24</height>
             <texture colordiffuse="black">equaliser.gif</texture>
+            <visible>Player.Playing</visible>
         </control>
+        
+        <control type="image">
+            <left>100</left>
+            <top>52</top>
+            <width>24</width>
+            <height>30</height>
+            <texture colordiffuse="black">osd_modern/osdpause.png</texture>
+            <visible>!Player.Playing</visible>
+        </control>
+
         <control type="label">
             <description>Time Label</description>
             <left>130</left>
@@ -2027,13 +2060,25 @@
             <scrollout>false</scrollout>
             <pauseatend>2000</pauseatend>
         </control>
+
         <control type="image">
             <left>100</left>
             <top>54</top>
             <width>24</width>
             <height>24</height>
             <texture colordiffuse="black">equaliser.gif</texture>
+            <visible>Player.Playing</visible>
         </control>
+        
+        <control type="image">
+            <left>100</left>
+            <top>52</top>
+            <width>24</width>
+            <height>30</height>
+            <texture colordiffuse="black">osd_modern/osdpause.png</texture>
+            <visible>!Player.Playing</visible>
+        </control>
+
         <control type="label">
             <description>Time Label</description>
             <left>130</left>
