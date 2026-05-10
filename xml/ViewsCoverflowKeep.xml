@@ -375,7 +375,7 @@
                     <top>149</top>
                     <control type="image">
                         <left>3</left>
-                        <top>-40</top>
+                        <top>50</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
@@ -385,7 +385,7 @@
                     </control>
                     <control type="image">
                         <left>3</left>
-                        <top>-40</top>
+                        <top>50</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">$INFO[ListItem.Overlay]</texture>
@@ -397,7 +397,7 @@
 
                     <control type="image">
                         <left>3</left>
-                        <top>-40</top>
+                        <top>50</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">white.png</texture>
@@ -407,7 +407,7 @@
                     </control>
                     <control type="image">
                         <left>6</left>
-                        <top>-37</top>
+                        <top>52</top>
                         <width>28</width>
                         <height>28</height>
                         <texture colordiffuse="black">equaliser.gif</texture>
@@ -417,7 +417,7 @@
                     </control>
                     <control type="image">
                         <left>3</left>
-                        <top>-40</top>
+                        <top>50</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
