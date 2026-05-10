@@ -3926,11 +3926,11 @@
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
                     <control type="image">
-                        <left>20</left>
-                        <top>15</top>
-                        <width>440</width>
-                        <height>300</height>
-                        <aspectratio>scale</aspectratio>
+                        <left>40</left>
+                        <top>120</top>
+                        <width>120</width>
+                        <height>80</height>
+                        <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
                         <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
@@ -4060,8 +4060,8 @@
                                         
                     <control type="progress">
                         <left>25</left>
-                        <top>288</top>
-                        <width>410</width>
+                        <top>308</top>
+                        <width>430</width>
                         <height>3</height>
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
@@ -4131,11 +4131,11 @@
                     </control>
 
                     <control type="image">
-                        <left>20</left>
-                        <top>15</top>
-                        <width>440</width>
-                        <height>300</height>
-                        <aspectratio>scale</aspectratio>
+                        <left>40</left>
+                        <top>120</top>
+                        <width>120</width>
+                        <height>80</height>
+                        <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
                         <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
@@ -4312,8 +4312,8 @@
 
                     <control type="progress">
                         <left>25</left>
-                        <top>288</top>
-                        <width>410</width>
+                        <top>308</top>
+                        <width>430</width>
                         <height>3</height>
                         <info>ListItem.PercentPlayed</info>
                         <visible>ListItem.IsResumable</visible>
