@@ -2340,6 +2340,7 @@
             <onclick condition="Skin.String(PiP,Medium)">Skin.SetString(PiP,Large)</onclick>
             <onclick condition="Skin.String(PiP,Large)">Skin.Reset(PiP)</onclick>
             <visible>Player.HasMedia</visible>
+            <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
         </control>
 
         <control type="button" id="612">
