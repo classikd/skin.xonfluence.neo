@@ -775,8 +775,8 @@
                             <param name="Size" value="45" />
                             <param name="Texture" value="OSDChannelDown" />
                         </include>
-                        <onleft>606</onleft>
-                        <onright>608</onright>
+                        <onleft>610</onleft>
+                        <onright>602</onright>
                         <onup condition="!Skin.HasSetting(LowerMainMenuBar)">9003</onup>
                         <onup condition="Skin.HasSetting(LowerMainMenuBar)">9002</onup>
                         <ondown>9000</ondown>
