@@ -5187,6 +5187,7 @@
             <align>left</align>
             <itemgap>3</itemgap>
             <orientation>horizontal</orientation>
+            <visible>!String.IsEqual(ListItem.Label,..)</visible>
 
             <control type="group">
                 <width>130</width>

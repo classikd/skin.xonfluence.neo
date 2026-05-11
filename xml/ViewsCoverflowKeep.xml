@@ -360,15 +360,26 @@
 					<animation effect="rotatey" center="1430" end="60" condition="true">Conditional</animation>
 					<visible>[Integer.IsGreater(Container(529).NumItems,1) + $EXP[isnotEnabledParentDirectory]] | [Integer.IsGreater(Container(529).NumItems,0) + $EXP[isEnabledParentDirectory]]</visible>
 				</control>
+
 				<control type="image">
 					<left>780</left>
 					<top>109</top>
 					<width>385</width>
 					<height>600</height>
 					<texture background="true">$VAR[Icon(0)Poster]</texture>
-					
 					<aspectratio scalediffuse="false">keep</aspectratio>
+					<visible>!String.IsEqual(ListItem.Label,..)</visible>
 				</control>
+				<control type="image">
+					<left>780</left>
+					<top>109</top>
+					<width>385</width>
+					<height>600</height>
+					<texture background="true" fallback="DefaultFolderBack.png">$VAR[Icon(0)Poster]</texture>
+					<aspectratio scalediffuse="false">keep</aspectratio>
+					<visible>String.IsEqual(ListItem.Label,..)</visible>
+				</control>
+
                 <!-- icons over image -->
                 <control type="group">
                     <left>777</left>
