@@ -1592,8 +1592,8 @@
             <include condition="Skin.String(SideBladeLabel,Top)">AdditionalNavTopPositionTop</include>
             <include condition="Skin.String(SideBladeLabel,Bottom)">AdditionalNavTopPositionBottom</include>
             <include condition="Skin.String(SideBladeLabel,Small)">AdditionalNavTopPositionSmall</include>
-            <onup>50</onup>
-            <ondown>50</ondown>
+            <onleft>2</onleft>
+            <onright>50</onright>
             <itemgap>0</itemgap>
             <orientation>vertical</orientation>
             <animation effect="fade" time="200" condition="Window.Previous(home)">WindowOpen</animation>
