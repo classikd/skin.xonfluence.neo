@@ -16,8 +16,8 @@
         </include>
         <control type="group">
             <left>135</left>
-            <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">WindowSettingsTop</include>
-            <include condition="Skin.HasSetting(EnableFloorReturnButtons)">WindowSettingsTopTouch</include>
+            <include condition="!Skin.String(EnableFloorAdditionalNav,Style1)">WindowSettingsTop</include>
+            <include condition="Skin.String(EnableFloorAdditionalNav,Style1)">WindowSettingsTopTouch</include>
             <animation type="WindowOpen" reversible="false">
                 <effect type="zoom" start="80" end="100" center="960,540" easing="out" tween="back" time="225" />
                 <effect type="fade" start="0" end="100" time="225" />
@@ -1709,17 +1709,19 @@
                             <height>720</height>
                             <itemgap>-1</itemgap>
                             <pagecontrol>2066</pagecontrol>
-                            <control type="radiobutton" id="188">
-                                <description>enable floor return buttons</description>
+                            <control type="button" id="188">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
+                                <label>$LOCALIZE[31097]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[EnableFloorAdditionalNavValue]</label2>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[31097]</label>
-                                <onclick>Skin.ToggleSetting(EnableFloorReturnButtons)</onclick>
-                                <selected>Skin.HasSetting(EnableFloorReturnButtons)</selected>
                                 <include>MenuButton</include>
+                                <onclick condition="String.IsEmpty(Skin.String(EnableFloorAdditionalNav))">Skin.SetString(EnableFloorAdditionalNav,Style1)</onclick>
+                                <onclick condition="Skin.String(EnableFloorAdditionalNav,Style1)">Skin.SetString(EnableFloorAdditionalNav,Style2)</onclick>
+                                <onclick condition="Skin.String(EnableFloorAdditionalNav,Style2)">Skin.Reset(EnableFloorAdditionalNav)</onclick>
                             </control>
                             <control type="radiobutton" id="1881">
                                 <description>enable floor settings button</description>
@@ -1731,7 +1733,7 @@
                                 <label> - $LOCALIZE[31769]</label>
                                 <onclick>Skin.ToggleSetting(EnableFloorSettingsButtons)</onclick>
                                 <selected>Skin.HasSetting(EnableFloorSettingsButtons)</selected>
-                                <enable>Skin.HasSetting(EnableFloorReturnButtons)</enable>
+                                <enable>!String.IsEmpty(Skin.String(EnableFloorAdditionalNav))</enable>
                                 <include>MenuButton</include>
                             </control>
                             <control type="radiobutton" id="1882">
@@ -1744,7 +1746,7 @@
                                 <label> - $LOCALIZE[31780]</label>
                                 <onclick>Skin.ToggleSetting(HideFloorHomeButtons)</onclick>
                                 <selected>Skin.HasSetting(HideFloorHomeButtons)</selected>
-                                <enable>Skin.HasSetting(EnableFloorReturnButtons)</enable>
+                                <enable>!String.IsEmpty(Skin.String(EnableFloorAdditionalNav))</enable>
                                 <include>MenuButton</include>
                             </control>
                             <control type="radiobutton" id="1883">
@@ -1757,7 +1759,7 @@
                                 <label> - $LOCALIZE[31781]</label>
                                 <onclick>Skin.ToggleSetting(HideFloorVolumeButtons)</onclick>
                                 <selected>Skin.HasSetting(HideFloorVolumeButtons)</selected>
-                                <enable>Skin.HasSetting(EnableFloorReturnButtons)</enable>
+                                <enable>!String.IsEmpty(Skin.String(EnableFloorAdditionalNav))</enable>
                                 <include>MenuButton</include>
                             </control>
                             <control type="radiobutton" id="1885">
@@ -1770,7 +1772,7 @@
                                 <label> - $LOCALIZE[31782]</label>
                                 <onclick>Skin.ToggleSetting(HideFloorBackButtonOnFavourites)</onclick>
                                 <selected>Skin.HasSetting(HideFloorBackButtonOnFavourites)</selected>
-                                <enable>Skin.HasSetting(EnableFloorReturnButtons)</enable>
+                                <enable>!String.IsEmpty(Skin.String(EnableFloorAdditionalNav))</enable>
                                 <include>MenuButton</include>
                             </control>
                             <control type="radiobutton" id="189">

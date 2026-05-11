@@ -348,8 +348,8 @@
         </control>
         <control type="scrollbar" id="60">
             <left>0</left>
-            <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
-            <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
+            <include condition="!Skin.String(EnableFloorAdditionalNav,Style1)">ScrollbarPositionBottom</include>
+            <include condition="Skin.String(EnableFloorAdditionalNav,Style1)">ScrollbarPositionTop</include>
             <width>1926</width>
             <height>28</height>
             <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
@@ -513,8 +513,8 @@
         </control>
         <control type="scrollbar" id="60">
             <left>0</left>
-            <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
-            <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
+            <include condition="!Skin.String(EnableFloorAdditionalNav,Style1)">ScrollbarPositionBottom</include>
+            <include condition="Skin.String(EnableFloorAdditionalNav,Style1)">ScrollbarPositionTop</include>
             <width>1926</width>
             <height>28</height>
             <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
@@ -564,8 +564,8 @@
         <control type="scrollbar" id="60">
             <depth>DepthContent</depth>
             <left>0</left>
-            <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
-            <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
+            <include condition="!Skin.String(EnableFloorAdditionalNav,Style1)">ScrollbarPositionBottom</include>
+            <include condition="Skin.String(EnableFloorAdditionalNav,Style1)">ScrollbarPositionTop</include>
             <width>1926</width>
             <height>28</height>
             <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
@@ -1214,8 +1214,8 @@
         </control>
         <control type="scrollbar" id="60">
             <left>0</left>
-            <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
-            <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
+            <include condition="!Skin.String(EnableFloorAdditionalNav,Style1)">ScrollbarPositionBottom</include>
+            <include condition="Skin.String(EnableFloorAdditionalNav,Style1)">ScrollbarPositionTop</include>
             <width>1926</width>
             <height>28</height>
             <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
@@ -1265,8 +1265,8 @@
         <control type="scrollbar" id="60">
             <depth>DepthContent</depth>
             <left>0</left>
-            <include condition="!Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionBottom</include>
-            <include condition="Skin.HasSetting(EnableFloorReturnButtons)">ScrollbarPositionTop</include>
+            <include condition="!Skin.String(EnableFloorAdditionalNav,Style1)">ScrollbarPositionBottom</include>
+            <include condition="Skin.String(EnableFloorAdditionalNav,Style1)">ScrollbarPositionTop</include>
             <width>1926</width>
             <height>28</height>
             <texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>

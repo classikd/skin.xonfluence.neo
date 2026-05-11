@@ -403,7 +403,7 @@ msgid "Suggested movies or TV shows info"
 msgstr ""
 
 msgctxt "#31097"
-msgid "Additional navigation (for touch)"
+msgid "Additional navigation (touch/mouse)"
 msgstr ""
 
 msgctxt "#31098"

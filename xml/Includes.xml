@@ -1381,7 +1381,7 @@
         </control>
         <control type="button" id="9001">
             <left>375</left>
-            <top>390</top>
+            <top>422</top>
             <width>63</width>
             <height>192</height>
             <font />
@@ -1411,10 +1411,10 @@
             <left>375</left>
             <top>0</top>
             <width>63</width>
-            <height>63</height>
+            <height>192</height>
             <font></font>
-            <texturefocus colordiffuse="$VAR[MainColorOne]">HasSubAltFocus.png</texturefocus>
-            <texturenofocus>HasSubAlt.png</texturenofocus>
+            <texturefocus colordiffuse="$VAR[MainColorOne]">HasSubFocus.png</texturefocus>
+            <texturenofocus>HasSub.png</texturenofocus>
             <onright>ClearProperty(SideBladeOpen)</onright>
             <onleft>50</onleft>
             <onclick condition="String.IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onclick>
@@ -1423,12 +1423,12 @@
         </control>
         <control type="button" id="9001">
             <left>375</left>
-            <bottom>0</bottom>
+            <bottom>10</bottom>
             <width>63</width>
-            <height>63</height>
+            <height>192</height>
             <font></font>
-            <texturefocus colordiffuse="$VAR[MainColorOne]">HasSubAltFocus.png</texturefocus>
-            <texturenofocus>HasSubAlt.png</texturenofocus>
+            <texturefocus colordiffuse="$VAR[MainColorOne]">HasSubFocus.png</texturefocus>
+            <texturenofocus>HasSub.png</texturenofocus>
             <onright>ClearProperty(SideBladeOpen)</onright>
             <onleft>50</onleft>
             <onclick condition="String.IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onclick>
@@ -1443,14 +1443,34 @@
             <texture border="0,0,10,0">mediabladesub.png</texture>
         </control>
     </include>
+
+    <include name="AdditionalNavTopPosition">
+        <top>614</top>
+        <align>top</align>
+    </include>
+    <include name="AdditionalNavTopPositionTop">
+        <top>190</top>
+        <align>top</align>
+    </include>
+    <include name="AdditionalNavTopPositionBottom">
+        <bottom>201</bottom>
+        <align>bottom</align>
+    </include>
+    <include name="AdditionalNavTopPositionSmall">
+        <bottom>11</bottom>
+        <align>bottom</align>
+    </include>
+
     <include name="FloorReturnButtons">
+
+        <!-- style 1: large touch-->
         <control type="image" id="1">
             <left>-30</left>
             <top>250r</top>
             <width>1980</width>
             <height>250</height>
             <texture border="1">HomeNowPlayingBack.png</texture>
-            <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
+            <visible>String.IsEqual(Skin.String(EnableFloorAdditionalNav),Style1)</visible>
         </control>
         <control type="grouplist" id="810">
             <left>0</left>
@@ -1463,6 +1483,7 @@
             <animation effect="fade" time="200" condition="Window.Previous(home)">WindowOpen</animation>
             <animation effect="fade" time="200" condition="Window.Next(home)">WindowClose</animation>
             <visible>!Window.IsVisible(BusyDialog)</visible>
+            <visible>String.IsEqual(Skin.String(EnableFloorAdditionalNav),Style1)</visible>
 
             <control type="radiobutton" id="803">
                 <description>Volume Down Button</description>
@@ -1482,7 +1503,6 @@
                 <radioposy>1</radioposy>
                 <font></font>
                 <visible>Skin.HasSetting(EnableVolumeButtons)</visible>
-                <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
                 <visible>!Skin.HasSetting(HideFloorVolumeButtons)</visible>
             </control>
             <control type="radiobutton" id="802">
@@ -1503,7 +1523,6 @@
                 <radioposy>1</radioposy>
                 <font></font>
                 <visible>Skin.HasSetting(EnableVolumeButtons)</visible>
-                <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
                 <visible>!Skin.HasSetting(HideFloorVolumeButtons)</visible>
             </control>
 
@@ -1524,7 +1543,6 @@
                 <radioposy>1</radioposy>
                 <font></font>
                 <visible>Skin.HasSetting(EnableFloorSettingsButtons)</visible>
-                <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
                 <visible>!String.Contains(Window.Property(xmlfile),Settings)</visible>
             </control>
 
@@ -1544,7 +1562,6 @@
                 <radioposx>1</radioposx>
                 <radioposy>1</radioposy>
                 <font></font>
-                <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
                 <visible>![Window.IsVisible(MyFavourites.xml) + Skin.HasSetting(HideFloorBackButtonOnFavourites)]</visible>
             </control>
             <control type="radiobutton" id="800">
@@ -1565,9 +1582,126 @@
                 <radioposy>1</radioposy>
                 <font></font>
                 <visible>!Skin.HasSetting(HideFloorHomeButtons)</visible>
-                <visible>Skin.HasSetting(EnableFloorReturnButtons)</visible>
             </control>
         </control>
+
+        <!-- style 2: vertical left desktop -->
+        <control type="grouplist" id="810">
+            <left>0</left>
+            <include condition="String.IsEmpty(Skin.String(SideBladeLabel))">AdditionalNavTopPosition</include>
+            <include condition="Skin.String(SideBladeLabel,Top)">AdditionalNavTopPositionTop</include>
+            <include condition="Skin.String(SideBladeLabel,Bottom)">AdditionalNavTopPositionBottom</include>
+            <include condition="Skin.String(SideBladeLabel,Small)">AdditionalNavTopPositionSmall</include>
+            <onup>50</onup>
+            <ondown>50</ondown>
+            <itemgap>0</itemgap>
+            <orientation>vertical</orientation>
+            <animation effect="fade" time="200" condition="Window.Previous(home)">WindowOpen</animation>
+            <animation effect="fade" time="200" condition="Window.Next(home)">WindowClose</animation>
+            <visible>!Window.IsVisible(BusyDialog)</visible>
+            <visible>String.IsEqual(Skin.String(EnableFloorAdditionalNav),Style2)</visible>
+
+            <control type="radiobutton" id="802">
+                <description>Volume Up Button</description>
+                <width>63</width>
+                <height>73</height>
+                <onclick>$VAR[VolumeStepUp]</onclick>
+                <onclick>VolumeUp</onclick>
+                <textureradioonfocus colordiffuse="FF000000">FloorButtons/FloorVolPlus.png</textureradioonfocus>
+                <textureradioonnofocus>FloorButtons/FloorVolPlus.png</textureradioonnofocus>
+                <textureradioofffocus colordiffuse="FF000000">FloorButtons/FloorVolPlus.png</textureradioofffocus>
+                <textureradiooffnofocus>FloorButtons/FloorVolPlus.png</textureradiooffnofocus>
+                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
+                <texturenofocus border="5" colordiffuse="CC000000">white50.png</texturenofocus>
+                <radiowidth>38</radiowidth>
+                <radioheight>39</radioheight>
+                <radioposx>19</radioposx>
+                <radioposy>15</radioposy>
+                <font></font>
+                <visible>Skin.HasSetting(EnableVolumeButtons)</visible>
+                <visible>!Skin.HasSetting(HideFloorVolumeButtons)</visible>
+            </control>
+
+            <control type="radiobutton" id="803">
+                <description>Volume Down Button</description>
+                <width>63</width>
+                <height>73</height>
+                <onclick>$VAR[VolumeStepDown]</onclick>
+                <onclick>VolumeDown</onclick>
+                <textureradioonfocus colordiffuse="FF000000">FloorButtons/FloorVolMinus.png</textureradioonfocus>
+                <textureradioonnofocus>FloorButtons/FloorVolMinus.png</textureradioonnofocus>
+                <textureradioofffocus colordiffuse="FF000000">FloorButtons/FloorVolMinus.png</textureradioofffocus>
+                <textureradiooffnofocus>FloorButtons/FloorVolMinus.png</textureradiooffnofocus>
+                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
+                <texturenofocus border="5" colordiffuse="CC000000">white50.png</texturenofocus>
+                <radiowidth>38</radiowidth>
+                <radioheight>39</radioheight>
+                <radioposx>19</radioposx>
+                <radioposy>15</radioposy>
+                <font></font>
+                <visible>Skin.HasSetting(EnableVolumeButtons)</visible>
+                <visible>!Skin.HasSetting(HideFloorVolumeButtons)</visible>
+            </control>
+
+            <control type="radiobutton" id="805">
+                <description>Settings button</description>
+                <width>63</width>
+                <height>73</height>
+                <onclick>ActivateWindow(settings)</onclick>
+                <textureradioonfocus colordiffuse="FF000000">FloorButtons/FloorSystem.png</textureradioonfocus>
+                <textureradioonnofocus>FloorButtons/FloorSystem.png</textureradioonnofocus>
+                <textureradioofffocus colordiffuse="FF000000">FloorButtons/FloorSystem.png</textureradioofffocus>
+                <textureradiooffnofocus>FloorButtons/FloorSystem.png</textureradiooffnofocus>
+                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
+                <texturenofocus border="5" colordiffuse="CC000000">white50.png</texturenofocus>
+                <radiowidth>38</radiowidth>
+                <radioheight>39</radioheight>
+                <radioposx>19</radioposx>
+                <radioposy>15</radioposy>
+                <font></font>
+                <visible>Skin.HasSetting(EnableFloorSettingsButtons)</visible>
+                <visible>!String.Contains(Window.Property(xmlfile),Settings)</visible>
+            </control>
+
+            <control type="radiobutton" id="804">
+                <description>Back push button</description>
+                <width>63</width>
+                <height>73</height>
+                <onclick>back</onclick>
+                <textureradioonfocus colordiffuse="FF000000">FloorButtons/FloorBack.png</textureradioonfocus>
+                <textureradioonnofocus>FloorButtons/FloorBack.png</textureradioonnofocus>
+                <textureradioofffocus colordiffuse="FF000000">FloorButtons/FloorBack.png</textureradioofffocus>
+                <textureradiooffnofocus>FloorButtons/FloorBack.png</textureradiooffnofocus>
+                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
+                <texturenofocus border="5" colordiffuse="CC000000">white50.png</texturenofocus>
+                <radiowidth>38</radiowidth>
+                <radioheight>39</radioheight>
+                <radioposx>19</radioposx>
+                <radioposy>15</radioposy>
+                <font></font>
+                <visible>![Window.IsVisible(MyFavourites.xml) + Skin.HasSetting(HideFloorBackButtonOnFavourites)]</visible>
+            </control>
+            <control type="radiobutton" id="800">
+                <description>Home push button</description>
+                <width>63</width>
+                <height>73</height>
+                <onclick>Dialog.Close(all,true)</onclick>
+                <onclick>ActivateWindow(home)</onclick>
+                <textureradioonfocus colordiffuse="FF000000">FloorButtons/FloorHome.png</textureradioonfocus>
+                <textureradioonnofocus>FloorButtons/FloorHome.png</textureradioonnofocus>
+                <textureradioofffocus colordiffuse="FF000000">FloorButtons/FloorHome.png</textureradioofffocus>
+                <textureradiooffnofocus>FloorButtons/FloorHome.png</textureradiooffnofocus>
+                <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
+                <texturenofocus border="5" colordiffuse="CC000000">white50.png</texturenofocus>
+                <radiowidth>38</radiowidth>
+                <radioheight>39</radioheight>
+                <radioposx>19</radioposx>
+                <radioposy>15</radioposy>
+                <font></font>
+                <visible>!Skin.HasSetting(HideFloorHomeButtons)</visible>
+            </control>
+        </control>
+
     </include>
     <include name="CommonNowPlaying">
         <control type="group">

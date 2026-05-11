@@ -407,8 +407,8 @@ msgid "Suggested movies or TV shows info"
 msgstr "Infos sur films ou séries suggérés"
 
 msgctxt "#31097"
-msgid "Additional navigation (for touch)"
-msgstr "Navigation additionnelle (tactile)"
+msgid "Additional navigation (touch/mouse)"
+msgstr "Navigation additionnelle (tactile/souris)"
 
 msgctxt "#31098"
 msgid "Top left widget on all screens"
