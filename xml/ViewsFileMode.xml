@@ -515,18 +515,7 @@
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
-                    <visible>!String.IsEqual(ListItem.Label,..) + !Container.Content(Episodes)</visible>
-                    <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
-                </control>
-                <control type="image">
-                    <left>0</left>
-                    <top>-60px</top>
-                    <width>600</width>
-                    <height>895</height>
-                    <aspectratio aligny="bottom">keep</aspectratio>
-                    <fadetime>IconCrossfadeTime</fadetime>
-                    <texture background="true" fallback="DefaultFolderBack.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
-                    <visible>String.IsEqual(ListItem.Label,..) + !Container.Content(Episodes)</visible>
+                    <visible>!Container.Content(Episodes)</visible>
                     <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
                 </control>
 
@@ -943,22 +932,9 @@
                         <width>294</width>
                         <height>230</height>
                         <include>TextureBorderViews</include>
-                        <texture background="true">DefaultFolderBack.png</texture>
-                        <aspectratio>keep</aspectratio>
-                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
-                        <visible>ListItem.IsParentFolder</visible>
-                        <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
-                    </control>
-                    <control type="image">
-                        <left>1</left>
-                        <top>0</top>
-                        <width>294</width>
-                        <height>230</height>
-                        <include>TextureBorderViews</include>
                         <texture background="true" colordiffuse="$VAR[MainColorOne]">DefaultAlbumCover.png</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
-                        <visible>!ListItem.IsParentFolder</visible>
                         <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
                     </control>
                     <control type="image">
@@ -970,7 +946,6 @@
                         <texture background="true" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
-                        <visible>!ListItem.IsParentFolder</visible>
                         <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
                     </control>
 
@@ -1019,24 +994,10 @@
                         <width>294</width>
                         <height>230</height>
                         <include>TextureBorderViews</include>
-                        <texture background="true">DefaultFolderBack.png</texture>
-                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
-                        <aspectratio>keep</aspectratio>
-                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
-                        <visible>ListItem.IsParentFolder</visible>
-                        <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
-                    </control>
-                    <control type="image">
-                        <left>1</left>
-                        <top>0</top>
-                        <width>294</width>
-                        <height>230</height>
-                        <include>TextureBorderViews</include>
                         <texture background="true" colordiffuse="$VAR[MainColorOne]">DefaultAlbumCover.png</texture>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <aspectratio>keep</aspectratio>
                         <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
-                        <visible>!ListItem.IsParentFolder</visible>
                         <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
                     </control>
                     <control type="image">
@@ -1049,7 +1010,6 @@
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <aspectratio>keep</aspectratio>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
-                        <visible>!ListItem.IsParentFolder</visible>
                         <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
                     </control>
 
@@ -1081,18 +1041,6 @@
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumbPoster]</texture>
                         <aspectratio>scale</aspectratio>
                         <include>TextureBorderWidgets</include>
-                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
-                    </control>
-                    <control type="image">
-                        <left>10</left>
-                        <top>0</top>
-                        <width>220</width>
-                        <height>360</height>
-                        <bordertexture border="5">blank.png</bordertexture>
-                        <texture background="true" fallback="DefaultFolderBack.png">$VAR[PosterThumbPoster]</texture>
-                        <aspectratio>scale</aspectratio>
-                        <include>TextureBorderWidgets</include>
-                        <visible>String.IsEqual(ListItem.Label,..)</visible>
                     </control>
                     
                     <control type="label">
@@ -1183,19 +1131,8 @@
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumbPoster]</texture>
                         <aspectratio>scale</aspectratio>
                         <include>TextureBorderWidgets</include>
-                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     </control>
-                    <control type="image">
-                        <left>10</left>
-                        <top>0</top>
-                        <width>220</width>
-                        <height>360</height>
-                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
-                        <texture background="true" fallback="DefaultFolderBack.png">$VAR[PosterThumbPoster]</texture>
-                        <aspectratio>scale</aspectratio>
-                        <include>TextureBorderWidgets</include>
-                        <visible>String.IsEqual(ListItem.Label,..)</visible>
-                    </control>
+
                     <control type="label">
                         <left>12</left>
                         <top>360</top>
@@ -1621,7 +1558,7 @@
 
                 </focusedlayout>
 
-                <itemlayout condition="Container.Content(Albums) | Container.Content(Songs) | Container.Content(Files) | Window.IsVisible(MusicPlaylist)" height="279" width="297">
+                <itemlayout condition="Container.Content(Albums) | Container.Content(Songs) | Container.Content(Files) | Window.IsVisible(MusicPlaylist)" height="420" width="446">
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
@@ -1652,22 +1589,9 @@
                         <width>440</width>
                         <height>360</height>
                         <include>TextureBorderViews</include>
-                        <texture background="true">DefaultFolderBack.png</texture>
-                        <aspectratio>keep</aspectratio>
-                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
-                        <visible>ListItem.IsParentFolder</visible>
-                        <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
-                    </control>
-                    <control type="image">
-                        <left>1</left>
-                        <top>0</top>
-                        <width>440</width>
-                        <height>360</height>
-                        <include>TextureBorderViews</include>
                         <texture background="true" colordiffuse="$VAR[MainColorOne]">DefaultAlbumCover.png</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
-                        <visible>!ListItem.IsParentFolder</visible>
                         <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
                     </control>
                     <control type="image">
@@ -1679,7 +1603,6 @@
                         <texture background="true" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
-                        <visible>!ListItem.IsParentFolder</visible>
                         <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
                     </control>
 
@@ -1697,7 +1620,7 @@
                     </control>
 
                 </itemlayout>
-                <focusedlayout condition="Container.Content(Albums) | Container.Content(Songs) | Container.Content(Files) | Window.IsVisible(MusicPlaylist)" height="279" width="297">
+                <focusedlayout condition="Container.Content(Albums) | Container.Content(Songs) | Container.Content(Files) | Window.IsVisible(MusicPlaylist)" height="420" width="446">
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
@@ -1728,24 +1651,10 @@
                         <width>440</width>
                         <height>360</height>
                         <include>TextureBorderViews</include>
-                        <texture background="true">DefaultFolderBack.png</texture>
-                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
-                        <aspectratio>keep</aspectratio>
-                        <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
-                        <visible>ListItem.IsParentFolder</visible>
-                        <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
-                    </control>
-                    <control type="image">
-                        <left>1</left>
-                        <top>0</top>
-                        <width>440</width>
-                        <height>360</height>
-                        <include>TextureBorderViews</include>
                         <texture background="true" colordiffuse="$VAR[MainColorOne]">DefaultAlbumCover.png</texture>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <aspectratio>keep</aspectratio>
                         <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
-                        <visible>!ListItem.IsParentFolder</visible>
                         <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
                     </control>
                     <control type="image">
@@ -1758,7 +1667,6 @@
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <aspectratio>keep</aspectratio>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
-                        <visible>!ListItem.IsParentFolder</visible>
                         <visible>!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries)</visible>
                     </control>
 
@@ -1789,18 +1697,6 @@
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumbPoster]</texture>
                         <aspectratio>scale</aspectratio>
                         <include>TextureBorderWidgets</include>
-                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
-                    </control>
-                    <control type="image">
-                        <left>10</left>
-                        <top>0</top>
-                        <width>352</width>
-                        <height>565</height>
-                        <bordertexture border="5">blank.png</bordertexture>
-                        <texture background="true" fallback="DefaultFolderBack.png">$VAR[PosterThumbPoster]</texture>
-                        <aspectratio>scale</aspectratio>
-                        <include>TextureBorderWidgets</include>
-                        <visible>String.IsEqual(ListItem.Label,..)</visible>
                     </control>
                     
                     <control type="label">
@@ -1891,19 +1787,8 @@
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterThumbPoster]</texture>
                         <aspectratio>scale</aspectratio>
                         <include>TextureBorderWidgets</include>
-                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     </control>
-                    <control type="image">
-                        <left>10</left>
-                        <top>0</top>
-                        <width>352</width>
-                        <height>565</height>
-                        <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
-                        <texture background="true" fallback="DefaultFolderBack.png">$VAR[PosterThumbPoster]</texture>
-                        <aspectratio>scale</aspectratio>
-                        <include>TextureBorderWidgets</include>
-                        <visible>String.IsEqual(ListItem.Label,..)</visible>
-                    </control>
+
                     <control type="label">
                         <left>12</left>
                         <top>562</top>

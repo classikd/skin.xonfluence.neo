@@ -483,8 +483,8 @@
     </variable>
     <variable name="BannerThumbBanner">
         <value condition="!String.IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
-        <value condition="!String.IsEqual(ListItem.Icon,DefaultFolder.png)">$INFO[ListItem.Icon]</value>
         <value condition="String.IsEqual(ListItem.Label,..)">DefaultFolderBack.png</value>
+        <value condition="!String.IsEqual(ListItem.Icon,DefaultFolder.png)">$INFO[ListItem.Icon]</value>
         <value>white-darker.png</value>
     </variable>
     <variable name="PosterThumb">
@@ -494,8 +494,8 @@
     </variable>
     <variable name="PosterThumbPoster">
         <value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-        <value condition="!String.IsEqual(ListItem.Icon,DefaultFolder.png)">$INFO[ListItem.Icon]</value>
         <value condition="String.IsEqual(ListItem.Label,..)">DefaultFolderBack.png</value>
+        <value condition="!String.IsEqual(ListItem.Icon,DefaultFolder.png)">$INFO[ListItem.Icon]</value>
         <value>white-darker.png</value>
     </variable>
 

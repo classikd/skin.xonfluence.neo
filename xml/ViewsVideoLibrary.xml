@@ -38,28 +38,8 @@
                         <height>500</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true">$VAR[PosterThumbPoster]</texture>
-                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     </control>
 
-                     <!-- back -->
-                    <control type="image">
-                        <left>3</left>
-                        <top>60</top>
-                        <width>321</width>
-                        <height>500</height>
-                        <aspectratio>scale</aspectratio>
-                        <texture background="true">white-darker.png</texture>
-                        <visible>String.IsEqual(ListItem.Label,..)</visible>
-                    </control>
-                    <control type="image">
-                        <left>3</left>
-                        <top>60</top>
-                        <width>321</width>
-                        <height>500</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture background="true">DefaultFolderBack.png</texture>
-                        <visible>String.IsEqual(ListItem.Label,..)</visible>
-                    </control>
 
                     <control type="image">
                         <left>3</left>
@@ -133,31 +113,6 @@
                         <texture background="true">$VAR[PosterThumbPoster]</texture>
                         <animation reversible="false" effect="zoom" start="3,60,321,500" end="-22,0,380,585" time="150">focus</animation>
                         <animation reversible="false" effect="zoom" end="3,60,321,500" start="-22,0,380,585" time="150">unfocus</animation>
-                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
-                    </control>
-
-                    <!-- back -->
-                    <control type="image">
-                        <left>3</left>
-                        <top>60</top>
-                        <width>321</width>
-                        <height>500</height>
-                        <aspectratio>scale</aspectratio>
-                        <texture background="true">white-darker.png</texture>
-                        <animation reversible="false" effect="zoom" start="3,60,321,500" end="-22,0,380,585" time="150">focus</animation>
-                        <animation reversible="false" effect="zoom" end="3,60,321,500" start="-22,0,380,585" time="150">unfocus</animation>
-                        <visible>String.IsEqual(ListItem.Label,..)</visible>
-                    </control>
-                    <control type="image">
-                        <left>3</left>
-                        <top>60</top>
-                        <width>321</width>
-                        <height>500</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture background="true">DefaultFolderBack.png</texture>
-                        <animation reversible="false" effect="zoom" start="3,60,321,500" end="-22,0,380,585" time="150">focus</animation>
-                        <animation reversible="false" effect="zoom" end="3,60,321,500" start="-22,0,380,585" time="150">unfocus</animation>
-                        <visible>String.IsEqual(ListItem.Label,..)</visible>
                     </control>
                     
                     <control type="image">
@@ -898,17 +853,6 @@
                 <aspectratio>scale</aspectratio>
                 <fadetime>200</fadetime>
                 <texture background="true">$VAR[PosterThumbPoster]</texture>
-                <visible>!String.IsEqual(ListItem.Label,..)</visible>
-            </control>
-            <control type="image">
-                <left>5</left>
-                <top>20</top>
-                <width>160</width>
-                <height>260</height>
-                <aspectratio>scale</aspectratio>
-                <fadetime>200</fadetime>
-                <texture background="true" fallback="DefaultFolderBack.png">$VAR[PosterThumbPoster]</texture>
-                <visible>String.IsEqual(ListItem.Label,..)</visible>
             </control>
             <control type="image">
                 <left>5</left>
@@ -993,19 +937,6 @@
                 <texture background="true">$VAR[PosterThumbPoster]</texture>
                 <animation reversible="false" effect="zoom" start="5,20,160,260" end="-15,-15,200,300" time="200">focus</animation>
                 <animation reversible="false" effect="zoom" end="5,20,160,260" start="-15,-15,200,300" time="200">unfocus</animation>
-                <visible>!String.IsEqual(ListItem.Label,..)</visible>
-            </control>
-            <control type="image">
-                <left>5</left>
-                <top>20</top>
-                <width>160</width>
-                <height>260</height>
-                <aspectratio>scale</aspectratio>
-                <fadetime>200</fadetime>
-                <texture background="true" fallback="DefaultFolderBack.png">$VAR[PosterThumbPoster]</texture>
-                <animation reversible="false" effect="zoom" start="5,20,160,260" end="-15,-15,200,300" time="200">focus</animation>
-                <animation reversible="false" effect="zoom" end="5,20,160,260" start="-15,-15,200,300" time="200">unfocus</animation>
-                <visible>String.IsEqual(ListItem.Label,..)</visible>
             </control>
 
             <!-- overlay  -->
@@ -1416,18 +1347,6 @@
                 <texture background="true">$VAR[PosterThumbPoster]</texture>
                 <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">blank.png</bordertexture>
                 <include>TextureBorderViews</include>
-                <visible>!String.IsEqual(ListItem.Label,..)</visible>
-            </control>
-            <control type="image">
-                <left>10</left>
-                <top>20</top>
-                <width>220</width>
-                <height>335</height>
-                <aspectratio>scale</aspectratio>
-                <texture background="true" fallback="DefaultFolderBack.png">$VAR[PosterThumbPoster]</texture>
-                <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">blank.png</bordertexture>
-                <include>TextureBorderViews</include>
-                <visible>String.IsEqual(ListItem.Label,..)</visible>
             </control>
 
             <control type="image">
@@ -1505,19 +1424,6 @@
                 <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">blank.png</bordertexture>
                 <include>TextureBorderViews</include>
                 <visible>!Control.HasFocus(527)</visible>
-                <visible>!String.IsEqual(ListItem.Label,..)</visible>
-            </control>
-            <control type="image">
-                <left>10</left>
-                <top>20</top>
-                <width>220</width>
-                <height>335</height>
-                <aspectratio>scale</aspectratio>
-                <texture background="true" fallback="DefaultFolderBack.png">$VAR[PosterThumbPoster]</texture>
-                <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">blank.png</bordertexture>
-                <include>TextureBorderViews</include>
-                <visible>!Control.HasFocus(527)</visible>
-                <visible>String.IsEqual(ListItem.Label,..)</visible>
             </control>
 
             <!-- focus -->
@@ -1531,19 +1437,6 @@
                 <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                 <include>TextureBorderViews</include>
                 <visible>Control.HasFocus(527)</visible>
-                <visible>!String.IsEqual(ListItem.Label,..)</visible>
-            </control>
-            <control type="image">
-                <left>10</left>
-                <top>20</top>
-                <width>220</width>
-                <height>335</height>
-                <aspectratio>scale</aspectratio>
-                <texture background="true" fallback="DefaultFolderBack.png">$VAR[PosterThumbPoster]</texture>
-                <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
-                <include>TextureBorderViews</include>
-                <visible>Control.HasFocus(527)</visible>
-                <visible>String.IsEqual(ListItem.Label,..)</visible>
             </control>
 
             <!-- overlay  -->
@@ -3889,17 +3782,6 @@
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <include>VisibleFadeEffect</include>
                         <texture background="true">$VAR[PosterThumbPoster]</texture>
-                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
-                    </control>
-                    <control type="image">
-                        <left>10</left>
-                        <top>0</top>
-                        <width>196</width>
-                        <height>303</height>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <include>VisibleFadeEffect</include>
-                        <texture background="true" fallback="DefaultFolderBack.png">$VAR[PosterThumbPoster]</texture>
-                        <visible>String.IsEqual(ListItem.Label,..)</visible>
                     </control>
 
                     <control type="image">
@@ -3977,18 +3859,8 @@
                             <aspectratio scalediffuse="false">scale</aspectratio>
                             <include>VisibleFadeEffect</include>
                             <texture background="true">$VAR[PosterThumbPoster]</texture>
-                            <visible>!String.IsEqual(ListItem.Label,..)</visible>
                         </control>
-                        <control type="image">
-                            <left>0</left>
-                            <top>0</top>
-                            <width>213</width>
-                            <height>335</height>
-                            <aspectratio scalediffuse="false">scale</aspectratio>
-                            <include>VisibleFadeEffect</include>
-                            <texture background="true" fallback="DefaultFolderBack.png">$VAR[PosterThumbPoster]</texture>
-                            <visible>String.IsEqual(ListItem.Label,..)</visible>
-                        </control>
+
                         <control type="image">
                             <left>93</left>
                             <top>0</top>
