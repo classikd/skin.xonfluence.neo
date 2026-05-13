@@ -946,6 +946,7 @@
             </control>
         </control>
     </include>
+
     <include name="AllWidthList">
         <control type="group">
             <visible>Control.IsVisible(5060)</visible>
@@ -1383,6 +1384,111 @@
             </control>
         </control>
     </include>
+
+    <include name="ThumbnailList">
+        <control type="group">
+            <visible>Control.IsVisible(5061)</visible>
+            <include>VisibleFadeEffect</include>
+            <control type="panel" id="5061">
+                <posx>70</posx>
+                <posy>100</posy>
+                <height>980</height>
+                <width>1830</width>
+                <onleft>100</onleft>
+                <onright>60</onright>
+                <onup>5061</onup>
+                <ondown>5061</ondown>
+                <pagecontrol>60</pagecontrol>
+                <viewtype label="$LOCALIZE[21371] $LOCALIZE[535]">list</viewtype>
+                <orientation>vertical</orientation>
+                <scrolltime>300</scrolltime>
+                <focusposition>2</focusposition>
+                <preloaditems>5</preloaditems>
+                <itemlayout condition="Control.IsVisible(5061)" width="254" height="250">
+                    <control type="image">
+                        <left>10</left>
+                        <top>0</top>
+                        <width>240</width>
+                        <height>230</height>
+                        <texture border="15">ContentPanel.png</texture>
+                        <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
+                    </control>
+                    <control type="image">
+                        <left>50</left>
+                        <top>55</top>
+                        <width>160</width>
+                        <height>110</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                        <aspectratio align="center" valign="center">keep</aspectratio>
+                    </control>
+                    <control type="image">
+                        <left>8</left>
+                        <top>56</top>
+                        <width>45</width>
+                        <height>30</height>
+                        <texture>PVR-IsRecording.png</texture>
+                        <visible>ListItem.IsRecording</visible>
+                    </control>
+                </itemlayout>
+                <focusedlayout condition="Control.IsVisible(5061)" width="254" height="250">
+                    
+                    <control type="image">
+                        <left>10</left>
+                        <top>0</top>
+                        <width>240</width>
+                        <height>230</height>
+                        <texture border="15">ContentPanel.png</texture>
+                        <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
+                        <visible>!Control.HasFocus(5061)</visible>
+                    </control>
+                    <control type="image">
+                        <left>10</left>
+                        <top>0</top>
+                        <width>240</width>
+                        <height>230</height>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>Control.HasFocus(5061)</visible>
+                    </control>
+
+                    <control type="image">
+                        <left>50</left>
+                        <top>55</top>
+                        <width>160</width>
+                        <height>110</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                    <control type="image">
+                        <left>8</left>
+                        <top>56</top>
+                        <width>45</width>
+                        <height>30</height>
+                        <texture>PVR-IsRecording.png</texture>
+                        <visible>ListItem.IsRecording</visible>
+                    </control>
+                </focusedlayout>
+            </control>
+            <control type="scrollbar" id="60">
+                <right>-10</right>
+                <top>-6</top>
+                <width>28</width>
+                <height>1095</height>
+                <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+                <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+                <texturesliderbarfocus border="0,14,0,14" colordiffuse="$VAR[MainColorOne]">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+                <textureslidernib colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernib>
+                <textureslidernibfocus colordiffuse="$VAR[MainColorOne]">ScrollBarNib.png</textureslidernibfocus>
+                <onleft>5061</onleft>
+                <onright>800</onright>
+                <onright condition="Skin.HasSetting(DisableHomeReturnButtons)">9000</onright>
+                <onright condition="!Skin.HasSetting(DisableHomeReturnButtons)">82</onright>
+                <showonepage>true</showonepage>
+                <orientation>vertical</orientation>
+                <visible>Control.IsVisible(5061)</visible>
+            </control>
+        </control>
+    </include>
+
     <include name="MediaInfoPVR">
         <control type="group">
             <visible>Control.IsVisible(5040)</visible>
