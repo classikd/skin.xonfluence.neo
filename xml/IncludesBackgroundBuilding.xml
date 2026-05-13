@@ -561,8 +561,8 @@
         <control type="image">
             <left>482r</left>
             <top>278r</top>
-            <width>65</width>
-            <height>45</height>
+            <width>55</width>
+            <height>38</height>
             <align>left</align>
             <aspectratio>keep</aspectratio>
             <texture>icon_pip.png</texture> 
@@ -574,8 +574,8 @@
         <control type="button">
             <right>25</right>
             <top>278r</top>
-            <width>40</width>
-            <height>40</height>
+            <width>35</width>
+            <height>35</height>
             <texturefocus>close.png</texturefocus>
             <texturenofocus>close.png</texturenofocus>
             <onclick>PlayerControl(Stop)</onclick>
@@ -666,8 +666,8 @@
         <control type="image">
             <left>597r</left>
             <top>345r</top>
-            <width>65</width>
-            <height>45</height>
+            <width>55</width>
+            <height>38</height>
             <align>left</align>
             <aspectratio>keep</aspectratio>
             <texture>icon_pip.png</texture> 
@@ -679,8 +679,8 @@
         <control type="button">
             <right>25</right>
             <top>345r</top>
-            <width>40</width>
-            <height>40</height>
+            <width>35</width>
+            <height>35</height>
             <texturefocus>close.png</texturefocus>
             <texturenofocus>close.png</texturenofocus>
             <onclick>PlayerControl(Stop)</onclick>
@@ -771,8 +771,8 @@
         <control type="image">
             <left>700r</left>
             <top>410r</top>
-            <width>64</width>
-            <height>64</height>
+            <width>55</width>
+            <height>38</height>
             <align>left</align>
             <aspectratio>keep</aspectratio>
             <texture>icon_pip.png</texture> 
@@ -784,8 +784,8 @@
         <control type="button">
             <right>25</right>
             <top>410r</top>
-            <width>56</width>
-            <height>56</height>
+            <width>35</width>
+            <height>35</height>
             <texturefocus>close.png</texturefocus>
             <texturenofocus>close.png</texturenofocus>
             <onclick>PlayerControl(Stop)</onclick>
