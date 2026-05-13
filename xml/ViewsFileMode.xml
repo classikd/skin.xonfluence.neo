@@ -623,10 +623,10 @@
                             <height>230</height>
                             <include>TextureBorderViews</include>
                             <bordertexture border="5">blank.png</bordertexture>
-                            <texture fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                            <texture fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
                             <include condition="Skin.HasSetting(VideoThumbnailsCenter)">AspectRatioCenter</include>
                             <include condition="!Skin.HasSetting(VideoThumbnailsCenter)">AspectRatioScale</include>
-                            <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                            <visible>String.StartsWith(ListItem.Icon,image://video)</visible>
                         </control>
                         <control type="image">
                             <left>1</left>
@@ -637,7 +637,7 @@
                             <bordertexture border="5">blank.png</bordertexture>
                             <texture fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
                             <include>AspectRatioKeep</include>
-                            <visible>!String.Contains(ListItem.Icon,image://video)</visible>
+                            <visible>!String.StartsWith(ListItem.Icon,image://video)</visible>
                         </control>
                     </control>
 
@@ -781,7 +781,7 @@
                             <texture fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
                             <include condition="Skin.HasSetting(VideoThumbnailsCenter)">AspectRatioCenter</include>
                             <include condition="!Skin.HasSetting(VideoThumbnailsCenter)">AspectRatioScale</include>
-                            <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                            <visible>String.StartsWith(ListItem.Icon,image://video)</visible>
                         </control>
                         <control type="image">
                             <left>1</left>
@@ -792,7 +792,7 @@
                             <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                             <texture fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
                             <include>AspectRatioKeep</include>
-                            <visible>!String.Contains(ListItem.Icon,image://video)</visible>
+                            <visible>!String.StartsWith(ListItem.Icon,image://video)</visible>
                         </control>
                     </control>
                     
@@ -1282,10 +1282,10 @@
                             <height>360</height>
                             <include>TextureBorderViews</include>
                             <bordertexture border="5">blank.png</bordertexture>
-                            <texture fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
+                            <texture fallback="DefaultVideoCover.png">$VAR[PosterThumb]</texture>
                             <include condition="Skin.HasSetting(VideoThumbnailsCenter)">AspectRatioCenter</include>
                             <include condition="!Skin.HasSetting(VideoThumbnailsCenter)">AspectRatioScale</include>
-                            <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                            <visible>String.StartsWith(ListItem.Icon,image://video)</visible>
                         </control>
                         <control type="image">
                             <left>1</left>
@@ -1296,7 +1296,7 @@
                             <bordertexture border="5">blank.png</bordertexture>
                             <texture fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
                             <include>AspectRatioKeep</include>
-                            <visible>!String.Contains(ListItem.Icon,image://video)</visible>
+                            <visible>!String.StartsWith(ListItem.Icon,image://video)</visible>
                         </control>
                     </control>
 
@@ -1439,7 +1439,7 @@
                             <texture fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
                             <include condition="Skin.HasSetting(VideoThumbnailsCenter)">AspectRatioCenter</include>
                             <include condition="!Skin.HasSetting(VideoThumbnailsCenter)">AspectRatioScale</include>
-                            <visible>String.Contains(ListItem.Icon,image://video)</visible>
+                            <visible>String.StartsWith(ListItem.Icon,image://video)</visible>
                         </control>
                         <control type="image">
                             <left>1</left>
@@ -1450,7 +1450,7 @@
                             <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                             <texture fallback="DefaultVideoCover.png" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
                             <include>AspectRatioKeep</include>
-                            <visible>!String.Contains(ListItem.Icon,image://video)</visible>
+                            <visible>!String.StartsWith(ListItem.Icon,image://video)</visible>
                         </control>
                     </control>
 
