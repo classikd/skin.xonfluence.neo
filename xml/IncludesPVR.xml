@@ -97,6 +97,20 @@
                     <label>> [COLOR=$VAR[MainColorOne]]$INFO[Control.GetLabel(30)][/COLOR]</label>
                     <visible>!String.IsEmpty(Control.GetLabel(30))</visible>
                 </control>
+
+                <control type="label">
+                    <height>48</height>
+                    <aligny>center</aligny>
+                    <visible>!Skin.HasSetting(HidePageCountInfo)</visible>
+                    <visible>!String.IsEmpty(Container.NumItems)</visible>
+                    <description>Page Count Label</description>
+                    <font>font11</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <scroll>false</scroll>
+                    <label>($INFO[Container.NumItems,, $LOCALIZE[31025]])</label>
+                    <include>Window_OpenClose_Animation</include>
+                </control>
             </control>
             <include condition="Skin.HasSetting(AllScreenTopLeftWidget) + !Skin.HasSetting(HideTopLeftWindows)">TopLeftInfo</include>
             <control type="label" id="29">

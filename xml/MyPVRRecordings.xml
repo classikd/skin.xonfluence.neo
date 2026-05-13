@@ -68,6 +68,7 @@
                         <texture border="2">MenuItemNF.png</texture>
                         <include>VisibleFadeEffect</include>
                     </control>
+
                     <control type="image">
                         <left>15</left>
                         <top>8</top>
@@ -75,7 +76,18 @@
                         <height>45</height>
                         <texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.ActualIcon]</texture>
                         <aspectratio>keep</aspectratio>
+                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     </control>
+                    <control type="image">
+                        <left>15</left>
+                        <top>8</top>
+                        <width>45</width>
+                        <height>45</height>
+                        <texture background="true" fallback="DefaultFolderBack.png">$INFO[ListItem.ActualIcon]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>String.IsEqual(ListItem.Label,..)</visible>
+                    </control>
+
                     <control type="label">
                         <left>75</left>
                         <top>0</top>
@@ -159,6 +171,7 @@
                         <texture border="0,0,14,0" colordiffuse="$VAR[MainColorOne]">MediaItemDetailBG.png</texture>
                         <visible>Control.HasFocus(50) + !String.IsEmpty(ListItem.Date)</visible>
                     </control>
+
                     <control type="image">
                         <left>15</left>
                         <top>8</top>
@@ -166,7 +179,18 @@
                         <height>45</height>
                         <texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.ActualIcon]</texture>
                         <aspectratio>keep</aspectratio>
+                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     </control>
+                    <control type="image">
+                        <left>15</left>
+                        <top>8</top>
+                        <width>45</width>
+                        <height>45</height>
+                        <texture background="true" fallback="DefaultFolderBack.png">$INFO[ListItem.ActualIcon]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>String.IsEqual(ListItem.Label,..)</visible>
+                    </control>
+
                     <control type="label">
                         <left>75</left>
                         <top>0</top>
@@ -238,23 +262,6 @@
                 <onright>800</onright>
                 <showonepage>false</showonepage>
                 <orientation>vertical</orientation>
-            </control>
-            <control type="label">
-                <depth>DepthFooter</depth>
-                <animation effect="slide" start="0,0" end="-135,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
-                <description>Page Count Label</description>
-                <left>135</left>
-                <top>80r</top>
-                <width>1140</width>
-                <height>30</height>
-                <font>font12</font>
-                <textcolor>grey</textcolor>
-                <scroll>false</scroll>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>([COLOR=$VAR[MainColorOne]]$INFO[Container(50).NumItems][/COLOR]) $LOCALIZE[19163] - $LOCALIZE[31024] ([COLOR=$VAR[MainColorOne]]$INFO[Container(50).CurrentPage]/$INFO[Container(50).NumPages][/COLOR])</label>
-                <include>Window_OpenClose_Animation</include>
-                <visible>[!Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)] + !Skin.HasSetting(HidePageCountInfo)</visible>
             </control>
             <control type="group">
                 <left>1365</left>
