@@ -1,5 +1,14 @@
 # Changelog
 
+## Version 0.11
+- Add a new style for the additional menu
+- Use the large slideblade button in the top/bottom position of the button
+- Add a new PVR view with channel logos
+- Fix performance issue in "Thumbnails" views, mainly
+- Fix broken navigation in home NowPlaying block
+- Fix progress bar position and tvshow logo in "thumbnail" widgets
+- and more
+
 ## Version 0.10
 - Add "Coverflow" view
 - Add option to toggle PiP from left sideblade and add a medium size
