@@ -2308,10 +2308,10 @@
                 <include>Window_OpenClose_Animation</include>
      		    <control type="multiimage" id="1">
                     <description>Weather image</description>
-                    <left>0</left>
-                    <top>-7</top>
-                    <width>90</width>
-                    <height>90</height>
+                    <left>6</left>
+                    <top>-2</top>
+                    <width>75</width>
+                    <height>75</height>
 				    <aspectratio aligny="center">keep</aspectratio>
                     <timeperimage>70</timeperimage>
                     <fadetime>1</fadetime>
@@ -2565,10 +2565,10 @@
             <include>Window_OpenClose_Animation</include>
             <control type="multiimage" id="1">
                 <description>Weather image</description>
-                <left>1720</left>
-                <top>-7</top>
-                <width>90</width>
-                <height>90</height>
+                <left>1722</left>
+                <top>-2</top>
+                <width>75</width>
+                <height>75</height>
                 <aspectratio aligny="center">keep</aspectratio>
                 <timeperimage>70</timeperimage>
                 <fadetime>1</fadetime>
