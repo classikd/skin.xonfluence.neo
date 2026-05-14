@@ -28,11 +28,11 @@
                 <width>1170</width>
                 <height>842</height>
                 <onleft>2</onleft>
-                <onright>60</onright>
+                <onright>116</onright>
                 <onup>$PARAM[control_id]</onup>
                 <ondown>$PARAM[control_id]</ondown>
                 <viewtype label="$PARAM[view_label]">list</viewtype>
-                <pagecontrol>60</pagecontrol>
+                <pagecontrol>116</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <visible>$PARAM[visible]</visible>
                 <itemlayout height="60" width="1170">
@@ -142,7 +142,7 @@
                     </control>
                 </focusedlayout>
             </control>
-            <control type="scrollbar" id="60">
+            <control type="scrollbar" id="116">
                 <left>1275</left>
                 <top>117</top>
                 <width>37</width>
@@ -507,11 +507,11 @@
                 <width>1140</width>
                 <height>842</height>
                 <onleft>2</onleft>
-                <onright>60</onright>
+                <onright>988</onright>
                 <onup>511</onup>
                 <ondown>511</ondown>
                 <viewtype label="$LOCALIZE[544]">list</viewtype>
-                <pagecontrol>60</pagecontrol>
+                <pagecontrol>988</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <visible>Container.Content(MusicVideos)</visible>
                 <itemlayout height="60" width="1140">
@@ -723,7 +723,7 @@
                     </control>
                 </focusedlayout>
             </control>
-            <control type="scrollbar" id="60">
+            <control type="scrollbar" id="988">
                 <left>1275</left>
                 <top>117</top>
                 <width>38</width>

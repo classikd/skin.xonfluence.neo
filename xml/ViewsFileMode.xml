@@ -1897,11 +1897,11 @@
                 <width>1820</width>
                 <height>945</height>
                 <onleft>2</onleft>
-                <onright>60</onright>
+                <onright>411</onright>
                 <onup>505</onup>
                 <ondown>505</ondown>
                 <viewtype label="$LOCALIZE[539]">list</viewtype>
-                <pagecontrol>60</pagecontrol>
+                <pagecontrol>411</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <preloaditems>2</preloaditems>
                 <itemlayout height="240" width="885" condition="!Skin.HasSetting(HideWideViewLabels)">
@@ -2201,7 +2201,7 @@
                     </control>
                 </focusedlayout>
             </control>
-            <control type="scrollbar" id="60">
+            <control type="scrollbar" id="411">
                 <left>1865</left>
                 <top>95</top>
                 <width>38</width>

@@ -1585,11 +1585,11 @@
                 <width>870</width>
                 <height>602</height>
                 <onleft>2</onleft>
-                <onright>60</onright>
+                <onright>662</onright>
                 <onup>503</onup>
                 <ondown>503</ondown>
                 <viewtype label="$LOCALIZE[544] 2">list</viewtype>
-                <pagecontrol>60</pagecontrol>
+                <pagecontrol>662</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Movies)</visible>
                 <itemlayout height="60" width="870">
@@ -1873,7 +1873,7 @@
                     </control>
                 </focusedlayout>
             </control>
-            <control type="scrollbar" id="60">
+            <control type="scrollbar" id="662">
                 <left>975</left>
                 <top>368</top>
                 <width>38</width>
@@ -2282,11 +2282,11 @@
                 <width>870</width>
                 <height>842</height>
                 <onleft>2</onleft>
-                <onright>60</onright>
+                <onright>681</onright>
                 <onup>504</onup>
                 <ondown>504</ondown>
                 <viewtype label="$LOCALIZE[544]">list</viewtype>
-                <pagecontrol>60</pagecontrol>
+                <pagecontrol>681</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <visible>Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Episodes) | Container.Content(Videos) | Container.Content(albums)</visible>
                 <itemlayout height="60" width="870">
@@ -2570,7 +2570,7 @@
                     </control>
                 </focusedlayout>
             </control>
-            <control type="scrollbar" id="60">
+            <control type="scrollbar" id="681">
                 <left>975</left>
                 <top>117</top>
                 <width>38</width>
@@ -2974,11 +2974,11 @@
                 <width>510</width>
                 <height>842</height>
                 <onleft>2</onleft>
-                <onright>60</onright>
+                <onright>669</onright>
                 <onup>515</onup>
                 <ondown>515</ondown>
                 <viewtype label="$LOCALIZE[544] 3">list</viewtype>
-                <pagecontrol>60</pagecontrol>
+                <pagecontrol>669</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <visible>Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Episodes) | Container.Content(Seasons)</visible>
 
@@ -3387,7 +3387,7 @@
                     
                 </focusedlayout>
             </control>
-            <control type="scrollbar" id="60">
+            <control type="scrollbar" id="669">
                 <left>622</left>
                 <top>117</top>
                 <width>38</width>
@@ -3765,11 +3765,11 @@
                 <width>1876</width>
                 <height>980</height>
                 <onleft>2</onleft>
-                <onright>60</onright>
+                <onright>611</onright>
                 <onup>732</onup>
                 <ondown>732</ondown>
                 <viewtype label="31030">panel</viewtype>
-                <pagecontrol>60</pagecontrol>
+                <pagecontrol>611</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <preloaditems>200</preloaditems>
                 <visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Sets) | Container.Content(MusicVideos)</visible>
@@ -3908,7 +3908,7 @@
                     </control>
                 </focusedlayout>
             </control>
-            <control type="scrollbar" id="60">
+            <control type="scrollbar" id="611">
                 <right>-10</right>
                 <top>-6</top>
                 <width>28</width>

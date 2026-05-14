@@ -12,11 +12,11 @@
 			<onright>529</onright>
 			<onup>2</onup>
             <ondown condition="Skin.HasSetting(EnableScrollbarHorizontal)">2</ondown>
-            <ondown condition="!Skin.HasSetting(EnableScrollbarHorizontal)">60</ondown>
+            <ondown condition="!Skin.HasSetting(EnableScrollbarHorizontal)">577</ondown>
 			<focusposition>2</focusposition>
 			<orientation>horizontal</orientation>
 			<preloaditems>4</preloaditems>
-			<pagecontrol>60</pagecontrol>
+			<pagecontrol>577</pagecontrol>
 			<itemlayout height="540" width="195"/>
 			<focusedlayout height="600" width="564"/>
 		</control>
@@ -455,7 +455,7 @@
 		<control type="group">
 			<visible>Control.IsVisible(529)</visible>
 
-			<control type="scrollbar" id="60">
+			<control type="scrollbar" id="577">
                 <left>0</left>
                 <include condition="!Skin.String(EnableFloorAdditionalNav,Style1)">ScrollbarPositionBottom</include>
                 <include condition="Skin.String(EnableFloorAdditionalNav,Style1)">ScrollbarPositionTop</include>
