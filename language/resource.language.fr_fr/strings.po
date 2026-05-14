@@ -2460,6 +2460,10 @@ msgctxt "#31793"
 msgid "Coverflow"
 msgstr "Flux de couvertures"
 
+msgctxt "#31794"
+msgid "items"
+msgstr "éléments"
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr "Prévisions sur 36 heures"

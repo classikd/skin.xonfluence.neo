@@ -37,6 +37,7 @@
                 <orientation>horizontal</orientation>
                 <align>left</align>
                 <itemgap>8</itemgap>
+                <usecontrolcoords>true</usecontrolcoords>
                 <visible>!Skin.HasSetting(AllScreenTopLeftWidget) + !Skin.HasSetting(HideTopLeftWindows)</visible>
                 <control type="label">
                     <include>WindowTitleCommons</include>
@@ -98,19 +99,23 @@
                     <visible>!String.IsEmpty(Control.GetLabel(30))</visible>
                 </control>
 
-                <control type="label">
-                    <height>48</height>
+                <control type="button">
+                    <top>8</top>
+                    <width min="15" max="250">auto</width>
+                    <height>30</height>
+                    <align>center</align>
+                    <description>Page Count Label</description>
+                    <texturefocus colordiffuse="$VAR[MainColorOne]">white85.png</texturefocus>
+                    <texturenofocus colordiffuse="$VAR[MainColorOne]">white85.png</texturenofocus>
+                    <label>$INFO[Container.NumItems,, $LOCALIZE[31794]]</label>
+                    <font>font10</font>
+                    <textcolor>black</textcolor>
                     <aligny>center</aligny>
+                    <include>Window_OpenClose_Animation</include>
                     <visible>!Skin.HasSetting(HidePageCountInfo)</visible>
                     <visible>!String.IsEmpty(Container.NumItems)</visible>
-                    <description>Page Count Label</description>
-                    <font>font11</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <scroll>false</scroll>
-                    <label>($INFO[Container.NumItems,, $LOCALIZE[31025]])</label>
-                    <include>Window_OpenClose_Animation</include>
                 </control>
+
             </control>
             <include condition="Skin.HasSetting(AllScreenTopLeftWidget) + !Skin.HasSetting(HideTopLeftWindows)">TopLeftInfo</include>
             <control type="label" id="29">

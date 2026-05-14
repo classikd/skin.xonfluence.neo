@@ -2397,6 +2397,10 @@ msgctxt "#31793"
 msgid "Coverflow"
 msgstr ""
 
+msgctxt "#31794"
+msgid "items"
+msgstr ""
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr ""
