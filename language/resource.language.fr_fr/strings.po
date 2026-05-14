@@ -2441,8 +2441,8 @@ msgid "Hide progress bars"
 msgstr "Cacher les barres de progression"
 
 msgctxt "#31789"
-msgid "TV channels"
-msgstr "Chaines TV"
+msgid "PVR channels"
+msgstr "Chaines PVR"
 
 msgctxt "#31790"
 msgid "Fanart 2"

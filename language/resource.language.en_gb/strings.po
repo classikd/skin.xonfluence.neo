@@ -2378,7 +2378,7 @@ msgid "Hide progress bars"
 msgstr ""
 
 msgctxt "#31789"
-msgid "TV channels"
+msgid "PVR channels"
 msgstr ""
 
 msgctxt "#31790"
