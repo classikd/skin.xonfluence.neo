@@ -1404,12 +1404,12 @@
                 <scrolltime>300</scrolltime>
                 <focusposition>2</focusposition>
                 <preloaditems>5</preloaditems>
-                <itemlayout condition="Control.IsVisible(5061)" width="254" height="250">
+                <itemlayout condition="Control.IsVisible(5061)" width="254" height="240">
                     <control type="image">
                         <left>10</left>
                         <top>0</top>
                         <width>240</width>
-                        <height>230</height>
+                        <height>220</height>
                         <texture border="15">ContentPanel.png</texture>
                         <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                     </control>
@@ -1448,13 +1448,13 @@
                         <visible>Player.Playing</visible>
                     </control>
                 </itemlayout>
-                <focusedlayout condition="Control.IsVisible(5061)" width="254" height="250">
+                <focusedlayout condition="Control.IsVisible(5061)" width="254" height="240">
                     
                     <control type="image">
                         <left>10</left>
                         <top>0</top>
                         <width>240</width>
-                        <height>230</height>
+                        <height>220</height>
                         <texture border="15">ContentPanel.png</texture>
                         <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                         <visible>!Control.HasFocus(5061)</visible>
@@ -1463,7 +1463,7 @@
                         <left>10</left>
                         <top>0</top>
                         <width>240</width>
-                        <height>230</height>
+                        <height>220</height>
                         <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                         <visible>Control.HasFocus(5061)</visible>
                     </control>
