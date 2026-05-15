@@ -524,13 +524,13 @@
 		<hitrect x="0" y="795" w="1920" h="180" />
 		<left>65</left>
 		<top>280r</top>
-		<width>1795</width>
+		<width>1800</width>
 		<height>300</height>
 		<pagecontrol></pagecontrol>
 		<scrolltime>300</scrolltime>
 		<orientation>Horizontal</orientation>
         <!-- shortcuts home (same code below for playing layout) -->
-		<itemlayout height="270" width="359">
+		<itemlayout height="270" width="359" condition="!Skin.HasSetting(HideHomeAddonsNames)">
             <control type="image">
                 <left>0</left>
                 <top>0</top>
@@ -560,7 +560,7 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 		</itemlayout>
-		<focusedlayout height="270" width="359">
+		<focusedlayout height="270" width="359" condition="!Skin.HasSetting(HideHomeAddonsNames)">
 
             <control type="image">
                 <left>0</left>
@@ -615,6 +615,54 @@
 			</control>
 
 		</focusedlayout>
+		<itemlayout height="270" width="150" condition="Skin.HasSetting(HideHomeAddonsNames)">
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>130</width>
+                <height>140</height>
+                <texture border="15">RecentAddedBack.png</texture>
+                <include>HomeTransparentEffect</include>
+            </control>
+		    <control type="image">
+			    <left>10</left>
+				<top>10</top>
+				<width>110</width>
+				<height>120</height>
+				<aspectratio aligny="bottom">scale</aspectratio>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+			</control>
+		</itemlayout>
+		<focusedlayout height="270" width="150" condition="Skin.HasSetting(HideHomeAddonsNames)">
+
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>130</width>
+                <height>140</height>
+                <texture>RecentAddedBack.png</texture>
+                <include>HomeTransparentEffect</include>
+				<visible>!ControlGroup(9002).HasFocus</visible>
+            </control>
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>130</width>
+                <height>140</height>
+                <texture colordiffuse="$VAR[MainColorOne]">white.png</texture>
+				<visible>ControlGroup(9002).HasFocus</visible>
+            </control>
+
+		    <control type="image">
+			    <left>10</left>
+				<top>10</top>
+				<width>110</width>
+				<height>120</height>
+			    <aspectratio>scale</aspectratio>
+			    <texture background="true">$INFO[ListItem.Icon]</texture>
+		    </control>
+
+		</focusedlayout>
 	</include>
 	
     <include name="AddonsMediaPlayingLayout">
@@ -630,13 +678,13 @@
         <hitrect x="0" y="795" w="1920" h="180" />
         <left>65</left>
         <top>280r</top>
-        <width>1795</width>
+        <width>1800</width>
         <height>300</height>
         <pagecontrol></pagecontrol>
         <scrolltime>300</scrolltime>
         <orientation>Horizontal</orientation>
-        <!-- shortcuts home while media playing -->
-		<itemlayout height="270" width="359">
+        <!-- shortcuts home (same code below for playing layout) -->
+		<itemlayout height="270" width="359" condition="!Skin.HasSetting(HideHomeAddonsNames)">
             <control type="image">
                 <left>0</left>
                 <top>0</top>
@@ -666,7 +714,7 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 		</itemlayout>
-		<focusedlayout height="270" width="359">
+		<focusedlayout height="270" width="359" condition="!Skin.HasSetting(HideHomeAddonsNames)">
 
             <control type="image">
                 <left>0</left>
@@ -719,6 +767,54 @@
 				<label>$INFO[ListItem.Label]</label>
 				<visible>ControlGroup(9002).HasFocus</visible>
 			</control>
+
+		</focusedlayout>
+		<itemlayout height="270" width="150" condition="Skin.HasSetting(HideHomeAddonsNames)">
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>130</width>
+                <height>140</height>
+                <texture border="15">RecentAddedBack.png</texture>
+                <include>HomeTransparentEffect</include>
+            </control>
+		    <control type="image">
+			    <left>10</left>
+				<top>10</top>
+				<width>110</width>
+				<height>120</height>
+				<aspectratio aligny="bottom">scale</aspectratio>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+			</control>
+		</itemlayout>
+		<focusedlayout height="270" width="150" condition="Skin.HasSetting(HideHomeAddonsNames)">
+
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>130</width>
+                <height>140</height>
+                <texture>RecentAddedBack.png</texture>
+                <include>HomeTransparentEffect</include>
+				<visible>!ControlGroup(9002).HasFocus</visible>
+            </control>
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>130</width>
+                <height>140</height>
+                <texture colordiffuse="$VAR[MainColorOne]">white.png</texture>
+				<visible>ControlGroup(9002).HasFocus</visible>
+            </control>
+
+		    <control type="image">
+			    <left>10</left>
+				<top>10</top>
+				<width>110</width>
+				<height>120</height>
+			    <aspectratio>scale</aspectratio>
+			    <texture background="true">$INFO[ListItem.Icon]</texture>
+		    </control>
 
 		</focusedlayout>
     </include>

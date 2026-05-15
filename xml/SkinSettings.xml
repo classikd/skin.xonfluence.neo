@@ -1037,6 +1037,18 @@
                                 <onclick>Skin.ToggleSetting(EnableRainDropEffect)</onclick>
                                 <selected>Skin.HasSetting(EnableRainDropEffect)</selected>
                                 <include>MenuButton</include>
+                            </control>                            
+                            <control type="radiobutton" id="149">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label>$LOCALIZE[31214]</label>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>Skin.ToggleSetting(HideHomeAddonsNames)</onclick>
+                                <onclick>ReloadSkin()</onclick>
+                                <selected>!Skin.HasSetting(HideHomeAddonsNames)</selected>
                             </control>
                             <control type="button" id="150">
                                 <width>1125</width>
