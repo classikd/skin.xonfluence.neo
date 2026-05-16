@@ -2464,6 +2464,10 @@ msgctxt "#31794"
 msgid "items"
 msgstr "éléments"
 
+msgctxt "#31795"
+msgid "Tiles"
+msgstr "Mosaïques"
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr "Prévisions sur 36 heures"
