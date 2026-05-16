@@ -523,7 +523,7 @@
         </animation>
 		<hitrect x="0" y="795" w="1920" h="180" />
 		<left>65</left>
-		<top>280r</top>
+		<top>275r</top>
 		<width>1800</width>
 		<height>300</height>
 		<pagecontrol></pagecontrol>
@@ -677,7 +677,7 @@
         </animation>
         <hitrect x="0" y="795" w="1920" h="180" />
         <left>65</left>
-        <top>280r</top>
+        <top>275r</top>
         <width>1800</width>
         <height>300</height>
         <pagecontrol></pagecontrol>
