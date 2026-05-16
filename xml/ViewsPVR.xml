@@ -1404,7 +1404,7 @@
                 <scrolltime>300</scrolltime>
                 <focusposition>2</focusposition>
                 <preloaditems>3</preloaditems>
-                <itemlayout condition="Control.IsVisible(5062)" width="597" height="137">
+                <itemlayout condition="Control.IsVisible(5062)" width="597" height="119">
                     <!--
                     <control type="image">
                         <left>0</left>
@@ -1424,7 +1424,7 @@
                     </control>
 
                     <control type="image">
-                        <left>500</left>
+                        <left>510</left>
                         <top>24</top>
                         <width>50</width>
                         <height>30</height>
@@ -1432,7 +1432,7 @@
                         <visible>!ListItem.IsPlaying</visible>
                     </control>
                     <control type="label">
-                        <left>505</left>
+                        <left>515</left>
                         <top>14</top>
                         <width>40</width>
                         <height>52</height>
@@ -1475,7 +1475,7 @@
                         <description>Progressbar</description>
                         <left>100</left>
                         <top>92</top>
-                        <width>450</width>
+                        <width>460</width>
                         <height>4</height>
                         <visible>ListItem.HasEpg</visible>
                         <info>ListItem.Progress</info>
@@ -1515,12 +1515,12 @@
                     </control>
 
                 </itemlayout>
-                <focusedlayout condition="Control.IsVisible(5062)" width="597" height="137">
+                <focusedlayout condition="Control.IsVisible(5062)" width="597" height="119">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>570</width>
-                        <height>131</height>
+                        <width>580</width>
+                        <height>126</height>
                         <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
                         <visible>Control.HasFocus(5062)</visible>
                     </control>
@@ -1535,7 +1535,7 @@
                     </control>
 
                     <control type="image">
-                        <left>500</left>
+                        <left>510</left>
                         <top>24</top>
                         <width>50</width>
                         <height>30</height>
@@ -1543,7 +1543,7 @@
                         <visible>!ListItem.IsPlaying</visible>
                     </control>
                     <control type="label">
-                        <left>505</left>
+                        <left>515</left>
                         <top>14</top>
                         <width>40</width>
                         <height>52</height>
@@ -1614,7 +1614,7 @@
                         <description>Progressbar</description>
                         <left>100</left>
                         <top>92</top>
-                        <width>450</width>
+                        <width>460</width>
                         <height>4</height>
                         <visible>ListItem.HasEpg</visible>
                         <info>ListItem.Progress</info>
