@@ -26,16 +26,27 @@
         <control type="group">
             <animation effect="fade" time="150">VisibleChange</animation>
             <visible>[Player.ShowInfo | Window.IsActive(MusicOSD)] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVRChannelGuide) | Window.IsVisible(PVRRadioRDSInfo) | Window.IsVisible(Addon) | Window.IsVisible(1105)]</visible>
+            <!-- Top background for clock, date, etc. -->
+			<control type="image" id="1">
+                <left>-30</left>
+                <top>-225</top>
+                <width>1980</width>
+                <height>384</height>
+                <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
+                <texture flipy="true" border="1">HomeNowPlayingBack.png</texture>
+                <visible>!Skin.HasSetting(SimpleModOSDMusic)</visible>
+            </control>
             <control type="image">
                 <left>-30</left>
                 <top>0</top>
                 <width>1980</width>
                 <height>384</height>
+                <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 <texture flipy="true" border="1">HomeNowPlayingBack.png</texture>
                 <visible>Skin.HasSetting(SimpleModOSDMusic)</visible>
             </control>
             <include condition="!Skin.String(MusicOSDInfo,never) + !Skin.HasSetting(SimpleModOSDMusic)">TopLeftInfo</include>
-            <include condition="!Skin.String(MusicOSDInfo,never) + !Skin.HasSetting(SimpleModOSDMusic)">TopRightInfo</include>
+            <include condition="!Skin.String(MusicOSDInfo,never) + !Skin.HasSetting(SimpleModOSDMusic)">TopRightInfoHome</include>
             <control type="image">
                 <left>-30</left>
                 <top>345r</top>

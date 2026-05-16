@@ -977,13 +977,12 @@
                 <height>384</height>
                 <include condition="!String.IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
                 <texture flipy="true" border="1">HomeNowPlayingBack.png</texture>
-                <visible>!Skin.HasSetting(HideSystemTime)</visible>
                 <visible>!Skin.HasSetting(SimpleModOSD)</visible>
             </control>
 			<!-- Top info: weather, clock, etc. -->
             <control type="group" id="1">
                 <include>TopLeftInfo</include>
-                <include>TopRightInfo</include>
+                <include>TopRightInfoHome</include>
                 <visible>!Skin.HasSetting(SimpleModOSD)</visible>
             </control>
 			<!-- Plot -->
@@ -1631,7 +1630,7 @@
             </control>
             <control type="group" id="1">
                 <include>TopLeftInfo</include>
-                <include>TopRightInfo</include>
+                <include>TopRightInfoHome</include>
             </control>
             <control type="image" id="1">
                 <left>-30</left>

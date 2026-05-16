@@ -2251,7 +2251,7 @@
                     <visible>String.IsEqual(Skin.String(TopLeftHomeInfo),ProfileAvatarName)</visible>
                 </control>
                 <!-- clock date -->
-                <control type="grouplist">
+                <control type="grouplist" id="1">
                     <left>60</left>
                     <top>25</top>
                     <width>1725</width>
@@ -2267,7 +2267,7 @@
                 <include condition="!Skin.HasSetting(HideSystemTime) + String.IsEqual(Skin.String(TopLeftHomeInfo),ClockDate)">DateLeftPosition</include>
             
                 <!-- clock -->
-                <control type="grouplist">
+                <control type="grouplist" id="1">
                     <left>65</left>
                     <top>35</top>
                     <width>1725</width>
@@ -2446,7 +2446,7 @@
     <include name="TopRightInfoHome">
         
         <!-- Clock date (default) -->
-        <control type="grouplist">
+        <control type="grouplist" id="1">
             <left>120</left>
             <top>25</top>
             <width>1725</width>
@@ -2460,7 +2460,7 @@
         <include condition="!Skin.HasSetting(HideSystemTime) + [String.IsEmpty(Skin.String(TopRightHomeInfo)) | String.IsEqual(Skin.String(TopRightHomeInfo),ClockDate)]">Date</include>
     
         <!-- Clock -->
-        <control type="grouplist">
+        <control type="grouplist" id="1">
             <left>120</left>
             <top>35</top>
             <width>1725</width>
@@ -2599,7 +2599,7 @@
                 <aligny>center</aligny>
                 <itemgap>5</itemgap>
 
-                <control type="label">
+                <control type="label" id="100">
                     <width>auto</width>
                     <height>33</height>
                     <font>font10</font>
@@ -2610,7 +2610,7 @@
                     <shadowcolor>black</shadowcolor>
                 </control>
 
-                <control type="label">
+                <control type="label" id="100">
                     <width>auto</width>
                     <height>45</height>
                     <align>right</align>
@@ -2621,7 +2621,7 @@
                     <label>[B]$INFO[Window(Weather).Property(Current.Temperature)][/B]</label>
                 </control>
 
-                <control type="label">
+                <control type="label" id="100">
                     <width>auto</width>
                     <height>33</height>
                     <font>font10</font>
