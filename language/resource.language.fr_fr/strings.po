@@ -571,8 +571,8 @@ msgid "Home page \"Pictures\" submenu"
 msgstr "Sous-menu Images de la page d'accueil"
 
 msgctxt "#31137"
-msgid "Low main menu bar"
-msgstr "Menu principal en position basse"
+msgid "Low position"
+msgstr "Position basse"
 
 msgctxt "#31138"
 msgid "Party mode music on screensaver"
@@ -1003,7 +1003,7 @@ msgid "Wrap around menu"
 msgstr "Défilement infini du menu"
 
 msgctxt "#31274"
-msgid "Return to start menu scroll"
+msgid "Return to start scroll"
 msgstr "Retour automatique au début à la fin défilement"
 
 msgctxt "#31275"
@@ -1436,8 +1436,8 @@ msgid "Single global background"
 msgstr "Arrière-plan unique global"
 
 msgctxt "#31404"
-msgid "Default focused menu item"
-msgstr "Élément de menu par défaut sélectionné"
+msgid "Default focused item"
+msgstr "Élément sélectionné par défaut"
 
 msgctxt "#31411"
 msgid "First run help..."
@@ -2153,8 +2153,8 @@ msgid "Recent Concerts (includes watched)"
 msgstr "Concerts récents (visionnés inclus)"
 
 msgctxt "#31717"
-msgid "Main menu in all caps"
-msgstr "Menu principal en majuscules"
+msgid "Text in all caps"
+msgstr "Texte en majuscules"
 
 msgctxt "#31718"
 msgid "Favourites script"
@@ -2286,7 +2286,7 @@ msgstr "Fanart supplémentaire si disponible"
 
 msgctxt "#31750"
 msgid "Widget fanart/extra fanart"
-msgstr "Fanart/fanart supplémentaire Widget"
+msgstr "Fanart/fanart supplémentaire Widgets"
 
 msgctxt "#31751"
 msgid "Adjust Extra fanart cycle rate"
@@ -2513,8 +2513,8 @@ msgid "Fanart script"
 msgstr "Script Fanart"
 
 msgctxt "#31923"
-msgid "Disable PVR in menu"
-msgstr "Désactiver PVR dans le menu"
+msgid "Disable PVR item"
+msgstr "Désactiver élément PVR"
 
 msgctxt "#31924"
 msgid "Album thumbnails"
@@ -2745,8 +2745,8 @@ msgid "Kodi intro movie path"
 msgstr "Chemin: "
 
 msgctxt "#31982"
-msgid "Custom widgets limit amount"
-msgstr "Limite de widgets personnalisés"
+msgid "Widget limit amount"
+msgstr "Nombre limite de widgets"
 
 msgctxt "#31983"
 msgid "Dialog style"

@@ -847,11 +847,25 @@
                                 <onclick condition="Skin.String(TopRightHomeInfo,Logo)">Skin.SetString(TopRightHomeInfo,Weather)</onclick>
                                 <include>MenuButton</include>
                             </control>
+
+                            <control type="radiobutton" id="130">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <disabledcolor>white</disabledcolor>
+                                <include>MenuButton</include>
+                                <label>$LOCALIZE[10822]</label>
+                                <onclick></onclick>
+                                <enable>false</enable>
+                                <selected>true</selected>
+                            </control>
                             <control type="button" id="136">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label>$LOCALIZE[31404]</label>
+                                <label> - $LOCALIZE[31404]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$INFO[Container(9011).ListItem.Label]</label2>
                                 <textcolor>white</textcolor>
@@ -898,24 +912,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <label>$LOCALIZE[31137]</label>
+                                <label> - $LOCALIZE[31137]</label>
                                 <onclick>Skin.ToggleSetting(LowerMainMenuBar)</onclick>
                                 <selected>Skin.HasSetting(LowerMainMenuBar)</selected>
-                            </control>
-                            <control type="button" id="113">
-                                <description>hide home floor</description>
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <textcolor>white</textcolor>
-                                <focusedcolor>black</focusedcolor>
-                                <include>MenuButton</include>
-                                <label>$LOCALIZE[31069]</label>
-                                <shadowcolor>black</shadowcolor>
-                                <label2>$VAR[HomeFloorValue]</label2>
-                                <onclick condition="String.IsEmpty(Skin.String(HomeFloor))">Skin.SetString(HomeFloor,Transparent)</onclick>
-                                <onclick condition="Skin.String(HomeFloor,Transparent)">Skin.SetString(HomeFloor,Enabled)</onclick>
-                                <onclick condition="Skin.String(HomeFloor,Enabled)">Skin.Reset(HomeFloor)</onclick>
                             </control>
                             <control type="radiobutton" id="138">
                                 <description>enable wrap around menu</description>
@@ -924,7 +923,7 @@
                                 <font>font13</font>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[31273]</label>
+                                <label> - $LOCALIZE[31273]</label>
                                 <onclick>Skin.ToggleSetting(WrapAroundHomeMenu)</onclick>
                                 <onclick>Skin.Reset(FixedEndingMenu)</onclick>
                                 <selected>Skin.HasSetting(WrapAroundHomeMenu)</selected>
@@ -937,7 +936,7 @@
                                 <font>font13</font>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[31274]</label>
+                                <label> - $LOCALIZE[31274]</label>
                                 <onclick>Skin.ToggleSetting(FixedEndingMenu)</onclick>
                                 <selected>!Skin.HasSetting(FixedEndingMenu)</selected>
                                 <include>MenuButton</include>
@@ -950,7 +949,7 @@
                                 <font>font13</font>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[31275]</label>
+                                <label> - $LOCALIZE[31516]</label>
                                 <onclick>Skin.ToggleSetting(AutoVisableSubMenu)</onclick>
                                 <selected>!Skin.HasSetting(AutoVisableSubMenu)</selected>
                                 <include>MenuButton</include>
@@ -962,7 +961,7 @@
                                 <font>font13</font>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[31717]</label>
+                                <label> - $LOCALIZE[31717]</label>
                                 <onclick>Skin.ToggleSetting(MainMenuAllCaps)</onclick>
                                 <selected>Skin.HasSetting(MainMenuAllCaps)</selected>
                                 <include>MenuButton</include>
@@ -974,21 +973,10 @@
                                 <font>font13</font>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[31923]</label>
+                                <label> - $LOCALIZE[31923]</label>
                                 <onclick>Skin.ToggleSetting(DisablePVRinView)</onclick>
                                 <selected>Skin.HasSetting(DisablePVRinView)</selected>
                                 <include>MenuButton</include>
-                            </control>
-                            <control type="radiobutton" id="142">
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <label>$LOCALIZE[31277]</label>
-                                <textcolor>white</textcolor>
-                                <focusedcolor>black</focusedcolor>
-                                <include>MenuButton</include>
-                                <onclick>Skin.ToggleSetting(VizOnlyOnHome)</onclick>
-                                <selected>Skin.HasSetting(VizOnlyOnHome)</selected>
                             </control>
                             <control type="radiobutton" id="143">
                                 <width>1125</width>
@@ -1038,17 +1026,20 @@
                                 <selected>Skin.HasSetting(EnableHomeStats)</selected>
                                 <include>MenuButton</include>
                             </control>
-                            <control type="radiobutton" id="148">
-                                <description>enable raindrop effect</description>
+                            <control type="button" id="113">
+                                <description>hide home floor</description>
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[31076]</label>
-                                <onclick>Skin.ToggleSetting(EnableRainDropEffect)</onclick>
-                                <selected>Skin.HasSetting(EnableRainDropEffect)</selected>
                                 <include>MenuButton</include>
+                                <label>$LOCALIZE[31069]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[HomeFloorValue]</label2>
+                                <onclick condition="String.IsEmpty(Skin.String(HomeFloor))">Skin.SetString(HomeFloor,Transparent)</onclick>
+                                <onclick condition="Skin.String(HomeFloor,Transparent)">Skin.SetString(HomeFloor,Enabled)</onclick>
+                                <onclick condition="Skin.String(HomeFloor,Enabled)">Skin.Reset(HomeFloor)</onclick>
                             </control>                            
                             <control type="radiobutton" id="149">
                                 <width>1125</width>
@@ -1061,23 +1052,6 @@
                                 <onclick>Skin.ToggleSetting(HideHomeAddonsNames)</onclick>
                                 <onclick>ReloadSkin()</onclick>
                                 <selected>!Skin.HasSetting(HideHomeAddonsNames)</selected>
-                            </control>
-                            <control type="button" id="150">
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <label>$LOCALIZE[31249]</label>
-                                <shadowcolor>black</shadowcolor>
-                                <label2>$INFO[Skin.String(HomeTrans)]$VAR[HomeTransparentValue]</label2>
-                                <textcolor>white</textcolor>
-                                <focusedcolor>black</focusedcolor>
-                                <include>MenuButton</include>
-                                <onclick condition="String.IsEmpty(Skin.String(HomeTrans))">Skin.SetString(HomeTrans,55)</onclick>
-                                <onclick condition="Skin.String(HomeTrans,55)">Skin.SetString(HomeTrans,70)</onclick>
-                                <onclick condition="Skin.String(HomeTrans,70)">Skin.SetString(HomeTrans,85)</onclick>
-                                <onclick condition="Skin.String(HomeTrans,85)">Skin.SetString(HomeTrans,10)</onclick>
-                                <onclick condition="Skin.String(HomeTrans,10)">Skin.SetString(HomeTrans,25)</onclick>
-                                <onclick condition="Skin.String(HomeTrans,25)">Skin.Reset(HomeTrans)</onclick>
                             </control>
                             <control type="button" id="151">
                                 <width>1125</width>
@@ -1107,6 +1081,46 @@
                                 <label>$LOCALIZE[31750]</label>
                                 <onclick>Skin.ToggleSetting(ShowWidgetFanart)</onclick>
                                 <selected>Skin.HasSetting(ShowWidgetFanart)</selected>
+                                <include>MenuButton</include>
+                            </control>
+                            <control type="button" id="150">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label>$LOCALIZE[31249]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$INFO[Skin.String(HomeTrans)]$VAR[HomeTransparentValue]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEmpty(Skin.String(HomeTrans))">Skin.SetString(HomeTrans,55)</onclick>
+                                <onclick condition="Skin.String(HomeTrans,55)">Skin.SetString(HomeTrans,70)</onclick>
+                                <onclick condition="Skin.String(HomeTrans,70)">Skin.SetString(HomeTrans,85)</onclick>
+                                <onclick condition="Skin.String(HomeTrans,85)">Skin.SetString(HomeTrans,10)</onclick>
+                                <onclick condition="Skin.String(HomeTrans,10)">Skin.SetString(HomeTrans,25)</onclick>
+                                <onclick condition="Skin.String(HomeTrans,25)">Skin.Reset(HomeTrans)</onclick>
+                            </control>
+                            <control type="radiobutton" id="142">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label>$LOCALIZE[31277]</label>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>Skin.ToggleSetting(VizOnlyOnHome)</onclick>
+                                <selected>Skin.HasSetting(VizOnlyOnHome)</selected>
+                            </control>
+                            <control type="radiobutton" id="148">
+                                <description>enable raindrop effect</description>
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$LOCALIZE[31076]</label>
+                                <onclick>Skin.ToggleSetting(EnableRainDropEffect)</onclick>
+                                <selected>Skin.HasSetting(EnableRainDropEffect)</selected>
                                 <include>MenuButton</include>
                             </control>
                             <control type="radiobutton" id="153">
