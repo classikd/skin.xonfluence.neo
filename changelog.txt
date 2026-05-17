@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 0.12
+- Add new PVR "Tiles" view
+- Increase home addons limit to 30 and readd option to hide/show label
+- Improve Thumbnails views for music
+- Fix some scrollbars not working due to conflict
+- and more
+
 ## Version 0.11
 - Add a new style for the additional menu
 - Use the large slideblade button in the top/bottom position of the button
