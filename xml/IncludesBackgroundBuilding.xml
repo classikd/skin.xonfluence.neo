@@ -583,6 +583,7 @@
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
             <visible> String.IsEqual(Skin.String(PiP),Small)</visible>
+            <visible>system.getbool(input.enablemouse)</visible>
         </control>
 
         <control type="group">
@@ -688,6 +689,7 @@
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
             <visible> String.IsEqual(Skin.String(PiP),Medium)</visible>
+            <visible>system.getbool(input.enablemouse)</visible>
         </control>
 
         <control type="group">
@@ -793,6 +795,7 @@
             <visible>Player.HasVideo</visible>
             <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
             <visible> String.IsEqual(Skin.String(PiP),Large)</visible>
+            <visible>system.getbool(input.enablemouse)</visible>
         </control>
 
         <control type="group">
