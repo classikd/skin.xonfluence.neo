@@ -901,12 +901,12 @@
                 </focusedlayout>
 
                                 
-                <itemlayout condition="Container.Content(Albums) | Container.Content(Songs) | Container.Content(Files) | Window.IsVisible(MusicPlaylist)" height="279" width="297">
+                <itemlayout condition="Container.Content(Albums) | Container.Content(Songs) | Container.Content(Files) | Window.IsVisible(MusicPlaylist)" height="325" width="255">
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>294</width>
-                        <height>230</height>
+                        <width>250</width>
+                        <height>280</height>
                         <bordertexture border="5">blank.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultGenre.png" colordiffuse="$VAR[MainColorOne]">$VAR[MovieGenreIcon]</texture>
@@ -916,8 +916,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>294</width>
-                        <height>230</height>
+                        <width>250</width>
+                        <height>280</height>
                         <bordertexture border="5">blank.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultStudios.png">$VAR[StudioIcon]</texture>
@@ -929,8 +929,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>294</width>
-                        <height>230</height>
+                        <width>250</width>
+                        <height>280</height>
                         <include>TextureBorderViews</include>
                         <texture background="true" colordiffuse="$VAR[MainColorOne]">DefaultAlbumCover.png</texture>
                         <aspectratio>keep</aspectratio>
@@ -940,8 +940,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>294</width>
-                        <height>230</height>
+                        <width>250</width>
+                        <height>280</height>
                         <include>TextureBorderViews</include>
                         <texture background="true" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
                         <aspectratio>keep</aspectratio>
@@ -951,8 +951,8 @@
 
                     <control type="label">
                         <left>10</left>
-                        <top>228</top>
-                        <width>285</width>
+                        <top>275</top>
+                        <width>235</width>
                         <height>38</height>
                         <font>font11</font>
                         <textcolor>white</textcolor>
@@ -963,12 +963,12 @@
                     </control>
 
                 </itemlayout>
-                <focusedlayout condition="Container.Content(Albums) | Container.Content(Songs) | Container.Content(Files) | Window.IsVisible(MusicPlaylist)" height="279" width="297">
+                <focusedlayout condition="Container.Content(Albums) | Container.Content(Songs) | Container.Content(Files) | Window.IsVisible(MusicPlaylist)" height="325" width="255">
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>294</width>
-                        <height>230</height>
+                        <width>250</width>
+                        <height>280</height>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultGenre.png" colordiffuse="$VAR[MainColorOne]">$VAR[MovieGenreIcon]</texture>
@@ -978,8 +978,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>294</width>
-                        <height>230</height>
+                        <width>250</width>
+                        <height>280</height>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultStudios.png">$VAR[StudioIcon]</texture>
@@ -991,8 +991,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>294</width>
-                        <height>230</height>
+                        <width>250</width>
+                        <height>280</height>
                         <include>TextureBorderViews</include>
                         <texture background="true" colordiffuse="$VAR[MainColorOne]">DefaultAlbumCover.png</texture>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
@@ -1003,8 +1003,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>294</width>
-                        <height>230</height>
+                        <width>250</width>
+                        <height>280</height>
                         <include>TextureBorderViews</include>
                         <texture background="true" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
@@ -1015,8 +1015,8 @@
 
                     <control type="label">
                         <left>10</left>
-                        <top>228</top>
-                        <width>285</width>
+                        <top>275</top>
+                        <width>235</width>
                         <height>38</height>
                         <font>font11</font>
                         <textcolor>white</textcolor>
@@ -1558,12 +1558,12 @@
 
                 </focusedlayout>
 
-                <itemlayout condition="Container.Content(Albums) | Container.Content(Songs) | Container.Content(Files) | Window.IsVisible(MusicPlaylist)" height="420" width="446">
+                <itemlayout condition="Container.Content(Albums) | Container.Content(Songs) | Container.Content(Files) | Window.IsVisible(MusicPlaylist)" height="440" width="357">
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>440</width>
-                        <height>360</height>
+                        <width>355</width>
+                        <height>380</height>
                         <bordertexture border="5">blank.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultGenre.png" colordiffuse="$VAR[MainColorOne]">$VAR[MovieGenreIcon]</texture>
@@ -1573,8 +1573,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>440</width>
-                        <height>360</height>
+                        <width>355</width>
+                        <height>380</height>
                         <bordertexture border="5">blank.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultStudios.png">$VAR[StudioIcon]</texture>
@@ -1586,8 +1586,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>440</width>
-                        <height>360</height>
+                        <width>355</width>
+                        <height>380</height>
                         <include>TextureBorderViews</include>
                         <texture background="true" colordiffuse="$VAR[MainColorOne]">DefaultAlbumCover.png</texture>
                         <aspectratio>keep</aspectratio>
@@ -1597,8 +1597,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>440</width>
-                        <height>360</height>
+                        <width>355</width>
+                        <height>380</height>
                         <include>TextureBorderViews</include>
                         <texture background="true" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
                         <aspectratio>keep</aspectratio>
@@ -1608,8 +1608,8 @@
 
                     <control type="label">
                         <left>10</left>
-                        <top>360</top>
-                        <width>420</width>
+                        <top>380</top>
+                        <width>335</width>
                         <height>38</height>
                         <font>font11</font>
                         <textcolor>white</textcolor>
@@ -1620,12 +1620,12 @@
                     </control>
 
                 </itemlayout>
-                <focusedlayout condition="Container.Content(Albums) | Container.Content(Songs) | Container.Content(Files) | Window.IsVisible(MusicPlaylist)" height="420" width="446">
+                <focusedlayout condition="Container.Content(Albums) | Container.Content(Songs) | Container.Content(Files) | Window.IsVisible(MusicPlaylist)" height="440" width="357">
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>440</width>
-                        <height>360</height>
+                        <width>355</width>
+                        <height>380</height>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultGenre.png" colordiffuse="$VAR[MainColorOne]">$VAR[MovieGenreIcon]</texture>
@@ -1635,8 +1635,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>440</width>
-                        <height>360</height>
+                        <width>355</width>
+                        <height>380</height>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
                         <include>TextureBorderViews</include>
                         <texture background="true" fallback="DefaultStudios.png">$VAR[StudioIcon]</texture>
@@ -1648,8 +1648,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>440</width>
-                        <height>360</height>
+                        <width>355</width>
+                        <height>380</height>
                         <include>TextureBorderViews</include>
                         <texture background="true" colordiffuse="$VAR[MainColorOne]">DefaultAlbumCover.png</texture>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
@@ -1660,8 +1660,8 @@
                     <control type="image">
                         <left>1</left>
                         <top>0</top>
-                        <width>440</width>
-                        <height>360</height>
+                        <width>355</width>
+                        <height>380</height>
                         <include>TextureBorderViews</include>
                         <texture background="true" colordiffuse="$VAR[DiffuseIfNoPosterThumb]">$VAR[PosterThumb]</texture>
                         <bordertexture border="5" colordiffuse="$VAR[MainColorOne]">folder-focus.png</bordertexture>
@@ -1672,8 +1672,8 @@
 
                     <control type="label">
                         <left>10</left>
-                        <top>360</top>
-                        <width>420</width>
+                        <top>380</top>
+                        <width>335</width>
                         <height>38</height>
                         <font>font11</font>
                         <textcolor>white</textcolor>
