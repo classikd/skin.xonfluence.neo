@@ -393,18 +393,6 @@
                                 <onclick condition="Skin.String(SideBladeLabel,Top)">Skin.SetString(SideBladeLabel,Bottom)</onclick>
                                 <onclick condition="Skin.String(SideBladeLabel,Bottom)">Skin.Reset(SideBladeLabel)</onclick>
                             </control>
-                            <control type="radiobutton" id="99">
-                                <description>Use skinshortcuts for menu config</description>
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <textcolor>white</textcolor>
-                                <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[31761]</label>
-                                <include>MenuButton</include>
-                                <onclick>Skin.ToggleSetting(Use.SkinShortcuts)</onclick>
-                                <selected>Skin.HasSetting(Use.SkinShortcuts)</selected>
-                            </control>
 							<control type="radiobutton" id="100">
                                 <description>Global Background</description>
                                 <width>1125</width>
@@ -749,6 +737,19 @@
                                 <include>MenuButton</include>
                                 <onclick>Skin.ToggleSetting(HideEPGwithRDS)</onclick>
                                 <selected>Skin.HasSetting(HideEPGwithRDS)</selected>
+                            </control>
+                            
+                            <control type="radiobutton" id="99">
+                                <description>Use skinshortcuts for menu config</description>
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$LOCALIZE[31761]</label>
+                                <include>MenuButton</include>
+                                <onclick>Skin.ToggleSetting(Use.SkinShortcuts)</onclick>
+                                <selected>Skin.HasSetting(Use.SkinShortcuts)</selected>
                             </control>
 
 							<control type="radiobutton" id="135">
