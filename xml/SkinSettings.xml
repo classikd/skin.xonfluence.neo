@@ -803,6 +803,50 @@
                             <height>720</height>
                             <itemgap>-1</itemgap>
                             <pagecontrol>2062</pagecontrol>
+                            <control type="button" id="127">
+                                <description>Top Left Home Info</description>
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$LOCALIZE[31072]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[TopLeftInfoType]</label2>
+                                <onclick condition="String.IsEmpty(Skin.String(TopLeftHomeInfo))">Skin.SetString(TopLeftHomeInfo,Weather)</onclick>
+                                <onclick condition="Skin.String(TopLeftHomeInfo,Weather)">Skin.SetString(TopLeftHomeInfo,ProfileName)</onclick>
+                                <onclick condition="Skin.String(TopLeftHomeInfo,ProfileName)">Skin.SetString(TopLeftHomeInfo,ProfileAvatar)</onclick>
+                                <onclick condition="Skin.String(TopLeftHomeInfo,ProfileAvatar)">Skin.SetString(TopLeftHomeInfo,ProfileAvatarName)</onclick>
+                                <onclick condition="Skin.String(TopLeftHomeInfo,ProfileAvatarName)">Skin.SetString(TopLeftHomeInfo,ClockDate)</onclick>
+                                <onclick condition="Skin.String(TopLeftHomeInfo,ClockDate)">Skin.SetString(TopLeftHomeInfo,Clock)</onclick>
+                                <onclick condition="Skin.String(TopLeftHomeInfo,Clock)">Skin.SetString(TopLeftHomeInfo,Date)</onclick>
+                                <onclick condition="Skin.String(TopLeftHomeInfo,Date)">Skin.SetString(TopLeftHomeInfo,Blank)</onclick>
+                                <onclick condition="Skin.String(TopLeftHomeInfo,Blank)">Skin.SetString(TopLeftHomeInfo,Logo)</onclick>
+                                <onclick condition="Skin.String(TopLeftHomeInfo,Logo)">Skin.SetString(TopLeftHomeInfo,Weather)</onclick>
+                                <include>MenuButton</include>
+                            </control>
+                            <control type="button" id="128">
+                                <description>Top Right Home Info</description>
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$LOCALIZE[31791]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[TopRightInfoType]</label2>
+                                <onclick condition="String.IsEmpty(Skin.String(TopRightHomeInfo))">Skin.SetString(TopRightHomeInfo,Weather)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,Weather)">Skin.SetString(TopRightHomeInfo,ProfileName)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,ProfileName)">Skin.SetString(TopRightHomeInfo,ProfileAvatar)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,ProfileAvatar)">Skin.SetString(TopRightHomeInfo,ProfileAvatarName)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,ProfileAvatarName)">Skin.SetString(TopRightHomeInfo,ClockDate)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,ClockDate)">Skin.SetString(TopRightHomeInfo,Clock)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,Clock)">Skin.SetString(TopRightHomeInfo,Date)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,Date)">Skin.SetString(TopRightHomeInfo,Blank)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,Blank)">Skin.SetString(TopRightHomeInfo,Logo)</onclick>
+                                <onclick condition="Skin.String(TopRightHomeInfo,Logo)">Skin.SetString(TopRightHomeInfo,Weather)</onclick>
+                                <include>MenuButton</include>
+                            </control>
                             <control type="button" id="136">
                                 <width>1125</width>
                                 <height>60</height>
@@ -923,6 +967,18 @@
                                 <selected>Skin.HasSetting(MainMenuAllCaps)</selected>
                                 <include>MenuButton</include>
                             </control>
+                            <control type="radiobutton" id="14002">
+                                <description>disable PVR in view</description>
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$LOCALIZE[31923]</label>
+                                <onclick>Skin.ToggleSetting(DisablePVRinView)</onclick>
+                                <selected>Skin.HasSetting(DisablePVRinView)</selected>
+                                <include>MenuButton</include>
+                            </control>
                             <control type="radiobutton" id="142">
                                 <width>1125</width>
                                 <height>60</height>
@@ -980,50 +1036,6 @@
                                 <label>$LOCALIZE[31073]</label>
                                 <onclick>Skin.ToggleSetting(EnableHomeStats)</onclick>
                                 <selected>Skin.HasSetting(EnableHomeStats)</selected>
-                                <include>MenuButton</include>
-                            </control>
-                            <control type="button" id="147">
-                                <description>Top Left Home Info</description>
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <textcolor>white</textcolor>
-                                <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[31072]</label>
-                                <shadowcolor>black</shadowcolor>
-                                <label2>$VAR[TopLeftInfoType]</label2>
-                                <onclick condition="String.IsEmpty(Skin.String(TopLeftHomeInfo))">Skin.SetString(TopLeftHomeInfo,Weather)</onclick>
-                                <onclick condition="Skin.String(TopLeftHomeInfo,Weather)">Skin.SetString(TopLeftHomeInfo,ProfileName)</onclick>
-                                <onclick condition="Skin.String(TopLeftHomeInfo,ProfileName)">Skin.SetString(TopLeftHomeInfo,ProfileAvatar)</onclick>
-                                <onclick condition="Skin.String(TopLeftHomeInfo,ProfileAvatar)">Skin.SetString(TopLeftHomeInfo,ProfileAvatarName)</onclick>
-                                <onclick condition="Skin.String(TopLeftHomeInfo,ProfileAvatarName)">Skin.SetString(TopLeftHomeInfo,ClockDate)</onclick>
-                                <onclick condition="Skin.String(TopLeftHomeInfo,ClockDate)">Skin.SetString(TopLeftHomeInfo,Clock)</onclick>
-                                <onclick condition="Skin.String(TopLeftHomeInfo,Clock)">Skin.SetString(TopLeftHomeInfo,Date)</onclick>
-                                <onclick condition="Skin.String(TopLeftHomeInfo,Date)">Skin.SetString(TopLeftHomeInfo,Blank)</onclick>
-                                <onclick condition="Skin.String(TopLeftHomeInfo,Blank)">Skin.SetString(TopLeftHomeInfo,Logo)</onclick>
-                                <onclick condition="Skin.String(TopLeftHomeInfo,Logo)">Skin.SetString(TopLeftHomeInfo,Weather)</onclick>
-                                <include>MenuButton</include>
-                            </control>
-                            <control type="button" id="147">
-                                <description>Top Right Home Info</description>
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <textcolor>white</textcolor>
-                                <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[31791]</label>
-                                <shadowcolor>black</shadowcolor>
-                                <label2>$VAR[TopRightInfoType]</label2>
-                                <onclick condition="String.IsEmpty(Skin.String(TopRightHomeInfo))">Skin.SetString(TopRightHomeInfo,Weather)</onclick>
-                                <onclick condition="Skin.String(TopRightHomeInfo,Weather)">Skin.SetString(TopRightHomeInfo,ProfileName)</onclick>
-                                <onclick condition="Skin.String(TopRightHomeInfo,ProfileName)">Skin.SetString(TopRightHomeInfo,ProfileAvatar)</onclick>
-                                <onclick condition="Skin.String(TopRightHomeInfo,ProfileAvatar)">Skin.SetString(TopRightHomeInfo,ProfileAvatarName)</onclick>
-                                <onclick condition="Skin.String(TopRightHomeInfo,ProfileAvatarName)">Skin.SetString(TopRightHomeInfo,ClockDate)</onclick>
-                                <onclick condition="Skin.String(TopRightHomeInfo,ClockDate)">Skin.SetString(TopRightHomeInfo,Clock)</onclick>
-                                <onclick condition="Skin.String(TopRightHomeInfo,Clock)">Skin.SetString(TopRightHomeInfo,Date)</onclick>
-                                <onclick condition="Skin.String(TopRightHomeInfo,Date)">Skin.SetString(TopRightHomeInfo,Blank)</onclick>
-                                <onclick condition="Skin.String(TopRightHomeInfo,Blank)">Skin.SetString(TopRightHomeInfo,Logo)</onclick>
-                                <onclick condition="Skin.String(TopRightHomeInfo,Logo)">Skin.SetString(TopRightHomeInfo,Weather)</onclick>
                                 <include>MenuButton</include>
                             </control>
                             <control type="radiobutton" id="148">
@@ -1095,18 +1107,6 @@
                                 <label>$LOCALIZE[31750]</label>
                                 <onclick>Skin.ToggleSetting(ShowWidgetFanart)</onclick>
                                 <selected>Skin.HasSetting(ShowWidgetFanart)</selected>
-                                <include>MenuButton</include>
-                            </control>
-                            <control type="radiobutton" id="152">
-                                <description>disable PVR in view</description>
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <textcolor>white</textcolor>
-                                <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[31923]</label>
-                                <onclick>Skin.ToggleSetting(DisablePVRinView)</onclick>
-                                <selected>Skin.HasSetting(DisablePVRinView)</selected>
                                 <include>MenuButton</include>
                             </control>
                             <control type="radiobutton" id="153">
@@ -11189,7 +11189,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.9,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09010">
+                            <control type="button" id="109010">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11202,7 +11202,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.10,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09011">
+                            <control type="button" id="109011">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11215,7 +11215,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.11,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09012">
+                            <control type="button" id="109012">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11228,7 +11228,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.12,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09013">
+                            <control type="button" id="109013">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11241,7 +11241,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.13,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09014">
+                            <control type="button" id="109014">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11254,7 +11254,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.14,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09015">
+                            <control type="button" id="109015">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11267,7 +11267,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.15,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09016">
+                            <control type="button" id="109016">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11280,7 +11280,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.16,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09017">
+                            <control type="button" id="109017">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11293,7 +11293,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.17,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09018">
+                            <control type="button" id="109018">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11306,7 +11306,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.18,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09019">
+                            <control type="button" id="109019">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11319,7 +11319,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.19,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09020">
+                            <control type="button" id="109020">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11332,7 +11332,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.20,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09021">
+                            <control type="button" id="109021">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11345,7 +11345,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.21,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09022">
+                            <control type="button" id="109022">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11358,7 +11358,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.22,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09023">
+                            <control type="button" id="109023">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11371,7 +11371,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.23,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09024">
+                            <control type="button" id="109024">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11384,7 +11384,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.24,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09025">
+                            <control type="button" id="109025">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11397,7 +11397,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.25,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09026">
+                            <control type="button" id="109026">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11410,7 +11410,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.26,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09027">
+                            <control type="button" id="109027">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11423,7 +11423,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.27,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09028">
+                            <control type="button" id="109028">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11436,7 +11436,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.28,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09029">
+                            <control type="button" id="109029">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
@@ -11449,7 +11449,7 @@
                                 <onclick>SetProperty(UsrSelectBtn,AddonSetNine.29,Home)</onclick>
                                 <onclick>ActivateWindow(2119)</onclick>
                             </control>
-                            <control type="button" id="09030">
+                            <control type="button" id="109030">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
