@@ -530,7 +530,7 @@
 		<scrolltime>300</scrolltime>
 		<orientation>Horizontal</orientation>
         <!-- shortcuts home (same code below for playing layout) -->
-		<itemlayout height="270" width="359" condition="!Skin.HasSetting(HideHomeAddonsNames)">
+		<itemlayout height="270" width="360" condition="!Skin.HasSetting(HideHomeAddonsNames)">
             <control type="image">
                 <left>0</left>
                 <top>0</top>
@@ -560,7 +560,7 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 		</itemlayout>
-		<focusedlayout height="270" width="359" condition="!Skin.HasSetting(HideHomeAddonsNames)">
+		<focusedlayout height="270" width="360" condition="!Skin.HasSetting(HideHomeAddonsNames)">
 
             <control type="image">
                 <left>0</left>
