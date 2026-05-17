@@ -85,7 +85,7 @@
             <aspectratio>keep</aspectratio>
             <texture>icon-mute.png</texture>
             <include>VisibleFadeEffect</include>
-            <animation effect="slide" start="0,0" end="-70,0" time="0" condition="system.getbool(input.enablemouse) + Window.IsActive(VideoOSD)">conditional</animation>
+            <animation effect="slide" start="0,0" end="3,70" time="0" condition="system.getbool(input.enablemouse) + Window.IsActive(VideoOSD)">conditional</animation>
             <visible>Player.Muted</visible>
         </control>
     </controls>
