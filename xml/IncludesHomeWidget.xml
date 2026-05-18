@@ -2447,9 +2447,9 @@
                         <include>HomeTransparentEffect</include>
                     </control>
                     <control type="image">
-                        <left>7</left>
+                        <left>9</left>
                         <top>10</top>
-                        <width>335</width>
+                        <width>332</width>
                         <height>390</height>
                         <texture background="true">more_items.png</texture>
                         <aspectratio>keep</aspectratio>
@@ -2458,15 +2458,28 @@
                         <visible>String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
                     <control type="image">
-                        <left>7</left>
+                        <left>9</left>
                         <top>10</top>
-                        <width>335</width>
-                        <height>390</height>
+                        <width>332</width>
+                        <height>350</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true" fallback="DefaultAlbumCover.png">$INFO[ListItem.Art(thumb)]</texture>
                         <bordertexture border="5">blank.png</bordertexture>
                         <bordersize>5</bordersize>
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
+                    </control>
+
+                    <control type="label">
+                        <left>15</left>
+                        <top>366</top>
+                        <width>324</width>
+                        <height>30</height>
+                        <font>font10_title</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
                     </control>
     
                 </itemlayout>
@@ -2491,9 +2504,9 @@
 
                     <!-- more -->
                     <control type="image">
-                        <left>7</left>
+                        <left>9</left>
                         <top>10</top>
-                        <width>335</width>
+                        <width>332</width>
                         <height>390</height>
                         <texture background="true">more_items.png</texture>
                         <aspectratio>keep</aspectratio>
@@ -2503,9 +2516,9 @@
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
                     <control type="image">
-                        <left>7</left>
+                        <left>9</left>
                         <top>10</top>
-                        <width>335</width>
+                        <width>332</width>
                         <height>390</height>
                         <texture background="true" colordiffuse="black">more_items.png</texture>
                         <aspectratio>keep</aspectratio>
@@ -2516,10 +2529,10 @@
                     </control>
 
                     <control type="image">
-                        <left>7</left>
+                        <left>9</left>
                         <top>10</top>
-                        <width>335</width>
-                        <height>390</height>
+                        <width>332</width>
+                        <height>350</height>
                         <aspectratio>scale</aspectratio>
                         <texture background="true" fallback="DefaultAlbumCover.png">$INFO[ListItem.Art(thumb)]</texture>
                         <bordertexture border="5">blank.png</bordertexture>
@@ -2527,6 +2540,32 @@
                         <visible>!String.Contains(ListItem.Icon,DefaultFolder.png)</visible>
                     </control>
 
+                    <control type="label">
+                        <left>15</left>
+                        <top>366</top>
+                        <width>324</width>
+                        <height>30</height>
+                        <font>font10_title</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>!Control.HasFocus($PARAM[Control])</visible>
+                    </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>366</top>
+                        <width>324</width>
+                        <height>30</height>
+                        <font>font10_title</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                    </control>
 
                 </focusedlayout>
                 <include>$PARAM[Content]</include>
