@@ -3018,8 +3018,8 @@
                     </control>
 
                     <control type="image">
-                        <left>3</left>
-                        <top>20</top>
+                        <left>10</left>
+                        <top>15</top>
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
@@ -3028,8 +3028,8 @@
                         <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
                     <control type="image">
-                        <left>3</left>
-                        <top>20</top>
+                        <left>10</left>
+                        <top>15</top>
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
@@ -3040,8 +3040,8 @@
                     </control>
 
                     <control type="image">
-                        <left>7</left>
-                        <top>20</top>
+                        <left>10</left>
+                        <top>15</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
@@ -3124,8 +3124,8 @@
                     </control>
 
                     <control type="image">
-                        <left>3</left>
-                        <top>20</top>
+                        <left>10</left>
+                        <top>15</top>
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
@@ -3134,8 +3134,8 @@
                         <visible>!String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
                     <control type="image">
-                        <left>3</left>
-                        <top>20</top>
+                        <left>10</left>
+                        <top>15</top>
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
@@ -3146,8 +3146,8 @@
                     </control>
 
                     <control type="image">
-                        <left>7</left>
-                        <top>20</top>
+                        <left>10</left>
+                        <top>15</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
