@@ -303,6 +303,16 @@
                         <onclick>Dialog.Close(2118)</onclick>
                         <visible>Library.HasContent(TVShows)</visible>
                     </item>
+					<item>
+                        <description>Random TV show</description>
+                        <label>$LOCALIZE[31798]</label>
+                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RandomTVShows)</onclick>
+                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetFormat,Poster)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetLayout,Large)</onclick>
+                        <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>Dialog.Close(2118)</onclick>
+                        <visible>Library.HasContent(TVShows)</visible>
+                    </item>
                     <item>
                         <description>Recent Episodes</description>
                         <label>$LOCALIZE[31195]</label>

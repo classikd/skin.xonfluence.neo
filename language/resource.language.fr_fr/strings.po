@@ -2472,6 +2472,14 @@ msgctxt "#31796"
 msgid "Poster & details"
 msgstr "Affiche et détails"
 
+msgctxt "#31797"
+msgid "Recent TV shows (includes watched)"
+msgstr "Séries TV récentes (visionnées incluses)"
+
+msgctxt "#31798"
+msgid "Random TV shows"
+msgstr "Séries TV aléatoires"
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr "Prévisions sur 36 heures"

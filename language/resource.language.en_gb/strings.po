@@ -2409,6 +2409,14 @@ msgctxt "#31796"
 msgid "Poster & details"
 msgstr ""
 
+msgctxt "#31797"
+msgid "Recent TV shows (includes watched)"
+msgstr ""
+
+msgctxt "#31798"
+msgid "Random TV shows"
+msgstr ""
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr ""
