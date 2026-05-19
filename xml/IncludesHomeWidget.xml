@@ -2591,9 +2591,18 @@
             </control>
 			<control type="group">
                 <visible>$PARAM[Visible]</visible>
-                <visible>String.IsEqual($PARAM[Format],Poster) | String.IsEqual($PARAM[Format],PosterDetailed)</visible>
+                <visible>String.IsEqual($PARAM[Format],Poster)</visible>
                 <include content="PosterSmallWidgetLayout">
                     <param name="Control">$PARAM[Control]</param>
+                    <param name="Content">$PARAM[Content]</param>
+					<param name="embuaryinfonextaired">$PARAM[embuaryinfonextaired]</param>
+                </include>
+            </control>
+			<control type="group">
+                <visible>$PARAM[Visible]</visible>
+                <visible>String.IsEqual($PARAM[Format],PosterDetailed)</visible>
+                <include content="PosterSmallWidgetLayout">
+                    <param name="Control">$PARAM[Control]2</param>
                     <param name="Content">$PARAM[Content]</param>
 					<param name="embuaryinfonextaired">$PARAM[embuaryinfonextaired]</param>
                 </include>
@@ -2629,7 +2638,7 @@
                 <visible>$PARAM[Visible]</visible>
                 <visible>String.IsEqual($PARAM[Format],PosterDetailed)</visible>
                 <include content="PosterLargeDetailedWidgetLayout">
-                    <param name="Control">$PARAM[Control]</param>
+                    <param name="Control">$PARAM[Control]2</param>
                     <param name="Content">$PARAM[Content]</param>
 					<param name="embuaryinfonextaired">$PARAM[embuaryinfonextaired]</param>
                 </include>
@@ -4911,9 +4920,17 @@
 		<param name="Visibility">true</param>
         <definition>
             <control type="group">
-                <visible>String.IsEqual($PARAM[Format],Poster) | String.IsEqual($PARAM[Format],PosterDetailed)</visible>
+                <visible>String.IsEqual($PARAM[Format],Poster)</visible>
                 <include content="SmallWidgetPosterButtons">
                     <param name="Control">$PARAM[Control]</param>
+					<param name="embuaryinfonextaired">$PARAM[embuaryinfonextaired]</param>
+					<param name="visibility">$PARAM[Visibility]</param>
+                </include>
+            </control>
+            <control type="group">
+                <visible>String.IsEqual($PARAM[Format],PosterDetailed)</visible>
+                <include content="SmallWidgetPosterButtons">
+                    <param name="Control">$PARAM[Control]2</param>
 					<param name="embuaryinfonextaired">$PARAM[embuaryinfonextaired]</param>
 					<param name="visibility">$PARAM[Visibility]</param>
                 </include>
@@ -4940,9 +4957,16 @@
                 </include>
             </control>
 			<control type="group">
-                <visible>String.IsEqual($PARAM[Format],Poster) | String.IsEqual($PARAM[Format],PosterDetailed)</visible>
+                <visible>String.IsEqual($PARAM[Format],Poster)</visible>
                 <include content="LargeWidgetPosterButtons">
                     <param name="Control">$PARAM[Control]</param>
+					<param name="visibility">$PARAM[Visibility]</param>
+                </include>
+            </control>
+			<control type="group">
+                <visible>String.IsEqual($PARAM[Format],PosterDetailed)</visible>
+                <include content="LargeWidgetPosterButtons">
+                    <param name="Control">$PARAM[Control]2</param>
 					<param name="visibility">$PARAM[Visibility]</param>
                 </include>
             </control>
