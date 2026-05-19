@@ -291,7 +291,6 @@
 						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetLayout,Large)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
                         <onclick>Dialog.Close(2118)</onclick>
-                        <visible>!Skin.HasSetting(DisableScriptPlaylist)</visible>
                         <visible>Library.HasContent(Movies)</visible>
                     </item>
                     <item>
