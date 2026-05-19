@@ -4407,8 +4407,8 @@
 
                     <!-- not tv show/tv channel -->
                     <control type="label">
-                        <left>20</left>
-                        <top>305</top>
+                        <left>70</left>
+                        <top>302</top>
                         <width>400</width>
                         <height>30</height>
                         <font>font10</font>
@@ -4417,6 +4417,16 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Year]</label>
+						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
+                        <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
+                    <control type="group">
+                        <left>120</left>
+                        <top>305</top>
+                        <include content="ItemRating">
+                            <param name="Size" value="25" />
+                            <param name="Color" value="$VAR[MainColorOne]" />
+                        </include>
 						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
@@ -4604,8 +4614,8 @@
 
                     <!-- not tv show/tv channel -->
                     <control type="label">
-                        <left>20</left>
-                        <top>305</top>
+                        <left>70</left>
+                        <top>302</top>
                         <width>400</width>
                         <height>30</height>
                         <font>font10</font>
@@ -4618,8 +4628,8 @@
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
                     <control type="label">
-                        <left>20</left>
-                        <top>305</top>
+                        <left>70</left>
+                        <top>302</top>
                         <width>400</width>
                         <height>30</height>
                         <font>font10</font>
@@ -4629,6 +4639,29 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Year]</label>
 						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                    </control>
+
+                    <control type="group">
+                        <left>120</left>
+                        <top>305</top>
+                        <include content="ItemRating">
+                            <param name="Size" value="25" />
+                            <param name="Color" value="$VAR[MainColorOne]" />
+                        </include>
+						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
+                        <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                        <visible>!Control.HasFocus($PARAM[Control])</visible>
+                    </control>
+                    <control type="group">
+                        <left>120</left>
+                        <top>305</top>
+                        <include content="ItemRating">
+                            <param name="Size" value="25" />
+                            <param name="Color" value="black" />
+                        </include>
+						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
+                        <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control>
 
