@@ -2141,7 +2141,7 @@ msgid "Auto scrolling for plot & review"
 msgstr "Défilement automatique pour le synopsys et les critiques"
 
 msgctxt "#31714"
-msgid "Recent Movies (includes watched)"
+msgid "Recent movies (includes watched)"
 msgstr "Films récents (visionnés inclus)"
 
 msgctxt "#31715"

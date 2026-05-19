@@ -2078,7 +2078,7 @@ msgid "Auto scrolling for plot & review"
 msgstr ""
 
 msgctxt "#31714"
-msgid "Recent Movies (includes watched)"
+msgid "Recent movies (includes watched)"
 msgstr ""
 
 msgctxt "#31715"

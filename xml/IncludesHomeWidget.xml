@@ -4252,16 +4252,51 @@
                         <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
+
                     <!-- image tv channel -->
                     <control type="image">
                         <left>115</left>
-                        <top>50</top>
+                        <top>20</top>
                         <width>210</width>
                         <height>300</height>
                         <aspectratio>keep</aspectratio>
                         <texture background="true">$VAR[EpisodeThumbImage]</texture>
                         <bordertexture border="5">blank.png</bordertexture>
                         <include>TextureBorderWidgets</include>
+                        <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
+                    <control type="image">
+                        <left>0</left>
+                        <top>316</top>
+                        <width>437</width>
+                        <height>94</height>
+                        <texture border="0,2,0,2" colordiffuse="30000000">white.png</texture>
+                        <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
+                    <control type="label">
+                        <left>20</left>
+                        <top>330</top>
+                        <width>400</width>
+                        <height>38</height>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>$VAR[MainColorOne]</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>     
+                    <control type="label">
+                        <left>20</left>
+                        <top>360</top>
+                        <width>400</width>
+                        <height>30</height>
+                        <font>font11</font>
+                        <textcolor>grey</textcolor>
+                        <selectedcolor>grey</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Title]</label>
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
 
@@ -4427,13 +4462,80 @@
                     <!-- image tv channel -->
                     <control type="image">
                         <left>115</left>
-                        <top>50</top>
+                        <top>20</top>
                         <width>210</width>
                         <height>300</height>
                         <aspectratio>keep</aspectratio>
                         <texture background="true">$VAR[EpisodeThumbImage]</texture>
+                        <bordertexture border="5">blank.png</bordertexture>
                         <include>TextureBorderWidgets</include>
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
+                    <control type="image">
+                        <left>0</left>
+                        <top>316</top>
+                        <width>437</width>
+                        <height>94</height>
+                        <texture border="0,2,0,2" colordiffuse="20000000">white.png</texture>
+                        <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
+
+                    <control type="label">
+                        <left>20</left>
+                        <top>330</top>
+                        <width>400</width>
+                        <height>38</height>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                        <visible>!Control.HasFocus($PARAM[Control])</visible>
+                    </control>  
+                    <control type="label">
+                        <left>20</left>
+                        <top>330</top>
+                        <width>400</width>
+                        <height>38</height>
+                        <font>font12_title</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                    </control>  
+
+                    <control type="label">
+                        <left>20</left>
+                        <top>360</top>
+                        <width>400</width>
+                        <height>30</height>
+                        <font>font11</font>
+                        <textcolor>grey</textcolor>
+                        <selectedcolor>grey</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Title]</label>
+                        <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                        <visible>!Control.HasFocus($PARAM[Control])</visible>
+                    </control>
+                    <control type="label">
+                        <left>20</left>
+                        <top>360</top>
+                        <width>400</width>
+                        <height>30</height>
+                        <font>font11</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Title]</label>
+                        <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control>
 
                     <!-- tv show -->
