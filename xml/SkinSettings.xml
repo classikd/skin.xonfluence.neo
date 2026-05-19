@@ -2150,8 +2150,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick condition="String.IsEqual(Skin.String(HomeItem.1.WidgetFormat),Poster)">Skin.SetString(HomeItem.1.WidgetFormat,Thumb)</onclick>
-                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.1.WidgetFormat),Poster)">Skin.SetString(HomeItem.1.WidgetFormat,Poster)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.1.WidgetFormat),Poster)">Skin.SetString(HomeItem.1.WidgetFormat,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.1.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.1.WidgetFormat,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.1.WidgetFormat),Poster) + !String.IsEqual(Skin.String(HomeItem.1.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.1.WidgetFormat,Poster)</onclick>
                                 <enable>Skin.String(HomeItem.1.Widget) + !String.IsEqual(Skin.String(HomeItem.1.Widget),None) + !String.IsEqual(Skin.String(HomeItem.1.Widget),Weather) + !String.IsEqual(Skin.String(HomeItem.1.Widget),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.1.Widget),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.1.Widget),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.1.Widget),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.1.Widget),SuggestedAlbums)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.1.Label))</visible>
                             </control>
@@ -2343,8 +2344,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick condition="String.IsEqual(Skin.String(HomeItem.2.WidgetFormat),Poster)">Skin.SetString(HomeItem.2.WidgetFormat,Thumb)</onclick>
-                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.2.WidgetFormat),Poster)">Skin.SetString(HomeItem.2.WidgetFormat,Poster)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.2.WidgetFormat),Poster)">Skin.SetString(HomeItem.2.WidgetFormat,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.2.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.2.WidgetFormat,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.2.WidgetFormat),Poster) + !String.IsEqual(Skin.String(HomeItem.2.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.2.WidgetFormat,Poster)</onclick>
                                 <enable>Skin.String(HomeItem.2.Widget) + !String.IsEqual(Skin.String(HomeItem.2.Widget),None) + !String.IsEqual(Skin.String(HomeItem.2.Widget),Weather) + !String.IsEqual(Skin.String(HomeItem.2.Widget),WeatherExtended)  + !String.IsEqual(Skin.String(HomeItem.2.Widget),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.2.Widget),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.2.Widget),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.2.Widget),SuggestedAlbums)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.2.Label))</visible>
                             </control>
@@ -2536,8 +2538,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick condition="String.IsEqual(Skin.String(HomeItem.3.WidgetFormat),Poster)">Skin.SetString(HomeItem.3.WidgetFormat,Thumb)</onclick>
-                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.3.WidgetFormat),Poster)">Skin.SetString(HomeItem.3.WidgetFormat,Poster)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.3.WidgetFormat),Poster)">Skin.SetString(HomeItem.3.WidgetFormat,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.3.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.3.WidgetFormat,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.3.WidgetFormat),Poster) + !String.IsEqual(Skin.String(HomeItem.3.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.3.WidgetFormat,Poster)</onclick>
                                 <enable>Skin.String(HomeItem.3.Widget) + !String.IsEqual(Skin.String(HomeItem.3.Widget),None) + !String.IsEqual(Skin.String(HomeItem.3.Widget),Weather) + !String.IsEqual(Skin.String(HomeItem.3.Widget),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.3.Widget),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.3.Widget),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.3.Widget),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.3.Widget),SuggestedAlbums)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.3.Label))</visible>
                             </control>
@@ -2729,8 +2732,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick condition="String.IsEqual(Skin.String(HomeItem.4.WidgetFormat),Poster)">Skin.SetString(HomeItem.4.WidgetFormat,Thumb)</onclick>
-                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.4.WidgetFormat),Poster)">Skin.SetString(HomeItem.4.WidgetFormat,Poster)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.4.WidgetFormat),Poster)">Skin.SetString(HomeItem.4.WidgetFormat,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.4.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.4.WidgetFormat,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.4.WidgetFormat),Poster) + !String.IsEqual(Skin.String(HomeItem.4.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.4.WidgetFormat,Poster)</onclick>
                                 <enable>Skin.String(HomeItem.4.Widget) + !String.IsEqual(Skin.String(HomeItem.4.Widget),None) + !String.IsEqual(Skin.String(HomeItem.4.Widget),Weather) + !String.IsEqual(Skin.String(HomeItem.4.Widget),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.4.Widget),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.4.Widget),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.4.Widget),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.4.Widget),SuggestedAlbums)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.4.Label))</visible>
                             </control>
@@ -2922,8 +2926,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick condition="String.IsEqual(Skin.String(HomeItem.5.WidgetFormat),Poster)">Skin.SetString(HomeItem.5.WidgetFormat,Thumb)</onclick>
-                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.5.WidgetFormat),Poster)">Skin.SetString(HomeItem.5.WidgetFormat,Poster)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.5.WidgetFormat),Poster)">Skin.SetString(HomeItem.5.WidgetFormat,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.5.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.5.WidgetFormat,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.5.WidgetFormat),Poster) + !String.IsEqual(Skin.String(HomeItem.5.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.5.WidgetFormat,Poster)</onclick>
                                 <enable>Skin.String(HomeItem.5.Widget) + !String.IsEqual(Skin.String(HomeItem.5.Widget),None) + !String.IsEqual(Skin.String(HomeItem.5.Widget),Weather) + !String.IsEqual(Skin.String(HomeItem.5.Widget),WeatherExtended)  + !String.IsEqual(Skin.String(HomeItem.5.Widget),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.5.Widget),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.5.Widget),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.5.Widget),SuggestedAlbums)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.5.Label))</visible>
                             </control>
@@ -3115,8 +3120,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick condition="String.IsEqual(Skin.String(HomeItem.6.WidgetFormat),Poster)">Skin.SetString(HomeItem.6.WidgetFormat,Thumb)</onclick>
-                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.6.WidgetFormat),Poster)">Skin.SetString(HomeItem.6.WidgetFormat,Poster)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.6.WidgetFormat),Poster)">Skin.SetString(HomeItem.6.WidgetFormat,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.6.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.6.WidgetFormat,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.6.WidgetFormat),Poster) + !String.IsEqual(Skin.String(HomeItem.6.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.6.WidgetFormat,Poster)</onclick>
                                 <enable>Skin.String(HomeItem.6.Widget) + !String.IsEqual(Skin.String(HomeItem.6.Widget),None) + !String.IsEqual(Skin.String(HomeItem.6.Widget),Weather) + !String.IsEqual(Skin.String(HomeItem.6.Widget),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.6.Widget),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.6.Widget),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.6.Widget),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.6.Widget),SuggestedAlbums)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.6.Label))</visible>
                             </control>
@@ -3308,8 +3314,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick condition="String.IsEqual(Skin.String(HomeItem.7.WidgetFormat),Poster)">Skin.SetString(HomeItem.7.WidgetFormat,Thumb)</onclick>
-                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.7.WidgetFormat),Poster)">Skin.SetString(HomeItem.7.WidgetFormat,Poster)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.7.WidgetFormat),Poster)">Skin.SetString(HomeItem.7.WidgetFormat,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.7.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.7.WidgetFormat,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.7.WidgetFormat),Poster) + !String.IsEqual(Skin.String(HomeItem.7.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.7.WidgetFormat,Poster)</onclick>
                                 <enable>Skin.String(HomeItem.7.Widget) + !String.IsEqual(Skin.String(HomeItem.7.Widget),None) + !String.IsEqual(Skin.String(HomeItem.7.Widget),Weather) + !String.IsEqual(Skin.String(HomeItem.7.Widget),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.7.Widget),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.7.Widget),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.7.Widget),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.7.Widget),SuggestedAlbums)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.7.Label))</visible>
                             </control>
@@ -3501,8 +3508,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick condition="String.IsEqual(Skin.String(HomeItem.8.WidgetFormat),Poster)">Skin.SetString(HomeItem.8.WidgetFormat,Thumb)</onclick>
-                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.8.WidgetFormat),Poster)">Skin.SetString(HomeItem.8.WidgetFormat,Poster)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.8.WidgetFormat),Poster)">Skin.SetString(HomeItem.8.WidgetFormat,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.8.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.8.WidgetFormat,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.8.WidgetFormat),Poster) + !String.IsEqual(Skin.String(HomeItem.8.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.8.WidgetFormat,Poster)</onclick>
                                 <enable>Skin.String(HomeItem.8.Widget) + !String.IsEqual(Skin.String(HomeItem.8.Widget),None) + !String.IsEqual(Skin.String(HomeItem.8.Widget),Weather) + !String.IsEqual(Skin.String(HomeItem.8.Widget),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.8.Widget),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.8.Widget),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.8.Widget),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.8.Widget),SuggestedAlbums)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.8.Label))</visible>
                             </control>
@@ -3694,8 +3702,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick condition="String.IsEqual(Skin.String(HomeItem.9.WidgetFormat),Poster)">Skin.SetString(HomeItem.9.WidgetFormat,Thumb)</onclick>
-                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.9.WidgetFormat),Poster)">Skin.SetString(HomeItem.9.WidgetFormat,Poster)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.9.WidgetFormat),Poster)">Skin.SetString(HomeItem.9.WidgetFormat,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.9.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.9.WidgetFormat,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.9.WidgetFormat),Poster) + !String.IsEqual(Skin.String(HomeItem.9.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.9.WidgetFormat,Poster)</onclick>
                                 <enable>Skin.String(HomeItem.9.Widget) + !String.IsEqual(Skin.String(HomeItem.9.Widget),None) + !String.IsEqual(Skin.String(HomeItem.9.Widget),Weather) + !String.IsEqual(Skin.String(HomeItem.9.Widget),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.9.Widget),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.9.Widget),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.9.Widget),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.9.Widget),SuggestedAlbums)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.9.Label))</visible>
                             </control>
@@ -3887,8 +3896,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick condition="String.IsEqual(Skin.String(HomeItem.10.WidgetFormat),Poster)">Skin.SetString(HomeItem.10.WidgetFormat,Thumb)</onclick>
-                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.10.WidgetFormat),Poster)">Skin.SetString(HomeItem.10.WidgetFormat,Poster)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.10.WidgetFormat),Poster)">Skin.SetString(HomeItem.10.WidgetFormat,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.10.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.10.WidgetFormat,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.10.WidgetFormat),Poster) + !String.IsEqual(Skin.String(HomeItem.10.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.10.WidgetFormat,Poster)</onclick>
                                 <enable>Skin.String(HomeItem.10.Widget) + !String.IsEqual(Skin.String(HomeItem.10.Widget),None) + !String.IsEqual(Skin.String(HomeItem.10.Widget),Weather) + !String.IsEqual(Skin.String(HomeItem.10.Widget),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.10.Widget),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.10.Widget),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.10.Widget),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.10.Widget),SuggestedAlbums)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.10.Label))</visible>
                             </control>
@@ -4080,8 +4090,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick condition="String.IsEqual(Skin.String(HomeItem.11.WidgetFormat),Poster)">Skin.SetString(HomeItem.11.WidgetFormat,Thumb)</onclick>
-                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.11.WidgetFormat),Poster)">Skin.SetString(HomeItem.11.WidgetFormat,Poster)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.11.WidgetFormat),Poster)">Skin.SetString(HomeItem.11.WidgetFormat,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.11.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.11.WidgetFormat,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.11.WidgetFormat),Poster) + !String.IsEqual(Skin.String(HomeItem.11.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.11.WidgetFormat,Poster)</onclick>
                                 <enable>Skin.String(HomeItem.11.Widget) + !String.IsEqual(Skin.String(HomeItem.11.Widget),None) + !String.IsEqual(Skin.String(HomeItem.11.Widget),Weather) + !String.IsEqual(Skin.String(HomeItem.11.Widget),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.11.Widget),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.11.Widget),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.11.Widget),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.11.Widget),SuggestedAlbums)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.11.Label))</visible>
                             </control>
@@ -4273,8 +4284,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick condition="String.IsEqual(Skin.String(HomeItem.12.WidgetFormat),Poster)">Skin.SetString(HomeItem.12.WidgetFormat,Thumb)</onclick>
-                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.12.WidgetFormat),Poster)">Skin.SetString(HomeItem.12.WidgetFormat,Poster)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.12.WidgetFormat),Poster)">Skin.SetString(HomeItem.12.WidgetFormat,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.12.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.12.WidgetFormat,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.12.WidgetFormat),Poster) + !String.IsEqual(Skin.String(HomeItem.12.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.12.WidgetFormat,Poster)</onclick>
                                 <enable>Skin.String(HomeItem.12.Widget) + !String.IsEqual(Skin.String(HomeItem.12.Widget),None) + !String.IsEqual(Skin.String(HomeItem.12.Widget),Weather) + !String.IsEqual(Skin.String(HomeItem.12.Widget),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.12.Widget),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.12.Widget),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.12.Widget),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.12.Widget),SuggestedAlbums)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.12.Label))</visible>
                             </control>
@@ -4466,8 +4478,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick condition="String.IsEqual(Skin.String(HomeItem.13.WidgetFormat),Poster)">Skin.SetString(HomeItem.13.WidgetFormat,Thumb)</onclick>
-                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.13.WidgetFormat),Poster)">Skin.SetString(HomeItem.13.WidgetFormat,Poster)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.13.WidgetFormat),Poster)">Skin.SetString(HomeItem.13.WidgetFormat,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.13.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.13.WidgetFormat,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.13.WidgetFormat),Poster) + !String.IsEqual(Skin.String(HomeItem.13.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.13.WidgetFormat,Poster)</onclick>
                                 <enable>Skin.String(HomeItem.13.Widget) + !String.IsEqual(Skin.String(HomeItem.13.Widget),None) + !String.IsEqual(Skin.String(HomeItem.13.Widget),Weather) + !String.IsEqual(Skin.String(HomeItem.13.Widget),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.13.Widget),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.13.Widget),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.13.Widget),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.13.Widget),SuggestedAlbums)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.13.Label))</visible>
                             </control>
@@ -4659,8 +4672,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick condition="String.IsEqual(Skin.String(HomeItem.14.WidgetFormat),Poster)">Skin.SetString(HomeItem.14.WidgetFormat,Thumb)</onclick>
-                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.14.WidgetFormat),Poster)">Skin.SetString(HomeItem.14.WidgetFormat,Poster)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.14.WidgetFormat),Poster)">Skin.SetString(HomeItem.14.WidgetFormat,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.14.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.14.WidgetFormat,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.14.WidgetFormat),Poster) + !String.IsEqual(Skin.String(HomeItem.14.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.14.WidgetFormat,Poster)</onclick>
                                 <enable>Skin.String(HomeItem.14.Widget) + !String.IsEqual(Skin.String(HomeItem.14.Widget),None) + !String.IsEqual(Skin.String(HomeItem.14.Widget),Weather) + !String.IsEqual(Skin.String(HomeItem.14.Widget),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.14.Widget),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.14.Widget),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.14.Widget),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.14.Widget),SuggestedAlbums)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.14.Label))</visible>
                             </control>
@@ -4852,8 +4866,9 @@
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
                                 <include>MenuButton</include>
-                                <onclick condition="String.IsEqual(Skin.String(HomeItem.15.WidgetFormat),Poster)">Skin.SetString(HomeItem.15.WidgetFormat,Thumb)</onclick>
-                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.15.WidgetFormat),Poster)">Skin.SetString(HomeItem.15.WidgetFormat,Poster)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.15.WidgetFormat),Poster)">Skin.SetString(HomeItem.15.WidgetFormat,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.15.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.15.WidgetFormat,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.15.WidgetFormat),Poster) + !String.IsEqual(Skin.String(HomeItem.15.WidgetFormat),PosterDetailed)">Skin.SetString(HomeItem.15.WidgetFormat,Poster)</onclick>
                                 <enable>Skin.String(HomeItem.15.Widget) + !String.IsEqual(Skin.String(HomeItem.15.Widget),None) + !String.IsEqual(Skin.String(HomeItem.15.Widget),Weather) + !String.IsEqual(Skin.String(HomeItem.15.Widget),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.15.Widget),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.15.Widget),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.15.Widget),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.15.Widget),SuggestedAlbums)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.15.Label))</visible>
                             </control>

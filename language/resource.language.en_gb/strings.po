@@ -2405,6 +2405,10 @@ msgctxt "#31795"
 msgid "Tiles"
 msgstr ""
 
+msgctxt "#31796"
+msgid "Poster & details"
+msgstr ""
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr ""
