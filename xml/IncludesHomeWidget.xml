@@ -3610,6 +3610,7 @@
                         <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
+
                     <!-- image tv channel -->
 					<control type="image">
                         <left>110</left>
@@ -3620,6 +3621,14 @@
                         <texture background="true">$VAR[EpisodeThumbImage]</texture>
                         <bordertexture border="5">blank.png</bordertexture>
                         <include>TextureBorderWidgets</include>
+                        <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
+                    <control type="image">
+                        <left>10</left>
+                        <top>255</top>
+                        <width>350</width>
+                        <height>75</height>
+                        <texture border="0,2,0,2" colordiffuse="30000000">white.png</texture>
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
 
@@ -3788,6 +3797,7 @@
                         <visible>!Skin.HasSetting(DisableLogoArt) + String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
+
                     <!-- image tv channel -->
                     <control type="group">
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
@@ -3801,6 +3811,14 @@
                             <include>TextureBorderWidgets</include>
                         </control>
 					</control>
+                    <control type="image">
+                        <left>10</left>
+                        <top>255</top>
+                        <width>350</width>
+                        <height>75</height>
+                        <texture border="0,2,0,2" colordiffuse="20000000">white.png</texture>
+                        <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
 
                     <!-- movie -->
 					<control type="group">
