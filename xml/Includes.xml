@@ -2396,6 +2396,7 @@
                 <orientation>horizontal</orientation>
                 <itemgap>0</itemgap>
                 <visible>!String.IsEmpty(Weather.Plugin)</visible>
+                <visible>!String.IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
      		    <control type="multiimage" id="1111">
                     <description>Weather image</description>
                     <left>0</left>
