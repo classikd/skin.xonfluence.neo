@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 0.13
+- Rewrite large widgets without global background like small widgets
+- Add new widget format: "Poster & details"
+- Add new widgets: "Recent TV shows" and "Random TV shows" 
+- Fix "Unwatched movies" widget not available in choices
+- and more
+
 ## Version 0.12
 - Add new PVR "Tiles" view
 - Increase home addons limit to 30 and readd option to hide/show label
