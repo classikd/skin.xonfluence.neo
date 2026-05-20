@@ -2781,6 +2781,14 @@
                         <include>TextureBorderWidgets</include>
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
+                    <control type="image">
+                        <left>155</left>
+                        <top>15</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture>PVR-IsRecording.png</texture>
+                        <visible>ListItem.IsRecording</visible>
+                    </control>
 
                     <control type="image">
                         <left>18</left>
@@ -2888,6 +2896,14 @@
                         <aspectratio>keep</aspectratio>
                         <include>TextureBorderWidgets</include>
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
+                    <control type="image">
+                        <left>155</left>
+                        <top>15</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture>PVR-IsRecording.png</texture>
+                        <visible>ListItem.IsRecording</visible>
                     </control>
 
                     <control type="image">
@@ -3034,6 +3050,14 @@
                         <include>TextureBorderWidgets</include>
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
+                    <control type="image">
+                        <left>200</left>
+                        <top>15</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture>PVR-IsRecording.png</texture>
+                        <visible>ListItem.IsRecording</visible>
+                    </control>
 
                     <control type="image">
                         <left>10</left>
@@ -3125,6 +3149,14 @@
                         <texture background="true">$VAR[VideoThumbImage]</texture>
                         <include>TextureBorderWidgets</include>
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
+                    <control type="image">
+                        <left>200</left>
+                        <top>15</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture>PVR-IsRecording.png</texture>
+                        <visible>ListItem.IsRecording</visible>
                     </control>
 
                     <control type="image">
@@ -3251,6 +3283,14 @@
                         <bordertexture border="5">blank.png</bordertexture>
                         <include>TextureBorderWidgets</include>
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
+                    <control type="image">
+                        <left>168</left>
+                        <top>15</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture>PVR-IsRecording.png</texture>
+                        <visible>ListItem.IsRecording</visible>
                     </control>
 
                     <control type="image">
@@ -3396,6 +3436,14 @@
                         <texture background="true">$VAR[VideoThumbImage]</texture>
                         <include>TextureBorderWidgets</include>
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
+                    <control type="image">
+                        <left>168</left>
+                        <top>15</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture>PVR-IsRecording.png</texture>
+                        <visible>ListItem.IsRecording</visible>
                     </control>
 
                     <control type="image">
@@ -3631,6 +3679,14 @@
                         <texture border="0,2,0,2" colordiffuse="30000000">white.png</texture>
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
+                    <control type="image">
+                        <left>310</left>
+                        <top>15</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture>PVR-IsRecording.png</texture>
+                        <visible>ListItem.IsRecording</visible>
+                    </control>
 
                     <!-- episode -->
                     <control type="label">
@@ -3818,6 +3874,14 @@
                         <height>75</height>
                         <texture border="0,2,0,2" colordiffuse="20000000">white.png</texture>
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
+                    <control type="image">
+                        <left>310</left>
+                        <top>15</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture>PVR-IsRecording.png</texture>
+                        <visible>ListItem.IsRecording</visible>
                     </control>
 
                     <!-- movie -->
@@ -4317,6 +4381,14 @@
                         <label>$INFO[ListItem.Title]</label>
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
+                    <control type="image">
+                        <left>390</left>
+                        <top>15</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture>PVR-IsRecording.png</texture>
+                        <visible>ListItem.IsRecording</visible>
+                    </control>
 
                     <!-- tv show -->
                     <control type="label">
@@ -4554,6 +4626,14 @@
                         <label>$INFO[ListItem.Title]</label>
                         <visible>String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
+                    </control>
+                    <control type="image">
+                        <left>390</left>
+                        <top>15</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture>PVR-IsRecording.png</texture>
+                        <visible>ListItem.IsRecording</visible>
                     </control>
 
                     <!-- tv show -->
