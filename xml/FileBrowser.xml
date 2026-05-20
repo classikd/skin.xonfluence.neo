@@ -326,7 +326,7 @@
                 </control>
                 <control type="grouplist" id="90">
                     <left>918</left>
-                    <top>180</top>
+                    <top>130</top>
                     <onleft>450</onleft>
                     <onright>450</onright>
                     <control type="button" id="413">

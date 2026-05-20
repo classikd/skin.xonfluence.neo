@@ -296,7 +296,7 @@
                 </control>
                 <control type="grouplist" id="90">
                     <left>918</left>
-                    <top>150</top>
+                    <top>100</top>
                     <onleft condition="Control.IsVisible(3)">3</onleft>
                     <onleft condition="Control.IsVisible(6)">6</onleft>
                     <onright condition="Control.IsVisible(3)">3</onright>

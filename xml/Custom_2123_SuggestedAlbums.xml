@@ -228,7 +228,7 @@
                 </control>
                 <control type="grouplist" id="90">
                     <left>918</left>
-                    <top>150</top>
+                    <top>100</top>
                     <onleft>450</onleft>
                     <onright>450</onright>
                     <control type="button" id="7">
