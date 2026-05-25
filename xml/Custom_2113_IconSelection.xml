@@ -167,6 +167,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/addons.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Android</description>
@@ -175,6 +176,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/android.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Appearance</description>
@@ -183,6 +185,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/appearance.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Favourites</description>
@@ -191,6 +194,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/favorites.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>FileManager</description>
@@ -199,6 +203,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/filemanager.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Library</description>
@@ -207,6 +212,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/library.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Movies</description>
@@ -215,6 +221,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/movies.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Music</description>
@@ -223,6 +230,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/music.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Music 2</description>
@@ -231,6 +239,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/music2.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Network</description>
@@ -239,6 +248,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/network.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Pictures</description>
@@ -247,6 +257,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/pictures.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Pictures 2</description>
@@ -255,6 +266,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/pictures2.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>PlayDVD</description>
@@ -263,6 +275,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/playdvd.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Profiles</description>
@@ -271,6 +284,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/profiles.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Programs</description>
@@ -279,6 +293,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/programs.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Radio</description>
@@ -287,6 +302,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/radio.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Settings</description>
@@ -295,6 +311,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/settings.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Settings 2</description>
@@ -303,6 +320,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/settings2.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Skin</description>
@@ -311,6 +329,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/skin.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Skin Settings</description>
@@ -319,6 +338,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Xonfluence_Logo.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Sysinfo</description>
@@ -327,6 +347,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/sysinfo.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>System</description>
@@ -335,6 +356,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/system.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>LiveTV</description>
@@ -343,6 +365,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/livetv.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>TV 2</description>
@@ -351,6 +374,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/tv.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>TVGuide</description>
@@ -359,6 +383,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/tvguide.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>TVRemote</description>
@@ -367,6 +392,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/tvremote.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>TVShows</description>
@@ -375,6 +401,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/tvshows.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Video</description>
@@ -383,6 +410,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/video.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Video 2</description>
@@ -391,6 +419,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/video2.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Weather</description>
@@ -399,6 +428,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/weather.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Weather 2</description>
@@ -407,6 +437,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/weather2.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                     <item>
                         <description>Games</description>
@@ -415,6 +446,7 @@
                         <onclick>Dialog.Close(2113)</onclick>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,Icons/games.png)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                 </content>
             </control>
