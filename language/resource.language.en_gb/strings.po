@@ -2421,6 +2421,10 @@ msgctxt "#31799"
 msgid "second line"
 msgstr ""
 
+msgctxt "#31800"
+msgid "Random movies (includes watched)"
+msgstr ""
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr ""
