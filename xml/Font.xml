@@ -43,6 +43,11 @@
             <size>45</size>
         </font>
         <font>
+            <name>font35</name>
+            <filename>Roboto-Regular.ttf</filename>
+            <size>52</size>
+        </font>
+        <font>
             <name>fontContextMenu</name>
             <filename>Roboto-Regular.ttf</filename>
             <size>27</size>
@@ -161,6 +166,11 @@
             <name>font30</name>
             <filename>Roboto-Regular.ttf</filename>
             <size>45</size>
+        </font>
+        <font>
+            <name>font35</name>
+            <filename>Roboto-Regular.ttf</filename>
+            <size>52</size>
         </font>
         <font>
             <name>fontContextMenu</name>
@@ -283,6 +293,11 @@
             <size>45</size>
         </font>
         <font>
+            <name>font35</name>
+            <filename>Roboto-Regular.ttf</filename>
+            <size>52</size>
+        </font>
+        <font>
             <name>fontContextMenu</name>
             <filename>Roboto-Regular.ttf</filename>
             <size>27</size>
@@ -401,6 +416,11 @@
             <name>font30</name>
             <filename>arial.ttf</filename>
             <size>42</size>
+        </font>
+        <font>
+            <name>font35</name>
+            <filename>arial.ttf</filename>
+            <size>48</size>
         </font>
         <font>
             <name>fontContextMenu</name>
@@ -536,6 +556,11 @@
             <size>45</size>
         </font>
         <font>
+            <name>font35</name>
+            <filename>Massive.ttf</filename>
+            <size>52</size>
+        </font>
+        <font>
             <name>fontContextMenu</name>
             <filename>Massive.ttf</filename>
             <size>27</size>
@@ -656,6 +681,11 @@
             <size>45</size>
         </font>
         <font>
+            <name>font35</name>
+            <filename>Ubuntu-M.ttf</filename>
+            <size>52</size>
+        </font>
+        <font>
             <name>fontContextMenu</name>
             <filename>Ubuntu-M.ttf</filename>
             <size>27</size>
@@ -774,6 +804,11 @@
             <name>font30</name>
             <filename>Ubuntu-B.ttf</filename>
             <size>45</size>
+        </font>
+        <font>
+            <name>font35</name>
+            <filename>Ubuntu-B.ttf</filename>
+            <size>52</size>
         </font>
         <font>
             <name>fontContextMenu</name>

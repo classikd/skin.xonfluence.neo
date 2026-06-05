@@ -162,6 +162,7 @@
                         <label>24000</label>
                         <label2>31996</label2>
 						<visible>!Skin.HasSetting(Use.SkinShortcuts)</visible>
+                        <visible>!Skin.String(HomeAppearance,Home2)</visible>
                     </item>
                     <item id="5">
                         <label>33068</label>
@@ -804,6 +805,20 @@
                             <height>720</height>
                             <itemgap>-1</itemgap>
                             <pagecontrol>2062</pagecontrol>
+                            <control type="button" id="122">
+                                <description>Home Appearance</description>
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$LOCALIZE[480]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[HomeAppearanceNames]</label2>
+                                <onclick condition="String.IsEmpty(Skin.String(HomeAppearance))">Skin.SetString(HomeAppearance,Home2)</onclick>
+                                <onclick condition="Skin.String(HomeAppearance,Home2)">Skin.Reset(HomeAppearance)</onclick>
+                                <include>MenuButton</include>
+                            </control>
                             <control type="button" id="127">
                                 <description>Top Left Home Info</description>
                                 <width>1125</width>
@@ -916,6 +931,7 @@
                                 <label> - $LOCALIZE[31137]</label>
                                 <onclick>Skin.ToggleSetting(LowerMainMenuBar)</onclick>
                                 <selected>Skin.HasSetting(LowerMainMenuBar)</selected>
+                                <visible>!Skin.String(HomeAppearance,Home2)</visible>
                             </control>
                             <control type="radiobutton" id="138">
                                 <description>enable wrap around menu</description>
@@ -929,6 +945,7 @@
                                 <onclick>Skin.Reset(FixedEndingMenu)</onclick>
                                 <selected>Skin.HasSetting(WrapAroundHomeMenu)</selected>
                                 <include>MenuButton</include>
+                                <visible>!Skin.String(HomeAppearance,Home2)</visible>
                             </control>
                             <control type="radiobutton" id="139">
                                 <description>enable fixed ends menu</description>
@@ -942,6 +959,7 @@
                                 <selected>!Skin.HasSetting(FixedEndingMenu)</selected>
                                 <include>MenuButton</include>
                                 <enable>!Skin.HasSetting(WrapAroundHomeMenu)</enable>
+                                <visible>!Skin.String(HomeAppearance,Home2)</visible>
                             </control>
                             <control type="radiobutton" id="140">
                                 <description>hide horizontal submenu</description>
@@ -966,6 +984,7 @@
                                 <onclick>Skin.ToggleSetting(MainMenuAllCaps)</onclick>
                                 <selected>Skin.HasSetting(MainMenuAllCaps)</selected>
                                 <include>MenuButton</include>
+                                <visible>!Skin.String(HomeAppearance,Home2)</visible>
                             </control>
                             <control type="radiobutton" id="14002">
                                 <description>disable PVR in view</description>
@@ -1026,6 +1045,7 @@
                                 <onclick>Skin.ToggleSetting(EnableHomeStats)</onclick>
                                 <selected>Skin.HasSetting(EnableHomeStats)</selected>
                                 <include>MenuButton</include>
+                                <visible>!Skin.String(HomeAppearance,Home2)</visible>
                             </control>
                             <control type="button" id="113">
                                 <description>hide home floor</description>
@@ -1041,6 +1061,7 @@
                                 <onclick condition="String.IsEmpty(Skin.String(HomeFloor))">Skin.SetString(HomeFloor,Transparent)</onclick>
                                 <onclick condition="Skin.String(HomeFloor,Transparent)">Skin.SetString(HomeFloor,Enabled)</onclick>
                                 <onclick condition="Skin.String(HomeFloor,Enabled)">Skin.Reset(HomeFloor)</onclick>
+                                <visible>!Skin.String(HomeAppearance,Home2)</visible>
                             </control>                            
                             <control type="radiobutton" id="149">
                                 <width>1125</width>
@@ -1053,6 +1074,7 @@
                                 <onclick>Skin.ToggleSetting(HideHomeAddonsNames)</onclick>
                                 <onclick>ReloadSkin()</onclick>
                                 <selected>!Skin.HasSetting(HideHomeAddonsNames)</selected>
+                                <visible>!Skin.String(HomeAppearance,Home2)</visible>
                             </control>
                             <control type="button" id="151">
                                 <width>1125</width>
@@ -2126,6 +2148,7 @@
                                 <onclick>ActivateWindow(2117)</onclick>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.1.Label))</visible>
                             </control>
+
                             <control type="button" id="1204">
                                 <width>1125</width>
                                 <height>60</height>
@@ -2144,7 +2167,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31968]</label>
+                                <label> -- $LOCALIZE[31968]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemOneWidgetType]</label2>
                                 <textcolor>white</textcolor>
@@ -2156,12 +2179,11 @@
                                 <enable>Skin.String(HomeItem.1.Widget) + !String.IsEqual(Skin.String(HomeItem.1.Widget),None) + !String.IsEqual(Skin.String(HomeItem.1.Widget),Weather) + !String.IsEqual(Skin.String(HomeItem.1.Widget),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.1.Widget),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.1.Widget),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.1.Widget),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.1.Widget),SuggestedAlbums)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.1.Label))</visible>
                             </control>
-							<!-- Button for selecting widget layout -->
 							<control type="button" id="12051">
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31738]</label>
+                                <label> -- $LOCALIZE[31738]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemOneWidgetLayout]</label2>
                                 <textcolor>white</textcolor>
@@ -2172,6 +2194,57 @@
                                 <enable>!String.IsEmpty(Skin.String(HomeItem.1.Widget)) + !String.IsEqual(Skin.String(HomeItem.1.Widget),None)</enable>
 								<visible>!String.IsEmpty(Skin.String(HomeItem.1.Label))</visible>
                             </control>
+
+                            <!-- line 2 -->
+                            <control type="button" id="12040001">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> - $LOCALIZE[31293] ($LOCALIZE[31799])</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemOneWidgetLabel2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.1,Home)</onclick>
+                                <onclick>ActivateWindow(2418)</onclick>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.1.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+                            <control type="button" id="12050001">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31968]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemOneWidgetType2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.1.WidgetFormat2),Poster)">Skin.SetString(HomeItem.1.WidgetFormat2,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.1.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.1.WidgetFormat2,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.1.WidgetFormat2),Poster) + !String.IsEqual(Skin.String(HomeItem.1.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.1.WidgetFormat2,Poster)</onclick>
+                                <enable>Skin.String(HomeItem.1.Widget2) + !String.IsEqual(Skin.String(HomeItem.1.Widget2),None) + !String.IsEqual(Skin.String(HomeItem.1.Widget2),Weather) + !String.IsEqual(Skin.String(HomeItem.1.Widget2),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.1.Widget2),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.1.Widget2),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.1.Widget2),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.1.Widget2),SuggestedAlbums)</enable>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.1.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+							<control type="button" id="12060001">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31738]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemOneWidgetLayout2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.1,Home)</onclick>
+                                <onclick>ActivateWindow(2136)</onclick>
+                                <enable>!String.IsEmpty(Skin.String(HomeItem.1.Widget2)) + !String.IsEqual(Skin.String(HomeItem.1.Widget2),None)</enable>
+								<visible>!String.IsEmpty(Skin.String(HomeItem.1.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+
                             <control type="button" id="1206">
                                 <description>Menu BackGround Type</description>
                                 <width>1125</width>
@@ -2338,7 +2411,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31968]</label>
+                                <label> -- $LOCALIZE[31968]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemTwoWidgetType]</label2>
                                 <textcolor>white</textcolor>
@@ -2355,7 +2428,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31738]</label>
+                                <label> -- $LOCALIZE[31738]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemTwoWidgetLayout]</label2>
                                 <textcolor>white</textcolor>
@@ -2366,6 +2439,59 @@
                                 <enable>!String.IsEmpty(Skin.String(HomeItem.2.Widget)) + !String.IsEqual(Skin.String(HomeItem.2.Widget),None)</enable>
 								<visible>!String.IsEmpty(Skin.String(HomeItem.2.Label))</visible>
                             </control>
+
+
+
+                            <!-- line 2 -->
+                            <control type="button" id="12040002">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> - $LOCALIZE[31293] ($LOCALIZE[31799])</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemTwoWidgetLabel2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.2,Home)</onclick>
+                                <onclick>ActivateWindow(2418)</onclick>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.2.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+                            <control type="button" id="12050002">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31968]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemTwoWidgetType2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.2.WidgetFormat2),Poster)">Skin.SetString(HomeItem.2.WidgetFormat2,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.2.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.2.WidgetFormat2,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.2.WidgetFormat2),Poster) + !String.IsEqual(Skin.String(HomeItem.2.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.2.WidgetFormat2,Poster)</onclick>
+                                <enable>Skin.String(HomeItem.2.Widget2) + !String.IsEqual(Skin.String(HomeItem.2.Widget2),None) + !String.IsEqual(Skin.String(HomeItem.2.Widget2),Weather) + !String.IsEqual(Skin.String(HomeItem.2.Widget2),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.2.Widget2),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.2.Widget2),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.2.Widget2),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.2.Widget2),SuggestedAlbums)</enable>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.2.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+							<control type="button" id="12060002">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31738]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemTwoWidgetLayout2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.2,Home)</onclick>
+                                <onclick>ActivateWindow(2136)</onclick>
+                                <enable>!String.IsEmpty(Skin.String(HomeItem.2.Widget2)) + !String.IsEqual(Skin.String(HomeItem.2.Widget2),None)</enable>
+								<visible>!String.IsEmpty(Skin.String(HomeItem.2.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+
 							<control type="button" id="1216">
                                 <description>Menu BackGround Type</description>
                                 <width>1125</width>
@@ -2532,7 +2658,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31968]</label>
+                                <label> -- $LOCALIZE[31968]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemThreeWidgetType]</label2>
                                 <textcolor>white</textcolor>
@@ -2549,7 +2675,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31738]</label>
+                                <label> -- $LOCALIZE[31738]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemThreeWidgetLayout]</label2>
                                 <textcolor>white</textcolor>
@@ -2560,6 +2686,59 @@
                                 <enable>!String.IsEmpty(Skin.String(HomeItem.3.Widget)) + !String.IsEqual(Skin.String(HomeItem.3.Widget),None)</enable>
 								<visible>!String.IsEmpty(Skin.String(HomeItem.3.Label))</visible>
                             </control>
+
+
+
+                            <!-- line 2 -->
+                            <control type="button" id="12040003">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> - $LOCALIZE[31293] ($LOCALIZE[31799])</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemThreeWidgetLabel2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.3,Home)</onclick>
+                                <onclick>ActivateWindow(2418)</onclick>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.3.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+                            <control type="button" id="12050003">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31968]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemThreeWidgetType2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.3.WidgetFormat2),Poster)">Skin.SetString(HomeItem.3.WidgetFormat2,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.3.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.3.WidgetFormat2,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.3.WidgetFormat2),Poster) + !String.IsEqual(Skin.String(HomeItem.3.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.3.WidgetFormat2,Poster)</onclick>
+                                <enable>Skin.String(HomeItem.3.Widget2) + !String.IsEqual(Skin.String(HomeItem.3.Widget2),None) + !String.IsEqual(Skin.String(HomeItem.3.Widget2),Weather) + !String.IsEqual(Skin.String(HomeItem.3.Widget2),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.3.Widget2),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.3.Widget2),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.3.Widget2),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.3.Widget2),SuggestedAlbums)</enable>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.3.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+							<control type="button" id="12060003">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31738]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemThreeWidgetLayout2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.3,Home)</onclick>
+                                <onclick>ActivateWindow(2136)</onclick>
+                                <enable>!String.IsEmpty(Skin.String(HomeItem.3.Widget2)) + !String.IsEqual(Skin.String(HomeItem.3.Widget2),None)</enable>
+								<visible>!String.IsEmpty(Skin.String(HomeItem.3.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+
 							<control type="button" id="1226">
                                 <description>Menu BackGround Type</description>
                                 <width>1125</width>
@@ -2726,7 +2905,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31968]</label>
+                                <label> -- $LOCALIZE[31968]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemFourWidgetType]</label2>
                                 <textcolor>white</textcolor>
@@ -2743,7 +2922,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31738]</label>
+                                <label> -- $LOCALIZE[31738]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemFourWidgetLayout]</label2>
                                 <textcolor>white</textcolor>
@@ -2754,6 +2933,59 @@
                                 <enable>!String.IsEmpty(Skin.String(HomeItem.4.Widget)) + !String.IsEqual(Skin.String(HomeItem.4.Widget),None)</enable>
 								<visible>!String.IsEmpty(Skin.String(HomeItem.4.Label))</visible>
                             </control>
+
+
+
+                            <!-- line 2 -->
+                            <control type="button" id="12040004">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> - $LOCALIZE[31293] ($LOCALIZE[31799])</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemFourWidgetLabel2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.4,Home)</onclick>
+                                <onclick>ActivateWindow(2418)</onclick>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.4.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+                            <control type="button" id="12050004">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31968]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemFourWidgetType2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.4.WidgetFormat2),Poster)">Skin.SetString(HomeItem.4.WidgetFormat2,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.4.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.4.WidgetFormat2,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.4.WidgetFormat2),Poster) + !String.IsEqual(Skin.String(HomeItem.4.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.4.WidgetFormat2,Poster)</onclick>
+                                <enable>Skin.String(HomeItem.4.Widget2) + !String.IsEqual(Skin.String(HomeItem.4.Widget2),None) + !String.IsEqual(Skin.String(HomeItem.4.Widget2),Weather) + !String.IsEqual(Skin.String(HomeItem.4.Widget2),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.4.Widget2),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.4.Widget2),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.4.Widget2),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.4.Widget2),SuggestedAlbums)</enable>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.4.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+							<control type="button" id="12060004">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31738]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemFourWidgetLayout2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.4,Home)</onclick>
+                                <onclick>ActivateWindow(2136)</onclick>
+                                <enable>!String.IsEmpty(Skin.String(HomeItem.4.Widget2)) + !String.IsEqual(Skin.String(HomeItem.4.Widget2),None)</enable>
+								<visible>!String.IsEmpty(Skin.String(HomeItem.4.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+
 							<control type="button" id="1236">
                                 <description>Menu BackGround Type</description>
                                 <width>1125</width>
@@ -2920,7 +3152,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31968]</label>
+                                <label> -- $LOCALIZE[31968]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemFiveWidgetType]</label2>
                                 <textcolor>white</textcolor>
@@ -2937,7 +3169,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31738]</label>
+                                <label> -- $LOCALIZE[31738]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemFiveWidgetLayout]</label2>
                                 <textcolor>white</textcolor>
@@ -2948,6 +3180,59 @@
                                 <enable>!String.IsEmpty(Skin.String(HomeItem.5.Widget)) + !String.IsEqual(Skin.String(HomeItem.5.Widget),None)</enable>
 								<visible>!String.IsEmpty(Skin.String(HomeItem.5.Label))</visible>
                             </control>
+
+
+
+                            <!-- line 2 -->
+                            <control type="button" id="12040005">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> - $LOCALIZE[31293] ($LOCALIZE[31799])</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemFiveWidgetLabel2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.5,Home)</onclick>
+                                <onclick>ActivateWindow(2418)</onclick>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.5.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+                            <control type="button" id="12050005">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31968]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemFiveWidgetType2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.5.WidgetFormat2),Poster)">Skin.SetString(HomeItem.5.WidgetFormat2,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.5.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.5.WidgetFormat2,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.5.WidgetFormat2),Poster) + !String.IsEqual(Skin.String(HomeItem.5.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.5.WidgetFormat2,Poster)</onclick>
+                                <enable>Skin.String(HomeItem.5.Widget2) + !String.IsEqual(Skin.String(HomeItem.5.Widget2),None) + !String.IsEqual(Skin.String(HomeItem.5.Widget2),Weather) + !String.IsEqual(Skin.String(HomeItem.5.Widget2),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.5.Widget2),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.5.Widget2),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.5.Widget2),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.5.Widget2),SuggestedAlbums)</enable>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.5.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+							<control type="button" id="12060005">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31738]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemFiveWidgetLayout2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.5,Home)</onclick>
+                                <onclick>ActivateWindow(2136)</onclick>
+                                <enable>!String.IsEmpty(Skin.String(HomeItem.5.Widget2)) + !String.IsEqual(Skin.String(HomeItem.5.Widget2),None)</enable>
+								<visible>!String.IsEmpty(Skin.String(HomeItem.5.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+
 							<control type="button" id="1246">
                                 <description>Menu BackGround Type</description>
                                 <width>1125</width>
@@ -3114,7 +3399,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31968]</label>
+                                <label> -- $LOCALIZE[31968]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemSixWidgetType]</label2>
                                 <textcolor>white</textcolor>
@@ -3131,7 +3416,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31738]</label>
+                                <label> -- $LOCALIZE[31738]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemSixWidgetLayout]</label2>
                                 <textcolor>white</textcolor>
@@ -3142,6 +3427,59 @@
                                 <enable>!String.IsEmpty(Skin.String(HomeItem.6.Widget)) + !String.IsEqual(Skin.String(HomeItem.6.Widget),None)</enable>
                                 <visible>!String.IsEmpty(Skin.String(HomeItem.6.Label))</visible>
                             </control>
+
+
+
+                            <!-- line 2 -->
+                            <control type="button" id="12040006">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> - $LOCALIZE[31293] ($LOCALIZE[31799])</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemSixWidgetLabel2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.6,Home)</onclick>
+                                <onclick>ActivateWindow(2418)</onclick>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.6.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+                            <control type="button" id="12050006">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31968]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemSixWidgetType2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.6.WidgetFormat2),Poster)">Skin.SetString(HomeItem.6.WidgetFormat2,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.6.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.6.WidgetFormat2,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.6.WidgetFormat2),Poster) + !String.IsEqual(Skin.String(HomeItem.6.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.6.WidgetFormat2,Poster)</onclick>
+                                <enable>Skin.String(HomeItem.6.Widget2) + !String.IsEqual(Skin.String(HomeItem.6.Widget2),None) + !String.IsEqual(Skin.String(HomeItem.6.Widget2),Weather) + !String.IsEqual(Skin.String(HomeItem.6.Widget2),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.6.Widget2),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.6.Widget2),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.6.Widget2),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.6.Widget2),SuggestedAlbums)</enable>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.6.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+							<control type="button" id="12060006">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31738]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemSixWidgetLayout2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.6,Home)</onclick>
+                                <onclick>ActivateWindow(2136)</onclick>
+                                <enable>!String.IsEmpty(Skin.String(HomeItem.6.Widget2)) + !String.IsEqual(Skin.String(HomeItem.6.Widget2),None)</enable>
+								<visible>!String.IsEmpty(Skin.String(HomeItem.6.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+
 							<control type="button" id="1256">
                                 <description>Menu BackGround Type</description>
                                 <width>1125</width>
@@ -3308,7 +3646,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31968]</label>
+                                <label> -- $LOCALIZE[31968]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemSevenWidgetType]</label2>
                                 <textcolor>white</textcolor>
@@ -3325,7 +3663,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31738]</label>
+                                <label> -- $LOCALIZE[31738]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemSevenWidgetLayout]</label2>
                                 <textcolor>white</textcolor>
@@ -3336,6 +3674,59 @@
                                 <enable>!String.IsEmpty(Skin.String(HomeItem.7.Widget)) + !String.IsEqual(Skin.String(HomeItem.7.Widget),None)</enable>
 								<visible>!String.IsEmpty(Skin.String(HomeItem.7.Label))</visible>
                             </control>
+
+
+
+                            <!-- line 2 -->
+                            <control type="button" id="12040007">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> - $LOCALIZE[31293] ($LOCALIZE[31799])</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemSevenWidgetLabel2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.7,Home)</onclick>
+                                <onclick>ActivateWindow(2418)</onclick>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.7.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+                            <control type="button" id="12050007">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31968]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemSevenWidgetType2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.7.WidgetFormat2),Poster)">Skin.SetString(HomeItem.7.WidgetFormat2,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.7.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.7.WidgetFormat2,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.7.WidgetFormat2),Poster) + !String.IsEqual(Skin.String(HomeItem.7.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.7.WidgetFormat2,Poster)</onclick>
+                                <enable>Skin.String(HomeItem.7.Widget2) + !String.IsEqual(Skin.String(HomeItem.7.Widget2),None) + !String.IsEqual(Skin.String(HomeItem.7.Widget2),Weather) + !String.IsEqual(Skin.String(HomeItem.7.Widget2),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.7.Widget2),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.7.Widget2),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.7.Widget2),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.7.Widget2),SuggestedAlbums)</enable>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.7.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+							<control type="button" id="12060007">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31738]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemSevenWidgetLayout2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.7,Home)</onclick>
+                                <onclick>ActivateWindow(2136)</onclick>
+                                <enable>!String.IsEmpty(Skin.String(HomeItem.7.Widget2)) + !String.IsEqual(Skin.String(HomeItem.7.Widget2),None)</enable>
+								<visible>!String.IsEmpty(Skin.String(HomeItem.7.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+
 							<control type="button" id="1266">
                                 <description>Menu BackGround Type</description>
                                 <width>1125</width>
@@ -3502,7 +3893,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31968]</label>
+                                <label> -- $LOCALIZE[31968]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemEightWidgetType]</label2>
                                 <textcolor>white</textcolor>
@@ -3519,7 +3910,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31738]</label>
+                                <label> -- $LOCALIZE[31738]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemEightWidgetLayout]</label2>
                                 <textcolor>white</textcolor>
@@ -3530,6 +3921,59 @@
                                 <enable>!String.IsEmpty(Skin.String(HomeItem.8.Widget)) + !String.IsEqual(Skin.String(HomeItem.8.Widget),None)</enable>
 								<visible>!String.IsEmpty(Skin.String(HomeItem.8.Label))</visible>
                             </control>
+
+
+
+                            <!-- line 2 -->
+                            <control type="button" id="12040008">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> - $LOCALIZE[31293] ($LOCALIZE[31799])</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemEightWidgetLabel2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.8,Home)</onclick>
+                                <onclick>ActivateWindow(2418)</onclick>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.8.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+                            <control type="button" id="12050008">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31968]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemEightWidgetType2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.8.WidgetFormat2),Poster)">Skin.SetString(HomeItem.8.WidgetFormat2,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.8.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.8.WidgetFormat2,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.8.WidgetFormat2),Poster) + !String.IsEqual(Skin.String(HomeItem.8.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.8.WidgetFormat2,Poster)</onclick>
+                                <enable>Skin.String(HomeItem.8.Widget2) + !String.IsEqual(Skin.String(HomeItem.8.Widget2),None) + !String.IsEqual(Skin.String(HomeItem.8.Widget2),Weather) + !String.IsEqual(Skin.String(HomeItem.8.Widget2),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.8.Widget2),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.8.Widget2),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.8.Widget2),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.8.Widget2),SuggestedAlbums)</enable>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.8.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+							<control type="button" id="12060008">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31738]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemEightWidgetLayout2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.8,Home)</onclick>
+                                <onclick>ActivateWindow(2136)</onclick>
+                                <enable>!String.IsEmpty(Skin.String(HomeItem.8.Widget2)) + !String.IsEqual(Skin.String(HomeItem.8.Widget2),None)</enable>
+								<visible>!String.IsEmpty(Skin.String(HomeItem.8.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+
 							<control type="button" id="1276">
                                 <description>Menu BackGround Type</description>
                                 <width>1125</width>
@@ -3696,7 +4140,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31968]</label>
+                                <label> -- $LOCALIZE[31968]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemNineWidgetType]</label2>
                                 <textcolor>white</textcolor>
@@ -3713,7 +4157,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31738]</label>
+                                <label> -- $LOCALIZE[31738]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemNineWidgetLayout]</label2>
                                 <textcolor>white</textcolor>
@@ -3724,6 +4168,59 @@
                                 <enable>!String.IsEmpty(Skin.String(HomeItem.9.Widget)) + !String.IsEqual(Skin.String(HomeItem.9.Widget),None)</enable>
 								<visible>!String.IsEmpty(Skin.String(HomeItem.9.Label))</visible>
                             </control>
+
+
+
+                            <!-- line 2 -->
+                            <control type="button" id="12040009">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> - $LOCALIZE[31293] ($LOCALIZE[31799])</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemNineWidgetLabel2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.9,Home)</onclick>
+                                <onclick>ActivateWindow(2418)</onclick>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.9.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+                            <control type="button" id="12050009">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31968]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemNineWidgetType2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.9.WidgetFormat2),Poster)">Skin.SetString(HomeItem.9.WidgetFormat2,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.9.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.9.WidgetFormat2,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.9.WidgetFormat2),Poster) + !String.IsEqual(Skin.String(HomeItem.9.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.9.WidgetFormat2,Poster)</onclick>
+                                <enable>Skin.String(HomeItem.9.Widget2) + !String.IsEqual(Skin.String(HomeItem.9.Widget2),None) + !String.IsEqual(Skin.String(HomeItem.9.Widget2),Weather) + !String.IsEqual(Skin.String(HomeItem.9.Widget2),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.9.Widget2),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.9.Widget2),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.9.Widget2),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.9.Widget2),SuggestedAlbums)</enable>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.9.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+							<control type="button" id="12060009">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31738]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemNineWidgetLayout2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.9,Home)</onclick>
+                                <onclick>ActivateWindow(2136)</onclick>
+                                <enable>!String.IsEmpty(Skin.String(HomeItem.9.Widget2)) + !String.IsEqual(Skin.String(HomeItem.9.Widget2),None)</enable>
+								<visible>!String.IsEmpty(Skin.String(HomeItem.9.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+
 							<control type="button" id="1286">
                                 <description>Menu BackGround Type</description>
                                 <width>1125</width>
@@ -3890,7 +4387,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31968]</label>
+                                <label> -- $LOCALIZE[31968]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemTenWidgetType]</label2>
                                 <textcolor>white</textcolor>
@@ -3907,7 +4404,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31738]</label>
+                                <label> -- $LOCALIZE[31738]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemTenWidgetLayout]</label2>
                                 <textcolor>white</textcolor>
@@ -3918,6 +4415,59 @@
                                 <enable>!String.IsEmpty(Skin.String(HomeItem.10.Widget)) + !String.IsEqual(Skin.String(HomeItem.10.Widget),None)</enable>
 								<visible>!String.IsEmpty(Skin.String(HomeItem.10.Label))</visible>
                             </control>
+
+
+
+                            <!-- line 2 -->
+                            <control type="button" id="12040010">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> - $LOCALIZE[31293] ($LOCALIZE[31799])</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemTenWidgetLabel2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.10,Home)</onclick>
+                                <onclick>ActivateWindow(2418)</onclick>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.10.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+                            <control type="button" id="12050010">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31968]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemTenWidgetType2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.10.WidgetFormat2),Poster)">Skin.SetString(HomeItem.10.WidgetFormat2,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.10.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.10.WidgetFormat2,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.10.WidgetFormat2),Poster) + !String.IsEqual(Skin.String(HomeItem.10.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.10.WidgetFormat2,Poster)</onclick>
+                                <enable>Skin.String(HomeItem.10.Widget2) + !String.IsEqual(Skin.String(HomeItem.10.Widget2),None) + !String.IsEqual(Skin.String(HomeItem.10.Widget2),Weather) + !String.IsEqual(Skin.String(HomeItem.10.Widget2),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.10.Widget2),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.10.Widget2),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.10.Widget2),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.10.Widget2),SuggestedAlbums)</enable>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.10.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+							<control type="button" id="12060010">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31738]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemTenWidgetLayout2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.10,Home)</onclick>
+                                <onclick>ActivateWindow(2136)</onclick>
+                                <enable>!String.IsEmpty(Skin.String(HomeItem.10.Widget2)) + !String.IsEqual(Skin.String(HomeItem.10.Widget2),None)</enable>
+								<visible>!String.IsEmpty(Skin.String(HomeItem.10.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+
 							<control type="button" id="1296">
                                 <description>Menu BackGround Type</description>
                                 <width>1125</width>
@@ -4084,7 +4634,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31968]</label>
+                                <label> -- $LOCALIZE[31968]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemElevenWidgetType]</label2>
                                 <textcolor>white</textcolor>
@@ -4101,7 +4651,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31738]</label>
+                                <label> -- $LOCALIZE[31738]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemElevenWidgetLayout]</label2>
                                 <textcolor>white</textcolor>
@@ -4112,6 +4662,59 @@
                                 <enable>!String.IsEmpty(Skin.String(HomeItem.11.Widget)) + !String.IsEqual(Skin.String(HomeItem.11.Widget),None)</enable>
 								<visible>!String.IsEmpty(Skin.String(HomeItem.11.Label))</visible>
                             </control>
+
+
+
+                            <!-- line 2 -->
+                            <control type="button" id="12040011">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> - $LOCALIZE[31293] ($LOCALIZE[31799])</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemElevenWidgetLabel2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.11,Home)</onclick>
+                                <onclick>ActivateWindow(2418)</onclick>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.11.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+                            <control type="button" id="12050011">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31968]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemElevenWidgetType2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.11.WidgetFormat2),Poster)">Skin.SetString(HomeItem.11.WidgetFormat2,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.11.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.11.WidgetFormat2,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.11.WidgetFormat2),Poster) + !String.IsEqual(Skin.String(HomeItem.11.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.11.WidgetFormat2,Poster)</onclick>
+                                <enable>Skin.String(HomeItem.11.Widget2) + !String.IsEqual(Skin.String(HomeItem.11.Widget2),None) + !String.IsEqual(Skin.String(HomeItem.11.Widget2),Weather) + !String.IsEqual(Skin.String(HomeItem.11.Widget2),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.11.Widget2),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.11.Widget2),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.11.Widget2),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.11.Widget2),SuggestedAlbums)</enable>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.11.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+							<control type="button" id="12060011">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31738]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemElevenWidgetLayout2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.11,Home)</onclick>
+                                <onclick>ActivateWindow(2136)</onclick>
+                                <enable>!String.IsEmpty(Skin.String(HomeItem.11.Widget2)) + !String.IsEqual(Skin.String(HomeItem.11.Widget2),None)</enable>
+								<visible>!String.IsEmpty(Skin.String(HomeItem.11.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+
 							<control type="button" id="1306">
                                 <description>Menu BackGround Type</description>
                                 <width>1125</width>
@@ -4278,7 +4881,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31968]</label>
+                                <label> -- $LOCALIZE[31968]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemTwelveWidgetType]</label2>
                                 <textcolor>white</textcolor>
@@ -4295,7 +4898,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31738]</label>
+                                <label> -- $LOCALIZE[31738]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemTwelveWidgetLayout]</label2>
                                 <textcolor>white</textcolor>
@@ -4306,6 +4909,59 @@
                                 <enable>!String.IsEmpty(Skin.String(HomeItem.12.Widget)) + !String.IsEqual(Skin.String(HomeItem.12.Widget),None)</enable>
 								<visible>!String.IsEmpty(Skin.String(HomeItem.12.Label))</visible>
                             </control>
+
+
+
+                            <!-- line 2 -->
+                            <control type="button" id="12040012">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> - $LOCALIZE[31293] ($LOCALIZE[31799])</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemTwelveWidgetLabel2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.12,Home)</onclick>
+                                <onclick>ActivateWindow(2418)</onclick>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.12.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+                            <control type="button" id="12050012">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31968]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemTwelveWidgetType2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.12.WidgetFormat2),Poster)">Skin.SetString(HomeItem.12.WidgetFormat2,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.12.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.12.WidgetFormat2,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.12.WidgetFormat2),Poster) + !String.IsEqual(Skin.String(HomeItem.12.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.12.WidgetFormat2,Poster)</onclick>
+                                <enable>Skin.String(HomeItem.12.Widget2) + !String.IsEqual(Skin.String(HomeItem.12.Widget2),None) + !String.IsEqual(Skin.String(HomeItem.12.Widget2),Weather) + !String.IsEqual(Skin.String(HomeItem.12.Widget2),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.12.Widget2),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.12.Widget2),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.12.Widget2),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.12.Widget2),SuggestedAlbums)</enable>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.12.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+							<control type="button" id="12060012">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31738]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemTwelveWidgetLayout2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.12,Home)</onclick>
+                                <onclick>ActivateWindow(2136)</onclick>
+                                <enable>!String.IsEmpty(Skin.String(HomeItem.12.Widget2)) + !String.IsEqual(Skin.String(HomeItem.12.Widget2),None)</enable>
+								<visible>!String.IsEmpty(Skin.String(HomeItem.12.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+
                             <control type="button" id="1316">
                                 <description>Menu BackGround Type</description>
                                 <width>1125</width>
@@ -4472,7 +5128,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31968]</label>
+                                <label> -- $LOCALIZE[31968]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemThirteenWidgetType]</label2>
                                 <textcolor>white</textcolor>
@@ -4489,7 +5145,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31738]</label>
+                                <label> -- $LOCALIZE[31738]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemThirteenWidgetLayout]</label2>
                                 <textcolor>white</textcolor>
@@ -4500,6 +5156,59 @@
                                 <enable>!String.IsEmpty(Skin.String(HomeItem.13.Widget)) + !String.IsEqual(Skin.String(HomeItem.13.Widget),None)</enable>
 								<visible>!String.IsEmpty(Skin.String(HomeItem.13.Label))</visible>
                             </control>
+
+
+
+                            <!-- line 2 -->
+                            <control type="button" id="12040013">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> - $LOCALIZE[31293] ($LOCALIZE[31799])</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemThirteenWidgetLabel2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.13,Home)</onclick>
+                                <onclick>ActivateWindow(2418)</onclick>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.13.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+                            <control type="button" id="12050013">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31968]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemThirteenWidgetType2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.13.WidgetFormat2),Poster)">Skin.SetString(HomeItem.13.WidgetFormat2,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.13.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.13.WidgetFormat2,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.13.WidgetFormat2),Poster) + !String.IsEqual(Skin.String(HomeItem.13.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.13.WidgetFormat2,Poster)</onclick>
+                                <enable>Skin.String(HomeItem.13.Widget2) + !String.IsEqual(Skin.String(HomeItem.13.Widget2),None) + !String.IsEqual(Skin.String(HomeItem.13.Widget2),Weather) + !String.IsEqual(Skin.String(HomeItem.13.Widget2),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.13.Widget2),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.13.Widget2),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.13.Widget2),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.13.Widget2),SuggestedAlbums)</enable>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.13.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+							<control type="button" id="12060013">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31738]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemThirteenWidgetLayout2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.13,Home)</onclick>
+                                <onclick>ActivateWindow(2136)</onclick>
+                                <enable>!String.IsEmpty(Skin.String(HomeItem.13.Widget2)) + !String.IsEqual(Skin.String(HomeItem.13.Widget2),None)</enable>
+								<visible>!String.IsEmpty(Skin.String(HomeItem.13.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+
                             <control type="button" id="1326">
                                 <description>Menu BackGround Type</description>
                                 <width>1125</width>
@@ -4666,7 +5375,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31968]</label>
+                                <label> -- $LOCALIZE[31968]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemFourteenWidgetType]</label2>
                                 <textcolor>white</textcolor>
@@ -4683,7 +5392,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31738]</label>
+                                <label> -- $LOCALIZE[31738]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemFourteenWidgetLayout]</label2>
                                 <textcolor>white</textcolor>
@@ -4694,6 +5403,59 @@
                                 <enable>!String.IsEmpty(Skin.String(HomeItem.14.Widget)) + !String.IsEqual(Skin.String(HomeItem.14.Widget),None)</enable>
 								<visible>!String.IsEmpty(Skin.String(HomeItem.14.Label))</visible>
                             </control>
+
+
+
+                            <!-- line 2 -->
+                            <control type="button" id="12040014">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> - $LOCALIZE[31293] ($LOCALIZE[31799])</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemFourteenWidgetLabel2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.14,Home)</onclick>
+                                <onclick>ActivateWindow(2418)</onclick>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.14.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+                            <control type="button" id="12050014">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31968]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemFourteenWidgetType2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.14.WidgetFormat2),Poster)">Skin.SetString(HomeItem.14.WidgetFormat2,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.14.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.14.WidgetFormat2,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.14.WidgetFormat2),Poster) + !String.IsEqual(Skin.String(HomeItem.14.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.14.WidgetFormat2,Poster)</onclick>
+                                <enable>Skin.String(HomeItem.14.Widget2) + !String.IsEqual(Skin.String(HomeItem.14.Widget2),None) + !String.IsEqual(Skin.String(HomeItem.14.Widget2),Weather) + !String.IsEqual(Skin.String(HomeItem.14.Widget2),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.14.Widget2),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.14.Widget2),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.14.Widget2),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.14.Widget2),SuggestedAlbums)</enable>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.14.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+							<control type="button" id="12060014">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31738]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemFourteenWidgetLayout2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.14,Home)</onclick>
+                                <onclick>ActivateWindow(2136)</onclick>
+                                <enable>!String.IsEmpty(Skin.String(HomeItem.14.Widget2)) + !String.IsEqual(Skin.String(HomeItem.14.Widget2),None)</enable>
+								<visible>!String.IsEmpty(Skin.String(HomeItem.14.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+
                             <control type="button" id="1336">
                                 <description>Menu BackGround Type</description>
                                 <width>1125</width>
@@ -4860,7 +5622,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31968]</label>
+                                <label> -- $LOCALIZE[31968]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemFifteenWidgetType]</label2>
                                 <textcolor>white</textcolor>
@@ -4877,7 +5639,7 @@
                                 <width>1125</width>
                                 <height>60</height>
                                 <font>font13</font>
-                                <label> - $LOCALIZE[31738]</label>
+                                <label> -- $LOCALIZE[31738]</label>
                                 <shadowcolor>black</shadowcolor>
                                 <label2>$VAR[UsrDefItemFifteenWidgetLayout]</label2>
                                 <textcolor>white</textcolor>
@@ -4888,6 +5650,59 @@
                                 <enable>!String.IsEmpty(Skin.String(HomeItem.15.Widget))</enable>
 								<visible>!String.IsEmpty(Skin.String(HomeItem.15.Label))</visible>
                             </control>
+
+
+
+                            <!-- line 2 -->
+                            <control type="button" id="12040015">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> - $LOCALIZE[31293] ($LOCALIZE[31799])</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemFifteenWidgetLabel2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.15,Home)</onclick>
+                                <onclick>ActivateWindow(2418)</onclick>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.15.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+                            <control type="button" id="12050015">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31968]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemFifteenWidgetType2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.15.WidgetFormat2),Poster)">Skin.SetString(HomeItem.15.WidgetFormat2,PosterDetailed)</onclick>
+                                <onclick condition="String.IsEqual(Skin.String(HomeItem.15.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.15.WidgetFormat2,Thumb)</onclick>
+                                <onclick condition="!String.IsEqual(Skin.String(HomeItem.15.WidgetFormat2),Poster) + !String.IsEqual(Skin.String(HomeItem.15.WidgetFormat2),PosterDetailed)">Skin.SetString(HomeItem.15.WidgetFormat2,Poster)</onclick>
+                                <enable>Skin.String(HomeItem.15.Widget2) + !String.IsEqual(Skin.String(HomeItem.15.Widget2),None) + !String.IsEqual(Skin.String(HomeItem.15.Widget2),Weather) + !String.IsEqual(Skin.String(HomeItem.15.Widget2),WeatherExtended) + !String.IsEqual(Skin.String(HomeItem.15.Widget2),RandomArtists) + !String.IsEqual(Skin.String(HomeItem.15.Widget2),RecentAlbums) + !String.IsEqual(Skin.String(HomeItem.15.Widget2),RandomAlbums) + !String.IsEqual(Skin.String(HomeItem.15.Widget2),SuggestedAlbums)</enable>
+                                <visible>!String.IsEmpty(Skin.String(HomeItem.15.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+							<control type="button" id="12060015">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> -- $LOCALIZE[31738]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[UsrDefItemFifteenWidgetLayout2]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick>SetProperty(UsrSelectBtn,HomeItem.15,Home)</onclick>
+                                <onclick>ActivateWindow(2136)</onclick>
+                                <enable>!String.IsEmpty(Skin.String(HomeItem.15.Widget2)) + !String.IsEqual(Skin.String(HomeItem.15.Widget2),None)</enable>
+								<visible>!String.IsEmpty(Skin.String(HomeItem.15.Label))</visible>
+                                <visible>Skin.String(HomeAppearance,Home2)</visible>
+                            </control>
+
                             <control type="button" id="1346">
                                 <description>Menu BackGround Type</description>
                                 <width>1125</width>

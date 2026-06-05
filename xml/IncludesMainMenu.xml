@@ -17,7 +17,6 @@
         <include condition="String.IsEmpty(Skin.String(MenuLAF))">HomeImagePost1</include>
         <include condition="!String.IsEmpty(Skin.String(MenuLAF))">HomeImagePost2</include>
     </include>
-	
     <include name="FixedHomeMainMenu">
         <include condition="String.IsEmpty(Skin.String(MenuLAF))">HomeImagePre1</include>
         <include condition="!String.IsEmpty(Skin.String(MenuLAF))">HomeImagePre2</include>
@@ -33,6 +32,42 @@
         </control>
         <include condition="String.IsEmpty(Skin.String(MenuLAF))">HomeImagePost1</include>
         <include condition="!String.IsEmpty(Skin.String(MenuLAF))">HomeImagePost2</include>
+    </include>
+
+
+    <include name="FixedHomeMainMenu2">
+
+        <control type="button">
+            <left>92</left>
+            <top>3</top>
+            <width>15</width>
+            <height>15</height>
+            <texturefocus>arrow-big-up.png</texturefocus>
+            <texturenofocus>arrow-big-up.png</texturenofocus>
+            <visible>ControlGroup(9001).HasFocus</visible>
+        </control>
+
+        <!-- menu arrows -->
+        <control type="group">
+            <visible>Control.HasFocus(9000) | ControlGroup(9001).HasFocus</visible>
+            <control type="button">
+                <left>40</left>
+                <top>54</top>
+                <width>15</width>
+                <height>15</height>
+                <texturefocus>arrow-big-left.png</texturefocus>
+                <texturenofocus>arrow-big-left.png</texturenofocus>
+            </control>
+        </control>
+
+        <control type="fixedlist" id="9000">
+            <include condition="!Skin.HasSetting(Use.SkinShortcuts)">HomeGraphMainMenuSys2</include>
+			<include condition="Skin.HasSetting(Use.SkinShortcuts)" content="HomeGraphMainMenuSys2">
+			    <param name="menuitemicon">$INFO[ListItem.Icon]</param>
+			</include>
+            <include condition="!Skin.HasSetting(Use.SkinShortcuts)">HomeMainMenuContent</include>
+			<include condition="Skin.HasSetting(Use.SkinShortcuts)">HomeMainMenuSkinShortcutsContent</include>
+      </control>
     </include>
 	
     <include name="HomeImagePre1">
@@ -328,6 +363,102 @@
             </focusedlayout>
 		</definition>	
     </include>
+    <include name="HomeGraphMainMenuSys2">
+	    <param name="menuitemicon">$INFO[ListItem.Property(Icon)]</param>
+		<definition>
+            <left>0</left>
+            <top>0</top>
+            <width>1845</width>
+            <height>138</height>
+            <onleft condition="!Skin.HasSetting(FixedEndingMenu)">9000</onleft>
+            <onright condition="!Skin.HasSetting(FixedEndingMenu)">9000</onright>
+            <onup>9008</onup>
+            <ondown condition="!Skin.HasSetting(AutoVisableSubMenu)">9001</ondown>
+            <scrolltime>300</scrolltime>
+            <focusposition>3</focusposition>
+            <orientation>Horizontal</orientation>
+            <itemlayout height="100" width="1845">
+
+                <control type="group">
+                    <width min="60" max="400">auto</width>
+                    <orientation>horizontal</orientation>
+                    <control type="image">
+                        <description>icon</description>                   
+                        <left>35</left>
+                        <width>130</width>
+                        <height>130</height>
+                        <texture>$PARAM[menuitemicon]</texture>                  
+                        <colordiffuse>white</colordiffuse>
+                        <aspectratio>keep</aspectratio>
+                        <visible>!String.IsEmpty(Skin.String(MenuLAF))</visible>
+                    </control>
+                    <control type="label">
+                        <top>35</top>                    
+                        <left>150</left>
+                        <description>time label</description> 
+                        <width>1500</width>
+                        <label>$INFO[ListItem.Label]</label>
+                        <height>45</height>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font45_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>true</scroll>
+                        <visible>String.IsEqual(Skin.String(MenuLAF),GraphText) | String.IsEqual(Skin.String(MenuLAF),GraphFocused) | String.IsEmpty(Skin.String(MenuLAF))</visible>
+                        <animation effect="zoom" end="60" center="auto" time="100" delay="0" condition="ControlGroup(9001).HasFocus">Conditional</animation>
+                     </control>
+                </control>
+
+            </itemlayout>
+            <focusedlayout height="100" width="1845">
+                <control type="group">
+                    <width min="60" max="400">auto</width>
+                    <orientation>horizontal</orientation>
+                    <control type="image">
+                        <description>icon</description>                   
+                        <left>35</left>
+                        <width>130</width>
+                        <height>130</height>
+                        <texture>$PARAM[menuitemicon]</texture>                  
+                        <colordiffuse>white</colordiffuse>
+                        <aspectratio>keep</aspectratio>
+                        <visible>!String.IsEmpty(Skin.String(MenuLAF))</visible>
+                        <visible>!Control.HasFocus(9000)</visible>
+                    </control>
+                    <control type="image">
+                        <description>icon</description>                   
+                        <left>35</left>
+                        <width>130</width>
+                        <height>130</height>
+                        <texture>$PARAM[menuitemicon]</texture>                  
+                        <colordiffuse>$VAR[MainColorOne]</colordiffuse>
+                        <aspectratio>keep</aspectratio>
+                        <visible>!String.IsEmpty(Skin.String(MenuLAF))</visible>
+                        <visible>Control.HasFocus(9000)</visible>
+                    </control>
+                    <control type="label">
+                        <top>35</top>                    
+                        <left>150</left>
+                        <description>time label</description> 
+                        <width>1500</width>
+                        <label>$INFO[ListItem.Label]</label>
+                        <height>60</height>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font45_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>true</scroll>
+                        <visible>String.IsEqual(Skin.String(MenuLAF),GraphText) | String.IsEqual(Skin.String(MenuLAF),GraphFocused) | String.IsEmpty(Skin.String(MenuLAF))</visible>
+                        <animation effect="slide" end="-80,0" time="0" condition="String.IsEmpty(Skin.String(MenuLAF))">Conditional</animation>
+                        <animation effect="slide" end="0,-50" time="200" condition="ControlGroup(9001).HasFocus">Conditional</animation>
+                        <animation effect="fade" start="100" end="0" time="100" condition="ControlGroup(9001).HasFocus">Conditional</animation>
+                     </control>
+                </control>
+            </focusedlayout>
+		</definition>	
+    </include>
 	
     <include name="HomeMainMenuContent">
         <content>
@@ -345,11 +476,14 @@
                 <property name="HiLiteItem">$INFO[Skin.String(HomeItem.1.Type)]</property>
                 <property name="AddOnSet">$INFO[Skin.String(HomeItem.1.Addon)]</property>
                 <property name="WidgetSet">$INFO[Skin.String(HomeItem.1.Widget)]</property>
+                <property name="WidgetSet2">$INFO[Skin.String(HomeItem.1.Widget2)]</property>
                 <property name="PlaylistType">$INFO[Skin.String(HomeItem.1.PlaylistType)]</property>
 				<property name="PlaylistContent">$INFO[Skin.String(HomeItem.1.PlaylistContent)]</property>
                 <property name="Background">$INFO[Skin.String(HomeItem.1.Display)]</property>
                 <property name="WidgetFormat">$INFO[Skin.String(HomeItem.1.WidgetFormat)]</property>
 				<property name="WidgetLayout">$INFO[Skin.String(HomeItem.1.WidgetLayout)]</property>
+                <property name="WidgetFormat2">$INFO[Skin.String(HomeItem.1.WidgetFormat2)]</property>
+				<property name="WidgetLayout2">$INFO[Skin.String(HomeItem.1.WidgetLayout2)]</property>
                 <visible>!String.IsEmpty(Skin.String(HomeItem.1.Path))</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.1.Type),Radio) | [String.IsEqual(Skin.String(HomeItem.1.Type),Radio) + !Skin.HasSetting(DisablePVRinView)]</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.1.Type),LiveTV) | [String.IsEqual(Skin.String(HomeItem.1.Type),LiveTV) + !Skin.HasSetting(DisablePVRinView)]</visible>
@@ -371,11 +505,14 @@
                 <property name="HiLiteItem">$INFO[Skin.String(HomeItem.2.Type)]</property>
                 <property name="AddOnSet">$INFO[Skin.String(HomeItem.2.Addon)]</property>
                 <property name="WidgetSet">$INFO[Skin.String(HomeItem.2.Widget)]</property>
+                <property name="WidgetSet2">$INFO[Skin.String(HomeItem.2.Widget2)]</property>
                 <property name="PlaylistType">$INFO[Skin.String(HomeItem.2.PlaylistType)]</property>
 				<property name="PlaylistContent">$INFO[Skin.String(HomeItem.2.PlaylistContent)]</property>
                 <property name="Background">$INFO[Skin.String(HomeItem.2.Display)]</property>
                 <property name="WidgetFormat">$INFO[Skin.String(HomeItem.2.WidgetFormat)]</property>
 				<property name="WidgetLayout">$INFO[Skin.String(HomeItem.2.WidgetLayout)]</property>
+                <property name="WidgetFormat2">$INFO[Skin.String(HomeItem.2.WidgetFormat2)]</property>
+				<property name="WidgetLayout2">$INFO[Skin.String(HomeItem.2.WidgetLayout2)]</property>
                 <visible>!String.IsEmpty(Skin.String(HomeItem.2.Path))</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.2.Type),Radio) | [String.IsEqual(Skin.String(HomeItem.2.Type),Radio) + !Skin.HasSetting(DisablePVRinView)]</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.2.Type),LiveTV) | [String.IsEqual(Skin.String(HomeItem.2.Type),LiveTV) + !Skin.HasSetting(DisablePVRinView)]</visible>
@@ -397,11 +534,14 @@
                 <property name="HiLiteItem">$INFO[Skin.String(HomeItem.3.Type)]</property>
                 <property name="AddOnSet">$INFO[Skin.String(HomeItem.3.Addon)]</property>
                 <property name="WidgetSet">$INFO[Skin.String(HomeItem.3.Widget)]</property>
+                <property name="WidgetSet2">$INFO[Skin.String(HomeItem.3.Widget2)]</property>
                 <property name="PlaylistType">$INFO[Skin.String(HomeItem.3.PlaylistType)]</property>
 				<property name="PlaylistContent">$INFO[Skin.String(HomeItem.3.PlaylistContent)]</property>
                 <property name="Background">$INFO[Skin.String(HomeItem.3.Display)]</property>
                 <property name="WidgetFormat">$INFO[Skin.String(HomeItem.3.WidgetFormat)]</property>
 				<property name="WidgetLayout">$INFO[Skin.String(HomeItem.3.WidgetLayout)]</property>
+                <property name="WidgetFormat2">$INFO[Skin.String(HomeItem.3.WidgetFormat2)]</property>
+				<property name="WidgetLayout2">$INFO[Skin.String(HomeItem.3.WidgetLayout2)]</property>
                 <visible>!String.IsEmpty(Skin.String(HomeItem.3.Path))</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.3.Type),Radio) | [String.IsEqual(Skin.String(HomeItem.3.Type),Radio) + !Skin.HasSetting(DisablePVRinView)]</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.3.Type),LiveTV) | [String.IsEqual(Skin.String(HomeItem.3.Type),LiveTV) + !Skin.HasSetting(DisablePVRinView)]</visible>
@@ -423,11 +563,14 @@
                 <property name="HiLiteItem">$INFO[Skin.String(HomeItem.4.Type)]</property>
                 <property name="AddOnSet">$INFO[Skin.String(HomeItem.4.Addon)]</property>
                 <property name="WidgetSet">$INFO[Skin.String(HomeItem.4.Widget)]</property>
+                <property name="WidgetSet2">$INFO[Skin.String(HomeItem.4.Widget2)]</property>
                 <property name="PlaylistType">$INFO[Skin.String(HomeItem.4.PlaylistType)]</property>
 				<property name="PlaylistContent">$INFO[Skin.String(HomeItem.4.PlaylistContent)]</property>
                 <property name="Background">$INFO[Skin.String(HomeItem.4.Display)]</property>
                 <property name="WidgetFormat">$INFO[Skin.String(HomeItem.4.WidgetFormat)]</property>
 				<property name="WidgetLayout">$INFO[Skin.String(HomeItem.4.WidgetLayout)]</property>
+                <property name="WidgetFormat2">$INFO[Skin.String(HomeItem.4.WidgetFormat2)]</property>
+				<property name="WidgetLayout2">$INFO[Skin.String(HomeItem.4.WidgetLayout2)]</property>
                 <visible>!String.IsEmpty(Skin.String(HomeItem.4.Path))</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.4.Type),Radio) | [String.IsEqual(Skin.String(HomeItem.4.Type),Radio) + !Skin.HasSetting(DisablePVRinView)]</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.4.Type),LiveTV) | [String.IsEqual(Skin.String(HomeItem.4.Type),LiveTV) + !Skin.HasSetting(DisablePVRinView)]</visible>
@@ -449,11 +592,14 @@
                 <property name="HiLiteItem">$INFO[Skin.String(HomeItem.5.Type)]</property>
                 <property name="AddOnSet">$INFO[Skin.String(HomeItem.5.Addon)]</property>
                 <property name="WidgetSet">$INFO[Skin.String(HomeItem.5.Widget)]</property>
+                <property name="WidgetSet2">$INFO[Skin.String(HomeItem.5.Widget2)]</property>
                 <property name="PlaylistType">$INFO[Skin.String(HomeItem.5.PlaylistType)]</property>
 				<property name="PlaylistContent">$INFO[Skin.String(HomeItem.5.PlaylistContent)]</property>
                 <property name="Background">$INFO[Skin.String(HomeItem.5.Display)]</property>
                 <property name="WidgetFormat">$INFO[Skin.String(HomeItem.5.WidgetFormat)]</property>
 				<property name="WidgetLayout">$INFO[Skin.String(HomeItem.5.WidgetLayout)]</property>
+                <property name="WidgetFormat2">$INFO[Skin.String(HomeItem.5.WidgetFormat2)]</property>
+				<property name="WidgetLayout2">$INFO[Skin.String(HomeItem.5.WidgetLayout2)]</property>
                 <visible>!String.IsEmpty(Skin.String(HomeItem.5.Path))</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.5.Type),Radio) | [String.IsEqual(Skin.String(HomeItem.5.Type),Radio) + !Skin.HasSetting(DisablePVRinView)]</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.5.Type),LiveTV) | [String.IsEqual(Skin.String(HomeItem.5.Type),LiveTV) + !Skin.HasSetting(DisablePVRinView)]</visible>
@@ -475,11 +621,14 @@
                 <property name="HiLiteItem">$INFO[Skin.String(HomeItem.6.Type)]</property>
                 <property name="AddOnSet">$INFO[Skin.String(HomeItem.6.Addon)]</property>
                 <property name="WidgetSet">$INFO[Skin.String(HomeItem.6.Widget)]</property>
+                <property name="WidgetSet2">$INFO[Skin.String(HomeItem.6.Widget2)]</property>
                 <property name="PlaylistType">$INFO[Skin.String(HomeItem.6.PlaylistType)]</property>
 				<property name="PlaylistContent">$INFO[Skin.String(HomeItem.6.PlaylistContent)]</property>
                 <property name="Background">$INFO[Skin.String(HomeItem.6.Display)]</property>
                 <property name="WidgetFormat">$INFO[Skin.String(HomeItem.6.WidgetFormat)]</property>
 				<property name="WidgetLayout">$INFO[Skin.String(HomeItem.6.WidgetLayout)]</property>
+                <property name="WidgetFormat2">$INFO[Skin.String(HomeItem.6.WidgetFormat2)]</property>
+				<property name="WidgetLayout2">$INFO[Skin.String(HomeItem.6.WidgetLayout2)]</property>
                 <visible>!String.IsEmpty(Skin.String(HomeItem.6.Path))</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.6.Type),Radio) | [String.IsEqual(Skin.String(HomeItem.6.Type),Radio) + !Skin.HasSetting(DisablePVRinView)]</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.6.Type),LiveTV) | [String.IsEqual(Skin.String(HomeItem.6.Type),LiveTV) + !Skin.HasSetting(DisablePVRinView)]</visible>
@@ -501,11 +650,14 @@
                 <property name="HiLiteItem">$INFO[Skin.String(HomeItem.7.Type)]</property>
                 <property name="AddOnSet">$INFO[Skin.String(HomeItem.7.Addon)]</property>
                 <property name="WidgetSet">$INFO[Skin.String(HomeItem.7.Widget)]</property>
+                <property name="WidgetSet2">$INFO[Skin.String(HomeItem.7.Widget2)]</property>
                 <property name="PlaylistType">$INFO[Skin.String(HomeItem.7.PlaylistType)]</property>
 				<property name="PlaylistContent">$INFO[Skin.String(HomeItem.7.PlaylistContent)]</property>
                 <property name="Background">$INFO[Skin.String(HomeItem.7.Display)]</property>
                 <property name="WidgetFormat">$INFO[Skin.String(HomeItem.7.WidgetFormat)]</property>
 				<property name="WidgetLayout">$INFO[Skin.String(HomeItem.7.WidgetLayout)]</property>
+                <property name="WidgetFormat2">$INFO[Skin.String(HomeItem.7.WidgetFormat2)]</property>
+				<property name="WidgetLayout2">$INFO[Skin.String(HomeItem.7.WidgetLayout2)]</property>
                 <visible>!String.IsEmpty(Skin.String(HomeItem.7.Path))</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.7.Type),Radio) | [String.IsEqual(Skin.String(HomeItem.7.Type),Radio) + !Skin.HasSetting(DisablePVRinView)]</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.7.Type),LiveTV) | [String.IsEqual(Skin.String(HomeItem.7.Type),LiveTV) + !Skin.HasSetting(DisablePVRinView)]</visible>
@@ -527,11 +679,14 @@
                 <property name="HiLiteItem">$INFO[Skin.String(HomeItem.8.Type)]</property>
                 <property name="AddOnSet">$INFO[Skin.String(HomeItem.8.Addon)]</property>
                 <property name="WidgetSet">$INFO[Skin.String(HomeItem.8.Widget)]</property>
+                <property name="WidgetSet2">$INFO[Skin.String(HomeItem.8.Widget2)]</property>
                 <property name="PlaylistType">$INFO[Skin.String(HomeItem.8.PlaylistType)]</property>
 				<property name="PlaylistContent">$INFO[Skin.String(HomeItem.8.PlaylistContent)]</property>
                 <property name="Background">$INFO[Skin.String(HomeItem.8.Display)]</property>
                 <property name="WidgetFormat">$INFO[Skin.String(HomeItem.8.WidgetFormat)]</property>
 				<property name="WidgetLayout">$INFO[Skin.String(HomeItem.8.WidgetLayout)]</property>
+                <property name="WidgetFormat2">$INFO[Skin.String(HomeItem.8.WidgetFormat2)]</property>
+				<property name="WidgetLayout2">$INFO[Skin.String(HomeItem.8.WidgetLayout2)]</property>
                 <visible>!String.IsEmpty(Skin.String(HomeItem.8.Path))</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.8.Type),Radio) | [String.IsEqual(Skin.String(HomeItem.8.Type),Radio) + !Skin.HasSetting(DisablePVRinView)]</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.8.Type),LiveTV) | [String.IsEqual(Skin.String(HomeItem.8.Type),LiveTV) + !Skin.HasSetting(DisablePVRinView)]</visible>
@@ -553,11 +708,14 @@
                 <property name="HiLiteItem">$INFO[Skin.String(HomeItem.9.Type)]</property>
                 <property name="AddOnSet">$INFO[Skin.String(HomeItem.9.Addon)]</property>
                 <property name="WidgetSet">$INFO[Skin.String(HomeItem.9.Widget)]</property>
+                <property name="WidgetSet2">$INFO[Skin.String(HomeItem.9.Widget2)]</property>
                 <property name="PlaylistType">$INFO[Skin.String(HomeItem.9.PlaylistType)]</property>
 				<property name="PlaylistContent">$INFO[Skin.String(HomeItem.9.PlaylistContent)]</property>
                 <property name="Background">$INFO[Skin.String(HomeItem.9.Display)]</property>
                 <property name="WidgetFormat">$INFO[Skin.String(HomeItem.9.WidgetFormat)]</property>
 				<property name="WidgetLayout">$INFO[Skin.String(HomeItem.9.WidgetLayout)]</property>
+                <property name="WidgetFormat2">$INFO[Skin.String(HomeItem.9.WidgetFormat2)]</property>
+				<property name="WidgetLayout2">$INFO[Skin.String(HomeItem.9.WidgetLayout2)]</property>
                 <visible>!String.IsEmpty(Skin.String(HomeItem.9.Path))</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.9.Type),Radio) | [String.IsEqual(Skin.String(HomeItem.9.Type),Radio) + !Skin.HasSetting(DisablePVRinView)]</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.9.Type),LiveTV) | [String.IsEqual(Skin.String(HomeItem.9.Type),LiveTV) + !Skin.HasSetting(DisablePVRinView)]</visible>
@@ -579,11 +737,14 @@
                 <property name="HiLiteItem">$INFO[Skin.String(HomeItem.10.Type)]</property>
                 <property name="AddOnSet">$INFO[Skin.String(HomeItem.10.Addon)]</property>
                 <property name="WidgetSet">$INFO[Skin.String(HomeItem.10.Widget)]</property>
+                <property name="WidgetSet2">$INFO[Skin.String(HomeItem.10.Widget2)]</property>
                 <property name="PlaylistType">$INFO[Skin.String(HomeItem.10.PlaylistType)]</property>
 				<property name="PlaylistContent">$INFO[Skin.String(HomeItem.10.PlaylistContent)]</property>
                 <property name="Background">$INFO[Skin.String(HomeItem.10.Display)]</property>
                 <property name="WidgetFormat">$INFO[Skin.String(HomeItem.10.WidgetFormat)]</property>
 				<property name="WidgetLayout">$INFO[Skin.String(HomeItem.10.WidgetLayout)]</property>
+                <property name="WidgetFormat2">$INFO[Skin.String(HomeItem.10.WidgetFormat2)]</property>
+				<property name="WidgetLayout2">$INFO[Skin.String(HomeItem.10.WidgetLayout2)]</property>
                 <visible>!String.IsEmpty(Skin.String(HomeItem.10.Path))</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.10.Type),Radio) | [String.IsEqual(Skin.String(HomeItem.10.Type),Radio) + !Skin.HasSetting(DisablePVRinView)]</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.10.Type),LiveTV) | [String.IsEqual(Skin.String(HomeItem.10.Type),LiveTV) + !Skin.HasSetting(DisablePVRinView)]</visible>
@@ -605,11 +766,14 @@
                 <property name="HiLiteItem">$INFO[Skin.String(HomeItem.11.Type)]</property>
                 <property name="AddOnSet">$INFO[Skin.String(HomeItem.11.Addon)]</property>
                 <property name="WidgetSet">$INFO[Skin.String(HomeItem.11.Widget)]</property>
+                <property name="WidgetSet2">$INFO[Skin.String(HomeItem.11.Widget2)]</property>
                 <property name="PlaylistType">$INFO[Skin.String(HomeItem.11.PlaylistType)]</property>
 				<property name="PlaylistContent">$INFO[Skin.String(HomeItem.11.PlaylistContent)]</property>
                 <property name="Background">$INFO[Skin.String(HomeItem.11.Display)]</property>
                 <property name="WidgetFormat">$INFO[Skin.String(HomeItem.11.WidgetFormat)]</property>
 				<property name="WidgetLayout">$INFO[Skin.String(HomeItem.11.WidgetLayout)]</property>
+                <property name="WidgetFormat2">$INFO[Skin.String(HomeItem.11.WidgetFormat2)]</property>
+				<property name="WidgetLayout2">$INFO[Skin.String(HomeItem.11.WidgetLayout2)]</property>
                 <visible>!String.IsEmpty(Skin.String(HomeItem.11.Path))</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.11.Type),Radio) | [String.IsEqual(Skin.String(HomeItem.11.Type),Radio) + !Skin.HasSetting(DisablePVRinView)]</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.11.Type),LiveTV) | [String.IsEqual(Skin.String(HomeItem.11.Type),LiveTV) + !Skin.HasSetting(DisablePVRinView)]</visible>
@@ -631,11 +795,14 @@
                 <property name="HiLiteItem">$INFO[Skin.String(HomeItem.12.Type)]</property>
                 <property name="AddOnSet">$INFO[Skin.String(HomeItem.12.Addon)]</property>
                 <property name="WidgetSet">$INFO[Skin.String(HomeItem.12.Widget)]</property>
+                <property name="WidgetSet2">$INFO[Skin.String(HomeItem.12.Widget2)]</property>
                 <property name="PlaylistType">$INFO[Skin.String(HomeItem.12.PlaylistType)]</property>
 				<property name="PlaylistContent">$INFO[Skin.String(HomeItem.12.PlaylistContent)]</property>
                 <property name="Background">$INFO[Skin.String(HomeItem.12.Display)]</property>
                 <property name="WidgetFormat">$INFO[Skin.String(HomeItem.12.WidgetFormat)]</property>
 				<property name="WidgetLayout">$INFO[Skin.String(HomeItem.12.WidgetLayout)]</property>
+                <property name="WidgetFormat2">$INFO[Skin.String(HomeItem.12.WidgetFormat2)]</property>
+				<property name="WidgetLayout2">$INFO[Skin.String(HomeItem.12.WidgetLayout2)]</property>
                 <visible>!String.IsEmpty(Skin.String(HomeItem.12.Path))</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.12.Type),Radio) | [String.IsEqual(Skin.String(HomeItem.12.Type),Radio) + !Skin.HasSetting(DisablePVRinView)]</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.12.Type),LiveTV) | [String.IsEqual(Skin.String(HomeItem.12.Type),LiveTV) + !Skin.HasSetting(DisablePVRinView)]</visible>
@@ -657,11 +824,14 @@
                 <property name="HiLiteItem">$INFO[Skin.String(HomeItem.13.Type)]</property>
                 <property name="AddOnSet">$INFO[Skin.String(HomeItem.13.Addon)]</property>
                 <property name="WidgetSet">$INFO[Skin.String(HomeItem.13.Widget)]</property>
+                <property name="WidgetSet2">$INFO[Skin.String(HomeItem.13.Widget2)]</property>
                 <property name="PlaylistType">$INFO[Skin.String(HomeItem.13.PlaylistType)]</property>
 				<property name="PlaylistContent">$INFO[Skin.String(HomeItem.13.PlaylistContent)]</property>
                 <property name="Background">$INFO[Skin.String(HomeItem.13.Display)]</property>
                 <property name="WidgetFormat">$INFO[Skin.String(HomeItem.13.WidgetFormat)]</property>
 				<property name="WidgetLayout">$INFO[Skin.String(HomeItem.13.WidgetLayout)]</property>
+                <property name="WidgetFormat2">$INFO[Skin.String(HomeItem.13.WidgetFormat2)]</property>
+				<property name="WidgetLayout2">$INFO[Skin.String(HomeItem.13.WidgetLayout2)]</property>
                 <visible>!String.IsEmpty(Skin.String(HomeItem.13.Path))</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.13.Type),Radio) | [String.IsEqual(Skin.String(HomeItem.13.Type),Radio) + !Skin.HasSetting(DisablePVRinView)]</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.13.Type),LiveTV) | [String.IsEqual(Skin.String(HomeItem.13.Type),LiveTV) + !Skin.HasSetting(DisablePVRinView)]</visible>
@@ -683,11 +853,14 @@
                 <property name="HiLiteItem">$INFO[Skin.String(HomeItem.14.Type)]</property>
                 <property name="AddOnSet">$INFO[Skin.String(HomeItem.14.Addon)]</property>
                 <property name="WidgetSet">$INFO[Skin.String(HomeItem.14.Widget)]</property>
+                <property name="WidgetSet2">$INFO[Skin.String(HomeItem.14.Widget2)]</property>
                 <property name="PlaylistType">$INFO[Skin.String(HomeItem.14.PlaylistType)]</property>
 				<property name="PlaylistContent">$INFO[Skin.String(HomeItem.14.PlaylistContent)]</property>
                 <property name="Background">$INFO[Skin.String(HomeItem.14.Display)]</property>
                 <property name="WidgetFormat">$INFO[Skin.String(HomeItem.14.WidgetFormat)]</property>
 				<property name="WidgetLayout">$INFO[Skin.String(HomeItem.14.WidgetLayout)]</property>
+                <property name="WidgetFormat2">$INFO[Skin.String(HomeItem.14.WidgetFormat2)]</property>
+				<property name="WidgetLayout2">$INFO[Skin.String(HomeItem.14.WidgetLayout2)]</property>
                 <visible>!String.IsEmpty(Skin.String(HomeItem.14.Path))</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.14.Type),Radio) | [String.IsEqual(Skin.String(HomeItem.14.Type),Radio) + !Skin.HasSetting(DisablePVRinView)]</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.14.Type),LiveTV) | [String.IsEqual(Skin.String(HomeItem.14.Type),LiveTV) + !Skin.HasSetting(DisablePVRinView)]</visible>
@@ -709,11 +882,14 @@
                 <property name="HiLiteItem">$INFO[Skin.String(HomeItem.15.Type)]</property>
                 <property name="AddOnSet">$INFO[Skin.String(HomeItem.15.Addon)]</property>
                 <property name="WidgetSet">$INFO[Skin.String(HomeItem.15.Widget)]</property>
+                <property name="WidgetSet2">$INFO[Skin.String(HomeItem.15.Widget2)]</property>
                 <property name="PlaylistType">$INFO[Skin.String(HomeItem.15.PlaylistType)]</property>
 				<property name="PlaylistContent">$INFO[Skin.String(HomeItem.15.PlaylistContent)]</property>
                 <property name="Background">$INFO[Skin.String(HomeItem.15.Display)]</property>
                 <property name="WidgetFormat">$INFO[Skin.String(HomeItem.15.WidgetFormat)]</property>
 				<property name="WidgetLayout">$INFO[Skin.String(HomeItem.15.WidgetLayout)]</property>
+                <property name="WidgetFormat2">$INFO[Skin.String(HomeItem.15.WidgetFormat2)]</property>
+				<property name="WidgetLayout2">$INFO[Skin.String(HomeItem.15.WidgetLayout2)]</property>
                 <visible>!String.IsEmpty(Skin.String(HomeItem.15.Path))</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.15.Type),Radio) | [String.IsEqual(Skin.String(HomeItem.15.Type),Radio) + !Skin.HasSetting(DisablePVRinView)]</visible>
                 <visible>!String.IsEqual(Skin.String(HomeItem.15.Type),LiveTV) | [String.IsEqual(Skin.String(HomeItem.15.Type),LiveTV) + !Skin.HasSetting(DisablePVRinView)]</visible>
@@ -1811,7 +1987,7 @@
                 <description>Title label</description>
                 <left>240</left>
                 <top>382</top>
-                <height>45</height>
+                <height>60</height>
                 <width>1500</width>
                 <label>$INFO[Window(Home).Property(RecommendedMovie.1.Title)]$INFO[Window(Home).Property(RecommendedMovie.1.Year),[COLOR=grey] (,)[/COLOR]]</label>
                 <align>left</align>
@@ -2161,6 +2337,500 @@
                 <visible>!Skin.HasSetting(DisableGlobalSearch) + Skin.HasSetting(FloorGlobalSearch)</visible>
             </control>
 
+        </control>
+
+	</include>
+	
+	<include name="HomeBottomButtons2">
+        
+        <control type="button" id="8998">
+            <description>btn open</description>
+            <left>1785</left>
+            <top>1020</top>
+            <width>65</width>
+            <height>52</height>
+            <label />
+            <font />
+            <onclick condition="String.IsEmpty(Window.Property(BottomBladeOpen))">SetProperty(BottomBladeOpen,True)</onclick>
+            <onunfocus></onunfocus>
+            <onup>9000</onup>
+            <ondown>9000</ondown>
+            <onleft>50</onleft>
+            <onright></onright>
+            <onback></onback>
+            <texturefocus border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texturefocus>
+            <texturenofocus border="5">floor_button.png</texturenofocus>
+            <include>HomeTransparentEffect</include>
+            <animation effect="slide" start="0,0" end="0,-100" time="200" condition="!String.IsEmpty(Window.Property(BottomBladeOpen))">Conditional</animation>
+            <animation effect="fade" start="100" end="0" time="200" condition="!String.IsEmpty(Window.Property(BottomBladeOpen))">Conditional</animation>
+        </control>
+        <control type="image">
+            <left>1807</left>
+            <top>1040</top>
+            <width>22</width>
+            <height>22</height>
+            <texture colordiffuse="white">scroll-up-focus.png</texture>
+            <aspectratio>keep</aspectratio>
+            <animation effect="slide" start="0,0" end="0,-100" time="200" condition="!String.IsEmpty(Window.Property(BottomBladeOpen))">Conditional</animation>
+            <animation effect="fade" start="100" end="0" time="200" condition="!String.IsEmpty(Window.Property(BottomBladeOpen))">Conditional</animation>
+        </control>
+
+        <control type="button" id="89988">
+            <description>Fake button for mouse control</description>
+            <left>0</left>
+            <top>1072</top>
+            <width>1920</width>
+            <height>200</height>
+            <label />
+            <font />
+            <texturenofocus />
+            <texturefocus />
+            <onfocus condition="String.IsEmpty(Window.Property(BottomBladeOpen))">SetProperty(BottomBladeOpen,True)</onfocus>
+            <onunfocus></onunfocus>
+            <onup>9000</onup>
+            <ondown>9000</ondown>
+            <onleft>50</onleft>
+            <onright></onright>
+            <onback></onback>
+        </control>
+
+        <control type="button" id="8999">
+            <description>Fake button for mouse control oout</description>
+            <left>0</left>
+            <top>922</top>
+            <width>1920</width>
+            <height>50</height>
+            <label />
+            <font />
+            <texturenofocus />
+            <texturefocus />
+            <onfocus condition="!String.IsEmpty(Window.Property(BottomBladeOpen))">ClearProperty(BottomBladeOpen)</onfocus>
+            <onunfocus></onunfocus>
+            <onup>9000</onup>
+            <ondown>9000</ondown>
+            <onleft>50</onleft>
+            <onright></onright>
+            <onback></onback>
+        </control>
+
+        <control type="image">
+            <left>0</left>
+            <top>1072</top>
+            <width>1920</width>
+            <height>200</height>
+            <texture border="15">RecentAddedBack.png</texture>
+            <include>HomeTransparentEffect</include>
+            <animation effect="slide" start="0,0" end="0,-100" time="200" condition="!String.IsEmpty(Window.Property(BottomBladeOpen))">Conditional</animation>
+        </control>
+
+        <control type="group" id="21">
+            <animation effect="slide" start="0,0" end="0,-100" time="200" condition="!String.IsEmpty(Window.Property(BottomBladeOpen))">Conditional</animation>
+            <depth>DepthFooter</depth>
+            <include>Window_OpenClose_Animation</include>
+            <left>70</left>
+            <top>-10r</top>
+            <itemgap>0</itemgap>
+
+            <!-- POWER -->
+            <control type="image"> <!-- hover -->
+                <left>0</left>
+                <top>0</top>
+                <width>79</width>
+                <height>75</height>
+                <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texture>
+                <visible>Control.HasFocus(23) + !Skin.HasSetting(HideHomePowerBtn)</visible>
+            </control>
+
+
+            <!-- Icon -->
+            <control type="image">
+                <left>5</left>
+                <top>0</top>
+                <width>70</width>
+                <height>70</height>
+                <texture>$VAR[PowerIconTexture]</texture>
+                <colordiffuse>FF000000</colordiffuse>
+                <aspectratio>keep</aspectratio>
+                <visible>Control.IsVisible(23) + Control.HasFocus(23)</visible>
+            </control>
+            <control type="image">
+                <left>5</left>
+                <top>0</top>
+                <width>70</width>
+                <height>70</height>
+                <texture>$VAR[PowerIconTexture]</texture>
+                <colordiffuse>FFFFFFFF</colordiffuse>
+                <aspectratio>keep</aspectratio>
+                <visible>Control.IsVisible(23) + !Control.HasFocus(23)</visible>
+            </control>
+
+            <control type="radiobutton" id="23">
+                <left>0</left>
+                <top>0</top>
+                <width>79</width>
+                <height>75</height>
+                <onright>22</onright>
+                <onleft condition="Player.HasVideo + !VideoPlayer.Content(LiveTV)">702</onleft>
+                <onleft condition="Player.HasVideo + VideoPlayer.Content(LiveTV)">607</onleft>
+                <onleft condition="Player.HasAudio">709</onleft>
+                <onleft condition="!Player.HasMedia">25</onleft>
+                <onup>9000</onup>
+                <ondown>9003</ondown>
+                <textureradioonfocus>blank.png</textureradioonfocus>
+                <textureradioonnofocus>blank.png</textureradioonnofocus>
+                <textureradioofffocus>blank.png</textureradioofffocus>
+                <textureradiooffnofocus>blank.png</textureradiooffnofocus>
+
+                <texturefocus border="5">blank.png</texturefocus>
+                <texturenofocus border="5">blank.png</texturenofocus>
+
+                <radiowidth>52</radiowidth>
+                <radioheight>52</radioheight>
+                <radioposx>8</radioposx>
+                <radioposy>8</radioposy>
+
+                <onfocus condition="String.IsEmpty(Window.Property(BottomBladeOpen))">SetProperty(BottomBladeOpen,True)</onfocus>
+                <onup>ClearProperty(BottomBladeOpen)</onup>
+                <ondown>ClearProperty(BottomBladeOpen)</ondown>
+
+                <onclick>$VAR[HomePowerBtnCommand]</onclick>
+                <visible>!Skin.HasSetting(HideHomePowerBtn)</visible>
+            </control>
+
+            <!-- FAVORITES -->
+            <!-- Bg -->
+            <control type="image"> <!-- hover -->
+                <left>79</left>
+                <top>0</top>
+                <width>82</width>
+                <height>75</height>
+                <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texture>
+                <visible>Control.HasFocus(22) + !Skin.HasSetting(HideFavorites)</visible>
+            </control>
+
+            <!-- Icon -->
+            <control type="image">
+                <left>80</left>
+                <top>0</top>
+                <width>82</width>
+                <height>75</height>
+                <texture>$VAR[FavoritesIconTexture]</texture>
+                <colordiffuse>FF000000</colordiffuse>
+                <aspectratio>keep</aspectratio>
+                <visible>Control.IsVisible(22) + Control.HasFocus(22)</visible>
+            </control>
+            <control type="image">
+                <left>80</left>
+                <top>0</top>
+                <width>82</width>
+                <height>75</height>
+                <texture>$VAR[FavoritesIconTexture]</texture>
+                <colordiffuse>FFFFFFFF</colordiffuse>
+                <aspectratio>keep</aspectratio>
+                <visible>Control.IsVisible(22) + !Control.HasFocus(22)</visible>
+            </control>
+
+
+            <control type="radiobutton" id="22">
+                <left>79</left>
+                <top>0</top>
+                <width>82</width>
+                <height>75</height>
+                <onright>25</onright>
+                <onleft>23</onleft>
+                <onup>9000</onup>
+                <ondown>9003</ondown>
+                <textureradioonfocus>blank.png</textureradioonfocus>
+                <textureradioonnofocus>blank.png</textureradioonnofocus>
+                <textureradioofffocus>blank.png</textureradioofffocus>
+                <textureradiooffnofocus>blank.png</textureradiooffnofocus>
+
+                <texturefocus border="5">blank.png</texturefocus>
+                <texturenofocus border="5">blank.png</texturenofocus>
+
+                <radiowidth>52</radiowidth>
+                <radioheight>52</radioheight>
+                <radioposx>8</radioposx>
+                <radioposy>8</radioposy>
+
+                <onfocus condition="String.IsEmpty(Window.Property(BottomBladeOpen))">SetProperty(BottomBladeOpen,True)</onfocus>
+                <onup>ClearProperty(BottomBladeOpen)</onup>
+                <ondown>ClearProperty(BottomBladeOpen)</ondown>
+
+                <onclick>ActivateWindow(Favouritesbrowser)</onclick>
+                <visible>!Skin.HasSetting(HideFavorites)</visible>
+            </control>
+
+            <!-- SEARCH -->
+            <control type="image"> <!-- hover -->
+                <left>161</left>
+                <top>0</top>
+                <width>82</width>
+                <height>75</height>
+                <texture border="5" colordiffuse="$VAR[MainColorOne]">floor_buttonfo.png</texture>
+                <visible>Control.HasFocus(25) + Skin.HasSetting(FloorGlobalSearch) + !Skin.HasSetting(DisableGlobalSearch)</visible>
+            </control>
+            <control type="radiobutton" id="25">
+                <left>164</left>
+                <top>0</top>
+                <width>82</width>
+                <height>75</height>
+                <onright condition="!Player.HasMedia">23</onright>
+                <onright condition="Player.HasMedia">9006</onright>
+                <onleft>22</onleft>
+                <onup>9000</onup>
+                <ondown>9003</ondown>
+                <textureradioonfocus colordiffuse="FF000000">icon_search.png</textureradioonfocus>
+                <textureradioonnofocus>icon_search.png</textureradioonnofocus>
+                <textureradioofffocus colordiffuse="FF000000">icon_search.png</textureradioofffocus>
+                <textureradiooffnofocus>icon_search.png</textureradiooffnofocus>
+
+                <texturefocus border="5">blank.png</texturefocus>
+                <texturenofocus border="5">blank.png</texturenofocus>
+
+                <radiowidth>56</radiowidth>
+                <radioheight>56</radioheight>
+                <radioposx>8</radioposx>
+                <radioposy>8</radioposy>
+
+                <onfocus condition="String.IsEmpty(Window.Property(BottomBladeOpen))">SetProperty(BottomBladeOpen,True)</onfocus>
+                <onup>ClearProperty(BottomBladeOpen)</onup>
+                <ondown>ClearProperty(BottomBladeOpen)</ondown>
+
+                <onclick>RunScript(script.globalsearch)</onclick>
+                <visible>!Skin.HasSetting(DisableGlobalSearch) + Skin.HasSetting(FloorGlobalSearch)</visible>
+            </control>
+
+        </control>
+
+        <!-- media info -->
+        <control type="group">
+            <left>320</left>
+            <top>5r</top>
+            <animation effect="slide" start="0,0" end="-80,0" time="0" condition="!Skin.HasSetting(FloorGlobalSearch) | Skin.HasSetting(DisableGlobalSearch)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-100" time="200" condition="!String.IsEmpty(Window.Property(BottomBladeOpen))">Conditional</animation>
+            
+            <!-- Music Info mini -->
+            <control type="group">
+                <visible>Player.HasAudio</visible>
+                <include content="MiniMusicInfo">
+                    <param name="Color" value="white" />
+                </include>
+            </control>
+            <!-- Video Info mini -->
+            <control type="group">
+                <visible>Player.HasVideo</visible>
+                <include content="MiniVideoInfo">
+                    <param name="Color" value="white" />
+                </include>
+            </control>
+        </control>
+
+        <!-- media control -->
+        <control type="grouplist" id="9006">
+            <width>575</width>
+            <height>75</height>
+            <left>760</left>
+            <top>-10r</top>
+            <itemgap>1</itemgap>
+            <orientation>horizontal</orientation>
+            <onright>SetFocus(700)</onright>
+            <onright>23</onright>
+            <onleft condition="!Skin.HasSetting(DisableGlobalSearch) + Skin.HasSetting(FloorGlobalSearch)">25</onleft>
+            <onleft condition="Skin.HasSetting(DisableGlobalSearch) | !Skin.HasSetting(FloorGlobalSearch)">22</onleft>
+            <onback>9000</onback>
+            <onup>SetFocus(700)</onup>
+            <onup>9000</onup>
+            <onup>ClearProperty(BottomBladeOpen)</onup>
+            <ondown>9003</ondown>
+            <ondown>ClearProperty(BottomBladeOpen)</ondown>
+            <animation effect="slide" start="0,0" end="-80,0" time="0" condition="!Skin.HasSetting(FloorGlobalSearch) + !Skin.HasSetting(DisableGlobalSearch)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-100" time="200" condition="!String.IsEmpty(Window.Property(BottomBladeOpen))">Conditional</animation>
+            <visible>VideoPlayer.Content(LiveTV)</visible>
+            <visible>Player.HasMedia</visible>
+            <control type="radiobutton" id="700">
+                <label />
+                <include content="OSDButton">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDChannelDown" />
+                </include>
+                <onclick>ChannelUp</onclick>
+            </control>
+            <control type="radiobutton" id="600">
+                <label />
+                <include content="OSDButton">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDChannelUp" />
+                </include>
+                <onclick>ChannelDown</onclick>
+            </control>
+            <control type="radiobutton" id="603">
+                <label />
+                <include content="OSDButton">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDStop" />
+                </include>
+                <onclick>down</onclick>
+                <onclick>PlayerControl(Stop)</onclick>
+            </control>
+            <control type="radiobutton" id="604">
+                <label />
+                <include content="OSDButtonAlt">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDPause" />
+                    <param name="AltTexture" value="OSDPlay" />
+                    <param name="Selected" value="Player.Paused | Player.Forwarding | Player.Rewinding" />
+                </include>
+                <onclick>PlayerControl(Play)</onclick>
+                <enable>Player.PauseEnabled</enable>
+                <animation effect="fade" start="100" end="30" time="75" condition="!Player.PauseEnabled">Conditional</animation>
+            </control>
+            <control type="radiobutton" id="605">
+                <label />
+                <include content="OSDButton">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDRecordOff" />
+                </include>
+                <onclick>PVR.ToggleRecordPlayingChannel</onclick>
+                <enable>PVR.CanRecordPlayingChannel</enable>
+                <animation effect="fade" start="100" end="30" time="75" condition="!PVR.CanRecordPlayingChannel">Conditional</animation>
+            </control>
+            <control type="radiobutton" id="606">
+                <label />
+                <include content="OSDButton">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDRadioRDS" />
+                </include>
+                <visible>RDS.HasRadiotextPlus</visible>
+                <onclick>ActivateWindow(PVRRadioRDSInfo)</onclick>
+            </control>
+            <control type="radiobutton" id="607">
+                <label />
+                <include content="OSDButton">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDChannelList" />
+                </include>
+                <visible>!RDS.HasRadiotextPlus</visible>
+                <onclick>ActivateWindow(PVRGuideInfo)</onclick>
+            </control>
+        </control>
+
+        <control type="grouplist" id="9006">
+            <width>575</width>
+            <height>75</height>
+            <left>765</left>
+            <top>-10r</top>
+            <itemgap>1</itemgap>
+            <orientation>horizontal</orientation>
+            <onright>SetFocus(700)</onright>
+            <onright>23</onright>
+            <onleft condition="!Skin.HasSetting(DisableGlobalSearch) + Skin.HasSetting(FloorGlobalSearch)">25</onleft>
+            <onleft condition="Skin.HasSetting(DisableGlobalSearch) | !Skin.HasSetting(FloorGlobalSearch)">22</onleft>
+            <onback>9000</onback>
+            <onup>SetFocus(700)</onup>
+            <onup>9000</onup>
+            <onup>ClearProperty(BottomBladeOpen)</onup>
+            <ondown>9003</ondown>
+            <ondown>ClearProperty(BottomBladeOpen)</ondown>
+            <animation effect="slide" start="0,0" end="-80,0" time="0" condition="!Skin.HasSetting(FloorGlobalSearch) + !Skin.HasSetting(DisableGlobalSearch)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-100" time="200" condition="!String.IsEmpty(Window.Property(BottomBladeOpen))">Conditional</animation>
+            <visible>!VideoPlayer.Content(LiveTV)</visible>
+            <visible>Player.HasMedia</visible>
+            <control type="radiobutton" id="700">
+                <label />
+                <include content="OSDButton">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDPrevTrack" />
+                </include>
+                <onclick>PlayerControl(Previous)</onclick>
+            </control>
+            <control type="radiobutton" id="706">
+                <label />
+                <include content="OSDButton">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDRewind" />
+                </include>
+                <onclick>PlayerControl(Rewind)</onclick>
+                <visible>Window.IsVisible(MusicPlaylist) | Window.IsVisible(VideoPlaylist) | Player.HasVideo</visible>
+            </control>
+            <control type="radiobutton" id="703">
+                <label />
+                <include content="OSDButtonAlt">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDPause" />
+                    <param name="AltTexture" value="OSDPlay" />
+                    <param name="Selected" value="Player.Paused | Player.Forwarding | Player.Rewinding" />
+                </include>
+                <onclick>PlayerControl(Play)</onclick>
+            </control>
+            <control type="radiobutton" id="701">
+                <label />
+                <include content="OSDButton">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDStop" />
+                </include>
+                <onclick>down</onclick>
+                <onclick>PlayerControl(Stop)</onclick>
+            </control>
+            <control type="radiobutton" id="707">
+                <label />
+                <include content="OSDButton">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDForward" />
+                </include>
+                <onclick>PlayerControl(Forward)</onclick>
+                <visible>Window.IsVisible(MusicPlaylist) | Window.IsVisible(VideoPlaylist) | Player.HasVideo</visible>
+            </control>
+            <control type="radiobutton" id="702">
+                <label />
+                <include content="OSDButton">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDNextTrack" />
+                </include>
+                <onclick>PlayerControl(Next)</onclick>
+            </control>
+            <control type="radiobutton" id="704">
+                <label />
+                <include content="OSDButton">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDRepeatOne" />
+                </include>
+                <onclick>PlayerControl(Repeat)</onclick>
+                <visible>!Window.IsVisible(MusicPlaylist) + !Window.IsVisible(VideoPlaylist) + !Player.HasVideo</visible>
+                <visible>Playlist.IsRepeatOne</visible>
+            </control>
+            <control type="radiobutton" id="705">
+                <label />
+                <include content="OSDButton">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDRepeatAll" />
+                </include>
+                <onclick>PlayerControl(Repeat)</onclick>
+                <visible>!Window.IsVisible(MusicPlaylist) + !Window.IsVisible(VideoPlaylist) + !Player.HasVideo</visible>
+                <visible>Playlist.IsRepeat</visible>
+            </control>
+            <control type="radiobutton" id="708">
+                <label />
+                <include content="OSDButton">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDRepeat" />
+                </include>
+                <onclick>PlayerControl(Repeat)</onclick>
+                <visible>!Window.IsVisible(MusicPlaylist) + !Window.IsVisible(VideoPlaylist) + !Player.HasVideo</visible>
+                <visible>!Playlist.IsRepeatOne + !Playlist.IsRepeat</visible>
+            </control>
+            <control type="radiobutton" id="709">
+                <onright>23</onright>
+                <label />
+                <include content="OSDButtonAlt">
+                    <param name="Size" value="75" />
+                    <param name="Texture" value="OSDRandomOff" />
+                    <param name="AltTexture" value="OSDRandomOn" />
+                    <param name="Selected" value="Playlist.IsRandom" />
+                </include>
+                <onclick>PlayerControl(Random)</onclick>
+                <visible>!Window.IsVisible(MusicPlaylist) + !Window.IsVisible(VideoPlaylist) + !Player.HasVideo</visible>
+            </control>
         </control>
 
 	</include>

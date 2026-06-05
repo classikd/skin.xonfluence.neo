@@ -2480,6 +2480,10 @@ msgctxt "#31798"
 msgid "Random TV shows"
 msgstr "Séries TV aléatoires"
 
+msgctxt "#31799"
+msgid "second line"
+msgstr "seconde ligne"
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr "Prévisions sur 36 heures"

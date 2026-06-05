@@ -353,6 +353,241 @@
             </control>
         </control>
     </include>
+
+    <include name="HomeSubMenuControl2">
+        <control type="group" id="9001">
+            <depth>DepthMenu-</depth>
+            <left>0</left>
+            <top>95</top>
+            <onup>9000</onup>
+            <ondown>21</ondown>
+   
+            <control type="group">
+                <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),Videos) + Integer.IsGreater(Container(9010).NumItems,0)</visible>
+                <include>SubMenuAnimation</include>
+                <control type="list" id="9010">
+                    <width>780</width>
+                    <include>SubMenuCommonValues2</include>
+                    <onleft>9010</onleft>
+                    <onright>9010</onright>
+                    <include>SubMenuCommonLayout2</include>
+                    <content>
+                        <include>HomeSubMenuVideos</include>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),Music)</visible>
+                <include>SubMenuAnimation</include>
+                <control type="list" id="9011">
+                    <width>780</width>
+                    <include>SubMenuCommonValues2</include>
+                    <onleft>9011</onleft>
+                    <onright>9011</onright>
+                    <include>SubMenuCommonLayout2</include>
+                    <content>
+                        <include>HomeSubMenuMusic</include>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),Settings)</visible>
+                <include>SubMenuAnimation</include>
+                <control type="list" id="9012">
+                    <width>780</width>
+                    <include>SubMenuCommonValues2</include>
+                    <onleft>9012</onleft>
+                    <onright>9012</onright>
+                    <include>SubMenuCommonLayout2</include>
+                    <content>
+                        <include>HomeSubMenuSystem</include>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),PlayDisc)</visible>
+                <include>SubMenuAnimation</include>
+                <control type="list" id="9013">
+                    <width>780</width>
+                    <include>SubMenuCommonValues2</include>
+                    <onleft>9013</onleft>
+                    <onright>9013</onright>
+                    <include>SubMenuCommonLayout2</include>
+                    <content>
+                        <include>HomeSubMenuPlayDisc</include>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),LiveTV)</visible>
+                <include>SubMenuAnimation</include>
+                <control type="list" id="9014">
+                    <width>780</width>
+                    <include>SubMenuCommonValues2</include>
+                    <onleft>9014</onleft>
+                    <onright>9014</onright>
+                    <include>SubMenuCommonLayout2</include>
+                    <content>
+                        <include>HomeSubMenuLiveTV</include>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),Pictures)</visible>
+                <include>SubMenuAnimation</include>
+                <control type="list" id="9015">
+                    <width>780</width>
+                    <include>SubMenuCommonValues2</include>
+                    <onleft>9015</onleft>
+                    <onright>9015</onright>
+                    <include>SubMenuCommonLayout2</include>
+                    <content>
+                        <include>HomeSubMenuPictures</include>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),Movies)</visible>
+                <include>SubMenuAnimation</include>
+                <control type="list" id="9016">
+                    <width>780</width>
+                    <include>SubMenuCommonValues2</include>
+                    <onleft>9016</onleft>
+                    <onright>9016</onright>
+                    <include>SubMenuCommonLayout2</include>
+                    <content>
+                        <include>HomeSubMenuMovies</include>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),TVShows)</visible>
+                <include>SubMenuAnimation</include>
+                <control type="list" id="9017">
+                    <width>780</width>
+                    <include>SubMenuCommonValues2</include>
+                    <onleft>9017</onleft>
+                    <onright>9017</onright>
+                    <include>SubMenuCommonLayout2</include>
+                    <content>
+                        <include>HomeSubMenuTVShows</include>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),Concerts)</visible>
+                <include>SubMenuAnimation</include>
+                <control type="list" id="9019">
+                    <width>780</width>
+                    <include>SubMenuCommonValues2</include>
+                    <onleft>9019</onleft>
+                    <onright>9019</onright>
+                    <include>SubMenuCommonLayout2</include>
+                    <content>
+                        <include>HomeSubMenuConcerts</include>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),UserOne)</visible>
+                <include>SubMenuAnimation</include>
+                <control type="list" id="9021">
+                    <width>780</width>
+                    <include>SubMenuCommonValues2</include>
+                    <onleft>9021</onleft>
+                    <onright>9021</onright>
+                    <include>SubMenuCommonLayout2</include>
+                    <content>
+                        <include>HomeSubMenuUserOne</include>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),UserTwo)</visible>
+                <include>SubMenuAnimation</include>
+                <control type="list" id="9022">
+                    <width>780</width>
+                    <include>SubMenuCommonValues2</include>
+                    <onleft>9022</onleft>
+                    <onright>9022</onright>
+                    <include>SubMenuCommonLayout2</include>
+                    <content>
+                        <include>HomeSubMenuUserTwo</include>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),UserThree)</visible>
+                <include>SubMenuAnimation</include>
+                <control type="list" id="9023">
+                    <width>780</width>
+                    <include>SubMenuCommonValues2</include>
+                    <onleft>9022</onleft>
+                    <onright>9022</onright>
+                    <include>SubMenuCommonLayout2</include>
+                    <content>
+                        <include>HomeSubMenuUserThree</include>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),UserFour)</visible>
+                <include>SubMenuAnimation</include>
+                <control type="list" id="9024">
+                    <width>780</width>
+                    <include>SubMenuCommonValues2</include>
+                    <onleft>9022</onleft>
+                    <onright>9022</onright>
+                    <include>SubMenuCommonLayout2</include>
+                    <content>
+                        <include>HomeSubMenuUserFour</include>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),UserFive)</visible>
+                <include>SubMenuAnimation</include>
+                <control type="list" id="9025">
+                    <width>780</width>
+                    <include>SubMenuCommonValues2</include>
+                    <onleft>9022</onleft>
+                    <onright>9022</onright>
+                    <include>SubMenuCommonLayout2</include>
+                    <content>
+                        <include>HomeSubMenuUserFive</include>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),Programs)</visible>
+                <include>SubMenuAnimation</include>
+                <control type="list" id="9026">
+                    <width>780</width>
+                    <include>SubMenuCommonValues2</include>
+                    <onleft>9023</onleft>
+                    <onright>9023</onright>
+                    <include>SubMenuCommonLayout2</include>
+                    <content>
+                        <include>HomeSubMenuPrograms</include>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),Radio)</visible>
+                <include>SubMenuAnimation</include>
+                <control type="list" id="9027">
+                    <width>780</width>
+                    <include>SubMenuCommonValues2</include>
+                    <onleft>9024</onleft>
+                    <onright>9024</onright>
+                    <include>SubMenuCommonLayout2</include>
+                    <content>
+                        <include>HomeSubMenuRadio</include>
+                    </content>
+                </control>
+            </control>
+        </control>
+    </include>
 	
     <include name="SubMenuAnimation">
 	    <param name="visibility">ControlGroup(9001).HasFocus</param>
@@ -376,6 +611,18 @@
         <ondown condition="!Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
         <ondown condition="Skin.HasSetting(LowerMainMenuBar)">21</ondown>
         <hitrect x="0" y="0" w="1920" h="66" />
+    </include>
+    <include name="SubMenuCommonValues2">
+        <left>0</left>
+        <top>-11</top>
+        <width>500</width>
+        <height>150</height>
+        <viewtype label="535">list</viewtype>
+        <scrolltime>300</scrolltime>
+        <orientation>Horizontal</orientation>
+        <onup>9000</onup>
+        <ondown>21</ondown>
+        <hitrect x="80" y="0" w="500" h="66" />
     </include>
 	
     <include name="SubMenuCommonLayout">
@@ -449,6 +696,51 @@
             </focusedlayout>
 		</definition>	
     </include>
+    <include name="SubMenuCommonLayout2">
+	    <param name="visibility">ControlGroup(9001).HasFocus</param>
+		<definition>
+            <itemlayout height="150" width="700">
+                <control type="button">
+                    <left>92</left>
+                    <top>21</top>
+                    <width>15</width>
+                    <height>15</height>
+                    <texturefocus>arrow-big-down.png</texturefocus>
+                    <texturenofocus>arrow-big-down.png</texturenofocus>
+                    <visible>!ControlGroup(9001).HasFocus + Control.HasFocus(9000)</visible>
+                </control>
+            </itemlayout>
+            <focusedlayout height="150" width="700">
+                <control type="button">
+                    <left>92</left>
+                    <top>21</top>
+                    <width>15</width>
+                    <height>15</height>
+                    <texturefocus>arrow-big-down.png</texturefocus>
+                    <texturenofocus>arrow-big-down.png</texturenofocus>
+                    <visible>!ControlGroup(9001).HasFocus + Control.HasFocus(9000)</visible>
+                </control>
+                <control type="label">
+                    <left>150</left>
+                    <top>0</top>
+                    <height>60</height>
+                    <width>600</width>
+                    <font>font35</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.label]</label>
+                    <scroll>true</scroll>
+                    <visible>$PARAM[visibility]</visible>
+                    <animation effect="slide" end="-80,0 " time="0" condition="String.IsEmpty(Skin.String(MenuLAF))">Conditional</animation>
+                    <animation effect="slide" end="0,-50 " time="200" condition="$PARAM[visibility]">Conditional</animation>
+                    <animation effect="fade" start="0" end="100" time="200" condition="$PARAM[visibility]">Conditional</animation>
+                </control>
+            </focusedlayout>
+		</definition>	
+    </include>
+
     <include name="HomeSubMenuVideos">
         <item>
             <label>$VAR[SubMenuVideosOne]</label>

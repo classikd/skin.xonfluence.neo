@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     
-	<expression name="showSmallWidget">Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</expression>
-	
+	<expression name="showSmallWidget">Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo) + String.IsEmpty(Skin.String(HomeAppearance))</expression>
+
 	<variable name="UsrDefItemOneWidgetLayout">
         <value condition="String.IsEqual(Skin.String(HomeItem.1.WidgetLayout),Small)">$LOCALIZE[31739]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.1.WidgetLayout),Large)">$LOCALIZE[31740]</value>
@@ -63,6 +63,68 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.15.WidgetLayout),Small)">$LOCALIZE[31739]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.15.WidgetLayout),Large)">$LOCALIZE[31740]</value>
     </variable>
+
+	<variable name="UsrDefItemOneWidgetLayout2">
+        <value condition="String.IsEqual(Skin.String(HomeItem.1.WidgetLayout2),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.1.WidgetLayout2),Large)">$LOCALIZE[31740]</value>
+    </variable>
+	<variable name="UsrDefItemTwoWidgetLayout2">
+        <value condition="String.IsEqual(Skin.String(HomeItem.2.WidgetLayout2),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.2.WidgetLayout2),Large)">$LOCALIZE[31740]</value>
+    </variable>
+	<variable name="UsrDefItemThreeWidgetLayout2">
+        <value condition="String.IsEqual(Skin.String(HomeItem.3.WidgetLayout2),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.3.WidgetLayout2),Large)">$LOCALIZE[31740]</value>
+    </variable>
+	<variable name="UsrDefItemFourWidgetLayout2">
+        <value condition="String.IsEqual(Skin.String(HomeItem.4.WidgetLayout2),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.4.WidgetLayout2),Large)">$LOCALIZE[31740]</value>
+    </variable>
+	<variable name="UsrDefItemFiveWidgetLayout2">
+        <value condition="String.IsEqual(Skin.String(HomeItem.5.WidgetLayout2),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.5.WidgetLayout2),Large)">$LOCALIZE[31740]</value>
+    </variable>
+	<variable name="UsrDefItemSixWidgetLayout2">
+        <value condition="String.IsEqual(Skin.String(HomeItem.6.WidgetLayout2),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.6.WidgetLayout2),Large)">$LOCALIZE[31740]</value>
+    </variable>
+	<variable name="UsrDefItemSevenWidgetLayout2">
+        <value condition="String.IsEqual(Skin.String(HomeItem.7.WidgetLayout2),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.7.WidgetLayout2),Large)">$LOCALIZE[31740]</value>
+    </variable>
+	<variable name="UsrDefItemEightWidgetLayout2">
+        <value condition="String.IsEqual(Skin.String(HomeItem.8.WidgetLayout2),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.8.WidgetLayout2),Large)">$LOCALIZE[31740]</value>
+    </variable>
+	<variable name="UsrDefItemNineWidgetLayout2">
+        <value condition="String.IsEqual(Skin.String(HomeItem.9.WidgetLayout2),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.9.WidgetLayout2),Large)">$LOCALIZE[31740]</value>
+    </variable>
+	<variable name="UsrDefItemTenWidgetLayout2">
+        <value condition="String.IsEqual(Skin.String(HomeItem.10.WidgetLayout2),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.10.WidgetLayout2),Large)">$LOCALIZE[31740]</value>
+    </variable>
+	<variable name="UsrDefItemElevenWidgetLayout2">
+        <value condition="String.IsEqual(Skin.String(HomeItem.11.WidgetLayout2),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.11.WidgetLayout2),Large)">$LOCALIZE[31740]</value>
+    </variable>
+	<variable name="UsrDefItemTwelveWidgetLayout2">
+        <value condition="String.IsEqual(Skin.String(HomeItem.12.WidgetLayout2),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.12.WidgetLayout2),Large)">$LOCALIZE[31740]</value>
+    </variable>
+	<variable name="UsrDefItemThirteenWidgetLayout2">
+        <value condition="String.IsEqual(Skin.String(HomeItem.13.WidgetLayout2),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.13.WidgetLayout2),Large)">$LOCALIZE[31740]</value>
+    </variable>
+	<variable name="UsrDefItemFourteenWidgetLayout2">
+        <value condition="String.IsEqual(Skin.String(HomeItem.14.WidgetLayout2),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.14.WidgetLayout2),Large)">$LOCALIZE[31740]</value>
+    </variable>
+	<variable name="UsrDefItemFifteenWidgetLayout2">
+        <value condition="String.IsEqual(Skin.String(HomeItem.15.WidgetLayout2),Small)">$LOCALIZE[31739]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.15.WidgetLayout2),Large)">$LOCALIZE[31740]</value>
+    </variable>
+
 	
 	<include name="HomeWidgetDisplay">
         <control type="group" id="9003">
@@ -1699,6 +1761,1655 @@
         </control>
     </include>
 	
+	<include name="HomeWidgetDisplay2">
+        <control type="group" id="9008">
+            <top>420</top>
+            <onup>9003</onup>
+            <ondown>603</ondown>
+			<animation effect="fade" start="100" end="0" time="480" condition="[Skin.HasSetting(ShowWidgetsOnFocus) + Control.HasFocus(9000)]">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-60" time="0" condition="String.IsEqual(Container(9000).ListItem.Property(WidgetLayout),Small) | $EXP[showSmallWidget]">Conditional</animation>
+            <visible>!Window.IsVisible(Favourites)</visible>
+            <include>VisibleFadeEffect</include>
+            <animation effect="fade" time="225" delay="1000">WindowOpen</animation>
+            <animation effect="fade" time="150">WindowClose</animation>
+
+			<!-- Tv channels -->
+			<control type="group">
+			    <visible>Pvr.HasTVChannels + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),AllChannels)</visible>
+				<!-- Small widget -->
+				<control type="group">
+				    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8004</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">AllChannelsContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8004</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8005</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">AllChannelsContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8005</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control> 
+
+			<!-- Recent movies -->
+			<control type="group">
+			    <visible>Library.HasContent(Movies) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),RecentMovies)</visible>
+				<!-- Small widget -->
+				<control type="group">
+					<left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8000</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">RecentVideoContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8000</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8001</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">RecentVideoContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8001</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>	
+			
+			<!-- Recent Movies (includes watched) -->
+			<control type="group">
+			    <visible>Library.HasContent(Movies) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),RecentMoviesWatched)</visible>
+				<!-- Small widget -->
+				<control type="group">
+				    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8002</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">RecentWithWatchedVideoContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8002</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8003</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">RecentWithWatchedVideoContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8003</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>
+			
+			<!-- Random Movies -->
+			<control type="group">
+			    <visible>Library.HasContent(Movies) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),RandomMovies)</visible>
+				<!-- Small widget -->
+				<control type="group">
+				    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8004</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">RandomVideoContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8004</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8005</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">RandomVideoContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8005</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>
+			
+			<!-- Suggested Movies -->
+			<control type="group">
+			    <visible>Library.HasContent(Movies) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),SuggestedMovies)</visible>
+				<!-- Small widget -->
+				<control type="group">
+				    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8006</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">SuggestedVideoContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8006</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8007</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">SuggestedVideoContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8007</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>
+			
+            <!-- Unwatched Movies -->
+			<control type="group">
+			    <visible>Library.HasContent(Movies) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),UnWatchedMovies)</visible>
+				<!-- Small widget -->
+				<control type="group">
+				    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8008</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">HomeUnWatchedMovies</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8008</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8009</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">HomeUnWatchedMovies</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8009</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>
+			
+            <!-- Episodes -->
+			<!-- Recent Episodes -->
+			<control type="group">
+			    <visible>Library.HasContent(TVShows) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),RecentEpisodes)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8010</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">RecentTVShowContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8010</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8011</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">RecentTVShowContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8011</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>	
+            
+			<!-- Recent TV show (including watched) -->
+			<control type="group">
+			    <visible>Library.HasContent(TVShows) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),RecentTVShowsWatched)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">801200</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">TvShowsRecentWithWatched</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">801200</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">801300</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">TvShowsRecentWithWatched</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">801300</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>
+            
+            
+			<!-- Random TV show -->
+			<control type="group">
+			    <visible>Library.HasContent(TVShows) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),RandomTVShows)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">801300</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">TvShowsRandom</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">801300</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">801400</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">TvShowsRandom</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">801400</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>
+            
+			<!-- Recent Episodes (including watched) -->
+			<control type="group">
+			    <visible>Library.HasContent(TVShows) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),RecentEpisodesWatched)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8012</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">RecentWithWatchedTVShowContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8012</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8013</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">RecentWithWatchedTVShowContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8013</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>
+			
+			<!-- Random Episodes -->
+			<control type="group">
+			    <visible>Library.HasContent(TVShows) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),RandomEpisodes)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8014</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">RandomTVShowContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8014</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8015</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">RandomTVShowContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8015</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>
+			
+			<!-- Suggested Episodes -->
+			<control type="group">
+			    <visible>Library.HasContent(TVShows) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),SuggestedEpisodes)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8016</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">SuggestedTVShowContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8016</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8017</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">SuggestedTVShowContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8017</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>
+			
+			<!-- Music -->
+			<!-- Recent Albums -->
+            <control type="group">
+			    <visible>Library.HasContent(Music) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),RecentAlbums)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">8018</param>
+                        <param name="Content">RecentAlbumContent</param>
+                    </include>
+                    <include content="SmallWidgetAlbumButtons">
+                        <param name="Control">8018</param>
+                    </include>
+                </control>
+                <!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">8019</param>
+                        <param name="Content">RecentAlbumContent</param>
+                    </include>
+                    <include content="LargeWidgetAlbumButtons">
+                        <param name="Control">8019</param>
+                    </include>
+                </control>
+			</control>
+			
+            <!-- Random Albums -->
+			<control type="group">
+			    <visible>Library.HasContent(Music) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),RandomAlbums)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">8020</param>
+                        <param name="Content">RandomAlbumContent</param>
+                    </include>
+                    <include content="SmallWidgetAlbumButtons">
+                        <param name="Control">8020</param>
+                    </include>
+                </control>
+                <!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">8021</param>
+                        <param name="Content">RandomAlbumContent</param>
+                    </include>
+                    <include content="LargeWidgetAlbumButtons">
+                        <param name="Control">8021</param>
+                    </include>
+                </control>
+			</control>
+			
+			<!-- Suggested Albums -->
+			<control type="group">
+			    <visible>Library.HasContent(Music) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),SuggestedAlbums)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">8022</param>
+                        <param name="Content">SuggestedAlbumContent</param>
+                    </include>
+                    <include content="SmallWidgetAlbumButtons">
+                        <param name="Control">8022</param>
+                    </include>
+                </control>
+                <!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">8023</param>
+                        <param name="Content">SuggestedAlbumContent</param>
+                    </include>
+                    <include content="LargeWidgetAlbumButtons">
+                        <param name="Control">8023</param>
+                    </include>
+                </control>
+			</control>
+			
+			<!-- Music Videos (Concerts) -->
+			<!-- Recent Music Videos -->
+            <control type="group">
+			    <visible>Library.HasContent(MusicVideos) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),RecentConcerts)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8024</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">RecentConcertContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8024</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+                <!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8025</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">RecentConcertContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8025</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+			</control>	
+			
+			<!-- Recent Music Videos (including watched) -->
+			<control type="group">
+			    <visible>Library.HasContent(MusicVideos) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),RecentConcertsWatched)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8026</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">RecentWithWatchedConcertContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8026</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+                <!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8027</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">RecentWithWatchedConcertContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8027</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+			</control>
+			
+			<!-- Random Music Videos -->
+			<control type="group">
+			    <visible>Library.HasContent(MusicVideos) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),RandomConcerts)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8028</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">RandomConcertContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8028</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+                <!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8029</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">RandomConcertContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8029</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+			</control>
+			
+			<!-- Suggested Music Videos -->
+			<control type="group">
+			    <visible>Library.HasContent(MusicVideos) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),SuggestedConcerts)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8030</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">SuggestedConcertContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8030</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+                <!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8031</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">SuggestedConcertContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8031</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+			</control>
+			
+            <!-- Video Playlists -->
+			<control type="group">
+			    <visible>$EXP[IsVideoPlaylist] + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),VideoPlayList)</visible>
+			    <!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+					<visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">80321</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListOneContent</param>
+                        <param name="Visible">Container(9000).HasFocus(1)</param>
+                    </include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">80322</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListTwoContent</param>
+                        <param name="Visible">Container(9000).HasFocus(2)</param>
+                    </include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">80323</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListThreeContent</param>
+                        <param name="Visible">Container(9000).HasFocus(3)</param>
+                    </include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">80324</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListFourContent</param>
+                        <param name="Visible">Container(9000).HasFocus(4)</param>
+                    </include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">80325</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListFiveContent</param>
+                        <param name="Visible">Container(9000).HasFocus(5)</param>
+                    </include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">80326</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListSixContent</param>
+                        <param name="Visible">Container(9000).HasFocus(6)</param>
+                    </include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">80327</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListSevenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(7)</param>
+                    </include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">80328</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListEightContent</param>
+                        <param name="Visible">Container(9000).HasFocus(8)</param>
+                    </include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">80329</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListNineContent</param>
+                        <param name="Visible">Container(9000).HasFocus(9)</param>
+                    </include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">803210</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListTenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(10)</param>
+                    </include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">803211</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListElevenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(11)</param>
+                    </include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">803212</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListTwelveContent</param>
+                        <param name="Visible">Container(9000).HasFocus(12)</param>
+                    </include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">803213</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListThirteenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(13)</param>
+                    </include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">803214</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListFourteenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(14)</param>
+                    </include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">803215</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListFifteenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(15)</param>
+                    </include>
+					<include content="VideoSmallWidgetButtons">
+                        <param name="Control">80321</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(1)</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">80322</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(2)</param>
+                    </include>
+					<include content="VideoSmallWidgetButtons">
+                        <param name="Control">80323</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(3)</param>
+                    </include>
+					<include content="VideoSmallWidgetButtons">
+                        <param name="Control">80324</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(4)</param>
+                    </include>
+					<include content="VideoSmallWidgetButtons">
+                        <param name="Control">80325</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(5)</param>
+                    </include>
+					<include content="VideoSmallWidgetButtons">
+                        <param name="Control">80326</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(6)</param>
+                    </include>
+					<include content="VideoSmallWidgetButtons">
+                        <param name="Control">80327</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(7)</param>
+                    </include>
+					<include content="VideoSmallWidgetButtons">
+                        <param name="Control">80328</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(8)</param>
+                    </include>
+					<include content="VideoSmallWidgetButtons">
+                        <param name="Control">80329</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(9)</param>
+                    </include>
+					<include content="VideoSmallWidgetButtons">
+                        <param name="Control">803210</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(10)</param>
+                    </include>
+					<include content="VideoSmallWidgetButtons">
+                        <param name="Control">803211</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(11)</param>
+                    </include>
+					<include content="VideoSmallWidgetButtons">
+                        <param name="Control">803212</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(12)</param>
+                    </include>
+					<include content="VideoSmallWidgetButtons">
+                        <param name="Control">803213</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(13)</param>
+                    </include>
+					<include content="VideoSmallWidgetButtons">
+                        <param name="Control">803214</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(14)</param>
+                    </include>
+					<include content="VideoSmallWidgetButtons">
+                        <param name="Control">803215</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(15)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">80331</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListOneContent</param>
+                        <param name="Visible">Container(9000).HasFocus(1)</param>
+                    </include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">80332</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListTwoContent</param>
+                        <param name="Visible">Container(9000).HasFocus(2)</param>
+                    </include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">80333</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListThreeContent</param>
+                        <param name="Visible">Container(9000).HasFocus(3)</param>
+                    </include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">80334</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListFourContent</param>
+                        <param name="Visible">Container(9000).HasFocus(4)</param>
+                    </include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">80335</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListFiveContent</param>
+                        <param name="Visible">Container(9000).HasFocus(5)</param>
+                    </include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">80336</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListSixContent</param>
+                        <param name="Visible">Container(9000).HasFocus(6)</param>
+                    </include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">80337</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListSevenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(7)</param>
+                    </include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">80338</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListEightContent</param>
+                        <param name="Visible">Container(9000).HasFocus(8)</param>
+                    </include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">80339</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListNineContent</param>
+                        <param name="Visible">Container(9000).HasFocus(9)</param>
+                    </include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">803310</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListTenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(10)</param>
+                    </include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">803311</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListElevenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(11)</param>
+                    </include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">803312</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListTwelveContent</param>
+                        <param name="Visible">Container(9000).HasFocus(12)</param>
+                    </include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">803313</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListThirteenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(13)</param>
+                    </include>
+                   <include content="VideoLargeWidgetLayout">
+                        <param name="Control">803314</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListFourteenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(14)</param>
+                    </include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">803315</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListFifteenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(15)</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">80331</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(1)</param>
+                    </include>
+					<include content="VideoLargeWidgetButtons">
+                        <param name="Control">80332</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(2)</param>
+                    </include>
+					<include content="VideoLargeWidgetButtons">
+                        <param name="Control">80333</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(3)</param>
+                    </include>
+					<include content="VideoLargeWidgetButtons">
+                        <param name="Control">80334</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(4)</param>
+                    </include>
+					<include content="VideoLargeWidgetButtons">
+                        <param name="Control">80335</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(5)</param>
+                    </include>
+					<include content="VideoLargeWidgetButtons">
+                        <param name="Control">80336</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(6)</param>
+                    </include>
+					<include content="VideoLargeWidgetButtons">
+                        <param name="Control">80337</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(7)</param>
+                    </include>
+					<include content="VideoLargeWidgetButtons">
+                        <param name="Control">80338</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(8)</param>
+                    </include>
+					<include content="VideoLargeWidgetButtons">
+                        <param name="Control">80339</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(9)</param>
+                    </include>
+					<include content="VideoLargeWidgetButtons">
+                        <param name="Control">803310</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(10)</param>
+                    </include>
+					<include content="VideoLargeWidgetButtons">
+                        <param name="Control">803311</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(11)</param>
+                    </include>
+					<include content="VideoLargeWidgetButtons">
+                        <param name="Control">803312</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(12)</param>
+                    </include>
+					<include content="VideoLargeWidgetButtons">
+                        <param name="Control">803313</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(13)</param>
+                    </include>
+					<include content="VideoLargeWidgetButtons">
+                        <param name="Control">803314</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(14)</param>
+                    </include>
+					<include content="VideoLargeWidgetButtons">
+                        <param name="Control">803315</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(15)</param>
+                    </include>
+                </control>
+			</control>	
+			
+			<!-- Music Playlists -->
+            <control type="group">
+			    <visible>$EXP[IsMusicPlaylist] + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),MusicPlayList)</visible>
+			    <!-- Small widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">80341</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListOneContent</param>
+                        <param name="Visible">Container(9000).HasFocus(1)</param>
+                    </include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">80342</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListTwoContent</param>
+                        <param name="Visible">Container(9000).HasFocus(2)</param>
+                    </include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">80343</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListThreeContent</param>
+                        <param name="Visible">Container(9000).HasFocus(3)</param>
+                    </include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">80344</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListFourContent</param>
+                        <param name="Visible">Container(9000).HasFocus(4)</param>
+                    </include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">80345</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListFiveContent</param>
+                        <param name="Visible">Container(9000).HasFocus(5)</param>
+                    </include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">80346</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListSixContent</param>
+                        <param name="Visible">Container(9000).HasFocus(6)</param>
+                    </include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">80347</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListSevenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(7)</param>
+                    </include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">80348</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListEightContent</param>
+                        <param name="Visible">Container(9000).HasFocus(8)</param>
+                    </include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">80349</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListNineContent</param>
+                        <param name="Visible">Container(9000).HasFocus(9)</param>
+                    </include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">803410</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListTenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(10)</param>
+                    </include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">803411</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListElevenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(11)</param>
+                    </include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">803412</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListTwelveContent</param>
+                        <param name="Visible">Container(9000).HasFocus(12)</param>
+                    </include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">803413</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListThirteenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(13)</param>
+                    </include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">803414</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListFourteenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(14)</param>
+                    </include>
+                    <include content="MusicSmallWidgetLayout">
+                        <param name="Control">803415</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListFifteenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(15)</param>
+                    </include>
+                    <include content="SmallWidgetAlbumButtons">
+                        <param name="Control">80341</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(1)</param>
+                    </include>
+					<include content="SmallWidgetAlbumButtons">
+                        <param name="Control">80342</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(2)</param>
+                    </include>
+					<include content="SmallWidgetAlbumButtons">
+                        <param name="Control">80343</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(3)</param>
+                    </include>
+					<include content="SmallWidgetAlbumButtons">
+                        <param name="Control">80344</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(4)</param>
+                    </include>
+					<include content="SmallWidgetAlbumButtons">
+                        <param name="Control">80345</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(5)</param>
+                    </include>
+					<include content="SmallWidgetAlbumButtons">
+                        <param name="Control">80346</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(6)</param>
+                    </include>
+					<include content="SmallWidgetAlbumButtons">
+                        <param name="Control">80347</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(7)</param>
+                    </include>
+					<include content="SmallWidgetAlbumButtons">
+                        <param name="Control">80348</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(8)</param>
+                    </include>
+					<include content="SmallWidgetAlbumButtons">
+                        <param name="Control">80349</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(9)</param>
+                    </include>
+					<include content="SmallWidgetAlbumButtons">
+                        <param name="Control">803410</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(10)</param>
+                    </include>
+					<include content="SmallWidgetAlbumButtons">
+                        <param name="Control">803411</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(11)</param>
+                    </include>
+					<include content="SmallWidgetAlbumButtons">
+                        <param name="Control">803412</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(12)</param>
+                    </include>
+					<include content="SmallWidgetAlbumButtons">
+                        <param name="Control">803413</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(13)</param>
+                    </include>
+					<include content="SmallWidgetAlbumButtons">
+                        <param name="Control">803414</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(14)</param>
+                    </include>
+					<include content="SmallWidgetAlbumButtons">
+                        <param name="Control">803415</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(15)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+					<visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+				    <include>VisibleFadeEffect</include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">80351</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListOneContent</param>
+                        <param name="Visible">Container(9000).HasFocus(1)</param>
+                    </include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">80352</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListTwoContent</param>
+                        <param name="Visible">Container(9000).HasFocus(2)</param>
+                    
+                    </include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">80353</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListThreeContent</param>
+                        <param name="Visible">Container(9000).HasFocus(3)</param>
+                    
+                    </include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">80354</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListFourContent</param>
+                        <param name="Visible">Container(9000).HasFocus(4)</param>
+                    
+                    </include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">80355</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListFiveContent</param>
+                        <param name="Visible">Container(9000).HasFocus(5)</param>
+                    
+                    </include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">80356</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListSixContent</param>
+                        <param name="Visible">Container(9000).HasFocus(6)</param>
+                    
+                    </include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">80357</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListSevenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(7)</param>
+                    
+                    </include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">80358</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListEightContent</param>
+                        <param name="Visible">Container(9000).HasFocus(8)</param>
+                    
+                    </include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">80359</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListNineContent</param>
+                        <param name="Visible">Container(9000).HasFocus(9)</param>
+                    
+                    </include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">803510</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListTenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(10)</param>
+                    
+                    </include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">803511</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListElevenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(11)</param>
+                    
+                    </include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">803512</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListTwelveContent</param>
+                        <param name="Visible">Container(9000).HasFocus(12)</param>
+                    
+                    </include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">803513</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListThirteenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(13)</param>
+                    
+                    </include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">803514</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListFourteenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(14)</param>
+                    
+                    </include>
+                    <include content="MusicLargeWidgetLayout">
+                        <param name="Control">803515</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">PlayListFifteenContent</param>
+                        <param name="Visible">Container(9000).HasFocus(15)</param>
+                    
+                    </include>
+                    <include content="LargeWidgetAlbumButtons">
+                        <param name="Control">80351</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(1)</param>
+                    </include>
+					<include content="LargeWidgetAlbumButtons">
+                        <param name="Control">80352</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(2)</param>
+                    </include>
+					<include content="LargeWidgetAlbumButtons">
+                        <param name="Control">80353</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(3)</param>
+                    </include>
+					<include content="LargeWidgetAlbumButtons">
+                        <param name="Control">80354</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(4)</param>
+                    </include>
+					<include content="LargeWidgetAlbumButtons">
+                        <param name="Control">80355</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(5)</param>
+                    </include>
+					<include content="LargeWidgetAlbumButtons">
+                        <param name="Control">80356</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(6)</param>
+                    </include>
+					<include content="LargeWidgetAlbumButtons">
+                        <param name="Control">80357</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(7)</param>
+                    </include>
+					<include content="LargeWidgetAlbumButtons">
+                        <param name="Control">80358</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(8)</param>
+                    </include>
+					<include content="LargeWidgetAlbumButtons">
+                        <param name="Control">80359</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(9)</param>
+                    </include>
+					<include content="LargeWidgetAlbumButtons">
+                        <param name="Control">803510</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(10)</param>
+                    </include>
+					<include content="LargeWidgetAlbumButtons">
+                        <param name="Control">803511</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(11)</param>
+                    </include>
+					<include content="LargeWidgetAlbumButtons">
+                        <param name="Control">803512</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(12)</param>
+                    </include>
+					<include content="LargeWidgetAlbumButtons">
+                        <param name="Control">803513</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(13)</param>
+                    </include>
+					<include content="LargeWidgetAlbumButtons">
+                        <param name="Control">803514</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(14)</param>
+                    </include>
+					<include content="LargeWidgetAlbumButtons">
+                        <param name="Control">803515</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="Visible">Container(9000).HasFocus(15)</param>
+                    </include>
+                </control>
+			</control>	
+            
+            <!-- Weather -->
+            <control type="group">
+			    <visible>!String.IsEmpty(Weather.Plugin) + Weather.IsFetched</visible>
+                <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),Weather)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="WeatherSmallWidgetLayout">
+                        <param name="Control">8036</param>
+                        <param name="Content">WeatherForecastContent</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="WeatherLargeWidgetLayout">
+                        <param name="Control">8037</param>
+                        <param name="Content">WeatherForecastContent</param>
+                    </include>
+                </control>
+			</control>
+
+            <!-- Weather Extended -->
+            <control type="group">
+			    <visible>!String.IsEmpty(Weather.Plugin) + Weather.IsFetched</visible>
+                <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),WeatherExtended)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="WeatherSmallWidgetLayout">
+                        <param name="Control">80362</param>
+                        <param name="Content">WeatherExtendedForecastContent</param>
+                    </include>
+					<include content="SmallWidgetThumbButtons">
+                        <param name="Control">80362</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="WeatherLargeWidgetLayout">
+                        <param name="Control">80372</param>
+                        <param name="Content">WeatherExtendedForecastContent</param>
+                    </include>
+					<include content="LargeWidgetThumbButtons">
+                        <param name="Control">80372</param>
+                    </include>
+                </control>
+			</control>			
+			
+			<!-- Next Aired-->
+            <control type="group">
+			    <visible>!Skin.HasSetting(DisableTVNextAired) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),NextAired)</visible>
+				<!-- Small widget -->
+				<control type="group">
+					<left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout" condition="!String.IsEmpty(Window(home).Property(NextAired.1.NextDay))">
+                        <param name="Control">8038</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">NextAiredContent</param>
+                    </include>
+				    <include content="VideoSmallWidgetLayout" condition="String.IsEmpty(Window(home).Property(NextAired.1.NextDay)) + System.HasAddon(script.embuary.info)">
+                        <param name="Control">8038</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+					    <param name="embuaryinfonextaired">true</param>
+                        <param name="Content">EmbuaryInfoNextAiredContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons" condition="!String.IsEmpty(Window(home).Property(NextAired.1.NextDay))">
+                        <param name="Control">8038</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+					<include content="VideoSmallWidgetButtons" condition="String.IsEmpty(Window(home).Property(NextAired.1.NextDay)) + System.HasAddon(script.embuary.info)">
+                        <param name="Control">8038</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+						<param name="embuaryinfonextaired">true</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout" condition="!String.IsEmpty(Window(home).Property(NextAired.1.NextDay))">
+                        <param name="Control">8039</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">NextAiredContent</param>
+                    </include>
+				    <include content="VideoLargeWidgetLayout" condition="String.IsEmpty(Window(home).Property(NextAired.1.NextDay)) + System.HasAddon(script.embuary.info)">
+                        <param name="Control">8039</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="embuaryinfonextaired">true</param>
+						<param name="Content">EmbuaryInfoNextAiredContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8039</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>	
+            
+			<!--UPnP-->
+			<!-- Recent Movies -->
+			<control type="group">
+			    <visible>Skin.HasSetting(UPnP_Mode) + Skin.String(UPnPServer,Kodi) + String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),UPnPMovies)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8040</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">UPnP_RecentMovies</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8040</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8041</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">UPnP_RecentMovies</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8041</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>	
+			
+            <!-- Video Node-->
+			<control type="group">
+			    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),VideoNode)</visible>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8042</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">VideoNodeContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8042</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8043</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">VideoNodeContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8043</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>
+            
+            <!-- Custom Widgets-->
+			<control type="group">
+			    <include>CustomWidgetVisibility</include>
+				<!-- Small widget -->
+				<control type="group">
+                    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8044</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">CustomWidgetContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8044</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+					<include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8045</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">CustomWidgetContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8045</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>
+        </control>
+    </include>
+	
     <include name="WeatherSmallWidgetLayout">
         <param name="Control" default="8000" />
         <param name="Content" default="" />
@@ -1714,10 +3425,13 @@
                 <height>330</height>
                 <onleft>$PARAM[Control]</onleft>
                 <onright>$PARAM[Control]</onright>
-                <onup>21</onup>
-                <ondown condition="Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(loorGlobalSearch)">610</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(loorGlobalSearch)]">603</ondown>
+                <onup condition="ControlGroup(9008).HasFocus">9003</onup>
+                <onup condition="!ControlGroup(9008).HasFocus">21</onup>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(loorGlobalSearch)">610</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(loorGlobalSearch)]">603</ondown>
+                <ondown condition="ControlGroup(9003).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9008</ondown>
+                <ondown condition="ControlGroup(9008).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9000</ondown>
                 <viewtype label="535">list</viewtype>
                 <scrolltime>200</scrolltime>
                 <orientation>Horizontal</orientation>
@@ -1933,10 +3647,13 @@
                 <height>428</height>
                 <onleft>$PARAM[Control]</onleft>
                 <onright>$PARAM[Control]</onright>
-                <onup>21</onup>
-                <ondown condition="Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(loorGlobalSearch)">610</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(loorGlobalSearch)]">603</ondown>
+                <onup condition="ControlGroup(9008).HasFocus">9003</onup>
+                <onup condition="!ControlGroup(9008).HasFocus">21</onup>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(loorGlobalSearch)">610</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(loorGlobalSearch)]">603</ondown>
+                <ondown condition="ControlGroup(9003).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9008</ondown>
+                <ondown condition="ControlGroup(9008).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9000</ondown>
                 <viewtype label="535">list</viewtype>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>Horizontal</orientation>
@@ -2147,10 +3864,13 @@
                 <height>428</height>
                 <onleft>$PARAM[Control]</onleft>
                 <onright>$PARAM[Control]</onright>
-                <onup>21</onup>
-                <ondown condition="Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(loorGlobalSearch)">610</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(loorGlobalSearch)]">603</ondown>
+                <onup condition="ControlGroup(9008).HasFocus">9003</onup>
+                <onup condition="!ControlGroup(9008).HasFocus">21</onup>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(loorGlobalSearch)">610</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(loorGlobalSearch)]">603</ondown>
+                <ondown condition="ControlGroup(9003).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9008</ondown>
+                <ondown condition="ControlGroup(9008).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9000</ondown>
                 <viewtype label="535">list</viewtype>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>Horizontal</orientation>
@@ -2312,10 +4032,13 @@
                 <height>330</height>
                 <onleft>$PARAM[Control]</onleft>
                 <onright>$PARAM[Control]</onright>
-                <onup>21</onup>
-                <ondown condition="Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(loorGlobalSearch)">610</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(loorGlobalSearch)]">603</ondown>
+                <onup condition="ControlGroup(9008).HasFocus">9003</onup>
+                <onup condition="!ControlGroup(9008).HasFocus">21</onup>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(loorGlobalSearch)">610</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(loorGlobalSearch)]">603</ondown>
+                <ondown condition="ControlGroup(9003).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9008</ondown>
+                <ondown condition="ControlGroup(9008).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9000</ondown>
                 <viewtype label="535">list</viewtype>
                 <scrolltime>200</scrolltime>
                 <orientation>Horizontal</orientation>
@@ -2505,10 +4228,13 @@
                 <height>428</height>
                 <onleft>$PARAM[Control]</onleft>
                 <onright>$PARAM[Control]</onright>
-                <onup>21</onup>
-                <ondown condition="Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSettingFloorGlobalSearch)">610</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSettingFloorGlobalSearch)]">603</ondown>
+                <onup condition="ControlGroup(9008).HasFocus">9003</onup>
+                <onup condition="!ControlGroup(9008).HasFocus">21</onup>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(loorGlobalSearch)">610</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(loorGlobalSearch)]">603</ondown>
+                <ondown condition="ControlGroup(9003).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9008</ondown>
+                <ondown condition="ControlGroup(9008).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9000</ondown>
                 <viewtype label="535">list</viewtype>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>Horizontal</orientation>
@@ -2739,11 +4465,14 @@
                 <height>330</height>
                 <onleft>$PARAM[Control]</onleft>
                 <onright>$PARAM[Control]</onright>
-                <onup>21</onup>
-                <ondown condition="Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(FloorGlobalSearch)">610</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(FloorGlobalSearch)]">603</ondown>
-				<viewtype label="535">list</viewtype>
+                <onup condition="ControlGroup(9008).HasFocus">9003</onup>
+                <onup condition="!ControlGroup(9008).HasFocus">21</onup>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(loorGlobalSearch)">610</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(loorGlobalSearch)]">603</ondown>
+                <ondown condition="ControlGroup(9003).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9008</ondown>
+                <ondown condition="ControlGroup(9008).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9000</ondown>
+                <viewtype label="535">list</viewtype>
                 <scrolltime>200</scrolltime>
                 <orientation>Horizontal</orientation>
 
@@ -3007,11 +4736,14 @@
                 <height>428</height>
                 <onleft>$PARAM[Control]</onleft>
                 <onright>$PARAM[Control]</onright>
-                <onup>21</onup>
-                <ondown condition="Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(FloorGlobalSearch)">610</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(FloorGlobalSearch)]">603</ondown>
-				<viewtype label="535">list</viewtype>
+                <onup condition="ControlGroup(9008).HasFocus">9003</onup>
+                <onup condition="!ControlGroup(9008).HasFocus">21</onup>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(loorGlobalSearch)">610</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(loorGlobalSearch)]">603</ondown>
+                <ondown condition="ControlGroup(9003).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9008</ondown>
+                <ondown condition="ControlGroup(9008).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9000</ondown>
+                <viewtype label="535">list</viewtype>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>Horizontal</orientation>
        
@@ -3241,11 +4973,14 @@
                 <height>428</height>
                 <onleft>$PARAM[Control]</onleft>
                 <onright>$PARAM[Control]</onright>
-                <onup>21</onup>
-                <ondown condition="Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(FloorGlobalSearch)">610</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(FloorGlobalSearch)]">603</ondown>
-				<viewtype label="535">list</viewtype>
+                <onup condition="ControlGroup(9008).HasFocus">9003</onup>
+                <onup condition="!ControlGroup(9008).HasFocus">21</onup>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(loorGlobalSearch)">610</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(loorGlobalSearch)]">603</ondown>
+                <ondown condition="ControlGroup(9003).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9008</ondown>
+                <ondown condition="ControlGroup(9008).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9000</ondown>
+                <viewtype label="535">list</viewtype>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>Horizontal</orientation>
        
@@ -3618,11 +5353,14 @@
                 <height>330</height>
                 <onleft>PARAM[Control]</onleft>
                 <onright>PARAM[Control]</onright>
-                <onup>21</onup>
-                <ondown condition="Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(FloorGlobalSearch)">610</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(FloorGlobalSearch)]">603</ondown>
-				<viewtype label="535">list</viewtype>
+                <onup condition="ControlGroup(9008).HasFocus">9003</onup>
+                <onup condition="!ControlGroup(9008).HasFocus">21</onup>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(loorGlobalSearch)">610</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(loorGlobalSearch)]">603</ondown>
+                <ondown condition="ControlGroup(9003).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9008</ondown>
+                <ondown condition="ControlGroup(9008).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9000</ondown>
+                <viewtype label="535">list</viewtype>
                 <scrolltime>200</scrolltime>
                 <orientation>Horizontal</orientation>
 
@@ -4293,10 +6031,13 @@
                 <height>428</height>
                 <onleft>$PARAM[Control]</onleft>
                 <onright>$PARAM[Control]</onright>
-                <onup>21</onup>
-                <ondown condition="Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(loorGlobalSearch)">610</ondown>
-                <ondown condition="!Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(loorGlobalSearch)]">603</ondown>
+                <onup condition="ControlGroup(9008).HasFocus">9003</onup>
+                <onup condition="!ControlGroup(9008).HasFocus">21</onup>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch) + !Skin.HasSetting(loorGlobalSearch)">610</ondown>
+                <ondown condition="!String.IsEqual(Skin.String(HomeAppearance),Home2) + !Skin.HasSetting(LowerMainMenuBar) + [Skin.HasSetting(DisableGlobalSearch) | Skin.HasSetting(loorGlobalSearch)]">603</ondown>
+                <ondown condition="ControlGroup(9003).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9008</ondown>
+                <ondown condition="ControlGroup(9008).HasFocus + String.IsEqual(Skin.String(HomeAppearance),Home2)">9000</ondown>
 				<viewtype label="535">list</viewtype>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>Horizontal</orientation>

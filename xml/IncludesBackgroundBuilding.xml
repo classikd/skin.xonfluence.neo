@@ -507,7 +507,9 @@
             <animation effect="slide" time="200" condition="Window.Next(Home)">WindowClose</animation>
             <include>HomeTransparentEffect</include>
             <animation effect="fade" start="100" end="90" time="0" condition="String.IsEmpty(Skin.String(HomeTrans)) + Skin.String(HomeFloor,Transparent)">Conditional</animation>
-            <visible>!String.IsEmpty(Skin.String(HomeFloor)) + Window.IsActive(home)</visible>
+            <visible>!String.IsEmpty(Skin.String(HomeFloor))</visible>
+            <visible>Window.IsActive(home)</visible>
+            <visible>!Skin.String(HomeAppearance,Home2)</visible>
         </control>
 
         <!-- Fullscreen bg media  -->
