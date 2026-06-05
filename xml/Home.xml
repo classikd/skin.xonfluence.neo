@@ -113,7 +113,8 @@
         
             <!-- HOME 2 -->
             <!-- Menu -->
-			<include condition="Skin.String(HomeAppearance,Home2)">FixedHomeMainMenu2</include>
+			<include condition="Skin.String(HomeAppearance,Home2) +  Skin.HasSetting(WrapAroundHomeMenu)">WrapHomeMainMenu2</include>
+			<include condition="Skin.String(HomeAppearance,Home2) + !Skin.HasSetting(WrapAroundHomeMenu)">FixedHomeMainMenu2</include>
             <!-- Submenu -->
 			<include condition="Skin.String(HomeAppearance,Home2)">HomeSubMenuControl2</include>
         

@@ -35,6 +35,42 @@
     </include>
 
 
+    <include name="WrapHomeMainMenu2">
+
+        <control type="button">
+            <left>92</left>
+            <top>3</top>
+            <width>15</width>
+            <height>15</height>
+            <texturefocus>arrow-big-up.png</texturefocus>
+            <texturenofocus>arrow-big-up.png</texturenofocus>
+            <visible>ControlGroup(9001).HasFocus</visible>
+        </control>
+
+        <!-- menu arrows -->
+        <control type="group">
+            <visible>Control.HasFocus(9000) | ControlGroup(9001).HasFocus</visible>
+            <control type="button">
+                <left>40</left>
+                <top>54</top>
+                <width>15</width>
+                <height>15</height>
+                <texturefocus>arrow-big-left.png</texturefocus>
+                <texturenofocus>arrow-big-left.png</texturenofocus>
+            </control>
+        </control>
+
+        <control type="wraplist" id="9000">
+            <include condition="!Skin.HasSetting(Use.SkinShortcuts)">HomeGraphMainMenuSys2</include>
+			<include condition="Skin.HasSetting(Use.SkinShortcuts)" content="HomeGraphMainMenuSys2">
+			    <param name="menuitemicon">$INFO[ListItem.Icon]</param>
+			</include>
+            <include condition="!Skin.HasSetting(Use.SkinShortcuts)">HomeMainMenuContent</include>
+			<include condition="Skin.HasSetting(Use.SkinShortcuts)">HomeMainMenuSkinShortcutsContent</include>
+            <visible>Skin.HasSetting(WrapAroundHomeMenu)</visible>
+        </control>
+    </include>
+
     <include name="FixedHomeMainMenu2">
 
         <control type="button">
@@ -67,6 +103,7 @@
 			</include>
             <include condition="!Skin.HasSetting(Use.SkinShortcuts)">HomeMainMenuContent</include>
 			<include condition="Skin.HasSetting(Use.SkinShortcuts)">HomeMainMenuSkinShortcutsContent</include>
+            <visible>!Skin.HasSetting(WrapAroundHomeMenu)</visible>
       </control>
     </include>
 	
@@ -368,14 +405,14 @@
 		<definition>
             <left>0</left>
             <top>0</top>
-            <width>1845</width>
+            <width>700</width>
             <height>138</height>
             <onleft condition="!Skin.HasSetting(FixedEndingMenu)">9000</onleft>
             <onright condition="!Skin.HasSetting(FixedEndingMenu)">9000</onright>
             <onup>9008</onup>
             <ondown condition="!Skin.HasSetting(AutoVisableSubMenu)">9001</ondown>
             <scrolltime>300</scrolltime>
-            <focusposition>3</focusposition>
+            <focusposition>0</focusposition>
             <orientation>Horizontal</orientation>
             <itemlayout height="100" width="1845">
 

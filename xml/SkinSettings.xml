@@ -904,6 +904,7 @@
                                 <onclick condition="String.IsEqual(Container(9011).Position,12)+String.IsEmpty(Skin.String(MenuLAF))">Skin.SetString(InitialMenuItem,11)</onclick>
                                 <onclick condition="String.IsEqual(Container(9011).Position,13)+String.IsEmpty(Skin.String(MenuLAF))">Skin.SetString(InitialMenuItem,12)</onclick>
                                 <onclick condition="String.IsEqual(Container(9011).Position,14)+String.IsEmpty(Skin.String(MenuLAF))">Skin.SetString(InitialMenuItem,-2)</onclick>
+                                
                                 <onclick condition="String.IsEqual(Container(9011).Position,0)+!String.IsEmpty(Skin.String(MenuLAF))">Skin.SetString(InitialMenuItem,-2)</onclick>
                                 <onclick condition="String.IsEqual(Container(9011).Position,1)+!String.IsEmpty(Skin.String(MenuLAF))">Skin.SetString(InitialMenuItem,-1)</onclick>
                                 <onclick condition="String.IsEqual(Container(9011).Position,2)+!String.IsEmpty(Skin.String(MenuLAF))">Skin.SetString(InitialMenuItem,0)</onclick>
@@ -945,7 +946,6 @@
                                 <onclick>Skin.Reset(FixedEndingMenu)</onclick>
                                 <selected>Skin.HasSetting(WrapAroundHomeMenu)</selected>
                                 <include>MenuButton</include>
-                                <visible>!Skin.String(HomeAppearance,Home2)</visible>
                             </control>
                             <control type="radiobutton" id="139">
                                 <description>enable fixed ends menu</description>
@@ -959,7 +959,6 @@
                                 <selected>!Skin.HasSetting(FixedEndingMenu)</selected>
                                 <include>MenuButton</include>
                                 <enable>!Skin.HasSetting(WrapAroundHomeMenu)</enable>
-                                <visible>!Skin.String(HomeAppearance,Home2)</visible>
                             </control>
                             <control type="radiobutton" id="140">
                                 <description>hide horizontal submenu</description>
