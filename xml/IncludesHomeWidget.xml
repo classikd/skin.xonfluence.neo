@@ -6909,55 +6909,33 @@
 		<param name="visibility">true</param>
         <definition>
 		    <control type="group">
-			    <visible>$PARAM[embuaryinfonextaired] + $PARAM[visibility]</visible>
+			    <visible>$PARAM[visibility]</visible>
                 <top>155</top>
-				<control type="button">
+				<control type="button" id="5130003">
                     <left>-5</left>
                     <width>40</width>
                     <height>50</height>
                     <texturefocus>arrow-big-left.png</texturefocus>
                     <texturenofocus>arrow-big-left.png</texturenofocus>
-                    <include>VisibleFadeEffect</include>
                     <onclick>Control.Move($PARAM[Control],-1)</onclick>
-                    <visible>[system.getbool(input.enablemouse) | Control.HasFocus($PARAM[Control])] + Container($PARAM[Control]).HasPrevious</visible>
+                    <visible>Control.HasFocus($PARAM[Control]) | Control.HasFocus(5130003) | Control.HasFocus(5130004)</visible>
+                    <visible>Container($PARAM[Control]).HasPrevious</visible>
+                    <animation effect="fade" start="0" end="100" time="200">Visible</animation>
+                    <animation effect="fade" start="100" end="0" time="200" delay="1000">Hidden</animation>
                 </control>
-                <control type="button">
+                <control type="button" id="5130004">
                     <left>1850</left>
                     <width>40</width>
                     <height>50</height>
                     <texturefocus>arrow-big-right.png</texturefocus>
                     <texturenofocus>arrow-big-right.png</texturenofocus>
-                    <include>VisibleFadeEffect</include>
                     <onclick>Control.Move($PARAM[Control],1)</onclick>
-                    <visible>[system.getbool(input.enablemouse) | Control.HasFocus($PARAM[Control])] + Container($PARAM[Control]).HasNext</visible>
-                    <include>VisibleFadeEffect</include>
+                    <visible>Control.HasFocus($PARAM[Control]) | Control.HasFocus(5130003) | Control.HasFocus(5130004)</visible>
+                    <visible>Container($PARAM[Control]).HasNext</visible>
+                    <animation effect="fade" start="0" end="100" time="200">Visible</animation>
+                    <animation effect="fade" start="100" end="0" time="200" delay="1000">Hidden</animation>
                 </control>
-			</control>
-            <control type="group">
-			    <visible>!$PARAM[embuaryinfonextaired] + $PARAM[visibility]</visible>
-				<top>155</top>
-                <control type="button">
-                    <left>-5</left>
-                    <width>40</width>
-                    <height>50</height>
-                    <texturefocus>arrow-big-left.png</texturefocus>
-                    <texturenofocus>arrow-big-left.png</texturenofocus>
-                    <include>VisibleFadeEffect</include>
-                    <onclick>Control.Move($PARAM[Control],-1)</onclick>
-                    <visible>[system.getbool(input.enablemouse) | Control.HasFocus($PARAM[Control])] + Container($PARAM[Control]).HasPrevious</visible>
-                </control>
-                <control type="button">
-                    <left>1850</left>
-                    <width>40</width>
-                    <height>50</height>
-                    <texturefocus>arrow-big-right.png</texturefocus>
-                    <texturenofocus>arrow-big-right.png</texturenofocus>
-                    <include>VisibleFadeEffect</include>
-                    <onclick>Control.Move($PARAM[Control],1)</onclick>
-                    <visible>[system.getbool(input.enablemouse) | Control.HasFocus($PARAM[Control])] + Container($PARAM[Control]).HasNext</visible>
-                    <include>VisibleFadeEffect</include>
-                </control>
-			</control>			
+			</control>		
         </definition>
     </include>
     <include name="LargeWidgetPosterButtons">
@@ -6966,29 +6944,31 @@
         <definition>
             <control type="group">
 			    <visible>$PARAM[visibility]</visible>
-			    <control type="button">
+			    <control type="button" id="5130001">
 				    <left>10</left>
                     <top>200</top>
                     <width>40</width>
                     <height>50</height>
                     <texturefocus>arrow-big-left.png</texturefocus>
                     <texturenofocus>arrow-big-left.png</texturenofocus>
-                    <include>VisibleFadeEffect</include>
                     <onclick>Control.Move($PARAM[Control],-1)</onclick>
-                    <visible>[system.getbool(input.enablemouse) | Control.HasFocus($PARAM[Control])] + Container($PARAM[Control]).HasPrevious</visible>
-                    <include>VisibleFadeEffect</include>
+                    <visible>Control.HasFocus($PARAM[Control]) | Control.HasFocus(5130001) | Control.HasFocus(5130002)</visible>
+                    <visible>Container($PARAM[Control]).HasPrevious</visible>
+                    <animation effect="fade" start="0" end="100" time="200">Visible</animation>
+                    <animation effect="fade" start="100" end="0" time="200" delay="1000">Hidden</animation>
                 </control>
-                <control type="button">
+                <control type="button" id="5130002">
                     <left>1865</left>
                     <top>200</top>
                     <width>40</width>
                     <height>50</height>
                     <texturefocus>arrow-big-right.png</texturefocus>
                     <texturenofocus>arrow-big-right.png</texturenofocus>
-                    <include>VisibleFadeEffect</include>
                     <onclick>Control.Move($PARAM[Control],1)</onclick>
-                    <visible>[system.getbool(input.enablemouse) | Control.HasFocus($PARAM[Control])] + Container($PARAM[Control]).HasNext</visible>
-                    <include>VisibleFadeEffect</include>
+                    <visible>Control.HasFocus($PARAM[Control]) | Control.HasFocus(5130001) | Control.HasFocus(5130002)</visible>
+                    <visible>Container($PARAM[Control]).HasNext</visible>
+                    <animation effect="fade" start="0" end="100" time="200">Visible</animation>
+                    <animation effect="fade" start="100" end="0" time="200" delay="1000">Hidden</animation>
                 </control>
 			</control>	
         </definition>
@@ -7000,29 +6980,31 @@
         <definition>
 			<control type="group">
 				<visible>$PARAM[visibility]</visible>
-				<control type="button">
+				<control type="button" id="5130005">
                     <left>-5</left>
                     <top>155</top>
                     <width>40</width>
                     <height>50</height>
                     <texturefocus>arrow-big-left.png</texturefocus>
                     <texturenofocus>arrow-big-left.png</texturenofocus>
-                    <include>VisibleFadeEffect</include>
                     <onclick>Control.Move($PARAM[Control],-1)</onclick>
-                    <visible>[system.getbool(input.enablemouse) | Control.HasFocus($PARAM[Control])] + Container($PARAM[Control]).HasPrevious</visible>
-                    <include>VisibleFadeEffect</include>
+                    <visible>Control.HasFocus($PARAM[Control]) | Control.HasFocus(5130005) | Control.HasFocus(5130006)</visible>
+                    <visible>Container($PARAM[Control]).HasPrevious</visible>
+                    <animation effect="fade" start="0" end="100" time="200">Visible</animation>
+                    <animation effect="fade" start="100" end="0" time="200" delay="1000">Hidden</animation>
                 </control>
-                <control type="button">
+                <control type="button" id="5130006">
                     <left>1850</left>
                     <top>155</top>
                     <width>40</width>
                     <height>50</height>
                     <texturefocus>arrow-big-right.png</texturefocus>
                     <texturenofocus>arrow-big-right.png</texturenofocus>
-                    <include>VisibleFadeEffect</include>
                     <onclick>Control.Move($PARAM[Control],1)</onclick>
-                    <visible>[system.getbool(input.enablemouse) | Control.HasFocus($PARAM[Control])] + Container($PARAM[Control]).HasNext</visible>
-                    <include>VisibleFadeEffect</include>
+                    <visible>Control.HasFocus($PARAM[Control]) | Control.HasFocus(5130005) | Control.HasFocus(5130006)</visible>
+                    <visible>Container($PARAM[Control]).HasNext</visible>
+                    <animation effect="fade" start="0" end="100" time="200">Visible</animation>
+                    <animation effect="fade" start="100" end="0" time="200" delay="1000">Hidden</animation>
                 </control>
 			</control>
         </definition>
@@ -7033,29 +7015,31 @@
         <definition>
 		    <control type="group">
 				<visible>$PARAM[visibility]</visible>
-                <control type="button">
+                <control type="button" id="5130007">
                     <left>10</left>
                     <top>200</top>
                     <width>40</width>
                     <height>50</height>
                     <texturefocus>arrow-big-left.png</texturefocus>
                     <texturenofocus>arrow-big-left.png</texturenofocus>
-                    <include>VisibleFadeEffect</include>
                     <onclick>Control.Move($PARAM[Control],-1)</onclick>
-                    <visible>[system.getbool(input.enablemouse) | Control.HasFocus($PARAM[Control])] + Container($PARAM[Control]).HasPrevious</visible>
-                    <include>VisibleFadeEffect</include>
+                    <visible>Control.HasFocus($PARAM[Control]) | Control.HasFocus(5130007) | Control.HasFocus(5130008)</visible>
+                    <visible>Container($PARAM[Control]).HasPrevious</visible>
+                    <animation effect="fade" start="0" end="100" time="200">Visible</animation>
+                    <animation effect="fade" start="100" end="0" time="200" delay="1000">Hidden</animation>
                 </control>
-                <control type="button">
+                <control type="button" id="5130008">
                     <left>1865</left>
                     <top>200</top>
                     <width>40</width>
                     <height>50</height>
                     <texturefocus>arrow-big-right.png</texturefocus>
                     <texturenofocus>arrow-big-right.png</texturenofocus>
-                    <include>VisibleFadeEffect</include>
                     <onclick>Control.Move($PARAM[Control],1)</onclick>
-                    <visible>[system.getbool(input.enablemouse) | Control.HasFocus($PARAM[Control])] + Container($PARAM[Control]).HasNext</visible>
-                    <include>VisibleFadeEffect</include>
+                    <visible>Control.HasFocus($PARAM[Control]) | Control.HasFocus(5130007) | Control.HasFocus(5130008)</visible>
+                    <visible>Container($PARAM[Control]).HasNext</visible>
+                    <animation effect="fade" start="0" end="100" time="200">Visible</animation>
+                    <animation effect="fade" start="100" end="0" time="200" delay="1000">Hidden</animation>
                 </control>
 			</control>	
         </definition>
@@ -7067,29 +7051,31 @@
         <definition>
             <control type="group">
 				<visible>$PARAM[visibility]</visible>
-			    <control type="button">
+			    <control type="button" id="5130009">
                     <left>10</left>
                     <top>155</top>
                     <width>40</width>
                     <height>50</height>
                     <texturefocus>arrow-big-left.png</texturefocus>
                     <texturenofocus>arrow-big-left.png</texturenofocus>
-                    <include>VisibleFadeEffect</include>
                     <onclick>Control.Move($PARAM[Control],-1)</onclick>
-                    <visible>[system.getbool(input.enablemouse) | Control.HasFocus($PARAM[Control])] + Container($PARAM[Control]).HasPrevious</visible>
-                    <include>VisibleFadeEffect</include>
+                    <visible>Control.HasFocus($PARAM[Control]) | Control.HasFocus(5130009) | Control.HasFocus(5130010)</visible>
+                    <visible>Container($PARAM[Control]).HasPrevious</visible>
+                    <animation effect="fade" start="0" end="100" time="200">Visible</animation>
+                    <animation effect="fade" start="100" end="0" time="200" delay="1000">Hidden</animation>
                 </control>
-                <control type="button">
+                <control type="button" id="5130010">
                     <left>1865</left>
                     <top>155</top>
                     <width>40</width>
                     <height>50</height>
                     <texturefocus>arrow-big-right.png</texturefocus>
                     <texturenofocus>arrow-big-right.png</texturenofocus>
-                    <include>VisibleFadeEffect</include>
                     <onclick>Control.Move($PARAM[Control],1)</onclick>
-                    <visible>[system.getbool(input.enablemouse) | Control.HasFocus($PARAM[Control])] + Container($PARAM[Control]).HasNext</visible>
-                    <include>VisibleFadeEffect</include>
+                    <visible>Control.HasFocus($PARAM[Control]) | Control.HasFocus(5130009) | Control.HasFocus(5130010)</visible>
+                    <visible>Container($PARAM[Control]).HasNext</visible>
+                    <animation effect="fade" start="0" end="100" time="200">Visible</animation>
+                    <animation effect="fade" start="100" end="0" time="200" delay="1000">Hidden</animation>
                 </control>
 			</control>	
         </definition>
@@ -7100,29 +7086,31 @@
         <definition>
             <control type="group">
 				<visible>$PARAM[visibility]</visible>
-			    <control type="button">
+			    <control type="button" id="5130011">
                     <left>10</left>
                     <top>200</top>
                     <width>40</width>
                     <height>50</height>
                     <texturefocus>arrow-big-left.png</texturefocus>
                     <texturenofocus>arrow-big-left.png</texturenofocus>
-                    <include>VisibleFadeEffect</include>
                     <onclick>Control.Move($PARAM[Control],-1)</onclick>
-                    <visible>[system.getbool(input.enablemouse) | Control.HasFocus($PARAM[Control])] + Container($PARAM[Control]).HasPrevious</visible>
-                    <include>VisibleFadeEffect</include>
+                    <visible>Control.HasFocus($PARAM[Control]) | Control.HasFocus(5130011) | Control.HasFocus(5130012)</visible>
+                    <visible>Container($PARAM[Control]).HasPrevious</visible>
+                    <animation effect="fade" start="0" end="100" time="200">Visible</animation>
+                    <animation effect="fade" start="100" end="0" time="200" delay="1000">Hidden</animation>
                 </control>
-                <control type="button">
+                <control type="button" id="5130012">
                     <left>1865</left>
                     <top>200</top>
                     <width>40</width>
                     <height>50</height>
                     <texturefocus>arrow-big-right.png</texturefocus>
                     <texturenofocus>arrow-big-right.png</texturenofocus>
-                    <include>VisibleFadeEffect</include>
                     <onclick>Control.Move($PARAM[Control],1)</onclick>
-                    <visible>[system.getbool(input.enablemouse) | Control.HasFocus($PARAM[Control])] + Container($PARAM[Control]).HasNext</visible>
-                    <include>VisibleFadeEffect</include>
+                    <visible>Control.HasFocus($PARAM[Control]) | Control.HasFocus(5130011) | Control.HasFocus(5130012)</visible>
+                    <visible>Container($PARAM[Control]).HasNext</visible>
+                    <animation effect="fade" start="0" end="100" time="200">Visible</animation>
+                    <animation effect="fade" start="100" end="0" time="200" delay="1000">Hidden</animation>
                 </control>
 			</control>	
         </definition>
