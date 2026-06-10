@@ -712,19 +712,6 @@
                                 <onclick>Skin.ToggleSetting(HideEPGwithRDS)</onclick>
                                 <selected>Skin.HasSetting(HideEPGwithRDS)</selected>
                             </control>
-                            
-                            <control type="radiobutton" id="99">
-                                <description>Use skinshortcuts for menu config</description>
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <textcolor>white</textcolor>
-                                <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[31761]</label>
-                                <include>MenuButton</include>
-                                <onclick>Skin.ToggleSetting(Use.SkinShortcuts)</onclick>
-                                <selected>Skin.HasSetting(Use.SkinShortcuts)</selected>
-                            </control>
 
 							<control type="radiobutton" id="135">
                                 <width>1125</width>
@@ -1156,6 +1143,18 @@
                                 <onclick>Skin.ToggleSetting(DefaultFavView)</onclick>
                                 <selected>Skin.HasSetting(DefaultFavView)</selected>
                                 <include>MenuButton</include>
+                            </control>
+                            <control type="radiobutton" id="99">
+                                <description>Use skinshortcuts for menu config</description>
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$LOCALIZE[31761]</label>
+                                <include>MenuButton</include>
+                                <onclick>Skin.ToggleSetting(Use.SkinShortcuts)</onclick>
+                                <selected>Skin.HasSetting(Use.SkinShortcuts)</selected>
                             </control>
                         </control>
                         <control type="scrollbar" id="2062">
