@@ -1155,6 +1155,7 @@
                                 <include>MenuButton</include>
                                 <onclick>Skin.ToggleSetting(Use.SkinShortcuts)</onclick>
                                 <selected>Skin.HasSetting(Use.SkinShortcuts)</selected>
+                                <visible>!Skin.String(HomeAppearance,Home2)</visible>
                             </control>
                         </control>
                         <control type="scrollbar" id="2062">
