@@ -2429,6 +2429,10 @@ msgctxt "#31801"
 msgid "Thumbnail & details"
 msgstr ""
 
+msgctxt "#31802"
+msgid "Random movie actors"
+msgstr ""
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr ""
