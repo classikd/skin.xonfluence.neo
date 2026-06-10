@@ -2137,7 +2137,7 @@ msgid "Hide rating"
 msgstr "Ocultar valoración"
 
 msgctxt "#31729"
-msgid "Hide widgets until focused"
+msgid "Widget hide until focused"
 msgstr "Ocultar widgets hasta que tengan el foco"
 
 msgctxt "#31730"
@@ -2729,8 +2729,8 @@ msgid "Max"
 msgstr "Máximo"
 
 msgctxt "#31987"
-msgid "Menu style"
-msgstr "Estilo de menú"
+msgid "Style"
+msgstr "Estilo"
 
 msgctxt "#31988"
 msgid "Graphics"

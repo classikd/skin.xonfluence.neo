@@ -350,21 +350,6 @@
                                 <onclick>ActivateWindow(2130)</onclick>
                                 <include>MenuButton</include>
                             </control>
-                            <control type="button" id="134">
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <label>$LOCALIZE[31987]</label>
-                                <shadowcolor>black</shadowcolor>
-                                <label2>$VAR[MenuLAFValue]</label2>
-                                <textcolor>white</textcolor>
-                                <focusedcolor>black</focusedcolor>
-                                <include>MenuButton</include>
-                                <onclick condition="String.IsEmpty(Skin.String(MenuLAF))">Skin.SetString(MenuLAF,Graph)</onclick>
-                                <onclick condition="Skin.String(MenuLAF,Graph)">Skin.SetString(MenuLAF,GraphFocused)</onclick>
-                                <onclick condition="Skin.String(MenuLAF,GraphFocused)">Skin.SetString(MenuLAF,GraphText)</onclick>
-                                <onclick condition="Skin.String(MenuLAF,GraphText)">Skin.Reset(MenuLAF)</onclick>
-                            </control>
                             <control type="button" id="131">
                                 <width>1125</width>
                                 <height>60</height>
@@ -455,18 +440,6 @@
                                 <include>MenuButton</include>
                                 <onclick>Skin.ToggleSetting(HideCPUTemp)</onclick>
                                 <selected>!Skin.HasSetting(HideCPUTemp)</selected>
-                            </control>
-							<control type="radiobutton" id="1022">
-                                <description>Hide widgets until focused</description>
-                                <width>1125</width>
-                                <height>60</height>
-                                <font>font13</font>
-                                <textcolor>white</textcolor>
-                                <focusedcolor>black</focusedcolor>
-                                <label>$LOCALIZE[31729]</label>
-                                <include>MenuButton</include>
-                                <onclick>Skin.ToggleSetting(ShowWidgetsOnFocus)</onclick>
-                                <selected>Skin.HasSetting(ShowWidgetsOnFocus)</selected>
                             </control>
                             <control type="radiobutton" id="106">
                                 <width>1125</width>
@@ -877,6 +850,21 @@
                                 <enable>false</enable>
                                 <selected>true</selected>
                             </control>
+                            <control type="button" id="134">
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <label> - $LOCALIZE[31987]</label>
+                                <shadowcolor>black</shadowcolor>
+                                <label2>$VAR[MenuLAFValue]</label2>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <include>MenuButton</include>
+                                <onclick condition="String.IsEmpty(Skin.String(MenuLAF))">Skin.SetString(MenuLAF,Graph)</onclick>
+                                <onclick condition="Skin.String(MenuLAF,Graph)">Skin.SetString(MenuLAF,GraphFocused)</onclick>
+                                <onclick condition="Skin.String(MenuLAF,GraphFocused)">Skin.SetString(MenuLAF,GraphText)</onclick>
+                                <onclick condition="Skin.String(MenuLAF,GraphText)">Skin.Reset(MenuLAF)</onclick>
+                            </control>
                             <control type="button" id="136">
                                 <width>1125</width>
                                 <height>60</height>
@@ -1104,6 +1092,18 @@
                                 <onclick>Skin.ToggleSetting(ShowWidgetFanart)</onclick>
                                 <selected>Skin.HasSetting(ShowWidgetFanart)</selected>
                                 <include>MenuButton</include>
+                            </control>
+							<control type="radiobutton" id="1022">
+                                <description>Hide widgets until focused</description>
+                                <width>1125</width>
+                                <height>60</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$LOCALIZE[31729]</label>
+                                <include>MenuButton</include>
+                                <onclick>Skin.ToggleSetting(ShowWidgetsOnFocus)</onclick>
+                                <selected>Skin.HasSetting(ShowWidgetsOnFocus)</selected>
                             </control>
                             <control type="button" id="150">
                                 <width>1125</width>
