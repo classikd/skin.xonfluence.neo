@@ -4059,6 +4059,10 @@
         <value condition="!String.IsEmpty(Skin.String(CustomWidgets))">$INFO[Skin.String(CustomWidgets)]</value>
         <value>$LOCALIZE[31257] (10)</value>
     </variable>
+    <variable name="CustomWidgetsValueNumber">
+        <value condition="!String.IsEmpty(Skin.String(CustomWidgets))">$INFO[Skin.String(CustomWidgets)]</value>
+        <value>10</value>
+    </variable>
     <variable name="TextureBorderValue">
         <value condition="Skin.String(TextureBorder,Medium)">$LOCALIZE[31993]</value>
         <value condition="Skin.String(TextureBorder,Large)">$LOCALIZE[31994]</value>

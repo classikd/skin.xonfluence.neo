@@ -7450,29 +7450,29 @@
 	
 	<!-- PVR QUERIES -->
     <include name="AllChannelsContent">
-        <content limit="15">pvr://channels/tv/*</content>
+        <content limit="$VAR[CustomWidgetsValueNumber]">pvr://channels/tv/*</content>
     </include>
 
     <!-- TV SHOWS QUERIES -->
     <include name="TvShowsRecentWithWatched">
-		<content target="videos" sortorder="descending" sortby="dateadded" limit="10">videodb://tvshows/titles/</content>
+		<content target="videos" sortorder="descending" sortby="dateadded" limit="$VAR[CustomWidgetsValueNumber]">videodb://tvshows/titles/</content>
 	</include>	
     <include name="TvShowsRandom">
-		<content target="videos" sortby="random" sortorder="ascending" limit="10">videodb://tvshows/titles/</content>
+		<content target="videos" sortby="random" sortorder="ascending" limit="$VAR[CustomWidgetsValueNumber]">videodb://tvshows/titles/</content>
 	</include>	
 
     <!-- MOVIE QUERIES -->
     <include name="RecentVideoContent">
-		<content target="videos"  sortorder="descending" sortby="dateadded" limit="10">videodb://movies/titles/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22movies%22%7D</content>
+		<content target="videos"  sortorder="descending" sortby="dateadded" limit="$VAR[CustomWidgetsValueNumber]">videodb://movies/titles/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22movies%22%7D</content>
     </include>
 	<include name="RecentWithWatchedVideoContent">
-		<content target="videos"  sortorder="descending" sortby="dateadded" limit="10">videodb://movies/titles/</content>
+		<content target="videos"  sortorder="descending" sortby="dateadded" limit="$VAR[CustomWidgetsValueNumber]">videodb://movies/titles/</content>
 	</include>
     <include name="RandomVideoContent">
-        <content sortby="random" sortorder="" limit="10" target="videos">videodb://movies/titles/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22movies%22%7D</content>
+        <content sortby="random" sortorder="" limit="$VAR[CustomWidgetsValueNumber]" target="videos">videodb://movies/titles/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22movies%22%7D</content>
     </include>	
     <include name="RandomWithWatchedVideoContent">
-        <content sortby="random" sortorder="" limit="10" target="videos">videodb://movies/titles/</content>
+        <content sortby="random" sortorder="" limit="$VAR[CustomWidgetsValueNumber]" target="videos">videodb://movies/titles/</content>
     </include>
     <include name="SuggestedVideoContent">
         <!-- Suggested movies is just in-progress movies -->
@@ -7480,12 +7480,12 @@
     </include>
     <include name="HomeUnWatchedMovies">
         <!-- This is just 10 unwatched movies, random -->
-		<content sortby="random" sortorder="" limit="10" target="videos">videodb://movies/titles/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22movies%22%7D</content>
+		<content sortby="random" sortorder="" limit="$VAR[CustomWidgetsValueNumber]" target="videos">videodb://movies/titles/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22movies%22%7D</content>
     </include>
 
     <!-- MOVIE ACTORS QUERIES -->
     <include name="RandomMovieActorsVideoContent">
-        <content sortby="random" limit="10" target="videos">videodb://movies/actors/</content>
+        <content sortby="random" limit="$VAR[CustomWidgetsValueNumber]" target="videos">videodb://movies/actors/</content>
     </include>
 
     <!-- TV SHOW EPISODES QUERIES -->
@@ -7495,10 +7495,10 @@
     </include>
 	<include name="RecentWithWatchedTVShowContent">
         <!-- 10 episodes, unwatched, newest first -->
-		<content target="videos" sortorder="descending" sortby="dateadded" limit="10">videodb://tvshows/titles/-1/-1/</content>
+		<content target="videos" sortorder="descending" sortby="dateadded" limit="$VAR[CustomWidgetsValueNumber]">videodb://tvshows/titles/-1/-1/</content>
 	</include>	
     <include name="RandomTVShowContent">
-        <content sortby="random" sortorder="" limit="10" target="videos">videodb://tvshows/titles/-1/-1/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22episodes%22%7D</content>
+        <content sortby="random" sortorder="" limit="$VAR[CustomWidgetsValueNumber]" target="videos">videodb://tvshows/titles/-1/-1/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22episodes%22%7D</content>
     </include>
     <include name="SuggestedTVShowContent">
         <content>
@@ -7758,10 +7758,10 @@
 
     <!-- MUSIC QUERIES -->
     <include name="RecentAlbumContent">
-        <content target="music" sortby="dateadded" sortorder="descending" limit="10">musicdb://recentlyaddedalbums</content>
+        <content target="music" sortby="dateadded" sortorder="descending" limit="$VAR[CustomWidgetsValueNumber]">musicdb://recentlyaddedalbums</content>
     </include>
     <include name="RandomAlbumContent">
-        <content sortby="random" sortorder="" limit="10" target="music">musicdb://albums/</content>
+        <content sortby="random" sortorder="" limit="$VAR[CustomWidgetsValueNumber]" target="music">musicdb://albums/</content>
     </include>
     <include name="SuggestedAlbumContent">
         <!-- Suggested albums is the 20 most played albums -->
@@ -7770,10 +7770,10 @@
 
     <!-- MUSIC VIDEOS QUERIES -->
     <include name="RecentConcertContent">
-        <content target="videos"  sortorder="descending" sortby="dateadded" limit="10">videodb://musicvideos/titles/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22musicvideos%22%7D</content>
+        <content target="videos"  sortorder="descending" sortby="dateadded" limit="$VAR[CustomWidgetsValueNumber]">videodb://musicvideos/titles/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22musicvideos%22%7D</content>
     </include>
 	<include name="RecentWithWatchedConcertContent">
-        <content target="videos"  sortorder="descending" sortby="dateadded" limit="10">videodb://musicvideos/titles/</content>
+        <content target="videos"  sortorder="descending" sortby="dateadded" limit="$VAR[CustomWidgetsValueNumber]">videodb://musicvideos/titles/</content>
 	</include>	
     <include name="RandomConcertContent">
         <content target="videos">videodb://musicvideos/titles/?xsp=%7b%22limit%22%3a10%2c%22order%22%3a%7b%22direction%22%3a%22ascending%22%2c%22ignorefolders%22%3a0%2c%22method%22%3a%22random%22%7d%2c%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22playcount%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%220%22%5d%7d%5d%7d%2c%22type%22%3a%22musicvideos%22%7d</content>
@@ -7784,49 +7784,49 @@
     </include>
     
     <include name="PlayListOneContent">
-        <content target="videos" limit="10">$INFO[Skin.String(HomeItem.1.Playlist)]</content>
+        <content target="videos" limit="$VAR[CustomWidgetsValueNumber]">$INFO[Skin.String(HomeItem.1.Playlist)]</content>
     </include>
     <include name="PlayListTwoContent">
-        <content target="videos" limit="10">$INFO[Skin.String(HomeItem.2.Playlist)]</content>
+        <content target="videos" limit="$VAR[CustomWidgetsValueNumber]">$INFO[Skin.String(HomeItem.2.Playlist)]</content>
     </include>
     <include name="PlayListThreeContent">
-        <content target="videos" limit="10">$INFO[Skin.String(HomeItem.3.Playlist)]</content>
+        <content target="videos" limit="$VAR[CustomWidgetsValueNumber]">$INFO[Skin.String(HomeItem.3.Playlist)]</content>
     </include>
     <include name="PlayListFourContent">
-        <content target="videos" limit="10">$INFO[Skin.String(HomeItem.4.Playlist)]</content>
+        <content target="videos" limit="$VAR[CustomWidgetsValueNumber]">$INFO[Skin.String(HomeItem.4.Playlist)]</content>
     </include>
     <include name="PlayListFiveContent">
-        <content target="videos" limit="10">$INFO[Skin.String(HomeItem.5.Playlist)]</content>
+        <content target="videos" limit="$VAR[CustomWidgetsValueNumber]">$INFO[Skin.String(HomeItem.5.Playlist)]</content>
     </include>
     <include name="PlayListSixContent">
-        <content target="videos" limit="10">$INFO[Skin.String(HomeItem.6.Playlist)]</content>
+        <content target="videos" limit="$VAR[CustomWidgetsValueNumber]">$INFO[Skin.String(HomeItem.6.Playlist)]</content>
     </include>
     <include name="PlayListSevenContent">
-        <content target="videos" limit="10">$INFO[Skin.String(HomeItem.7.Playlist)]</content>
+        <content target="videos" limit="$VAR[CustomWidgetsValueNumber]">$INFO[Skin.String(HomeItem.7.Playlist)]</content>
     </include>
     <include name="PlayListEightContent">
-        <content target="videos" limit="10">$INFO[Skin.String(HomeItem.8.Playlist)]</content>
+        <content target="videos" limit="$VAR[CustomWidgetsValueNumber]">$INFO[Skin.String(HomeItem.8.Playlist)]</content>
     </include>
     <include name="PlayListNineContent">
-        <content target="videos" limit="10">$INFO[Skin.String(HomeItem.9.Playlist)]</content>
+        <content target="videos" limit="$VAR[CustomWidgetsValueNumber]">$INFO[Skin.String(HomeItem.9.Playlist)]</content>
     </include>
     <include name="PlayListTenContent">
-        <content target="videos" limit="10">$INFO[Skin.String(HomeItem.10.Playlist)]</content>
+        <content target="videos" limit="$VAR[CustomWidgetsValueNumber]">$INFO[Skin.String(HomeItem.10.Playlist)]</content>
     </include>
     <include name="PlayListElevenContent">
-        <content target="videos" limit="10">$INFO[Skin.String(HomeItem.11.Playlist)]</content>
+        <content target="videos" limit="$VAR[CustomWidgetsValueNumber]">$INFO[Skin.String(HomeItem.11.Playlist)]</content>
     </include>
     <include name="PlayListTwelveContent">
-        <content target="videos" limit="10">$INFO[Skin.String(HomeItem.12.Playlist)]</content>
+        <content target="videos" limit="$VAR[CustomWidgetsValueNumber]">$INFO[Skin.String(HomeItem.12.Playlist)]</content>
     </include>
     <include name="PlayListThirteenContent">
-        <content limit="10" target="videos">$INFO[Skin.String(HomeItem.13.Playlist)]</content>
+        <content limit="$VAR[CustomWidgetsValueNumber]" target="videos">$INFO[Skin.String(HomeItem.13.Playlist)]</content>
     </include>
     <include name="PlayListFourteenContent">
-        <content target="videos" limit="10">$INFO[Skin.String(HomeItem.14.Playlist)]</content>
+        <content target="videos" limit="$VAR[CustomWidgetsValueNumber]">$INFO[Skin.String(HomeItem.14.Playlist)]</content>
     </include>
     <include name="PlayListFifteenContent">
-        <content target="videos" limit="10">$INFO[Skin.String(HomeItem.15.Playlist)]</content>
+        <content target="videos" limit="$VAR[CustomWidgetsValueNumber]">$INFO[Skin.String(HomeItem.15.Playlist)]</content>
     </include>
     <include name="WeatherForecastContent">
         <content>
