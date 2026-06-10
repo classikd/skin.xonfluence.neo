@@ -2424,6 +2424,10 @@ msgctxt "#31800"
 msgid "Random movies (includes watched)"
 msgstr "Películas aleatorias (incluidas vistas)"
 
+msgctxt "#31801"
+msgid "Thumbnail & details"
+msgstr "Miniatura y detalles"
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr "Previsión de 36 horas"
