@@ -462,6 +462,51 @@
                         <visible>Library.HasContent(MusicVideos)</visible>
                     </item>
                     <item>
+                        <description>Addons video</description>
+                        <label>$LOCALIZE[1037]</label>
+                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,AddonsVideo)</onclick>
+                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetFormat,Thumb)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetLayout,Large)</onclick>
+                        <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>Dialog.Close(2118)</onclick>
+                    </item>
+                    <item>
+                        <description>Addons audio</description>
+                        <label>$LOCALIZE[1038]</label>
+                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,AddonsAudio)</onclick>
+                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetFormat,Thumb)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetLayout,Large)</onclick>
+                        <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>Dialog.Close(2118)</onclick>
+                    </item>
+                    <item>
+                        <description>Addons image</description>
+                        <label>$LOCALIZE[1039]</label>
+                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,AddonsImage)</onclick>
+                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetFormat,Thumb)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetLayout,Large)</onclick>
+                        <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>Dialog.Close(2118)</onclick>
+                    </item>
+                    <item>
+                        <description>Addons game</description>
+                        <label>$LOCALIZE[1039]</label>
+                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,AddonsGame)</onclick>
+                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetFormat,Thumb)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetLayout,Large)</onclick>
+                        <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>Dialog.Close(2118)</onclick>
+                    </item>
+                    <item>
+                        <description>Addons Program</description>
+                        <label>$LOCALIZE[1043]</label>
+                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,AddonsProgram)</onclick>
+                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetFormat,Thumb)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetLayout,Large)</onclick>
+                        <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>Dialog.Close(2118)</onclick>
+                    </item>
+                    <item>
                         <description>Custom</description>
                         <label>$LOCALIZE[31201]</label>
                         <onclick>Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Widget)</onclick>

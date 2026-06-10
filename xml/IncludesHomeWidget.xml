@@ -438,6 +438,189 @@
 			</control>
 
 
+            <!-- ADDONS -->	
+			<!-- Video -->
+			<control type="group">
+			    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetSet),AddonsVideo)</visible>
+				<!-- Small widget -->
+				<control type="group">
+				    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8401</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">AddonsVideoContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8401</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout),Large) + ![$EXP[showSmallWidget]]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8402</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">AddonsVideoContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8402</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+			</control>
+			<!-- Audio -->
+			<control type="group">
+			    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetSet),AddonsAudio)</visible>
+				<!-- Small widget -->
+				<control type="group">
+				    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8403</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">AddonsAudioContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8403</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout),Large) + ![$EXP[showSmallWidget]]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8404</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">AddonsAudioContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8404</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+			</control>
+			<!-- Image -->
+			<control type="group">
+			    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetSet),AddonsImage)</visible>
+				<!-- Small widget -->
+				<control type="group">
+				    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8405</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">AddonsImageContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8405</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout),Large) + ![$EXP[showSmallWidget]]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8406</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">AddonsImageContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8406</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+			</control>
+			<!-- Game -->
+			<control type="group">
+			    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetSet),AddonsGame)</visible>
+				<!-- Small widget -->
+				<control type="group">
+				    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8407</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">AddonsGameContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8407</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout),Large) + ![$EXP[showSmallWidget]]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8408</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">AddonsGameContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8408</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+			</control>
+			<!-- Program -->
+			<control type="group">
+			    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetSet),AddonsProgram)</visible>
+				<!-- Small widget -->
+				<control type="group">
+				    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8409</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">AddonsProgramContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8409</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout),Large) + ![$EXP[showSmallWidget]]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8410</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                        <param name="Content">AddonsProgramContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8410</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat)</param>
+                    </include>
+                </control>
+			</control>
+
+
             <!-- Episodes -->
 			<!-- Recent Episodes -->
 			<control type="group">
@@ -2144,6 +2327,189 @@
                     </include>
                     <include content="VideoLargeWidgetButtons">
                         <param name="Control">8307</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>
+
+
+            <!-- ADDONS -->	
+			<!-- Video -->
+			<control type="group">
+			    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),AddonsVideo)</visible>
+				<!-- Small widget -->
+				<control type="group">
+				    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8401</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">AddonsVideoContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8401</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8402</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">AddonsVideoContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8402</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>
+			<!-- Audio -->
+			<control type="group">
+			    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),AddonsAudio)</visible>
+				<!-- Small widget -->
+				<control type="group">
+				    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8403</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">AddonsAudioContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8403</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8404</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">AddonsAudioContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8404</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>
+			<!-- Image -->
+			<control type="group">
+			    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),AddonsImage)</visible>
+				<!-- Small widget -->
+				<control type="group">
+				    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8405</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">AddonsImageContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8405</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8406</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">AddonsImageContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8406</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>
+			<!-- Game -->
+			<control type="group">
+			    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),AddonsGame)</visible>
+				<!-- Small widget -->
+				<control type="group">
+				    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8407</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">AddonsGameContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8407</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8408</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">AddonsGameContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8408</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+			</control>
+			<!-- Program -->
+			<control type="group">
+			    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetSet2),AddonsProgram)</visible>
+				<!-- Small widget -->
+				<control type="group">
+				    <left>15</left>
+                    <top>90</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Small) | $EXP[showSmallWidget]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoSmallWidgetLayout">
+                        <param name="Control">8409</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">AddonsProgramContent</param>
+                    </include>
+                    <include content="VideoSmallWidgetButtons">
+                        <param name="Control">8409</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                    </include>
+                </control>
+				<!-- Large widget -->
+				<control type="group">
+                    <left>0</left>
+                    <top>81</top>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(WidgetLayout2),Large) + ![$EXP[showSmallWidget]]</visible>
+                    <include>VisibleFadeEffect</include>
+                    <include content="VideoLargeWidgetLayout">
+                        <param name="Control">8410</param>
+                        <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
+                        <param name="Content">AddonsProgramContent</param>
+                    </include>
+                    <include content="VideoLargeWidgetButtons">
+                        <param name="Control">8410</param>
                         <param name="Format">Container(9000).ListItem.Property(WidgetFormat2)</param>
                     </include>
                 </control>
@@ -7488,6 +7854,28 @@
         <content sortby="random" limit="$VAR[CustomWidgetsValueNumber]" target="videos">videodb://movies/actors/</content>
     </include>
 
+    <!-- ADDONS QUERIES -->
+    <include name="AddonsVideoContent">
+        <content sortby="label" sortorder="ascending" limit="$VAR[CustomWidgetsValueNumber]">addons://sources/video/</content>
+    </include>
+    <include name="AddonsAudioContent">
+        <content sortby="label" sortorder="ascending" limit="$VAR[CustomWidgetsValueNumber]">addons://sources/audio/</content>
+    </include>
+    <include name="AddonsImageContent">
+        <content sortby="label" sortorder="ascending" limit="$VAR[CustomWidgetsValueNumber]">addons://sources/image/</content>
+    </include>
+    <include name="AddonsGameContent">
+        <content sortby="label" sortorder="ascending" limit="$VAR[CustomWidgetsValueNumber]">addons://sources/game/</content>
+    </include>
+    <include name="AddonsProgramContent">
+        <include condition="!System.Platform.Android">
+            <content sortby="label" sortorder="ascending" limit="$VAR[CustomWidgetsValueNumber]">addons://sources/executable/</content>
+        </include>
+        <include condition="System.Platform.Android">
+            <content sortby="label" sortorder="ascending" limit="$VAR[CustomWidgetsValueNumber]">androidapp://sources/apps/</content>
+        </include>
+    </include>
+
     <!-- TV SHOW EPISODES QUERIES -->
     <include name="RecentTVShowContent">
         <!-- 10 episodes, unwatched, newest first -->
@@ -8138,6 +8526,11 @@
         <visible>!String.IsEqual(Container(9000).ListItem.Property(WidgetSet),SuggestedConcerts)</visible>
         <visible>!String.IsEqual(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies)</visible>
         <visible>!String.IsEqual(Container(9000).ListItem.Property(WidgetSet),RandomMovieActors)</visible>
+        <visible>!String.IsEqual(Container(9000).ListItem.Property(WidgetSet),AddonsVideo)</visible>
+        <visible>!String.IsEqual(Container(9000).ListItem.Property(WidgetSet),AddonsAudio)</visible>
+        <visible>!String.IsEqual(Container(9000).ListItem.Property(WidgetSet),AddonsImage)</visible>
+        <visible>!String.IsEqual(Container(9000).ListItem.Property(WidgetSet),AddonsGame)</visible>
+        <visible>!String.IsEqual(Container(9000).ListItem.Property(WidgetSet),AddonsProgram)</visible>
         <visible>!String.IsEqual(Container(9000).ListItem.Property(WidgetSet),VideoPlayList)</visible>
         <visible>!String.IsEqual(Container(9000).ListItem.Property(WidgetSet),MusicPlayList)</visible>
         <visible>!String.IsEqual(Container(9000).ListItem.Property(WidgetSet),Weather)</visible>
