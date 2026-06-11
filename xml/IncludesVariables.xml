@@ -2056,6 +2056,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.1.Widget),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.1.Widget),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.1.Widget),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.1.Widget),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.1.Widget),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.1.Widget),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.1.Widget),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2096,6 +2097,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.2.Widget),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.2.Widget),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.2.Widget),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.2.Widget),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.2.Widget),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.2.Widget),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.2.Widget),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2136,6 +2138,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.3.Widget),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.3.Widget),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.3.Widget),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.3.Widget),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.3.Widget),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.3.Widget),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.3.Widget),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2176,6 +2179,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.4.Widget),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.4.Widget),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.4.Widget),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.4.Widget),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.4.Widget),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.4.Widget),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.4.Widget),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2216,6 +2220,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.5.Widget),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.5.Widget),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.5.Widget),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.5.Widget),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.5.Widget),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.5.Widget),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.5.Widget),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2256,6 +2261,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.6.Widget),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.6.Widget),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.6.Widget),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.6.Widget),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.6.Widget),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.6.Widget),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.6.Widget),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2296,6 +2302,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.7.Widget),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.7.Widget),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.7.Widget),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.7.Widget),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.7.Widget),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.7.Widget),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.7.Widget),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2336,6 +2343,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.8.Widget),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.8.Widget),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.8.Widget),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.8.Widget),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.8.Widget),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.8.Widget),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.8.Widget),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2376,6 +2384,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.9.Widget),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.9.Widget),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.9.Widget),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.9.Widget),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.9.Widget),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.9.Widget),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.9.Widget),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2416,6 +2425,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.10.Widget),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.10.Widget),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.10.Widget),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.10.Widget),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.10.Widget),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.10.Widget),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.10.Widget),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2456,6 +2466,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.11.Widget),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.11.Widget),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.11.Widget),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.11.Widget),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.11.Widget),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.11.Widget),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.11.Widget),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2495,6 +2506,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.12.Widget),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.12.Widget),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.12.Widget),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.12.Widget),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.12.Widget),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.12.Widget),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.12.Widget),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2535,6 +2547,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.13.Widget),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.13.Widget),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.13.Widget),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.13.Widget),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.13.Widget),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.13.Widget),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.13.Widget),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2575,6 +2588,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.14.Widget),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.14.Widget),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.14.Widget),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.14.Widget),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.14.Widget),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.14.Widget),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.14.Widget),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2615,6 +2629,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.15.Widget),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.15.Widget),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.15.Widget),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.15.Widget),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.15.Widget),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.15.Widget),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.15.Widget),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2656,6 +2671,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.1.Widget2),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.1.Widget2),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.1.Widget2),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.1.Widget2),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.1.Widget2),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.1.Widget2),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.1.Widget2),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2696,6 +2712,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.2.Widget2),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.2.Widget2),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.2.Widget2),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.2.Widget2),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.2.Widget2),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.2.Widget2),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.2.Widget2),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2736,6 +2753,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.3.Widget2),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.3.Widget2),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.3.Widget2),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.3.Widget2),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.3.Widget2),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.3.Widget2),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.3.Widget2),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2776,6 +2794,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.4.Widget2),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.4.Widget2),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.4.Widget2),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.4.Widget2),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.4.Widget2),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.4.Widget2),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.4.Widget2),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2816,6 +2835,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.5.Widget2),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.5.Widget2),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.5.Widget2),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.5.Widget2),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.5.Widget2),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.5.Widget2),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.5.Widget2),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2856,6 +2876,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.6.Widget2),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.6.Widget2),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.6.Widget2),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.6.Widget2),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.6.Widget2),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.6.Widget2),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.6.Widget2),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2896,6 +2917,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.7.Widget2),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.7.Widget2),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.7.Widget2),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.7.Widget2),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.7.Widget2),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.7.Widget2),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.7.Widget2),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2936,6 +2958,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.8.Widget2),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.8.Widget2),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.8.Widget2),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.8.Widget2),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.8.Widget2),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.8.Widget2),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.8.Widget2),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -2976,6 +2999,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.9.Widget2),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.9.Widget2),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.9.Widget2),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.9.Widget2),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.9.Widget2),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.9.Widget2),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.9.Widget2),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -3016,6 +3040,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.10.Widget2),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.10.Widget2),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.10.Widget2),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.10.Widget2),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.10.Widget2),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.10.Widget2),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.10.Widget2),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -3056,6 +3081,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.11.Widget2),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.11.Widget2),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.11.Widget2),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.11.Widget2),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.11.Widget2),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.11.Widget2),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.11.Widget2),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -3096,6 +3122,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.12.Widget2),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.12.Widget2),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.12.Widget2),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.12.Widget2),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.12.Widget2),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.12.Widget2),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.12.Widget2),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -3136,6 +3163,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.13.Widget2),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.13.Widget2),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.13.Widget2),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.13.Widget2),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.13.Widget2),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.13.Widget2),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.13.Widget2),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -3176,6 +3204,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.14.Widget2),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.14.Widget2),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.14.Widget2),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.14.Widget2),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.14.Widget2),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.14.Widget2),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.14.Widget2),AddonsAudio)">$LOCALIZE[1038]</value>
@@ -3216,6 +3245,7 @@
         <value condition="String.IsEqual(Skin.String(HomeItem.15.Widget2),RandomConcerts)">$LOCALIZE[31188]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.15.Widget2),SuggestedConcerts)">$LOCALIZE[31199]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.15.Widget2),UnWatchedMovies)">$LOCALIZE[31228]</value>
+        <value condition="String.IsEqual(Skin.String(HomeItem.15.Widget2),WatchedMovies)">$LOCALIZE[31803]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.15.Widget2),RandomMovieActors)">$LOCALIZE[31802]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.15.Widget2),AddonsVideo)">$LOCALIZE[1037]</value>
         <value condition="String.IsEqual(Skin.String(HomeItem.15.Widget2),AddonsAudio)">$LOCALIZE[1038]</value>

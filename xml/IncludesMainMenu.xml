@@ -1458,6 +1458,7 @@
         <onload condition="Skin.String(HomeItem.1.Widget,AllChannels)">Skin.SetString(HomeItem.1.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.1.Widget,SuggestedMovies)">Skin.SetString(HomeItem.1.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.1.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.1.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.1.Widget,WatchedMovies)">Skin.SetString(HomeItem.1.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.1.Widget,RandomMovieActors)">Skin.SetString(HomeItem.1.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.1.Widget,AddonsVideo)">Skin.SetString(HomeItem.1.WidgetFormat,Thumb)</onload>
         <onload condition="Skin.String(HomeItem.1.Widget,AddonsAudio)">Skin.SetString(HomeItem.1.WidgetFormat,Thumb)</onload>
@@ -1488,6 +1489,7 @@
         <onload condition="Skin.String(HomeItem.2.Widget,AllChannels)">Skin.SetString(HomeItem.2.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.2.Widget,SuggestedMovies)">Skin.SetString(HomeItem.2.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.2.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.2.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.2.Widget,WatchedMovies)">Skin.SetString(HomeItem.2.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.2.Widget,RandomMovieActors)">Skin.SetString(HomeItem.2.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.2.Widget,AddonsVideo)">Skin.SetString(HomeItem.2.WidgetFormat,Thumb)</onload>
         <onload condition="Skin.String(HomeItem.2.Widget,AddonsAudio)">Skin.SetString(HomeItem.2.WidgetFormat,Thumb)</onload>
@@ -1518,6 +1520,7 @@
         <onload condition="Skin.String(HomeItem.3.Widget,AllChannels)">Skin.SetString(HomeItem.3.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.3.Widget,SuggestedMovies)">Skin.SetString(HomeItem.3.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.3.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.3.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.3.Widget,WatchedMovies)">Skin.SetString(HomeItem.3.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.3.Widget,RandomMovieActors)">Skin.SetString(HomeItem.3.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.3.Widget,AddonsVideo)">Skin.SetString(HomeItem.3.WidgetFormat,Thumb)</onload>
         <onload condition="Skin.String(HomeItem.3.Widget,AddonsAudio)">Skin.SetString(HomeItem.3.WidgetFormat,Thumb)</onload>
@@ -1548,6 +1551,7 @@
         <onload condition="Skin.String(HomeItem.4.Widget,AllChannels)">Skin.SetString(HomeItem.4.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.4.Widget,SuggestedMovies)">Skin.SetString(HomeItem.4.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.4.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.4.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.4.Widget,WatchedMovies)">Skin.SetString(HomeItem.4.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.4.Widget,RandomMovieActors)">Skin.SetString(HomeItem.4.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.4.Widget,AddonsVideo)">Skin.SetString(HomeItem.4.WidgetFormat,Thumb)</onload>
         <onload condition="Skin.String(HomeItem.4.Widget,AddonsAudio)">Skin.SetString(HomeItem.4.WidgetFormat,Thumb)</onload>
@@ -1578,6 +1582,7 @@
         <onload condition="Skin.String(HomeItem.5.Widget,AllChannels)">Skin.SetString(HomeItem.5.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.5.Widget,SuggestedMovies)">Skin.SetString(HomeItem.5.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.5.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.5.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.5.Widget,WatchedMovies)">Skin.SetString(HomeItem.5.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.5.Widget,RandomMovieActors)">Skin.SetString(HomeItem.5.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.5.Widget,AddonsVideo)">Skin.SetString(HomeItem.5.WidgetFormat,Thumb)</onload>
         <onload condition="Skin.String(HomeItem.5.Widget,AddonsAudio)">Skin.SetString(HomeItem.5.WidgetFormat,Thumb)</onload>
@@ -1608,6 +1613,7 @@
         <onload condition="Skin.String(HomeItem.6.Widget,AllChannels)">Skin.SetString(HomeItem.6.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.6.Widget,SuggestedMovies)">Skin.SetString(HomeItem.6.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.6.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.6.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.6.Widget,WatchedMovies)">Skin.SetString(HomeItem.6.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.6.Widget,RandomMovieActors)">Skin.SetString(HomeItem.6.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.6.Widget,AddonsVideo)">Skin.SetString(HomeItem.6.WidgetFormat,Thumb)</onload>
         <onload condition="Skin.String(HomeItem.6.Widget,AddonsAudio)">Skin.SetString(HomeItem.6.WidgetFormat,Thumb)</onload>
@@ -1638,6 +1644,7 @@
         <onload condition="Skin.String(HomeItem.7.Widget,AllChannels)">Skin.SetString(HomeItem.7.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.7.Widget,SuggestedMovies)">Skin.SetString(HomeItem.7.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.7.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.7.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.7.Widget,WatchedMovies)">Skin.SetString(HomeItem.7.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.7.Widget,RandomMovieActors)">Skin.SetString(HomeItem.7.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.7.Widget,AddonsVideo)">Skin.SetString(HomeItem.7.WidgetFormat,Thumb)</onload>
         <onload condition="Skin.String(HomeItem.7.Widget,AddonsAudio)">Skin.SetString(HomeItem.7.WidgetFormat,Thumb)</onload>
@@ -1668,6 +1675,7 @@
         <onload condition="Skin.String(HomeItem.8.Widget,AllChannels)">Skin.SetString(HomeItem.8.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.8.Widget,SuggestedMovies)">Skin.SetString(HomeItem.8.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.8.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.8.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.8.Widget,WatchedMovies)">Skin.SetString(HomeItem.8.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.8.Widget,RandomMovieActors)">Skin.SetString(HomeItem.8.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.8.Widget,AddonsVideo)">Skin.SetString(HomeItem.8.WidgetFormat,Thumb)</onload>
         <onload condition="Skin.String(HomeItem.8.Widget,AddonsAudio)">Skin.SetString(HomeItem.8.WidgetFormat,Thumb)</onload>
@@ -1698,6 +1706,7 @@
         <onload condition="Skin.String(HomeItem.9.Widget,AllChannels)">Skin.SetString(HomeItem.9.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.9.Widget,SuggestedMovies)">Skin.SetString(HomeItem.9.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.9.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.9.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.9.Widget,WatchedMovies)">Skin.SetString(HomeItem.9.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.9.Widget,RandomMovieActors)">Skin.SetString(HomeItem.9.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.9.Widget,AddonsVideo)">Skin.SetString(HomeItem.9.WidgetFormat,Thumb)</onload>
         <onload condition="Skin.String(HomeItem.9.Widget,AddonsAudio)">Skin.SetString(HomeItem.9.WidgetFormat,Thumb)</onload>
@@ -1728,6 +1737,7 @@
         <onload condition="Skin.String(HomeItem.10.Widget,AllChannels)">Skin.SetString(HomeItem.10.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.10.Widget,SuggestedMovies)">Skin.SetString(HomeItem.10.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.10.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.10.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.10.Widget,WatchedMovies)">Skin.SetString(HomeItem.10.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.10.Widget,RandomMovieActors)">Skin.SetString(HomeItem.10.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.10.Widget,AddonsVideo)">Skin.SetString(HomeItem.10.WidgetFormat,Thumb)</onload>
         <onload condition="Skin.String(HomeItem.10.Widget,AddonsAudio)">Skin.SetString(HomeItem.10.WidgetFormat,Thumb)</onload>
@@ -1758,6 +1768,7 @@
         <onload condition="Skin.String(HomeItem.11.Widget,AllChannels)">Skin.SetString(HomeItem.11.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.11.Widget,SuggestedMovies)">Skin.SetString(HomeItem.11.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.11.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.11.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.11.Widget,WatchedMovies)">Skin.SetString(HomeItem.11.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.11.Widget,RandomMovieActors)">Skin.SetString(HomeItem.11.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.11.Widget,AddonsVideo)">Skin.SetString(HomeItem.11.WidgetFormat,Thumb)</onload>
         <onload condition="Skin.String(HomeItem.11.Widget,AddonsAudio)">Skin.SetString(HomeItem.11.WidgetFormat,Thumb)</onload>
@@ -1788,6 +1799,7 @@
         <onload condition="Skin.String(HomeItem.12.Widget,AllChannels)">Skin.SetString(HomeItem.12.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.12.Widget,SuggestedMovies)">Skin.SetString(HomeItem.12.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.12.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.12.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.12.Widget,WatchedMovies)">Skin.SetString(HomeItem.12.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.12.Widget,RandomMovieActors)">Skin.SetString(HomeItem.12.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.12.Widget,AddonsVideo)">Skin.SetString(HomeItem.12.WidgetFormat,Thumb)</onload>
         <onload condition="Skin.String(HomeItem.12.Widget,AddonsAudio)">Skin.SetString(HomeItem.12.WidgetFormat,Thumb)</onload>
@@ -1818,6 +1830,7 @@
         <onload condition="Skin.String(HomeItem.13.Widget,AllChannels)">Skin.SetString(HomeItem.13.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.13.Widget,SuggestedMovies)">Skin.SetString(HomeItem.13.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.13.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.13.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.13.Widget,WatchedMovies)">Skin.SetString(HomeItem.13.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.13.Widget,RandomMovieActors)">Skin.SetString(HomeItem.13.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.13.Widget,AddonsVideo)">Skin.SetString(HomeItem.13.WidgetFormat,Thumb)</onload>
         <onload condition="Skin.String(HomeItem.13.Widget,AddonsAudio)">Skin.SetString(HomeItem.13.WidgetFormat,Thumb)</onload>
@@ -1848,6 +1861,7 @@
         <onload condition="Skin.String(HomeItem.14.Widget,AllChannels)">Skin.SetString(HomeItem.14.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.14.Widget,SuggestedMovies)">Skin.SetString(HomeItem.14.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.14.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.14.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.14.Widget,WatchedMovies)">Skin.SetString(HomeItem.14.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.14.Widget,RandomMovieActors)">Skin.SetString(HomeItem.14.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.14.Widget,AddonsVideo)">Skin.SetString(HomeItem.14.WidgetFormat,Thumb)</onload>
         <onload condition="Skin.String(HomeItem.14.Widget,AddonsAudio)">Skin.SetString(HomeItem.14.WidgetFormat,Thumb)</onload>
@@ -1878,6 +1892,7 @@
         <onload condition="Skin.String(HomeItem.15.Widget,AllChannels)">Skin.SetString(HomeItem.15.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.15.Widget,SuggestedMovies)">Skin.SetString(HomeItem.15.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.15.Widget,UnWatchedMovies)">Skin.SetString(HomeItem.15.WidgetFormat,Poster)</onload>
+        <onload condition="Skin.String(HomeItem.15.Widget,WatchedMovies)">Skin.SetString(HomeItem.15.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.15.Widget,RandomMovieActors)">Skin.SetString(HomeItem.15.WidgetFormat,Poster)</onload>
         <onload condition="Skin.String(HomeItem.15.Widget,AddonsVideo)">Skin.SetString(HomeItem.15.WidgetFormat,Thumb)</onload>
         <onload condition="Skin.String(HomeItem.15.Widget,AddonsAudio)">Skin.SetString(HomeItem.15.WidgetFormat,Thumb)</onload>

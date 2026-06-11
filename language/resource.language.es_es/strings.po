@@ -2432,6 +2432,10 @@ msgctxt "#31802"
 msgid "Random movie actors"
 msgstr "Actores de películas aleatorias"
 
+msgctxt "#31803"
+msgid "Watched movies"
+msgstr "Películas vistas"
+
 msgctxt "#31901"
 msgid "36-hour forecast"
 msgstr "Previsión de 36 horas"

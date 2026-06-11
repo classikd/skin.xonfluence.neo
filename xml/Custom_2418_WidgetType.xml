@@ -304,6 +304,16 @@
                         <visible>Library.HasContent(Movies)</visible>
                     </item>
                     <item>
+                        <description>Watched Movies</description>
+                        <label>$LOCALIZE[31803]</label>
+                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget2,WatchedMovies)</onclick>
+                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetFormat2,Poster)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].WidgetLayout2,Large)</onclick>
+                        <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <onclick>Dialog.Close(2418)</onclick>
+                        <visible>Library.HasContent(Movies)</visible>
+                    </item>
+                    <item>
                         <description>Random Movie Actors</description>
                         <label>$LOCALIZE[31802]</label>
                         <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget2,RandomMovieActors)</onclick>

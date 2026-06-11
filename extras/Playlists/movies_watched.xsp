@@ -5,5 +5,6 @@
     <rule field="playcount" operator="greaterthan">
         <value>0</value>
     </rule>
-    <order direction="ascending">random</order>
+    <rule field="inprogress" operator="false" />
+    <order direction="descending">lastplayed</order>
 </smartplaylist>
