@@ -5103,6 +5103,7 @@
                     </control>
 
                     
+                    
                     <control type="progress">
                         <left>20</left>
                         <top>312</top>
@@ -5217,10 +5218,37 @@
                         <visible>ListItem.IsPlaying</visible>
                         <visible>!Player.Playing</visible>
                     </control>
+
+                    <!-- infos focus -->
+                    <control type="image">
+                        <left>10</left>
+                        <top>275</top>
+                        <width>178</width>
+                        <height>42</height>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>!String.IsEqual(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                        <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
+                    <control type="label">
+                        <left>20</left>
+                        <top>283</top>
+                        <width>170</width>
+                        <height>38</height>
+                        <font>font11_title</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>!String.IsEqual(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                        <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control> 
         
                     <control type="progress">
                         <left>20</left>
-                        <top>312</top>
+                        <top>271</top>
                         <width>168</width>
                         <height>3</height>
                         <info>ListItem.PercentPlayed</info>
@@ -5342,7 +5370,25 @@
                     </control>
 
                     <control type="image">
-                        <left>10</left>
+                        <left>12</left>
+                        <top>15</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>15</left>
+                        <top>17</top>
+                        <width>28</width>
+                        <height>28</height>
+                        <texture colordiffuse="black">equaliser.gif</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>12</left>
                         <top>15</top>
                         <width>35</width>
                         <height>35</height>
@@ -5442,7 +5488,25 @@
                     </control>
 
                     <control type="image">
-                        <left>10</left>
+                        <left>12</left>
+                        <top>15</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>15</left>
+                        <top>17</top>
+                        <width>28</width>
+                        <height>28</height>
+                        <texture colordiffuse="black">equaliser.gif</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>12</left>
                         <top>15</top>
                         <width>35</width>
                         <height>35</height>
@@ -5451,9 +5515,36 @@
                         <visible>!Player.Playing</visible>
                     </control>
 
+                    <!-- infos focus -->
+                    <control type="image">
+                        <left>10</left>
+                        <top>353</top>
+                        <width>230</width>
+                        <height>42</height>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>!String.IsEqual(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                        <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
+                    <control type="label">
+                        <left>12</left>
+                        <top>361</top>
+                        <width>222</width>
+                        <height>38</height>
+                        <font>font11_title</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>!String.IsEqual(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                        <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>  
+
                     <control type="progress">
                         <left>12</left>
-                        <top>393</top>
+                        <top>350</top>
                         <width>223</width>
                         <height>3</height>
                         <info>ListItem.PercentPlayed</info>
@@ -5574,7 +5665,25 @@
                     </control>
 
                     <control type="image">
-                        <left>10</left>
+                        <left>12</left>
+                        <top>15</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>15</left>
+                        <top>17</top>
+                        <width>28</width>
+                        <height>28</height>
+                        <texture colordiffuse="black">equaliser.gif</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>12</left>
                         <top>15</top>
                         <width>35</width>
                         <height>35</height>
@@ -5601,9 +5710,11 @@
                         <height>30</height>
                         <font>font11_title</font>
                         <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
+			            <animation effect="slide" end="0,15" time="0" condition="!Integer.IsGreater(ListItem.Rating,0) + String.IsEmpty(ListItem.Year) + !String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)">Conditional</animation>
                     </control>
                     <control type="group">
                         <left>-10</left>
@@ -5612,6 +5723,7 @@
                             <param name="Size" value="25" />
                             <param name="Color" value="$VAR[MainColorOne]" />
                         </include>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
                     <control type="label">
@@ -5622,6 +5734,7 @@
                         <label> $INFO[ListItem.Year]</label>
                         <visible>!String.IsEmpty(ListItem.Year)</visible>
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+			            <animation effect="slide" end="-75" time="0" condition="!Integer.IsGreater(ListItem.Rating,0)">Conditional</animation>
                     </control>
 
                     <control type="label">
@@ -5631,6 +5744,7 @@
                         <height>30</height>
                         <font>font10</font>
                         <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Title]</label>
@@ -5727,7 +5841,25 @@
                     </control>
 
                     <control type="image">
-                        <left>10</left>
+                        <left>11</left>
+                        <top>15</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>14</left>
+                        <top>17</top>
+                        <width>28</width>
+                        <height>28</height>
+                        <texture colordiffuse="black">equaliser.gif</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>11</left>
                         <top>15</top>
                         <width>35</width>
                         <height>35</height>
@@ -5752,10 +5884,12 @@
                         <height>30</height>
                         <font>font11_title</font>
                         <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
+                        <animation effect="slide" end="0,15" time="0" condition="!Integer.IsGreater(ListItem.Rating,0) + String.IsEmpty(ListItem.Year) + !String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)">Conditional</animation>
                     </control>
                     <control type="label">
                         <left>12</left>
@@ -5764,10 +5898,12 @@
                         <height>30</height>
                         <font>font11_title</font>
                         <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
+                        <animation effect="slide" end="0,15" time="0" condition="!Integer.IsGreater(ListItem.Rating,0) + String.IsEmpty(ListItem.Year) + !String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)">Conditional</animation>
                     </control>
                     <control type="group">
                         <left>-10</left>
@@ -5776,6 +5912,7 @@
                             <param name="Size" value="25" />
                             <param name="Color" value="$VAR[MainColorOne]" />
                         </include>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
                     </control>
@@ -5786,6 +5923,7 @@
                             <param name="Size" value="25" />
                             <param name="Color" value="black" />
                         </include>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
                     </control>
@@ -5794,20 +5932,24 @@
                         <top>368</top>
                         <font>font9</font>
                         <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
                         <label> $INFO[ListItem.Year]</label>
                         <visible>!String.IsEmpty(ListItem.Year)</visible>
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
+			            <animation effect="slide" end="-75" time="0" condition="!Integer.IsGreater(ListItem.Rating,0)">Conditional</animation>
                     </control>
                     <control type="label">
                         <left>157</left>
                         <top>368</top>
                         <font>font9</font>
                         <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
                         <label> $INFO[ListItem.Year]</label>
                         <visible>!String.IsEmpty(ListItem.Year)</visible>
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
+			            <animation effect="slide" end="-75" time="0" condition="!Integer.IsGreater(ListItem.Rating,0)">Conditional</animation>
                     </control>
 
 
@@ -5818,6 +5960,7 @@
                         <height>30</height>
                         <font>font10</font>
                         <textcolor>white</textcolor>
+                        <selectedcolor>white</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Title]</label>
@@ -5831,6 +5974,7 @@
                         <height>30</height>
                         <font>font10</font>
                         <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Title]</label>
@@ -5999,6 +6143,7 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
 						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
+                        <animation effect="slide" end="0,-10" time="0" condition="String.IsEmpty(ListItem.Year) + !String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)">Conditional</animation>
                     </control>
 
                     <control type="image">
@@ -6182,6 +6327,7 @@
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
                             <visible>!Control.HasFocus($PARAM[Control])</visible>
+                            <animation effect="slide" end="0,-10" time="0" condition="String.IsEmpty(ListItem.Year) + !String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)">Conditional</animation>
                         </control>
                         <control type="label">
                             <left>20</left>
@@ -6195,6 +6341,7 @@
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
                             <visible>Control.HasFocus($PARAM[Control])</visible>
+                            <animation effect="slide" end="0,-10" time="0" condition="String.IsEmpty(ListItem.Year) + !String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)">Conditional</animation>
                         </control>
 					</control>
 
@@ -6689,6 +6836,7 @@
                         <label>$INFO[ListItem.Year]</label>
 						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+			            <animation effect="slide" end="-50" time="0" condition="!Integer.IsGreater(ListItem.Rating,0)">Conditional</animation>
                     </control>
                     <control type="group">
                         <left>120</left>
@@ -6697,6 +6845,7 @@
                             <param name="Size" value="25" />
                             <param name="Color" value="$VAR[MainColorOne]" />
                         </include>
+						<visible>Integer.IsGreater(ListItem.Rating,0)</visible>
 						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                     </control>
@@ -6713,6 +6862,7 @@
                         <label>$INFO[ListItem.Label]</label>
 						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                        <animation effect="slide" end="0,-15" time="0" condition="!Integer.IsGreater(ListItem.Rating,0) + String.IsEmpty(ListItem.Year) + !String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)">Conditional</animation>
                     </control>
   
 
@@ -6739,7 +6889,25 @@
                     </control>
 
                     <control type="image">
-                        <left>14</left>
+                        <left>15</left>
+                        <top>15</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>18</left>
+                        <top>17</top>
+                        <width>28</width>
+                        <height>28</height>
+                        <texture colordiffuse="black">equaliser.gif</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>15</left>
                         <top>15</top>
                         <width>35</width>
                         <height>35</height>
@@ -6968,6 +7136,7 @@
                         <label>$INFO[ListItem.Year]</label>
 						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
+			            <animation effect="slide" end="-50" time="0" condition="!Integer.IsGreater(ListItem.Rating,0)">Conditional</animation>
                     </control>
                     <control type="label">
                         <left>70</left>
@@ -6982,6 +7151,7 @@
                         <label>$INFO[ListItem.Year]</label>
 						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
+			            <animation effect="slide" end="-50" time="0" condition="!Integer.IsGreater(ListItem.Rating,0)">Conditional</animation>
                     </control>
 
                     <control type="group">
@@ -6991,6 +7161,7 @@
                             <param name="Size" value="25" />
                             <param name="Color" value="$VAR[MainColorOne]" />
                         </include>
+						<visible>Integer.IsGreater(ListItem.Rating,0)</visible>
 						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                         <visible>!Control.HasFocus($PARAM[Control])</visible>
@@ -7002,6 +7173,7 @@
                             <param name="Size" value="25" />
                             <param name="Color" value="black" />
                         </include>
+						<visible>Integer.IsGreater(ListItem.Rating,0)</visible>
 						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
                         <visible>Control.HasFocus($PARAM[Control])</visible>
@@ -7010,6 +7182,7 @@
 					<control type="group">
 					    <visible>!String.IsEqual(ListItem.DBType,episode)</visible>
                         <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                        <animation effect="slide" end="0,-15" time="0" condition="!Integer.IsGreater(ListItem.Rating,0) + String.IsEmpty(ListItem.Year) + !String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)">Conditional</animation>
                         <control type="label">
                             <left>20</left>
                             <top>340</top>
@@ -7061,8 +7234,27 @@
                         <visible>Skin.HasSetting(ShowUnwatchedIcon) + String.Contains(ListItem.Overlay,OverlayUnWatched.png)</visible>
                     </control>
 
+
                     <control type="image">
-                        <left>14</left>
+                        <left>15</left>
+                        <top>15</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>18</left>
+                        <top>17</top>
+                        <width>28</width>
+                        <height>28</height>
+                        <texture colordiffuse="black">equaliser.gif</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>15</left>
                         <top>15</top>
                         <width>35</width>
                         <height>35</height>
@@ -7384,7 +7576,25 @@
                     </control>
 
                     <control type="image">
-                        <left>14</left>
+                        <left>15</left>
+                        <top>15</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>18</left>
+                        <top>17</top>
+                        <width>28</width>
+                        <height>28</height>
+                        <texture colordiffuse="black">equaliser.gif</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>15</left>
                         <top>15</top>
                         <width>35</width>
                         <height>35</height>
@@ -7497,13 +7707,70 @@
                     </control>
 
                     <control type="image">
-                        <left>14</left>
+                        <left>15</left>
+                        <top>15</top>
+                        <width>35</width>
+                        <height>35</height>
+                        <texture colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>18</left>
+                        <top>17</top>
+                        <width>28</width>
+                        <height>28</height>
+                        <texture colordiffuse="black">equaliser.gif</texture>
+                        <visible>ListItem.IsPlaying</visible>
+                        <visible>Player.Playing</visible>
+                    </control>
+                    <control type="image">
+                        <left>15</left>
                         <top>15</top>
                         <width>35</width>
                         <height>35</height>
                         <texture colordiffuse="$VAR[MainColorOne]">overlay_pause.png</texture>
                         <visible>ListItem.IsPlaying</visible>
                         <visible>!Player.Playing</visible>
+                    </control>
+
+                    <!-- infos focus -->
+                    <control type="image">
+                        <left>15</left>
+                        <top>333</top>
+                        <width>560</width>
+                        <height>62</height>
+                        <texture border="0,2,0,2" colordiffuse="$VAR[MainColorOne]">white.png</texture>
+                        <visible>!String.IsEqual(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                        <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>
+                    <control type="label">
+                        <left>25</left>
+                        <top>353</top>
+                        <width>380</width>
+                        <height>38</height>
+                        <font>font12_title</font>
+                        <textcolor>black</textcolor>
+                        <selectedcolor>black</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>!String.IsEqual(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                        <visible>!String.StartsWith(ListItem.FilenameAndPath,pvr://channels/tv/)</visible>
+                    </control>  
+                    <control type="group">
+                        <left>445</left>
+                        <top>358</top>
+                        <include content="ItemRating">
+                            <param name="Size" value="30" />
+                            <param name="Color" value="black" />
+                        </include>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)</visible>
+                        <visible>!String.IsEqual(ListItem.Icon,DefaultFolder.png)</visible>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                        <visible>String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,musicvideo)</visible>
                     </control>
 
                     <control type="progress">
@@ -7517,7 +7784,21 @@
                         <visible>!ListItem.IsPlaying</visible>
                         <texturebg border="0">white.png</texturebg>
                         <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
-                    </control> 
+                        <visible>!Control.HasFocus($PARAM[Control])</visible>
+                    </control>  
+                    <control type="progress">
+                        <left>15</left>
+                        <top>332</top>
+                        <width>560</width>
+                        <height>4</height>
+                        <info>ListItem.PercentPlayed</info>
+                        <visible>ListItem.IsResumable</visible>
+                        <visible>!Skin.HasSetting(HideProgressBars)</visible>
+                        <visible>!ListItem.IsPlaying</visible>
+                        <texturebg border="0">white.png</texturebg>
+                        <midtexture border="0" colordiffuse="$VAR[MainColorOne]">white-darker.png</midtexture>
+                        <visible>Control.HasFocus($PARAM[Control])</visible>
+                    </control>  
 
                 </focusedlayout>
 
