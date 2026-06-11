@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 0.14
+- Add new home appearance with 2 lines of widgets and no app shortcuts
+- Add new widgets: Watched movies, Random movie Actors, Addons, Random Movies (includes watched)
+- Rename "Thumb" widget format to "Thumb & details" and add a new "Thumb" format
+- Fix "widget limit amount" option not working
+- Add complete translations: Spanish, Portuguese
+- and more
+
 ## Version 0.13
 - Rewrite large widgets without global background like small widgets
 - Add new widget format: "Poster & details"
